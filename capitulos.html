@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Capítulos - OPOS-TAI</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      font-family: 'Segoe UI', sans-serif;
+
+      background: #f2f4f8;
+
+      color: #333;
+
+      margin: 0;
+
+      min-height: 100vh;
+
+    }
+
+
+    .contenedor {
+
+      width: 100%;
+
+      max-width: 700px;
+
+      margin: 0 auto;
+
+      padding: 1rem;
+
+    }
+
+
+    .card {
+
+      background: white;
+
+      border-radius: 12px;
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+      padding: 1.5rem;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .volver {
+
+      border: none;
+
+      background: none;
+
+      color: #007bff;
+
+      font-size: 0.95rem;
+
+      cursor: pointer;
+
+      padding: 0;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .volver:hover {
+
+      text-decoration: underline;
+
+    }
+
+
+    .cabecera {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 1rem;
+
+    }
+
+
+    .icono {
+
+      width: 50px;
+
+      height: 50px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background: #e9f2ff;
+
+      border-radius: 10px;
+
+      font-size: 1.5rem;
+
+      flex-shrink: 0;
+
+    }
+
+
+    .cabecera h1 {
+
+      margin: 0;
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .cabecera p {
+
+      margin: 0.3rem 0 0;
+
+      color: #666;
+
+      font-size: 0.9rem;
+
+    }
+
+
+    .titulo-seccion {
+
+      font-size: 1.1rem;
+
+      margin-top: 0;
+
+    }
+
+
+    #capitulos {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 0.8rem;
+
+    }
+
+
+    .capitulo {
+
+      width: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      padding: 1rem;
+
+      background: #f7f7f7;
+
+      border: 1px solid transparent;
+
+      border-radius: 8px;
+
+      font-family: inherit;
+
+      font-size: 1rem;
+
+      text-align: left;
+
+      cursor: pointer;
+
+      transition: 0.2s;
+
+    }
+
+
+    .capitulo:hover {
+
+      background: #eaeaea;
+
+      border-color: #ddd;
+
+      transform: translateY(-1px);
+
+    }
+
+
+    .capitulo-info {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.8rem;
+
+    }
+
+
+    .capitulo-icono {
+
+      width: 40px;
+
+      height: 40px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background: #f0f0f0;
+
+      border-radius: 8px;
+
+      font-size: 1.1rem;
+
+    }
+
+
+    .nombre {
+
+      font-weight: 600;
+
+    }
+
+
+    .flecha {
+
+      color: #007bff;
+
+      font-size: 1.3rem;
+
+    }
+
+
+    #estado {
+
+      text-align: center;
+
+      color: #666;
+
+      padding: 1rem 0;
+
+    }
+
+
+    .error {
+
+      color: #dc3545 !important;
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <main class="contenedor">
+
+
+    <!-- =====================================================
+         BOTÓN VOLVER
+    ====================================================== -->
+
+    <section class="card">
+
+      <button
+        class="volver"
+        onclick="window.location.href='index.html'"
+      >
+
+        ← Volver a asignaturas
+
+      </button>
+
+
+      <div
+        class="cabecera"
+        id="cabecera"
+      >
+
+        <div class="icono">
+          📚
+        </div>
+
+        <div>
+
+          <h1>
+            Cargando...
+          </h1>
+
+          <p>
+            Cargando información...
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CAPÍTULOS
+    ====================================================== -->
+
+    <section class="card">
+
+      <h2 class="titulo-seccion">
+        📖 Capítulos
+      </h2>
+
+
+      <div id="estado">
+        Cargando capítulos...
+      </div>
+
+
+      <div id="capitulos"></div>
+
+    </section>
+
+
+  </main>
+
+
+  <script>
+
+
+    /* ========================================================
+       CONFIGURACIÓN
+    ======================================================== */
+
+    const propietario = "sxrgiohb";
+
+    const repositorio = "OPOS-TAI";
+
+    const carpetaDatos = "data";
+
+
+    /* ========================================================
+       OBTENER ASIGNATURA DE LA URL
+    ======================================================== */
+
+    const parametros =
+      new URLSearchParams(
+        window.location.search
+      );
+
+
+    const asignatura =
+      parametros.get("asignatura");
+
+
+    /* ========================================================
+       ELEMENTOS
+    ======================================================== */
+
+    const cabecera =
+      document.getElementById("cabecera");
+
+
+    const estado =
+      document.getElementById("estado");
+
+
+    const capitulos =
+      document.getElementById("capitulos");
+
+
+    /* ========================================================
+       CARGAR CONFIGURACIÓN
+    ======================================================== */
+
+    async function cargarConfiguracion() {
+
+      try {
+
+        if (!asignatura) {
+
+          throw new Error(
+            "No se ha indicado ninguna asignatura."
+          );
+
+        }
+
+
+        const url =
+          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${asignatura}/config.json`;
+
+
+        const respuesta =
+          await fetch(url);
+
+
+        if (!respuesta.ok) {
+
+          throw new Error(
+            `No se ha podido cargar config.json (${respuesta.status})`
+          );
+
+        }
+
+
+        const archivo =
+          await respuesta.json();
+
+
+        const contenido =
+          decodeURIComponent(
+            escape(
+              atob(
+                archivo.content.replace(/\n/g, "")
+              )
+            )
+          );
+
+
+        const configuracion =
+          JSON.parse(contenido);
+
+
+        mostrarAsignatura(
+          configuracion
+        );
+
+
+        mostrarCapitulos(
+          configuracion
+        );
+
+      }
+
+
+      catch (error) {
+
+        console.error(error);
+
+        estado.classList.add("error");
+
+        estado.textContent =
+          "❌ No se ha podido cargar la asignatura.";
+
+      }
+
+    }
+
+
+    /* ========================================================
+       MOSTRAR ASIGNATURA
+    ======================================================== */
+
+    function mostrarAsignatura(
+      configuracion
+    ) {
+
+      cabecera.innerHTML = `
+
+        <div class="icono">
+
+          ${configuracion.icono || "📚"}
+
+        </div>
+
+        <div>
+
+          <h1>
+
+            ${configuracion.nombre || "Asignatura"}
+
+          </h1>
+
+          <p>
+
+            Selecciona un capítulo para estudiar.
+
+          </p>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* ========================================================
+       MOSTRAR CAPÍTULOS
+    ======================================================== */
+
+    function mostrarCapitulos(
+      configuracion
+    ) {
+
+      const lista =
+        configuracion.capitulos || [];
+
+
+      if (lista.length === 0) {
+
+        estado.textContent =
+          "Esta asignatura todavía no tiene capítulos.";
+
+        return;
+
+      }
+
+
+      estado.style.display =
+        "none";
+
+
+      lista.forEach(
+        capitulo => {
+
+
+          const boton =
+            document.createElement("button");
+
+
+          boton.className =
+            "capitulo";
+
+
+          boton.type =
+            "button";
+
+
+          boton.innerHTML = `
+
+            <span class="capitulo-info">
+
+              <span class="capitulo-icono">
+                📘
+              </span>
+
+              <span class="nombre">
+
+                ${capitulo.nombre}
+
+              </span>
+
+            </span>
+
+
+            <span class="flecha">
+              ›
+            </span>
+
+          `;
+
+
+          boton.addEventListener(
+            "click",
+            () => {
+
+              abrirCapitulo(
+                capitulo
+              );
+
+            }
+          );
+
+
+          capitulos.appendChild(
+            boton
+          );
+
+        }
+      );
+
+    }
+
+
+    /* ========================================================
+       ABRIR CAPÍTULO
+    ======================================================== */
+
+    function abrirCapitulo(
+      capitulo
+    ) {
+
+      window.location.href =
+        `test.html?asignatura=${encodeURIComponent(
+          asignatura
+        )}&capitulo=${encodeURIComponent(
+          capitulo.id
+        )}`;
+
+    }
+
+
+    /* ========================================================
+       INICIAR
+    ======================================================== */
+
+    cargarConfiguracion();
+
+
+  </script>
+
+
+</body>
+
+</html>
