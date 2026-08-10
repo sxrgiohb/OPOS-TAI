@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Mis sesiones - OPOS-TAI</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      font-family: 'Segoe UI', sans-serif;
+
+      background: #f2f4f8;
+
+      color: #333;
+
+      margin: 0;
+
+      min-height: 100vh;
+
+    }
+
+
+    .contenedor {
+
+      width: 100%;
+
+      max-width: 700px;
+
+      margin: 0 auto;
+
+      padding: 1rem;
+
+    }
+
+
+    .card {
+
+      background: white;
+
+      border-radius: 12px;
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+      padding: 1.5rem;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .volver {
+
+      border: none;
+
+      background: none;
+
+      color: #007bff;
+
+      font-size: 0.95rem;
+
+      cursor: pointer;
+
+      padding: 0;
+
+      margin-bottom: 1.2rem;
+
+    }
+
+
+    .volver:hover {
+
+      text-decoration: underline;
+
+    }
+
+
+    .cabecera {
+
+      text-align: center;
+
+    }
+
+
+    .cabecera h1 {
+
+      margin: 0 0 0.4rem;
+
+      font-size: 1.5rem;
+
+    }
+
+
+    .cabecera p {
+
+      margin: 0;
+
+      color: #666;
+
+    }
+
+
+    .acciones {
+
+      display: flex;
+
+      justify-content: center;
+
+      margin-top: 1.2rem;
+
+    }
+
+
+    .boton-principal {
+
+      border: none;
+
+      border-radius: 8px;
+
+      background: #007bff;
+
+      color: white;
+
+      padding: 0.8rem 1.2rem;
+
+      font-family: inherit;
+
+      font-size: 1rem;
+
+      cursor: pointer;
+
+    }
+
+
+    .boton-principal:hover {
+
+      background: #0069d9;
+
+    }
+
+
+    #sesiones {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 0.8rem;
+
+    }
+
+
+    .sesion {
+
+      border: 1px solid #e2e2e2;
+
+      border-radius: 10px;
+
+      padding: 1rem;
+
+      background: #fafafa;
+
+    }
+
+
+    .sesion-nombre {
+
+      font-weight: 600;
+
+      font-size: 1rem;
+
+      margin-bottom: 0.5rem;
+
+    }
+
+
+    .sesion-detalles {
+
+      color: #666;
+
+      font-size: 0.9rem;
+
+      line-height: 1.5;
+
+    }
+
+
+    .sesion-acciones {
+
+      display: flex;
+
+      gap: 0.5rem;
+
+      margin-top: 0.9rem;
+
+    }
+
+
+    .boton-secundario {
+
+      border: 1px solid #ddd;
+
+      background: white;
+
+      border-radius: 7px;
+
+      padding: 0.5rem 0.75rem;
+
+      font-family: inherit;
+
+      cursor: pointer;
+
+    }
+
+
+    .boton-secundario:hover {
+
+      background: #f0f0f0;
+
+    }
+
+
+    .boton-eliminar {
+
+      color: #dc3545;
+
+    }
+
+
+    .vacio {
+
+      text-align: center;
+
+      color: #777;
+
+      padding: 1rem 0;
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <main class="contenedor">
+
+
+    <!-- =====================================================
+         VOLVER
+    ====================================================== -->
+
+    <section class="card">
+
+      <button
+        class="volver"
+        onclick="window.location.href='index.html'"
+      >
+
+        ← Volver a asignaturas
+
+      </button>
+
+
+      <div class="cabecera">
+
+        <h1>
+          🎯 Mis sesiones
+        </h1>
+
+        <p>
+          Crea y guarda tus propias combinaciones de estudio.
+        </p>
+
+
+        <div class="acciones">
+
+          <button
+            class="boton-principal"
+            onclick="crearSesion()"
+          >
+
+            ＋ Crear sesión
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LISTA DE SESIONES
+    ====================================================== -->
+
+    <section class="card">
+
+      <div id="sesiones"></div>
+
+    </section>
+
+
+  </main>
+
+
+  <script>
+
+
+    /* ========================================================
+       CONFIGURACIÓN
+    ======================================================== */
+
+    const CLAVE_SESIONES =
+      "opos_tai_sesiones";
+
+
+    /* ========================================================
+       ELEMENTOS
+    ======================================================== */
+
+    const contenedor =
+      document.getElementById("sesiones");
+
+
+    /* ========================================================
+       CARGAR SESIONES
+    ======================================================== */
+
+    function obtenerSesiones() {
+
+      const datos =
+        localStorage.getItem(
+          CLAVE_SESIONES
+        );
+
+
+      if (!datos) {
+
+        return [];
+
+      }
+
+
+      try {
+
+        return JSON.parse(datos);
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Error leyendo las sesiones:",
+          error
+        );
+
+        return [];
+
+      }
+
+    }
+
+
+    /* ========================================================
+       MOSTRAR SESIONES
+    ======================================================== */
+
+    function mostrarSesiones() {
+
+      const sesiones =
+        obtenerSesiones();
+
+
+      contenedor.innerHTML = "";
+
+
+      /*
+       * Si todavía no existe ninguna sesión.
+       */
+
+      if (sesiones.length === 0) {
+
+        contenedor.innerHTML = `
+
+          <div class="vacio">
+
+            Todavía no tienes ninguna sesión creada.
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      /*
+       * Mostrar cada sesión.
+       */
+
+      sesiones.forEach(
+        (sesion, indice) => {
+
+
+          const elemento =
+            document.createElement("div");
+
+
+          elemento.className =
+            "sesion";
+
+
+          const numeroCapitulos =
+            sesion.capitulos
+              ? sesion.capitulos.length
+              : 0;
+
+
+          elemento.innerHTML = `
+
+            <div class="sesion-nombre">
+
+              🎯 ${escaparHTML(
+                sesion.nombre ||
+                "Sesión sin nombre"
+              )}
+
+            </div>
+
+
+            <div class="sesion-detalles">
+
+              ${numeroCapitulos}
+              capítulo${numeroCapitulos !== 1 ? "s" : ""}
+
+            </div>
+
+
+            <div class="sesion-acciones">
+
+              <button
+                class="boton-secundario"
+                onclick="iniciarSesion(${indice})"
+              >
+
+                ▶ Iniciar
+
+              </button>
+
+
+              <button
+                class="boton-secundario"
+                onclick="editarSesion(${indice})"
+              >
+
+                ✏️ Editar
+
+              </button>
+
+
+              <button
+                class="boton-secundario boton-eliminar"
+                onclick="eliminarSesion(${indice})"
+              >
+
+                🗑️ Eliminar
+
+              </button>
+
+            </div>
+
+          `;
+
+
+          contenedor.appendChild(
+            elemento
+          );
+
+        }
+      );
+
+    }
+
+
+    /* ========================================================
+       CREAR SESIÓN
+    ======================================================== */
+
+    function crearSesion() {
+
+      window.location.href =
+        "crear-sesion.html";
+
+    }
+
+
+    /* ========================================================
+       INICIAR SESIÓN
+    ======================================================== */
+
+    function iniciarSesion(
+      indice
+    ) {
+
+      const sesiones =
+        obtenerSesiones();
+
+
+      const sesion =
+        sesiones[indice];
+
+
+      if (!sesion) {
+
+        return;
+
+      }
+
+
+      /*
+       * Todavía no conectamos esto con el motor de preguntas.
+       *
+       * Por ahora mostramos la configuración.
+       */
+
+      alert(
+        `Sesión seleccionada:\n\n${sesion.nombre}`
+      );
+
+    }
+
+
+    /* ========================================================
+       EDITAR SESIÓN
+    ======================================================== */
+
+    function editarSesion(
+      indice
+    ) {
+
+      window.location.href =
+        `crear-sesion.html?editar=${indice}`;
+
+    }
+
+
+    /* ========================================================
+       ELIMINAR SESIÓN
+    ======================================================== */
+
+    function eliminarSesion(
+      indice
+    ) {
+
+      const sesiones =
+        obtenerSesiones();
+
+
+      const sesion =
+        sesiones[indice];
+
+
+      if (!sesion) {
+
+        return;
+
+      }
+
+
+      const confirmar =
+        confirm(
+          `¿Quieres eliminar la sesión "${sesion.nombre}"?`
+        );
+
+
+      if (!confirmar) {
+
+        return;
+
+      }
+
+
+      sesiones.splice(
+        indice,
+        1
+      );
+
+
+      localStorage.setItem(
+        CLAVE_SESIONES,
+        JSON.stringify(sesiones)
+      );
+
+
+      mostrarSesiones();
+
+    }
+
+
+    /* ========================================================
+       SEGURIDAD
+    ======================================================== */
+
+    function escaparHTML(
+      texto
+    ) {
+
+      const elemento =
+        document.createElement("div");
+
+
+      elemento.textContent =
+        texto;
+
+
+      return elemento.innerHTML;
+
+    }
+
+
+    /* ========================================================
+       INICIAR
+    ======================================================== */
+
+    mostrarSesiones();
+
+
+  </script>
+
+
+</body>
+
+</html>
