@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,214 +13,118 @@
 
   <title>OPOSICIONES - Técnico Auxiliar Informático</title>
 
-
   <style>
 
     * {
       box-sizing: border-box;
     }
 
-
     body {
-
       font-family: 'Segoe UI', sans-serif;
-
       background: #f2f4f8;
-
       color: #333;
-
       margin: 0;
-
-      padding: 0;
-
       min-height: 100vh;
-
     }
-
 
     .contenedor {
-
       width: 100%;
-
       max-width: 700px;
-
       margin: 0 auto;
-
       padding: 1rem;
-
     }
-
 
     .card {
-
-      background: #fff;
-
+      background: white;
       border-radius: 12px;
-
-      box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.08);
-
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 1.5rem;
-
       margin-bottom: 1rem;
-
     }
-
 
     .cabecera {
-
       text-align: center;
-
     }
-
 
     .cabecera h1 {
-
-      font-size: 1.5rem;
-
       margin: 0 0 0.4rem;
-
+      font-size: 1.5rem;
     }
-
 
     .cabecera p {
-
       margin: 0;
-
       color: #666;
-
-      font-size: 0.95rem;
-
     }
-
 
     .titulo-seccion {
-
       font-size: 1.1rem;
-
-      margin: 0 0 1.2rem;
-
+      margin-top: 0;
     }
-
 
     #asignaturas {
-
       display: flex;
-
       flex-direction: column;
-
       gap: 0.8rem;
-
     }
 
-
     .asignatura {
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       padding: 1rem;
 
       background: #f7f7f7;
-
       border: 1px solid transparent;
-
       border-radius: 8px;
 
-      color: #333;
-
-      cursor: pointer;
-
       font-family: inherit;
-
       font-size: 1rem;
-
       text-align: left;
 
+      cursor: pointer;
     }
-
 
     .asignatura:hover {
-
       background: #eaeaea;
-
       border-color: #ddd;
-
     }
-
 
     .asignatura-info {
-
       display: flex;
-
       align-items: center;
-
       gap: 0.8rem;
-
     }
 
-
     .icono {
-
       width: 40px;
-
       height: 40px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       background: #e9f2ff;
-
       border-radius: 8px;
 
       font-size: 1.2rem;
-
     }
-
 
     .nombre {
-
       font-weight: 600;
-
     }
-
 
     .flecha {
-
       color: #007bff;
-
-      font-size: 1.2rem;
-
+      font-size: 1.3rem;
     }
-
 
     #estado {
-
       text-align: center;
-
       color: #666;
-
-      font-size: 0.95rem;
-
       padding: 1rem 0;
-
     }
-
-
-    .error {
-
-      color: #dc3545 !important;
-
-    }
-
 
   </style>
 
@@ -227,7 +132,6 @@
 
 
 <body>
-
 
   <main class="contenedor">
 
@@ -267,35 +171,27 @@
 
   <script>
 
-
     /*
-     * ==========================================================
-     * CONFIGURACIÓN DEL REPOSITORIO
-     * ==========================================================
+     * Repositorio de GitHub
      */
 
     const propietario = "sxrgiohb";
-
     const repositorio = "OPOS-TAI";
 
 
     /*
-     * ==========================================================
-     * ELEMENTOS DEL HTML
-     * ==========================================================
+     * Elementos de la página
      */
-
-    const asignaturasContenedor =
-      document.getElementById("asignaturas");
 
     const estado =
       document.getElementById("estado");
 
+    const asignaturas =
+      document.getElementById("asignaturas");
+
 
     /*
-     * ==========================================================
-     * CARGAR ASIGNATURAS
-     * ==========================================================
+     * Cargar los archivos JSON de /data
      */
 
     async function cargarAsignaturas() {
@@ -303,7 +199,7 @@
       try {
 
         const url =
-  `https://api.github.com/repos/${propietario}/${repositorio}/contents/data`;
+          `https://api.github.com/repos/${propietario}/${repositorio}/contents/data`;
 
 
         const respuesta =
@@ -313,7 +209,7 @@
         if (!respuesta.ok) {
 
           throw new Error(
-            `GitHub ha devuelto el estado ${respuesta.status}`
+            "No se pudo acceder a la carpeta data"
           );
 
         }
@@ -324,44 +220,20 @@
 
 
         /*
-         * Solo queremos archivos JSON.
+         * Solo queremos archivos .json
          */
 
         const jsons =
-          archivos
-            .filter(archivo =>
-              archivo.type === "file" &&
-              archivo.name
-                .toLowerCase()
-                .endsWith(".json")
-            )
-            .sort((a, b) =>
-              a.name.localeCompare(
-                b.name,
-                "es",
-                {
-                  sensitivity: "base"
-                }
-              )
-            );
+          archivos.filter(archivo =>
+            archivo.type === "file" &&
+            archivo.name.toLowerCase().endsWith(".json")
+          );
 
-
-        /*
-         * Limpiamos el mensaje de carga.
-         */
-
-        asignaturasContenedor.innerHTML = "";
-
-
-        /*
-         * Si no hay JSON dentro de /datos.
-         */
 
         if (jsons.length === 0) {
 
-          estado.innerHTML =
-            "No hay asignaturas todavía.<br>" +
-            "Añade archivos .json dentro de la carpeta datos.";
+          estado.textContent =
+            "No hay asignaturas todavía.";
 
           return;
 
@@ -372,32 +244,25 @@
 
 
         /*
-         * Crear un botón por cada JSON.
+         * Crear un botón para cada JSON
          */
 
         jsons.forEach(archivo => {
-
 
           const boton =
             document.createElement("button");
 
 
-          boton.className =
-            "asignatura";
-
-
-          boton.type =
-            "button";
+          boton.className = "asignatura";
 
 
           const nombre =
-            obtenerNombreAsignatura(
-              archivo.name
-            );
-
-
-          const icono =
-            obtenerIcono(nombre);
+            archivo.name
+              .replace(".json", "")
+              .replace(/[-_]/g, " ")
+              .replace(/\b\w/g, letra =>
+                letra.toUpperCase()
+              );
 
 
           boton.innerHTML = `
@@ -405,7 +270,7 @@
             <span class="asignatura-info">
 
               <span class="icono">
-                ${icono}
+                📚
               </span>
 
               <span class="nombre">
@@ -421,150 +286,25 @@
           `;
 
 
-          boton.addEventListener(
-            "click",
-            () => abrirAsignatura(archivo.name)
-          );
-
-
-          asignaturasContenedor.appendChild(
-            boton
-          );
+          asignaturas.appendChild(boton);
 
         });
 
       }
 
-
       catch (error) {
 
         console.error(error);
 
-
-        estado.classList.add("error");
-
-
         estado.textContent =
-          "❌ No se han podido cargar las asignaturas.";
+          "❌ Error al cargar las asignaturas.";
 
       }
 
     }
 
 
-    /*
-     * ==========================================================
-     * NOMBRE VISIBLE
-     * ==========================================================
-     */
-
-    function obtenerNombreAsignatura(
-      nombreArchivo
-    ) {
-
-      return nombreArchivo
-
-        .replace(
-          /\.json$/i,
-          ""
-        )
-
-        .replace(
-          /[-_]+/g,
-          " "
-        )
-
-        .replace(
-          /\b\w/g,
-          letra =>
-            letra.toUpperCase()
-        );
-
-    }
-
-
-    /*
-     * ==========================================================
-     * ICONO
-     * ==========================================================
-     */
-
-    function obtenerIcono(nombre) {
-
-      const texto =
-        nombre.toLowerCase();
-
-
-      if (texto.includes("big"))
-        return "📊";
-
-
-      if (texto.includes("datos"))
-        return "💾";
-
-
-      if (texto.includes("interfaz"))
-        return "🖥️";
-
-
-      if (texto.includes("digital"))
-        return "🏭";
-
-
-      if (texto.includes("emple"))
-        return "👔";
-
-
-      if (texto.includes("gest"))
-        return "🏢";
-
-
-      if (texto.includes("multimedia"))
-        return "📱";
-
-
-      if (
-        texto.includes("servicios") ||
-        texto.includes("procesos")
-      )
-        return "⚙️";
-
-
-      if (texto.includes("sosten"))
-        return "🌱";
-
-
-      return "📚";
-
-    }
-
-
-    /*
-     * ==========================================================
-     * ABRIR TEST
-     * ==========================================================
-     */
-
-    function abrirAsignatura(
-      nombreArchivo
-    ) {
-
-      window.location.href =
-        `test.html?datos=${encodeURIComponent(
-          nombreArchivo
-        )}`;
-
-    }
-
-
-    /*
-     * ==========================================================
-     * INICIAR
-     * ==========================================================
-     */
-
     cargarAsignaturas();
-
 
   </script>
 
