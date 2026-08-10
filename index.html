@@ -12,212 +12,151 @@
 
   <title>OPOSICIONES - Técnico Auxiliar Informático</title>
 
-
   <style>
 
     * {
       box-sizing: border-box;
     }
 
-
     body {
-
       font-family: 'Segoe UI', sans-serif;
-
       background: #f2f4f8;
-
       color: #333;
-
       margin: 0;
-
       min-height: 100vh;
-
     }
-
 
     .contenedor {
-
       width: 100%;
-
       max-width: 700px;
-
       margin: 0 auto;
-
       padding: 1rem;
-
     }
-
 
     .card {
-
       background: white;
-
       border-radius: 12px;
-
-      box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.08);
-
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 1.5rem;
-
       margin-bottom: 1rem;
-
     }
-
 
     .cabecera {
-
       text-align: center;
-
     }
-
 
     .cabecera h1 {
-
       margin: 0 0 0.4rem;
-
       font-size: 1.5rem;
-
     }
-
 
     .cabecera p {
-
       margin: 0;
-
       color: #666;
-
     }
-
 
     .titulo-seccion {
-
       font-size: 1.1rem;
-
-      margin-top: 0;
-
+      margin: 0 0 1.2rem;
     }
-
 
     #asignaturas {
-
       display: flex;
-
       flex-direction: column;
-
       gap: 0.8rem;
-
     }
 
-
     .asignatura {
-
       width: 100%;
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
 
       padding: 1rem;
 
       background: #f7f7f7;
-
       border: 1px solid transparent;
-
       border-radius: 8px;
 
       font-family: inherit;
-
       font-size: 1rem;
-
       text-align: left;
 
       cursor: pointer;
-
       transition: 0.2s;
-
     }
-
 
     .asignatura:hover {
-
       background: #eaeaea;
-
       border-color: #ddd;
-
       transform: translateY(-1px);
-
     }
-
 
     .asignatura-info {
-
       display: flex;
-
       align-items: center;
-
       gap: 0.8rem;
-
     }
 
-
     .icono {
-
       width: 42px;
-
       height: 42px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       background: #e9f2ff;
-
       border-radius: 8px;
 
       font-size: 1.3rem;
-
       flex-shrink: 0;
-
     }
-
 
     .nombre {
-
       font-weight: 600;
-
     }
-
 
     .flecha {
-
       color: #007bff;
-
       font-size: 1.3rem;
-
     }
-
 
     #estado {
-
       text-align: center;
-
       color: #666;
-
       padding: 1rem 0;
-
     }
-
 
     .error {
-
       color: #dc3545 !important;
-
     }
 
+    .sesiones-enlace {
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.9rem;
+
+      border: 1px solid #ddd;
+      border-radius: 8px;
+
+      background: white;
+      color: #333;
+
+      text-align: center;
+      text-decoration: none;
+
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+
+      transition: 0.2s;
+    }
+
+    .sesiones-enlace:hover {
+      background: #f5f5f5;
+    }
 
   </style>
 
@@ -225,7 +164,6 @@
 
 
 <body>
-
 
   <main class="contenedor">
 
@@ -257,13 +195,27 @@
         📚 Asignaturas
       </h2>
 
-
       <div id="estado">
         Cargando asignaturas...
       </div>
 
-
       <div id="asignaturas"></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SESIONES
+    ====================================================== -->
+
+    <section class="card">
+
+      <a
+        class="sesiones-enlace"
+        href="sesiones.html"
+      >
+        🎯 Mis sesiones
+      </a>
 
     </section>
 
@@ -273,20 +225,19 @@
 
   <script>
 
-
     /* ========================================================
-       CONFIGURACIÓN DEL REPOSITORIO
+       CONFIGURACIÓN
     ======================================================== */
 
-    const propietario = "sxrgiohb";
+    const PROPIETARIO = "sxrgiohb";
 
-    const repositorio = "OPOS-TAI";
+    const REPOSITORIO = "OPOS-TAI";
 
-    const carpetaDatos = "data";
+    const CARPETA_DATOS = "data";
 
 
     /* ========================================================
-       ELEMENTOS DEL HTML
+       ELEMENTOS
     ======================================================== */
 
     const estado =
@@ -297,17 +248,60 @@
 
 
     /* ========================================================
+       FUNCIÓN PARA DECODIFICAR CONFIG.JSON
+    ======================================================== */
+
+    function decodificarBase64(base64) {
+
+      /*
+       * GitHub devuelve el archivo en Base64.
+       *
+       * Usamos TextDecoder para soportar correctamente
+       * tildes, ñ y otros caracteres UTF-8.
+       */
+
+      const binario =
+        atob(
+          base64.replace(/\s/g, "")
+        );
+
+      const bytes =
+        new Uint8Array(
+          binario.length
+        );
+
+      for (
+        let i = 0;
+        i < binario.length;
+        i++
+      ) {
+
+        bytes[i] =
+          binario.charCodeAt(i);
+
+      }
+
+      return new TextDecoder(
+        "utf-8"
+      ).decode(bytes);
+
+    }
+
+
+    /* ========================================================
        CARGAR ASIGNATURAS
-       
-       Buscamos las carpetas que existen dentro de /data
     ======================================================== */
 
     async function cargarAsignaturas() {
 
       try {
 
+        /*
+         * 1. Buscamos qué carpetas existen dentro de /data
+         */
+
         const url =
-          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}`;
+          `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}`;
 
 
         const respuesta =
@@ -317,7 +311,7 @@
         if (!respuesta.ok) {
 
           throw new Error(
-            `GitHub ha devuelto el estado ${respuesta.status}`
+            `GitHub API: ${respuesta.status}`
           );
 
         }
@@ -328,14 +322,7 @@
 
 
         /*
-         * Solo nos interesan las carpetas.
-         *
-         * Por ejemplo:
-         *
-         * data/
-         * ├── constitucion/  ← ESTA
-         * ├── big-data/      ← ESTA
-         * └── archivo.json   ← IGNORADO
+         * 2. Nos quedamos únicamente con las carpetas.
          */
 
         const carpetas =
@@ -356,19 +343,20 @@
 
 
         /*
-         * Limpiamos el mensaje de carga.
+         * 3. Limpiamos el mensaje de carga.
          */
 
-        estado.style.display = "none";
+        estado.style.display =
+          "none";
 
 
         /*
-         * Cargamos el config.json de cada asignatura.
+         * 4. Cargamos cada asignatura.
          */
 
         for (const carpeta of carpetas) {
 
-          await cargarAsignatura(
+          await cargarConfiguracion(
             carpeta.name
           );
 
@@ -379,10 +367,15 @@
 
       catch (error) {
 
-        console.error(error);
+        console.error(
+          "Error cargando asignaturas:",
+          error
+        );
 
 
-        estado.classList.add("error");
+        estado.classList.add(
+          "error"
+        );
 
 
         estado.textContent =
@@ -394,17 +387,17 @@
 
 
     /* ========================================================
-       CARGAR CONFIGURACIÓN DE UNA ASIGNATURA
+       CARGAR CONFIG.JSON
     ======================================================== */
 
-    async function cargarAsignatura(
+    async function cargarConfiguracion(
       carpeta
     ) {
 
       try {
 
         const url =
-          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${carpeta}/config.json`;
+          `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}/${carpeta}/config.json`;
 
 
         const respuesta =
@@ -414,7 +407,7 @@
         if (!respuesta.ok) {
 
           console.warn(
-            `No se encontró config.json en ${carpeta}`
+            `No se pudo cargar config.json de ${carpeta}`
           );
 
           return;
@@ -427,25 +420,30 @@
 
 
         /*
-         * GitHub devuelve el contenido de un archivo
-         * codificado en Base64.
+         * Decodificar Base64 → texto UTF-8
          */
 
         const contenido =
-          decodeURIComponent(
-            escape(
-              atob(
-                archivo.content.replace(/\n/g, "")
-              )
-            )
+          decodificarBase64(
+            archivo.content
           );
 
 
+        /*
+         * Texto → objeto JavaScript
+         */
+
         const configuracion =
-          JSON.parse(contenido);
+          JSON.parse(
+            contenido
+          );
 
 
-        crearBotonAsignatura(
+        /*
+         * Crear la tarjeta de la asignatura
+         */
+
+        crearAsignatura(
           configuracion,
           carpeta
         );
@@ -466,16 +464,18 @@
 
 
     /* ========================================================
-       CREAR BOTÓN DE ASIGNATURA
+       CREAR ASIGNATURA
     ======================================================== */
 
-    function crearBotonAsignatura(
+    function crearAsignatura(
       configuracion,
       carpeta
     ) {
 
       const boton =
-        document.createElement("button");
+        document.createElement(
+          "button"
+        );
 
 
       boton.className =
@@ -486,16 +486,26 @@
         "button";
 
 
+      const icono =
+        configuracion.icono ||
+        "📚";
+
+
+      const nombre =
+        configuracion.nombre ||
+        carpeta;
+
+
       boton.innerHTML = `
 
         <span class="asignatura-info">
 
           <span class="icono">
-            ${configuracion.icono || "📚"}
+            ${icono}
           </span>
 
           <span class="nombre">
-            ${configuracion.nombre || carpeta}
+            ${escaparHTML(nombre)}
           </span>
 
         </span>
@@ -508,20 +518,17 @@
 
 
       /*
-       * De momento guardamos la información de la
-       * asignatura en la URL.
-       *
-       * En el siguiente paso crearemos la pantalla
-       * de capítulos.
+       * Al pulsar la asignatura vamos a capitulos.html
        */
 
       boton.addEventListener(
         "click",
-        () => {
+        function() {
 
-          abrirAsignatura(
-            carpeta
-          );
+          window.location.href =
+            `capitulos.html?asignatura=${encodeURIComponent(
+              carpeta
+            )}`;
 
         }
       );
@@ -535,17 +542,24 @@
 
 
     /* ========================================================
-       ABRIR ASIGNATURA
+       SEGURIDAD
     ======================================================== */
 
-    function abrirAsignatura(
-      carpeta
+    function escaparHTML(
+      texto
     ) {
 
-      window.location.href =
-        `capitulos.html?asignatura=${encodeURIComponent(
-          carpeta
-        )}`;
+      const elemento =
+        document.createElement(
+          "div"
+        );
+
+
+      elemento.textContent =
+        texto;
+
+
+      return elemento.innerHTML;
 
     }
 
@@ -555,7 +569,6 @@
     ======================================================== */
 
     cargarAsignaturas();
-
 
   </script>
 
