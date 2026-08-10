@@ -7,6 +7,16 @@
       "id": "cap1",
       "nombre": "CAP 1",
       "archivo": "preguntas.json"
+    },
+    {
+      "id": "cap2",
+      "nombre": "CAP 2",
+      "archivo": "preguntas.json"
+    },
+    {
+      "id": "cap3",
+      "nombre": "CAP 3",
+      "archivo": "preguntas.json"
     }
   ]
 }
