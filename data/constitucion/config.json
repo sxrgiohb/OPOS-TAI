@@ -1,22 +1,87 @@
 {
-  "id": "constitucion",
-  "nombre": "Constitución Española",
-  "icono": "📜",
-  "capitulos": [
-    {
-      "id": "cap1",
-      "nombre": "CAP 1",
-      "archivo": "preguntas.json"
-    },
-    {
-      "id": "cap2",
-      "nombre": "CAP 2",
-      "archivo": "preguntas.json"
-    },
-    {
-      "id": "cap3",
-      "nombre": "CAP 3",
-      "archivo": "preguntas.json"
-    }
-  ]
+"id": "constitucion",
+"nombre": "Constitución Española",
+"icono": "📜",
+"capitulos": [
+{
+"id": "preambulo",
+"nombre": "PREÁMBULO",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_preliminar",
+"nombre": "TÍTULO PRELIMINAR",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_1",
+"nombre": "TÍTULO I",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_2",
+"nombre": "TÍTULO II",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_3",
+"nombre": "TÍTULO III",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_4",
+"nombre": "TÍTULO IV",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_5",
+"nombre": "TÍTULO V",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_6",
+"nombre": "TÍTULO VI",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_7",
+"nombre": "TÍTULO VII",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_8",
+"nombre": "TÍTULO VIII",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_9",
+"nombre": "TÍTULO IX",
+"archivo": "preguntas.json"
+},
+{
+"id": "titulo_10",
+"nombre": "TÍTULO X",
+"archivo": "preguntas.json"
+},
+{
+"id": "disposiciones_adicionales",
+"nombre": "DISPOSICIONES ADICIONALES",
+"archivo": "preguntas.json"
+},
+{
+"id": "disposiciones_transitorias",
+"nombre": "DISPOSICIONES TRANSITORIAS",
+"archivo": "preguntas.json"
+},
+{
+"id": "disposicion_derogatoria",
+"nombre": "DISPOSICIÓN DEROGATORIA",
+"archivo": "preguntas.json"
+},
+{
+"id": "disposicion_final",
+"nombre": "DISPOSICIÓN FINAL",
+"archivo": "preguntas.json"
+}
+]
 }
