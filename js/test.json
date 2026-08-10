@@ -1,0 +1,204 @@
+let preguntas = [];
+let indice = 0;
+
+
+/*
+ * ==========================================================
+ * OBTENER EL JSON SELECCIONADO
+ * ==========================================================
+ */
+
+const parametros = new URLSearchParams(window.location.search);
+
+const archivoDatos = parametros.get("datos");
+
+
+/*
+ * ==========================================================
+ * ELEMENTOS DEL HTML
+ * ==========================================================
+ */
+
+const preguntaElemento =
+    document.getElementById("pregunta");
+
+const opcionesElemento =
+    document.getElementById("opciones");
+
+const asignaturaElemento =
+    document.getElementById("asignatura");
+
+const estadoElemento =
+    document.getElementById("estado");
+
+
+/*
+ * ==========================================================
+ * CARGAR PREGUNTAS
+ * ==========================================================
+ */
+
+async function cargarPreguntas() {
+
+    try {
+
+        if (!archivoDatos) {
+
+            throw new Error(
+                "No se ha indicado ninguna asignatura."
+            );
+
+        }
+
+
+        /*
+         * Mostrar nombre de la asignatura
+         */
+
+        asignaturaElemento.textContent =
+            obtenerNombreAsignatura(archivoDatos);
+
+
+        /*
+         * Cargar el JSON
+         */
+
+        const respuesta =
+            await fetch(`datos/${archivoDatos}`);
+
+
+        if (!respuesta.ok) {
+
+            throw new Error(
+                `No se ha podido cargar ${archivoDatos}`
+            );
+
+        }
+
+
+        preguntas =
+            await respuesta.json();
+
+
+        /*
+         * Comprobar que realmente hay preguntas
+         */
+
+        if (!Array.isArray(preguntas) || preguntas.length === 0) {
+
+            throw new Error(
+                "El archivo JSON no contiene preguntas."
+            );
+
+        }
+
+
+        estadoElemento.style.display = "none";
+
+
+        /*
+         * Mostrar primera pregunta
+         */
+
+        mostrarPregunta();
+
+    }
+
+
+    catch (error) {
+
+        console.error(error);
+
+        estadoElemento.textContent =
+            "❌ Error al cargar las preguntas.";
+
+    }
+
+}
+
+
+/*
+ * ==========================================================
+ * MOSTRAR PREGUNTA
+ * ==========================================================
+ */
+
+function mostrarPregunta() {
+
+    const preguntaActual =
+        preguntas[indice];
+
+
+    preguntaElemento.textContent =
+        preguntaActual.pregunta;
+
+
+    opcionesElemento.innerHTML = "";
+
+
+    /*
+     * Crear las opciones
+     */
+
+    preguntaActual.opciones.forEach(
+        (opcion, posicion) => {
+
+            const label =
+                document.createElement("label");
+
+            label.className = "option";
+
+
+            const input =
+                document.createElement("input");
+
+            input.type = "radio";
+
+            input.name = "opcion";
+
+            input.value = posicion;
+
+
+            label.appendChild(input);
+
+            label.appendChild(
+                document.createTextNode(" " + opcion)
+            );
+
+
+            opcionesElemento.appendChild(label);
+
+        }
+    );
+
+}
+
+
+/*
+ * ==========================================================
+ * NOMBRE DE LA ASIGNATURA
+ * ==========================================================
+ */
+
+function obtenerNombreAsignatura(nombreArchivo) {
+
+    return nombreArchivo
+
+        .replace(/\.json$/i, "")
+
+        .replace(/[-_]+/g, " ")
+
+        .replace(/\b\w/g, letra =>
+            letra.toUpperCase()
+        );
+
+}
+
+
+/*
+ * ==========================================================
+ * INICIAR
+ * ==========================================================
+ */
+
+cargarPreguntas();
