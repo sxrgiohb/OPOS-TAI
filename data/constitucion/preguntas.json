@@ -1,0 +1,776 @@
+[
+  {
+    "pregunta": "¿Cuál de los siguientes es un formatos de audio con pérdida?:",
+    "respuesta": "MP3.",
+    "opciones": [
+      "WAV.",
+      "AU.",
+      "MP3."
+    ]
+  },
+  {
+    "pregunta": "CryEngine es un motor 3D utilizado en:",
+    "respuesta": "Warface o Crysis.",
+    "opciones": [
+      "Warcraft.",
+      "Warface o Crysis.",
+      "Battlefield."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál fue el famoso videojuego lanzado por Atari?",
+    "respuesta": "Pong.",
+    "opciones": [
+      "Warcraft.",
+      "Warfare.",
+      "Pong."
+    ]
+  },
+  {
+    "pregunta": "¿Qué motor de videojuegos 3D es utilizado por sagas como Warface?:",
+    "respuesta": "CryEngine.",
+    "opciones": [
+      "IW Engine.",
+      "Frostbite.",
+      "CryEngine."
+    ]
+  },
+  {
+    "pregunta": "Para el diseño de arte de un juego, necesitaremos:",
+    "respuesta": "Material conceptual y una estación de trabajo.",
+    "opciones": [
+      "Material conceptual y una estación de trabajo.",
+      "Solo una estación de trabajo.",
+      "Solo material conceptual."
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se conoce al componente que representa de forma abstracta el mundo del juego y los objetos que residen en él, lo que facilita a los desarrolladores razonar acerca de su juego?:",
+    "respuesta": "Interfaz de desarrollo.",
+    "opciones": [
+      "Renderizado.",
+      "Interfaz de desarrollo.",
+      "Core."
+    ]
+  },
+  {
+    "pregunta": "Dentro del documento de diseño de un juego podemos encontrar…:",
+    "respuesta": "Notas escritas que sirven de guía para nuestro juego.",
+    "opciones": [
+      "La creación de story boards.",
+      "Notas escritas que sirven de guía para nuestro juego.",
+      "Lista de verificación de activos."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes pasos en el proceso de hacer un juego desde cero consiste en decidir cómo va a ser el juego, su parte gráfica, cómo juega y de qué se trata?:",
+    "respuesta": "Conceptualización.",
+    "opciones": [
+      "Programación.",
+      "Arte.",
+      "Conceptualización."
+    ]
+  },
+  {
+    "pregunta": "¿En qué año el mundo del videojuego experimentó el nacimiento de Magnavox Odyssey?:",
+    "respuesta": "1972.",
+    "opciones": [
+      "1972.",
+      "1973.",
+      "1974."
+    ]
+  },
+  {
+    "pregunta": "¿Qué motor de videojuegos 3D fue creado por Epic Games y es uno de los más usados y conocidos para la creación de juegos AAA como Warseries y otros?:",
+    "respuesta": "Unreal.",
+    "opciones": [
+      "Unreal.",
+      "Frostbite.",
+      "CryEngine."
+    ]
+  },
+  {
+    "pregunta": "¿Qué es renderizar en un videojuego?:",
+    "respuesta": "Es el término para referirse al proceso de generar imagen fotorrealista, o no, a partir de un modelo 2D o 3D por medio de programas informáticos.",
+    "opciones": [
+      "Es el proceso por el cual el código fuente de un videojuego se convierte en código máquina.",
+      "Es el proceso equivalente a la depuración de una aplicación para un dispositivo móvil.",
+      "Es el término para referirse al proceso de generar imagen fotorrealista, o no, a partir de un modelo 2D o 3D por medio de programas informáticos."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el componente central de cualquier motor de juego 3D o 2D que vincula todos los subsistemas que se analizarán a continuación en un paquete limpio y fácil de usar?:",
+    "respuesta": "Interfaz de desarrollo.",
+    "opciones": [
+      "Interfaz de desarrollo.",
+      "Renderizado.",
+      "Inteligencia Artificial (AI) y Físicas."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes NO es una biblioteca de código abierto para el manejo de audio en un videojuego?:",
+    "respuesta": "FreeAudioLibrary.",
+    "opciones": [
+      "OpenAL-Soft.",
+      "PortAudio.",
+      "FreeAudioLibrary."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el primer paso en el proceso de hacer un juego desde cero?:",
+    "respuesta": "Conceptualización.",
+    "opciones": [
+      "Arte.",
+      "Conceptualización.",
+      "Programación."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity, ¿en un objeto cómo podemos movernos hacia distintos puntos de la escena moviendo el ratón?:",
+    "respuesta": "Haciendo clic en el botón derecho del ratón y sin soltar.",
+    "opciones": [
+      "Presionando la tecla “W”.",
+      "Haciendo clic en el botón derecho del ratón y sin soltar.",
+      "Presionando la tecla “S”."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿cuál de los siguientes comportamientos permite mover un objeto en hasta 8 direcciones, por medio de las teclas con flechas de desplazamiento?:",
+    "respuesta": "8 Direction movement.",
+    "opciones": [
+      "Bullet movement.",
+      "8 Direction movement.",
+      "Scroll to."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity, Vector3 es…:",
+    "respuesta": "Una estructura para almacenar posiciones en 3D y direcciones.",
+    "opciones": [
+      "Un lenguaje diseñado específicamente para uso con Unity y modelado tras JavaScript.",
+      "Una estructura para almacenar posiciones en 3D y direcciones.",
+      "Es un motor totalmente gratuito que funciona sobre Windows."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿cuál de los siguientes comportamientos evitará que un objeto abandone el área del layout?:",
+    "respuesta": "Bound to layout.",
+    "opciones": [
+      "Scroll to.",
+      "Bound to layout.",
+      "Destroy outside layout."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity ¿Cuál de los siguientes son imágenes bitmap que pueden representar otros aspectos de la superficie de un material tal como su reflectividad o rugosidad?:",
+    "respuesta": "Textures.",
+    "opciones": [
+      "Textures.",
+      "Materials.",
+      "Shaders."
+    ]
+  },
+  {
+    "pregunta": "El tipo de luz que tiene la propiedad de crear un efecto de flash es:",
+    "respuesta": "Spotlight.",
+    "opciones": [
+      "Luz direccional.",
+      "Spotlight.",
+      "Pointlight."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity, ¿cómo se llama a la ventana dónde podemos realizar acciones como acceder a los componentes del objeto seleccionado (por ejemplo, para transformarlo) o añadir componentes a dicho objeto (por ejemplo, un script)?:",
+    "respuesta": "Ventana de inspector.",
+    "opciones": [
+      "Ventana de jerarquía.",
+      "Ventana de inspector.",
+      "Ventana de la escena."
+    ]
+  },
+  {
+    "pregunta": "Para calcular el sombreado de un objeto 3D, Unity necesita conocer…:",
+    "respuesta": "La intensidad, dirección y color de la luz que incide sobre éste.",
+    "opciones": [
+      "La propiedad shadow del GameObject.",
+      "La intensidad, dirección y color de la luz que incide sobre éste.",
+      "El gestor de luz intrínseco al componente del objeto."
+    ]
+  },
+  {
+    "pregunta": "¿En qué ventana podemos ver todos los objetos de la escena, crear objetos de distintos tipos, seleccionarlos o borrarlos?:",
+    "respuesta": "Ventana de jerarquía.",
+    "opciones": [
+      "Ventana de la escena.",
+      "Ventana de jerarquía.",
+      "Ventana de inspector."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity, el componente Transform de un GameObject…:",
+    "respuesta": "Determina la Position, Rotation, y Scale de cada objeto en la escena.",
+    "opciones": [
+      "Es fundamental en Unity y representa personajes, props, y el escenario.",
+      "Implementa la verdadera funcionalidad del juego, sin necesidad de otros Components.",
+      "Determina la Position, Rotation, y Scale de cada objeto en la escena."
+    ]
+  },
+  {
+    "pregunta": "Los Point Lights son útiles para…:",
+    "respuesta": "Simular lámparas y otras fuentes de luz locales en la escena.",
+    "opciones": [
+      "Simular flashes y otras fuentes de luz explosivas en la escena.",
+      "Simular fuentes de luz artificiales tales como linternas, los faros de un coche y reflectores.",
+      "Simular lámparas y otras fuentes de luz locales en la escena."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity ¿Cuál de los siguientes hace referencia a las definiciones acerca de cómo la superficie debería ser renderizada, incluyendo referencias a texturas utilizadas, información del tiling (suelo de baldosas), tines de color y más?:",
+    "respuesta": "Materials.",
+    "opciones": [
+      "Materials.",
+      "Textures.",
+      "Shaders."
+    ]
+  },
+  {
+    "pregunta": "El primer paso para incorporar un fondo a nuestro proyecto en Construct 2 es:",
+    "respuesta": "Cambiar los tamaños del proyecto.",
+    "opciones": [
+      "Cambiar los tamaños del proyecto.",
+      "Seleccionar el background.",
+      "Bloquear el Layer."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un formatos de audio sin pérdida?:",
+    "respuesta": "WavPack.",
+    "opciones": [
+      "AIFF.",
+      "Vorbis.",
+      "WavPack."
+    ]
+  },
+  {
+    "pregunta": "MediaController se combina con VídeoView para el manejo de la reproducción del vídeo, enlazándose a través del método…:",
+    "respuesta": "setMediaController.",
+    "opciones": [
+      "setMediaController.",
+      "setControllerMedia.",
+      "MediaController."
+    ]
+  },
+  {
+    "pregunta": "¿Con qué sentencia se da permisos de desbloqueo a la clase MediaPlayer en Android?:",
+    "respuesta": "android.permission.WAVE_LOCK",
+    "opciones": [
+      "android.permission. WAVE_UNLOCK",
+      "android.permission.WAVE_LOCK",
+      "android.permission.GRANT_PERMISSION"
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un formatos de audio sin compresión?:",
+    "respuesta": "WAV.",
+    "opciones": [
+      "WAV.",
+      "MP3.",
+      "FLAC."
+    ]
+  },
+  {
+    "pregunta": "En la clase MediaRecorder ¿qué método define el formato del fichero de salida que se produce durante la grabación.?:",
+    "respuesta": "setOutputFormat.",
+    "opciones": [
+      "setOutputFormat.",
+      "setVideoFormat.",
+      "setOutFormat."
+    ]
+  },
+  {
+    "pregunta": "¿A través de qué método se establece la fuente que contiene el vídeo a reproducir en la clase VídeoView?:",
+    "respuesta": "setVideoURI.",
+    "opciones": [
+      "setVideoSource().",
+      "setVideoURI.",
+      "setDataSource()."
+    ]
+  },
+  {
+    "pregunta": "¿Qué nombre recibe el proceso para la distribución de contenidos multimedia por la red, permitiendo que el usuario pueda consumir el producto en el mismo tiempo que lo descarga?:",
+    "respuesta": "Streaming.",
+    "opciones": [
+      "Recorder.",
+      "Códec.",
+      "Streaming."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes formatos es contenedor de QuickTime?:",
+    "respuesta": "Ninguna de las anteriores.",
+    "opciones": [
+      "Ninguna de las anteriores.",
+      "AVI.",
+      "ASF."
+    ]
+  },
+  {
+    "pregunta": "El paquete Android.media.efect…:",
+    "respuesta": "proporciona varias clases que permiten aplicar una variedad de efectos visuales a imágenes y vídeos como por ejemplo eliminar el efecto de los ojos rojos.",
+    "opciones": [
+      "Contiene las clases para editar los textos descriptivos de imágenes y vídeos.",
+      "Contiene las clases para reproducir y grabar contenidos multimedia de audio y vídeo.",
+      "proporciona varias clases que permiten aplicar una variedad de efectos visuales a imágenes y vídeos como por ejemplo eliminar el efecto de los ojos rojos."
+    ]
+  },
+  {
+    "pregunta": "Representación de palabras, conceptos, ideas mediante dibujos o imágenes, tendí concepto o idea a transmitir:",
+    "respuesta": "Iconográficos.",
+    "opciones": [
+      "Gráficos.",
+      "Imágenes estáticas.",
+      "Iconográficos."
+    ]
+  },
+  {
+    "pregunta": "¿A través de qué clase se permite capturar imágenes o vídeos desde la cámara sin necesidad de tener que usar un objeto Camera?:",
+    "respuesta": "Intent.",
+    "opciones": [
+      "MediaRecorder.",
+      "Intent.",
+      "SurfaceView."
+    ]
+  },
+  {
+    "pregunta": "¿Qué significan las siglas API?:",
+    "respuesta": "Application Programming Interface.",
+    "opciones": [
+      "Android Programming Interface",
+      "Application Programming Interface.",
+      "Application Process Interface."
+    ]
+  },
+  {
+    "pregunta": "La clase VídeoView…:",
+    "respuesta": "Permite visualizar un fichero de vídeo.",
+    "opciones": [
+      "Permite visualizar un fichero de vídeo.",
+      "Hereda de la clase MediaPlayer.",
+      "Proporciona los botones típicos de PLAY, STOP, PAUSA, AVANCE, RETROCESO, etc."
+    ]
+  },
+  {
+    "pregunta": "¿Con qué sentencia se da permisos de Internet en Android?:",
+    "respuesta": "”android.permission.INTERNET”/>.",
+    "opciones": [
+      "”android.permission.WEB”/>.",
+      "”android.permission.INTERNET”/>.",
+      "”android.INTERNET.permission”/>."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes pasos en el proceso de hacer un juego desde cero consiste en crear sprites, texto, modelos e interfaz de usuario para tu juego?:",
+    "respuesta": "Arte.",
+    "opciones": [
+      "Programación.",
+      "Arte.",
+      "Conceptualización."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el paso inicial más importante en cualquier proyecto y en el diseño de los videojuegos no es una excepción?:",
+    "respuesta": "Una planificación adecuada.",
+    "opciones": [
+      "Una planificación adecuada.",
+      "La creación de story boards.",
+      "La depuración del código."
+    ]
+  },
+  {
+    "pregunta": "¿Qué motor de videojuegos 3D es usado en los juegos de Call of duty?:",
+    "respuesta": "IW Engine.",
+    "opciones": [
+      "Unreal.",
+      "IW Engine.",
+      "CryEngine."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes no es un paso en el diseño de videojuegos?:",
+    "respuesta": "Renderización.",
+    "opciones": [
+      "Programación.",
+      "Conceptualización.",
+      "Renderización."
+    ]
+  },
+  {
+    "pregunta": "¿En las fases de diseño de videojuegos como se conocería a la que permitiría hospedarlo en línea, enviarlo a mercados abiertos y enviarlo a sitios cerrados como GooglePlay o iOS App Store?:",
+    "respuesta": "Distribución y publicación.",
+    "opciones": [
+      "Conceptualización.",
+      "Programación.",
+      "Distribución y publicación."
+    ]
+  },
+  {
+    "pregunta": "¿Qué entendemos por IA en un videojuego?:",
+    "respuesta": "Se refiere a las técnicas utilizadas para producir la ilusión de inteligencia en el comportamiento de los personajes no jugadores.",
+    "opciones": [
+      "Se refiere a las técnicas que los motores proporcionan a los desarrolladores para realizar una depuración de código más efectiva.",
+      "Se refiere a las técnicas utilizadas para producir la ilusión de inteligencia en el comportamiento de los personajes no jugadores.",
+      "Se refiere a las técnicas que los motores de videojuegos proporcionan a los desarrolladores para realizar un desarrollo de código más efectivo."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes NO es un motor de videojuegos 2D?:",
+    "respuesta": "2D Real War Engine.",
+    "opciones": [
+      "GameMaker.",
+      "Construct2.",
+      "2D Real War Engine."
+    ]
+  },
+  {
+    "pregunta": "Unity es:",
+    "respuesta": "Uno de los motores más potentes, el cual ofrece múltiples y completos recursos y tutoriales.",
+    "opciones": [
+      "Uno de los motores más potentes, el cual ofrece múltiples y completos recursos y tutoriales.",
+      "Un motor que nos permite crear escenarios de alta calidad con bastante facilidad.",
+      "Unos de los motores más usados dentro de la industria, que nos ofrece alta calidad de gráficos y muchas funcionalidades."
+    ]
+  },
+  {
+    "pregunta": "¿En qué década nos encontramos con una continua mejora del hardware de los videojuegos?:",
+    "respuesta": "Años 90.",
+    "opciones": [
+      "Años 90.",
+      "Años 80.",
+      "Fue en el siglo XXI."
+    ]
+  },
+  {
+    "pregunta": "¿Qué entendemos por juego AAA?:",
+    "respuesta": "Un juego AAA es una clasificación informal utilizada para los videojuegos producidos y distribuidos por una distribuidora importante o editor importante, típicamente teniendo marketing y desarrollo de alto presupuesto.",
+    "opciones": [
+      "Es un videojuego 2D desarrollado sobre el motor del mismo nombre.",
+      "Un juego AAA es una clasificación informal utilizada para los videojuegos producidos y distribuidos por una distribuidora importante o editor importante, típicamente teniendo marketing y desarrollo de alto presupuesto.",
+      "Es un concepto que indica las tres características principales de un videojuego: Availabilty, Action y Assurance."
+    ]
+  },
+  {
+    "pregunta": "Dentro del proceso de “Arte” de un videojuego nos podemos encontrar con…:",
+    "respuesta": "Decidir cada fotograma de cada animación de personaje.",
+    "opciones": [
+      "Lista de verificación de activos.",
+      "Un documento compartido que se denominase ideas.",
+      "Decidir cada fotograma de cada animación de personaje."
+    ]
+  },
+  {
+    "pregunta": "¿Qué motor de videojuegos 3D fue creado por EA y usado por Battlefield y otros títulos?:",
+    "respuesta": "Frostbite.",
+    "opciones": [
+      "Unreal.",
+      "CryEngine.",
+      "Frostbite."
+    ]
+  },
+  {
+    "pregunta": "Un videojuego es…:",
+    "respuesta": "Es un juego electrónico en el que una o más personas interactúan por medio de un controlador, con un dispositivo que muestra imágenes de vídeo.",
+    "opciones": [
+      "Es cualquier programa informático siempre que haya sido renderizado.",
+      "Es cualquier programa informático siempre que contenga una IA (Inteligencia Artificial).",
+      "Es un juego electrónico en el que una o más personas interactúan por medio de un controlador, con un dispositivo que muestra imágenes de vídeo."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, si queremos colocar un objeto en la esquina superior izquierda ¿qué valor debemos indicar en la propiedad “Position”?:",
+    "respuesta": "0,0.",
+    "opciones": [
+      "Depende del tamaño del Layout.",
+      "Debemos fijar aparte la propiedad “Angle” a 0.",
+      "0,0."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity soporta los siguientes lenguajes de forma nativa (sin necesidad de compilar un DLL compatible):",
+    "respuesta": "C#",
+    "opciones": [
+      "Kotlin y Python.",
+      "C#",
+      "C++ y UnityScript (un lenguaje diseñado específicamente para uso con Unity y modelado tras JavaScript)."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity, ¿cómo se llama a la ventana dónde podemos ver todos los objetos de la escena, crear objetos de distintos tipos, seleccionarlos o borrarlos?:",
+    "respuesta": "Ventana de jerarquía.",
+    "opciones": [
+      "Ventana de inspector.",
+      "Ventana de jerarquía.",
+      "Ventana de la escena."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, los eventos…:",
+    "respuesta": "Consisten en condiciones, que comprueban si se cumplen ciertos criterios.",
+    "opciones": [
+      "Consisten en condiciones, que comprueban si se cumplen ciertos criterios.",
+      "Si alguna de las condiciones se cumplen, las acciones de todos los eventos, se ejecutarán",
+      "Si ninguna de las condiciones se cumplen, las acciones de todos los eventos, se ejecutarán"
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes NO es una afirmación correcta sobre el motor de videojuegos Construct?:",
+    "respuesta": "Para poderlo ejecutar sobre otras plataformas distintas a Linux deberemos tener una instalación de Linux mediante Parallels",
+    "opciones": [
+      "Existe una versión gratuita y una de pago, permitiendo la de pago ciertas características adicionales.",
+      "Para poderlo ejecutar sobre otras plataformas distintas a Linux deberemos tener una instalación de Linux mediante Parallels",
+      "Es un motor totalmente gratuito que funciona sobre Windows."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity ¿Cuál de los siguientes son scripts pequeños que contienen los cálculos de matemáticas y algoritmos para calcular el color de cada pixel renderizado, basándose en el input de iluminación y la configuración del Material?:",
+    "respuesta": "Shaders.",
+    "opciones": [
+      "Textures.",
+      "Shaders.",
+      "Materials."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿cuál de los siguientes comportamientos hace que la cámara siga a un objeto que se mueve?:",
+    "respuesta": "Scroll to.",
+    "opciones": [
+      "8 Direction movement.",
+      "Bullet movement.",
+      "Scroll to."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿cuál de los siguientes comportamientos hace que los objetos poco a poco se desvanezcan?:",
+    "respuesta": "Fade.",
+    "opciones": [
+      "Scroll to.",
+      "Bullet movement.",
+      "Fade."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Unity, ¿cuál de las siguientes NO es una afirmación correcta sobre los GameObjects?:",
+    "respuesta": "Implementan la verdadera funcionalidad del juego, sin necesidad de Components.",
+    "opciones": [
+      "Implementan la verdadera funcionalidad del juego, sin necesidad de Components.",
+      "Siempre tiene el componente Transform adjunto (para representar la posición y orientación) y no es posible quitar esto.",
+      "Son objetos fundamentales en Unity que representan personajes, props, y el escenario."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿qué objeto nos permite crear un background (fondo) compuesto de tiles (baldosas) que se repiten a lo largo y ancho formando un mosaico?:",
+    "respuesta": "Tiled Background.",
+    "opciones": [
+      "Tiled Background.",
+      "Filled Tiled.",
+      "Filled Background."
+    ]
+  },
+  {
+    "pregunta": "El renderizado en Unity se hace con…:",
+    "respuesta": "Materials, Shaders y Textures.",
+    "opciones": [
+      "Materials, Shaders y Textures.",
+      "Spot lights y Point lights.",
+      "Objects y Components."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿qué objeto deberíamos utilizar para por ejemplo incluir un monstruo o un jugador?:",
+    "respuesta": "Sprite.",
+    "opciones": [
+      "Main.",
+      "Sprite.",
+      "Player."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes NO es una afirmación correcta sobre el uso de las capas (layer) en el motor de videojuegos Construct?:",
+    "respuesta": "Solo se puede introducir una capa por cada Layout.",
+    "opciones": [
+      "El uso de capas, te permitirá organizar fácilmente los objetos que se encuentren más cerca de ti de otros que se hallen más lejos.",
+      "Las capas pueden ocultarse, bloquearse, contemplan la posibilidad de paralaje y muchas cosas más.",
+      "Solo se puede introducir una capa por cada Layout."
+    ]
+  },
+  {
+    "pregunta": "El paquete Android.media…:",
+    "respuesta": "Contiene las clases para reproducir y grabar contenidos multimedia de audio y vídeo.",
+    "opciones": [
+      "Contiene las clases necesarias para crear recursos iconográficos.",
+      "Contiene las clases para editar los textos descriptivos de imágenes y vídeos.",
+      "Contiene las clases para reproducir y grabar contenidos multimedia de audio y vídeo."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes NO es una fuente de datos multimedia?:",
+    "respuesta": "Realmente todas son fuentes de datos multimedia.",
+    "opciones": [
+      "Clips de audio.",
+      "Realmente todas son fuentes de datos multimedia.",
+      "Secuencias MIDI."
+    ]
+  },
+  {
+    "pregunta": "RTP es…:",
+    "respuesta": "Un protocolo de nivel de sesión para la transmisión de la información en tiempo real.",
+    "opciones": [
+      "Un formato de audio sin pérdida de calidad",
+      "Un formato de audio con pérdida de calidad",
+      "Un protocolo de nivel de sesión para la transmisión de la información en tiempo real."
+    ]
+  },
+  {
+    "pregunta": "¿Qué paquete proporciona varias clases que permiten aplicar una variedad de efectos visuales a imágenes y vídeos?:",
+    "respuesta": "android.media.efect.",
+    "opciones": [
+      "android.image.efect.",
+      "android.media.efect.",
+      "android.video.efect."
+    ]
+  },
+  {
+    "pregunta": "¿Qué método de MediaPlayer se usa para la reproducción de contenidos en la web?:",
+    "respuesta": "setDataSource().",
+    "opciones": [
+      "setDataSource().",
+      "setInternetSource().",
+      "setSource()."
+    ]
+  },
+  {
+    "pregunta": "Una API es…:",
+    "respuesta": "Un conjunto de funciones, métodos y procedimientos que ofrece una biblioteca para ser usada por otro software.",
+    "opciones": [
+      "Un conjunto de funciones, métodos y procedimientos que ofrece la posibilidad de compilar y ejecutar aplicaciones multimedia.",
+      "Un conjunto de funciones, métodos y procedimientos que ofrece una biblioteca para ser usada por otro software.",
+      "Un conjunto de funciones, métodos y procedimientos que ofrece la posibilidad de compilar aplicaciones multimedia."
+    ]
+  },
+  {
+    "pregunta": "MIDI es…:",
+    "respuesta": "Un protocolo de comunicación de serie estándar para comunicar y compartir información en la generación de sonidos entre computadores, sintetizadores, secuenciadores, controladores y demás equipos electrónicos de tratamiento de sonido.",
+    "opciones": [
+      "Un conjunto de elementos multimedia entre los que destacan archivos de música que permite crear aplicaciones multimedia.",
+      "Un estándar para la conversión entre formatos de sonido compatibles.",
+      "Un protocolo de comunicación de serie estándar para comunicar y compartir información en la generación de sonidos entre computadores, sintetizadores, secuenciadores, controladores y demás equipos electrónicos de tratamiento de sonido."
+    ]
+  },
+  {
+    "pregunta": "La clase que permite la grabación tanto de audio como de vídeo es…:",
+    "respuesta": "MediaRecorder.",
+    "opciones": [
+      "MediaRecorder.",
+      "MediaPlayer.",
+      "MediaAccess."
+    ]
+  },
+  {
+    "pregunta": "A la hora de implementar los métodos de la clase MediaPlayer para la reproducción del audio a través de la web…:",
+    "respuesta": "Android Studio pide hacerlo bajo un try-catch para capturar cualquier posible error que se pueda producir.",
+    "opciones": [
+      "Android Studio pide hacerlo bajo un try-catch para capturar cualquier posible error que se pueda producir.",
+      "Es imprescindible comprobar previamente la conexión a Internet utilizando el método checkInternet().",
+      "No es posible, la clase MediaPlayer solo permite reproducir audio desde un fichero local o desde una tarjeta SD."
+    ]
+  },
+  {
+    "pregunta": "¿Qué formato de los siguientes proporciona una compresión de datos con pérdida?:",
+    "respuesta": "MPEG.",
+    "opciones": [
+      "MPEG.",
+      "MOV.",
+      "AVI."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes no es un formato de imagen?:",
+    "respuesta": "ASF.",
+    "opciones": [
+      "ASF.",
+      "PSD.",
+      "EPS."
+    ]
+  },
+  {
+    "pregunta": "En la clase MediaRecorder ¿qué método establece la fuente de audio o de vídeo, respectivamente, para ser usada en la grabación?:",
+    "respuesta": "setAudioSource y setVideoSource.",
+    "opciones": [
+      "setDataSource para ambos.",
+      "setAudioURI y setVideoURI.",
+      "setAudioSource y setVideoSource."
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se conoce al componente central de cualquier motor de juego, 3D o 2D, que vincula todos los subsistemas que se analizarán a continuación en un paquete limpio y fácil de usar?:",
+    "respuesta": "Interfaz de desarrollo.",
+    "opciones": [
+      "Core.",
+      "Renderizado.",
+      "Interfaz de desarrollo."
+    ]
+  },
+  {
+    "pregunta": "¿Qué se entiende por NPC en un videojuego?:",
+    "respuesta": "Son los personajes sin jugador.",
+    "opciones": [
+      "Son los personajes sin jugador.",
+      "Network Power Connect o la capacidad de conectarse a Internet.",
+      "Es la característica que índica la posibilidad del videojuego de ser renderizado."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes necesidades podría estar en el proceso de conceptualización?:",
+    "respuesta": "Arte conceptual.",
+    "opciones": [
+      "Depuración del código.",
+      "Arte conceptual.",
+      "Pruebas."
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes pasos en el proceso de hacer un juego desde cero consiste en escribir los sistemas que determinan cómo el jugador interactúa con el mundo del juego?:",
+    "respuesta": "Programación.",
+    "opciones": [
+      "Conceptualización.",
+      "Arte.",
+      "Programación."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿qué propiedad deberíamos utilizar para cambiar el nombre de un sprite?:",
+    "respuesta": "Name.",
+    "opciones": [
+      "Layer.",
+      "Name.",
+      "Propertie."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿cómo se denomina la primera capa que aparece en la lista de capas?:",
+    "respuesta": "Layer 0.",
+    "opciones": [
+      "Layout 0.",
+      "Layer 1.",
+      "Layer 0."
+    ]
+  },
+  {
+    "pregunta": "En el motor de videojuegos Construct 2, ¿cuál de los siguientes NO es un objeto que permanece oculto en el Layout?:",
+    "respuesta": "texto (Text).",
+    "opciones": [
+      "texto (Text).",
+      "Teclado (Keyboard).",
+      "Ratón (Mouse)."
+    ]
+  }
+]
