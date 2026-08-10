@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Crear sesión - OPOS-TAI</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      font-family: 'Segoe UI', sans-serif;
+
+      background: #f2f4f8;
+
+      color: #333;
+
+      margin: 0;
+
+      min-height: 100vh;
+
+    }
+
+
+    .contenedor {
+
+      width: 100%;
+
+      max-width: 700px;
+
+      margin: 0 auto;
+
+      padding: 1rem;
+
+    }
+
+
+    .card {
+
+      background: white;
+
+      border-radius: 12px;
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+      padding: 1.5rem;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .volver {
+
+      border: none;
+
+      background: none;
+
+      color: #007bff;
+
+      font-size: 0.95rem;
+
+      cursor: pointer;
+
+      padding: 0;
+
+      margin-bottom: 1.2rem;
+
+    }
+
+
+    .volver:hover {
+
+      text-decoration: underline;
+
+    }
+
+
+    .cabecera {
+
+      text-align: center;
+
+    }
+
+
+    .cabecera h1 {
+
+      margin: 0 0 0.4rem;
+
+      font-size: 1.5rem;
+
+    }
+
+
+    .cabecera p {
+
+      margin: 0;
+
+      color: #666;
+
+    }
+
+
+    .campo {
+
+      margin-bottom: 1.3rem;
+
+    }
+
+
+    .campo label {
+
+      display: block;
+
+      font-weight: 600;
+
+      margin-bottom: 0.5rem;
+
+    }
+
+
+    .campo input {
+
+      width: 100%;
+
+      padding: 0.75rem;
+
+      border: 1px solid #ccc;
+
+      border-radius: 8px;
+
+      font-family: inherit;
+
+      font-size: 1rem;
+
+    }
+
+
+    .campo input:focus {
+
+      outline: none;
+
+      border-color: #007bff;
+
+    }
+
+
+    .titulo-seccion {
+
+      font-size: 1.1rem;
+
+      margin: 0 0 1rem;
+
+    }
+
+
+    .asignatura {
+
+      border: 1px solid #ddd;
+
+      border-radius: 10px;
+
+      margin-bottom: 0.8rem;
+
+      overflow: hidden;
+
+    }
+
+
+    .asignatura-cabecera {
+
+      padding: 0.9rem 1rem;
+
+      background: #f7f7f7;
+
+      font-weight: 600;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.6rem;
+
+    }
+
+
+    .capitulos {
+
+      padding: 0.5rem 1rem 0.8rem;
+
+    }
+
+
+    .capitulo {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.7rem;
+
+      padding: 0.65rem 0;
+
+      cursor: pointer;
+
+    }
+
+
+    .capitulo input {
+
+      width: 18px;
+
+      height: 18px;
+
+      cursor: pointer;
+
+    }
+
+
+    .capitulo label {
+
+      cursor: pointer;
+
+      flex: 1;
+
+    }
+
+
+    .opciones {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.8rem;
+
+    }
+
+
+    .numero-preguntas {
+
+      width: 120px !important;
+
+    }
+
+
+    .ayuda {
+
+      color: #777;
+
+      font-size: 0.85rem;
+
+      margin-top: 0.4rem;
+
+    }
+
+
+    .fila-opcion {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.7rem;
+
+      padding: 0.5rem 0;
+
+      cursor: pointer;
+
+    }
+
+
+    .fila-opcion input {
+
+      width: 18px;
+
+      height: 18px;
+
+      cursor: pointer;
+
+    }
+
+
+    .acciones {
+
+      display: flex;
+
+      gap: 0.7rem;
+
+      margin-top: 1.5rem;
+
+    }
+
+
+    .boton {
+
+      flex: 1;
+
+      padding: 0.8rem 1rem;
+
+      border-radius: 8px;
+
+      font-family: inherit;
+
+      font-size: 1rem;
+
+      cursor: pointer;
+
+    }
+
+
+    .boton-principal {
+
+      border: none;
+
+      background: #007bff;
+
+      color: white;
+
+    }
+
+
+    .boton-principal:hover {
+
+      background: #0069d9;
+
+    }
+
+
+    .boton-secundario {
+
+      border: 1px solid #ddd;
+
+      background: white;
+
+      color: #333;
+
+    }
+
+
+    .boton-secundario:hover {
+
+      background: #f0f0f0;
+
+    }
+
+
+    .error {
+
+      color: #dc3545;
+
+      background: #fff0f0;
+
+      border: 1px solid #f0cccc;
+
+      border-radius: 8px;
+
+      padding: 0.8rem;
+
+      margin-bottom: 1rem;
+
+      display: none;
+
+    }
+
+
+    .cargando {
+
+      text-align: center;
+
+      color: #777;
+
+      padding: 1rem;
+
+    }
+
+
+    .resumen {
+
+      background: #f7f9fc;
+
+      border-radius: 8px;
+
+      padding: 1rem;
+
+      margin-top: 1rem;
+
+      font-size: 0.9rem;
+
+      color: #555;
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <main class="contenedor">
+
+
+    <!-- =====================================================
+         CABECERA
+    ====================================================== -->
+
+    <section class="card">
+
+      <button
+        class="volver"
+        onclick="window.location.href='sesiones.html'"
+      >
+
+        ← Volver a mis sesiones
+
+      </button>
+
+
+      <div class="cabecera">
+
+        <h1 id="titulo">
+          🎯 Nueva sesión
+        </h1>
+
+        <p id="subtitulo">
+          Combina capítulos de cualquier asignatura.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DATOS DE LA SESIÓN
+    ====================================================== -->
+
+    <section class="card">
+
+      <div class="campo">
+
+        <label for="nombre">
+          Nombre de la sesión
+        </label>
+
+
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Ej. Constitución primeros capítulos"
+          maxlength="100"
+        >
+
+      </div>
+
+
+      <!-- ===================================================
+           SELECCIÓN DE CAPÍTULOS
+      ==================================================== -->
+
+      <h2 class="titulo-seccion">
+        📚 Contenido
+      </h2>
+
+
+      <div id="error" class="error"></div>
+
+
+      <div id="contenido">
+
+        <div class="cargando">
+          Cargando asignaturas...
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           OPCIONES DEL TEST
+      ==================================================== -->
+
+      <h2 class="titulo-seccion" style="margin-top: 1.5rem;">
+        ⚙️ Opciones del test
+      </h2>
+
+
+      <div class="campo">
+
+        <label for="numeroPreguntas">
+          Número de preguntas
+        </label>
+
+
+        <div class="opciones">
+
+          <input
+            class="numero-preguntas"
+            type="number"
+            id="numeroPreguntas"
+            value="30"
+            min="1"
+            max="500"
+          >
+
+          <span>
+            preguntas
+          </span>
+
+        </div>
+
+
+        <div class="ayuda">
+          Si hay menos preguntas disponibles, se utilizarán
+          todas las disponibles.
+        </div>
+
+      </div>
+
+
+      <label class="fila-opcion">
+
+        <input
+          type="checkbox"
+          id="aleatorio"
+          checked
+        >
+
+        <span>
+          🔀 Preguntas aleatorias
+        </span>
+
+      </label>
+
+
+      <!-- ===================================================
+           RESUMEN
+      ==================================================== -->
+
+      <div
+        id="resumen"
+        class="resumen"
+      >
+
+        No has seleccionado ningún capítulo.
+
+      </div>
+
+
+      <!-- ===================================================
+           ACCIONES
+      ==================================================== -->
+
+      <div class="acciones">
+
+        <button
+          class="boton boton-secundario"
+          onclick="window.location.href='sesiones.html'"
+        >
+
+          Cancelar
+
+        </button>
+
+
+        <button
+          class="boton boton-principal"
+          onclick="guardarSesion()"
+        >
+
+          💾 Guardar sesión
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <script>
+
+
+    /* ========================================================
+       CONFIGURACIÓN
+    ======================================================== */
+
+    const PROPIETARIO = "sxrgiohb";
+
+    const REPOSITORIO = "OPOS-TAI";
+
+    const CARPETA_DATOS = "data";
+
+    const CLAVE_SESIONES =
+      "opos_tai_sesiones";
+
+
+    /* ========================================================
+       ELEMENTOS
+    ======================================================== */
+
+    const contenido =
+      document.getElementById("contenido");
+
+    const error =
+      document.getElementById("error");
+
+    const resumen =
+      document.getElementById("resumen");
+
+
+    /* ========================================================
+       EDITAR SESIÓN
+    ======================================================== */
+
+    const parametros =
+      new URLSearchParams(
+        window.location.search
+      );
+
+
+    const indiceEditar =
+      parametros.has("editar")
+        ? Number(parametros.get("editar"))
+        : null;
+
+
+    /* ========================================================
+       DECODIFICAR BASE64
+    ======================================================== */
+
+    function decodificarBase64(base64) {
+
+      const binario =
+        atob(
+          base64.replace(/\s/g, "")
+        );
+
+
+      const bytes =
+        new Uint8Array(
+          binario.length
+        );
+
+
+      for (
+        let i = 0;
+        i < binario.length;
+        i++
+      ) {
+
+        bytes[i] =
+          binario.charCodeAt(i);
+
+      }
+
+
+      return new TextDecoder(
+        "utf-8"
+      ).decode(bytes);
+
+    }
+
+
+    /* ========================================================
+       CARGAR ASIGNATURAS
+    ======================================================== */
+
+    async function cargarAsignaturas() {
+
+      try {
+
+        const url =
+          `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}`;
+
+
+        const respuesta =
+          await fetch(url);
+
+
+        if (!respuesta.ok) {
+
+          throw new Error(
+            `GitHub API: ${respuesta.status}`
+          );
+
+        }
+
+
+        const elementos =
+          await respuesta.json();
+
+
+        const carpetas =
+          elementos.filter(
+            elemento =>
+              elemento.type === "dir"
+          );
+
+
+        if (carpetas.length === 0) {
+
+          contenido.innerHTML = `
+
+            <div class="cargando">
+
+              No hay asignaturas disponibles.
+
+            </div>
+
+          `;
+
+          return;
+
+        }
+
+
+        contenido.innerHTML = "";
+
+
+        /*
+         * Cargamos todas las configuraciones.
+         */
+
+        for (const carpeta of carpetas) {
+
+          await cargarConfiguracion(
+            carpeta.name
+          );
+
+        }
+
+
+        /*
+         * Una vez creados los capítulos,
+         * actualizamos el resumen.
+         */
+
+        actualizarResumen();
+
+
+        /*
+         * Si estamos editando una sesión,
+         * cargamos sus datos.
+         */
+
+        if (indiceEditar !== null) {
+
+          cargarSesionParaEditar();
+
+        }
+
+      }
+
+
+      catch (e) {
+
+        console.error(e);
+
+        mostrarError(
+          "No se han podido cargar las asignaturas."
+        );
+
+      }
+
+    }
+
+
+    /* ========================================================
+       CARGAR CONFIG.JSON
+    ======================================================== */
+
+    async function cargarConfiguracion(
+      carpeta
+    ) {
+
+      try {
+
+        const url =
+          `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}/${carpeta}/config.json`;
+
+
+        const respuesta =
+          await fetch(url);
+
+
+        if (!respuesta.ok) {
+
+          console.warn(
+            `No se encontró config.json en ${carpeta}`
+          );
+
+          return;
+
+        }
+
+
+        const archivo =
+          await respuesta.json();
+
+
+        const contenidoJSON =
+          decodificarBase64(
+            archivo.content
+          );
+
+
+        const configuracion =
+          JSON.parse(
+            contenidoJSON
+          );
+
+
+        crearAsignatura(
+          configuracion,
+          carpeta
+        );
+
+      }
+
+
+      catch (e) {
+
+        console.error(
+          `Error cargando ${carpeta}:`,
+          e
+        );
+
+      }
+
+    }
+
+
+    /* ========================================================
+       CREAR ASIGNATURA
+    ======================================================== */
+
+    function crearAsignatura(
+      configuracion,
+      carpeta
+    ) {
+
+      const contenedorAsignatura =
+        document.createElement("div");
+
+
+      contenedorAsignatura.className =
+        "asignatura";
+
+
+      const nombre =
+        configuracion.nombre ||
+        carpeta;
+
+
+      const icono =
+        configuracion.icono ||
+        "📚";
+
+
+      contenedorAsignatura.innerHTML = `
+
+        <div class="asignatura-cabecera">
+
+          <span>
+            ${icono}
+          </span>
+
+          <span>
+            ${escaparHTML(nombre)}
+          </span>
+
+        </div>
+
+
+        <div class="capitulos"></div>
+
+      `;
+
+
+      const listaCapitulos =
+        contenedorAsignatura.querySelector(
+          ".capitulos"
+        );
+
+
+      /*
+       * Crear cada checkbox.
+       */
+
+      const capitulos =
+        configuracion.capitulos || [];
+
+
+      capitulos.forEach(
+        capitulo => {
+
+          const idCheckbox =
+            `capitulo-${generarId(
+              carpeta + "-" + capitulo.id
+            )}`;
+
+
+          const fila =
+            document.createElement("div");
+
+
+          fila.className =
+            "capitulo";
+
+
+          fila.innerHTML = `
+
+            <input
+              type="checkbox"
+              id="${idCheckbox}"
+              data-asignatura="${escaparAtributo(carpeta)}"
+              data-asignatura-nombre="${escaparAtributo(nombre)}"
+              data-capitulo="${escaparAtributo(capitulo.id)}"
+              data-capitulo-nombre="${escaparAtributo(capitulo.nombre)}"
+              data-archivo="${escaparAtributo(capitulo.archivo || "")}"
+            >
+
+
+            <label for="${idCheckbox}">
+
+              📘
+              ${escaparHTML(capitulo.nombre)}
+
+            </label>
+
+          `;
+
+
+          const checkbox =
+            fila.querySelector(
+              "input"
+            );
+
+
+          checkbox.addEventListener(
+            "change",
+            actualizarResumen
+          );
+
+
+          listaCapitulos.appendChild(
+            fila
+          );
+
+        }
+      );
+
+
+      contenido.appendChild(
+        contenedorAsignatura
+      );
+
+    }
+
+
+    /* ========================================================
+       ACTUALIZAR RESUMEN
+    ======================================================== */
+
+    function actualizarResumen() {
+
+      const seleccionados =
+        obtenerCapitulosSeleccionados();
+
+
+      if (seleccionados.length === 0) {
+
+        resumen.textContent =
+          "No has seleccionado ningún capítulo.";
+
+        return;
+
+      }
+
+
+      const cantidad =
+        seleccionados.length;
+
+
+      resumen.innerHTML = `
+
+        <strong>
+          ${cantidad}
+          capítulo${cantidad !== 1 ? "s" : ""}
+          seleccionado${cantidad !== 1 ? "s" : ""}
+        </strong>
+
+        <br>
+
+        ${seleccionados
+          .map(
+            elemento =>
+              `${escaparHTML(elemento.asignaturaNombre)}
+               — ${escaparHTML(elemento.capituloNombre)}`
+          )
+          .join("<br>")}
+
+      `;
+
+    }
+
+
+    /* ========================================================
+       OBTENER CAPÍTULOS SELECCIONADOS
+    ======================================================== */
+
+    function obtenerCapitulosSeleccionados() {
+
+      const checkboxes =
+        document.querySelectorAll(
+          '#contenido input[type="checkbox"]:checked'
+        );
+
+
+      return Array.from(
+        checkboxes
+      ).map(
+        checkbox => ({
+
+          asignatura:
+            checkbox.dataset.asignatura,
+
+          asignaturaNombre:
+            checkbox.dataset.asignaturaNombre,
+
+          capitulo:
+            checkbox.dataset.capitulo,
+
+          capituloNombre:
+            checkbox.dataset.capituloNombre,
+
+          archivo:
+            checkbox.dataset.archivo
+
+        })
+      );
+
+    }
+
+
+    /* ========================================================
+       GUARDAR SESIÓN
+    ======================================================== */
+
+    function guardarSesion() {
+
+      ocultarError();
+
+
+      const nombre =
+        document.getElementById(
+          "nombre"
+        ).value.trim();
+
+
+      const numeroPreguntas =
+        Number(
+          document.getElementById(
+            "numeroPreguntas"
+          ).value
+        );
+
+
+      const aleatorio =
+        document.getElementById(
+          "aleatorio"
+        ).checked;
+
+
+      const capitulos =
+        obtenerCapitulosSeleccionados();
+
+
+      /*
+       * Validaciones
+       */
+
+      if (!nombre) {
+
+        mostrarError(
+          "Escribe un nombre para la sesión."
+        );
+
+        return;
+
+      }
+
+
+      if (capitulos.length === 0) {
+
+        mostrarError(
+          "Selecciona al menos un capítulo."
+        );
+
+        return;
+
+      }
+
+
+      if (
+        !Number.isInteger(numeroPreguntas) ||
+        numeroPreguntas < 1
+      ) {
+
+        mostrarError(
+          "El número de preguntas no es válido."
+        );
+
+        return;
+
+      }
+
+
+      /*
+       * Construir objeto de sesión.
+       */
+
+      const sesion = {
+
+        id:
+          generarIdUnico(),
+
+        nombre:
+          nombre,
+
+        capitulos:
+          capitulos,
+
+        numeroPreguntas:
+          numeroPreguntas,
+
+        aleatorio:
+          aleatorio,
+
+        fechaCreacion:
+          new Date().toISOString()
+
+      };
+
+
+      /*
+       * Obtener sesiones existentes.
+       */
+
+      const sesiones =
+        obtenerSesiones();
+
+
+      /*
+       * Si estamos editando,
+       * sustituimos la sesión existente.
+       */
+
+      if (
+        indiceEditar !== null &&
+        sesiones[indiceEditar]
+      ) {
+
+        sesion.id =
+          sesiones[indiceEditar].id ||
+          sesion.id;
+
+
+        sesion.fechaCreacion =
+          sesiones[indiceEditar].fechaCreacion ||
+          sesion.fechaCreacion;
+
+
+        sesiones[indiceEditar] =
+          sesion;
+
+      }
+
+
+      else {
+
+        sesiones.push(
+          sesion
+        );
+
+      }
+
+
+      /*
+       * Guardar en el navegador.
+       */
+
+      localStorage.setItem(
+        CLAVE_SESIONES,
+        JSON.stringify(sesiones)
+      );
+
+
+      /*
+       * Volver a Mis sesiones.
+       */
+
+      window.location.href =
+        "sesiones.html";
+
+    }
+
+
+    /* ========================================================
+       CARGAR SESIÓN PARA EDITAR
+    ======================================================== */
+
+    function cargarSesionParaEditar() {
+
+      const sesiones =
+        obtenerSesiones();
+
+
+      const sesion =
+        sesiones[indiceEditar];
+
+
+      if (!sesion) {
+
+        mostrarError(
+          "No se encontró la sesión que quieres editar."
+        );
+
+        return;
+
+      }
+
+
+      /*
+       * Cambiar título.
+       */
+
+      document.getElementById(
+        "titulo"
+      ).textContent =
+        "✏️ Editar sesión";
+
+
+      document.getElementById(
+        "subtitulo"
+      ).textContent =
+        "Modifica la configuración de tu sesión.";
+
+
+      /*
+       * Nombre.
+       */
+
+      document.getElementById(
+        "nombre"
+      ).value =
+        sesion.nombre || "";
+
+
+      /*
+       * Número de preguntas.
+       */
+
+      document.getElementById(
+        "numeroPreguntas"
+      ).value =
+        sesion.numeroPreguntas || 30;
+
+
+      /*
+       * Aleatorio.
+       */
+
+      document.getElementById(
+        "aleatorio"
+      ).checked =
+        sesion.aleatorio !== false;
+
+
+      /*
+       * Marcar capítulos.
+       */
+
+      const seleccionados =
+        sesion.capitulos || [];
+
+
+      const checkboxes =
+        document.querySelectorAll(
+          '#contenido input[type="checkbox"]'
+        );
+
+
+      checkboxes.forEach(
+        checkbox => {
+
+          const coincide =
+            seleccionados.some(
+              elemento =>
+
+                elemento.asignatura ===
+                  checkbox.dataset.asignatura &&
+
+                elemento.capitulo ===
+                  checkbox.dataset.capitulo
+
+            );
+
+
+          checkbox.checked =
+            coincide;
+
+        }
+      );
+
+
+      actualizarResumen();
+
+    }
+
+
+    /* ========================================================
+       SESIONES GUARDADAS
+    ======================================================== */
+
+    function obtenerSesiones() {
+
+      const datos =
+        localStorage.getItem(
+          CLAVE_SESIONES
+        );
+
+
+      if (!datos) {
+
+        return [];
+
+      }
+
+
+      try {
+
+        const sesiones =
+          JSON.parse(datos);
+
+
+        return Array.isArray(
+          sesiones
+        )
+          ? sesiones
+          : [];
+
+      }
+
+
+      catch (e) {
+
+        console.error(e);
+
+        return [];
+
+      }
+
+    }
+
+
+    /* ========================================================
+       MOSTRAR ERROR
+    ======================================================== */
+
+    function mostrarError(
+      mensaje
+    ) {
+
+      error.textContent =
+        "❌ " + mensaje;
+
+
+      error.style.display =
+        "block";
+
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+
+
+    /* ========================================================
+       OCULTAR ERROR
+    ======================================================== */
+
+    function ocultarError() {
+
+      error.style.display =
+        "none";
+
+    }
+
+
+    /* ========================================================
+       GENERAR ID
+    ======================================================== */
+
+    function generarIdUnico() {
+
+      return (
+        Date.now().toString(36) +
+        Math.random()
+          .toString(36)
+          .substring(2, 8)
+      );
+
+    }
+
+
+    function generarId(
+      texto
+    ) {
+
+      let hash = 0;
+
+
+      for (
+        let i = 0;
+        i < texto.length;
+        i++
+      ) {
+
+        hash =
+          (
+            (
+              hash << 5
+            ) -
+            hash
+          ) +
+          texto.charCodeAt(i);
+
+
+        hash |= 0;
+
+      }
+
+
+      return Math.abs(
+        hash
+      ).toString(36);
+
+    }
+
+
+    /* ========================================================
+       ESCAPAR HTML
+    ======================================================== */
+
+    function escaparHTML(
+      texto
+    ) {
+
+      const elemento =
+        document.createElement(
+          "div"
+        );
+
+
+      elemento.textContent =
+        texto;
+
+
+      return elemento.innerHTML;
+
+    }
+
+
+    /* ========================================================
+       ESCAPAR ATRIBUTOS
+    ======================================================== */
+
+    function escaparAtributo(
+      texto
+    ) {
+
+      return String(
+        texto
+      )
+        .replace(
+          /&/g,
+          "&amp;"
+        )
+        .replace(
+          /"/g,
+          "&quot;"
+        )
+        .replace(
+          /</g,
+          "&lt;"
+        )
+        .replace(
+          />/g,
+          "&gt;"
+        );
+
+    }
+
+
+    /* ========================================================
+       INICIAR
+    ======================================================== */
+
+    cargarAsignaturas();
+
+
+  </script>
+
+
+</body>
+
+</html>
