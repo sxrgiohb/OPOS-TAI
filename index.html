@@ -12,118 +12,212 @@
 
   <title>OPOSICIONES - Técnico Auxiliar Informático</title>
 
+
   <style>
 
     * {
       box-sizing: border-box;
     }
 
+
     body {
+
       font-family: 'Segoe UI', sans-serif;
+
       background: #f2f4f8;
+
       color: #333;
+
       margin: 0;
+
       min-height: 100vh;
+
     }
+
 
     .contenedor {
+
       width: 100%;
+
       max-width: 700px;
+
       margin: 0 auto;
+
       padding: 1rem;
+
     }
+
 
     .card {
+
       background: white;
+
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
       padding: 1.5rem;
+
       margin-bottom: 1rem;
+
     }
+
 
     .cabecera {
+
       text-align: center;
+
     }
+
 
     .cabecera h1 {
+
       margin: 0 0 0.4rem;
+
       font-size: 1.5rem;
+
     }
+
 
     .cabecera p {
+
       margin: 0;
+
       color: #666;
+
     }
+
 
     .titulo-seccion {
+
       font-size: 1.1rem;
+
       margin-top: 0;
+
     }
+
 
     #asignaturas {
+
       display: flex;
+
       flex-direction: column;
+
       gap: 0.8rem;
+
     }
 
+
     .asignatura {
+
       width: 100%;
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
 
       padding: 1rem;
 
       background: #f7f7f7;
+
       border: 1px solid transparent;
+
       border-radius: 8px;
 
       font-family: inherit;
+
       font-size: 1rem;
+
       text-align: left;
 
       cursor: pointer;
+
+      transition: 0.2s;
+
     }
+
 
     .asignatura:hover {
+
       background: #eaeaea;
+
       border-color: #ddd;
+
+      transform: translateY(-1px);
+
     }
+
 
     .asignatura-info {
+
       display: flex;
+
       align-items: center;
+
       gap: 0.8rem;
+
     }
 
+
     .icono {
-      width: 40px;
-      height: 40px;
+
+      width: 42px;
+
+      height: 42px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       background: #e9f2ff;
+
       border-radius: 8px;
 
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+
+      flex-shrink: 0;
+
     }
+
 
     .nombre {
+
       font-weight: 600;
+
     }
+
 
     .flecha {
+
       color: #007bff;
+
       font-size: 1.3rem;
+
     }
 
+
     #estado {
+
       text-align: center;
+
       color: #666;
+
       padding: 1rem 0;
+
     }
+
+
+    .error {
+
+      color: #dc3545 !important;
+
+    }
+
 
   </style>
 
@@ -132,14 +226,19 @@
 
 <body>
 
+
   <main class="contenedor">
 
 
-    <!-- CABECERA -->
+    <!-- =====================================================
+         CABECERA
+    ====================================================== -->
 
     <section class="card cabecera">
 
-      <h1>OPOSICIONES</h1>
+      <h1>
+        OPOSICIONES
+      </h1>
 
       <p>
         Técnico Auxiliar Informático
@@ -148,7 +247,9 @@
     </section>
 
 
-    <!-- ASIGNATURAS -->
+    <!-- =====================================================
+         ASIGNATURAS
+    ====================================================== -->
 
     <section class="card">
 
@@ -156,9 +257,11 @@
         📚 Asignaturas
       </h2>
 
+
       <div id="estado">
         Cargando asignaturas...
       </div>
+
 
       <div id="asignaturas"></div>
 
@@ -170,17 +273,21 @@
 
   <script>
 
-    /*
-     * Repositorio de GitHub
-     */
+
+    /* ========================================================
+       CONFIGURACIÓN DEL REPOSITORIO
+    ======================================================== */
 
     const propietario = "sxrgiohb";
+
     const repositorio = "OPOS-TAI";
 
+    const carpetaDatos = "data";
 
-    /*
-     * Elementos de la página
-     */
+
+    /* ========================================================
+       ELEMENTOS DEL HTML
+    ======================================================== */
 
     const estado =
       document.getElementById("estado");
@@ -189,16 +296,18 @@
       document.getElementById("asignaturas");
 
 
-    /*
-     * Cargar los archivos JSON de /data
-     */
+    /* ========================================================
+       CARGAR ASIGNATURAS
+       
+       Buscamos las carpetas que existen dentro de /data
+    ======================================================== */
 
     async function cargarAsignaturas() {
 
       try {
 
         const url =
-          `https://api.github.com/repos/${propietario}/${repositorio}/contents/data`;
+          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}`;
 
 
         const respuesta =
@@ -208,28 +317,35 @@
         if (!respuesta.ok) {
 
           throw new Error(
-            "No se pudo acceder a la carpeta data"
+            `GitHub ha devuelto el estado ${respuesta.status}`
           );
 
         }
 
 
-        const archivos =
+        const elementos =
           await respuesta.json();
 
 
         /*
-         * Solo queremos archivos .json
+         * Solo nos interesan las carpetas.
+         *
+         * Por ejemplo:
+         *
+         * data/
+         * ├── constitucion/  ← ESTA
+         * ├── big-data/      ← ESTA
+         * └── archivo.json   ← IGNORADO
          */
 
-        const jsons =
-          archivos.filter(archivo =>
-            archivo.type === "file" &&
-            archivo.name.toLowerCase().endsWith(".json")
+        const carpetas =
+          elementos.filter(
+            elemento =>
+              elemento.type === "dir"
           );
 
 
-        if (jsons.length === 0) {
+        if (carpetas.length === 0) {
 
           estado.textContent =
             "No hay asignaturas todavía.";
@@ -239,71 +355,207 @@
         }
 
 
+        /*
+         * Limpiamos el mensaje de carga.
+         */
+
         estado.style.display = "none";
 
 
         /*
-         * Crear un botón para cada JSON
+         * Cargamos el config.json de cada asignatura.
          */
 
-        jsons.forEach(archivo => {
+        for (const carpeta of carpetas) {
 
-          const boton =
-            document.createElement("button");
+          await cargarAsignatura(
+            carpeta.name
+          );
 
-
-          boton.className = "asignatura";
-
-
-          const nombre =
-            archivo.name
-              .replace(".json", "")
-              .replace(/[-_]/g, " ")
-              .replace(/\b\w/g, letra =>
-                letra.toUpperCase()
-              );
-
-
-          boton.innerHTML = `
-
-            <span class="asignatura-info">
-
-              <span class="icono">
-                📚
-              </span>
-
-              <span class="nombre">
-                ${nombre}
-              </span>
-
-            </span>
-
-            <span class="flecha">
-              ›
-            </span>
-
-          `;
-
-
-          asignaturas.appendChild(boton);
-
-        });
+        }
 
       }
+
 
       catch (error) {
 
         console.error(error);
 
+
+        estado.classList.add("error");
+
+
         estado.textContent =
-          "❌ Error al cargar las asignaturas.";
+          "❌ No se han podido cargar las asignaturas.";
 
       }
 
     }
 
 
+    /* ========================================================
+       CARGAR CONFIGURACIÓN DE UNA ASIGNATURA
+    ======================================================== */
+
+    async function cargarAsignatura(
+      carpeta
+    ) {
+
+      try {
+
+        const url =
+          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${carpeta}/config.json`;
+
+
+        const respuesta =
+          await fetch(url);
+
+
+        if (!respuesta.ok) {
+
+          console.warn(
+            `No se encontró config.json en ${carpeta}`
+          );
+
+          return;
+
+        }
+
+
+        const archivo =
+          await respuesta.json();
+
+
+        /*
+         * GitHub devuelve el contenido de un archivo
+         * codificado en Base64.
+         */
+
+        const contenido =
+          decodeURIComponent(
+            escape(
+              atob(
+                archivo.content.replace(/\n/g, "")
+              )
+            )
+          );
+
+
+        const configuracion =
+          JSON.parse(contenido);
+
+
+        crearBotonAsignatura(
+          configuracion,
+          carpeta
+        );
+
+      }
+
+
+      catch (error) {
+
+        console.error(
+          `Error cargando ${carpeta}:`,
+          error
+        );
+
+      }
+
+    }
+
+
+    /* ========================================================
+       CREAR BOTÓN DE ASIGNATURA
+    ======================================================== */
+
+    function crearBotonAsignatura(
+      configuracion,
+      carpeta
+    ) {
+
+      const boton =
+        document.createElement("button");
+
+
+      boton.className =
+        "asignatura";
+
+
+      boton.type =
+        "button";
+
+
+      boton.innerHTML = `
+
+        <span class="asignatura-info">
+
+          <span class="icono">
+            ${configuracion.icono || "📚"}
+          </span>
+
+          <span class="nombre">
+            ${configuracion.nombre || carpeta}
+          </span>
+
+        </span>
+
+        <span class="flecha">
+          ›
+        </span>
+
+      `;
+
+
+      /*
+       * De momento guardamos la información de la
+       * asignatura en la URL.
+       *
+       * En el siguiente paso crearemos la pantalla
+       * de capítulos.
+       */
+
+      boton.addEventListener(
+        "click",
+        () => {
+
+          abrirAsignatura(
+            carpeta
+          );
+
+        }
+      );
+
+
+      asignaturas.appendChild(
+        boton
+      );
+
+    }
+
+
+    /* ========================================================
+       ABRIR ASIGNATURA
+    ======================================================== */
+
+    function abrirAsignatura(
+      carpeta
+    ) {
+
+      window.location.href =
+        `capitulos.html?asignatura=${encodeURIComponent(
+          carpeta
+        )}`;
+
+    }
+
+
+    /* ========================================================
+       INICIAR
+    ======================================================== */
+
     cargarAsignaturas();
+
 
   </script>
 
@@ -311,4 +563,3 @@
 </body>
 
 </html>
-```
