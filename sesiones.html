@@ -519,36 +519,49 @@
        INICIAR SESIÓN
     ======================================================== */
 
+    /* ========================================================
+       INICIAR SESIÓN
+    ======================================================== */
+    
     function iniciarSesion(
       indice
     ) {
-
+    
       const sesiones =
         obtenerSesiones();
-
-
+    
+    
       const sesion =
         sesiones[indice];
-
-
+    
+    
       if (!sesion) {
-
+    
         return;
-
+    
       }
-
-
+    
+    
       /*
-       * Todavía no conectamos esto con el motor de preguntas.
+       * Abrimos el test pasando el ID de la sesión.
        *
-       * Por ahora mostramos la configuración.
+       * Ejemplo:
+       *
+       * test.html?sesion=abc123
+       *
+       * test.html será el encargado posteriormente
+       * de recuperar la configuración y cargar las
+       * preguntas correspondientes.
        */
-
-      alert(
-        `Sesión seleccionada:\n\n${sesion.nombre}`
-      );
-
+    
+      window.location.href =
+        `test.html?sesion=${encodeURIComponent(
+          sesion.id
+        )}`;
+    
     }
+
+
 
 
     /* ========================================================
