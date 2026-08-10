@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>TEST - Oposiciones</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      font-family: 'Segoe UI', sans-serif;
+
+      background: #f2f4f8;
+
+      color: #333;
+
+      margin: 0;
+
+      padding: 0;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: flex-start;
+
+      min-height: 100vh;
+
+    }
+
+
+    .contenedor {
+
+      width: 100%;
+
+      max-width: 700px;
+
+      padding: 1rem;
+
+    }
+
+
+    .card {
+
+      background: #fff;
+
+      border-radius: 12px;
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+      padding: 1.5rem;
+
+      margin-bottom: 1rem;
+
+      width: 100%;
+
+    }
+
+
+    #asignatura {
+
+      color: #007bff;
+
+      font-size: 0.9rem;
+
+      font-weight: 600;
+
+      margin-bottom: 0.5rem;
+
+    }
+
+
+    #pregunta {
+
+      font-size: 1.1rem;
+
+      margin-bottom: 1.2rem;
+
+    }
+
+
+    .option {
+
+      background: #f7f7f7;
+
+      border-radius: 8px;
+
+      padding: 0.8rem 1rem;
+
+      margin-bottom: 0.8rem;
+
+      cursor: pointer;
+
+      display: flex;
+
+      align-items: center;
+
+      transition: background 0.2s ease;
+
+    }
+
+
+    .option:hover {
+
+      background: #eaeaea;
+
+    }
+
+
+    .option input {
+
+      margin-right: 0.5rem;
+
+      transform: scale(1.2);
+
+    }
+
+
+    button {
+
+      width: 100%;
+
+      padding: 1rem;
+
+      background: #007bff;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 6px;
+
+      font-size: 1rem;
+
+      margin-top: 1rem;
+
+      cursor: pointer;
+
+      transition: background 0.2s ease;
+
+    }
+
+
+    button:hover {
+
+      background: #0056b3;
+
+    }
+
+
+    #reiniciar {
+
+      background: #dc3545;
+
+      margin-top: 0.5rem;
+
+    }
+
+
+    #reiniciar:hover {
+
+      background: #a71d2a;
+
+    }
+
+
+    #resultado {
+
+      margin-top: 1rem;
+
+      font-weight: bold;
+
+      font-size: 1rem;
+
+      text-align: center;
+
+    }
+
+
+    #resultado.correcto {
+
+      color: green;
+
+    }
+
+
+    #resultado.incorrecto {
+
+      color: red;
+
+    }
+
+
+    .estadisticas {
+
+      margin-top: 1.5rem;
+
+      font-size: 0.95rem;
+
+      color: #555;
+
+      text-align: center;
+
+    }
+
+
+    .question-item {
+
+      margin-bottom: 1.5rem;
+
+      padding-bottom: 1rem;
+
+      border-bottom: 1px solid #eee;
+
+    }
+
+
+    .question-item h3 {
+
+      font-size: 1rem;
+
+      margin-bottom: 0.5rem;
+
+    }
+
+
+    .question-item ul {
+
+      list-style: none;
+
+      padding-left: 0;
+
+    }
+
+
+    .question-item li {
+
+      padding: 0.3rem 0.5rem;
+
+      border-radius: 4px;
+
+    }
+
+
+    .question-item li.correct {
+
+      background: #d4edda;
+
+    }
+
+
+    .hidden {
+
+      display: none !important;
+
+    }
+
+
+    #volver {
+
+      background: #6c757d;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    #volver:hover {
+
+      background: #545b62;
+
+    }
+
+
+    #estado {
+
+      text-align: center;
+
+      color: #666;
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <main class="contenedor">
+
+
+    <!-- TEST -->
+
+    <section class="card">
+
+
+      <button
+        id="volver"
+        onclick="window.location.href='index.html'"
+      >
+        ← Volver a asignaturas
+      </button>
+
+
+      <div id="asignatura">
+        Cargando asignatura...
+      </div>
+
+
+      <h2 id="pregunta">
+        Cargando pregunta...
+      </h2>
+
+
+      <div id="opciones"></div>
+
+
+      <button id="botonTest">
+        Corregir
+      </button>
+
+
+      <button id="reiniciar">
+        Reiniciar estadísticas
+      </button>
+
+
+      <div id="resultado"></div>
+
+
+      <div
+        class="estadisticas"
+        id="estadisticas"
+      >
+        ✅ Aciertos: 0 |
+        ❌ Fallos: 0 |
+        🎯 Porcentaje: 0% |
+        📋 Total: 0 preguntas
+      </div>
+
+
+    </section>
+
+
+    <!-- LISTADO -->
+
+    <section class="card">
+
+
+      <h2>
+        Listado de preguntas
+      </h2>
+
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Busca aquí…"
+        style="
+          width:100%;
+          padding:0.8rem;
+          margin-bottom:1rem;
+          border-radius:6px;
+          border:1px solid #ccc;
+        "
+      >
+
+
+      <div id="estado">
+        Cargando preguntas...
+      </div>
+
+
+      <div id="question-list"></div>
+
+
+    </section>
+
+
+  </main>
+
+
+  <!--
+    TODAVÍA NO cargamos ningún JavaScript.
+
+    En el siguiente paso vamos a conectar esta pantalla
+    con el JSON de la asignatura seleccionada.
+  -->
+
+
+</body>
+
+</html>
