@@ -168,6 +168,10 @@
     }
 
 
+    /* ========================================================
+       ASIGNATURAS DESPLEGABLES
+    ======================================================== */
+
     .asignatura {
 
       border: 1px solid #ddd;
@@ -193,17 +197,127 @@
 
       align-items: center;
 
+      justify-content: space-between;
+
       gap: 0.6rem;
+
+      cursor: pointer;
+
+      user-select: none;
+
+    }
+
+
+    .asignatura-cabecera:hover {
+
+      background: #eeeeee;
+
+    }
+
+
+    .asignatura-titulo {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.6rem;
+
+      min-width: 0;
+
+    }
+
+
+    .asignatura-flecha {
+
+      font-size: 0.9rem;
+
+      transition: transform 0.2s;
+
+      flex-shrink: 0;
+
+    }
+
+
+    .asignatura.abierta .asignatura-flecha {
+
+      transform: rotate(90deg);
+
+    }
+
+
+    .contador {
+
+      margin-left: auto;
+
+      font-size: 0.8rem;
+
+      font-weight: normal;
+
+      color: #777;
+
+      white-space: nowrap;
 
     }
 
 
     .capitulos {
 
+      display: none;
+
       padding: 0.5rem 1rem 0.8rem;
 
     }
 
+
+    .asignatura.abierta .capitulos {
+
+      display: block;
+
+    }
+
+
+    /* ========================================================
+       SELECCIONAR TODOS
+    ======================================================== */
+
+    .seleccionar-todos {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.6rem;
+
+      padding: 0.5rem 0 0.7rem;
+
+      margin-bottom: 0.3rem;
+
+      border-bottom: 1px solid #eee;
+
+      font-size: 0.9rem;
+
+      color: #555;
+
+      cursor: pointer;
+
+    }
+
+
+    .seleccionar-todos input {
+
+      width: 18px;
+
+      height: 18px;
+
+      cursor: pointer;
+
+    }
+
+
+    /* ========================================================
+       CAPÍTULOS
+    ======================================================== */
 
     .capitulo {
 
@@ -228,6 +342,8 @@
 
       cursor: pointer;
 
+      flex-shrink: 0;
+
     }
 
 
@@ -239,6 +355,10 @@
 
     }
 
+
+    /* ========================================================
+       OPCIONES DEL TEST
+    ======================================================== */
 
     .opciones {
 
@@ -294,6 +414,10 @@
 
     }
 
+
+    /* ========================================================
+       BOTONES
+    ======================================================== */
 
     .acciones {
 
@@ -358,6 +482,10 @@
 
     }
 
+
+    /* ========================================================
+       MENSAJES
+    ======================================================== */
 
     .error {
 
@@ -496,8 +624,13 @@
            OPCIONES DEL TEST
       ==================================================== -->
 
-      <h2 class="titulo-seccion" style="margin-top: 1.5rem;">
+      <h2
+        class="titulo-seccion"
+        style="margin-top: 1.5rem;"
+      >
+
         ⚙️ Opciones del test
+
       </h2>
 
 
@@ -527,8 +660,10 @@
 
 
         <div class="ayuda">
-          Si hay menos preguntas disponibles, se utilizarán
-          todas las disponibles.
+
+          Si hay menos preguntas disponibles,
+          se utilizarán todas las disponibles.
+
         </div>
 
       </div>
@@ -736,10 +871,6 @@
         contenido.innerHTML = "";
 
 
-        /*
-         * Cargamos todas las configuraciones.
-         */
-
         for (const carpeta of carpetas) {
 
           await cargarConfiguracion(
@@ -749,18 +880,8 @@
         }
 
 
-        /*
-         * Una vez creados los capítulos,
-         * actualizamos el resumen.
-         */
-
         actualizarResumen();
 
-
-        /*
-         * Si estamos editando una sesión,
-         * cargamos sus datos.
-         */
 
         if (indiceEditar !== null) {
 
@@ -876,9 +997,21 @@
         "📚";
 
 
-      contenedorAsignatura.innerHTML = `
+      /* ======================================================
+         CABECERA DESPLEGABLE
+      ====================================================== */
 
-        <div class="asignatura-cabecera">
+      const cabecera =
+        document.createElement("div");
+
+
+      cabecera.className =
+        "asignatura-cabecera";
+
+
+      cabecera.innerHTML = `
+
+        <div class="asignatura-titulo">
 
           <span>
             ${icono}
@@ -888,23 +1021,75 @@
             ${escaparHTML(nombre)}
           </span>
 
+          <span
+            class="contador"
+            data-contador
+          >
+            0 seleccionados
+          </span>
+
         </div>
 
 
-        <div class="capitulos"></div>
+        <span class="asignatura-flecha">
+          ▶
+        </span>
 
       `;
 
 
+      /* ======================================================
+         LISTA DE CAPÍTULOS
+      ====================================================== */
+
       const listaCapitulos =
-        contenedorAsignatura.querySelector(
-          ".capitulos"
+        document.createElement("div");
+
+
+      listaCapitulos.className =
+        "capitulos";
+
+
+      /* ======================================================
+         SELECCIONAR TODOS
+      ====================================================== */
+
+      const filaTodos =
+        document.createElement("label");
+
+
+      filaTodos.className =
+        "seleccionar-todos";
+
+
+      filaTodos.innerHTML = `
+
+        <input
+          type="checkbox"
+          data-seleccionar-todos
+        >
+
+        <span>
+          Seleccionar todos
+        </span>
+
+      `;
+
+
+      listaCapitulos.appendChild(
+        filaTodos
+      );
+
+
+      const checkboxTodos =
+        filaTodos.querySelector(
+          "input"
         );
 
 
-      /*
-       * Crear cada checkbox.
-       */
+      /* ======================================================
+         CREAR CAPÍTULOS
+      ====================================================== */
 
       const capitulos =
         configuracion.capitulos || [];
@@ -932,18 +1117,27 @@
             <input
               type="checkbox"
               id="${idCheckbox}"
+
               data-asignatura="${escaparAtributo(carpeta)}"
+
               data-asignatura-nombre="${escaparAtributo(nombre)}"
+
               data-capitulo="${escaparAtributo(capitulo.id)}"
+
               data-capitulo-nombre="${escaparAtributo(capitulo.nombre)}"
-              data-archivo="${escaparAtributo(capitulo.archivo || "")}"
+
+              data-archivo="${escaparAtributo(
+                capitulo.archivo || ""
+              )}"
             >
 
 
             <label for="${idCheckbox}">
 
               📘
-              ${escaparHTML(capitulo.nombre)}
+              ${escaparHTML(
+                capitulo.nombre
+              )}
 
             </label>
 
@@ -958,7 +1152,16 @@
 
           checkbox.addEventListener(
             "change",
-            actualizarResumen
+            function() {
+
+              actualizarEstadoAsignatura(
+                contenedorAsignatura
+              );
+
+
+              actualizarResumen();
+
+            }
           );
 
 
@@ -970,9 +1173,128 @@
       );
 
 
+      /* ======================================================
+         SELECCIONAR TODOS
+      ====================================================== */
+
+      checkboxTodos.addEventListener(
+        "change",
+        function() {
+
+          const checkboxes =
+            listaCapitulos.querySelectorAll(
+              '.capitulo input[type="checkbox"]'
+            );
+
+
+          checkboxes.forEach(
+            checkbox => {
+
+              checkbox.checked =
+                checkboxTodos.checked;
+
+            }
+          );
+
+
+          actualizarEstadoAsignatura(
+            contenedorAsignatura
+          );
+
+
+          actualizarResumen();
+
+        }
+      );
+
+
+      /* ======================================================
+         ABRIR / CERRAR
+      ====================================================== */
+
+      cabecera.addEventListener(
+        "click",
+        function() {
+
+          contenedorAsignatura.classList.toggle(
+            "abierta"
+          );
+
+        }
+      );
+
+
+      /* ======================================================
+         CONSTRUIR ASIGNATURA
+      ====================================================== */
+
+      contenedorAsignatura.appendChild(
+        cabecera
+      );
+
+
+      contenedorAsignatura.appendChild(
+        listaCapitulos
+      );
+
+
       contenido.appendChild(
         contenedorAsignatura
       );
+
+    }
+
+
+    /* ========================================================
+       ACTUALIZAR CONTADOR DE ASIGNATURA
+    ======================================================== */
+
+    function actualizarEstadoAsignatura(
+      contenedorAsignatura
+    ) {
+
+      const checkboxes =
+        contenedorAsignatura.querySelectorAll(
+          '.capitulo input[type="checkbox"]'
+        );
+
+
+      const seleccionados =
+        contenedorAsignatura.querySelectorAll(
+          '.capitulo input[type="checkbox"]:checked'
+        );
+
+
+      const contador =
+        contenedorAsignatura.querySelector(
+          "[data-contador]"
+        );
+
+
+      if (contador) {
+
+        contador.textContent =
+          `${seleccionados.length} seleccionados`;
+
+      }
+
+
+      const checkboxTodos =
+        contenedorAsignatura.querySelector(
+          "[data-seleccionar-todos]"
+        );
+
+
+      if (
+        checkboxTodos &&
+        checkboxes.length > 0
+      ) {
+
+        checkboxTodos.checked =
+          seleccionados.length ===
+          checkboxes.length;
+
+      }
 
     }
 
@@ -1004,9 +1326,11 @@
       resumen.innerHTML = `
 
         <strong>
+
           ${cantidad}
           capítulo${cantidad !== 1 ? "s" : ""}
           seleccionado${cantidad !== 1 ? "s" : ""}
+
         </strong>
 
         <br>
@@ -1014,8 +1338,12 @@
         ${seleccionados
           .map(
             elemento =>
-              `${escaparHTML(elemento.asignaturaNombre)}
-               — ${escaparHTML(elemento.capituloNombre)}`
+              `${escaparHTML(
+                elemento.asignaturaNombre
+              )}
+              — ${escaparHTML(
+                elemento.capituloNombre
+              )}`
           )
           .join("<br>")}
 
@@ -1032,7 +1360,7 @@
 
       const checkboxes =
         document.querySelectorAll(
-          '#contenido input[type="checkbox"]:checked'
+          '#contenido .capitulo input[type="checkbox"]:checked'
         );
 
 
@@ -1095,10 +1423,6 @@
         obtenerCapitulosSeleccionados();
 
 
-      /*
-       * Validaciones
-       */
-
       if (!nombre) {
 
         mostrarError(
@@ -1135,10 +1459,6 @@
       }
 
 
-      /*
-       * Construir objeto de sesión.
-       */
-
       const sesion = {
 
         id:
@@ -1162,18 +1482,9 @@
       };
 
 
-      /*
-       * Obtener sesiones existentes.
-       */
-
       const sesiones =
         obtenerSesiones();
 
-
-      /*
-       * Si estamos editando,
-       * sustituimos la sesión existente.
-       */
 
       if (
         indiceEditar !== null &&
@@ -1205,19 +1516,11 @@
       }
 
 
-      /*
-       * Guardar en el navegador.
-       */
-
       localStorage.setItem(
         CLAVE_SESIONES,
         JSON.stringify(sesiones)
       );
 
-
-      /*
-       * Volver a Mis sesiones.
-       */
 
       window.location.href =
         "sesiones.html";
@@ -1250,10 +1553,6 @@
       }
 
 
-      /*
-       * Cambiar título.
-       */
-
       document.getElementById(
         "titulo"
       ).textContent =
@@ -1266,19 +1565,11 @@
         "Modifica la configuración de tu sesión.";
 
 
-      /*
-       * Nombre.
-       */
-
       document.getElementById(
         "nombre"
       ).value =
         sesion.nombre || "";
 
-
-      /*
-       * Número de preguntas.
-       */
 
       document.getElementById(
         "numeroPreguntas"
@@ -1286,19 +1577,11 @@
         sesion.numeroPreguntas || 30;
 
 
-      /*
-       * Aleatorio.
-       */
-
       document.getElementById(
         "aleatorio"
       ).checked =
         sesion.aleatorio !== false;
 
-
-      /*
-       * Marcar capítulos.
-       */
 
       const seleccionados =
         sesion.capitulos || [];
@@ -1306,7 +1589,7 @@
 
       const checkboxes =
         document.querySelectorAll(
-          '#contenido input[type="checkbox"]'
+          '#contenido .capitulo input[type="checkbox"]'
         );
 
 
@@ -1331,6 +1614,24 @@
 
         }
       );
+
+
+      /*
+       * Actualizamos los contadores de cada asignatura
+       * después de marcar los capítulos.
+       */
+
+      document
+        .querySelectorAll(".asignatura")
+        .forEach(
+          asignatura => {
+
+            actualizarEstadoAsignatura(
+              asignatura
+            );
+
+          }
+        );
 
 
       actualizarResumen();
@@ -1426,10 +1727,13 @@
     function generarIdUnico() {
 
       return (
+
         Date.now().toString(36) +
+
         Math.random()
           .toString(36)
           .substring(2, 8)
+
       );
 
     }
