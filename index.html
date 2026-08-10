@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPOSICIONES - Técnico Auxiliar Informático">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cabecera {
+      text-align: center;
+    }
+
+    .cabecera h1 {
+      font-size: 1.5rem;
+      margin: 0 0 0.4rem;
+    }
+
+    .cabecera p {
+      margin: 0;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .titulo-seccion {
+      font-size: 1.1rem;
+      margin: 0 0 1.2rem;
+    }
+
+    #asignaturas {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .asignatura {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1rem;
+
+      background: #f7f7f7;
+      border: 1px solid transparent;
+      border-radius: 8px;
+
+      color: #333;
+      font-family: inherit;
+      font-size: 1rem;
+      text-align: left;
+
+      cursor: pointer;
+
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.1s ease;
+    }
+
+    .asignatura:hover {
+      background: #eaeaea;
+      border-color: #ddd;
+    }
+
+    .asignatura:active {
+      transform: scale(0.99);
+    }
+
+    .asignatura-info {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      min-width: 0;
+    }
+
+    .icono {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #e9f2ff;
+      border-radius: 8px;
+
+      font-size: 1.2rem;
+    }
+
+    .nombre {
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .flecha {
+      color: #007bff;
+      font-size: 1.2rem;
+      margin-left: 0.8rem;
+    }
+
+    #estado {
+      text-align: center;
+      color: #666;
+      font-size: 0.95rem;
+      padding: 1rem 0;
+    }
+
+    .error {
+      color: #dc3545 !important;
+    }
+
+    @media (max-width: 500px) {
+
+      .contenedor {
+        padding: 0.7rem;
+      }
+
+      .card {
+        padding: 1.2rem;
+      }
+
+      .cabecera h1 {
+        font-size: 1.3rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="contenedor">
+
+    <!-- CABECERA -->
+    <section class="card cabecera">
+
+      <h1>OPOSICIONES</h1>
+
+      <p>Técnico Auxiliar Informático</p>
+
+    </section>
+
+
+    <!-- ASIGNATURAS -->
+    <section class="card">
+
+      <h2 class="titulo-seccion">
+        📚 Asignaturas
+      </h2>
+
+      <div id="estado">
+        Cargando asignaturas...
+      </div>
+
+      <div id="asignaturas"></div>
+
+    </section>
+
+  </main>
+
+
+  <script>
+
+    /*
+     * ==========================================================
+     * CARGAR ASIGNATURAS
+     * ==========================================================
+     *
+     * El programa consulta automáticamente la carpeta /datos
+     * del repositorio de GitHub.
+     *
+     * Cada archivo .json encontrado se convierte en una
+     * asignatura del menú.
+     *
+     * Por ejemplo:
+     *
+     * datos/
+     * ├── acceso-datos.json
+     * ├── big-data.json
+     * └── multimedia.json
+     *
+     * El menú mostrará automáticamente:
+     *
+     * 💾 Acceso Datos
+     * 📊 Big Data
+     * 📱 Multimedia
+     *
+     * Si añadimos otro JSON, aparecerá automáticamente.
+     */
+
+
+    const asignaturasContenedor =
+      document.getElementById("asignaturas");
+
+    const estado =
+      document.getElementById("estado");
+
+
+    /*
+     * ==========================================================
+     * IDENTIFICAR EL REPOSITORIO
+     * ==========================================================
+     */
+
+    const partesRuta =
+      window.location.pathname
+        .split("/")
+        .filter(Boolean);
+
+
+    const propietario =
+      window.location.hostname.endsWith(".github.io")
+        ? window.location.hostname.replace(".github.io", "")
+        : null;
+
+
+    const repositorio =
+      propietario
+        ? partesRuta[0]
+        : null;
+
+
+    /*
+     * ==========================================================
+     * CARGAR ARCHIVOS JSON DE /DATOS
+     * ==========================================================
+     */
+
+    async function cargarAsignaturas() {
+
+      try {
+
+        if (!propietario || !repositorio) {
+
+          throw new Error(
+            "No se ha podido identificar el repositorio."
+          );
+
+        }
+
+
+        const url =
+          `https://api.github.com/repos/${propietario}/${repositorio}/contents/datos`;
+
+
+        const respuesta =
+          await fetch(url);
+
+
+        if (!respuesta.ok) {
+
+          throw new Error(
+            `GitHub ha devuelto el estado ${respuesta.status}.`
+          );
+
+        }
+
+
+        const archivos =
+          await respuesta.json();
+
+
+        /*
+         * Nos quedamos únicamente con archivos .json
+         */
+
+        const jsons =
+          archivos
+            .filter(archivo =>
+              archivo.type === "file" &&
+              archivo.name
+                .toLowerCase()
+                .endsWith(".json")
+            )
+            .sort((a, b) =>
+              a.name.localeCompare(
+                b.name,
+                "es",
+                { sensitivity: "base" }
+              )
+            );
+
+
+        asignaturasContenedor.innerHTML = "";
+
+
+        /*
+         * Si no hay JSON
+         */
+
+        if (jsons.length === 0) {
+
+          estado.innerHTML =
+            "No hay ninguna asignatura todavía.<br>" +
+            "Añade archivos <strong>.json</strong> dentro de <strong>/datos</strong>.";
+
+          return;
+
+        }
+
+
+        estado.style.display = "none";
+
+
+        /*
+         * Crear un botón por cada asignatura
+         */
+
+        jsons.forEach(archivo => {
+
+          const boton =
+            document.createElement("button");
+
+
+          boton.className = "asignatura";
+
+          boton.type = "button";
+
+
+          const nombre =
+            obtenerNombreAsignatura(archivo.name);
+
+
+          const icono =
+            obtenerIcono(nombre);
+
+
+          boton.innerHTML = `
+
+            <span class="asignatura-info">
+
+              <span class="icono">
+                ${icono}
+              </span>
+
+              <span class="nombre">
+                ${nombre}
+              </span>
+
+            </span>
+
+            <span class="flecha">
+              ›
+            </span>
+
+          `;
+
+
+          boton.addEventListener(
+            "click",
+            () => abrirAsignatura(archivo.name)
+          );
+
+
+          asignaturasContenedor.appendChild(boton);
+
+        });
+
+      }
+
+
+      catch (error) {
+
+        console.error(
+          "Error al cargar las asignaturas:",
+          error
+        );
+
+
+        estado.classList.add("error");
+
+
+        estado.textContent =
+          "No se han podido cargar las asignaturas. " +
+          "Comprueba que la carpeta /datos existe " +
+          "y que el repositorio es público.";
+
+      }
+
+    }
+
+
+    /*
+     * ==========================================================
+     * CONVERTIR NOMBRE DEL ARCHIVO EN NOMBRE VISIBLE
+     * ==========================================================
+     *
+     * big-data.json
+     *        ↓
+     * Big Data
+     *
+     * acceso-datos.json
+     *        ↓
+     * Acceso Datos
+     */
+
+    function obtenerNombreAsignatura(nombreArchivo) {
+
+      return nombreArchivo
+
+        .replace(/\.json$/i, "")
+
+        .replace(/[-_]+/g, " ")
+
+        .replace(/\b\w/g, letra =>
+          letra.toUpperCase()
+        );
+
+    }
+
+
+    /*
+     * ==========================================================
+     * ICONOS
+     * ==========================================================
+     */
+
+    function obtenerIcono(nombre) {
+
+      const texto =
+        nombre.toLowerCase();
+
+
+      if (texto.includes("big"))
+        return "📊";
+
+
+      if (texto.includes("datos"))
+        return "💾";
+
+
+      if (texto.includes("interfaz"))
+        return "🖥️";
+
+
+      if (texto.includes("digital"))
+        return "🏭";
+
+
+      if (texto.includes("emple"))
+        return "👔";
+
+
+      if (texto.includes("gest"))
+        return "🏢";
+
+
+      if (texto.includes("multimedia"))
+        return "📱";
+
+
+      if (
+        texto.includes("servicios") ||
+        texto.includes("procesos")
+      )
+        return "⚙️";
+
+
+      if (texto.includes("sosten"))
+        return "🌱";
+
+
+      return "📚";
+
+    }
+
+
+    /*
+     * ==========================================================
+     * ABRIR ASIGNATURA
+     * ==========================================================
+     *
+     * TODAVÍA NO hacemos el test.
+     *
+     * En el siguiente paso crearemos el motor y aquí
+     * cargaremos el JSON seleccionado.
+     */
+
+    function abrirAsignatura(nombreArchivo) {
+
+      const archivo =
+        encodeURIComponent(nombreArchivo);
+
+
+      window.location.href =
+        `test.html?datos=${archivo}`;
+
+    }
+
+
+    /*
+     * ==========================================================
+     * INICIAR
+     * ==========================================================
+     */
+
+    cargarAsignaturas();
+
+  </script>
+
+</body>
+</html>
