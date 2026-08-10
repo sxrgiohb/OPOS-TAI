@@ -1,0 +1,12 @@
+{
+  "id": "constitucion",
+  "nombre": "Constitución Española",
+  "icono": "📜",
+  "capitulos": [
+    {
+      "id": "cap1",
+      "nombre": "CAP 1",
+      "archivo": "preguntas.json"
+    }
+  ]
+}
