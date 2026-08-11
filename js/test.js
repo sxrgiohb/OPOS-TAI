@@ -2,6 +2,13 @@
 let preguntas = [];
 let indice = 0;
 
+/*
+ * Estado del botón del test:
+ * "corregir" → todavía no hemos corregido
+ * "siguiente" → ya hemos corregido y esperamos al usuario
+ */
+let estadoBoton = "corregir";
+
 
 /* ========================================================
    ESTADÍSTICAS
@@ -545,17 +552,13 @@ async function cargarPreguntasAntiguo() {
 
 function mostrarPregunta() {
 
-    if (
-        preguntas.length === 0
-    ) {
+    if (preguntas.length === 0) {
 
         preguntaElemento.textContent =
             "No hay preguntas.";
 
-
         opcionesElemento.innerHTML =
             "";
-
 
         return;
 
@@ -575,7 +578,7 @@ function mostrarPregunta() {
 
 
     /*
-     * Crear las opciones.
+     * Crear las opciones
      */
 
     preguntaActual.opciones.forEach(
@@ -632,24 +635,50 @@ function mostrarPregunta() {
     );
 
 
+    /*
+     * Limpiar resultado
+     */
+
     resultadoElemento.textContent =
+        "";
+
+    resultadoElemento.className =
         "";
 
 
     /*
-     * Actualizar listado.
+     * El botón vuelve a ser "Corregir"
      */
 
-    actualizarPreguntaSeleccionada();
+    estadoBoton =
+        "corregir";
+
+
+    botonTest.textContent =
+        "Corregir";
 
 }
 
 
 /* ========================================================
-   CORREGIR RESPUESTA
+   CORREGIR / SIGUIENTE
 ======================================================== */
 
 function corregirRespuesta() {
+
+    /*
+     * Si ya hemos corregido la pregunta,
+     * el botón funciona como "Siguiente".
+     */
+
+    if (estadoBoton === "siguiente") {
+
+        siguientePregunta();
+
+        return;
+
+    }
+
 
     const seleccion =
         document.querySelector(
@@ -662,6 +691,8 @@ function corregirRespuesta() {
         resultadoElemento.textContent =
             "⚠️ Selecciona una respuesta.";
 
+        resultadoElemento.className =
+            "";
 
         return;
 
@@ -672,40 +703,120 @@ function corregirRespuesta() {
         preguntas[indice];
 
 
+    const posicionSeleccionada =
+        Number(
+            seleccion.value
+        );
+
+
     const respuestaSeleccionada =
         preguntaActual.opciones[
-            Number(
-                seleccion.value
-            )
+            posicionSeleccionada
         ];
 
 
-    if (
+    /*
+     * Todas las opciones
+     */
+
+    const opciones =
+        document.querySelectorAll(
+            'input[name="opcion"]'
+        );
+
+
+    /*
+     * Comprobar respuesta
+     */
+
+    const esCorrecta =
         respuestaSeleccionada ===
-        preguntaActual.respuesta
-    ) {
+        preguntaActual.respuesta;
+
+
+    if (esCorrecta) {
+
+        /*
+         * CORRECTA → verde
+         */
 
         aciertos++;
 
         respondidas++;
 
 
+        seleccion
+            .parentElement
+            .classList.add(
+                "correcta"
+            );
+
+
         resultadoElemento.textContent =
             "✅ ¡Correcto!";
 
+        resultadoElemento.className =
+            "correcto";
 
     }
 
 
     else {
 
+        /*
+         * INCORRECTA → rojo
+         */
+
         fallos++;
 
         respondidas++;
 
 
+        seleccion
+            .parentElement
+            .classList.add(
+                "incorrecta"
+            );
+
+
+        /*
+         * Además marcamos en verde
+         * la respuesta correcta.
+         */
+
+        opciones.forEach(
+            input => {
+
+                const posicion =
+                    Number(
+                        input.value
+                    );
+
+
+                if (
+                    preguntaActual.opciones[
+                        posicion
+                    ] ===
+                    preguntaActual.respuesta
+                ) {
+
+                    input
+                        .parentElement
+                        .classList.add(
+                            "correcta"
+                        );
+
+                }
+
+            }
+        );
+
+
         resultadoElemento.textContent =
             `❌ Incorrecto. La respuesta correcta es: ${preguntaActual.respuesta}`;
+
+        resultadoElemento.className =
+            "incorrecto";
 
     }
 
@@ -714,36 +825,30 @@ function corregirRespuesta() {
 
 
     /*
-     * Desactivar opciones después de responder.
+     * Desactivar las opciones.
      */
 
-    document
-        .querySelectorAll(
-            'input[name="opcion"]'
-        )
-        .forEach(
-            input => {
+    opciones.forEach(
+        input => {
 
-                input.disabled =
-                    true;
+            input.disabled =
+                true;
 
-            }
-        );
+        }
+    );
 
 
     /*
-     * Pasar automáticamente a la siguiente
-     * pregunta después de un pequeño intervalo.
+     * Ahora el botón pasa a ser
+     * "Siguiente".
      */
 
-    setTimeout(
-        () => {
+    estadoBoton =
+        "siguiente";
 
-            siguientePregunta();
 
-        },
-        900
-    );
+    botonTest.textContent =
+        "Siguiente";
 
 }
 
