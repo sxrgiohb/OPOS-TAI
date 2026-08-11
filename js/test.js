@@ -1,47 +1,41 @@
 let preguntas = [];
 let indice = 0;
 
-
 /* ========================================================
-   ESTADO DEL BOTÓN DEL TEST
+ESTADO DEL BOTÓN DEL TEST
 
-   "corregir"  → todavía no hemos corregido
-   "siguiente" → ya hemos corregido y esperamos al usuario
-   ======================================================== */
+"corregir"  → todavía no hemos corregido
+"siguiente" → ya hemos corregido y esperamos al usuario
+======================================================== */
 
 let estadoBoton = "corregir";
 
-
 /* ========================================================
-   ESTADÍSTICAS DEL TEST ACTUAL
-   ======================================================== */
+ESTADÍSTICAS DEL TEST ACTUAL
+======================================================== */
 
 let aciertos = 0;
 let fallos = 0;
 let respondidas = 0;
 
-
 /* ========================================================
-   CONFIGURACIÓN
-   ======================================================== */
+CONFIGURACIÓN
+======================================================== */
 
 const CLAVE_SESIONES =
     "opos_tai_sesiones";
 
-
 /* ========================================================
-   PARÁMETROS DE URL
-   ======================================================== */
+PARÁMETROS DE URL
+======================================================== */
 
 const parametros =
     new URLSearchParams(
         window.location.search
     );
 
-
 const idSesion =
     parametros.get("sesion");
-
 
 /*
  * Sistema antiguo mediante ?datos=
@@ -50,10 +44,9 @@ const idSesion =
 const archivoDatos =
     parametros.get("datos");
 
-
 /* ========================================================
-   ELEMENTOS DEL HTML
-   ======================================================== */
+ELEMENTOS DEL HTML
+======================================================== */
 
 const preguntaElemento =
     document.getElementById("pregunta");
@@ -85,17 +78,15 @@ const listaPreguntasElemento =
 const buscador =
     document.getElementById("search");
 
-
 /* ========================================================
-   ESTADO DEL MODO ESTUDIO
-   ======================================================== */
+ESTADO DEL MODO ESTUDIO
+======================================================== */
 
 const MODO_ESTUDIO_POR_DEFECTO =
     true;
 
 let modoEstudio =
     MODO_ESTUDIO_POR_DEFECTO;
-
 
 /*
  * Pregunta actualmente mostrada.
@@ -104,14 +95,12 @@ let modoEstudio =
 let preguntaActual =
     null;
 
-
 /*
  * Indica si la pregunta actual es una repetición.
  */
 
 let preguntaActualEsRepeticion =
     false;
-
 
 /*
  * Número de preguntas ORIGINALES mostradas.
@@ -122,7 +111,6 @@ let preguntaActualEsRepeticion =
 let preguntasNormalesMostradas =
     0;
 
-
 /*
  * Indica si la última pregunta mostrada
  * fue una repetición.
@@ -131,14 +119,12 @@ let preguntasNormalesMostradas =
 let ultimaPreguntaFueRepeticion =
     false;
 
-
 /* ========================================================
-   ESTADO DE LAS PREGUNTAS EN REPASO
-   ======================================================== */
+ESTADO DE LAS PREGUNTAS EN REPASO
+======================================================== */
 
 let estadoPreguntasEstudio =
     new Map();
-
 
 /*
  * Las preguntas falladas no aparecen inmediatamente.
@@ -153,10 +139,9 @@ const INTERVALO_REPETICION_MIN =
 const INTERVALO_REPETICION_MAX =
     7;
 
-
 /* ========================================================
-   CONFIGURAR LISTADO
-   ======================================================== */
+CONFIGURAR LISTADO
+======================================================== */
 
 function configurarListado() {
 
@@ -209,10 +194,9 @@ function configurarListado() {
 
 }
 
-
 /* ========================================================
-   OBTENER SESIONES
-   ======================================================== */
+OBTENER SESIONES
+======================================================== */
 
 function obtenerSesiones() {
 
@@ -259,10 +243,9 @@ function obtenerSesiones() {
 
 }
 
-
 /* ========================================================
-   BUSCAR SESIÓN ACTUAL
-   ======================================================== */
+BUSCAR SESIÓN ACTUAL
+======================================================== */
 
 function obtenerSesionActual() {
 
@@ -284,10 +267,9 @@ function obtenerSesionActual() {
 
 }
 
-
 /* ========================================================
-   CONFIGURAR MODO ESTUDIO
-   ======================================================== */
+CONFIGURAR MODO ESTUDIO
+======================================================== */
 
 function configurarModoEstudio(
     sesion = null
@@ -321,10 +303,9 @@ function configurarModoEstudio(
 
 }
 
-
 /* ========================================================
-   REINICIAR ESTADO DEL MODO ESTUDIO
-   ======================================================== */
+REINICIAR ESTADO DEL MODO ESTUDIO
+======================================================== */
 
 function reiniciarEstadoEstudio() {
 
@@ -349,10 +330,9 @@ function reiniciarEstadoEstudio() {
 
 }
 
-
 /* ========================================================
-   CARGAR PREGUNTAS
-   ======================================================== */
+CARGAR PREGUNTAS
+======================================================== */
 
 async function cargarPreguntas() {
 
@@ -414,9 +394,8 @@ async function cargarPreguntas() {
 
 }
 
-
 /* ========================================================
-   CARGAR PREGUNTAS DE UNA SESIÓN
+CARGAR PREGUNTAS DE UNA SESIÓN
 ======================================================== */
 
 async function cargarPreguntasDeSesion() {
@@ -560,14 +539,6 @@ async function cargarPreguntasDeSesion() {
          *
          * Convertimos cada parte de la ruta por separado
          * para NO codificar las barras "/".
-         *
-         * Ejemplo:
-         *
-         * constitucion/titulo-i/capitulo-1.json
-         *
-         * se convierte en:
-         *
-         * data/constitucion/titulo-i/capitulo-1.json
          * ====================================================
          */
 
@@ -740,10 +711,9 @@ async function cargarPreguntasDeSesion() {
 
 }
 
-
 /* ========================================================
-   CARGAR PREGUNTAS DE UN CAPÍTULO
-   ======================================================== */
+CARGAR PREGUNTAS DE UN CAPÍTULO
+======================================================== */
 
 async function cargarPreguntasAntiguo() {
 
@@ -837,10 +807,9 @@ async function cargarPreguntasAntiguo() {
 
 }
 
-
 /* ========================================================
-   MOSTRAR PREGUNTA
-   ======================================================== */
+MOSTRAR PREGUNTA
+======================================================== */
 
 function mostrarPregunta(
     pregunta = null,
@@ -955,14 +924,39 @@ function mostrarPregunta(
         "";
 
 
+    /* ====================================================
+       MEZCLAR RESPUESTAS
+       ====================================================
+
+       Creamos una COPIA de las opciones originales.
+
+       De esta forma:
+
+       - No modificamos el JSON.
+       - No modificamos pregunta.opciones.
+       - Las respuestas pueden cambiar de posición
+         cada vez que aparece la pregunta.
+       - La respuesta correcta sigue siendo la misma.
+       ==================================================== */
+
+    const opcionesMezcladas =
+        [
+            ...pregunta.opciones
+        ];
+
+
+    mezclarArray(
+        opcionesMezcladas
+    );
+
+
     /*
      * Crear opciones.
      */
 
-    pregunta.opciones.forEach(
+    opcionesMezcladas.forEach(
         (
-            opcion,
-            posicion
+            opcion
         ) => {
 
             const label =
@@ -989,8 +983,16 @@ function mostrarPregunta(
                 "opcion";
 
 
+            /*
+             * Guardamos directamente el texto
+             * de la respuesta.
+
+             * Ya no usamos la posición del array
+             * original.
+             */
+
             input.value =
-                posicion;
+                opcion;
 
 
             label.appendChild(
@@ -1039,16 +1041,12 @@ function mostrarPregunta(
 
 }
 
-
 /* ========================================================
-   COMPROBAR SI UNA PREGUNTA ESTÁ DOMINADA
-   ========================================================
+CONSULTA LAS ESTADÍSTICAS PERMANENTES.
 
-   Consulta las estadísticas PERMANENTES.
-
-   La función estaPreguntaDominada()
-   pertenece a estadisticas.js.
-   ======================================================== */
+La función estaPreguntaDominada()
+pertenece a estadisticas.js.
+======================================================== */
 
 function estaDominada(
     pregunta
@@ -1085,10 +1083,9 @@ function estaDominada(
 
 }
 
-
 /* ========================================================
-   OBTENER SIGUIENTE PREGUNTA
-   ======================================================== */
+OBTENER SIGUIENTE PREGUNTA
+======================================================== */
 
 function obtenerSiguientePregunta() {
 
@@ -1264,10 +1261,9 @@ function obtenerSiguientePregunta() {
 
 }
 
-
 /* ========================================================
-   OBTENER REPETICIONES DISPONIBLES
-   ======================================================== */
+OBTENER REPETICIONES DISPONIBLES
+======================================================== */
 
 function obtenerRepeticionesDisponibles() {
 
@@ -1339,10 +1335,9 @@ function obtenerRepeticionesDisponibles() {
 
 }
 
-
 /* ========================================================
-   OBTENER PREGUNTAS PENDIENTES
-   ======================================================== */
+OBTENER PREGUNTAS PENDIENTES
+======================================================== */
 
 function obtenerPreguntasPendientes() {
 
@@ -1398,10 +1393,9 @@ function obtenerPreguntasPendientes() {
 
 }
 
-
 /* ========================================================
-   COMPROBAR SI UNA PREGUNTA ESTÁ PENDIENTE
-   ======================================================== */
+COMPROBAR SI UNA PREGUNTA ESTÁ PENDIENTE
+======================================================== */
 
 function esPreguntaPendiente(
     pregunta
@@ -1420,10 +1414,9 @@ function esPreguntaPendiente(
 
 }
 
-
 /* ========================================================
-   CREAR ESTADO DE UNA PREGUNTA FALLADA
-   ======================================================== */
+CREAR ESTADO DE UNA PREGUNTA FALLADA
+======================================================== */
 
 function crearEstadoPregunta(
     pregunta
@@ -1469,10 +1462,9 @@ function crearEstadoPregunta(
 
 }
 
-
 /* ========================================================
-   CALCULAR PRÓXIMA REPETICIÓN
-   ======================================================== */
+CALCULAR PRÓXIMA REPETICIÓN
+======================================================== */
 
 function calcularProximaRepeticion() {
 
@@ -1495,10 +1487,9 @@ function calcularProximaRepeticion() {
 
 }
 
-
 /* ========================================================
-   PROCESAR RESULTADO EN MODO ESTUDIO
-   ======================================================== */
+PROCESAR RESULTADO EN MODO ESTUDIO
+======================================================== */
 
 function procesarResultadoEstudio(
     pregunta,
@@ -1635,10 +1626,9 @@ function procesarResultadoEstudio(
 
 }
 
-
 /* ========================================================
-   CORREGIR / SIGUIENTE
-   ======================================================== */
+CORREGIR / SIGUIENTE
+======================================================== */
 
 function corregirRespuesta() {
 
@@ -1693,16 +1683,20 @@ function corregirRespuesta() {
         preguntaActual;
 
 
-    const posicionSeleccionada =
-        Number(
-            seleccion.value
-        );
-
+    /*
+     * ====================================================
+     * RESPUESTA SELECCIONADA
+     * ====================================================
+     *
+     * Ahora input.value contiene directamente
+     * el texto de la respuesta.
+     *
+     * Esto permite mezclar las opciones sin perder
+     * la referencia a la respuesta correcta.
+     */
 
     const respuestaSeleccionada =
-        preguntaQueSeCorrige.opciones[
-            posicionSeleccionada
-        ];
+        seleccion.value;
 
 
     /*
@@ -1717,7 +1711,6 @@ function corregirRespuesta() {
 
     /*
      * Comprobar respuesta.
-
      */
 
     const esCorrecta =
@@ -1774,16 +1767,8 @@ function corregirRespuesta() {
         opciones.forEach(
             input => {
 
-                const posicion =
-                    Number(
-                        input.value
-                    );
-
-
                 if (
-                    preguntaQueSeCorrige.opciones[
-                        posicion
-                    ] ===
+                    input.value ===
                     preguntaQueSeCorrige.respuesta
                 ) {
 
@@ -1912,10 +1897,9 @@ function corregirRespuesta() {
 
 }
 
-
 /* ========================================================
-   SIGUIENTE PREGUNTA
-   ======================================================== */
+SIGUIENTE PREGUNTA
+======================================================== */
 
 function siguientePregunta() {
 
@@ -1947,10 +1931,9 @@ function siguientePregunta() {
 
 }
 
-
 /* ========================================================
-   FINALIZAR TEST
-   ======================================================== */
+FINALIZAR TEST
+======================================================== */
 
 function finalizarTest() {
 
@@ -1978,10 +1961,9 @@ function finalizarTest() {
 
 }
 
-
 /* ========================================================
-   MEZCLAR ARRAY
-   ======================================================== */
+MEZCLAR ARRAY
+======================================================== */
 
 function mezclarArray(
     array
@@ -2016,10 +1998,9 @@ function mezclarArray(
 
 }
 
-
 /* ========================================================
-   ELEMENTO ALEATORIO
-   ======================================================== */
+ELEMENTO ALEATORIO
+======================================================== */
 
 function obtenerElementoAleatorio(
     array
@@ -2048,14 +2029,13 @@ function obtenerElementoAleatorio(
 
 }
 
-
 /* ========================================================
-   ESTADÍSTICAS DEL TEST ACTUAL
+ESTADÍSTICAS DEL TEST ACTUAL
 
-   Estas estadísticas NO son las estadísticas globales.
+Estas estadísticas NO son las estadísticas globales.
 
-   Se reinician al reiniciar el test.
-   ======================================================== */
+Se reinician al reiniciar el test.
+======================================================== */
 
 function actualizarEstadisticas() {
 
@@ -2087,14 +2067,13 @@ function actualizarEstadisticas() {
 
 }
 
-
 /* ========================================================
-   REINICIAR TEST
+REINICIAR TEST
 
-   IMPORTANTE:
+IMPORTANTE:
 
-   Reiniciar el test NO borra las estadísticas globales.
-   ======================================================== */
+Reiniciar el test NO borra las estadísticas globales.
+======================================================== */
 
 function reiniciarEstadisticas() {
 
@@ -2178,10 +2157,9 @@ function reiniciarEstadisticas() {
 
 }
 
-
 /* ========================================================
-   LISTADO DE PREGUNTAS
-   ======================================================== */
+LISTADO DE PREGUNTAS
+======================================================== */
 
 function mostrarListado() {
 
@@ -2363,7 +2341,7 @@ function mostrarListado() {
                     "EN PROCESO";
 
                 claseEstado =
-                    "en-proceso";
+                    "en-progreso";
 
             }
 
@@ -2396,7 +2374,6 @@ function mostrarListado() {
 
             /*
              * Primero el texto.
-
              */
 
             estado.appendChild(
@@ -2506,10 +2483,9 @@ function mostrarListado() {
 
 }
 
-
 /* ========================================================
-   BUSCADOR
-   ======================================================== */
+BUSCADOR
+======================================================== */
 
 function filtrarPreguntas() {
 
@@ -2557,10 +2533,9 @@ function filtrarPreguntas() {
 
 }
 
-
 /* ========================================================
-   NOMBRE DEL CAPÍTULO
-   ======================================================== */
+NOMBRE DEL CAPÍTULO
+======================================================== */
 
 function obtenerNombreAsignatura(
     nombreArchivo
@@ -2651,10 +2626,9 @@ function obtenerNombreAsignatura(
 
 }
 
-
 /* ========================================================
-   EVENTOS
-   ======================================================== */
+EVENTOS
+======================================================== */
 
 if (botonTest) {
 
@@ -2685,7 +2659,6 @@ if (buscador) {
 
 }
 
-
 /*
  * No hace falta cargar manualmente el historial aquí.
  *
@@ -2693,10 +2666,9 @@ if (buscador) {
  * cada vez que registra una respuesta.
  */
 
-
 /* ========================================================
-   INICIALIZACIÓN
-   ======================================================== */
+INICIALIZACIÓN
+======================================================== */
 
 /*
  * Configurar listado.
