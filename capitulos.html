@@ -10,8 +10,7 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Capítulos - OPOS-TAI</title>
-
+  <title>Contenido - OPOS-TAI</title>
 
   <style>
 
@@ -19,175 +18,124 @@
       box-sizing: border-box;
     }
 
-
     body {
-
       font-family: 'Segoe UI', sans-serif;
-
       background: #f2f4f8;
-
       color: #333;
-
       margin: 0;
-
       min-height: 100vh;
-
     }
-
 
     .contenedor {
-
       width: 100%;
-
       max-width: 700px;
-
       margin: 0 auto;
-
       padding: 1rem;
-
     }
-
 
     .card {
-
       background: white;
-
       border-radius: 12px;
-
-      box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.08);
-
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 1.5rem;
-
       margin-bottom: 1rem;
-
     }
 
+    /* =====================================================
+       BOTÓN VOLVER
+    ===================================================== */
 
     .volver {
       display: inline-flex;
-    
       align-items: center;
       justify-content: center;
-    
+
       width: 38px;
       height: 38px;
-    
+
       padding: 0;
       margin: 0 0 0.8rem 0;
-    
+
       background: transparent;
-    
       color: #555;
-    
+
       border: none;
       border-radius: 50%;
-    
+
       font-size: 1.5rem;
       font-weight: 400;
-    
+
       line-height: 1;
-    
       cursor: pointer;
-    
+
       transition:
         background 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
     }
-    
-    
+
     .volver:hover {
-    
       background: #f0f2f5;
-    
       color: #007bff;
-    
     }
 
+    /* =====================================================
+       CABECERA
+    ===================================================== */
 
     .cabecera {
-
       display: flex;
-
       align-items: center;
-
       gap: 1rem;
-
     }
 
-
     .icono {
-
       width: 50px;
-
       height: 50px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       background: #e9f2ff;
-
       border-radius: 10px;
 
       font-size: 1.5rem;
-
       flex-shrink: 0;
-
     }
-
 
     .cabecera h1 {
-
       margin: 0;
-
       font-size: 1.4rem;
-
+      color: #222;
     }
-
 
     .cabecera p {
-
       margin: 0.3rem 0 0;
-
       color: #666;
-
       font-size: 0.9rem;
-
     }
 
+    /* =====================================================
+       LISTADO
+    ===================================================== */
 
     .titulo-seccion {
-
       font-size: 1.1rem;
-
       margin-top: 0;
-
     }
 
-
-    #capitulos {
-
+    #elementos {
       display: flex;
-
       flex-direction: column;
-
       gap: 0.8rem;
-
     }
 
-
-    .capitulo {
-
+    .elemento {
       width: 100%;
 
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
 
       padding: 1rem;
@@ -195,11 +143,9 @@
       background: #f7f7f7;
 
       border: 1px solid transparent;
-
       border-radius: 8px;
 
       font-family: inherit;
-
       font-size: 1rem;
 
       text-align: left;
@@ -207,42 +153,26 @@
       cursor: pointer;
 
       transition: 0.2s;
-
     }
 
-
-    .capitulo:hover {
-
+    .elemento:hover {
       background: #eaeaea;
-
       border-color: #ddd;
-
       transform: translateY(-1px);
-
     }
 
-
-    .capitulo-info {
-
+    .elemento-info {
       display: flex;
-
       align-items: center;
-
       gap: 0.8rem;
-
     }
 
-
-    .capitulo-icono {
-
+    .elemento-icono {
       width: 40px;
-
       height: 40px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       background: #f0f0f0;
@@ -250,41 +180,26 @@
       border-radius: 8px;
 
       font-size: 1.1rem;
-
+      flex-shrink: 0;
     }
-
 
     .nombre {
-
       font-weight: 600;
-
     }
-
 
     .flecha {
-
       color: #007bff;
-
       font-size: 1.3rem;
-
     }
-
 
     #estado {
-
       text-align: center;
-
       color: #666;
-
       padding: 1rem 0;
-
     }
 
-
     .error {
-
       color: #dc3545 !important;
-
     }
 
   </style>
@@ -294,12 +209,11 @@
 
 <body>
 
-
   <main class="contenedor">
 
 
     <!-- =====================================================
-         BOTÓN VOLVER
+         BOTÓN VOLVER + CABECERA
     ====================================================== -->
 
     <section class="card">
@@ -341,22 +255,22 @@
 
 
     <!-- =====================================================
-         CAPÍTULOS
+         CONTENIDO
     ====================================================== -->
 
     <section class="card">
 
       <h2 class="titulo-seccion">
-        📖 Capítulos
+        📖 Contenido
       </h2>
 
 
       <div id="estado">
-        Cargando capítulos...
+        Cargando contenido...
       </div>
 
 
-      <div id="capitulos"></div>
+      <div id="elementos"></div>
 
     </section>
 
@@ -365,7 +279,6 @@
 
 
   <script>
-
 
     /* ========================================================
        CONFIGURACIÓN
@@ -379,7 +292,7 @@
 
 
     /* ========================================================
-       OBTENER ASIGNATURA DE LA URL
+       OBTENER RUTA ACTUAL
     ======================================================== */
 
     const parametros =
@@ -388,12 +301,26 @@
       );
 
 
-    const asignatura =
-      parametros.get("asignatura");
+    /*
+     * Ejemplo:
+     *
+     * ?ruta=constitucion
+     *
+     * o:
+     *
+     * ?ruta=constitucion/titulo-i
+     *
+     * o:
+     *
+     * ?ruta=constitucion/titulo-i/derechos
+     */
+
+    const rutaActual =
+      parametros.get("ruta");
 
 
     /* ========================================================
-       ELEMENTOS
+       ELEMENTOS HTML
     ======================================================== */
 
     const cabecera =
@@ -404,29 +331,66 @@
       document.getElementById("estado");
 
 
-    const capitulos =
-      document.getElementById("capitulos");
+    const elementos =
+      document.getElementById("elementos");
 
 
     /* ========================================================
-       CARGAR CONFIGURACIÓN
+       DECODIFICAR BASE64
+    ======================================================== */
+
+    function decodificarBase64(base64) {
+
+      const binario =
+        atob(
+          base64.replace(/\s/g, "")
+        );
+
+
+      const bytes =
+        new Uint8Array(
+          binario.length
+        );
+
+
+      for (
+        let i = 0;
+        i < binario.length;
+        i++
+      ) {
+
+        bytes[i] =
+          binario.charCodeAt(i);
+
+      }
+
+
+      return new TextDecoder(
+        "utf-8"
+      ).decode(bytes);
+
+    }
+
+
+    /* ========================================================
+       CARGAR CONFIG.JSON
     ======================================================== */
 
     async function cargarConfiguracion() {
 
       try {
 
-        if (!asignatura) {
+        if (!rutaActual) {
 
           throw new Error(
-            "No se ha indicado ninguna asignatura."
+            "No se ha indicado ninguna ruta."
           );
 
         }
 
 
         const url =
-          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${asignatura}/config.json`;
+          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${rutaActual}/config.json`;
 
 
         const respuesta =
@@ -447,12 +411,8 @@
 
 
         const contenido =
-          decodeURIComponent(
-            escape(
-              atob(
-                archivo.content.replace(/\n/g, "")
-              )
-            )
+          decodificarBase64(
+            archivo.content
           );
 
 
@@ -460,12 +420,12 @@
           JSON.parse(contenido);
 
 
-        mostrarAsignatura(
+        mostrarCabecera(
           configuracion
         );
 
 
-        mostrarCapitulos(
+        mostrarElementos(
           configuracion
         );
 
@@ -476,10 +436,12 @@
 
         console.error(error);
 
-        estado.classList.add("error");
+        estado.classList.add(
+          "error"
+        );
 
         estado.textContent =
-          "❌ No se ha podido cargar la asignatura.";
+          "❌ No se ha podido cargar el contenido.";
 
       }
 
@@ -487,10 +449,10 @@
 
 
     /* ========================================================
-       MOSTRAR ASIGNATURA
+       MOSTRAR CABECERA
     ======================================================== */
 
-    function mostrarAsignatura(
+    function mostrarCabecera(
       configuracion
     ) {
 
@@ -502,17 +464,22 @@
 
         </div>
 
+
         <div>
 
           <h1>
 
-            ${configuracion.nombre || "Asignatura"}
+            ${escaparHTML(
+              configuracion.nombre ||
+              "Contenido"
+            )}
 
           </h1>
 
+
           <p>
 
-            Selecciona un capítulo para estudiar.
+            Selecciona un elemento para continuar.
 
           </p>
 
@@ -524,21 +491,24 @@
 
 
     /* ========================================================
-       MOSTRAR CAPÍTULOS
+       MOSTRAR CARPETAS Y TESTS
     ======================================================== */
 
-    function mostrarCapitulos(
+    function mostrarElementos(
       configuracion
     ) {
 
       const lista =
-        configuracion.capitulos || [];
+        configuracion.elementos || [];
+
+
+      elementos.innerHTML = "";
 
 
       if (lista.length === 0) {
 
         estado.textContent =
-          "Esta asignatura todavía no tiene capítulos.";
+          "Esta carpeta todavía no tiene contenido.";
 
         return;
 
@@ -550,32 +520,52 @@
 
 
       lista.forEach(
-        capitulo => {
-
+        elemento => {
 
           const boton =
-            document.createElement("button");
+            document.createElement(
+              "button"
+            );
 
 
           boton.className =
-            "capitulo";
+            "elemento";
 
 
           boton.type =
             "button";
 
 
+          /*
+           * Icono según el tipo
+           */
+
+          const icono =
+            elemento.icono ||
+            (
+              elemento.tipo === "carpeta"
+                ? "📁"
+                : "📝"
+            );
+
+
           boton.innerHTML = `
 
-            <span class="capitulo-info">
+            <span class="elemento-info">
 
-              <span class="capitulo-icono">
-                📘
+              <span class="elemento-icono">
+
+                ${icono}
+
               </span>
+
 
               <span class="nombre">
 
-                ${capitulo.nombre}
+                ${escaparHTML(
+                  elemento.nombre ||
+                  "Sin nombre"
+                )}
 
               </span>
 
@@ -583,7 +573,9 @@
 
 
             <span class="flecha">
+
               ›
+
             </span>
 
           `;
@@ -591,17 +583,17 @@
 
           boton.addEventListener(
             "click",
-            () => {
+            function() {
 
-              abrirCapitulo(
-                capitulo
+              abrirElemento(
+                elemento
               );
 
             }
           );
 
 
-          capitulos.appendChild(
+          elementos.appendChild(
             boton
           );
 
@@ -612,19 +604,110 @@
 
 
     /* ========================================================
-       ABRIR CAPÍTULO
+       ABRIR ELEMENTO
     ======================================================== */
 
-    function abrirCapitulo(
-  capitulo
-) {
+    function abrirElemento(
+      elemento
+    ) {
 
-  window.location.href =
-    `test.html?datos=${encodeURIComponent(
-      asignatura + "/" + capitulo.archivo
-    )}`;
+      /*
+       * CARPETA
+       *
+       * Construimos una nueva ruta:
+       *
+       * constitucion
+       *
+       * →
+       *
+       * constitucion/titulo-i
+       *
+       * →
+       *
+       * constitucion/titulo-i/derechos
+       */
 
-}
+      if (
+        elemento.tipo === "carpeta"
+      ) {
+
+        const nuevaRuta =
+          rutaActual +
+          "/" +
+          elemento.id;
+
+
+        window.location.href =
+          `capitulos.html?ruta=${encodeURIComponent(
+            nuevaRuta
+          )}`;
+
+
+        return;
+
+      }
+
+
+      /*
+       * TEST
+       */
+
+      if (
+        elemento.tipo === "test"
+      ) {
+
+        const archivo =
+          elemento.archivo;
+
+
+        if (!archivo) {
+
+          alert(
+            "Este test no tiene un archivo asociado."
+          );
+
+          return;
+
+        }
+
+
+        const rutaArchivo =
+          rutaActual +
+          "/" +
+          archivo;
+
+
+        window.location.href =
+          `test.html?datos=${encodeURIComponent(
+            rutaArchivo
+          )}`;
+
+      }
+
+    }
+
+
+    /* ========================================================
+       SEGURIDAD
+    ======================================================== */
+
+    function escaparHTML(
+      texto
+    ) {
+
+      const elemento =
+        document.createElement(
+          "div"
+        );
+
+
+      elemento.textContent =
+        texto;
+
+
+      return elemento.innerHTML;
+
+    }
 
 
     /* ========================================================
@@ -632,7 +715,6 @@
     ======================================================== */
 
     cargarConfiguracion();
-
 
   </script>
 
