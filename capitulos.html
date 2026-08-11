@@ -12,130 +12,202 @@
 
   <title>Contenido - OPOS-TAI</title>
 
+
   <style>
 
     * {
       box-sizing: border-box;
     }
 
+
     body {
+
       font-family: 'Segoe UI', sans-serif;
+
       background: #f2f4f8;
+
       color: #333;
+
       margin: 0;
+
       min-height: 100vh;
+
     }
+
 
     .contenedor {
+
       width: 100%;
+
       max-width: 700px;
+
       margin: 0 auto;
+
       padding: 1rem;
+
     }
 
+
     .card {
+
       background: white;
+
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
       padding: 1.5rem;
+
       margin-bottom: 1rem;
+
     }
+
 
     /* =====================================================
        BOTÓN VOLVER
-    ===================================================== */
+    ====================================================== */
 
     .volver {
+
       display: inline-flex;
+
       align-items: center;
+
       justify-content: center;
 
       width: 38px;
+
       height: 38px;
 
       padding: 0;
+
       margin: 0 0 0.8rem 0;
 
       background: transparent;
+
       color: #555;
 
       border: none;
+
       border-radius: 50%;
 
       font-size: 1.5rem;
+
       font-weight: 400;
 
       line-height: 1;
+
       cursor: pointer;
 
       transition:
         background 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
+        color 0.2s ease;
+
     }
 
+
     .volver:hover {
+
       background: #f0f2f5;
+
       color: #007bff;
+
     }
+
 
     /* =====================================================
        CABECERA
-    ===================================================== */
+    ====================================================== */
 
     .cabecera {
+
       display: flex;
+
       align-items: center;
+
       gap: 1rem;
+
     }
 
+
     .icono {
+
       width: 50px;
+
       height: 50px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       background: #e9f2ff;
+
       border-radius: 10px;
 
       font-size: 1.5rem;
+
       flex-shrink: 0;
+
     }
+
 
     .cabecera h1 {
+
       margin: 0;
+
       font-size: 1.4rem;
+
       color: #222;
+
     }
 
+
     .cabecera p {
+
       margin: 0.3rem 0 0;
+
       color: #666;
+
       font-size: 0.9rem;
+
     }
+
 
     /* =====================================================
        LISTADO
-    ===================================================== */
+    ====================================================== */
 
     .titulo-seccion {
+
       font-size: 1.1rem;
+
       margin-top: 0;
+
     }
+
 
     #elementos {
+
       display: flex;
+
       flex-direction: column;
+
       gap: 0.8rem;
+
     }
 
+
     .elemento {
+
       width: 100%;
 
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
 
       padding: 1rem;
@@ -143,9 +215,11 @@
       background: #f7f7f7;
 
       border: 1px solid transparent;
+
       border-radius: 8px;
 
       font-family: inherit;
+
       font-size: 1rem;
 
       text-align: left;
@@ -153,26 +227,44 @@
       cursor: pointer;
 
       transition: 0.2s;
+
     }
+
 
     .elemento:hover {
+
       background: #eaeaea;
+
       border-color: #ddd;
+
       transform: translateY(-1px);
+
     }
+
 
     .elemento-info {
+
       display: flex;
+
       align-items: center;
+
       gap: 0.8rem;
+
+      min-width: 0;
+
     }
 
+
     .elemento-icono {
+
       width: 40px;
+
       height: 40px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       background: #f0f0f0;
@@ -180,26 +272,49 @@
       border-radius: 8px;
 
       font-size: 1.1rem;
+
       flex-shrink: 0;
+
     }
+
 
     .nombre {
+
       font-weight: 600;
+
+      overflow-wrap: anywhere;
+
     }
+
 
     .flecha {
+
       color: #007bff;
+
       font-size: 1.3rem;
+
+      flex-shrink: 0;
+
+      margin-left: 0.8rem;
+
     }
+
 
     #estado {
+
       text-align: center;
+
       color: #666;
+
       padding: 1rem 0;
+
     }
 
+
     .error {
+
       color: #dc3545 !important;
+
     }
 
   </style>
@@ -209,14 +324,16 @@
 
 <body>
 
+
   <main class="contenedor">
 
 
     <!-- =====================================================
-         BOTÓN VOLVER + CABECERA
+         CABECERA
     ====================================================== -->
 
     <section class="card">
+
 
       <button
         class="volver"
@@ -236,6 +353,7 @@
         <div class="icono">
           📚
         </div>
+
 
         <div>
 
@@ -260,6 +378,7 @@
 
     <section class="card">
 
+
       <h2 class="titulo-seccion">
         📖 Contenido
       </h2>
@@ -271,6 +390,7 @@
 
 
       <div id="elementos"></div>
+
 
     </section>
 
@@ -284,15 +404,20 @@
        CONFIGURACIÓN
     ======================================================== */
 
-    const propietario = "sxrgiohb";
+    const propietario =
+      "sxrgiohb";
 
-    const repositorio = "OPOS-TAI";
 
-    const carpetaDatos = "data";
+    const repositorio =
+      "OPOS-TAI";
+
+
+    const carpetaDatos =
+      "data";
 
 
     /* ========================================================
-       OBTENER RUTA ACTUAL
+       PARÁMETROS DE LA URL
     ======================================================== */
 
     const parametros =
@@ -302,21 +427,66 @@
 
 
     /*
-     * Ejemplo:
+     * La URL tendrá:
      *
-     * ?ruta=constitucion
+     * capitulos.html?asignatura=constitucion
      *
-     * o:
-     *
-     * ?ruta=constitucion/titulo-i
-     *
-     * o:
-     *
-     * ?ruta=constitucion/titulo-i/derechos
      */
 
-    const rutaActual =
+
+    const asignatura =
+      parametros.get("asignatura");
+
+
+    /*
+     * rutaElementos representa la posición
+     * actual dentro del árbol del config.json.
+     *
+     * Ejemplo:
+     *
+     * []
+     *
+     * ["titulo-i"]
+     *
+     * ["titulo-i", "derechos"]
+     *
+     * ["titulo-i", "derechos", "jurisprudencia"]
+     *
+     */
+
+
+    let rutaElementos = [];
+
+
+    const rutaParametro =
       parametros.get("ruta");
+
+
+    if (rutaParametro) {
+
+      try {
+
+        rutaElementos =
+          JSON.parse(
+            decodeURIComponent(
+              rutaParametro
+            )
+          );
+
+      }
+
+      catch (error) {
+
+        console.error(
+          "Ruta interna no válida:",
+          error
+        );
+
+        rutaElementos = [];
+
+      }
+
+    }
 
 
     /* ========================================================
@@ -324,26 +494,37 @@
     ======================================================== */
 
     const cabecera =
-      document.getElementById("cabecera");
+      document.getElementById(
+        "cabecera"
+      );
 
 
     const estado =
-      document.getElementById("estado");
+      document.getElementById(
+        "estado"
+      );
 
 
     const elementos =
-      document.getElementById("elementos");
+      document.getElementById(
+        "elementos"
+      );
 
 
     /* ========================================================
        DECODIFICAR BASE64
     ======================================================== */
 
-    function decodificarBase64(base64) {
+    function decodificarBase64(
+      base64
+    ) {
 
       const binario =
         atob(
-          base64.replace(/\s/g, "")
+          base64.replace(
+            /\s/g,
+            ""
+          )
         );
 
 
@@ -380,17 +561,26 @@
 
       try {
 
-        if (!rutaActual) {
+        if (!asignatura) {
 
           throw new Error(
-            "No se ha indicado ninguna ruta."
+            "No se ha indicado ninguna asignatura."
           );
 
         }
 
 
+        /*
+         * SIEMPRE cargamos el mismo config.json.
+         *
+         * Por ejemplo:
+         *
+         * data/constitucion/config.json
+         *
+         */
+
         const url =
-          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${rutaActual}/config.json`;
+          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${encodeURIComponent(asignatura)}/config.json`;
 
 
         const respuesta =
@@ -417,15 +607,17 @@
 
 
         const configuracion =
-          JSON.parse(contenido);
+          JSON.parse(
+            contenido
+          );
 
 
-        mostrarCabecera(
-          configuracion
-        );
+        /*
+         * Mostrar el contenido correspondiente
+         * a la posición actual.
+         */
 
-
-        mostrarElementos(
+        mostrarContenido(
           configuracion
         );
 
@@ -434,11 +626,15 @@
 
       catch (error) {
 
-        console.error(error);
+        console.error(
+          error
+        );
+
 
         estado.classList.add(
           "error"
         );
+
 
         estado.textContent =
           "❌ No se ha podido cargar el contenido.";
@@ -449,18 +645,182 @@
 
 
     /* ========================================================
-       MOSTRAR CABECERA
+       BUSCAR ELEMENTOS EN EL ÁRBOL
     ======================================================== */
 
-    function mostrarCabecera(
+    function obtenerElementosActuales(
       configuracion
     ) {
+
+      /*
+       * Empezamos en el nivel raíz.
+       */
+
+      let elementosActuales =
+        configuracion.elementos || [];
+
+
+      /*
+       * Vamos recorriendo la ruta:
+       *
+       * ["titulo-i", "derechos", "jurisprudencia"]
+       *
+       */
+
+
+      for (
+        const id of rutaElementos
+      ) {
+
+        const carpeta =
+          elementosActuales.find(
+            elemento =>
+              elemento.tipo === "carpeta" &&
+              elemento.id === id
+          );
+
+
+        /*
+         * Si no encontramos la carpeta,
+         * detenemos la búsqueda.
+         */
+
+        if (!carpeta) {
+
+          return [];
+
+        }
+
+
+        /*
+         * Entramos dentro de la carpeta.
+         */
+
+        elementosActuales =
+          carpeta.elementos || [];
+
+      }
+
+
+      return elementosActuales;
+
+    }
+
+
+    /* ========================================================
+       OBTENER NOMBRE E ICONO DEL NIVEL ACTUAL
+    ======================================================== */
+
+    function obtenerInformacionActual(
+      configuracion
+    ) {
+
+      /*
+       * Si estamos en la raíz,
+       * usamos la información de la asignatura.
+       */
+
+      if (
+        rutaElementos.length === 0
+      ) {
+
+        return {
+
+          nombre:
+            configuracion.nombre ||
+            "Contenido",
+
+          icono:
+            configuracion.icono ||
+            "📚"
+
+        };
+
+      }
+
+
+      /*
+       * Si estamos dentro de carpetas,
+       * buscamos la carpeta correspondiente.
+       */
+
+      let elementosActuales =
+        configuracion.elementos || [];
+
+
+      let elementoActual =
+        null;
+
+
+      for (
+        const id of rutaElementos
+      ) {
+
+        elementoActual =
+          elementosActuales.find(
+            elemento =>
+              elemento.tipo === "carpeta" &&
+              elemento.id === id
+          );
+
+
+        if (!elementoActual) {
+
+          return {
+
+            nombre: "Contenido",
+
+            icono: "📚"
+
+          };
+
+        }
+
+
+        elementosActuales =
+          elementoActual.elementos || [];
+
+      }
+
+
+      return {
+
+        nombre:
+          elementoActual.nombre ||
+          "Contenido",
+
+        icono:
+          elementoActual.icono ||
+          "📁"
+
+      };
+
+    }
+
+
+    /* ========================================================
+       MOSTRAR CONTENIDO
+    ======================================================== */
+
+    function mostrarContenido(
+      configuracion
+    ) {
+
+      const informacion =
+        obtenerInformacionActual(
+          configuracion
+        );
+
+
+      /*
+       * CABECERA
+       */
 
       cabecera.innerHTML = `
 
         <div class="icono">
 
-          ${configuracion.icono || "📚"}
+          ${informacion.icono}
 
         </div>
 
@@ -470,8 +830,7 @@
           <h1>
 
             ${escaparHTML(
-              configuracion.nombre ||
-              "Contenido"
+              informacion.nombre
             )}
 
           </h1>
@@ -487,28 +846,32 @@
 
       `;
 
-    }
 
-
-    /* ========================================================
-       MOSTRAR CARPETAS Y TESTS
-    ======================================================== */
-
-    function mostrarElementos(
-      configuracion
-    ) {
+      /*
+       * ELEMENTOS DEL NIVEL ACTUAL
+       */
 
       const lista =
-        configuracion.elementos || [];
+        obtenerElementosActuales(
+          configuracion
+        );
 
 
-      elementos.innerHTML = "";
+      elementos.innerHTML =
+        "";
 
 
-      if (lista.length === 0) {
+      if (
+        lista.length === 0
+      ) {
+
+        estado.style.display =
+          "block";
+
 
         estado.textContent =
           "Esta carpeta todavía no tiene contenido.";
+
 
         return;
 
@@ -519,85 +882,110 @@
         "none";
 
 
+      /*
+       * CREAR CADA ELEMENTO
+       */
+
       lista.forEach(
         elemento => {
 
-          const boton =
-            document.createElement(
-              "button"
-            );
-
-
-          boton.className =
-            "elemento";
-
-
-          boton.type =
-            "button";
-
-
-          /*
-           * Icono según el tipo
-           */
-
-          const icono =
-            elemento.icono ||
-            (
-              elemento.tipo === "carpeta"
-                ? "📁"
-                : "📝"
-            );
-
-
-          boton.innerHTML = `
-
-            <span class="elemento-info">
-
-              <span class="elemento-icono">
-
-                ${icono}
-
-              </span>
-
-
-              <span class="nombre">
-
-                ${escaparHTML(
-                  elemento.nombre ||
-                  "Sin nombre"
-                )}
-
-              </span>
-
-            </span>
-
-
-            <span class="flecha">
-
-              ›
-
-            </span>
-
-          `;
-
-
-          boton.addEventListener(
-            "click",
-            function() {
-
-              abrirElemento(
-                elemento
-              );
-
-            }
-          );
-
-
-          elementos.appendChild(
-            boton
+          crearElemento(
+            elemento
           );
 
         }
+      );
+
+    }
+
+
+    /* ========================================================
+       CREAR ELEMENTO
+    ======================================================== */
+
+    function crearElemento(
+      elemento
+    ) {
+
+      const boton =
+        document.createElement(
+          "button"
+        );
+
+
+      boton.className =
+        "elemento";
+
+
+      boton.type =
+        "button";
+
+
+      /*
+       * Icono automático:
+       *
+       * carpeta → 📁
+       * test → 📝
+       *
+       * Si el JSON especifica uno,
+       * utilizamos ese.
+       */
+
+      const icono =
+        elemento.icono ||
+        (
+          elemento.tipo === "carpeta"
+            ? "📁"
+            : "📝"
+        );
+
+
+      boton.innerHTML = `
+
+        <span class="elemento-info">
+
+          <span class="elemento-icono">
+
+            ${icono}
+
+          </span>
+
+
+          <span class="nombre">
+
+            ${escaparHTML(
+              elemento.nombre ||
+              "Sin nombre"
+            )}
+
+          </span>
+
+        </span>
+
+
+        <span class="flecha">
+
+          ›
+
+        </span>
+
+      `;
+
+
+      boton.addEventListener(
+        "click",
+        function() {
+
+          abrirElemento(
+            elemento
+          );
+
+        }
+      );
+
+
+      elementos.appendChild(
+        boton
       );
 
     }
@@ -611,36 +999,48 @@
       elemento
     ) {
 
-      /*
-       * CARPETA
-       *
-       * Construimos una nueva ruta:
-       *
-       * constitucion
-       *
-       * →
-       *
-       * constitucion/titulo-i
-       *
-       * →
-       *
-       * constitucion/titulo-i/derechos
-       */
+      /* =====================================================
+         CARPETA
+      ===================================================== */
 
       if (
         elemento.tipo === "carpeta"
       ) {
 
-        const nuevaRuta =
-          rutaActual +
-          "/" +
-          elemento.id;
+        /*
+         * Añadimos el ID a la ruta.
+         *
+         * Ejemplo:
+         *
+         * []
+         *
+         * →
+         *
+         * ["titulo-i"]
+         *
+         * →
+         *
+         * ["titulo-i", "derechos"]
+         */
+
+        const nuevaRuta = [
+          ...rutaElementos,
+          elemento.id
+        ];
+
+
+        const rutaCodificada =
+          encodeURIComponent(
+            JSON.stringify(
+              nuevaRuta
+            )
+          );
 
 
         window.location.href =
-          `capitulos.html?ruta=${encodeURIComponent(
-            nuevaRuta
-          )}`;
+          `capitulos.html?asignatura=${encodeURIComponent(
+            asignatura
+          )}&ruta=${rutaCodificada}`;
 
 
         return;
@@ -648,19 +1048,17 @@
       }
 
 
-      /*
-       * TEST
-       */
+      /* =====================================================
+         TEST
+      ===================================================== */
 
       if (
         elemento.tipo === "test"
       ) {
 
-        const archivo =
-          elemento.archivo;
-
-
-        if (!archivo) {
+        if (
+          !elemento.archivo
+        ) {
 
           alert(
             "Este test no tiene un archivo asociado."
@@ -671,10 +1069,23 @@
         }
 
 
+        /*
+         * El archivo se interpreta
+         * respecto a la carpeta de la asignatura.
+         *
+         * Ejemplo:
+         *
+         * titulo-i/preguntas.json
+         *
+         * o:
+         *
+         * titulo-i/derechos/preguntas.json
+         *
+         */
+
+
         const rutaArchivo =
-          rutaActual +
-          "/" +
-          archivo;
+          `${asignatura}/${elemento.archivo}`;
 
 
         window.location.href =
