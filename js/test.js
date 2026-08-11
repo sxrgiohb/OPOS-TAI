@@ -2075,182 +2075,140 @@ function mostrarListado() {
      */
 
     if (idSesion) {
+
         return;
+
     }
+
 
     if (!listaPreguntasElemento) {
+
         return;
+
     }
 
 
-    listaPreguntasElemento.innerHTML = "";
+    listaPreguntasElemento.innerHTML =
+        "";
 
 
     preguntas.forEach(
         pregunta => {
 
             const elemento =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             elemento.className =
                 "pregunta-listado";
 
 
+            /* ====================================================
+               ESTADO DE LA PREGUNTA
+            ==================================================== */
+
+            const cabeceraEstado =
+                document.createElement(
+                    "div"
+                );
+
+
+            cabeceraEstado.className =
+                "pregunta-listado-cabecera";
+
+
             /*
-             * ====================================================
-             * ESTADO DE LA PREGUNTA
-             * ====================================================
+             * Comprobar si la pregunta está dominada.
+             *
+             * Las estadísticas proceden de estadisticas.js.
              */
 
-            let estadoPregunta = null;
-
-
-            if (
+            const dominada =
                 pregunta.id &&
-                typeof obtenerRendimientoPregunta ===
+                typeof estaPreguntaDominada ===
                     "function"
-            ) {
-
-                const rendimiento =
-                    obtenerRendimientoPregunta(
-                        pregunta.id
-                    );
-
-
-                /*
-                 * DOMINADA
-                 *
-                 * Esta función ya comprueba
-                 * el requisito de los 20 intentos.
-                 */
-
-                if (
-                    typeof estaPreguntaDominada ===
-                        "function" &&
-                    estaPreguntaDominada(
+                    ? estaPreguntaDominada(
                         pregunta.id
                     )
-                ) {
-
-                    estadoPregunta = {
-                        clase: "dominado",
-                        texto: "DOMINADA"
-                    };
-
-                }
-
-
-                /*
-                 * BUEN DOMINIO
-                 */
-
-                else if (
-                    rendimiento.respuestas > 0 &&
-                    rendimiento.rendimiento >= 70
-                ) {
-
-                    estadoPregunta = {
-                        clase: "buen-dominio",
-                        texto: "BUEN DOMINIO"
-                    };
-
-                }
-
-
-                /*
-                 * EN PROGRESO
-                 */
-
-                else if (
-                    rendimiento.respuestas > 0 &&
-                    rendimiento.rendimiento >= 50
-                ) {
-
-                    estadoPregunta = {
-                        clase: "en-progreso",
-                        texto: "EN PROGRESO"
-                    };
-
-                }
-
-
-                /*
-                 * DÉBIL
-                 */
-
-                else if (
-                    rendimiento.respuestas > 0
-                ) {
-
-                    estadoPregunta = {
-                        clase: "debil",
-                        texto: "DÉBIL"
-                    };
-
-                }
-
-            }
+                    : false;
 
 
             /*
-             * ====================================================
-             * INSIGNIA
-             * ====================================================
+             * Crear insignia.
              */
 
-            if (estadoPregunta) {
-
-                const insignia =
-                    document.createElement("div");
-
-
-                insignia.className =
-                    "estado-pregunta " +
-                    estadoPregunta.clase;
+            const estado =
+                document.createElement(
+                    "div"
+                );
 
 
-                const textoEstado =
-                    document.createElement("span");
+            estado.className =
+                "estado-pregunta";
 
 
-                textoEstado.textContent =
-                    estadoPregunta.texto;
+            /*
+             * Si está dominada:
+             *
+             * DOMINADA 🟢
+             */
+
+            if (dominada) {
+
+                estado.classList.add(
+                    "dominada"
+                );
+
+
+                estado.appendChild(
+                    document.createTextNode(
+                        "DOMINADA"
+                    )
+                );
 
 
                 const circulo =
-                    document.createElement("span");
+                    document.createElement(
+                        "span"
+                    );
 
 
                 circulo.className =
-                    "circulo-estado";
+                    "circulo";
 
 
-                insignia.appendChild(
-                    textoEstado
-                );
-
-
-                insignia.appendChild(
+                estado.appendChild(
                     circulo
-                );
-
-
-                elemento.appendChild(
-                    insignia
                 );
 
             }
 
 
             /*
-             * ====================================================
-             * PREGUNTA
-             * ====================================================
+             * Si todavía no está dominada
+             * no mostramos ninguna insignia.
              */
 
+            cabeceraEstado.appendChild(
+                estado
+            );
+
+
+            elemento.appendChild(
+                cabeceraEstado
+            );
+
+
+            /* ====================================================
+               PREGUNTA
+            ==================================================== */
+
             const preguntaTexto =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             preguntaTexto.className =
@@ -2261,14 +2219,14 @@ function mostrarListado() {
                 pregunta.pregunta;
 
 
-            /*
-             * ====================================================
-             * RESPUESTA
-             * ====================================================
-             */
+            /* ====================================================
+               RESPUESTA
+            ==================================================== */
 
             const respuestaTexto =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             respuestaTexto.className =
@@ -2279,11 +2237,9 @@ function mostrarListado() {
                 pregunta.respuesta;
 
 
-            /*
-             * ====================================================
-             * TEXTO UTILIZADO POR EL BUSCADOR
-             * ====================================================
-             */
+            /* ====================================================
+               BUSCADOR
+            ==================================================== */
 
             elemento.dataset.busqueda =
                 (
@@ -2293,11 +2249,9 @@ function mostrarListado() {
                 ).toLowerCase();
 
 
-            /*
-             * ====================================================
-             * AÑADIR ELEMENTOS
-             * ====================================================
-             */
+            /* ====================================================
+               AÑADIR ELEMENTOS
+            ==================================================== */
 
             elemento.appendChild(
                 preguntaTexto
@@ -2315,6 +2269,7 @@ function mostrarListado() {
 
         }
     );
+
 }
 
 
