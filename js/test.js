@@ -913,6 +913,18 @@ function reiniciarEstadisticas() {
    LISTADO DE PREGUNTAS
 ======================================================== */
 
+function escaparHTML(texto) {
+
+    const elemento =
+        document.createElement("div");
+
+    elemento.textContent =
+        texto ?? "";
+
+    return elemento.innerHTML;
+
+}
+
 function mostrarListado() {
 
     if (!listaPreguntasElemento) {
@@ -922,8 +934,7 @@ function mostrarListado() {
     }
 
 
-    listaPreguntasElemento.innerHTML =
-        "";
+    listaPreguntasElemento.innerHTML = "";
 
 
     preguntas.forEach(
@@ -933,22 +944,81 @@ function mostrarListado() {
         ) => {
 
             const elemento =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             elemento.className =
                 "pregunta-listado";
 
 
-            elemento.textContent =
+            /*
+             * Pregunta
+             */
+
+            const preguntaTexto =
+                document.createElement("div");
+
+
+            preguntaTexto.className =
+                "pregunta-listado-texto";
+
+
+            preguntaTexto.textContent =
                 `${posicion + 1}. ${pregunta.pregunta}`;
+
+
+            /*
+             * Respuesta
+             */
+
+            const respuestaTexto =
+                document.createElement("div");
+
+
+            respuestaTexto.className =
+                "respuesta-listado";
+
+
+            respuestaTexto.innerHTML =
+                `<strong>✅ Respuesta:</strong> ${
+                    escaparHTML(
+                        pregunta.respuesta
+                    )
+                }`;
+
+
+            /*
+             * Guardamos también la información
+             * para que el buscador pueda encontrar
+             * preguntas y respuestas.
+             */
+
+            elemento.dataset.busqueda =
+                `${pregunta.pregunta} ${pregunta.respuesta}`
+                    .toLowerCase();
 
 
             elemento.dataset.indice =
                 posicion;
 
+
+            /*
+             * Añadir pregunta + respuesta
+             */
+
+            elemento.appendChild(
+                preguntaTexto
+            );
+
+
+            elemento.appendChild(
+                respuestaTexto
+            );
+
+
+            /*
+             * Al pulsar la tarjeta vamos a esa pregunta.
+             */
 
             elemento.addEventListener(
                 "click",
@@ -959,6 +1029,11 @@ function mostrarListado() {
 
 
                     mostrarPregunta();
+
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
 
                 }
             );
@@ -1052,12 +1127,15 @@ function filtrarPreguntas() {
     elementos.forEach(
         elemento => {
 
+            const contenido =
+                elemento.dataset.busqueda ||
+                "";
+
+
             const coincide =
-                elemento.textContent
-                    .toLowerCase()
-                    .includes(
-                        texto
-                    );
+                contenido.includes(
+                    texto
+                );
 
 
             elemento.style.display =
