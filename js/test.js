@@ -1,5 +1,7 @@
+```js
 let preguntas = [];
 let indice = 0;
+
 
 /* ========================================================
    ESTADO DEL BOTÓN DEL TEST
@@ -26,22 +28,6 @@ let respondidas = 0;
 
 const CLAVE_SESIONES =
     "opos_tai_sesiones";
-
-
-/*
- * Número mínimo de intentos que necesita una pregunta
- * para poder ser considerada DOMINADA.
- *
- * IMPORTANTE:
- *
- * Este valor debe coincidir con el utilizado en
- * estadisticas.js.
- *
- * Las estadísticas son permanentes.
- */
-
-const MINIMO_INTENTOS_DOMINADA =
-    20;
 
 
 /* ========================================================
@@ -815,6 +801,62 @@ function mostrarPregunta(
 
 
     /*
+     * Comprobar que la pregunta tiene
+     * la estructura esperada.
+     */
+
+    if (
+        !pregunta ||
+        typeof pregunta !== "object"
+    ) {
+
+        console.error(
+            "Pregunta inválida:",
+            pregunta
+        );
+
+        throw new Error(
+            "La pregunta no tiene un formato válido."
+        );
+
+    }
+
+
+    if (
+        !pregunta.pregunta
+    ) {
+
+        console.error(
+            "La pregunta no tiene el campo 'pregunta':",
+            pregunta
+        );
+
+        throw new Error(
+            "Una pregunta del JSON no contiene el campo 'pregunta'."
+        );
+
+    }
+
+
+    if (
+        !Array.isArray(
+            pregunta.opciones
+        )
+    ) {
+
+        console.error(
+            "La pregunta no tiene un array 'opciones':",
+            pregunta
+        );
+
+        throw new Error(
+            "Una pregunta del JSON no contiene el campo 'opciones'."
+        );
+
+    }
+
+
+    /*
      * Guardar estado actual.
      */
 
@@ -927,10 +969,10 @@ function mostrarPregunta(
    COMPROBAR SI UNA PREGUNTA ESTÁ DOMINADA
    ========================================================
 
-   Esta función consulta las estadísticas PERMANENTES.
+   Consulta las estadísticas PERMANENTES.
 
-   Si estadisticas.js no está cargado, devolvemos false
-   para que el test siga funcionando.
+   La función estaPreguntaDominada()
+   pertenece a estadisticas.js.
    ======================================================== */
 
 function estaDominada(
@@ -1466,9 +1508,7 @@ function procesarResultadoEstudio(
          * La pregunta deja de estar pendiente
          * dentro de este test.
          *
-         * IMPORTANTE:
-         *
-         * Esto NO significa que esté dominada.
+         * Esto NO significa que esté DOMINADA.
          */
 
         if (
@@ -1602,6 +1642,7 @@ function corregirRespuesta() {
 
     /*
      * Comprobar respuesta.
+
      */
 
     const esCorrecta =
@@ -1687,7 +1728,6 @@ function corregirRespuesta() {
 
     /* ====================================================
        ESTADÍSTICAS GLOBALES
-       ====================================================
 
        Cada respuesta cuenta como un intento histórico.
 
@@ -2281,6 +2321,7 @@ function mostrarListado() {
 
             /*
              * Primero el texto.
+
              */
 
             estado.appendChild(
@@ -2594,3 +2635,4 @@ configurarListado();
  */
 
 cargarPreguntas();
+```
