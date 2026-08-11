@@ -1,4 +1,3 @@
-```js
 let preguntas = [];
 let indice = 0;
 
@@ -2635,4 +2634,3 @@ configurarListado();
  */
 
 cargarPreguntas();
-```
