@@ -5,13 +5,13 @@
   "contenido": [
     {
       "id": "preambulo",
-      "nombre": "PREÁMBULO",
+      "nombre": "Preámbulo",
       "archivo": "preambulo.json"
     },
     {
       "id": "preguntas",
       "nombre": "Preguntas",
-      "archivo": "preguntas.json"
+      "archivo": "titulo-i.json"
     }
   ]
 }
