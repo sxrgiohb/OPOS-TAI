@@ -519,24 +519,24 @@
        RESOLVER RUTA
     ========================================================
 
-       Esta función recorre config.json siguiendo la ruta
-       indicada en la URL.
+       Recorre config.json siguiendo la ruta de la URL.
 
        Ejemplo:
 
        rutaActual:
-       "titulo-preliminar/capitulo-1"
+
+       titulo-preliminar/capitulo-1
 
        Devuelve:
 
        nombresRuta:
+
        [
          "TÍTULO PRELIMINAR",
          "CAPÍTULO I"
        ]
 
-       elementos:
-       contenido del CAPÍTULO I
+       y los elementos que hay dentro de CAPÍTULO I.
 
     ======================================================== */
 
@@ -553,8 +553,7 @@
 
 
       /*
-       * Si no existe ruta, estamos en la raíz
-       * de la asignatura.
+       * Si no hay ruta estamos en la raíz.
        */
 
       if (!ruta) {
@@ -577,7 +576,8 @@
 
 
       /*
-       * Recorremos cada carpeta de la ruta.
+       * Recorrer todos los niveles
+       * de la ruta.
        */
 
       for (
@@ -592,8 +592,7 @@
 
 
         /*
-         * Si la ruta no existe,
-         * devolvemos contenido vacío.
+         * La carpeta no existe.
          */
 
         if (!encontrado) {
@@ -613,8 +612,7 @@
 
 
         /*
-         * Guardamos el nombre visible
-         * definido en config.json.
+         * Guardar el nombre visible.
          */
 
         nombresRuta.push(
@@ -624,10 +622,10 @@
 
 
         /*
-         * Descendemos a su contenido.
+         * Entrar en la carpeta.
 
-         * Si no tiene contenido, se considera
-         * una carpeta sin elementos.
+         * Si no tiene contenido,
+         * devolvemos un array vacío.
          */
 
         elementos =
@@ -652,55 +650,75 @@
 
 
     /* ========================================================
-       OBTENER NOMBRE DE LA RUTA
+       OBTENER RUTA COMPLETA
     ========================================================
 
-       Convierte:
+       IMPORTANTE:
+
+       La ruta completa comienza SIEMPRE
+       por el nombre de la asignatura.
+
+       Ejemplos:
 
        ""
+
        →
        Constitución Española
 
+
        "titulo-preliminar"
+
        →
-       TÍTULO PRELIMINAR
+       Constitución Española - TÍTULO PRELIMINAR
+
 
        "titulo-preliminar/capitulo-1"
+
        →
-       TÍTULO PRELIMINAR - CAPÍTULO I
+       Constitución Española - TÍTULO PRELIMINAR - CAPÍTULO I
 
     ======================================================== */
 
-    function obtenerTituloRuta(
+    function obtenerRutaCompleta(
       configuracion,
       nombresRuta
     ) {
 
       /*
-       * En la raíz no existe una carpeta actual,
-       * por lo que mostramos el nombre de la asignatura.
+       * Primer nivel:
+       * nombre de la asignatura.
        */
 
+      const ruta = [];
+
+
       if (
-        nombresRuta.length === 0
+        configuracion.nombre
       ) {
 
-        return (
-          configuracion.nombre ||
-          "Contenido"
+        ruta.push(
+          configuracion.nombre
         );
 
       }
 
 
       /*
-       * Cuando estamos dentro de carpetas,
-       * mostramos exclusivamente la ruta.
-
-       * NO añadimos "Constitución Española".
+       * Después añadimos todas las carpetas
+       * recorridas.
        */
 
-      return nombresRuta.join(
+      ruta.push(
+        ...nombresRuta
+      );
+
+
+      /*
+       * Unimos todos los niveles
+       * mediante " - ".
+       */
+
+      return ruta.join(
         " - "
       );
 
@@ -738,7 +756,10 @@
 
 
         /*
-         * Solicitar configuración.
+         * Cargar configuración.
+
+         * Se mantiene el sistema que ya utiliza
+         * tu repositorio.
          */
 
         const respuesta =
@@ -756,7 +777,7 @@
 
         /*
          * GitHub devuelve el archivo
-         * codificado en Base64.
+         * en Base64.
          */
 
         const archivo =
@@ -770,7 +791,7 @@
 
 
         /*
-         * Convertir a objeto JavaScript.
+         * Convertir JSON a objeto.
          */
 
         const configuracion =
@@ -778,7 +799,9 @@
 
 
         /*
-         * Mostrar la información.
+         * Mostrar cabecera.
+
+         * Mostrar contenido.
          */
 
         mostrarCabecera(
@@ -825,10 +848,8 @@
       /*
        * Resolver la ruta actual.
 
-       * IMPORTANTE:
-       * aquí obtenemos los mismos nombres que
-       * posteriormente utilizaremos para mostrar
-       * el contenido.
+       * Esto obtiene todos los nombres de
+       * las carpetas recorridas.
        */
 
       const resultado =
@@ -839,22 +860,24 @@
 
 
       /*
-       * Crear el título de la ruta.
+       * Construir la ruta COMPLETA.
 
-       * Ejemplo:
+       * IMPORTANTE:
 
-       * TÍTULO PRELIMINAR - CAPÍTULO I
+       * Incluye también la asignatura.
+
        */
 
       const titulo =
-        obtenerTituloRuta(
+        obtenerRutaCompleta(
           configuracion,
           resultado.nombresRuta
         );
 
 
       /*
-       * Icono definido en config.json.
+       * Icono de la asignatura.
+
        */
 
       const icono =
@@ -863,8 +886,7 @@
 
 
       /*
-       * Escapamos el texto antes de introducirlo
-       * mediante innerHTML.
+       * Mostrar la cabecera.
        */
 
       cabecera.innerHTML = `
@@ -910,8 +932,8 @@
       /*
        * Resolver la ruta actual.
 
-       * Utilizamos exactamente la misma función
-       * que utiliza la cabecera.
+       * Obtenemos los elementos que
+       * existen dentro de la carpeta actual.
        */
 
       const resultado =
@@ -926,18 +948,16 @@
 
 
       /*
-       * El título de esta segunda tarjeta
-       * SIEMPRE es "Contenido".
+       * IMPORTANTE:
 
-       * Ya no mostramos:
+       * El título de esta tarjeta
+       * siempre será "Contenido".
 
-       * 📖 TÍTULO PRELIMINAR
+       * No mostramos aquí el nombre
+       * de la carpeta actual.
 
-       * ni:
-
-       * 📖 CAPÍTULO I
-
-       * porque esa información ya aparece
+       * Esa información ya está
+       * completamente representada
        * en la cabecera.
        */
 
@@ -969,7 +989,7 @@
 
 
       /*
-       * Si no hay elementos.
+       * Si no existen elementos.
        */
 
       if (
@@ -994,7 +1014,7 @@
 
 
       /*
-       * Limpiar contenido anterior.
+       * Limpiar contenido.
        */
 
       contenido.innerHTML =
@@ -1002,7 +1022,7 @@
 
 
       /*
-       * Crear cada elemento.
+       * Crear los elementos.
        */
 
       elementos.forEach(
@@ -1024,16 +1044,32 @@
 
 
           /*
-           * Determinar si es una carpeta.
+           * Determinar si es carpeta.
 
-           * Si tiene "carpeta", es una carpeta.
-           * Si tiene "archivo", es un archivo JSON.
+           * Si tiene "carpeta",
+           * es una carpeta navegable.
+
+           * Si tiene "archivo",
+           * es un archivo de preguntas.
            */
 
           const esCarpeta =
             Boolean(
               elemento.carpeta
             );
+
+
+          /*
+           * Icono.
+
+           * Carpeta → 📁
+           * Archivo → 📘
+           */
+
+          const iconoElemento =
+            esCarpeta
+              ? "📁"
+              : "📘";
 
 
           /*
@@ -1044,16 +1080,6 @@
             elemento.nombre ||
             elemento.id ||
             "Sin nombre";
-
-
-          /*
-           * Icono.
-           */
-
-          const iconoElemento =
-            esCarpeta
-              ? "📁"
-              : "📘";
 
 
           boton.innerHTML = `
@@ -1086,8 +1112,8 @@
 
 
           /*
-           * Al pulsar el elemento,
-           * abrimos la carpeta o el test.
+           * Acción al pulsar.
+
            */
 
           boton.addEventListener(
@@ -1122,7 +1148,7 @@
 
 
       /* ======================================================
-         CASO 1: CARPETA
+         CARPETA
       ====================================================== */
 
       if (
@@ -1131,14 +1157,18 @@
 
 
         /*
-         * Si ya estamos dentro de una carpeta:
+         * Construir nueva ruta.
+
+         * Si estamos en:
 
          * titulo-preliminar
 
-         * + capítulo
+         * y pulsamos:
 
-         * =
-         *
+         * capitulo-1
+
+         * obtenemos:
+
          * titulo-preliminar/capitulo-1
          */
 
@@ -1149,8 +1179,8 @@
 
 
         /*
-         * Navegar a capitulos.html
-         * manteniendo la asignatura.
+         * Navegar.
+
          */
 
         window.location.href =
@@ -1167,7 +1197,7 @@
 
 
       /* ======================================================
-         CASO 2: ARCHIVO JSON
+         ARCHIVO JSON
       ====================================================== */
 
       if (
@@ -1180,14 +1210,14 @@
 
          * Ejemplo:
 
-         * rutaActual:
          * titulo-preliminar/capitulo-1
-
-         * archivo:
+         *
+         * +
+         *
          * preguntas.json
 
-         * resultado:
-
+         * =
+         *
          * titulo-preliminar/capitulo-1/preguntas.json
          */
 
@@ -1200,8 +1230,6 @@
         /*
          * Abrir test.html.
 
-         * Se mantiene la estructura actual
-         * de la aplicación.
          */
 
         window.location.href =
@@ -1216,7 +1244,8 @@
 
 
       /*
-       * Elemento mal configurado.
+       * Elemento incorrectamente configurado.
+
        */
 
       console.warn(
@@ -1228,7 +1257,7 @@
 
 
     /* ========================================================
-       SEGURIDAD
+       ESCAPAR HTML
     ======================================================== */
 
     function escaparHTML(
