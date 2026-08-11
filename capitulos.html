@@ -22,7 +22,9 @@
 
     body {
 
-      font-family: 'Segoe UI', sans-serif;
+      font-family:
+        'Segoe UI',
+        sans-serif;
 
       background: #f2f4f8;
 
@@ -311,6 +313,7 @@
 
     }
 
+
   </style>
 
 </head>
@@ -432,7 +435,7 @@
     /*
      * Ruta interna dentro de la asignatura.
      *
-     * Ejemplo:
+     * Ejemplos:
      *
      * ""
      *
@@ -446,7 +449,7 @@
 
 
     /* ========================================================
-       ELEMENTOS
+       ELEMENTOS DEL DOM
     ======================================================== */
 
     const cabecera =
@@ -513,12 +516,209 @@
 
 
     /* ========================================================
+       RESOLVER RUTA
+    ========================================================
+
+       Esta función recorre config.json siguiendo la ruta
+       indicada en la URL.
+
+       Ejemplo:
+
+       rutaActual:
+       "titulo-preliminar/capitulo-1"
+
+       Devuelve:
+
+       nombresRuta:
+       [
+         "TÍTULO PRELIMINAR",
+         "CAPÍTULO I"
+       ]
+
+       elementos:
+       contenido del CAPÍTULO I
+
+    ======================================================== */
+
+    function resolverRuta(
+      configuracion,
+      ruta
+    ) {
+
+      let elementos =
+        configuracion.contenido || [];
+
+
+      const nombresRuta = [];
+
+
+      /*
+       * Si no existe ruta, estamos en la raíz
+       * de la asignatura.
+       */
+
+      if (!ruta) {
+
+        return {
+
+          elementos,
+
+          nombresRuta
+
+        };
+
+      }
+
+
+      const partes =
+        ruta
+          .split("/")
+          .filter(Boolean);
+
+
+      /*
+       * Recorremos cada carpeta de la ruta.
+       */
+
+      for (
+        const parte of partes
+      ) {
+
+        const encontrado =
+          elementos.find(
+            elemento =>
+              elemento.carpeta === parte
+          );
+
+
+        /*
+         * Si la ruta no existe,
+         * devolvemos contenido vacío.
+         */
+
+        if (!encontrado) {
+
+          return {
+
+            elementos: [],
+
+            nombresRuta,
+
+            error:
+              `No se ha encontrado la carpeta "${parte}".`
+
+          };
+
+        }
+
+
+        /*
+         * Guardamos el nombre visible
+         * definido en config.json.
+         */
+
+        nombresRuta.push(
+          encontrado.nombre ||
+          parte
+        );
+
+
+        /*
+         * Descendemos a su contenido.
+
+         * Si no tiene contenido, se considera
+         * una carpeta sin elementos.
+         */
+
+        elementos =
+          Array.isArray(
+            encontrado.contenido
+          )
+            ? encontrado.contenido
+            : [];
+
+      }
+
+
+      return {
+
+        elementos,
+
+        nombresRuta
+
+      };
+
+    }
+
+
+    /* ========================================================
+       OBTENER NOMBRE DE LA RUTA
+    ========================================================
+
+       Convierte:
+
+       ""
+       →
+       Constitución Española
+
+       "titulo-preliminar"
+       →
+       TÍTULO PRELIMINAR
+
+       "titulo-preliminar/capitulo-1"
+       →
+       TÍTULO PRELIMINAR - CAPÍTULO I
+
+    ======================================================== */
+
+    function obtenerTituloRuta(
+      configuracion,
+      nombresRuta
+    ) {
+
+      /*
+       * En la raíz no existe una carpeta actual,
+       * por lo que mostramos el nombre de la asignatura.
+       */
+
+      if (
+        nombresRuta.length === 0
+      ) {
+
+        return (
+          configuracion.nombre ||
+          "Contenido"
+        );
+
+      }
+
+
+      /*
+       * Cuando estamos dentro de carpetas,
+       * mostramos exclusivamente la ruta.
+
+       * NO añadimos "Constitución Española".
+       */
+
+      return nombresRuta.join(
+        " - "
+      );
+
+    }
+
+
+    /* ========================================================
        CARGAR CONFIG.JSON
     ======================================================== */
 
     async function cargarConfiguracion() {
 
       try {
+
+
+        /*
+         * Comprobar asignatura.
+         */
 
         if (!asignatura) {
 
@@ -529,9 +729,17 @@
         }
 
 
+        /*
+         * URL de config.json.
+         */
+
         const url =
           `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}/${encodeURIComponent(asignatura)}/config.json`;
 
+
+        /*
+         * Solicitar configuración.
+         */
 
         const respuesta =
           await fetch(url);
@@ -546,6 +754,11 @@
         }
 
 
+        /*
+         * GitHub devuelve el archivo
+         * codificado en Base64.
+         */
+
         const archivo =
           await respuesta.json();
 
@@ -556,9 +769,17 @@
           );
 
 
+        /*
+         * Convertir a objeto JavaScript.
+         */
+
         const configuracion =
           JSON.parse(texto);
 
+
+        /*
+         * Mostrar la información.
+         */
 
         mostrarCabecera(
           configuracion
@@ -569,12 +790,14 @@
           configuracion
         );
 
-      }
 
+      }
 
       catch (error) {
 
-        console.error(error);
+        console.error(
+          error
+        );
 
 
         estado.classList.add(
@@ -594,133 +817,83 @@
        MOSTRAR CABECERA
     ======================================================== */
 
-    function mostrarCabecera() {
-    
-      const cabecera = document.getElementById("cabeceraRuta");
-    
-      if (!cabecera) return;
-    
-      const partesRuta = rutaActual
-        ? rutaActual.split("/").filter(Boolean)
-        : [];
-    
-      const nombresRuta = [];
-    
-      let contenidoActual =
-        configuracion.contenido || [];
-    
-      for (const parte of partesRuta) {
-    
-        const elemento =
-          contenidoActual.find(
-            item => item.carpeta === parte
-          );
-    
-        if (!elemento) {
-          console.warn(
-            "No se encontró la carpeta:",
-            parte,
-            "en:",
-            contenidoActual
-          );
-          break;
-        }
-    
-        nombresRuta.push(elemento.nombre);
-    
-        contenidoActual =
-          Array.isArray(elemento.contenido)
-            ? elemento.contenido
-            : [];
-      }
-    
-      /*
-       * Construimos la ruta visual completa
-       */
-      const partesVisuales = [
-        configuracion.nombre,
-        ...nombresRuta
-      ];
-    
-      cabecera.textContent =
-        partesVisuales.join(" › ");
-    }
-
-
-    /* ========================================================
-       OBTENER CONTENIDO DE LA RUTA ACTUAL
-    ======================================================== */
-
-    function obtenerContenidoRuta(
-      configuracion,
-      ruta
+    function mostrarCabecera(
+      configuracion
     ) {
 
-      let elementos =
-        configuracion.contenido || [];
+
+      /*
+       * Resolver la ruta actual.
+
+       * IMPORTANTE:
+       * aquí obtenemos los mismos nombres que
+       * posteriormente utilizaremos para mostrar
+       * el contenido.
+       */
+
+      const resultado =
+        resolverRuta(
+          configuracion,
+          rutaActual
+        );
 
 
-      if (!ruta) {
+      /*
+       * Crear el título de la ruta.
 
-        return {
-          elementos,
-          nombre: configuracion.nombre || "Contenido"
-        };
+       * Ejemplo:
 
-      }
+       * TÍTULO PRELIMINAR - CAPÍTULO I
+       */
 
-
-      const partes =
-        ruta
-          .split("/")
-          .filter(Boolean);
-
-
-      let nombreActual =
-        configuracion.nombre || "Contenido";
+      const titulo =
+        obtenerTituloRuta(
+          configuracion,
+          resultado.nombresRuta
+        );
 
 
-      for (
-        const parte of partes
-      ) {
+      /*
+       * Icono definido en config.json.
+       */
 
-        const encontrado =
-          elementos.find(
-            elemento =>
-              elemento.carpeta === parte
-          );
+      const icono =
+        configuracion.icono ||
+        "📚";
 
 
-        if (
-          !encontrado ||
-          !Array.isArray(
-            encontrado.contenido
-          )
-        ) {
+      /*
+       * Escapamos el texto antes de introducirlo
+       * mediante innerHTML.
+       */
 
-          return {
-            elementos: [],
-            nombre: nombreActual
-          };
+      cabecera.innerHTML = `
 
-        }
+        <div class="icono">
 
+          ${escaparHTML(icono)}
 
-        nombreActual =
-          encontrado.nombre ||
-          parte;
+        </div>
 
 
-        elementos =
-          encontrado.contenido;
+        <div>
 
-      }
+          <h1>
+
+            ${escaparHTML(titulo)}
+
+          </h1>
 
 
-      return {
-        elementos,
-        nombre: nombreActual
-      };
+          <p>
+
+            Selecciona un elemento para estudiar.
+
+          </p>
+
+        </div>
+
+      `;
 
     }
 
@@ -733,8 +906,16 @@
       configuracion
     ) {
 
+
+      /*
+       * Resolver la ruta actual.
+
+       * Utilizamos exactamente la misma función
+       * que utiliza la cabecera.
+       */
+
       const resultado =
-        obtenerContenidoRuta(
+        resolverRuta(
           configuracion,
           rutaActual
         );
@@ -745,17 +926,50 @@
 
 
       /*
-       * Título de la página actual.
+       * El título de esta segunda tarjeta
+       * SIEMPRE es "Contenido".
+
+       * Ya no mostramos:
+
+       * 📖 TÍTULO PRELIMINAR
+
+       * ni:
+
+       * 📖 CAPÍTULO I
+
+       * porque esa información ya aparece
+       * en la cabecera.
        */
 
       tituloContenido.textContent =
-        rutaActual
-          ? "📖 " + resultado.nombre
-          : "📖 Contenido";
+        "📖 Contenido";
 
 
       /*
-       * Si no hay contenido.
+       * Si la ruta no existe.
+       */
+
+      if (
+        resultado.error
+      ) {
+
+        estado.classList.add(
+          "error"
+        );
+
+
+        estado.textContent =
+          "❌ " +
+          resultado.error;
+
+
+        return;
+
+      }
+
+
+      /*
+       * Si no hay elementos.
        */
 
       if (
@@ -765,14 +979,23 @@
         estado.textContent =
           "Esta carpeta no contiene elementos.";
 
+
         return;
 
       }
 
 
+      /*
+       * Ocultar mensaje de carga.
+       */
+
       estado.style.display =
         "none";
 
+
+      /*
+       * Limpiar contenido anterior.
+       */
 
       contenido.innerHTML =
         "";
@@ -784,6 +1007,7 @@
 
       elementos.forEach(
         elemento => {
+
 
           const boton =
             document.createElement(
@@ -799,10 +1023,37 @@
             "button";
 
 
+          /*
+           * Determinar si es una carpeta.
+
+           * Si tiene "carpeta", es una carpeta.
+           * Si tiene "archivo", es un archivo JSON.
+           */
+
           const esCarpeta =
             Boolean(
               elemento.carpeta
             );
+
+
+          /*
+           * Nombre visible.
+           */
+
+          const nombre =
+            elemento.nombre ||
+            elemento.id ||
+            "Sin nombre";
+
+
+          /*
+           * Icono.
+           */
+
+          const iconoElemento =
+            esCarpeta
+              ? "📁"
+              : "📘";
 
 
           boton.innerHTML = `
@@ -811,21 +1062,14 @@
 
               <span class="elemento-icono">
 
-                ${esCarpeta
-                  ? "📁"
-                  : "📘"
-                }
+                ${iconoElemento}
 
               </span>
 
 
               <span class="nombre">
 
-                ${escaparHTML(
-                  elemento.nombre ||
-                  elemento.id ||
-                  "Sin nombre"
-                )}
+                ${escaparHTML(nombre)}
 
               </span>
 
@@ -833,11 +1077,18 @@
 
 
             <span class="flecha">
+
               ›
+
             </span>
 
           `;
 
+
+          /*
+           * Al pulsar el elemento,
+           * abrimos la carpeta o el test.
+           */
 
           boton.addEventListener(
             "click",
@@ -869,20 +1120,38 @@
       elemento
     ) {
 
-      /*
-       * CASO 1:
-       * Es una carpeta.
-       */
+
+      /* ======================================================
+         CASO 1: CARPETA
+      ====================================================== */
 
       if (
         elemento.carpeta
       ) {
+
+
+        /*
+         * Si ya estamos dentro de una carpeta:
+
+         * titulo-preliminar
+
+         * + capítulo
+
+         * =
+         *
+         * titulo-preliminar/capitulo-1
+         */
 
         const nuevaRuta =
           rutaActual
             ? `${rutaActual}/${elemento.carpeta}`
             : elemento.carpeta;
 
+
+        /*
+         * Navegar a capitulos.html
+         * manteniendo la asignatura.
+         */
 
         window.location.href =
           `capitulos.html?asignatura=${encodeURIComponent(
@@ -897,20 +1166,43 @@
       }
 
 
-      /*
-       * CASO 2:
-       * Es un archivo JSON de preguntas.
-       */
+      /* ======================================================
+         CASO 2: ARCHIVO JSON
+      ====================================================== */
 
       if (
         elemento.archivo
       ) {
+
+
+        /*
+         * Construir la ruta al archivo.
+
+         * Ejemplo:
+
+         * rutaActual:
+         * titulo-preliminar/capitulo-1
+
+         * archivo:
+         * preguntas.json
+
+         * resultado:
+
+         * titulo-preliminar/capitulo-1/preguntas.json
+         */
 
         const rutaArchivo =
           rutaActual
             ? `${rutaActual}/${elemento.archivo}`
             : elemento.archivo;
 
+
+        /*
+         * Abrir test.html.
+
+         * Se mantiene la estructura actual
+         * de la aplicación.
+         */
 
         window.location.href =
           `test.html?datos=${encodeURIComponent(
@@ -922,6 +1214,10 @@
 
       }
 
+
+      /*
+       * Elemento mal configurado.
+       */
 
       console.warn(
         "Elemento sin carpeta ni archivo:",
@@ -939,6 +1235,7 @@
       texto
     ) {
 
+
       const elemento =
         document.createElement(
           "div"
@@ -946,7 +1243,7 @@
 
 
       elemento.textContent =
-        texto;
+        String(texto);
 
 
       return elemento.innerHTML;
@@ -959,6 +1256,7 @@
     ======================================================== */
 
     cargarConfiguracion();
+
 
   </script>
 
