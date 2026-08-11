@@ -16,7 +16,7 @@ let estadoBoton = "corregir";
 
 /*
  * ========================================================
- * ESTADÍSTICAS
+ * ESTADÍSTICAS DEL TEST
  * ========================================================
  */
 
@@ -45,8 +45,8 @@ const CLAVE_SESIONES =
  *
  * En las sesiones:
  *
- *   modoEstudio: true  → modo estudio
- *   modoEstudio: false → modo examen
+ * modoEstudio: true  → modo estudio
+ * modoEstudio: false → modo examen
  *
  *
  * Una pregunta fallada entra en el sistema de repaso.
@@ -56,7 +56,7 @@ const CLAVE_SESIONES =
  *
  * Si falla durante el repaso:
  *
- *   aciertos consecutivos → 0
+ * aciertos consecutivos → 0
  *
  * y vuelve a necesitar dos aciertos consecutivos.
  */
@@ -83,17 +83,6 @@ const MODO_ESTUDIO_POR_DEFECTO =
  *
  * Se espera un número aleatorio de preguntas
  * normales antes de volver a mostrarlas.
- *
- * Ejemplo:
- *
- *   P1 ❌
- *   P2
- *   P3
- *   P4
- *   P5
- *   P1 🔁
- *
- * El intervalo concreto es aleatorio.
  */
 
 const INTERVALO_REPETICION_MIN =
@@ -113,7 +102,6 @@ const parametros =
     new URLSearchParams(
         window.location.search
     );
-
 
 const idSesion =
     parametros.get("sesion");
@@ -136,38 +124,29 @@ const archivoDatos =
 const preguntaElemento =
     document.getElementById("pregunta");
 
-
 const opcionesElemento =
     document.getElementById("opciones");
-
 
 const asignaturaElemento =
     document.getElementById("asignatura");
 
-
 const estadoElemento =
     document.getElementById("estado");
-
 
 const botonTest =
     document.getElementById("botonTest");
 
-
 const reiniciar =
     document.getElementById("reiniciar");
-
 
 const resultadoElemento =
     document.getElementById("resultado");
 
-
 const estadisticasElemento =
     document.getElementById("estadisticas");
 
-
 const listaPreguntasElemento =
     document.getElementById("question-list");
-
 
 const buscador =
     document.getElementById("search");
@@ -211,7 +190,7 @@ let preguntaActualEsRepeticion =
  *
  * Por tanto, si el test tiene 50 preguntas:
  *
- *   preguntasNormalesMostradas = 50
+ * preguntasNormalesMostradas = 50
  *
  * aunque se hayan mostrado 70 preguntas
  * contando los repasos.
@@ -242,27 +221,31 @@ let ultimaPreguntaFueRepeticion =
  * Cada pregunta fallada tendrá un objeto como:
  *
  * {
+ *
  *     aciertosConsecutivos: 0,
+ *
  *     pendiente: true,
+ *
  *     proximaRepeticionEn: 8
+ *
  * }
  *
  *
  * "aciertosConsecutivos":
  *
- *   0 → no ha conseguido ningún acierto consecutivo
- *   1 → ha acertado una vez
- *   2 → DOMINADA
+ * 0 → no ha conseguido ningún acierto
+ * 1 → ha acertado una vez
+ * 2 → DOMINADA
  *
  *
  * Cuando se alcanza 2:
  *
- *   pendiente = false
+ * pendiente = false
  *
  *
  * Si falla:
  *
- *   aciertosConsecutivos = 0
+ * aciertosConsecutivos = 0
  *
  * y vuelve a necesitar dos aciertos seguidos.
  */
@@ -452,6 +435,117 @@ function configurarModoEstudio(
 
     modoEstudio =
         sesion?.modoEstudio === true;
+
+}
+
+
+/*
+ * ========================================================
+ * OBTENER MODO ACTUAL PARA ESTADÍSTICAS
+ * ========================================================
+ */
+
+function obtenerModoActual() {
+
+    return modoEstudio
+        ? "estudio"
+        : "examen";
+
+}
+
+
+/*
+ * ========================================================
+ * REGISTRAR RESULTADO EN ESTADÍSTICAS GLOBALES
+ * ========================================================
+ *
+ * Esta función conecta test.js con estadisticas.js.
+ *
+ * IMPORTANTE:
+ *
+ * Las estadísticas del test y las estadísticas globales
+ * son sistemas independientes.
+ *
+ * Reiniciar el test NO elimina el histórico global.
+ */
+
+function registrarEstadisticaGlobal(
+    pregunta,
+    esCorrecta
+) {
+
+    /*
+     * Una pregunta sin ID no puede incorporarse
+     * correctamente al sistema global.
+     *
+     * Los JSON deben utilizar:
+     *
+     * "id": "..."
+     */
+
+    if (
+        !pregunta ||
+        !pregunta.id
+    ) {
+
+        console.warn(
+            "La pregunta no tiene ID. No se ha registrado su rendimiento:",
+            pregunta
+        );
+
+        return;
+
+    }
+
+
+    /*
+     * Comprobar que estadisticas.js
+     * está cargado correctamente.
+     */
+
+    if (
+        typeof registrarResultado !==
+        "function"
+    ) {
+
+        console.warn(
+            "estadisticas.js no está disponible. No se ha registrado el resultado global."
+        );
+
+        return;
+
+    }
+
+
+    /*
+     * Información adicional que guardamos
+     * junto al resultado.
+     */
+
+    const informacion =
+        {
+
+            modo:
+                obtenerModoActual(),
+
+            sesion:
+                idSesion || null
+
+        };
+
+
+    /*
+     * Registrar una respuesta.
+     *
+     * registrarResultado() pertenece a
+     * estadisticas.js.
+     */
+
+    registrarResultado(
+        pregunta.id,
+        esCorrecta,
+        informacion
+    );
 
 }
 
@@ -1216,8 +1310,6 @@ function obtenerSiguientePregunta() {
      * FIN DE LAS PREGUNTAS NORMALES
      * ====================================================
      *
-     * Aquí cambia la regla:
-     *
      * Si ya no quedan preguntas normales,
      * mostramos las preguntas pendientes aunque
      * todavía no hayan alcanzado su intervalo.
@@ -1402,8 +1494,8 @@ function esPreguntaPendiente(
  *
  * Primera vez que se falla:
  *
- *   aciertosConsecutivos = 0
- *   pendiente = true
+ * aciertosConsecutivos = 0
+ * pendiente = true
  *
  * Se programa su primera repetición.
  */
@@ -1553,7 +1645,7 @@ function procesarResultadoEstudio(
         /*
          * DOS ACIERTOS CONSECUTIVOS:
          *
-         * Pregunta dominada.
+         * Pregunta dominada dentro de este test.
          *
          * Se elimina del sistema de repaso.
          */
@@ -1577,8 +1669,6 @@ function procesarResultadoEstudio(
          *
          * Hay que conseguir otro acierto
          * consecutivo.
-         *
-         * Por tanto, programamos otra aparición.
          */
 
         estado.proximaRepeticionEn =
@@ -1605,9 +1695,6 @@ function procesarResultadoEstudio(
     /*
      * Vuelve a necesitar DOS ACIERTOS
      * CONSECUTIVOS desde cero.
-     *
-     * Por tanto, programamos una nueva
-     * repetición.
      */
 
     estado.proximaRepeticionEn =
@@ -1785,6 +1872,31 @@ function corregirRespuesta() {
 
     /*
      * ====================================================
+     * REGISTRO GLOBAL DE RENDIMIENTO
+     * ====================================================
+     *
+     * Se registra CADA RESPUESTA.
+     *
+     * Esto incluye:
+     *
+     * - preguntas normales
+     * - preguntas repetidas
+     * - modo estudio
+     * - modo examen
+     *
+     * El ID de la pregunta permite acumular
+     * todo el historial aunque la pregunta
+     * esté almacenada en otro JSON.
+     */
+
+    registrarEstadisticaGlobal(
+        preguntaQueSeCorrige,
+        esCorrecta
+    );
+
+
+    /*
+     * ====================================================
      * PROCESAR MODO ESTUDIO
      * ====================================================
      */
@@ -1817,7 +1929,7 @@ function corregirRespuesta() {
 
 
     /*
-     * Actualizar estadísticas.
+     * Actualizar estadísticas del TEST.
      */
 
     actualizarEstadisticas();
@@ -1997,14 +2109,14 @@ function obtenerElementoAleatorio(
 
 /*
  * ========================================================
- * ESTADÍSTICAS
+ * ESTADÍSTICAS DEL TEST
  * ========================================================
  *
  * NO SE MODIFICA LA LÓGICA EXISTENTE.
  *
  * "Total" continúa representando:
  *
- *   número de preguntas DIFERENTES
+ * número de preguntas DIFERENTES
  *
  * y no el número total de apariciones.
  */
@@ -2042,8 +2154,16 @@ function actualizarEstadisticas() {
 
 /*
  * ========================================================
- * REINICIAR ESTADÍSTICAS
+ * REINICIAR ESTADÍSTICAS DEL TEST
  * ========================================================
+ *
+ * IMPORTANTE:
+ *
+ * Esto SOLO reinicia las estadísticas
+ * de la sesión/test actual.
+ *
+ * NO elimina el histórico de rendimiento
+ * almacenado por estadisticas.js.
  */
 
 function reiniciarEstadisticas() {
@@ -2436,6 +2556,5 @@ if (buscador) {
  */
 
 configurarListado();
-
 
 cargarPreguntas();
