@@ -1027,14 +1027,17 @@ function mostrarListado() {
     }
 
 
-    listaPreguntasElemento.innerHTML = "";
+    listaPreguntasElemento.innerHTML =
+        "";
 
 
     preguntas.forEach(
-        (pregunta) => {
+        pregunta => {
 
             const elemento =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             elemento.className =
@@ -1042,11 +1045,13 @@ function mostrarListado() {
 
 
             /*
-             * Pregunta
+             * PREGUNTA
              */
 
             const preguntaTexto =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             preguntaTexto.className =
@@ -1058,37 +1063,56 @@ function mostrarListado() {
 
 
             /*
-             * Respuesta
+             * RESPUESTA
              */
 
             const respuestaTexto =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             respuestaTexto.className =
                 "respuesta-listado";
 
 
-            respuestaTexto.innerHTML =
-                `<strong>✅ Respuesta:</strong> ${
-                    escaparHTML(
-                        pregunta.respuesta
-                    )
-                }`;
+            const etiqueta =
+                document.createElement(
+                    "strong"
+                );
+
+
+            etiqueta.textContent =
+                "✅ Respuesta: ";
+
+
+            respuestaTexto.appendChild(
+                etiqueta
+            );
+
+
+            respuestaTexto.appendChild(
+                document.createTextNode(
+                    pregunta.respuesta
+                )
+            );
 
 
             /*
-             * Texto utilizado por el buscador.
-             * Busca tanto en pregunta como en respuesta.
+             * Texto para el buscador.
+             * Buscará en pregunta + respuesta.
              */
 
             elemento.dataset.busqueda =
-                `${pregunta.pregunta} ${pregunta.respuesta}`
-                    .toLowerCase();
+                (
+                    pregunta.pregunta +
+                    " " +
+                    pregunta.respuesta
+                ).toLowerCase();
 
 
             /*
-             * Añadir pregunta + respuesta
+             * Añadir contenido
              */
 
             elemento.appendChild(
@@ -1103,9 +1127,10 @@ function mostrarListado() {
 
             /*
              * IMPORTANTE:
-             * No añadimos ningún evento "click".
+             * NO hay evento click.
              *
-             * El listado es exclusivamente consultivo.
+             * El listado es solamente
+             * consultivo.
              */
 
             listaPreguntasElemento.appendChild(
@@ -1114,55 +1139,6 @@ function mostrarListado() {
 
         }
     );
-
-}
-
-
-/* ========================================================
-   MARCAR PREGUNTA ACTUAL EN EL LISTADO
-======================================================== */
-
-function actualizarPreguntaSeleccionada() {
-
-    if (!listaPreguntasElemento) {
-
-        return;
-
-    }
-
-
-    const elementos =
-        listaPreguntasElemento
-            .querySelectorAll(
-                ".pregunta-listado"
-            );
-
-
-    elementos.forEach(
-        elemento => {
-
-            elemento.classList.remove(
-                "activa"
-            );
-
-        }
-    );
-
-
-    const actual =
-        listaPreguntasElemento
-            .querySelector(
-                `[data-indice="${indice}"]`
-            );
-
-
-    if (actual) {
-
-        actual.classList.add(
-            "activa"
-        );
-
-    }
 
 }
 
