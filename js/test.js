@@ -1,4 +1,4 @@
-```javascript
+
 let preguntas = [];
 let indice = 0;
 
@@ -1139,4 +1139,3 @@ if (buscador) {
 ======================================================== */
 
 cargarPreguntas();
-```
