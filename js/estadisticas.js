@@ -1,21 +1,28 @@
-
 /* ========================================================
-   ESTADÍSTICAS GLOBALES DE OPOS-TAI
+   ESTADÍSTICAS GLOBALES DE LA APLICACIÓN
    ========================================================
 
-   Este archivo se encarga exclusivamente de gestionar
-   las estadísticas de las preguntas.
+   Este archivo gestiona el rendimiento global de las
+   preguntas de toda la aplicación.
 
-   NO se encarga de:
-   - Mostrar preguntas.
-   - Corregir respuestas.
-   - Seleccionar preguntas.
-   - Gestionar el modo estudio.
-   - Gestionar la interfaz.
+   IMPORTANTE:
 
-   test.js simplemente deberá llamar a:
+   - Cada pregunta debe tener un "id" único y estable.
+   - Las estadísticas se guardan en localStorage.
+   - Los JSON de preguntas NO contienen estadísticas.
+   - El sistema funciona independientemente de en qué
+     archivo JSON se encuentre una pregunta.
 
-       registrarResultado(idPregunta, esCorrecta);
+   Se separan tres conceptos:
+
+   1. ESTADÍSTICAS DEL TEST
+      → Las seguirá gestionando test.js.
+
+   2. ESTADO DE REPASO
+      → Lo seguirá gestionando test.js.
+
+   3. RENDIMIENTO GLOBAL
+      → Lo gestiona este archivo.
 
    ======================================================== */
 
@@ -24,43 +31,75 @@
    CONFIGURACIÓN
    ======================================================== */
 
+
+/*
+ * Clave utilizada para guardar todas las estadísticas
+ * de la aplicación en localStorage.
+ */
+
 const CLAVE_ESTADISTICAS =
     "opos_tai_estadisticas";
 
 
 /*
- * Número de aciertos consecutivos necesarios para
- * considerar una pregunta dominada.
+ * Número máximo de respuestas que utilizaremos
+ * para calcular el rendimiento reciente.
  *
- * Se mantiene en 2 porque es la lógica que hemos
- * establecido para el modo estudio.
+ * Se puede cambiar en el futuro:
+ *
+ * 50
+ * 100
+ * 200
+ * etc.
  */
 
-const ACIERTOS_PARA_DOMINAR =
-    2;
+const VENTANA_RENDIMIENTO =
+    100;
+
+
+/*
+ * Número máximo de puntos que conservaremos
+ * en el histórico de rendimiento de cada pregunta.
+ *
+ * Esto evita que el histórico crezca indefinidamente.
+ *
+ * Más adelante podemos modificar este valor.
+ */
+
+const MAXIMO_PUNTOS_HISTORICO =
+    100;
 
 
 /* ========================================================
    ESTRUCTURA DE UNA ESTADÍSTICA
    ========================================================
 
-   Cada pregunta tendrá:
+   Cada pregunta tendrá una estructura como:
 
    {
-       vecesRespondida: 0,
-       aciertos: 0,
-       fallos: 0,
+       historial: [
+           true,
+           true,
+           false
+       ],
 
-       rachaActual: 0,
-       mejorRacha: 0,
+       aciertosTotales: 2,
 
-       ultimoResultado: null,
-       ultimaRespuesta: null,
+       fallosTotales: 1,
 
-       dominio: "nueva",
+       ultimaRespuesta:
+           "2026-08-11T20:30:00.000Z",
 
-       historial: []
+       historico: [
+           {
+               fecha: "...",
+               rendimiento: 66.67
+           }
+       ]
    }
+
+   "true"  = respuesta correcta
+   "false" = respuesta incorrecta
 
    ======================================================== */
 
@@ -69,13 +108,18 @@ const ACIERTOS_PARA_DOMINAR =
    OBTENER TODAS LAS ESTADÍSTICAS
    ======================================================== */
 
-function obtenerEstadisticas() {
+function obtenerEstadisticasGlobales() {
 
     const datos =
         localStorage.getItem(
             CLAVE_ESTADISTICAS
         );
 
+
+    /*
+     * Si todavía no existen estadísticas,
+     * devolvemos un objeto vacío.
+     */
 
     if (!datos) {
 
@@ -92,9 +136,13 @@ function obtenerEstadisticas() {
             );
 
 
+        /*
+         * Nos aseguramos de que sea un objeto.
+         */
+
         if (
+            !estadisticas ||
             typeof estadisticas !== "object" ||
-            estadisticas === null ||
             Array.isArray(estadisticas)
         ) {
 
@@ -107,10 +155,11 @@ function obtenerEstadisticas() {
 
     }
 
+
     catch (error) {
 
         console.error(
-            "Error al leer las estadísticas:",
+            "Error leyendo las estadísticas:",
             error
         );
 
@@ -126,7 +175,7 @@ function obtenerEstadisticas() {
    GUARDAR TODAS LAS ESTADÍSTICAS
    ======================================================== */
 
-function guardarEstadisticas(
+function guardarEstadisticasGlobales(
     estadisticas
 ) {
 
@@ -144,10 +193,11 @@ function guardarEstadisticas(
 
     }
 
+
     catch (error) {
 
         console.error(
-            "Error al guardar las estadísticas:",
+            "Error guardando las estadísticas:",
             error
         );
 
@@ -163,27 +213,46 @@ function guardarEstadisticas(
    CREAR ESTADÍSTICA VACÍA
    ======================================================== */
 
-function crearEstadisticaInicial() {
+function crearEstadisticaPregunta() {
 
     return {
 
-        vecesRespondida: 0,
+        /*
+         * Respuestas utilizadas para calcular
+         * el rendimiento reciente.
+         */
 
-        aciertos: 0,
+        historial: [],
 
-        fallos: 0,
 
-        rachaActual: 0,
+        /*
+         * Número total de respuestas correctas
+         * realizadas a lo largo del tiempo.
+         */
 
-        mejorRacha: 0,
+        aciertosTotales: 0,
 
-        ultimoResultado: null,
+
+        /*
+         * Número total de respuestas incorrectas
+         * realizadas a lo largo del tiempo.
+         */
+
+        fallosTotales: 0,
+
+
+        /*
+         * Fecha de la última respuesta.
+         */
 
         ultimaRespuesta: null,
 
-        dominio: "nueva",
 
-        historial: []
+        /*
+         * Evolución del rendimiento.
+         */
+
+        historico: []
 
     };
 
@@ -192,19 +261,15 @@ function crearEstadisticaInicial() {
 
 /* ========================================================
    OBTENER ESTADÍSTICA DE UNA PREGUNTA
-   ========================================================
-
-   Si la pregunta todavía no tiene estadísticas,
-   devuelve una estructura inicial.
-
-   Importante:
-   NO guarda automáticamente la estadística.
-
    ======================================================== */
 
-function obtenerEstadistica(
+function obtenerEstadisticaPregunta(
     idPregunta
 ) {
+
+    /*
+     * Sin ID no podemos identificar la pregunta.
+     */
 
     if (!idPregunta) {
 
@@ -214,57 +279,56 @@ function obtenerEstadistica(
 
 
     const estadisticas =
-        obtenerEstadisticas();
+        obtenerEstadisticasGlobales();
 
+
+    /*
+     * Si la pregunta todavía no tiene estadísticas,
+     * devolvemos una estructura vacía.
+     */
 
     if (
         !estadisticas[idPregunta]
     ) {
 
-        return crearEstadisticaInicial();
+        return crearEstadisticaPregunta();
 
     }
 
 
-    return estadisticas[
-        idPregunta
-    ];
+    return estadisticas[idPregunta];
 
 }
 
 
 /* ========================================================
-   REGISTRAR RESULTADO
+   REGISTRAR UNA RESPUESTA
    ========================================================
 
    Esta será la función principal que utilizará test.js.
 
    Ejemplo:
 
-       registrarResultado(
-           pregunta.id,
-           true
-       );
-
-   o:
-
-       registrarResultado(
-           pregunta.id,
-           false
-       );
+   registrarRespuestaPregunta(
+       "constitucion-preambulo-001",
+       true
+   );
 
    ======================================================== */
 
-function registrarResultado(
+function registrarRespuestaPregunta(
     idPregunta,
-    esCorrecta,
-    datosAdicionales = {}
+    esCorrecta
 ) {
+
+    /*
+     * Comprobar ID.
+     */
 
     if (!idPregunta) {
 
         console.warn(
-            "No se puede registrar un resultado sin ID de pregunta."
+            "No se puede registrar una respuesta sin ID de pregunta."
         );
 
 
@@ -273,17 +337,13 @@ function registrarResultado(
     }
 
 
-    /*
-     * Obtener estadísticas actuales.
-     */
-
     const estadisticas =
-        obtenerEstadisticas();
+        obtenerEstadisticasGlobales();
 
 
     /*
-     * Crear estadísticas si es una pregunta
-     * que nunca se ha respondido.
+     * Crear estadísticas si es la primera vez
+     * que vemos esta pregunta.
      */
 
     if (
@@ -291,191 +351,124 @@ function registrarResultado(
     ) {
 
         estadisticas[idPregunta] =
-            crearEstadisticaInicial();
+            crearEstadisticaPregunta();
 
     }
 
 
     const estadistica =
-        estadisticas[
-            idPregunta
-        ];
+        estadisticas[idPregunta];
 
 
     /*
-     * Fecha y hora actual.
+     * Asegurarnos de que el historial existe.
+     *
+     * Esto también hace el sistema más resistente
+     * frente a datos antiguos.
      */
 
-    const fecha =
-        new Date();
+    if (
+        !Array.isArray(
+            estadistica.historial
+        )
+    ) {
 
-
-    const fechaISO =
-        fecha.toISOString();
-
-
-    /*
-     * ====================================================
-     * VECES RESPONDIDA
-     * ====================================================
-     */
-
-    estadistica.vecesRespondida++;
-
-
-    /*
-     * ====================================================
-     * ACIERTO
-     * ====================================================
-     */
-
-    if (esCorrecta) {
-
-        estadistica.aciertos++;
-
-
-        /*
-         * Aumentamos la racha actual.
-         */
-
-        estadistica.rachaActual++;
-
-
-        /*
-         * Actualizamos la mejor racha si corresponde.
-         */
-
-        if (
-            estadistica.rachaActual >
-            estadistica.mejorRacha
-        ) {
-
-            estadistica.mejorRacha =
-                estadistica.rachaActual;
-
-        }
-
-
-        /*
-         * Último resultado.
-         */
-
-        estadistica.ultimoResultado =
-            true;
-
-
-        /*
-         * Dominio.
-         */
-
-        actualizarDominio(
-            estadistica
-        );
+        estadistica.historial =
+            [];
 
     }
 
 
     /*
-     * ====================================================
-     * FALLO
-     * ====================================================
+     * Normalizar el valor.
      */
+
+    const resultado =
+        Boolean(
+            esCorrecta
+        );
+
+
+    /*
+     * Añadir la respuesta al historial reciente.
+     */
+
+    estadistica.historial.push(
+        resultado
+    );
+
+
+    /*
+     * Si superamos la ventana configurada,
+     * eliminamos las respuestas más antiguas.
+     */
+
+    while (
+        estadistica.historial.length >
+        VENTANA_RENDIMIENTO
+    ) {
+
+        estadistica.historial.shift();
+
+    }
+
+
+    /*
+     * Actualizar estadísticas históricas.
+     */
+
+    if (resultado) {
+
+        estadistica.aciertosTotales++;
+
+    }
 
     else {
 
-        estadistica.fallos++;
-
-
-        /*
-         * Un fallo rompe completamente la racha.
-         */
-
-        estadistica.rachaActual =
-            0;
-
-
-        /*
-         * Último resultado.
-         */
-
-        estadistica.ultimoResultado =
-            false;
-
-
-        /*
-         * Una pregunta que se había dominado
-         * deja de estar dominada si volvemos
-         * a fallarla.
-         */
-
-        estadistica.dominio =
-            "debil";
+        estadistica.fallosTotales++;
 
     }
 
 
     /*
-     * ====================================================
-     * ÚLTIMA RESPUESTA
-     * ====================================================
+     * Guardar fecha de la última respuesta.
      */
 
     estadistica.ultimaRespuesta =
-        fechaISO;
+        new Date().toISOString();
 
 
     /*
-     * ====================================================
-     * HISTORIAL
-     * ====================================================
-     *
-     * Guardamos cada intento individual.
-     *
-     * Esto permitirá posteriormente crear:
-     *
-     * - Evolución temporal.
-     * - Gráficos.
-     * - Últimos fallos.
-     * - Rendimiento por sesiones.
-     * - Rendimiento por modo.
-     *
-     * No se utiliza todavía en la interfaz.
+     * Calcular el rendimiento actual.
      */
 
-    estadistica.historial.push({
-
-        fecha: fechaISO,
-
-        correcta: Boolean(
-            esCorrecta
-        ),
-
-        modo:
-            datosAdicionales.modo ||
-            null,
-
-        sesion:
-            datosAdicionales.sesion ||
-            null
-
-    });
+    const rendimiento =
+        calcularRendimientoReciente(
+            estadistica
+        );
 
 
     /*
-     * ====================================================
-     * GUARDAR
-     * ====================================================
+     * Guardar un nuevo punto en el histórico.
      */
 
-    guardarEstadisticas(
+    guardarPuntoHistorico(
+        estadistica,
+        rendimiento
+    );
+
+
+    /*
+     * Guardar todo.
+     */
+
+    guardarEstadisticasGlobales(
         estadisticas
     );
 
 
     /*
-     * Devolvemos la estadística actualizada.
-     *
-     * Esto puede ser útil para test.js.
+     * Devolver la estadística actualizada.
      */
 
     return estadistica;
@@ -484,101 +477,31 @@ function registrarResultado(
 
 
 /* ========================================================
-   ACTUALIZAR DOMINIO
+   CALCULAR RENDIMIENTO RECIENTE
    ========================================================
 
-   Estados:
+   El rendimiento se calcula únicamente sobre las
+   respuestas existentes dentro de VENTANA_RENDIMIENTO.
 
-       nueva
-       debil
-       aprendizaje
-       dominada
+   Ejemplo:
 
-   La regla actual es:
+   80 aciertos
+   20 fallos
 
-       0 aciertos consecutivos
-           → débil
-
-       1 acierto consecutivo
-           → aprendizaje
-
-       2 aciertos consecutivos
-           → dominada
+   → 80%
 
    ======================================================== */
 
-function actualizarDominio(
+function calcularRendimientoReciente(
     estadistica
 ) {
 
-    const racha =
-        estadistica.rachaActual;
-
-
-    /*
-     * Dos aciertos consecutivos:
-     * pregunta dominada.
-     */
-
-    if (
-        racha >=
-        ACIERTOS_PARA_DOMINAR
-    ) {
-
-        estadistica.dominio =
-            "dominada";
-
-
-        return;
-
-    }
-
-
-    /*
-     * Un acierto consecutivo:
-     * todavía está en aprendizaje.
-     */
-
-    if (
-        racha === 1
-    ) {
-
-        estadistica.dominio =
-            "aprendizaje";
-
-
-        return;
-
-    }
-
-
-    /*
-     * Sin racha.
-     */
-
-    estadistica.dominio =
-        "debil";
-
-}
-
-
-/* ========================================================
-   OBTENER PORCENTAJE DE ACIERTO
-   ======================================================== */
-
-function obtenerPorcentaje(
-    idPregunta
-) {
-
-    const estadistica =
-        obtenerEstadistica(
-            idPregunta
-        );
-
-
     if (
         !estadistica ||
-        estadistica.vecesRespondida === 0
+        !Array.isArray(
+            estadistica.historial
+        ) ||
+        estadistica.historial.length === 0
     ) {
 
         return 0;
@@ -586,297 +509,237 @@ function obtenerPorcentaje(
     }
 
 
+    const historial =
+        estadistica.historial;
+
+
+    const aciertos =
+        historial.filter(
+            respuesta =>
+                respuesta === true
+        ).length;
+
+
     return (
-        estadistica.aciertos /
-        estadistica.vecesRespondida
+        aciertos /
+        historial.length
     ) * 100;
 
 }
 
 
 /* ========================================================
-   OBTENER PREGUNTAS CON FALLOS
-   ========================================================
+   OBTENER RENDIMIENTO RECIENTE DE UNA PREGUNTA
+   ======================================================== */
 
-   Devuelve los IDs de todas las preguntas
-   que alguna vez se hayan fallado.
+function obtenerRendimientoReciente(
+    idPregunta
+) {
+
+    const estadistica =
+        obtenerEstadisticaPregunta(
+            idPregunta
+        );
+
+
+    if (!estadistica) {
+
+        return 0;
+
+    }
+
+
+    return calcularRendimientoReciente(
+        estadistica
+    );
+
+}
+
+
+/* ========================================================
+   OBTENER NÚMERO DE RESPUESTAS RECIENTES
+   ======================================================== */
+
+function obtenerNumeroRespuestasRecientes(
+    idPregunta
+) {
+
+    const estadistica =
+        obtenerEstadisticaPregunta(
+            idPregunta
+        );
+
+
+    if (
+        !estadistica ||
+        !Array.isArray(
+            estadistica.historial
+        )
+    ) {
+
+        return 0;
+
+    }
+
+
+    return estadistica.historial.length;
+
+}
+
+
+/* ========================================================
+   CALCULAR CONFIANZA
+   ========================================================
 
    IMPORTANTE:
 
-   Una pregunta dominada NO desaparece del historial.
+   La confianza NO es lo mismo que el rendimiento.
 
-   Si alguna vez tuvo fallos, continuará apareciendo
-   aquí.
+   Ejemplo:
 
-   Esto permitirá posteriormente decidir desde la
-   interfaz si queremos:
+   2/2   → 100% de rendimiento
+   50/50 → 100% de rendimiento
+   100/100 → 100% de rendimiento
 
-       - Todos los fallos.
-       - Fallos no dominados.
-       - Fallos recientes.
-       - Fallos más frecuentes.
+   Pero tenemos mucha más información en el último caso.
 
-   ======================================================== */
+   De momento utilizamos cuatro niveles sencillos:
 
-function obtenerPreguntasConFallos() {
+   0 respuestas
+       → ninguna
 
-    const estadisticas =
-        obtenerEstadisticas();
+   1-9 respuestas
+       → baja
 
+   10-49 respuestas
+       → media
 
-    return Object.keys(
-        estadisticas
-    ).filter(
-        idPregunta =>
-            estadisticas[
-                idPregunta
-            ].fallos > 0
-    );
+   50-99 respuestas
+       → alta
 
-}
+   100 respuestas
+       → muy alta
 
-
-/* ========================================================
-   OBTENER PREGUNTAS NO DOMINADAS
-   ======================================================== */
-
-function obtenerPreguntasNoDominadas() {
-
-    const estadisticas =
-        obtenerEstadisticas();
-
-
-    return Object.keys(
-        estadisticas
-    ).filter(
-        idPregunta =>
-            estadisticas[
-                idPregunta
-            ].dominio !== "dominada"
-    );
-
-}
-
-
-/* ========================================================
-   OBTENER PREGUNTAS CON FALLOS Y NO DOMINADAS
-   ========================================================
-
-   Esta función será especialmente útil para el futuro
-   "Test de fallos".
+   Los umbrales pueden modificarse posteriormente.
 
    ======================================================== */
 
-function obtenerPreguntasParaRepaso() {
-
-    const estadisticas =
-        obtenerEstadisticas();
-
-
-    return Object.keys(
-        estadisticas
-    ).filter(
-        idPregunta => {
-
-            const estadistica =
-                estadisticas[
-                    idPregunta
-                ];
-
-
-            return (
-                estadistica.fallos > 0 &&
-                estadistica.dominio !==
-                    "dominada"
-            );
-
-        }
-    );
-
-}
-
-
-/* ========================================================
-   OBTENER PREGUNTAS MÁS FALLADAS
-   ========================================================
-
-   Devuelve las preguntas ordenadas desde la que tiene
-   más fallos hasta la que tiene menos.
-
-   ======================================================== */
-
-function obtenerPreguntasMasFalladas() {
-
-    const estadisticas =
-        obtenerEstadisticas();
-
-
-    return Object.keys(
-        estadisticas
-    )
-        .filter(
-            idPregunta =>
-                estadisticas[
-                    idPregunta
-                ].fallos > 0
-        )
-        .sort(
-            (
-                idA,
-                idB
-            ) => {
-
-                return (
-                    estadisticas[idB].fallos -
-                    estadisticas[idA].fallos
-                );
-
-            }
-        );
-
-}
-
-
-/* ========================================================
-   CALCULAR ESTADÍSTICAS DE UN CONJUNTO DE PREGUNTAS
-   ========================================================
-
-   Recibe un array de IDs:
-
-       [
-           "constitucion-titulo-1-001",
-           "constitucion-titulo-1-002",
-           "constitucion-titulo-1-003"
-       ]
-
-   y devuelve estadísticas agrupadas.
-
-   Esto permitirá posteriormente calcular:
-
-       - Estadísticas de un capítulo.
-       - Estadísticas de una asignatura.
-       - Estadísticas de una sesión.
-
-   ======================================================== */
-
-function calcularEstadisticasPreguntas(
-    idsPreguntas
+function obtenerConfianza(
+    idPregunta
 ) {
 
-    const estadisticas =
-        obtenerEstadisticas();
+    const numeroRespuestas =
+        obtenerNumeroRespuestasRecientes(
+            idPregunta
+        );
 
 
-    let vecesRespondidas =
-        0;
+    if (
+        numeroRespuestas === 0
+    ) {
 
-    let aciertos =
-        0;
+        return "ninguna";
 
-    let fallos =
-        0;
-
-    let preguntasConDatos =
-        0;
-
-    let preguntasDominadas =
-        0;
-
-    let preguntasConFallos =
-        0;
+    }
 
 
-    idsPreguntas.forEach(
-        idPregunta => {
+    if (
+        numeroRespuestas < 10
+    ) {
 
-            const estadistica =
-                estadisticas[
-                    idPregunta
-                ];
+        return "baja";
 
-
-            /*
-             * Si nunca se ha respondido,
-             * no aporta datos estadísticos.
-             */
-
-            if (!estadistica) {
-
-                return;
-
-            }
+    }
 
 
-            preguntasConDatos++;
+    if (
+        numeroRespuestas < 50
+    ) {
+
+        return "media";
+
+    }
 
 
-            vecesRespondidas +=
-                estadistica.vecesRespondida;
+    if (
+        numeroRespuestas < VENTANA_RENDIMIENTO
+    ) {
+
+        return "alta";
+
+    }
 
 
-            aciertos +=
-                estadistica.aciertos;
+    return "muy alta";
+
+}
 
 
-            fallos +=
-                estadistica.fallos;
+/* ========================================================
+   OBTENER INFORMACIÓN COMPLETA DE RENDIMIENTO
+   ========================================================
+
+   Devuelve algo como:
+
+   {
+       rendimiento: 94,
+       respuestas: 100,
+       confianza: "muy alta"
+   }
+
+   ======================================================== */
+
+function obtenerRendimientoPregunta(
+    idPregunta
+) {
+
+    const estadistica =
+        obtenerEstadisticaPregunta(
+            idPregunta
+        );
 
 
-            if (
-                estadistica.dominio ===
-                "dominada"
-            ) {
+    if (!estadistica) {
 
-                preguntasDominadas++;
+        return {
 
-            }
+            rendimiento: 0,
 
+            respuestas: 0,
 
-            if (
-                estadistica.fallos > 0
-            ) {
+            confianza: "ninguna"
 
-                preguntasConFallos++;
+        };
 
-            }
-
-        }
-    );
+    }
 
 
-    const porcentaje =
-        vecesRespondidas > 0
-
-            ? (
-                aciertos /
-                vecesRespondidas
-            ) * 100
-
+    const respuestas =
+        Array.isArray(
+            estadistica.historial
+        )
+            ? estadistica.historial.length
             : 0;
+
+
+    const rendimiento =
+        calcularRendimientoReciente(
+            estadistica
+        );
 
 
     return {
 
-        preguntasTotales:
-            idsPreguntas.length,
+        rendimiento:
+            rendimiento,
 
-        preguntasConDatos,
+        respuestas:
+            respuestas,
 
-        preguntasSinDatos:
-            idsPreguntas.length -
-            preguntasConDatos,
-
-        preguntasDominadas,
-
-        preguntasConFallos,
-
-        vecesRespondidas,
-
-        aciertos,
-
-        fallos,
-
-        porcentaje
+        confianza:
+            obtenerConfianza(
+                idPregunta
+            )
 
     };
 
@@ -884,279 +747,247 @@ function calcularEstadisticasPreguntas(
 
 
 /* ========================================================
-   ESTADÍSTICAS DE CAPÍTULO
+   GUARDAR PUNTO HISTÓRICO
    ========================================================
 
-   Para utilizar esta función necesitaremos proporcionar
-   los IDs de las preguntas que pertenecen al capítulo.
+   Guardamos la evolución del rendimiento para poder
+   crear gráficas posteriormente.
+
+   Ejemplo:
+
+   {
+       fecha: "2026-08-11T20:30:00.000Z",
+       rendimiento: 94
+   }
 
    ======================================================== */
 
-function obtenerEstadisticasCapitulo(
-    idsPreguntas
+function guardarPuntoHistorico(
+    estadistica,
+    rendimiento
 ) {
 
-    return calcularEstadisticasPreguntas(
-        idsPreguntas
-    );
+    if (!estadistica) {
 
-}
+        return;
 
-
-/* ========================================================
-   ESTADÍSTICAS DE ASIGNATURA
-   ========================================================
-
-   Igual que para un capítulo, pero pasando todos los IDs
-   pertenecientes a la asignatura.
-
-   ======================================================== */
-
-function obtenerEstadisticasAsignatura(
-    idsPreguntas
-) {
-
-    return calcularEstadisticasPreguntas(
-        idsPreguntas
-    );
-
-}
+    }
 
 
-/* ========================================================
-   OBTENER EVOLUCIÓN
-   ========================================================
-
-   Devuelve todos los intentos registrados de las preguntas
-   indicadas.
-
-   Si no se proporciona una lista de IDs, devuelve el
-   historial global.
-
-   ======================================================== */
-
-function obtenerEvolucion(
-    idsPreguntas = null
-) {
-
-    const estadisticas =
-        obtenerEstadisticas();
-
-
-    const historial =
-        [];
-
-
-    /*
-     * Si no se indican IDs:
-     * utilizamos todas las preguntas.
-     */
-
-    const ids =
-        Array.isArray(
-            idsPreguntas
+    if (
+        !Array.isArray(
+            estadistica.historico
         )
+    ) {
 
-            ? idsPreguntas
+        estadistica.historico =
+            [];
 
-            : Object.keys(
-                estadisticas
-            );
-
-
-    ids.forEach(
-        idPregunta => {
-
-            const estadistica =
-                estadisticas[
-                    idPregunta
-                ];
+    }
 
 
-            if (
-                !estadistica ||
-                !Array.isArray(
-                    estadistica.historial
-                )
-            ) {
+    const punto = {
 
-                return;
+        fecha:
+            new Date().toISOString(),
 
-            }
+        rendimiento:
+            Number(
+                rendimiento.toFixed(2)
+            )
+
+    };
 
 
-            estadistica.historial.forEach(
-                intento => {
-
-                    historial.push({
-
-                        idPregunta,
-
-                        fecha:
-                            intento.fecha,
-
-                        correcta:
-                            intento.correcta,
-
-                        modo:
-                            intento.modo,
-
-                        sesion:
-                            intento.sesion
-
-                    });
-
-                }
-            );
-
-        }
+    estadistica.historico.push(
+        punto
     );
 
 
     /*
-     * Ordenar cronológicamente.
+     * Limitar el tamaño del histórico.
      */
 
-    historial.sort(
-        (
-            a,
-            b
-        ) => {
+    while (
+        estadistica.historico.length >
+        MAXIMO_PUNTOS_HISTORICO
+    ) {
 
-            return (
-                new Date(a.fecha) -
-                new Date(b.fecha)
-            );
+        estadistica.historico.shift();
 
-        }
-    );
-
-
-    return historial;
+    }
 
 }
 
 
 /* ========================================================
-   OBTENER ÚLTIMO RESULTADO
+   OBTENER HISTÓRICO DE UNA PREGUNTA
    ======================================================== */
 
-function obtenerUltimoResultado(
+function obtenerHistoricoPregunta(
     idPregunta
 ) {
 
     const estadistica =
-        obtenerEstadistica(
+        obtenerEstadisticaPregunta(
             idPregunta
         );
 
 
     if (
-        !estadistica
+        !estadistica ||
+        !Array.isArray(
+            estadistica.historico
+        )
     ) {
 
-        return null;
+        return [];
 
     }
 
 
-    return estadistica.ultimoResultado;
+    return estadistica.historico;
 
 }
 
 
 /* ========================================================
-   COMPROBAR SI ESTÁ DOMINADA
+   OBTENER ESTADÍSTICAS HISTÓRICAS
    ======================================================== */
 
-function preguntaEstaDominada(
+function obtenerTotalesPregunta(
     idPregunta
 ) {
 
     const estadistica =
-        obtenerEstadistica(
+        obtenerEstadisticaPregunta(
             idPregunta
         );
+
+
+    if (!estadistica) {
+
+        return {
+
+            aciertos: 0,
+
+            fallos: 0,
+
+            respuestas: 0
+
+        };
+
+    }
+
+
+    const aciertos =
+        Number(
+            estadistica.aciertosTotales
+        ) || 0;
+
+
+    const fallos =
+        Number(
+            estadistica.fallosTotales
+        ) || 0;
+
+
+    return {
+
+        aciertos:
+            aciertos,
+
+        fallos:
+            fallos,
+
+        respuestas:
+            aciertos +
+            fallos
+
+    };
+
+}
+
+
+/* ========================================================
+   COMPROBAR SI EXISTEN ESTADÍSTICAS
+   ======================================================== */
+
+function tieneEstadisticasPregunta(
+    idPregunta
+) {
+
+    if (!idPregunta) {
+
+        return false;
+
+    }
+
+
+    const estadisticas =
+        obtenerEstadisticasGlobales();
 
 
     return Boolean(
-        estadistica &&
-        estadistica.dominio ===
-            "dominada"
+        estadisticas[idPregunta]
     );
 
 }
 
 
 /* ========================================================
-   OBTENER RACHA ACTUAL
+   BORRAR ESTADÍSTICAS DE UNA PREGUNTA
    ======================================================== */
 
-function obtenerRachaActual(
+function borrarEstadisticasPregunta(
     idPregunta
 ) {
 
-    const estadistica =
-        obtenerEstadistica(
-            idPregunta
-        );
+    if (!idPregunta) {
 
-
-    if (
-        !estadistica
-    ) {
-
-        return 0;
+        return false;
 
     }
 
 
-    return estadistica.rachaActual;
+    const estadisticas =
+        obtenerEstadisticasGlobales();
+
+
+    if (
+        !estadisticas[idPregunta]
+    ) {
+
+        return false;
+
+    }
+
+
+    delete estadisticas[
+        idPregunta
+    ];
+
+
+    return guardarEstadisticasGlobales(
+        estadisticas
+    );
 
 }
 
 
 /* ========================================================
-   OBTENER MEJOR RACHA
-   ======================================================== */
-
-function obtenerMejorRacha(
-    idPregunta
-) {
-
-    const estadistica =
-        obtenerEstadistica(
-            idPregunta
-        );
-
-
-    if (
-        !estadistica
-    ) {
-
-        return 0;
-
-    }
-
-
-    return estadistica.mejorRacha;
-
-}
-
-
-/* ========================================================
-   ELIMINAR TODAS LAS ESTADÍSTICAS
+   BORRAR TODAS LAS ESTADÍSTICAS
    ========================================================
 
-   Esta función NO se ejecuta automáticamente.
+   Esta función NO la utilizaremos todavía desde la
+   interfaz.
 
-   Servirá posteriormente para añadir una opción como:
-
-       "Borrar estadísticas"
+   Se deja preparada para futuras opciones de
+   configuración.
 
    ======================================================== */
 
-function eliminarTodasLasEstadisticas() {
+function borrarTodasLasEstadisticas() {
 
     localStorage.removeItem(
         CLAVE_ESTADISTICAS
@@ -1166,45 +997,21 @@ function eliminarTodasLasEstadisticas() {
 
 
 /* ========================================================
-   ELIMINAR ESTADÍSTICAS DE UNA PREGUNTA
-   ======================================================== */
-
-function eliminarEstadistica(
-    idPregunta
-) {
-
-    if (!idPregunta) {
-
-        return;
-
-    }
-
-
-    const estadisticas =
-        obtenerEstadisticas();
-
-
-    delete estadisticas[
-        idPregunta
-    ];
-
-
-    guardarEstadisticas(
-        estadisticas
-    );
-
-}
-
-
-/* ========================================================
-   EXPORTAR FUNCIONES
+   EXPORTAR / EXPONER FUNCIONES
    ========================================================
 
-   Si en algún momento usamos módulos ES6 podremos
-   sustituir esto por "export".
+   Como este archivo se carga mediante <script>,
+   las funciones quedan disponibles globalmente.
 
-   De momento las funciones quedan disponibles
-   globalmente para que test.js pueda utilizarlas
-   directamente.
+   Por ejemplo, desde test.js podremos utilizar:
+
+   registrarRespuestaPregunta(
+       pregunta.id,
+       true
+   );
+
+   obtenerRendimientoPregunta(
+       pregunta.id
+   );
 
    ======================================================== */
