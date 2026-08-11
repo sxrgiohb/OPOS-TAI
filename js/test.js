@@ -2075,30 +2075,22 @@ function mostrarListado() {
      */
 
     if (idSesion) {
-
         return;
-
     }
-
 
     if (!listaPreguntasElemento) {
-
         return;
-
     }
 
 
-    listaPreguntasElemento.innerHTML =
-        "";
+    listaPreguntasElemento.innerHTML = "";
 
 
     preguntas.forEach(
         pregunta => {
 
             const elemento =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             elemento.className =
@@ -2106,13 +2098,159 @@ function mostrarListado() {
 
 
             /*
+             * ====================================================
+             * ESTADO DE LA PREGUNTA
+             * ====================================================
+             */
+
+            let estadoPregunta = null;
+
+
+            if (
+                pregunta.id &&
+                typeof obtenerRendimientoPregunta ===
+                    "function"
+            ) {
+
+                const rendimiento =
+                    obtenerRendimientoPregunta(
+                        pregunta.id
+                    );
+
+
+                /*
+                 * DOMINADA
+                 *
+                 * Esta función ya comprueba
+                 * el requisito de los 20 intentos.
+                 */
+
+                if (
+                    typeof estaPreguntaDominada ===
+                        "function" &&
+                    estaPreguntaDominada(
+                        pregunta.id
+                    )
+                ) {
+
+                    estadoPregunta = {
+                        clase: "dominado",
+                        texto: "DOMINADA"
+                    };
+
+                }
+
+
+                /*
+                 * BUEN DOMINIO
+                 */
+
+                else if (
+                    rendimiento.respuestas > 0 &&
+                    rendimiento.rendimiento >= 70
+                ) {
+
+                    estadoPregunta = {
+                        clase: "buen-dominio",
+                        texto: "BUEN DOMINIO"
+                    };
+
+                }
+
+
+                /*
+                 * EN PROGRESO
+                 */
+
+                else if (
+                    rendimiento.respuestas > 0 &&
+                    rendimiento.rendimiento >= 50
+                ) {
+
+                    estadoPregunta = {
+                        clase: "en-progreso",
+                        texto: "EN PROGRESO"
+                    };
+
+                }
+
+
+                /*
+                 * DÉBIL
+                 */
+
+                else if (
+                    rendimiento.respuestas > 0
+                ) {
+
+                    estadoPregunta = {
+                        clase: "debil",
+                        texto: "DÉBIL"
+                    };
+
+                }
+
+            }
+
+
+            /*
+             * ====================================================
+             * INSIGNIA
+             * ====================================================
+             */
+
+            if (estadoPregunta) {
+
+                const insignia =
+                    document.createElement("div");
+
+
+                insignia.className =
+                    "estado-pregunta " +
+                    estadoPregunta.clase;
+
+
+                const textoEstado =
+                    document.createElement("span");
+
+
+                textoEstado.textContent =
+                    estadoPregunta.texto;
+
+
+                const circulo =
+                    document.createElement("span");
+
+
+                circulo.className =
+                    "circulo-estado";
+
+
+                insignia.appendChild(
+                    textoEstado
+                );
+
+
+                insignia.appendChild(
+                    circulo
+                );
+
+
+                elemento.appendChild(
+                    insignia
+                );
+
+            }
+
+
+            /*
+             * ====================================================
              * PREGUNTA
+             * ====================================================
              */
 
             const preguntaTexto =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             preguntaTexto.className =
@@ -2124,13 +2262,13 @@ function mostrarListado() {
 
 
             /*
+             * ====================================================
              * RESPUESTA
+             * ====================================================
              */
 
             const respuestaTexto =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             respuestaTexto.className =
@@ -2142,7 +2280,9 @@ function mostrarListado() {
 
 
             /*
-             * Texto utilizado por el buscador.
+             * ====================================================
+             * TEXTO UTILIZADO POR EL BUSCADOR
+             * ====================================================
              */
 
             elemento.dataset.busqueda =
@@ -2154,7 +2294,9 @@ function mostrarListado() {
 
 
             /*
-             * Añadir elementos.
+             * ====================================================
+             * AÑADIR ELEMENTOS
+             * ====================================================
              */
 
             elemento.appendChild(
@@ -2173,7 +2315,6 @@ function mostrarListado() {
 
         }
     );
-
 }
 
 
