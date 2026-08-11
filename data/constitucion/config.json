@@ -9,40 +9,9 @@
       "archivo": "preambulo.json"
     },
     {
-      "id": "titulo_preliminar",
-      "nombre": "TÍTULO PRELIMINAR",
-      "carpeta": "titulo-preliminar",
-      "contenido": [
-        {
-          "id": "preguntas",
-          "nombre": "Preguntas",
-          "archivo": "preguntas.json"
-        },
-        {
-          "id": "capitulo_1",
-          "nombre": "CAPÍTULO I",
-          "carpeta": "capitulo-1",
-          "contenido": [
-            {
-              "id": "preguntas",
-              "nombre": "Preguntas",
-              "archivo": "preguntas.json"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "titulo_1",
-      "nombre": "TÍTULO I",
-      "carpeta": "titulo-i",
-      "contenido": [
-        {
-          "id": "preguntas",
-          "nombre": "Preguntas",
-          "archivo": "preguntas.json"
-        }
-      ]
+      "id": "preguntas",
+      "nombre": "Preguntas",
+      "archivo": "preguntas.json"
     }
   ]
 }
