@@ -594,117 +594,57 @@
        MOSTRAR CABECERA
     ======================================================== */
 
-    function mostrarCabecera(
-  configuracion
-) {
-
-  const nombreAsignatura =
-    configuracion.nombre ||
-    "Asignatura";
-
-
-  /*
-   * Si estamos en la raíz:
-   *
-   * Constitución Española
-   *
-   * Si estamos dentro de carpetas:
-   *
-   * Constitución Española - TÍTULO PRELIMINAR
-   *
-   * Constitución Española - TÍTULO PRELIMINAR - CAPÍTULO I
-   */
-
-  let titulo =
-    nombreAsignatura;
-
-
-  if (rutaActual) {
-
-    const partesRuta =
-      rutaActual
-        .split("/")
-        .filter(Boolean);
-
-
-    let contenidoActual =
-      configuracion.contenido || [];
-
-
-    const nombresRuta = [];
-
-
-    for (
-      const carpetaRuta of partesRuta
-    ) {
-
-      const elemento =
-        contenidoActual.find(
-          item =>
-            item.carpeta === carpetaRuta
-        );
-
-
-      if (!elemento) {
-
-        break;
-
+    function mostrarCabecera() {
+    
+      const cabecera = document.getElementById("cabeceraRuta");
+    
+      if (!cabecera) return;
+    
+      const partesRuta = rutaActual
+        ? rutaActual.split("/").filter(Boolean)
+        : [];
+    
+      const nombresRuta = [];
+    
+      let contenidoActual =
+        configuracion.contenido || [];
+    
+      for (const parte of partesRuta) {
+    
+        const elemento =
+          contenidoActual.find(
+            item => item.carpeta === parte
+          );
+    
+        if (!elemento) {
+          console.warn(
+            "No se encontró la carpeta:",
+            parte,
+            "en:",
+            contenidoActual
+          );
+          break;
+        }
+    
+        nombresRuta.push(elemento.nombre);
+    
+        contenidoActual =
+          Array.isArray(elemento.contenido)
+            ? elemento.contenido
+            : [];
       }
-
-
-      nombresRuta.push(
-        elemento.nombre
-      );
-
-
-      contenidoActual =
-        elemento.contenido || [];
-
+    
+      /*
+       * Construimos la ruta visual completa
+       */
+      const partesVisuales = [
+        configuracion.nombre,
+        ...nombresRuta
+      ];
+    
+      cabecera.textContent =
+        partesVisuales.join(" › ");
     }
-
-
-    if (
-      nombresRuta.length > 0
-    ) {
-
-      titulo +=
-        " - " +
-        nombresRuta.join(
-          " - "
-        );
-
-    }
-
-  }
-
-
-  cabecera.innerHTML = `
-
-    <div class="icono">
-
-      ${configuracion.icono || "📚"}
-
-    </div>
-
-    <div>
-
-      <h1>
-
-        ${titulo}
-
-      </h1>
-
-      <p>
-
-        Selecciona un elemento para estudiar.
-
-      </p>
-
-    </div>
-
-  `;
-
-}
 
 
     /* ========================================================
