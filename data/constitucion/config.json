@@ -6,7 +6,7 @@
 {
 "id": "preambulo",
 "nombre": "PREÁMBULO",
-"archivo": "preguntas.json"
+"archivo": "preambulo.json"
 },
 {
 "id": "titulo_preliminar",
@@ -16,7 +16,7 @@
 {
 "id": "titulo_1",
 "nombre": "TÍTULO I",
-"archivo": "preguntas.json"
+"archivo": "titulo-i.json"
 },
 {
 "id": "titulo_2",
