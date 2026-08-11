@@ -913,18 +913,6 @@ function reiniciarEstadisticas() {
    LISTADO DE PREGUNTAS
 ======================================================== */
 
-function escaparHTML(texto) {
-
-    const elemento =
-        document.createElement("div");
-
-    elemento.textContent =
-        texto ?? "";
-
-    return elemento.innerHTML;
-
-}
-
 function mostrarListado() {
 
     if (!listaPreguntasElemento) {
@@ -938,10 +926,7 @@ function mostrarListado() {
 
 
     preguntas.forEach(
-        (
-            pregunta,
-            posicion
-        ) => {
+        (pregunta) => {
 
             const elemento =
                 document.createElement("div");
@@ -964,7 +949,7 @@ function mostrarListado() {
 
 
             preguntaTexto.textContent =
-                `${posicion + 1}. ${pregunta.pregunta}`;
+                pregunta.pregunta;
 
 
             /*
@@ -988,18 +973,13 @@ function mostrarListado() {
 
 
             /*
-             * Guardamos también la información
-             * para que el buscador pueda encontrar
-             * preguntas y respuestas.
+             * Texto utilizado por el buscador.
+             * Busca tanto en pregunta como en respuesta.
              */
 
             elemento.dataset.busqueda =
                 `${pregunta.pregunta} ${pregunta.respuesta}`
                     .toLowerCase();
-
-
-            elemento.dataset.indice =
-                posicion;
 
 
             /*
@@ -1017,27 +997,11 @@ function mostrarListado() {
 
 
             /*
-             * Al pulsar la tarjeta vamos a esa pregunta.
+             * IMPORTANTE:
+             * No añadimos ningún evento "click".
+             *
+             * El listado es exclusivamente consultivo.
              */
-
-            elemento.addEventListener(
-                "click",
-                () => {
-
-                    indice =
-                        posicion;
-
-
-                    mostrarPregunta();
-
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth"
-                    });
-
-                }
-            );
-
 
             listaPreguntasElemento.appendChild(
                 elemento
