@@ -9,8 +9,8 @@
       "archivo": "preambulo.json"
     },
     {
-      "id": "preguntas",
-      "nombre": "Preguntas",
+      "id": "titulo-i",
+      "nombre": "Título I",
       "archivo": "titulo-i.json"
     }
   ]
