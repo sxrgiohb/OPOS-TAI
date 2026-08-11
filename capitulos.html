@@ -64,9 +64,9 @@
     }
 
 
-    /* =====================================================
+    /* ========================================================
        BOTÓN VOLVER
-    ====================================================== */
+    ======================================================== */
 
     .volver {
 
@@ -116,9 +116,9 @@
     }
 
 
-    /* =====================================================
+    /* ========================================================
        CABECERA
-    ====================================================== */
+    ======================================================== */
 
     .cabecera {
 
@@ -160,8 +160,6 @@
 
       font-size: 1.4rem;
 
-      color: #222;
-
     }
 
 
@@ -176,9 +174,9 @@
     }
 
 
-    /* =====================================================
-       LISTADO
-    ====================================================== */
+    /* ========================================================
+       TÍTULO DE SECCIÓN
+    ======================================================== */
 
     .titulo-seccion {
 
@@ -189,7 +187,11 @@
     }
 
 
-    #elementos {
+    /* ========================================================
+       LISTADO
+    ======================================================== */
+
+    #contenido {
 
       display: flex;
 
@@ -250,8 +252,6 @@
 
       gap: 0.8rem;
 
-      min-width: 0;
-
     }
 
 
@@ -282,8 +282,6 @@
 
       font-weight: 600;
 
-      overflow-wrap: anywhere;
-
     }
 
 
@@ -292,10 +290,6 @@
       color: #007bff;
 
       font-size: 1.3rem;
-
-      flex-shrink: 0;
-
-      margin-left: 0.8rem;
 
     }
 
@@ -361,6 +355,7 @@
             Cargando...
           </h1>
 
+
           <p>
             Cargando información...
           </p>
@@ -379,7 +374,10 @@
     <section class="card">
 
 
-      <h2 class="titulo-seccion">
+      <h2
+        class="titulo-seccion"
+        id="tituloContenido"
+      >
         📖 Contenido
       </h2>
 
@@ -389,7 +387,7 @@
       </div>
 
 
-      <div id="elementos"></div>
+      <div id="contenido"></div>
 
 
     </section>
@@ -400,24 +398,25 @@
 
   <script>
 
+
     /* ========================================================
        CONFIGURACIÓN
     ======================================================== */
 
-    const propietario =
+    const PROPIETARIO =
       "sxrgiohb";
 
 
-    const repositorio =
+    const REPOSITORIO =
       "OPOS-TAI";
 
 
-    const carpetaDatos =
+    const CARPETA_DATOS =
       "data";
 
 
     /* ========================================================
-       PARÁMETROS DE LA URL
+       PARÁMETROS DE URL
     ======================================================== */
 
     const parametros =
@@ -426,71 +425,28 @@
       );
 
 
-    /*
-     * La URL tendrá:
-     *
-     * capitulos.html?asignatura=constitucion
-     *
-     */
-
-
     const asignatura =
       parametros.get("asignatura");
 
 
     /*
-     * rutaElementos representa la posición
-     * actual dentro del árbol del config.json.
+     * Ruta interna dentro de la asignatura.
      *
      * Ejemplo:
      *
-     * []
+     * ""
      *
-     * ["titulo-i"]
+     * "titulo-preliminar"
      *
-     * ["titulo-i", "derechos"]
-     *
-     * ["titulo-i", "derechos", "jurisprudencia"]
-     *
+     * "titulo-preliminar/capitulo-1"
      */
 
-
-    let rutaElementos = [];
-
-
-    const rutaParametro =
-      parametros.get("ruta");
-
-
-    if (rutaParametro) {
-
-      try {
-
-        rutaElementos =
-          JSON.parse(
-            decodeURIComponent(
-              rutaParametro
-            )
-          );
-
-      }
-
-      catch (error) {
-
-        console.error(
-          "Ruta interna no válida:",
-          error
-        );
-
-        rutaElementos = [];
-
-      }
-
-    }
+    const rutaActual =
+      parametros.get("ruta") || "";
 
 
     /* ========================================================
-       ELEMENTOS HTML
+       ELEMENTOS
     ======================================================== */
 
     const cabecera =
@@ -505,9 +461,15 @@
       );
 
 
-    const elementos =
+    const contenido =
       document.getElementById(
-        "elementos"
+        "contenido"
+      );
+
+
+    const tituloContenido =
+      document.getElementById(
+        "tituloContenido"
       );
 
 
@@ -521,10 +483,7 @@
 
       const binario =
         atob(
-          base64.replace(
-            /\s/g,
-            ""
-          )
+          base64.replace(/\s/g, "")
         );
 
 
@@ -570,17 +529,8 @@
         }
 
 
-        /*
-         * SIEMPRE cargamos el mismo config.json.
-         *
-         * Por ejemplo:
-         *
-         * data/constitucion/config.json
-         *
-         */
-
         const url =
-          `https://api.github.com/repos/${propietario}/${repositorio}/contents/${carpetaDatos}/${encodeURIComponent(asignatura)}/config.json`;
+          `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}/${encodeURIComponent(asignatura)}/config.json`;
 
 
         const respuesta =
@@ -600,22 +550,20 @@
           await respuesta.json();
 
 
-        const contenido =
+        const texto =
           decodificarBase64(
             archivo.content
           );
 
 
         const configuracion =
-          JSON.parse(
-            contenido
-          );
+          JSON.parse(texto);
 
 
-        /*
-         * Mostrar el contenido correspondiente
-         * a la posición actual.
-         */
+        mostrarCabecera(
+          configuracion
+        );
+
 
         mostrarContenido(
           configuracion
@@ -626,9 +574,7 @@
 
       catch (error) {
 
-        console.error(
-          error
-        );
+        console.error(error);
 
 
         estado.classList.add(
@@ -645,154 +591,120 @@
 
 
     /* ========================================================
-       BUSCAR ELEMENTOS EN EL ÁRBOL
+       MOSTRAR CABECERA
     ======================================================== */
 
-    function obtenerElementosActuales(
+    function mostrarCabecera(
       configuracion
     ) {
 
-      /*
-       * Empezamos en el nivel raíz.
-       */
+      cabecera.innerHTML = `
 
-      let elementosActuales =
-        configuracion.elementos || [];
+        <div class="icono">
 
+          ${configuracion.icono || "📚"}
 
-      /*
-       * Vamos recorriendo la ruta:
-       *
-       * ["titulo-i", "derechos", "jurisprudencia"]
-       *
-       */
+        </div>
 
 
-      for (
-        const id of rutaElementos
-      ) {
+        <div>
 
-        const carpeta =
-          elementosActuales.find(
-            elemento =>
-              elemento.tipo === "carpeta" &&
-              elemento.id === id
-          );
+          <h1>
 
+            ${escaparHTML(
+              configuracion.nombre ||
+              "Asignatura"
+            )}
 
-        /*
-         * Si no encontramos la carpeta,
-         * detenemos la búsqueda.
-         */
-
-        if (!carpeta) {
-
-          return [];
-
-        }
+          </h1>
 
 
-        /*
-         * Entramos dentro de la carpeta.
-         */
+          <p>
 
-        elementosActuales =
-          carpeta.elementos || [];
+            Selecciona un contenido para estudiar.
 
-      }
+          </p>
 
+        </div>
 
-      return elementosActuales;
+      `;
 
     }
 
 
     /* ========================================================
-       OBTENER NOMBRE E ICONO DEL NIVEL ACTUAL
+       OBTENER CONTENIDO DE LA RUTA ACTUAL
     ======================================================== */
 
-    function obtenerInformacionActual(
-      configuracion
+    function obtenerContenidoRuta(
+      configuracion,
+      ruta
     ) {
 
-      /*
-       * Si estamos en la raíz,
-       * usamos la información de la asignatura.
-       */
+      let elementos =
+        configuracion.contenido || [];
 
-      if (
-        rutaElementos.length === 0
-      ) {
+
+      if (!ruta) {
 
         return {
-
-          nombre:
-            configuracion.nombre ||
-            "Contenido",
-
-          icono:
-            configuracion.icono ||
-            "📚"
-
+          elementos,
+          nombre: configuracion.nombre || "Contenido"
         };
 
       }
 
 
-      /*
-       * Si estamos dentro de carpetas,
-       * buscamos la carpeta correspondiente.
-       */
-
-      let elementosActuales =
-        configuracion.elementos || [];
+      const partes =
+        ruta
+          .split("/")
+          .filter(Boolean);
 
 
-      let elementoActual =
-        null;
+      let nombreActual =
+        configuracion.nombre || "Contenido";
 
 
       for (
-        const id of rutaElementos
+        const parte of partes
       ) {
 
-        elementoActual =
-          elementosActuales.find(
+        const encontrado =
+          elementos.find(
             elemento =>
-              elemento.tipo === "carpeta" &&
-              elemento.id === id
+              elemento.carpeta === parte
           );
 
 
-        if (!elementoActual) {
+        if (
+          !encontrado ||
+          !Array.isArray(
+            encontrado.contenido
+          )
+        ) {
 
           return {
-
-            nombre: "Contenido",
-
-            icono: "📚"
-
+            elementos: [],
+            nombre: nombreActual
           };
 
         }
 
 
-        elementosActuales =
-          elementoActual.elementos || [];
+        nombreActual =
+          encontrado.nombre ||
+          parte;
+
+
+        elementos =
+          encontrado.contenido;
 
       }
 
 
       return {
-
-        nombre:
-          elementoActual.nombre ||
-          "Contenido",
-
-        icono:
-          elementoActual.icono ||
-          "📁"
-
+        elementos,
+        nombre: nombreActual
       };
 
     }
@@ -806,72 +718,37 @@
       configuracion
     ) {
 
-      const informacion =
-        obtenerInformacionActual(
-          configuracion
+      const resultado =
+        obtenerContenidoRuta(
+          configuracion,
+          rutaActual
         );
 
 
-      /*
-       * CABECERA
-       */
-
-      cabecera.innerHTML = `
-
-        <div class="icono">
-
-          ${informacion.icono}
-
-        </div>
-
-
-        <div>
-
-          <h1>
-
-            ${escaparHTML(
-              informacion.nombre
-            )}
-
-          </h1>
-
-
-          <p>
-
-            Selecciona un elemento para continuar.
-
-          </p>
-
-        </div>
-
-      `;
+      const elementos =
+        resultado.elementos;
 
 
       /*
-       * ELEMENTOS DEL NIVEL ACTUAL
+       * Título de la página actual.
        */
 
-      const lista =
-        obtenerElementosActuales(
-          configuracion
-        );
+      tituloContenido.textContent =
+        rutaActual
+          ? "📖 " + resultado.nombre
+          : "📖 Contenido";
 
 
-      elementos.innerHTML =
-        "";
-
+      /*
+       * Si no hay contenido.
+       */
 
       if (
-        lista.length === 0
+        elementos.length === 0
       ) {
 
-        estado.style.display =
-          "block";
-
-
         estado.textContent =
-          "Esta carpeta todavía no tiene contenido.";
-
+          "Esta carpeta no contiene elementos.";
 
         return;
 
@@ -882,110 +759,88 @@
         "none";
 
 
+      contenido.innerHTML =
+        "";
+
+
       /*
-       * CREAR CADA ELEMENTO
+       * Crear cada elemento.
        */
 
-      lista.forEach(
+      elementos.forEach(
         elemento => {
 
-          crearElemento(
-            elemento
+          const boton =
+            document.createElement(
+              "button"
+            );
+
+
+          boton.className =
+            "elemento";
+
+
+          boton.type =
+            "button";
+
+
+          const esCarpeta =
+            Boolean(
+              elemento.carpeta
+            );
+
+
+          boton.innerHTML = `
+
+            <span class="elemento-info">
+
+              <span class="elemento-icono">
+
+                ${esCarpeta
+                  ? "📁"
+                  : "📘"
+                }
+
+              </span>
+
+
+              <span class="nombre">
+
+                ${escaparHTML(
+                  elemento.nombre ||
+                  elemento.id ||
+                  "Sin nombre"
+                )}
+
+              </span>
+
+            </span>
+
+
+            <span class="flecha">
+              ›
+            </span>
+
+          `;
+
+
+          boton.addEventListener(
+            "click",
+            function() {
+
+              abrirElemento(
+                elemento
+              );
+
+            }
+          );
+
+
+          contenido.appendChild(
+            boton
           );
 
         }
-      );
-
-    }
-
-
-    /* ========================================================
-       CREAR ELEMENTO
-    ======================================================== */
-
-    function crearElemento(
-      elemento
-    ) {
-
-      const boton =
-        document.createElement(
-          "button"
-        );
-
-
-      boton.className =
-        "elemento";
-
-
-      boton.type =
-        "button";
-
-
-      /*
-       * Icono automático:
-       *
-       * carpeta → 📁
-       * test → 📝
-       *
-       * Si el JSON especifica uno,
-       * utilizamos ese.
-       */
-
-      const icono =
-        elemento.icono ||
-        (
-          elemento.tipo === "carpeta"
-            ? "📁"
-            : "📝"
-        );
-
-
-      boton.innerHTML = `
-
-        <span class="elemento-info">
-
-          <span class="elemento-icono">
-
-            ${icono}
-
-          </span>
-
-
-          <span class="nombre">
-
-            ${escaparHTML(
-              elemento.nombre ||
-              "Sin nombre"
-            )}
-
-          </span>
-
-        </span>
-
-
-        <span class="flecha">
-
-          ›
-
-        </span>
-
-      `;
-
-
-      boton.addEventListener(
-        "click",
-        function() {
-
-          abrirElemento(
-            elemento
-          );
-
-        }
-      );
-
-
-      elementos.appendChild(
-        boton
       );
 
     }
@@ -999,48 +854,27 @@
       elemento
     ) {
 
-      /* =====================================================
-         CARPETA
-      ===================================================== */
+      /*
+       * CASO 1:
+       * Es una carpeta.
+       */
 
       if (
-        elemento.tipo === "carpeta"
+        elemento.carpeta
       ) {
 
-        /*
-         * Añadimos el ID a la ruta.
-         *
-         * Ejemplo:
-         *
-         * []
-         *
-         * →
-         *
-         * ["titulo-i"]
-         *
-         * →
-         *
-         * ["titulo-i", "derechos"]
-         */
-
-        const nuevaRuta = [
-          ...rutaElementos,
-          elemento.id
-        ];
-
-
-        const rutaCodificada =
-          encodeURIComponent(
-            JSON.stringify(
-              nuevaRuta
-            )
-          );
+        const nuevaRuta =
+          rutaActual
+            ? `${rutaActual}/${elemento.carpeta}`
+            : elemento.carpeta;
 
 
         window.location.href =
           `capitulos.html?asignatura=${encodeURIComponent(
             asignatura
-          )}&ruta=${rutaCodificada}`;
+          )}&ruta=${encodeURIComponent(
+            nuevaRuta
+          )}`;
 
 
         return;
@@ -1048,52 +882,36 @@
       }
 
 
-      /* =====================================================
-         TEST
-      ===================================================== */
+      /*
+       * CASO 2:
+       * Es un archivo JSON de preguntas.
+       */
 
       if (
-        elemento.tipo === "test"
+        elemento.archivo
       ) {
 
-        if (
-          !elemento.archivo
-        ) {
-
-          alert(
-            "Este test no tiene un archivo asociado."
-          );
-
-          return;
-
-        }
-
-
-        /*
-         * El archivo se interpreta
-         * respecto a la carpeta de la asignatura.
-         *
-         * Ejemplo:
-         *
-         * titulo-i/preguntas.json
-         *
-         * o:
-         *
-         * titulo-i/derechos/preguntas.json
-         *
-         */
-
-
         const rutaArchivo =
-          `${asignatura}/${elemento.archivo}`;
+          rutaActual
+            ? `${rutaActual}/${elemento.archivo}`
+            : elemento.archivo;
 
 
         window.location.href =
           `test.html?datos=${encodeURIComponent(
-            rutaArchivo
+            asignatura + "/" + rutaArchivo
           )}`;
 
+
+        return;
+
       }
+
+
+      console.warn(
+        "Elemento sin carpeta ni archivo:",
+        elemento
+      );
 
     }
 
