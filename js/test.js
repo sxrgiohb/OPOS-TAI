@@ -2106,7 +2106,7 @@ function mostrarListado() {
 
 
             /* ====================================================
-               ESTADO DE LA PREGUNTA
+               CABECERA DEL ESTADO
             ==================================================== */
 
             const cabeceraEstado =
@@ -2119,26 +2119,6 @@ function mostrarListado() {
                 "pregunta-listado-cabecera";
 
 
-            /*
-             * Comprobar si la pregunta está dominada.
-             *
-             * Las estadísticas proceden de estadisticas.js.
-             */
-
-            const dominada =
-                pregunta.id &&
-                typeof estaPreguntaDominada ===
-                    "function"
-                    ? estaPreguntaDominada(
-                        pregunta.id
-                    )
-                    : false;
-
-
-            /*
-             * Crear insignia.
-             */
-
             const estado =
                 document.createElement(
                     "div"
@@ -2150,46 +2130,184 @@ function mostrarListado() {
 
 
             /*
-             * Si está dominada:
-             *
-             * DOMINADA 🟢
+             * Obtener estadísticas permanentes.
              */
 
-            if (dominada) {
-
-                estado.classList.add(
-                    "dominada"
-                );
+            let informacion =
+                null;
 
 
-                estado.appendChild(
-                    document.createTextNode(
-                        "DOMINADA"
-                    )
-                );
+            if (
+                pregunta.id &&
+                typeof obtenerEstadoDominioPregunta ===
+                    "function"
+            ) {
 
-
-                const circulo =
-                    document.createElement(
-                        "span"
+                informacion =
+                    obtenerEstadoDominioPregunta(
+                        pregunta.id
                     );
-
-
-                circulo.className =
-                    "circulo";
-
-
-                estado.appendChild(
-                    circulo
-                );
 
             }
 
 
             /*
-             * Si todavía no está dominada
-             * no mostramos ninguna insignia.
+             * Valores por defecto.
              */
+
+            const intentos =
+                informacion?.intentos || 0;
+
+
+            const porcentaje =
+                informacion?.porcentaje || 0;
+
+
+            /* ====================================================
+               DETERMINAR ESTADO
+            ==================================================== */
+
+            let textoEstado =
+                "";
+
+
+            let claseEstado =
+                "";
+
+
+            /*
+             * SIN DATOS
+             */
+
+            if (
+                intentos === 0
+            ) {
+
+                textoEstado =
+                    "SIN DATOS";
+
+                claseEstado =
+                    "sin-datos";
+
+            }
+
+
+            /*
+             * DOMINADA
+             *
+             * La función oficial comprueba:
+             *
+             * 20 intentos + 90 %
+             */
+
+            else if (
+                informacion?.dominada === true
+            ) {
+
+                textoEstado =
+                    "DOMINADA";
+
+                claseEstado =
+                    "dominada";
+
+            }
+
+
+            /*
+             * DÉBIL
+             *
+             * Menos de 20 intentos
+             * o rendimiento inferior al 50 %.
+             */
+
+            else if (
+                intentos < 20 ||
+                porcentaje < 50
+            ) {
+
+                textoEstado =
+                    "DÉBIL";
+
+                claseEstado =
+                    "debil";
+
+            }
+
+
+            /*
+             * EN PROCESO
+             *
+             * 20+ intentos y entre 50-74 %.
+             */
+
+            else if (
+                porcentaje < 75
+            ) {
+
+                textoEstado =
+                    "EN PROCESO";
+
+                claseEstado =
+                    "en-proceso";
+
+            }
+
+
+            /*
+             * CASI DOMINADA
+             *
+             * 20+ intentos y entre 75-89 %.
+             */
+
+            else {
+
+                textoEstado =
+                    "CASI DOMINADA";
+
+                claseEstado =
+                    "casi-dominada";
+
+            }
+
+
+            /*
+             * Aplicar clase.
+             */
+
+            estado.classList.add(
+                claseEstado
+            );
+
+
+            /*
+             * Primero el texto.
+             */
+
+            estado.appendChild(
+                document.createTextNode(
+                    textoEstado
+                )
+            );
+
+
+            /*
+             * Después el círculo.
+             */
+
+            const circulo =
+                document.createElement(
+                    "span"
+                );
+
+
+            circulo.className =
+                "circulo";
+
+
+            estado.appendChild(
+                circulo
+            );
+
 
             cabeceraEstado.appendChild(
                 estado
@@ -2219,6 +2337,11 @@ function mostrarListado() {
                 pregunta.pregunta;
 
 
+            elemento.appendChild(
+                preguntaTexto
+            );
+
+
             /* ====================================================
                RESPUESTA
             ==================================================== */
@@ -2237,8 +2360,13 @@ function mostrarListado() {
                 pregunta.respuesta;
 
 
+            elemento.appendChild(
+                respuestaTexto
+            );
+
+
             /* ====================================================
-               BUSCADOR
+               TEXTO PARA EL BUSCADOR
             ==================================================== */
 
             elemento.dataset.busqueda =
@@ -2249,19 +2377,9 @@ function mostrarListado() {
                 ).toLowerCase();
 
 
-            /* ====================================================
-               AÑADIR ELEMENTOS
-            ==================================================== */
-
-            elemento.appendChild(
-                preguntaTexto
-            );
-
-
-            elemento.appendChild(
-                respuestaTexto
-            );
-
+            /*
+             * Añadir al listado.
+             */
 
             listaPreguntasElemento.appendChild(
                 elemento
