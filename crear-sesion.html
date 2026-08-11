@@ -3,547 +3,654 @@
 
 <head>
 
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <title>Crear sesión - OPOS-TAI</title>
+    <title>Crear sesión - OPOS-TAI</title>
 
 
-  <style>
+    <style>
 
-    * {
-      box-sizing: border-box;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
 
-    body {
+        body {
 
-      font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', sans-serif;
 
-      background: #f2f4f8;
+            background: #f2f4f8;
 
-      color: #333;
+            color: #333;
 
-      margin: 0;
+            margin: 0;
 
-      min-height: 100vh;
+            min-height: 100vh;
 
-    }
+        }
 
 
-    .contenedor {
+        .contenedor {
 
-      width: 100%;
+            width: 100%;
 
-      max-width: 700px;
+            max-width: 700px;
 
-      margin: 0 auto;
+            margin: 0 auto;
 
-      padding: 1rem;
+            padding: 1rem;
 
-    }
+        }
 
 
-    .card {
+        .card {
 
-      background: white;
+            background: white;
 
-      border-radius: 12px;
+            border-radius: 12px;
 
-      box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, 0.08);
 
-      padding: 1.5rem;
+            padding: 1.5rem;
 
-      margin-bottom: 1rem;
+            margin-bottom: 1rem;
 
-    }
+        }
 
 
-    .volver {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    
-      width: 38px;
-      height: 38px;
-    
-      padding: 0;
-      margin: 0 0 0.8rem 0;
-    
-      background: transparent;
-      color: #555;
-    
-      border: none;
-      border-radius: 50%;
-    
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: 1;
-    
-      cursor: pointer;
-    
-      transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
-    }
-    
-    .volver:hover {
-      background: #f0f2f5;
-      color: #007bff;
-    }
+        .volver {
 
+            display: inline-flex;
 
-    .cabecera {
+            align-items: center;
 
-      text-align: center;
+            justify-content: center;
 
-    }
+            width: 38px;
 
+            height: 38px;
 
-    .cabecera h1 {
+            padding: 0;
 
-      margin: 0 0 0.4rem;
+            margin: 0 0 0.8rem 0;
 
-      font-size: 1.5rem;
+            background: transparent;
 
-    }
+            color: #555;
 
+            border: none;
 
-    .cabecera p {
+            border-radius: 50%;
 
-      margin: 0;
+            font-size: 1.5rem;
 
-      color: #666;
+            font-weight: 400;
 
-    }
+            line-height: 1;
 
+            cursor: pointer;
 
-    .campo {
+            transition:
+                background 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
 
-      margin-bottom: 1.3rem;
+        }
 
-    }
 
+        .volver:hover {
 
-    .campo label {
+            background: #f0f2f5;
 
-      display: block;
+            color: #007bff;
 
-      font-weight: 600;
+        }
 
-      margin-bottom: 0.5rem;
 
-    }
+        .cabecera {
 
+            text-align: center;
 
-    .campo input {
+        }
 
-      width: 100%;
 
-      padding: 0.75rem;
+        .cabecera h1 {
 
-      border: 1px solid #ccc;
+            margin: 0 0 0.4rem;
 
-      border-radius: 8px;
+            font-size: 1.5rem;
 
-      font-family: inherit;
+        }
 
-      font-size: 1rem;
 
-    }
+        .cabecera p {
 
+            margin: 0;
 
-    .campo input:focus {
+            color: #666;
 
-      outline: none;
+        }
 
-      border-color: #007bff;
 
-    }
+        .campo {
 
+            margin-bottom: 1.3rem;
 
-    .titulo-seccion {
+        }
 
-      font-size: 1.1rem;
 
-      margin: 0 0 1rem;
+        .campo label {
 
-    }
+            display: block;
 
+            font-weight: 600;
 
-    /* ========================================================
-       ASIGNATURAS DESPLEGABLES
-    ======================================================== */
+            margin-bottom: 0.5rem;
 
-    .asignatura {
+        }
 
-      border: 1px solid #ddd;
 
-      border-radius: 10px;
+        .campo input {
 
-      margin-bottom: 0.8rem;
+            width: 100%;
 
-      overflow: hidden;
+            padding: 0.75rem;
 
-    }
+            border: 1px solid #ccc;
 
+            border-radius: 8px;
 
-    .asignatura-cabecera {
+            font-family: inherit;
 
-      padding: 0.9rem 1rem;
+            font-size: 1rem;
 
-      background: #f7f7f7;
+        }
 
-      font-weight: 600;
 
-      display: flex;
+        .campo input:focus {
 
-      align-items: center;
+            outline: none;
 
-      justify-content: space-between;
+            border-color: #007bff;
 
-      gap: 0.6rem;
+        }
 
-      cursor: pointer;
 
-      user-select: none;
+        .titulo-seccion {
 
-    }
+            font-size: 1.1rem;
 
+            margin: 0 0 1rem;
 
-    .asignatura-cabecera:hover {
+        }
 
-      background: #eeeeee;
 
-    }
+        /* ========================================================
+           ASIGNATURAS
+        ======================================================== */
 
+        .asignatura {
 
-    .asignatura-titulo {
+            border: 1px solid #ddd;
 
-      display: flex;
+            border-radius: 10px;
 
-      align-items: center;
+            margin-bottom: 0.8rem;
 
-      gap: 0.6rem;
+            overflow: hidden;
 
-      min-width: 0;
+        }
 
-    }
 
+        .asignatura-cabecera {
 
-    .asignatura-flecha {
+            padding: 0.9rem 1rem;
 
-      font-size: 0.9rem;
+            background: #f7f7f7;
 
-      transition: transform 0.2s;
+            font-weight: 600;
 
-      flex-shrink: 0;
+            display: flex;
 
-    }
+            align-items: center;
 
+            justify-content: space-between;
 
-    .asignatura.abierta .asignatura-flecha {
+            gap: 0.6rem;
 
-      transform: rotate(90deg);
+            cursor: pointer;
 
-    }
+            user-select: none;
 
+        }
 
-    .contador {
 
-      margin-left: auto;
+        .asignatura-cabecera:hover {
 
-      font-size: 0.8rem;
+            background: #eeeeee;
 
-      font-weight: normal;
+        }
 
-      color: #777;
 
-      white-space: nowrap;
+        .asignatura-titulo {
 
-    }
+            display: flex;
 
+            align-items: center;
 
-    .capitulos {
+            gap: 0.6rem;
 
-      display: none;
+            min-width: 0;
 
-      padding: 0.5rem 1rem 0.8rem;
+        }
 
-    }
 
+        .asignatura-flecha {
 
-    .asignatura.abierta .capitulos {
+            font-size: 0.9rem;
 
-      display: block;
+            transition: transform 0.2s;
 
-    }
+            flex-shrink: 0;
 
+        }
 
-    /* ========================================================
-       SELECCIONAR TODOS
-    ======================================================== */
 
-    .seleccionar-todos {
+        .asignatura.abierta
+        .asignatura-flecha {
 
-      display: flex;
+            transform: rotate(90deg);
 
-      align-items: center;
+        }
 
-      gap: 0.6rem;
 
-      padding: 0.5rem 0 0.7rem;
+        .contador {
 
-      margin-bottom: 0.3rem;
+            margin-left: auto;
 
-      border-bottom: 1px solid #eee;
+            font-size: 0.8rem;
 
-      font-size: 0.9rem;
+            font-weight: normal;
 
-      color: #555;
+            color: #777;
 
-      cursor: pointer;
+            white-space: nowrap;
 
-    }
+        }
 
 
-    .seleccionar-todos input {
+        .contenido-asignatura {
 
-      width: 18px;
+            display: none;
 
-      height: 18px;
+            padding: 0.5rem 1rem 0.8rem;
 
-      cursor: pointer;
+        }
 
-    }
 
+        .asignatura.abierta
+        .contenido-asignatura {
 
-    /* ========================================================
-       CAPÍTULOS
-    ======================================================== */
+            display: block;
 
-    .capitulo {
+        }
 
-      display: flex;
 
-      align-items: center;
+        /* ========================================================
+           NIVELES DE CONTENIDO
+        ======================================================== */
 
-      gap: 0.7rem;
+        .grupo {
 
-      padding: 0.65rem 0;
+            margin: 0.25rem 0;
 
-      cursor: pointer;
+        }
 
-    }
 
+        .grupo-cabecera {
 
-    .capitulo input {
+            display: flex;
 
-      width: 18px;
+            align-items: center;
 
-      height: 18px;
+            gap: 0.5rem;
 
-      cursor: pointer;
+            padding: 0.6rem 0.25rem;
 
-      flex-shrink: 0;
+            cursor: pointer;
 
-    }
+            user-select: none;
 
+            font-weight: 600;
 
-    .capitulo label {
+        }
 
-      cursor: pointer;
 
-      flex: 1;
+        .grupo-cabecera:hover {
 
-    }
+            background: #f7f7f7;
 
+            border-radius: 6px;
 
-    /* ========================================================
-       OPCIONES DEL TEST
-    ======================================================== */
+        }
 
-    .opciones {
 
-      display: flex;
+        .grupo-flecha {
 
-      align-items: center;
+            font-size: 0.75rem;
 
-      gap: 0.8rem;
+            width: 16px;
 
-    }
+            transition: transform 0.2s;
 
+            flex-shrink: 0;
 
-    .numero-preguntas {
+        }
 
-      width: 120px !important;
 
-    }
+        .grupo.abierto
+        > .grupo-cabecera
+        .grupo-flecha {
 
+            transform: rotate(90deg);
 
-    .ayuda {
+        }
 
-      color: #777;
 
-      font-size: 0.85rem;
+        .grupo-contenido {
 
-      margin-top: 0.4rem;
+            display: none;
 
-    }
+            margin-left: 1.1rem;
 
+            padding-left: 0.7rem;
 
-    .fila-opcion {
+            border-left: 1px solid #ddd;
 
-      display: flex;
+        }
 
-      align-items: center;
 
-      gap: 0.7rem;
+        .grupo.abierto
+        > .grupo-contenido {
 
-      padding: 0.5rem 0;
+            display: block;
 
-      cursor: pointer;
+        }
 
-    }
 
+        /* ========================================================
+           SELECCIONAR TODOS
+        ======================================================== */
 
-    .fila-opcion input {
+        .seleccionar-todos {
 
-      width: 18px;
+            display: flex;
 
-      height: 18px;
+            align-items: center;
 
-      cursor: pointer;
+            gap: 0.6rem;
 
-    }
+            padding: 0.5rem 0 0.7rem;
 
+            margin-bottom: 0.3rem;
 
-    /* ========================================================
-       BOTONES
-    ======================================================== */
+            border-bottom: 1px solid #eee;
 
-    .acciones {
+            font-size: 0.9rem;
 
-      display: flex;
+            color: #555;
 
-      gap: 0.7rem;
+            cursor: pointer;
 
-      margin-top: 1.5rem;
+        }
 
-    }
 
+        .seleccionar-todos input {
 
-    .boton {
+            width: 18px;
 
-      flex: 1;
+            height: 18px;
 
-      padding: 0.8rem 1rem;
+            cursor: pointer;
 
-      border-radius: 8px;
+        }
 
-      font-family: inherit;
 
-      font-size: 1rem;
+        /* ========================================================
+           ARCHIVOS / PREGUNTAS
+        ======================================================== */
 
-      cursor: pointer;
+        .capitulo {
 
-    }
+            display: flex;
 
+            align-items: center;
 
-    .boton-principal {
+            gap: 0.7rem;
 
-      border: none;
+            padding: 0.65rem 0;
 
-      background: #007bff;
+            cursor: pointer;
 
-      color: white;
+        }
 
-    }
 
+        .capitulo:hover {
 
-    .boton-principal:hover {
+            background: #f8f9fa;
 
-      background: #0069d9;
+            border-radius: 6px;
 
-    }
+        }
 
 
-    .boton-secundario {
+        .capitulo input {
 
-      border: 1px solid #ddd;
+            width: 18px;
 
-      background: white;
+            height: 18px;
 
-      color: #333;
+            cursor: pointer;
 
-    }
+            flex-shrink: 0;
 
+        }
 
-    .boton-secundario:hover {
 
-      background: #f0f0f0;
+        .capitulo label {
 
-    }
+            cursor: pointer;
 
+            flex: 1;
 
-    /* ========================================================
-       MENSAJES
-    ======================================================== */
+        }
 
-    .error {
 
-      color: #dc3545;
+        /* ========================================================
+           OPCIONES DEL TEST
+        ======================================================== */
 
-      background: #fff0f0;
+        .opciones {
 
-      border: 1px solid #f0cccc;
+            display: flex;
 
-      border-radius: 8px;
+            align-items: center;
 
-      padding: 0.8rem;
+            gap: 0.8rem;
 
-      margin-bottom: 1rem;
+        }
 
-      display: none;
 
-    }
+        .numero-preguntas {
 
+            width: 120px !important;
 
-    .cargando {
+        }
 
-      text-align: center;
 
-      color: #777;
+        .ayuda {
 
-      padding: 1rem;
+            color: #777;
 
-    }
+            font-size: 0.85rem;
 
+            margin-top: 0.4rem;
 
-    .resumen {
+        }
 
-      background: #f7f9fc;
 
-      border-radius: 8px;
+        .fila-opcion {
 
-      padding: 1rem;
+            display: flex;
 
-      margin-top: 1rem;
+            align-items: center;
 
-      font-size: 0.9rem;
+            gap: 0.7rem;
 
-      color: #555;
+            padding: 0.5rem 0;
 
-    }
+            cursor: pointer;
 
+        }
 
-  </style>
+
+        .fila-opcion input {
+
+            width: 18px;
+
+            height: 18px;
+
+            cursor: pointer;
+
+        }
+
+
+        /* ========================================================
+           BOTONES
+        ======================================================== */
+
+        .acciones {
+
+            display: flex;
+
+            gap: 0.7rem;
+
+            margin-top: 1.5rem;
+
+        }
+
+
+        .boton {
+
+            flex: 1;
+
+            padding: 0.8rem 1rem;
+
+            border-radius: 8px;
+
+            font-family: inherit;
+
+            font-size: 1rem;
+
+            cursor: pointer;
+
+        }
+
+
+        .boton-principal {
+
+            border: none;
+
+            background: #007bff;
+
+            color: white;
+
+        }
+
+
+        .boton-principal:hover {
+
+            background: #0069d9;
+
+        }
+
+
+        .boton-secundario {
+
+            border: 1px solid #ddd;
+
+            background: white;
+
+            color: #333;
+
+        }
+
+
+        .boton-secundario:hover {
+
+            background: #f0f0f0;
+
+        }
+
+
+        /* ========================================================
+           MENSAJES
+        ======================================================== */
+
+        .error {
+
+            color: #dc3545;
+
+            background: #fff0f0;
+
+            border: 1px solid #f0cccc;
+
+            border-radius: 8px;
+
+            padding: 0.8rem;
+
+            margin-bottom: 1rem;
+
+            display: none;
+
+        }
+
+
+        .cargando {
+
+            text-align: center;
+
+            color: #777;
+
+            padding: 1rem;
+
+        }
+
+
+        .resumen {
+
+            background: #f7f9fc;
+
+            border-radius: 8px;
+
+            padding: 1rem;
+
+            margin-top: 1rem;
+
+            font-size: 0.9rem;
+
+            color: #555;
+
+        }
+
+
+    </style>
 
 </head>
 
@@ -551,7 +658,7 @@
 <body>
 
 
-  <main class="contenedor">
+<main class="contenedor">
 
 
     <!-- =====================================================
@@ -560,27 +667,27 @@
 
     <section class="card">
 
-      <button
-        class="volver"
-        onclick="history.back()"
-        aria-label="Volver"
-        title="Volver"
-      >
-        ←
-      </button>
+        <button
+            class="volver"
+            onclick="history.back()"
+            aria-label="Volver"
+            title="Volver"
+        >
+            ←
+        </button>
 
 
-      <div class="cabecera">
+        <div class="cabecera">
 
-        <h1 id="titulo">
-          🎯 Nueva sesión
-        </h1>
+            <h1 id="titulo">
+                🎯 Nueva sesión
+            </h1>
 
-        <p id="subtitulo">
-          Combina capítulos de cualquier asignatura.
-        </p>
+            <p id="subtitulo">
+                Combina contenido de cualquier asignatura.
+            </p>
 
-      </div>
+        </div>
 
     </section>
 
@@ -591,164 +698,167 @@
 
     <section class="card">
 
-      <div class="campo">
 
-        <label for="nombre">
-          Nombre de la sesión
+        <div class="campo">
+
+            <label for="nombre">
+                Nombre de la sesión
+            </label>
+
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Ej. Constitución primeros capítulos"
+                maxlength="100"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             CONTENIDO
+        ================================================== -->
+
+        <h2 class="titulo-seccion">
+            📚 Contenido
+        </h2>
+
+
+        <div
+            id="error"
+            class="error"
+        ></div>
+
+
+        <div id="contenido">
+
+            <div class="cargando">
+                Cargando asignaturas...
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             OPCIONES DEL TEST
+        ================================================== -->
+
+        <h2
+            class="titulo-seccion"
+            style="margin-top: 1.5rem;"
+        >
+            ⚙️ Opciones del test
+        </h2>
+
+
+        <div class="campo">
+
+            <label for="numeroPreguntas">
+                Número de preguntas
+            </label>
+
+
+            <div class="opciones">
+
+                <input
+                    class="numero-preguntas"
+                    type="number"
+                    id="numeroPreguntas"
+                    value="30"
+                    min="1"
+                    max="500"
+                >
+
+                <span>
+                    preguntas
+                </span>
+
+            </div>
+
+
+            <div class="ayuda">
+
+                Si hay menos preguntas disponibles,
+                se utilizarán todas las disponibles.
+
+            </div>
+
+        </div>
+
+
+        <label class="fila-opcion">
+
+            <input
+                type="checkbox"
+                id="aleatorio"
+                checked
+            >
+
+            <span>
+                🔀 Preguntas aleatorias
+            </span>
+
         </label>
 
 
-        <input
-          type="text"
-          id="nombre"
-          placeholder="Ej. Constitución primeros capítulos"
-          maxlength="100"
+        <!-- =================================================
+             RESUMEN
+        ================================================== -->
+
+        <div
+            id="resumen"
+            class="resumen"
         >
-
-      </div>
-
-
-      <!-- ===================================================
-           SELECCIÓN DE CAPÍTULOS
-      ==================================================== -->
-
-      <h2 class="titulo-seccion">
-        📚 Contenido
-      </h2>
-
-
-      <div id="error" class="error"></div>
-
-
-      <div id="contenido">
-
-        <div class="cargando">
-          Cargando asignaturas...
-        </div>
-
-      </div>
-
-
-      <!-- ===================================================
-           OPCIONES DEL TEST
-      ==================================================== -->
-
-      <h2
-        class="titulo-seccion"
-        style="margin-top: 1.5rem;"
-      >
-
-        ⚙️ Opciones del test
-
-      </h2>
-
-
-      <div class="campo">
-
-        <label for="numeroPreguntas">
-          Número de preguntas
-        </label>
-
-
-        <div class="opciones">
-
-          <input
-            class="numero-preguntas"
-            type="number"
-            id="numeroPreguntas"
-            value="30"
-            min="1"
-            max="500"
-          >
-
-          <span>
-            preguntas
-          </span>
-
+            No has seleccionado ningún contenido.
         </div>
 
 
-        <div class="ayuda">
+        <!-- =================================================
+             ACCIONES
+        ================================================== -->
 
-          Si hay menos preguntas disponibles,
-          se utilizarán todas las disponibles.
+        <div class="acciones">
+
+            <button
+                class="boton boton-secundario"
+                onclick="window.location.href='sesiones.html'"
+            >
+                Cancelar
+            </button>
+
+
+            <button
+                class="boton boton-principal"
+                onclick="guardarSesion()"
+            >
+                💾 Guardar sesión
+            </button>
 
         </div>
 
-      </div>
-
-
-      <label class="fila-opcion">
-
-        <input
-          type="checkbox"
-          id="aleatorio"
-          checked
-        >
-
-        <span>
-          🔀 Preguntas aleatorias
-        </span>
-
-      </label>
-
-
-      <!-- ===================================================
-           RESUMEN
-      ==================================================== -->
-
-      <div
-        id="resumen"
-        class="resumen"
-      >
-
-        No has seleccionado ningún capítulo.
-
-      </div>
-
-
-      <!-- ===================================================
-           ACCIONES
-      ==================================================== -->
-
-      <div class="acciones">
-
-        <button
-          class="boton boton-secundario"
-          onclick="window.location.href='sesiones.html'"
-        >
-
-          Cancelar
-
-        </button>
-
-
-        <button
-          class="boton boton-principal"
-          onclick="guardarSesion()"
-        >
-
-          💾 Guardar sesión
-
-        </button>
-
-      </div>
 
     </section>
 
 
-  </main>
+</main>
 
 
-  <script>
+<script>
+
 
 /* ========================================================
    CONFIGURACIÓN
 ======================================================== */
 
-const PROPIETARIO = "sxrgiohb";
-const REPOSITORIO = "OPOS-TAI";
-const CARPETA_DATOS = "data";
+const PROPIETARIO =
+    "sxrgiohb";
+
+const REPOSITORIO =
+    "OPOS-TAI";
+
+const CARPETA_DATOS =
+    "data";
 
 const CLAVE_SESIONES =
     "opos_tai_sesiones";
@@ -758,14 +868,20 @@ const CLAVE_SESIONES =
    ELEMENTOS
 ======================================================== */
 
-const contenido =
-    document.getElementById("contenido");
+const contenidoElemento =
+    document.getElementById(
+        "contenido"
+    );
 
-const error =
-    document.getElementById("error");
+const errorElemento =
+    document.getElementById(
+        "error"
+    );
 
-const resumen =
-    document.getElementById("resumen");
+const resumenElemento =
+    document.getElementById(
+        "resumen"
+    );
 
 
 /* ========================================================
@@ -777,40 +893,75 @@ const parametros =
         window.location.search
     );
 
+
 const indiceEditar =
     parametros.has("editar")
-        ? Number(parametros.get("editar"))
+        ? Number(
+            parametros.get("editar")
+        )
         : null;
 
 
 /* ========================================================
-   CARGAR TODO EL ÁRBOL DE DATA
+   DECODIFICAR BASE64
+======================================================== */
+
+function decodificarBase64(
+    base64
+) {
+
+    const binario =
+        atob(
+            base64.replace(
+                /\s/g,
+                ""
+            )
+        );
+
+
+    const bytes =
+        new Uint8Array(
+            binario.length
+        );
+
+
+    for (
+        let i = 0;
+        i < binario.length;
+        i++
+    ) {
+
+        bytes[i] =
+            binario.charCodeAt(i);
+
+    }
+
+
+    return new TextDecoder(
+        "utf-8"
+    ).decode(
+        bytes
+    );
+
+}
+
+
+/* ========================================================
+   CARGAR ASIGNATURAS
 ======================================================== */
 
 async function cargarAsignaturas() {
 
     try {
 
-        contenido.innerHTML = `
-            <div class="cargando">
-                Cargando contenido...
-            </div>
-        `;
-
-
-        /*
-         * GitHub Tree API.
-         *
-         * recursive=1 permite obtener TODO el contenido
-         * de data, incluyendo subcarpetas de cualquier nivel.
-         */
-
         const url =
-            `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/git/trees/main?recursive=1`;
+            `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}`;
 
 
         const respuesta =
-            await fetch(url);
+            await fetch(
+                url
+            );
 
 
         if (!respuesta.ok) {
@@ -822,47 +973,36 @@ async function cargarAsignaturas() {
         }
 
 
-        const arbol =
+        const elementos =
             await respuesta.json();
 
 
-        if (!arbol.tree) {
-
-            throw new Error(
-                "GitHub no ha devuelto la estructura del repositorio."
-            );
-
-        }
-
-
         /*
-         * Nos quedamos únicamente con archivos JSON
-         * que estén dentro de data/.
+         * SOLO buscamos carpetas directamente
+         * dentro de data/.
+         *
+         * No buscamos archivos JSON.
          */
 
-        const archivosJSON =
-            arbol.tree.filter(
+        const carpetas =
+            elementos.filter(
                 elemento =>
-
-                    elemento.type === "blob" &&
-
-                    elemento.path.startsWith(
-                        `${CARPETA_DATOS}/`
-                    ) &&
-
-                    elemento.path
-                        .toLowerCase()
-                        .endsWith(".json")
+                    elemento.type === "dir"
             );
 
 
-        if (archivosJSON.length === 0) {
+        if (
+            carpetas.length === 0
+        ) {
 
-            contenido.innerHTML = `
+            contenidoElemento.innerHTML = `
+
                 <div class="cargando">
-                    No se han encontrado archivos JSON
-                    dentro de data/.
+
+                    No hay asignaturas disponibles.
+
                 </div>
+
             `;
 
             return;
@@ -870,24 +1010,38 @@ async function cargarAsignaturas() {
         }
 
 
+        contenidoElemento.innerHTML =
+            "";
+
+
         /*
-         * Construir estructura visual.
+         * Cargar el config.json de cada asignatura.
          */
 
-        construirArbolVisual(
-            archivosJSON
-        );
+        for (
+            const carpeta of carpetas
+        ) {
 
+            await cargarConfiguracion(
+                carpeta.name
+            );
+
+        }
+
+
+        actualizarTodosLosContadores();
 
         actualizarResumen();
 
 
         /*
-         * Si estamos editando una sesión,
-         * recuperar sus selecciones.
+         * Si estamos editando,
+         * recuperar selección anterior.
          */
 
-        if (indiceEditar !== null) {
+        if (
+            indiceEditar !== null
+        ) {
 
             cargarSesionParaEditar();
 
@@ -898,10 +1052,13 @@ async function cargarAsignaturas() {
 
     catch (e) {
 
-        console.error(e);
+        console.error(
+            e
+        );
+
 
         mostrarError(
-            "No se ha podido leer la estructura de data."
+            "No se han podido cargar las asignaturas."
         );
 
     }
@@ -910,362 +1067,496 @@ async function cargarAsignaturas() {
 
 
 /* ========================================================
-   CONSTRUIR ÁRBOL VISUAL
+   CARGAR CONFIG.JSON
 ======================================================== */
 
-function construirArbolVisual(
-    archivos
+async function cargarConfiguracion(
+    carpeta
 ) {
 
-    contenido.innerHTML = "";
+    try {
+
+        const url =
+            `https://api.github.com/repos/${PROPIETARIO}/${REPOSITORIO}/contents/${CARPETA_DATOS}/${encodeURIComponent(carpeta)}/config.json`;
+
+
+        const respuesta =
+            await fetch(
+                url
+            );
+
+
+        if (!respuesta.ok) {
+
+            console.warn(
+                `No se encontró config.json en ${carpeta}`
+            );
+
+            return;
+
+        }
+
+
+        const archivo =
+            await respuesta.json();
+
+
+        /*
+         * IMPORTANTE:
+         *
+         * config.json SOLO sirve para definir
+         * la estructura.
+         *
+         * Nunca se muestra como pregunta.
+         */
+
+        const contenidoJSON =
+            decodificarBase64(
+                archivo.content
+            );
+
+
+        const configuracion =
+            JSON.parse(
+                contenidoJSON
+            );
+
+
+        crearAsignatura(
+            configuracion,
+            carpeta
+        );
+
+    }
+
+
+    catch (e) {
+
+        console.error(
+            `Error cargando ${carpeta}:`,
+            e
+        );
+
+    }
+
+}
+
+
+/* ========================================================
+   CREAR ASIGNATURA
+======================================================== */
+
+function crearAsignatura(
+    configuracion,
+    carpeta
+) {
+
+    const contenedorAsignatura =
+        document.createElement(
+            "div"
+        );
+
+
+    contenedorAsignatura.className =
+        "asignatura";
 
 
     /*
-     * Quitar "data/" de las rutas.
-     *
-     * Ejemplo:
-     *
-     * data/constitucion/titulo-i/cap1.json
-     *
-     * pasa a:
-     *
-     * constitucion/titulo-i/cap1.json
+     * Guardamos la carpeta real de la asignatura.
      */
 
-    const rutas =
-        archivos.map(
-            archivo =>
-                archivo.path.substring(
-                    CARPETA_DATOS.length + 1
-                )
+    contenedorAsignatura.dataset.asignatura =
+        carpeta;
+
+
+    const nombre =
+        configuracion.nombre ||
+        carpeta;
+
+
+    const icono =
+        configuracion.icono ||
+        "📚";
+
+
+    /* ====================================================
+       CABECERA
+    ==================================================== */
+
+    const cabecera =
+        document.createElement(
+            "div"
+        );
+
+
+    cabecera.className =
+        "asignatura-cabecera";
+
+
+    cabecera.innerHTML = `
+
+        <div class="asignatura-titulo">
+
+            <span>
+                ${escaparHTML(icono)}
+            </span>
+
+            <span>
+                ${escaparHTML(nombre)}
+            </span>
+
+            <span
+                class="contador"
+                data-contador
+            >
+                0 seleccionados
+            </span>
+
+        </div>
+
+
+        <span class="asignatura-flecha">
+            ▶
+        </span>
+
+    `;
+
+
+    /* ====================================================
+       CONTENIDO
+    ==================================================== */
+
+    const contenidoAsignatura =
+        document.createElement(
+            "div"
+        );
+
+
+    contenidoAsignatura.className =
+        "contenido-asignatura";
+
+
+    /*
+     * Botón seleccionar todos.
+     */
+
+    const filaTodos =
+        crearSeleccionarTodos(
+            contenidoAsignatura
         );
 
 
     /*
-     * Crear árbol interno.
+     * Dibujar el contenido del config.json.
      */
 
-    const raiz =
-        crearNodoCarpeta();
+    const elementos =
+        Array.isArray(
+            configuracion.contenido
+        )
+            ? configuracion.contenido
+            : [];
 
 
-    rutas.forEach(
-        ruta => {
+    elementos.forEach(
+        elemento => {
 
-            insertarRuta(
-                raiz,
-                ruta.split("/")
-            );
+            const nodo =
+                crearNodoContenido(
+                    elemento,
+                    carpeta
+                );
+
+
+            if (nodo) {
+
+                contenidoAsignatura.appendChild(
+                    nodo
+                );
+
+            }
 
         }
     );
 
 
     /*
-     * Dibujar árbol.
-
-     * La raíz no se muestra.
+     * Seleccionar todos.
      */
 
-    dibujarNodo(
-        raiz,
-        contenido,
-        ""
-    );
-
-}
-
-
-/* ========================================================
-   CREAR NODO DE CARPETA
-======================================================== */
-
-function crearNodoCarpeta() {
-
-    return {
-
-        carpetas:
-            new Map(),
-
-        archivos:
-            []
-
-    };
-
-}
-
-
-/* ========================================================
-   INSERTAR RUTA EN EL ÁRBOL
-======================================================== */
-
-function insertarRuta(
-    nodo,
-    partes
-) {
-
-    const parte =
-        partes.shift();
-
-
-    /*
-     * Última parte = archivo JSON.
-     */
-
-    if (
-        partes.length === 0
-    ) {
-
-        nodo.archivos.push(
-            parte
-        );
-
-        return;
-
-    }
-
-
-    /*
-     * Es una carpeta.
-     */
-
-    if (
-        !nodo.carpetas.has(
-            parte
-        )
-    ) {
-
-        nodo.carpetas.set(
-            parte,
-            crearNodoCarpeta()
-        );
-
-    }
-
-
-    insertarRuta(
-        nodo.carpetas.get(
-            parte
-        ),
-        partes
-    );
-
-}
-
-
-/* ========================================================
-   DIBUJAR NODO
-======================================================== */
-
-function dibujarNodo(
-    nodo,
-    contenedorPadre,
-    rutaPadre
-) {
-
-    /*
-     * Primero dibujamos las carpetas.
-     */
-
-    const carpetas =
-        Array.from(
-            nodo.carpetas.entries()
-        ).sort(
-            (
-                a,
-                b
-            ) =>
-                a[0].localeCompare(
-                    b[0],
-                    "es"
-                )
+    const checkboxTodos =
+        filaTodos.querySelector(
+            "input"
         );
 
 
-    carpetas.forEach(
-        (
-            [nombreCarpeta, subnodo]
-        ) => {
+    checkboxTodos.addEventListener(
+        "change",
+        function() {
 
-            const rutaCarpeta =
-                rutaPadre
-                    ? `${rutaPadre}/${nombreCarpeta}`
-                    : nombreCarpeta;
-
-
-            const contenedor =
-                document.createElement(
-                    "div"
+            const checkboxes =
+                contenidoAsignatura.querySelectorAll(
+                    'input[type="checkbox"][data-archivo]'
                 );
 
 
-            contenedor.className =
-                "asignatura";
+            checkboxes.forEach(
+                checkbox => {
 
-
-            /*
-             * ------------------------------------------------
-             * CABECERA
-             * ------------------------------------------------
-             */
-
-            const cabecera =
-                document.createElement(
-                    "div"
-                );
-
-
-            cabecera.className =
-                "asignatura-cabecera";
-
-
-            cabecera.innerHTML = `
-
-                <div class="asignatura-titulo">
-
-                    <span>
-                        📁
-                    </span>
-
-                    <span>
-                        ${escaparHTML(
-                            formatearNombre(
-                                nombreCarpeta
-                            )
-                        )}
-                    </span>
-
-                    <span
-                        class="contador"
-                        data-contador
-                    >
-                        0 seleccionados
-                    </span>
-
-                </div>
-
-                <span class="asignatura-flecha">
-                    ▶
-                </span>
-
-            `;
-
-
-            /*
-             * ------------------------------------------------
-             * CONTENIDO DE LA CARPETA
-             * ------------------------------------------------
-             */
-
-            const contenidoCarpeta =
-                document.createElement(
-                    "div"
-                );
-
-
-            contenidoCarpeta.className =
-                "capitulos";
-
-
-            /*
-             * Dibujar subcarpetas y archivos.
-             */
-
-            dibujarNodo(
-                subnodo,
-                contenidoCarpeta,
-                rutaCarpeta
-            );
-
-
-            /*
-             * ------------------------------------------------
-             * ABRIR / CERRAR
-             * ------------------------------------------------
-             */
-
-            cabecera.addEventListener(
-                "click",
-                function() {
-
-                    contenedor.classList.toggle(
-                        "abierta"
-                    );
+                    checkbox.checked =
+                        checkboxTodos.checked;
 
                 }
             );
 
 
-            /*
-             * ------------------------------------------------
-             * CONSTRUIR
-             * ------------------------------------------------
-             */
-
-            contenedor.appendChild(
-                cabecera
+            actualizarEstadoAsignatura(
+                contenedorAsignatura
             );
 
-            contenedor.appendChild(
-                contenidoCarpeta
-            );
 
-            contenedorPadre.appendChild(
-                contenedor
-            );
+            actualizarResumen();
 
         }
     );
 
 
     /*
-     * --------------------------------------------------------
-     * ARCHIVOS JSON
-     * --------------------------------------------------------
+     * Abrir/cerrar asignatura.
      */
 
-    const archivos =
-        [...nodo.archivos].sort(
-            (
-                a,
-                b
-            ) =>
-                a.localeCompare(
-                    b,
-                    "es"
-                )
-        );
+    cabecera.addEventListener(
+        "click",
+        function() {
 
-
-    archivos.forEach(
-        archivo => {
-
-            const rutaCompleta =
-                rutaPadre
-                    ? `${rutaPadre}/${archivo}`
-                    : archivo;
-
-
-            crearArchivoPregunta(
-                archivo,
-                rutaCompleta,
-                contenedorPadre
+            contenedorAsignatura.classList.toggle(
+                "abierta"
             );
 
         }
+    );
+
+
+    contenedorAsignatura.appendChild(
+        cabecera
+    );
+
+
+    contenedorAsignatura.appendChild(
+        contenidoAsignatura
+    );
+
+
+    contenidoElemento.appendChild(
+        contenedorAsignatura
     );
 
 }
 
 
 /* ========================================================
-   CREAR ARCHIVO DE PREGUNTAS
+   CREAR NODO RECURSIVO
 ======================================================== */
 
-function crearArchivoPregunta(
-    archivo,
-    rutaCompleta,
-    contenedorPadre
+function crearNodoContenido(
+    elemento,
+    asignatura
+) {
+
+    /*
+     * Sin objeto válido no hacemos nada.
+     */
+
+    if (
+        !elemento ||
+        typeof elemento !== "object"
+    ) {
+
+        return null;
+
+    }
+
+
+    /*
+     * ====================================================
+     * ELEMENTO CON ARCHIVO
+     * ====================================================
+     *
+     * Es una fuente de preguntas seleccionable.
+     */
+
+    if (
+        elemento.archivo
+    ) {
+
+        return crearNodoArchivo(
+            elemento,
+            asignatura
+        );
+
+    }
+
+
+    /*
+     * ====================================================
+     * ELEMENTO CON CONTENIDO
+     * ====================================================
+     *
+     * Es una carpeta/grupo.
+     */
+
+    if (
+        Array.isArray(
+            elemento.contenido
+        )
+    ) {
+
+        return crearNodoGrupo(
+            elemento,
+            asignatura
+        );
+
+    }
+
+
+    /*
+     * Elemento sin archivo ni contenido.
+     */
+
+    console.warn(
+        "Elemento de config.json ignorado:",
+        elemento
+    );
+
+
+    return null;
+
+}
+
+
+/* ========================================================
+   CREAR GRUPO / SUBCARPETA
+======================================================== */
+
+function crearNodoGrupo(
+    elemento,
+    asignatura
+) {
+
+    const grupo =
+        document.createElement(
+            "div"
+        );
+
+
+    grupo.className =
+        "grupo";
+
+
+    const cabecera =
+        document.createElement(
+            "div"
+        );
+
+
+    cabecera.className =
+        "grupo-cabecera";
+
+
+    cabecera.innerHTML = `
+
+        <span class="grupo-flecha">
+            ▶
+        </span>
+
+        <span>
+            ${escaparHTML(
+                elemento.nombre ||
+                elemento.id ||
+                "Sin nombre"
+            )}
+        </span>
+
+    `;
+
+
+    const contenidoGrupo =
+        document.createElement(
+            "div"
+        );
+
+
+    contenidoGrupo.className =
+        "grupo-contenido";
+
+
+    /*
+     * Recursividad:
+     *
+     * contenido puede contener
+     * grupos y archivos.
+     */
+
+    elemento.contenido.forEach(
+        hijo => {
+
+            const nodo =
+                crearNodoContenido(
+                    hijo,
+                    asignatura
+                );
+
+
+            if (nodo) {
+
+                contenidoGrupo.appendChild(
+                    nodo
+                );
+
+            }
+
+        }
+    );
+
+
+    /*
+     * Abrir/cerrar grupo.
+     */
+
+    cabecera.addEventListener(
+        "click",
+        function() {
+
+            grupo.classList.toggle(
+                "abierto"
+            );
+
+        }
+    );
+
+
+    grupo.appendChild(
+        cabecera
+    );
+
+
+    grupo.appendChild(
+        contenidoGrupo
+    );
+
+
+    return grupo;
+
+}
+
+
+/* ========================================================
+   CREAR ARCHIVO SELECCIONABLE
+======================================================== */
+
+function crearNodoArchivo(
+    elemento,
+    asignatura
 ) {
 
     const fila =
@@ -1279,72 +1570,122 @@ function crearArchivoPregunta(
 
 
     const idCheckbox =
-        "archivo-" +
-        generarId(
-            rutaCompleta
-        );
-
-
-    fila.innerHTML = `
-
-        <input
-            type="checkbox"
-            id="${idCheckbox}"
-
-            data-ruta="${escaparAtributo(
-                rutaCompleta
-            )}"
-
-            data-asignatura="${escaparAtributo(
-                rutaCompleta.split("/")[0]
-            )}"
-
-            data-capitulo="${escaparAtributo(
-                rutaCompleta
-            )}"
-
-            data-capitulo-nombre="${escaparAtributo(
-                formatearNombre(
-                    archivo.replace(
-                        /\.json$/i,
-                        ""
-                    )
-                )
-            )}"
-
-            data-archivo="${escaparAtributo(
-                rutaCompleta
-            )}"
-        >
-
-        <label for="${idCheckbox}">
-
-            📄
-            ${escaparHTML(
-                formatearNombre(
-                    archivo.replace(
-                        /\.json$/i,
-                        ""
-                    )
-                )
-            )}
-
-        </label>
-
-    `;
+        `archivo-${generarId(
+            asignatura +
+            "-" +
+            (
+                elemento.id ||
+                elemento.archivo
+            )
+        )}`;
 
 
     const checkbox =
-        fila.querySelector(
+        document.createElement(
             "input"
         );
+
+
+    checkbox.type =
+        "checkbox";
+
+
+    checkbox.id =
+        idCheckbox;
+
+
+    /*
+     * Estos datos serán utilizados
+     * al guardar la sesión.
+     */
+
+    checkbox.dataset.asignatura =
+        asignatura;
+
+
+    checkbox.dataset.asignaturaNombre =
+        obtenerNombreAsignatura(
+            asignatura
+        );
+
+
+    checkbox.dataset.contenidoId =
+        elemento.id ||
+        "";
+
+
+    checkbox.dataset.contenidoNombre =
+        elemento.nombre ||
+        elemento.id ||
+        elemento.archivo;
+
+
+    checkbox.dataset.archivo =
+        elemento.archivo;
+
+
+    /*
+     * El archivo es una ruta relativa
+     * dentro de la asignatura.
+     *
+     * Ejemplo:
+     *
+     * titulo-i/capitulo-1/preguntas.json
+     */
+
+    checkbox.dataset.ruta =
+        elemento.archivo;
+
+
+    const label =
+        document.createElement(
+            "label"
+        );
+
+
+    label.htmlFor =
+        idCheckbox;
+
+
+    label.textContent =
+        "📘 " +
+        (
+            elemento.nombre ||
+            elemento.id ||
+            elemento.archivo
+        );
+
+
+    fila.appendChild(
+        checkbox
+    );
+
+
+    fila.appendChild(
+        label
+    );
 
 
     checkbox.addEventListener(
         "change",
         function() {
 
-            actualizarEstadosAsignaturas();
+            const asignaturaElemento =
+                fila.closest(
+                    ".asignatura"
+                );
+
+
+            if (
+                asignaturaElemento
+            ) {
+
+                actualizarEstadoAsignatura(
+                    asignaturaElemento
+                );
+
+            }
+
 
             actualizarResumen();
 
@@ -1352,9 +1693,108 @@ function crearArchivoPregunta(
     );
 
 
-    contenedorPadre.appendChild(
+    return fila;
+
+}
+
+
+/* ========================================================
+   CREAR "SELECCIONAR TODOS"
+======================================================== */
+
+function crearSeleccionarTodos(
+    contenedor
+) {
+
+    const fila =
+        document.createElement(
+            "label"
+        );
+
+
+    fila.className =
+        "seleccionar-todos";
+
+
+    fila.innerHTML = `
+
+        <input
+            type="checkbox"
+            data-seleccionar-todos
+        >
+
+        <span>
+            Seleccionar todos
+        </span>
+
+    `;
+
+
+    contenedor.appendChild(
         fila
     );
+
+
+    return fila;
+
+}
+
+
+/* ========================================================
+   ACTUALIZAR ESTADO ASIGNATURA
+======================================================== */
+
+function actualizarEstadoAsignatura(
+    contenedorAsignatura
+) {
+
+    const checkboxes =
+        contenedorAsignatura.querySelectorAll(
+            'input[type="checkbox"][data-archivo]'
+        );
+
+
+    const seleccionados =
+        contenedorAsignatura.querySelectorAll(
+            'input[type="checkbox"][data-archivo]:checked'
+        );
+
+
+    const contador =
+        contenedorAsignatura.querySelector(
+            "[data-contador]"
+        );
+
+
+    if (contador) {
+
+        contador.textContent =
+            `${seleccionados.length} seleccionados`;
+
+    }
+
+
+    const checkboxTodos =
+        contenedorAsignatura.querySelector(
+            "[data-seleccionar-todos]"
+        );
+
+
+    if (
+        checkboxTodos
+    ) {
+
+        checkboxTodos.checked =
+            checkboxes.length > 0 &&
+            seleccionados.length ===
+                checkboxes.length;
+
+        checkboxTodos.indeterminate =
+            seleccionados.length > 0 &&
+            seleccionados.length <
+                checkboxes.length;
+
+    }
 
 }
 
@@ -1363,7 +1803,7 @@ function crearArchivoPregunta(
    ACTUALIZAR TODOS LOS CONTADORES
 ======================================================== */
 
-function actualizarEstadosAsignaturas() {
+function actualizarTodosLosContadores() {
 
     document
         .querySelectorAll(
@@ -1383,95 +1823,80 @@ function actualizarEstadosAsignaturas() {
 
 
 /* ========================================================
-   ACTUALIZAR CONTADOR
+   OBTENER NOMBRE DE ASIGNATURA
 ======================================================== */
 
-function actualizarEstadoAsignatura(
-    contenedorAsignatura
+function obtenerNombreAsignatura(
+    id
 ) {
 
-    const seleccionados =
-        contenedorAsignatura.querySelectorAll(
-            '.capitulo input[type="checkbox"]:checked'
+    const asignatura =
+        document.querySelector(
+            `.asignatura[data-asignatura="${CSS.escape(id)}"]`
         );
 
 
-    const contador =
-        contenedorAsignatura.querySelector(
-            "[data-contador]"
-        );
+    if (!asignatura) {
 
-
-    if (contador) {
-
-        contador.textContent =
-            `${seleccionados.length} seleccionados`;
+        return id;
 
     }
+
+
+    const titulo =
+        asignatura.querySelector(
+            ".asignatura-titulo span:nth-child(2)"
+        );
+
+
+    return titulo
+        ? titulo.textContent.trim()
+        : id;
 
 }
 
 
 /* ========================================================
-   OBTENER ARCHIVOS SELECCIONADOS
+   OBTENER SELECCIONADOS
 ======================================================== */
 
 function obtenerCapitulosSeleccionados() {
 
     const checkboxes =
         document.querySelectorAll(
-            '#contenido .capitulo input[type="checkbox"]:checked'
+            '#contenido input[type="checkbox"][data-archivo]:checked'
         );
 
 
     return Array.from(
         checkboxes
     ).map(
-        checkbox => {
+        checkbox => ({
 
-            const ruta =
-                checkbox.dataset.ruta;
+            asignatura:
+                checkbox.dataset.asignatura,
 
+            asignaturaNombre:
+                checkbox.dataset.asignaturaNombre,
 
-            const partes =
-                ruta.split("/");
+            id:
+                checkbox.dataset.contenidoId,
 
+            nombre:
+                checkbox.dataset.contenidoNombre,
 
-            return {
+            archivo:
+                checkbox.dataset.archivo,
 
-                /*
-                 * Asignatura principal.
-                 */
+            /*
+             * Esta es la propiedad principal
+             * que utilizará test.js.
+             */
 
-                asignatura:
-                    partes[0],
+            ruta:
+                checkbox.dataset.ruta
 
-
-                /*
-                 * Ruta completa.
-                 *
-                 * Esta es la información realmente importante.
-                 */
-
-                archivo:
-                    ruta,
-
-
-                /*
-                 * Se conserva para mostrarlo
-                 * de forma legible.
-                 */
-
-                capitulo:
-                    ruta,
-
-
-                capituloNombre:
-                    checkbox.dataset.capituloNombre
-
-            };
-
-        }
+        })
     );
 
 }
@@ -1491,8 +1916,8 @@ function actualizarResumen() {
         seleccionados.length === 0
     ) {
 
-        resumen.textContent =
-            "No has seleccionado ningún capítulo.";
+        resumenElemento.textContent =
+            "No has seleccionado ningún contenido.";
 
         return;
 
@@ -1503,12 +1928,12 @@ function actualizarResumen() {
         seleccionados.length;
 
 
-    resumen.innerHTML = `
+    resumenElemento.innerHTML = `
 
         <strong>
 
             ${cantidad}
-            archivo${cantidad !== 1 ? "s" : ""}
+            contenido${cantidad !== 1 ? "s" : ""}
             seleccionado${cantidad !== 1 ? "s" : ""}
 
         </strong>
@@ -1518,9 +1943,14 @@ function actualizarResumen() {
         ${seleccionados
             .map(
                 elemento =>
-                    escaparHTML(
-                        elemento.archivo
-                    )
+
+                    `${escaparHTML(
+                        elemento.asignaturaNombre
+                    )}
+
+                    — ${escaparHTML(
+                        elemento.nombre
+                    )}`
             )
             .join("<br>")}
 
@@ -1562,7 +1992,9 @@ function guardarSesion() {
         obtenerCapitulosSeleccionados();
 
 
-    if (!nombre) {
+    if (
+        !nombre
+    ) {
 
         mostrarError(
             "Escribe un nombre para la sesión."
@@ -1578,7 +2010,7 @@ function guardarSesion() {
     ) {
 
         mostrarError(
-            "Selecciona al menos un archivo de preguntas."
+            "Selecciona al menos un contenido."
         );
 
         return;
@@ -1602,9 +2034,34 @@ function guardarSesion() {
     }
 
 
+    /*
+     * Si estamos editando,
+     * conservar el ID y fecha originales.
+     */
+
+    let sesionExistente =
+        null;
+
+
+    const sesiones =
+        obtenerSesiones();
+
+
+    if (
+        indiceEditar !== null &&
+        sesiones[indiceEditar]
+    ) {
+
+        sesionExistente =
+            sesiones[indiceEditar];
+
+    }
+
+
     const sesion = {
 
         id:
+            sesionExistente?.id ||
             generarIdUnico(),
 
         nombre:
@@ -1619,42 +2076,22 @@ function guardarSesion() {
         aleatorio:
             aleatorio,
 
-        /*
-         * Las sesiones utilizan modo estudio.
-         */
-
-        modoEstudio:
-            true,
-
         fechaCreacion:
+            sesionExistente?.fechaCreacion ||
             new Date().toISOString()
 
     };
 
 
-    const sesiones =
-        obtenerSesiones();
-
-
     if (
-        indiceEditar !== null &&
-        sesiones[indiceEditar]
+        sesionExistente
     ) {
-
-        sesion.id =
-            sesiones[indiceEditar].id ||
-            sesion.id;
-
-
-        sesion.fechaCreacion =
-            sesiones[indiceEditar].fechaCreacion ||
-            sesion.fechaCreacion;
-
 
         sesiones[indiceEditar] =
             sesion;
 
     }
+
 
     else {
 
@@ -1693,7 +2130,9 @@ function cargarSesionParaEditar() {
         sesiones[indiceEditar];
 
 
-    if (!sesion) {
+    if (
+        !sesion
+    ) {
 
         mostrarError(
             "No se encontró la sesión que quieres editar."
@@ -1719,13 +2158,15 @@ function cargarSesionParaEditar() {
     document.getElementById(
         "nombre"
     ).value =
-        sesion.nombre || "";
+        sesion.nombre ||
+        "";
 
 
     document.getElementById(
         "numeroPreguntas"
     ).value =
-        sesion.numeroPreguntas || 30;
+        sesion.numeroPreguntas ||
+        30;
 
 
     document.getElementById(
@@ -1735,12 +2176,13 @@ function cargarSesionParaEditar() {
 
 
     const seleccionados =
-        sesion.capitulos || [];
+        sesion.capitulos ||
+        [];
 
 
     const checkboxes =
         document.querySelectorAll(
-            '#contenido .capitulo input[type="checkbox"]'
+            '#contenido input[type="checkbox"][data-archivo]'
         );
 
 
@@ -1752,17 +2194,23 @@ function cargarSesionParaEditar() {
                     elemento => {
 
                         /*
-                         * Nuevo formato:
-                         * comparar por ruta completa.
+                         * Preferimos comparar
+                         * por ruta.
                          */
 
                         if (
-                            elemento.archivo
+                            elemento.ruta &&
+                            checkbox.dataset.ruta
                         ) {
 
                             return (
-                                elemento.archivo ===
-                                checkbox.dataset.ruta
+
+                                elemento.asignatura ===
+                                    checkbox.dataset.asignatura &&
+
+                                elemento.ruta ===
+                                    checkbox.dataset.ruta
+
                             );
 
                         }
@@ -1770,12 +2218,23 @@ function cargarSesionParaEditar() {
 
                         /*
                          * Compatibilidad con sesiones
-                         * antiguas.
+                         * antiguas que no tenían ruta.
                          */
 
                         return (
-                            elemento.capitulo ===
-                            checkbox.dataset.capitulo
+
+                            elemento.asignatura ===
+                                checkbox.dataset.asignatura &&
+
+                            (
+                                elemento.archivo ===
+                                    checkbox.dataset.archivo ||
+
+                                elemento.capitulo ===
+                                    checkbox.dataset.contenidoId
+
+                            )
+
                         );
 
                     }
@@ -1789,7 +2248,8 @@ function cargarSesionParaEditar() {
     );
 
 
-    actualizarEstadosAsignaturas();
+    actualizarTodosLosContadores();
+
 
     actualizarResumen();
 
@@ -1808,7 +2268,9 @@ function obtenerSesiones() {
         );
 
 
-    if (!datos) {
+    if (
+        !datos
+    ) {
 
         return [];
 
@@ -1834,7 +2296,10 @@ function obtenerSesiones() {
 
     catch (e) {
 
-        console.error(e);
+        console.error(
+            e
+        );
+
 
         return [];
 
@@ -1851,11 +2316,12 @@ function mostrarError(
     mensaje
 ) {
 
-    error.textContent =
-        "❌ " + mensaje;
+    errorElemento.textContent =
+        "❌ " +
+        mensaje;
 
 
-    error.style.display =
+    errorElemento.style.display =
         "block";
 
 
@@ -1873,14 +2339,14 @@ function mostrarError(
 
 function ocultarError() {
 
-    error.style.display =
+    errorElemento.style.display =
         "none";
 
 }
 
 
 /* ========================================================
-   GENERAR ID
+   GENERAR ID ÚNICO
 ======================================================== */
 
 function generarIdUnico() {
@@ -1891,18 +2357,26 @@ function generarIdUnico() {
 
         Math.random()
             .toString(36)
-            .substring(2, 8)
+            .substring(
+                2,
+                8
+            )
 
     );
 
 }
 
 
+/* ========================================================
+   GENERAR ID PARA ELEMENTOS
+======================================================== */
+
 function generarId(
     texto
 ) {
 
-    let hash = 0;
+    let hash =
+        0;
 
 
     for (
@@ -1921,7 +2395,8 @@ function generarId(
             texto.charCodeAt(i);
 
 
-        hash |= 0;
+        hash |=
+            0;
 
     }
 
@@ -1929,34 +2404,6 @@ function generarId(
     return Math.abs(
         hash
     ).toString(36);
-
-}
-
-
-/* ========================================================
-   FORMATEAR NOMBRE
-======================================================== */
-
-function formatearNombre(
-    nombre
-) {
-
-    return String(
-        nombre
-    )
-        .replace(
-            /\.json$/i,
-            ""
-        )
-        .replace(
-            /[-_]+/g,
-            " "
-        )
-        .replace(
-            /\b\w/g,
-            letra =>
-                letra.toUpperCase()
-        );
 
 }
 
@@ -1976,41 +2423,10 @@ function escaparHTML(
 
 
     elemento.textContent =
-        texto;
+        texto ?? "";
 
 
     return elemento.innerHTML;
-
-}
-
-
-/* ========================================================
-   ESCAPAR ATRIBUTOS
-======================================================== */
-
-function escaparAtributo(
-    texto
-) {
-
-    return String(
-        texto
-    )
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-        .replace(
-            /</g,
-            "&lt;"
-        )
-        .replace(
-            />/g,
-            "&gt;"
-        );
 
 }
 
@@ -2020,6 +2436,7 @@ function escaparAtributo(
 ======================================================== */
 
 cargarAsignaturas();
+
 
 </script>
 
