@@ -357,6 +357,119 @@
 
     }
 
+    /* ========================================================
+   ESTADO DE LAS PREGUNTAS
+======================================================== */
+
+.estado-pregunta {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 4px;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+}
+
+
+/* Círculo de estado */
+
+.circulo-estado {
+
+  width: 9px;
+
+  height: 9px;
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  flex-shrink: 0;
+
+}
+
+
+/* ========================================================
+   DÉBIL
+======================================================== */
+
+.estado-pregunta.debil {
+
+  color: #c62828;
+
+}
+
+
+.estado-pregunta.debil .circulo-estado {
+
+  background-color: #c62828;
+
+}
+
+
+/* ========================================================
+   EN PROGRESO
+======================================================== */
+
+.estado-pregunta.en-progreso {
+
+  color: #ef6c00;
+
+}
+
+
+.estado-pregunta.en-progreso .circulo-estado {
+
+  background-color: #ef6c00;
+
+}
+
+
+/* ========================================================
+   BUEN DOMINIO
+======================================================== */
+
+.estado-pregunta.buen-dominio {
+
+  color: #b08a00;
+
+}
+
+
+.estado-pregunta.buen-dominio .circulo-estado {
+
+  background-color: #b08a00;
+
+}
+
+
+/* ========================================================
+   DOMINADA
+======================================================== */
+
+.estado-pregunta.dominado {
+
+  color: #2e7d32;
+
+}
+
+
+.estado-pregunta.dominado .circulo-estado {
+
+  background-color: #2e7d32;
+
+}
+
 
     .respuesta-listado {
 
