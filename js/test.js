@@ -1,7 +1,6 @@
 let preguntas = [];
 let indice = 0;
 
-
 /* ========================================================
    ESTADO DEL BOTÓN DEL TEST
 
@@ -30,19 +29,18 @@ const CLAVE_SESIONES =
 
 
 /*
- * Número mínimo de intentos que necesitaremos
- * posteriormente para poder considerar una pregunta
- * como candidata a "dominada".
+ * Número mínimo de intentos que necesita una pregunta
+ * para poder ser considerada DOMINADA.
  *
  * IMPORTANTE:
  *
- * En este momento todavía NO se utiliza.
+ * Este valor debe coincidir con el utilizado en
+ * estadisticas.js.
  *
- * Se utilizará posteriormente junto con las
- * estadísticas globales de estadisticas.js.
+ * Las estadísticas son permanentes.
  */
 
-const MINIMO_INTENTOS_DOMINIO =
+const MINIMO_INTENTOS_DOMINADA =
     20;
 
 
@@ -75,38 +73,29 @@ const archivoDatos =
 const preguntaElemento =
     document.getElementById("pregunta");
 
-
 const opcionesElemento =
     document.getElementById("opciones");
-
 
 const asignaturaElemento =
     document.getElementById("asignatura");
 
-
 const estadoElemento =
     document.getElementById("estado");
-
 
 const botonTest =
     document.getElementById("botonTest");
 
-
 const reiniciar =
     document.getElementById("reiniciar");
-
 
 const resultadoElemento =
     document.getElementById("resultado");
 
-
 const estadisticasElemento =
     document.getElementById("estadisticas");
 
-
 const listaPreguntasElemento =
     document.getElementById("question-list");
-
 
 const buscador =
     document.getElementById("search");
@@ -118,7 +107,6 @@ const buscador =
 
 const MODO_ESTUDIO_POR_DEFECTO =
     true;
-
 
 let modoEstudio =
     MODO_ESTUDIO_POR_DEFECTO;
@@ -167,19 +155,15 @@ let estadoPreguntasEstudio =
     new Map();
 
 
-/* ========================================================
-   CONFIGURACIÓN DE REPETICIONES
-   ========================================================
-
-   Las preguntas falladas no aparecen inmediatamente.
-
-   Se espera un número aleatorio de preguntas
-   normales antes de volver a mostrarlas.
-   ======================================================== */
+/*
+ * Las preguntas falladas no aparecen inmediatamente.
+ *
+ * Se espera un número aleatorio de preguntas
+ * normales antes de volver a mostrarlas.
+ */
 
 const INTERVALO_REPETICION_MIN =
     3;
-
 
 const INTERVALO_REPETICION_MAX =
     7;
@@ -940,6 +924,52 @@ function mostrarPregunta(
 
 
 /* ========================================================
+   COMPROBAR SI UNA PREGUNTA ESTÁ DOMINADA
+   ========================================================
+
+   Esta función consulta las estadísticas PERMANENTES.
+
+   Si estadisticas.js no está cargado, devolvemos false
+   para que el test siga funcionando.
+   ======================================================== */
+
+function estaDominada(
+    pregunta
+) {
+
+    if (
+        !pregunta ||
+        !pregunta.id
+    ) {
+
+        return false;
+
+    }
+
+
+    if (
+        typeof estaPreguntaDominada !==
+        "function"
+    ) {
+
+        console.warn(
+            "No se ha encontrado estaPreguntaDominada(). Comprueba que estadisticas.js se carga antes que test.js."
+        );
+
+
+        return false;
+
+    }
+
+
+    return estaPreguntaDominada(
+        pregunta.id
+    );
+
+}
+
+
+/* ========================================================
    OBTENER SIGUIENTE PREGUNTA
    ======================================================== */
 
@@ -1149,6 +1179,26 @@ function obtenerRepeticionesDisponibles() {
 
 
             /*
+             * Si está DOMINADA a nivel global,
+             * ya no necesita aparecer como repaso.
+             */
+
+            if (
+                estaDominada(
+                    pregunta
+                )
+            ) {
+
+                estado.pendiente =
+                    false;
+
+
+                return;
+
+            }
+
+
+            /*
              * Comprobar si ha llegado
              * su momento de repetición.
              */
@@ -1190,14 +1240,38 @@ function obtenerPreguntasPendientes() {
         ) => {
 
             if (
-                estado.pendiente
+                !estado.pendiente
             ) {
 
-                resultado.push(
-                    pregunta
-                );
+                return;
 
             }
+
+
+            /*
+             * Una pregunta DOMINADA deja de estar
+             * pendiente incluso si fue fallada
+             * anteriormente en este test.
+             */
+
+            if (
+                estaDominada(
+                    pregunta
+                )
+            ) {
+
+                estado.pendiente =
+                    false;
+
+
+                return;
+
+            }
+
+
+            resultado.push(
+                pregunta
+            );
 
         }
     );
@@ -1237,6 +1311,22 @@ function esPreguntaPendiente(
 function crearEstadoPregunta(
     pregunta
 ) {
+
+    /*
+     * Si ya está DOMINADA a nivel global,
+     * no necesitamos crear un estado de repaso.
+     */
+
+    if (
+        estaDominada(
+            pregunta
+        )
+    ) {
+
+        return null;
+
+    }
+
 
     const estado = {
 
@@ -1599,15 +1689,10 @@ function corregirRespuesta() {
        ESTADÍSTICAS GLOBALES
        ====================================================
 
-       El historial permanente se guarda en
-       estadisticas.js.
-
        Cada respuesta cuenta como un intento histórico.
 
-       IMPORTANTE:
-
-       El sistema de estadísticas globales es
-       independiente del sistema de repaso.
+       Este registro es INDEPENDIENTE del sistema
+       de repaso del test.
        ==================================================== */
 
     if (
@@ -1851,12 +1936,10 @@ function obtenerElementoAleatorio(
 
 /* ========================================================
    ESTADÍSTICAS DEL TEST ACTUAL
-   ========================================================
 
    Estas estadísticas NO son las estadísticas globales.
 
    Se reinician al reiniciar el test.
-
    ======================================================== */
 
 function actualizarEstadisticas() {
@@ -1891,13 +1974,11 @@ function actualizarEstadisticas() {
 
 
 /* ========================================================
-   REINICIAR ESTADÍSTICAS DEL TEST
-   ========================================================
+   REINICIAR TEST
 
    IMPORTANTE:
 
    Reiniciar el test NO borra las estadísticas globales.
-
    ======================================================== */
 
 function reiniciarEstadisticas() {
@@ -2275,17 +2356,17 @@ if (buscador) {
 }
 
 
+/*
+ * No hace falta cargar manualmente el historial aquí.
+ *
+ * estadisticas.js lo obtiene directamente de localStorage
+ * cada vez que registra una respuesta.
+ */
+
+
 /* ========================================================
-   INICIAR
-   ========================================================
-
-   No hace falta cargar manualmente el historial aquí.
-
-   estadisticas.js lo obtiene directamente de localStorage
-   cada vez que registra una respuesta.
-
+   INICIALIZACIÓN
    ======================================================== */
-
 
 /*
  * Configurar listado.
