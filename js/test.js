@@ -1,12 +1,13 @@
-
 let preguntas = [];
 let indice = 0;
+
 
 /*
  * Estado del botón del test:
  * "corregir" → todavía no hemos corregido
  * "siguiente" → ya hemos corregido y esperamos al usuario
  */
+
 let estadoBoton = "corregir";
 
 
@@ -42,10 +43,7 @@ const idSesion =
 
 
 /*
- * Mantenemos también la posibilidad de utilizar
- * el sistema antiguo mediante ?datos=
- *
- * Esto nos permite no perder compatibilidad.
+ * Sistema antiguo mediante ?datos=
  */
 
 const archivoDatos =
@@ -94,6 +92,63 @@ const listaPreguntasElemento =
 
 const buscador =
     document.getElementById("search");
+
+
+/* ========================================================
+   CONFIGURAR LISTADO
+======================================================== */
+
+function configurarListado() {
+
+    /*
+     * Si no existe el listado en el HTML,
+     * no hacemos nada.
+     */
+
+    if (!listaPreguntasElemento) {
+
+        return;
+
+    }
+
+
+    const listadoCard =
+        listaPreguntasElemento.closest(".card");
+
+
+    if (!listadoCard) {
+
+        return;
+
+    }
+
+
+    /*
+     * SESIÓN:
+     * ocultamos completamente el listado.
+     */
+
+    if (idSesion) {
+
+        listadoCard.style.display =
+            "none";
+
+    }
+
+
+    /*
+     * CAPÍTULO:
+     * mantenemos visible el listado.
+     */
+
+    else {
+
+        listadoCard.style.display =
+            "";
+
+    }
+
+}
 
 
 /* ========================================================
@@ -177,8 +232,7 @@ async function cargarPreguntas() {
     try {
 
         /*
-         * Si venimos desde una sesión personalizada,
-         * usamos la nueva lógica.
+         * Si venimos desde una sesión personalizada.
          */
 
         if (idSesion) {
@@ -191,7 +245,7 @@ async function cargarPreguntas() {
 
 
         /*
-         * Compatibilidad con el sistema anterior.
+         * Sistema antiguo mediante ?datos=
          */
 
         if (archivoDatos) {
@@ -204,7 +258,7 @@ async function cargarPreguntas() {
 
 
         throw new Error(
-            "No se ha indicado ninguna sesión."
+            "No se ha indicado ninguna sesión o capítulo."
         );
 
     }
@@ -215,12 +269,16 @@ async function cargarPreguntas() {
         console.error(error);
 
 
-        estadoElemento.style.display =
-            "block";
+        if (estadoElemento) {
+
+            estadoElemento.style.display =
+                "block";
 
 
-        estadoElemento.textContent =
-            "❌ " + error.message;
+            estadoElemento.textContent =
+                "❌ " + error.message;
+
+        }
 
     }
 
@@ -273,8 +331,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Aquí almacenaremos todas las preguntas
-     * procedentes de todos los capítulos.
+     * Aquí almacenaremos todas las preguntas.
      */
 
     let preguntasCombinadas = [];
@@ -313,7 +370,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * La ruta se construye a partir de:
+         * Ruta:
          *
          * data/
          *   asignatura/
@@ -368,7 +425,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * Añadimos las preguntas al conjunto.
+         * Añadir preguntas.
          */
 
         preguntasCombinadas =
@@ -391,7 +448,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Guardamos todas las preguntas.
+     * Guardar preguntas.
      */
 
     preguntas =
@@ -414,8 +471,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Limitar al número de preguntas
-     * configurado en la sesión.
+     * Limitar número de preguntas.
      */
 
     const numeroPreguntas =
@@ -442,7 +498,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Ya hemos terminado de cargar.
+     * Hemos terminado de cargar.
      */
 
     estadoElemento.style.display =
@@ -450,14 +506,14 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Actualizar estadísticas.
+     * Estadísticas.
      */
 
     actualizarEstadisticas();
 
 
     /*
-     * Mostrar primera pregunta.
+     * Primera pregunta.
      */
 
     indice = 0;
@@ -466,10 +522,10 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Mostrar listado.
+     * IMPORTANTE:
+     *
+     * NO mostramos el listado en sesiones.
      */
-
-    mostrarListado();
 
 }
 
@@ -480,86 +536,79 @@ async function cargarPreguntasDeSesion() {
 
 async function cargarPreguntasAntiguo() {
 
-    try {
+    /*
+     * archivoDatos:
+     *
+     * constitucion/titulo-i.json
+     *
+     * Ruta:
+     *
+     * data/constitucion/titulo-i.json
+     */
 
-        /*
-         * archivoDatos tendrá un formato como:
-         *
-         * constitucion/titulo-i.json
-         *
-         * Por tanto la ruta será:
-         *
-         * data/constitucion/titulo-i.json
-         */
-
-
-        asignaturaElemento.textContent =
-            obtenerNombreAsignatura(
-                archivoDatos
-            );
-
-
-        const ruta =
-            `data/${archivoDatos}`;
-
-
-        console.log(
-            "Cargando capítulo:",
-            ruta
+    asignaturaElemento.textContent =
+        obtenerNombreAsignatura(
+            archivoDatos
         );
 
 
-        const respuesta =
-            await fetch(ruta);
+    const ruta =
+        `data/${archivoDatos}`;
 
 
-        if (!respuesta.ok) {
-
-            throw new Error(
-                `No se ha podido cargar ${ruta}`
-            );
-
-        }
+    console.log(
+        "Cargando capítulo:",
+        ruta
+    );
 
 
-        preguntas =
-            await respuesta.json();
+    const respuesta =
+        await fetch(ruta);
 
 
-        if (
-            !Array.isArray(preguntas) ||
-            preguntas.length === 0
-        ) {
+    if (!respuesta.ok) {
 
-            throw new Error(
-                "El archivo JSON no contiene preguntas."
-            );
-
-        }
-
-
-        estadoElemento.style.display =
-            "none";
-
-
-        indice = 0;
-
-
-        actualizarEstadisticas();
-
-
-        mostrarPregunta();
-
-
-        mostrarListado();
+        throw new Error(
+            `No se ha podido cargar ${ruta}`
+        );
 
     }
 
-    catch (error) {
 
-        throw error;
+    preguntas =
+        await respuesta.json();
+
+
+    if (
+        !Array.isArray(preguntas) ||
+        preguntas.length === 0
+    ) {
+
+        throw new Error(
+            "El archivo JSON no contiene preguntas."
+        );
 
     }
+
+
+    estadoElemento.style.display =
+        "none";
+
+
+    indice = 0;
+
+
+    actualizarEstadisticas();
+
+
+    mostrarPregunta();
+
+
+    /*
+     * SÍ mostramos el listado en capítulos.
+     */
+
+    mostrarListado();
 
 }
 
@@ -575,8 +624,10 @@ function mostrarPregunta() {
         preguntaElemento.textContent =
             "No hay preguntas.";
 
+
         opcionesElemento.innerHTML =
             "";
+
 
         return;
 
@@ -588,7 +639,7 @@ function mostrarPregunta() {
 
 
     preguntaElemento.textContent =
-       preguntaActual.pregunta;
+        preguntaActual.pregunta;
 
 
     opcionesElemento.innerHTML =
@@ -596,7 +647,7 @@ function mostrarPregunta() {
 
 
     /*
-     * Crear las opciones
+     * Crear opciones.
      */
 
     preguntaActual.opciones.forEach(
@@ -654,18 +705,19 @@ function mostrarPregunta() {
 
 
     /*
-     * Limpiar resultado
+     * Limpiar cualquier mensaje anterior.
      */
 
     resultadoElemento.textContent =
         "";
+
 
     resultadoElemento.className =
         "";
 
 
     /*
-     * El botón vuelve a ser "Corregir"
+     * El botón vuelve a ser "Corregir".
      */
 
     estadoBoton =
@@ -685,11 +737,14 @@ function mostrarPregunta() {
 function corregirRespuesta() {
 
     /*
-     * Si ya hemos corregido la pregunta,
+     * Si ya hemos corregido,
      * el botón funciona como "Siguiente".
      */
 
-    if (estadoBoton === "siguiente") {
+    if (
+        estadoBoton ===
+        "siguiente"
+    ) {
 
         siguientePregunta();
 
@@ -706,11 +761,19 @@ function corregirRespuesta() {
 
     if (!seleccion) {
 
+        /*
+         * Mantenemos únicamente este aviso
+         * porque no se ha seleccionado ninguna
+         * respuesta todavía.
+         */
+
         resultadoElemento.textContent =
             "⚠️ Selecciona una respuesta.";
 
+
         resultadoElemento.className =
             "";
+
 
         return;
 
@@ -734,7 +797,7 @@ function corregirRespuesta() {
 
 
     /*
-     * Todas las opciones
+     * Todas las opciones.
      */
 
     const opciones =
@@ -744,7 +807,7 @@ function corregirRespuesta() {
 
 
     /*
-     * Comprobar respuesta
+     * Comprobar respuesta.
      */
 
     const esCorrecta =
@@ -755,7 +818,7 @@ function corregirRespuesta() {
     if (esCorrecta) {
 
         /*
-         * CORRECTA → verde
+         * Correcta → verde.
          */
 
         aciertos++;
@@ -769,20 +832,13 @@ function corregirRespuesta() {
                 "correcta"
             );
 
-
-        resultadoElemento.textContent =
-            "✅ ¡Correcto!";
-
-        resultadoElemento.className =
-            "correcto";
-
     }
 
 
     else {
 
         /*
-         * INCORRECTA → rojo
+         * Incorrecta → rojo.
          */
 
         fallos++;
@@ -798,8 +854,8 @@ function corregirRespuesta() {
 
 
         /*
-         * Además marcamos en verde
-         * la respuesta correcta.
+         * Marcar también la correcta
+         * en verde.
          */
 
         opciones.forEach(
@@ -829,21 +885,32 @@ function corregirRespuesta() {
             }
         );
 
-
-        resultadoElemento.textContent =
-            `❌ Incorrecto. La respuesta correcta es: ${preguntaActual.respuesta}`;
-
-        resultadoElemento.className =
-            "incorrecto";
-
     }
+
+
+    /*
+     * IMPORTANTE:
+     *
+     * No mostramos ningún texto
+     * de "Correcto" o "Incorrecto".
+     *
+     * La información se muestra únicamente
+     * mediante los colores.
+     */
+
+    resultadoElemento.textContent =
+        "";
+
+
+    resultadoElemento.className =
+        "";
 
 
     actualizarEstadisticas();
 
 
     /*
-     * Desactivar las opciones.
+     * Desactivar opciones.
      */
 
     opciones.forEach(
@@ -857,8 +924,7 @@ function corregirRespuesta() {
 
 
     /*
-     * Ahora el botón pasa a ser
-     * "Siguiente".
+     * Cambiar botón a "Siguiente".
      */
 
     estadoBoton =
@@ -892,11 +958,17 @@ function siguientePregunta() {
 
 
     /*
-     * Hemos llegado al final.
+     * Fin del test.
+     *
+     * No mostramos "Correcto" / "Incorrecto".
      */
 
     resultadoElemento.textContent =
         "🎉 Has terminado el test.";
+
+
+    resultadoElemento.className =
+        "";
 
 
     actualizarEstadisticas();
@@ -989,9 +1061,15 @@ function reiniciarEstadisticas() {
 
     respondidas = 0;
 
+
     actualizarEstadisticas();
 
+
     resultadoElemento.textContent =
+        "";
+
+
+    resultadoElemento.className =
         "";
 
 
@@ -1003,8 +1081,8 @@ function reiniciarEstadisticas() {
 
 
     /*
-     * Si la sesión es aleatoria, podemos
-     * volver a mezclar para empezar otra vez.
+     * Si es una sesión aleatoria,
+     * volver a mezclar.
      */
 
     if (idSesion) {
@@ -1038,6 +1116,18 @@ function reiniciarEstadisticas() {
 
 function mostrarListado() {
 
+    /*
+     * Por seguridad:
+     * jamás mostramos listado en sesiones.
+     */
+
+    if (idSesion) {
+
+        return;
+
+    }
+
+
     if (!listaPreguntasElemento) {
 
         return;
@@ -1045,14 +1135,17 @@ function mostrarListado() {
     }
 
 
-    listaPreguntasElemento.innerHTML = "";
+    listaPreguntasElemento.innerHTML =
+        "";
 
 
     preguntas.forEach(
         pregunta => {
 
             const elemento =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             elemento.className =
@@ -1064,7 +1157,9 @@ function mostrarListado() {
              */
 
             const preguntaTexto =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             preguntaTexto.className =
@@ -1080,7 +1175,9 @@ function mostrarListado() {
              */
 
             const respuestaTexto =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
 
             respuestaTexto.className =
@@ -1092,7 +1189,7 @@ function mostrarListado() {
 
 
             /*
-             * Texto utilizado por el buscador
+             * Texto utilizado por el buscador.
              */
 
             elemento.dataset.busqueda =
@@ -1104,7 +1201,7 @@ function mostrarListado() {
 
 
             /*
-             * Añadir pregunta y respuesta
+             * Añadir pregunta y respuesta.
              */
 
             elemento.appendChild(
@@ -1199,11 +1296,13 @@ function obtenerNombreAsignatura(
 
 
     const archivo =
-        partes[partes.length - 1] || "";
+        partes[
+            partes.length - 1
+        ] || "";
 
 
     /*
-     * Nombre de la asignatura
+     * Nombre de la asignatura.
      */
 
     let nombreAsignatura =
@@ -1222,7 +1321,7 @@ function obtenerNombreAsignatura(
 
 
     /*
-     * Nombre del capítulo
+     * Nombre del capítulo.
      */
 
     let nombreCapitulo =
@@ -1238,7 +1337,7 @@ function obtenerNombreAsignatura(
 
 
     /*
-     * Nombres especiales
+     * Nombres especiales.
      */
 
     if (
@@ -1311,5 +1410,7 @@ if (buscador) {
 /* ========================================================
    INICIAR
 ======================================================== */
+
+configurarListado();
 
 cargarPreguntas();
