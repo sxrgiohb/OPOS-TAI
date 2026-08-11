@@ -600,17 +600,15 @@
     ======================================================== */
 
     function abrirCapitulo(
-      capitulo
-    ) {
+  capitulo
+) {
 
-      window.location.href =
-        `test.html?asignatura=${encodeURIComponent(
-          asignatura
-        )}&capitulo=${encodeURIComponent(
-          capitulo.id
-        )}`;
+  window.location.href =
+    `test.html?datos=${encodeURIComponent(
+      asignatura + "/" + capitulo.archivo
+    )}`;
 
-    }
+}
 
 
     /* ========================================================
