@@ -417,7 +417,7 @@ async function cargarPreguntas() {
 
 /* ========================================================
    CARGAR PREGUNTAS DE UNA SESIÓN
-   ======================================================== */
+======================================================== */
 
 async function cargarPreguntasDeSesion() {
 
@@ -441,7 +441,7 @@ async function cargarPreguntasDeSesion() {
     if (capitulos.length === 0) {
 
         throw new Error(
-            "La sesión no tiene capítulos seleccionados."
+            "La sesión no tiene contenidos seleccionados."
         );
 
     }
@@ -478,28 +478,63 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Cargar cada capítulo.
+     * Cargar cada archivo seleccionado.
      */
 
     for (
         const capitulo of capitulos
     ) {
 
-        const asignatura =
-            capitulo.asignatura;
+        /*
+         * ====================================================
+         * NUEVO SISTEMA
+         *
+         * La sesión guarda directamente:
+         *
+         * ruta: "constitucion/preambulo.json"
+         *
+         * o:
+         *
+         * ruta: "constitucion/titulo-i/capitulo-1.json"
+         * ====================================================
+         */
+
+        let ruta =
+            capitulo.ruta;
 
 
-        const archivo =
-            capitulo.archivo;
-
+        /*
+         * ====================================================
+         * COMPATIBILIDAD CON SESIONES ANTIGUAS
+         *
+         * Si todavía tienes sesiones guardadas con:
+         *
+         * asignatura + archivo
+         *
+         * también las podremos cargar.
+         * ====================================================
+         */
 
         if (
-            !asignatura ||
-            !archivo
+            !ruta &&
+            capitulo.asignatura &&
+            capitulo.archivo
         ) {
 
+            ruta =
+                `${capitulo.asignatura}/${capitulo.archivo}`;
+
+        }
+
+
+        /*
+         * No hay ruta válida.
+         */
+
+        if (!ruta) {
+
             console.warn(
-                "Capítulo sin ruta válida:",
+                "Contenido de sesión sin ruta válida:",
                 capitulo
             );
 
@@ -510,35 +545,67 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * Ruta:
-         *
-         * data/asignatura/archivo.json
+         * Asegurarnos de que no empiece
+         * por una barra.
          */
 
-        const ruta =
-            `data/${encodeURIComponent(
-                asignatura
-            )}/${encodeURIComponent(
-                archivo
-            )}`;
+        ruta =
+            String(ruta)
+                .replace(/^\/+/, "");
+
+
+        /*
+         * ====================================================
+         * CONSTRUIR URL
+         *
+         * Convertimos cada parte de la ruta por separado
+         * para NO codificar las barras "/".
+         *
+         * Ejemplo:
+         *
+         * constitucion/titulo-i/capitulo-1.json
+         *
+         * se convierte en:
+         *
+         * data/constitucion/titulo-i/capitulo-1.json
+         * ====================================================
+         */
+
+        const rutaCodificada =
+            ruta
+                .split("/")
+                .map(
+                    parte =>
+                        encodeURIComponent(parte)
+                )
+                .join("/");
+
+
+        const url =
+            `data/${rutaCodificada}`;
 
 
         console.log(
-            "Cargando:",
-            ruta
+            "Cargando preguntas:",
+            url
         );
 
 
         const respuesta =
             await fetch(
-                ruta
+                url
             );
 
 
         if (!respuesta.ok) {
 
+            console.error(
+                `No se ha podido cargar ${url}`
+            );
+
+
             throw new Error(
-                `No se ha podido cargar ${ruta}`
+                `No se ha podido cargar ${url}`
             );
 
         }
@@ -548,6 +615,11 @@ async function cargarPreguntasDeSesion() {
             await respuesta.json();
 
 
+        /*
+         * El archivo debe contener
+         * directamente un array de preguntas.
+         */
+
         if (
             !Array.isArray(
                 preguntasArchivo
@@ -555,7 +627,7 @@ async function cargarPreguntasDeSesion() {
         ) {
 
             console.warn(
-                `El archivo ${ruta} no contiene un array de preguntas.`
+                `El archivo ${url} no contiene un array de preguntas.`
             );
 
 
@@ -565,7 +637,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * Añadir preguntas.
+         * Añadir las preguntas.
          */
 
         preguntasCombinadas =
@@ -576,12 +648,16 @@ async function cargarPreguntasDeSesion() {
     }
 
 
+    /*
+     * No se encontró ninguna pregunta.
+     */
+
     if (
         preguntasCombinadas.length === 0
     ) {
 
         throw new Error(
-            "No se han encontrado preguntas en los capítulos seleccionados."
+            "No se han encontrado preguntas en los contenidos seleccionados."
         );
 
     }
