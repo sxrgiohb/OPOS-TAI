@@ -1,103 +1,72 @@
 let preguntas = [];
 let indice = 0;
 
-/*
- * ========================================================
- * ESTADO DEL BOTÓN DEL TEST
- * ========================================================
- *
- * "corregir"  → todavía no hemos corregido
- * "siguiente" → ya hemos corregido y esperamos al usuario
- */
+
+/* ========================================================
+   ESTADO DEL BOTÓN DEL TEST
+
+   "corregir"  → todavía no hemos corregido
+   "siguiente" → ya hemos corregido y esperamos al usuario
+   ======================================================== */
 
 let estadoBoton = "corregir";
 
 
-/*
- * ========================================================
- * ESTADÍSTICAS DEL TEST ACTUAL
- * ========================================================
- */
+/* ========================================================
+   ESTADÍSTICAS DEL TEST ACTUAL
+   ======================================================== */
 
 let aciertos = 0;
 let fallos = 0;
 let respondidas = 0;
 
 
-/*
- * ========================================================
- * CONFIGURACIÓN
- * ========================================================
- */
+/* ========================================================
+   CONFIGURACIÓN
+   ======================================================== */
 
 const CLAVE_SESIONES =
     "opos_tai_sesiones";
 
 
-/*
- * ========================================================
- * HISTORIAL DE RENDIMIENTO
- * ========================================================
- *
- * Aquí se guarda el historial permanente de cada pregunta.
- *
- * IMPORTANTE:
- *
- * El historial NO pertenece al test actual.
- *
- * Es independiente de:
- *
- * - aciertos del test
- * - fallos del test
- * - preguntas mostradas
- * - repeticiones
- *
- * Por tanto, una pregunta puede acumular cientos de
- * respuestas a lo largo del tiempo.
- *
- * Ejemplo:
- *
- * {
- *     "pre-001": {
- *
- *         historial: [
- *
- *             {
- *                 correcto: true,
- *                 fecha: 1754930000000
- *             },
- *
- *             {
- *                 correcto: false,
- *                 fecha: 1754930100000
- *             }
- *
- *         ]
- *
- *     }
- * }
- */
+/* ========================================================
+   HISTORIAL DE RENDIMIENTO
+   ========================================================
 
+   El historial es independiente de las estadísticas
+   del test.
 
-/*
- * Clave utilizada en localStorage.
- */
+   Se guarda permanentemente en localStorage.
+
+   Cada pregunta se identifica mediante su "id".
+
+   Ejemplo:
+
+   {
+       "constitucion-preambulo-001": [
+           true,
+           true,
+           false,
+           true
+       ]
+   }
+
+   true  = acierto
+   false = fallo
+
+   Solo conservamos las últimas respuestas indicadas
+   por VENTANA_RENDIMIENTO.
+   ======================================================== */
 
 const CLAVE_HISTORIAL_RENDIMIENTO =
     "opos_tai_historial_rendimiento";
 
 
 /*
- * Número de respuestas que utilizaremos
- * para calcular el rendimiento reciente.
+ * Número máximo de respuestas que conservamos
+ * por cada pregunta.
  *
  * Se puede modificar en el futuro.
- *
- * Ejemplo:
- *
- * 100 → últimas 100 respuestas
- * 50  → últimas 50 respuestas
- * 200 → últimas 200 respuestas
  */
 
 const VENTANA_RENDIMIENTO =
@@ -105,68 +74,73 @@ const VENTANA_RENDIMIENTO =
 
 
 /*
- * Número mínimo de intentos necesarios
- * para poder considerar una pregunta dominada.
+ * Número mínimo de intentos que necesitaremos
+ * posteriormente para poder considerar una pregunta
+ * como candidata a "dominada".
  *
  * IMPORTANTE:
  *
- * Aunque una pregunta tenga un 100 % de aciertos,
- * NO podrá considerarse dominada antes de alcanzar
- * estos intentos mínimos.
+ * En este momento todavía NO se utiliza para
+ * determinar el dominio.
+ *
+ * Lo utilizaremos en el siguiente paso.
  */
 
-const INTENTOS_MINIMOS_DOMINIO =
+const MINIMO_INTENTOS_DOMINIO =
     20;
 
 
 /*
- * Porcentaje mínimo necesario para considerar
- * que una pregunta está dominada.
- *
- * De momento lo dejamos en 90 %.
- *
- * Podremos cambiarlo posteriormente.
+ * Objeto que contiene el historial cargado
+ * desde localStorage.
  */
 
-const PORCENTAJE_DOMINIO =
-    90;
+let historialRendimiento =
+    {};
 
 
-/*
- * ========================================================
- * MODO ESTUDIO
- * ========================================================
- *
- * Los tests normales que se abren mediante ?datos=
- * SIEMPRE funcionan en modo estudio.
- *
- * En las sesiones:
- *
- * modoEstudio: true  → modo estudio
- * modoEstudio: false → modo examen
- *
- *
- * Una pregunta fallada entra en el sistema de repaso.
- *
- * El criterio de dominio definitivo se modificará
- * posteriormente para utilizar el historial de rendimiento.
- */
+/* ========================================================
+   MODO ESTUDIO
+   ========================================================
+
+   Los tests normales que se abren mediante ?datos=
+   SIEMPRE funcionan en modo estudio.
+
+   En las sesiones:
+
+   modoEstudio: true  → modo estudio
+   modoEstudio: false → modo examen
+
+   Una pregunta fallada entra en el sistema de repaso.
+
+   Para considerar que una pregunta está repasada
+   dentro del test debe conseguir DOS ACIERTOS
+   CONSECUTIVOS.
+
+   IMPORTANTE:
+
+   Esto NO significa que la pregunta esté dominada.
+
+   Es únicamente el sistema de repaso del test actual.
+
+   El dominio se calculará posteriormente mediante
+   el historial permanente.
+   ======================================================== */
 
 const MODO_ESTUDIO_POR_DEFECTO =
     true;
 
 
-/*
- * ========================================================
- * INTERVALOS DE REPETICIÓN
- * ========================================================
- *
- * Las preguntas de repaso nunca se muestran
- * inmediatamente después de fallarlas.
- *
- * Se espera un número aleatorio de preguntas
- * normales antes de volver a mostrarlas.
- */
+/* ========================================================
+   INTERVALOS DE REPETICIÓN
+   ========================================================
+
+   Las preguntas de repaso nunca se muestran
+   inmediatamente después de fallarlas.
+
+   Se espera un número aleatorio de preguntas
+   normales antes de volver a mostrarlas.
+   ======================================================== */
 
 const INTERVALO_REPETICION_MIN =
     3;
@@ -175,11 +149,9 @@ const INTERVALO_REPETICION_MAX =
     7;
 
 
-/*
- * ========================================================
- * PARÁMETROS DE URL
- * ========================================================
- */
+/* ========================================================
+   PARÁMETROS DE URL
+   ======================================================== */
 
 const parametros =
     new URLSearchParams(
@@ -198,11 +170,9 @@ const archivoDatos =
     parametros.get("datos");
 
 
-/*
- * ========================================================
- * ELEMENTOS DEL HTML
- * ========================================================
- */
+/* ========================================================
+   ELEMENTOS DEL HTML
+   ======================================================== */
 
 const preguntaElemento =
     document.getElementById("pregunta");
@@ -235,11 +205,9 @@ const buscador =
     document.getElementById("search");
 
 
-/*
- * ========================================================
- * ESTADO DEL MODO ESTUDIO
- * ========================================================
- */
+/* ========================================================
+   ESTADO DEL MODO ESTUDIO
+   ======================================================== */
 
 let modoEstudio =
     MODO_ESTUDIO_POR_DEFECTO;
@@ -263,7 +231,7 @@ let preguntaActualEsRepeticion =
 
 /*
  * Número de preguntas ORIGINALES mostradas.
- *
+
  * Las repeticiones NO incrementan este contador.
  */
 
@@ -280,48 +248,26 @@ let ultimaPreguntaFueRepeticion =
     false;
 
 
-/*
- * ========================================================
- * ESTADO DE LAS PREGUNTAS EN REPASO
- * ========================================================
- */
+/* ========================================================
+   ESTADO DE LAS PREGUNTAS EN REPASO
+   ======================================================== */
 
 let estadoPreguntasEstudio =
     new Map();
 
 
-/*
- * ========================================================
- * HISTORIAL DE RENDIMIENTO EN MEMORIA
- * ========================================================
- *
- * Contiene el historial cargado desde localStorage.
- *
- * La estructura es:
- *
- * {
- *     [idPregunta]: {
- *
- *         historial: [
- *             {
- *                 correcto: true,
- *                 fecha: 123456789
- *             }
- *         ]
- *
- *     }
- * }
- */
+/* ========================================================
+   CARGAR HISTORIAL DE RENDIMIENTO
+   ========================================================
 
-let historialRendimiento =
-    {};
+   Se ejecuta una vez al iniciar el test.
 
+   Si no existe historial todavía, comenzamos
+   con un objeto vacío.
 
-/*
- * ========================================================
- * CARGAR HISTORIAL DE RENDIMIENTO
- * ========================================================
- */
+   Si el contenido está corrupto, también empezamos
+   de cero para evitar que la aplicación falle.
+   ======================================================== */
 
 function cargarHistorialRendimiento() {
 
@@ -330,11 +276,6 @@ function cargarHistorialRendimiento() {
             CLAVE_HISTORIAL_RENDIMIENTO
         );
 
-
-    /*
-     * Si todavía no existe historial,
-     * comenzamos con un objeto vacío.
-     */
 
     if (!datos) {
 
@@ -353,11 +294,6 @@ function cargarHistorialRendimiento() {
                 datos
             );
 
-
-        /*
-         * Comprobamos que realmente sea
-         * un objeto válido.
-         */
 
         if (
             historial &&
@@ -395,11 +331,9 @@ function cargarHistorialRendimiento() {
 }
 
 
-/*
- * ========================================================
- * GUARDAR HISTORIAL DE RENDIMIENTO
- * ========================================================
- */
+/* ========================================================
+   GUARDAR HISTORIAL DE RENDIMIENTO
+   ======================================================== */
 
 function guardarHistorialRendimiento() {
 
@@ -426,145 +360,35 @@ function guardarHistorialRendimiento() {
 }
 
 
-/*
- * ========================================================
- * OBTENER ID DE UNA PREGUNTA
- * ========================================================
- *
- * Todas las preguntas nuevas deberían tener:
- *
- * "id": "pre-001"
- *
- * Si por cualquier motivo encontramos una pregunta
- * sin ID, devolvemos null.
- */
+/* ========================================================
+   REGISTRAR RESULTADO EN EL HISTORIAL
+   ========================================================
 
-function obtenerIdPregunta(
-    pregunta
-) {
+   Guarda una respuesta de una pregunta.
 
-    if (
-        !pregunta ||
-        pregunta.id === undefined ||
-        pregunta.id === null
-    ) {
+   true  → acertada
+   false → fallada
 
-        return null;
+   Solo se guardan las últimas
+   VENTANA_RENDIMIENTO respuestas.
+   ======================================================== */
 
-    }
-
-
-    const id =
-        String(
-            pregunta.id
-        ).trim();
-
-
-    if (!id) {
-
-        return null;
-
-    }
-
-
-    return id;
-
-}
-
-
-/*
- * ========================================================
- * OBTENER HISTORIAL DE UNA PREGUNTA
- * ========================================================
- */
-
-function obtenerHistorialPregunta(
-    pregunta
-) {
-
-    const id =
-        obtenerIdPregunta(
-            pregunta
-        );
-
-
-    /*
-     * Sin ID no podemos asociar
-     * correctamente el historial.
-     */
-
-    if (!id) {
-
-        return [];
-
-    }
-
-
-    /*
-     * Si todavía no existe historial
-     * para esta pregunta, devolvemos vacío.
-     */
-
-    if (
-        !historialRendimiento[id]
-    ) {
-
-        return [];
-
-    }
-
-
-    if (
-        !Array.isArray(
-            historialRendimiento[id].historial
-        )
-    ) {
-
-        return [];
-
-    }
-
-
-    return historialRendimiento[id].historial;
-
-}
-
-
-/*
- * ========================================================
- * REGISTRAR RESPUESTA DE UNA PREGUNTA
- * ========================================================
- *
- * Cada respuesta genera una entrada permanente.
- *
- * Ejemplo:
- *
- * {
- *     correcto: true,
- *     fecha: 1754930000000
- * }
- */
-
-function registrarRespuestaPregunta(
+function registrarResultadoHistorial(
     pregunta,
     esCorrecta
 ) {
 
-    const id =
-        obtenerIdPregunta(
-            pregunta
-        );
-
-
     /*
-     * Si no tiene ID no podemos guardar
-     * el rendimiento individual.
+     * Las preguntas necesitan un ID.
      */
 
-    if (!id) {
+    if (
+        !pregunta ||
+        !pregunta.id
+    ) {
 
         console.warn(
-            "La pregunta no tiene ID. No se puede guardar su historial:",
+            "No se puede guardar el historial: la pregunta no tiene id.",
             pregunta
         );
 
@@ -574,58 +398,64 @@ function registrarRespuestaPregunta(
     }
 
 
+    const id =
+        String(
+            pregunta.id
+        );
+
+
     /*
-     * Crear estructura de la pregunta
-     * si todavía no existe.
+     * Si todavía no existe historial
+     * para esta pregunta, lo creamos.
      */
 
     if (
-        !historialRendimiento[id]
-    ) {
-
-        historialRendimiento[id] = {
-
-            historial: []
-
-        };
-
-    }
-
-
-    if (
         !Array.isArray(
-            historialRendimiento[id].historial
+            historialRendimiento[id]
         )
     ) {
 
-        historialRendimiento[id].historial =
+        historialRendimiento[id] =
             [];
 
     }
 
 
     /*
-     * Añadir la respuesta al historial.
+     * Añadir el resultado actual.
      */
 
-    historialRendimiento[id].historial.push({
+    historialRendimiento[id].push(
+        Boolean(
+            esCorrecta
+        )
+    );
 
-        correcto:
-            Boolean(
-                esCorrecta
-            ),
 
-        fecha:
-            Date.now()
+    /*
+     * Mantener únicamente las últimas
+     * VENTANA_RENDIMIENTO respuestas.
+     */
 
-    });
+    if (
+        historialRendimiento[id].length >
+        VENTANA_RENDIMIENTO
+    ) {
+
+        historialRendimiento[id] =
+            historialRendimiento[id].slice(
+                -VENTANA_RENDIMIENTO
+            );
+
+    }
 
 
     /*
      * Guardar inmediatamente.
      *
-     * Así no perdemos la respuesta si el usuario
-     * abandona el test después.
+     * De esta forma, aunque el usuario cierre
+     * la página después de responder, el resultado
+     * ya queda almacenado.
      */
 
     guardarHistorialRendimiento();
@@ -633,14 +463,93 @@ function registrarRespuestaPregunta(
 }
 
 
-/*
- * ========================================================
- * OBTENER ÚLTIMAS RESPUESTAS
- * ========================================================
- *
- * Devuelve como máximo las últimas
- * VENTANA_RENDIMIENTO respuestas.
- */
+/* ========================================================
+   OBTENER HISTORIAL DE UNA PREGUNTA
+   ======================================================== */
+
+function obtenerHistorialPregunta(
+    pregunta
+) {
+
+    if (
+        !pregunta ||
+        !pregunta.id
+    ) {
+
+        return [];
+
+    }
+
+
+    const historial =
+        historialRendimiento[
+            String(
+                pregunta.id
+            )
+        ];
+
+
+    if (
+        !Array.isArray(
+            historial
+        )
+    ) {
+
+        return [];
+
+    }
+
+
+    return historial;
+
+}
+
+
+/* ========================================================
+   OBTENER NÚMERO DE INTENTOS HISTÓRICOS
+   ======================================================== */
+
+function obtenerIntentosPregunta(
+    pregunta
+) {
+
+    return obtenerHistorialPregunta(
+        pregunta
+    ).length;
+
+}
+
+
+/* ========================================================
+   OBTENER ACIERTOS RECIENTES
+   ======================================================== */
+
+function obtenerAciertosRecientes(
+    pregunta
+) {
+
+    const historial =
+        obtenerHistorialPregunta(
+            pregunta
+        );
+
+
+    return historial.filter(
+        resultado =>
+            resultado === true
+    ).length;
+
+}
+
+
+/* ========================================================
+   OBTENER RENDIMIENTO RECIENTE
+   ========================================================
+
+   Todavía no se muestra en pantalla.
+
+   Lo dejamos preparado para el siguiente paso.
+   ======================================================== */
 
 function obtenerRendimientoReciente(
     pregunta
@@ -656,149 +565,48 @@ function obtenerRendimientoReciente(
         historial.length === 0
     ) {
 
-        return [];
-
-    }
-
-
-    return historial.slice(
-        -VENTANA_RENDIMIENTO
-    );
-
-}
-
-
-/*
- * ========================================================
- * OBTENER NÚMERO TOTAL DE INTENTOS
- * ========================================================
- */
-
-function obtenerIntentosPregunta(
-    pregunta
-) {
-
-    const historial =
-        obtenerHistorialPregunta(
-            pregunta
-        );
-
-
-    return historial.length;
-
-}
-
-
-/*
- * ========================================================
- * OBTENER NÚMERO TOTAL DE ACIERTOS
- * ========================================================
- */
-
-function obtenerAciertosPregunta(
-    pregunta
-) {
-
-    const historial =
-        obtenerHistorialPregunta(
-            pregunta
-        );
-
-
-    return historial.filter(
-        respuesta =>
-            respuesta.correcto === true
-    ).length;
-
-}
-
-
-/*
- * ========================================================
- * OBTENER RENDIMIENTO RECIENTE
- * ========================================================
- *
- * El porcentaje se calcula únicamente
- * sobre las últimas VENTANA_RENDIMIENTO respuestas.
- *
- * Ejemplo:
- *
- * VENTANA_RENDIMIENTO = 100
- *
- * 90 aciertos de las últimas 100
- * → 90 %
- */
-
-function calcularRendimientoReciente(
-    pregunta
-) {
-
-    const historialReciente =
-        obtenerRendimientoReciente(
-            pregunta
-        );
-
-
-    if (
-        historialReciente.length === 0
-    ) {
-
         return 0;
 
     }
 
 
     const aciertosRecientes =
-        historialReciente.filter(
-            respuesta =>
-                respuesta.correcto === true
+        historial.filter(
+            resultado =>
+                resultado === true
         ).length;
 
 
     return Math.round(
         (
             aciertosRecientes /
-            historialReciente.length
-        ) * 100
+            historial.length
+        ) *
+        100
     );
 
 }
 
 
-/*
- * ========================================================
- * OBTENER NÚMERO DE RESPUESTAS RECIENTES
- * ========================================================
- */
+/* ========================================================
+   OBTENER CONFIANZA
+   ========================================================
 
-function obtenerIntentosRecientes(
-    pregunta
-) {
+   Todavía no utilizamos este valor para decidir
+   si una pregunta está dominada.
 
-    return obtenerRendimientoReciente(
-        pregunta
-    ).length;
+   Se deja preparado para el siguiente paso.
 
-}
+   La idea es distinguir entre:
 
+   100 % con 2 intentos
 
-/*
- * ========================================================
- * COMPROBAR SI UNA PREGUNTA PUEDE ESTAR DOMINADA
- * ========================================================
- *
- * NOTA:
- *
- * Esta función ya utiliza:
- *
- * - mínimo 20 intentos
- * - rendimiento reciente
- *
- * Más adelante conectaremos esta función
- * directamente con el sistema de repaso.
- */
+   y
 
-function estaPreguntaDominada(
+   100 % con 100 intentos.
+   ======================================================== */
+
+function obtenerConfianzaPregunta(
     pregunta
 ) {
 
@@ -808,48 +616,41 @@ function estaPreguntaDominada(
         );
 
 
-    /*
-     * Menos de 20 intentos:
-     *
-     * nunca puede estar dominada.
-     */
-
     if (
-        intentos <
-        INTENTOS_MINIMOS_DOMINIO
+        intentos === 0
     ) {
 
-        return false;
+        return 0;
 
     }
 
 
-    const rendimiento =
-        calcularRendimientoReciente(
-            pregunta
-        );
+    /*
+     * Por ahora utilizamos como medida sencilla
+     * la cantidad de historial disponible respecto
+     * a la ventana máxima.
+     *
+     * Más adelante podremos convertir esto en
+     * niveles de confianza.
+     */
 
-
-    return (
-        rendimiento >=
-        PORCENTAJE_DOMINIO
+    return Math.round(
+        Math.min(
+            intentos /
+            VENTANA_RENDIMIENTO,
+            1
+        ) *
+        100
     );
 
 }
 
 
-/*
- * ========================================================
- * CONFIGURAR LISTADO
- * ========================================================
- */
+/* ========================================================
+   CONFIGURAR LISTADO
+   ======================================================== */
 
 function configurarListado() {
-
-    /*
-     * Si no existe el listado en el HTML,
-     * no hacemos nada.
-     */
 
     if (!listaPreguntasElemento) {
 
@@ -901,11 +702,9 @@ function configurarListado() {
 }
 
 
-/*
- * ========================================================
- * OBTENER SESIONES
- * ========================================================
- */
+/* ========================================================
+   OBTENER SESIONES
+   ======================================================== */
 
 function obtenerSesiones() {
 
@@ -954,11 +753,9 @@ function obtenerSesiones() {
 }
 
 
-/*
- * ========================================================
- * BUSCAR SESIÓN ACTUAL
- * ========================================================
- */
+/* ========================================================
+   BUSCAR SESIÓN ACTUAL
+   ======================================================== */
 
 function obtenerSesionActual() {
 
@@ -981,11 +778,9 @@ function obtenerSesionActual() {
 }
 
 
-/*
- * ========================================================
- * CONFIGURAR MODO ESTUDIO
- * ========================================================
- */
+/* ========================================================
+   CONFIGURAR MODO ESTUDIO
+   ======================================================== */
 
 function configurarModoEstudio(
     sesion = null
@@ -1020,11 +815,9 @@ function configurarModoEstudio(
 }
 
 
-/*
- * ========================================================
- * REINICIAR ESTADO DEL MODO ESTUDIO
- * ========================================================
- */
+/* ========================================================
+   REINICIAR ESTADO DEL MODO ESTUDIO
+   ======================================================== */
 
 function reiniciarEstadoEstudio() {
 
@@ -1050,11 +843,9 @@ function reiniciarEstadoEstudio() {
 }
 
 
-/*
- * ========================================================
- * CARGAR PREGUNTAS
- * ========================================================
- */
+/* ========================================================
+   CARGAR PREGUNTAS
+   ======================================================== */
 
 async function cargarPreguntas() {
 
@@ -1117,11 +908,9 @@ async function cargarPreguntas() {
 }
 
 
-/*
- * ========================================================
- * CARGAR PREGUNTAS DE UNA SESIÓN
- * ========================================================
- */
+/* ========================================================
+   CARGAR PREGUNTAS DE UNA SESIÓN
+   ======================================================== */
 
 async function cargarPreguntasDeSesion() {
 
@@ -1375,11 +1164,9 @@ async function cargarPreguntasDeSesion() {
 }
 
 
-/*
- * ========================================================
- * CARGAR PREGUNTAS DE UN CAPÍTULO
- * ========================================================
- */
+/* ========================================================
+   CARGAR PREGUNTAS DE UN CAPÍTULO
+   ======================================================== */
 
 async function cargarPreguntasAntiguo() {
 
@@ -1480,11 +1267,9 @@ async function cargarPreguntasAntiguo() {
 }
 
 
-/*
- * ========================================================
- * MOSTRAR PREGUNTA
- * ========================================================
- */
+/* ========================================================
+   MOSTRAR PREGUNTA
+   ======================================================== */
 
 function mostrarPregunta(
     pregunta = null,
@@ -1629,11 +1414,9 @@ function mostrarPregunta(
 }
 
 
-/*
- * ========================================================
- * OBTENER SIGUIENTE PREGUNTA
- * ========================================================
- */
+/* ========================================================
+   OBTENER SIGUIENTE PREGUNTA
+   ======================================================== */
 
 function obtenerSiguientePregunta() {
 
@@ -1694,8 +1477,7 @@ function obtenerSiguientePregunta() {
 
     /*
      * Si existen repasos disponibles y
-     * todavía podemos intercalar preguntas normales,
-     * escogemos uno aleatoriamente.
+     * todavía podemos intercalar preguntas normales.
      */
 
     if (
@@ -1779,11 +1561,6 @@ function obtenerSiguientePregunta() {
         pendientes.length > 0
     ) {
 
-        /*
-         * Intentar evitar repetir inmediatamente
-         * la misma pregunta.
-         */
-
         const candidatos =
             pendientes.filter(
                 pregunta =>
@@ -1822,11 +1599,9 @@ function obtenerSiguientePregunta() {
 }
 
 
-/*
- * ========================================================
- * OBTENER REPETICIONES DISPONIBLES
- * ========================================================
- */
+/* ========================================================
+   OBTENER REPETICIONES DISPONIBLES
+   ======================================================== */
 
 function obtenerRepeticionesDisponibles() {
 
@@ -1841,7 +1616,7 @@ function obtenerRepeticionesDisponibles() {
         ) => {
 
             /*
-             * Si ya está dominada,
+             * Si ya está repasada,
              * no vuelve a aparecer.
              */
 
@@ -1880,11 +1655,9 @@ function obtenerRepeticionesDisponibles() {
 }
 
 
-/*
- * ========================================================
- * OBTENER PREGUNTAS PENDIENTES
- * ========================================================
- */
+/* ========================================================
+   OBTENER PREGUNTAS PENDIENTES
+   ======================================================== */
 
 function obtenerPreguntasPendientes() {
 
@@ -1917,11 +1690,9 @@ function obtenerPreguntasPendientes() {
 }
 
 
-/*
- * ========================================================
- * COMPROBAR SI UNA PREGUNTA ESTÁ PENDIENTE
- * ========================================================
- */
+/* ========================================================
+   COMPROBAR SI UNA PREGUNTA ESTÁ PENDIENTE
+   ======================================================== */
 
 function esPreguntaPendiente(
     pregunta
@@ -1941,11 +1712,9 @@ function esPreguntaPendiente(
 }
 
 
-/*
- * ========================================================
- * CREAR ESTADO DE UNA PREGUNTA FALLADA
- * ========================================================
- */
+/* ========================================================
+   CREAR ESTADO DE UNA PREGUNTA FALLADA
+   ======================================================== */
 
 function crearEstadoPregunta(
     pregunta
@@ -1976,11 +1745,9 @@ function crearEstadoPregunta(
 }
 
 
-/*
- * ========================================================
- * CALCULAR PRÓXIMA REPETICIÓN
- * ========================================================
- */
+/* ========================================================
+   CALCULAR PRÓXIMA REPETICIÓN
+   ======================================================== */
 
 function calcularProximaRepeticion() {
 
@@ -2004,11 +1771,9 @@ function calcularProximaRepeticion() {
 }
 
 
-/*
- * ========================================================
- * PROCESAR RESULTADO EN MODO ESTUDIO
- * ========================================================
- */
+/* ========================================================
+   PROCESAR RESULTADO EN MODO ESTUDIO
+   ======================================================== */
 
 function procesarResultadoEstudio(
     pregunta,
@@ -2088,12 +1853,14 @@ function procesarResultadoEstudio(
 
 
         /*
-         * Por ahora mantenemos la antigua
-         * regla de dos aciertos consecutivos.
+         * DOS ACIERTOS CONSECUTIVOS:
          *
-         * En el siguiente cambio sustituiremos
-         * esta regla por el sistema de dominio
-         * basado en historial.
+         * Pregunta repasada dentro del test.
+         *
+         * IMPORTANTE:
+         *
+         * Esto NO significa que esté dominada
+         * a nivel histórico.
          */
 
         if (
@@ -2110,6 +1877,10 @@ function procesarResultadoEstudio(
         }
 
 
+        /*
+         * Solo lleva un acierto.
+         */
+
         estado.proximaRepeticionEn =
             calcularProximaRepeticion();
 
@@ -2123,11 +1894,18 @@ function procesarResultadoEstudio(
      * ====================================================
      * RESPUESTA INCORRECTA
      * ====================================================
+     *
+     * Se rompe la racha.
      */
 
     estado.aciertosConsecutivos =
         0;
 
+
+    /*
+     * Vuelve a necesitar DOS ACIERTOS
+     * CONSECUTIVOS.
+     */
 
     estado.proximaRepeticionEn =
         calcularProximaRepeticion();
@@ -2135,11 +1913,9 @@ function procesarResultadoEstudio(
 }
 
 
-/*
- * ========================================================
- * CORREGIR / SIGUIENTE
- * ========================================================
- */
+/* ========================================================
+   CORREGIR / SIGUIENTE
+   ======================================================== */
 
 function corregirRespuesta() {
 
@@ -2228,23 +2004,6 @@ function corregirRespuesta() {
 
     /*
      * ====================================================
-     * REGISTRAR EN EL HISTORIAL
-     * ====================================================
-     *
-     * Esto se hace tanto si acertamos como si fallamos.
-     *
-     * El historial es independiente de las estadísticas
-     * del test actual.
-     */
-
-    registrarRespuestaPregunta(
-        preguntaQueSeCorrige,
-        esCorrecta
-    );
-
-
-    /*
-     * ====================================================
      * CORRECTA
      * ====================================================
      */
@@ -2321,6 +2080,23 @@ function corregirRespuesta() {
 
     /*
      * ====================================================
+     * GUARDAR EN HISTORIAL PERMANENTE
+     * ====================================================
+     *
+     * Este registro es independiente del sistema
+     * de repaso del test.
+     *
+     * Cada respuesta cuenta como un intento histórico.
+     */
+
+    registrarResultadoHistorial(
+        preguntaQueSeCorrige,
+        esCorrecta
+    );
+
+
+    /*
+     * ====================================================
      * PROCESAR MODO ESTUDIO
      * ====================================================
      */
@@ -2340,6 +2116,8 @@ function corregirRespuesta() {
 
     /*
      * No mostramos texto de correcto/incorrecto.
+     *
+     * La información se muestra mediante colores.
      */
 
     resultadoElemento.textContent =
@@ -2351,7 +2129,7 @@ function corregirRespuesta() {
 
 
     /*
-     * Actualizar estadísticas.
+     * Actualizar estadísticas del test.
      */
 
     actualizarEstadisticas();
@@ -2385,11 +2163,9 @@ function corregirRespuesta() {
 }
 
 
-/*
- * ========================================================
- * SIGUIENTE PREGUNTA
- * ========================================================
- */
+/* ========================================================
+   SIGUIENTE PREGUNTA
+   ======================================================== */
 
 function siguientePregunta() {
 
@@ -2422,11 +2198,9 @@ function siguientePregunta() {
 }
 
 
-/*
- * ========================================================
- * FINALIZAR TEST
- * ========================================================
- */
+/* ========================================================
+   FINALIZAR TEST
+   ======================================================== */
 
 function finalizarTest() {
 
@@ -2455,11 +2229,9 @@ function finalizarTest() {
 }
 
 
-/*
- * ========================================================
- * MEZCLAR ARRAY
- * ========================================================
- */
+/* ========================================================
+   MEZCLAR ARRAY
+   ======================================================== */
 
 function mezclarArray(
     array
@@ -2495,11 +2267,9 @@ function mezclarArray(
 }
 
 
-/*
- * ========================================================
- * ELEMENTO ALEATORIO
- * ========================================================
- */
+/* ========================================================
+   ELEMENTO ALEATORIO
+   ======================================================== */
 
 function obtenerElementoAleatorio(
     array
@@ -2529,16 +2299,15 @@ function obtenerElementoAleatorio(
 }
 
 
-/*
- * ========================================================
- * ESTADÍSTICAS DEL TEST
- * ========================================================
- *
- * Estas estadísticas siguen representando
- * EXCLUSIVAMENTE el test actual.
- *
- * No se mezclan con el historial permanente.
- */
+/* ========================================================
+   ESTADÍSTICAS DEL TEST
+   ========================================================
+
+   Estas estadísticas siguen siendo exclusivamente
+   las del TEST ACTUAL.
+
+   El historial de rendimiento es independiente.
+   ======================================================== */
 
 function actualizarEstadisticas() {
 
@@ -2571,11 +2340,16 @@ function actualizarEstadisticas() {
 }
 
 
-/*
- * ========================================================
- * REINICIAR ESTADÍSTICAS
- * ========================================================
- */
+/* ========================================================
+   REINICIAR ESTADÍSTICAS DEL TEST
+   ========================================================
+
+   IMPORTANTE:
+
+   Reiniciar un test NO borra el historial permanente.
+
+   El historial de rendimiento se conserva.
+   ======================================================== */
 
 function reiniciarEstadisticas() {
 
@@ -2594,13 +2368,6 @@ function reiniciarEstadisticas() {
     /*
      * Reiniciar completamente
      * el sistema de repaso.
-     *
-     * IMPORTANTE:
-     *
-     * NO borramos el historial de rendimiento.
-     *
-     * Reiniciar un test NO debe borrar
-     * el conocimiento acumulado de las preguntas.
      */
 
     reiniciarEstadoEstudio();
@@ -2667,11 +2434,9 @@ function reiniciarEstadisticas() {
 }
 
 
-/*
- * ========================================================
- * LISTADO DE PREGUNTAS
- * ========================================================
- */
+/* ========================================================
+   LISTADO DE PREGUNTAS
+   ======================================================== */
 
 function mostrarListado() {
 
@@ -2782,11 +2547,9 @@ function mostrarListado() {
 }
 
 
-/*
- * ========================================================
- * BUSCADOR
- * ========================================================
- */
+/* ========================================================
+   BUSCADOR
+   ======================================================== */
 
 function filtrarPreguntas() {
 
@@ -2835,11 +2598,9 @@ function filtrarPreguntas() {
 }
 
 
-/*
- * ========================================================
- * NOMBRE DEL CAPÍTULO
- * ========================================================
- */
+/* ========================================================
+   NOMBRE DEL CAPÍTULO
+   ======================================================== */
 
 function obtenerNombreAsignatura(
     nombreArchivo
@@ -2931,22 +2692,9 @@ function obtenerNombreAsignatura(
 }
 
 
-/*
- * ========================================================
- * INICIALIZAR HISTORIAL
- * ========================================================
- *
- * Lo hacemos antes de cargar las preguntas.
- */
-
-cargarHistorialRendimiento();
-
-
-/*
- * ========================================================
- * EVENTOS
- * ========================================================
- */
+/* ========================================================
+   EVENTOS
+   ======================================================== */
 
 if (botonTest) {
 
@@ -2978,12 +2726,28 @@ if (buscador) {
 }
 
 
+/* ========================================================
+   INICIAR
+   ======================================================== */
+
 /*
- * ========================================================
- * INICIAR
- * ========================================================
+ * Cargar primero el historial permanente.
+ *
+ * Esto NO modifica el test actual.
+ */
+
+cargarHistorialRendimiento();
+
+
+/*
+ * Configurar listado.
  */
 
 configurarListado();
+
+
+/*
+ * Cargar preguntas.
+ */
 
 cargarPreguntas();
