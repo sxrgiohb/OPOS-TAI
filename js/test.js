@@ -475,12 +475,23 @@ async function cargarPreguntasDeSesion() {
 
 
 /* ========================================================
-   SISTEMA ANTIGUO
+   CARGAR PREGUNTAS DE UN CAPÍTULO
 ======================================================== */
 
 async function cargarPreguntasAntiguo() {
 
     try {
+
+        /*
+         * archivoDatos tendrá un formato como:
+         *
+         * constitucion/titulo-i.json
+         *
+         * Por tanto la ruta será:
+         *
+         * data/constitucion/titulo-i.json
+         */
+
 
         asignaturaElemento.textContent =
             obtenerNombreAsignatura(
@@ -488,16 +499,24 @@ async function cargarPreguntasAntiguo() {
             );
 
 
+        const ruta =
+            `data/${archivoDatos}`;
+
+
+        console.log(
+            "Cargando capítulo:",
+            ruta
+        );
+
+
         const respuesta =
-            await fetch(
-                `datos/${archivoDatos}`
-            );
+            await fetch(ruta);
 
 
         if (!respuesta.ok) {
 
             throw new Error(
-                `No se ha podido cargar ${archivoDatos}`
+                `No se ha podido cargar ${ruta}`
             );
 
         }
@@ -535,7 +554,6 @@ async function cargarPreguntasAntiguo() {
         mostrarListado();
 
     }
-
 
     catch (error) {
 
