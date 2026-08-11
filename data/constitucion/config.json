@@ -1,87 +1,89 @@
+```json
 {
-"id": "constitucion",
-"nombre": "Constitución Española",
-"icono": "📜",
-"capitulos": [
-{
-"id": "preambulo",
-"nombre": "PREÁMBULO",
-"archivo": "preambulo.json"
-},
-{
-"id": "titulo_preliminar",
-"nombre": "TÍTULO PRELIMINAR",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_1",
-"nombre": "TÍTULO I",
-"archivo": "titulo-i.json"
-},
-{
-"id": "titulo_2",
-"nombre": "TÍTULO II",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_3",
-"nombre": "TÍTULO III",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_4",
-"nombre": "TÍTULO IV",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_5",
-"nombre": "TÍTULO V",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_6",
-"nombre": "TÍTULO VI",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_7",
-"nombre": "TÍTULO VII",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_8",
-"nombre": "TÍTULO VIII",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_9",
-"nombre": "TÍTULO IX",
-"archivo": "preguntas.json"
-},
-{
-"id": "titulo_10",
-"nombre": "TÍTULO X",
-"archivo": "preguntas.json"
-},
-{
-"id": "disposiciones_adicionales",
-"nombre": "DISPOSICIONES ADICIONALES",
-"archivo": "preguntas.json"
-},
-{
-"id": "disposiciones_transitorias",
-"nombre": "DISPOSICIONES TRANSITORIAS",
-"archivo": "preguntas.json"
-},
-{
-"id": "disposicion_derogatoria",
-"nombre": "DISPOSICIÓN DEROGATORIA",
-"archivo": "preguntas.json"
-},
-{
-"id": "disposicion_final",
-"nombre": "DISPOSICIÓN FINAL",
-"archivo": "preguntas.json"
+  "id": "constitucion",
+  "nombre": "Constitución Española",
+  "icono": "📜",
+  "capitulos": [
+    {
+      "id": "preambulo",
+      "nombre": "PREÁMBULO",
+      "archivo": "preambulo.json"
+    },
+    {
+      "id": "titulo_preliminar",
+      "nombre": "TÍTULO PRELIMINAR",
+      "archivo": "titulo-preliminar.json"
+    },
+    {
+      "id": "titulo_1",
+      "nombre": "TÍTULO I",
+      "archivo": "titulo-i.json"
+    },
+    {
+      "id": "titulo_2",
+      "nombre": "TÍTULO II",
+      "archivo": "titulo-ii.json"
+    },
+    {
+      "id": "titulo_3",
+      "nombre": "TÍTULO III",
+      "archivo": "titulo-iii.json"
+    },
+    {
+      "id": "titulo_4",
+      "nombre": "TÍTULO IV",
+      "archivo": "titulo-iv.json"
+    },
+    {
+      "id": "titulo_5",
+      "nombre": "TÍTULO V",
+      "archivo": "titulo-v.json"
+    },
+    {
+      "id": "titulo_6",
+      "nombre": "TÍTULO VI",
+      "archivo": "titulo-vi.json"
+    },
+    {
+      "id": "titulo_7",
+      "nombre": "TÍTULO VII",
+      "archivo": "titulo-vii.json"
+    },
+    {
+      "id": "titulo_8",
+      "nombre": "TÍTULO VIII",
+      "archivo": "titulo-viii.json"
+    },
+    {
+      "id": "titulo_9",
+      "nombre": "TÍTULO IX",
+      "archivo": "titulo-ix.json"
+    },
+    {
+      "id": "titulo_10",
+      "nombre": "TÍTULO X",
+      "archivo": "titulo-x.json"
+    },
+    {
+      "id": "disposiciones_adicionales",
+      "nombre": "DISPOSICIONES ADICIONALES",
+      "archivo": "disposiciones-adicionales.json"
+    },
+    {
+      "id": "disposiciones_transitorias",
+      "nombre": "DISPOSICIONES TRANSITORIAS",
+      "archivo": "disposiciones-transitorias.json"
+    },
+    {
+      "id": "disposicion_derogatoria",
+      "nombre": "DISPOSICIÓN DEROGATORIA",
+      "archivo": "disposicion-derogatoria.json"
+    },
+    {
+      "id": "disposicion_final",
+      "nombre": "DISPOSICIÓN FINAL",
+      "archivo": "disposicion-final.json"
+    }
+  ]
 }
-]
-}
+```
