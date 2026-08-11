@@ -588,7 +588,7 @@ function mostrarPregunta() {
 
 
     preguntaElemento.textContent =
-        `${indice + 1}. ${preguntaActual.pregunta}`;
+       preguntaActual.pregunta;
 
 
     opcionesElemento.innerHTML =
@@ -1045,17 +1045,14 @@ function mostrarListado() {
     }
 
 
-    listaPreguntasElemento.innerHTML =
-        "";
+    listaPreguntasElemento.innerHTML = "";
 
 
     preguntas.forEach(
         pregunta => {
 
             const elemento =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             elemento.className =
@@ -1067,9 +1064,7 @@ function mostrarListado() {
              */
 
             const preguntaTexto =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             preguntaTexto.className =
@@ -1085,40 +1080,19 @@ function mostrarListado() {
              */
 
             const respuestaTexto =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             respuestaTexto.className =
                 "respuesta-listado";
 
 
-            const etiqueta =
-                document.createElement(
-                    "strong"
-                );
-
-
-            etiqueta.textContent =
-                "✅ Respuesta: ";
-
-
-            respuestaTexto.appendChild(
-                etiqueta
-            );
-
-
-            respuestaTexto.appendChild(
-                document.createTextNode(
-                    pregunta.respuesta
-                )
-            );
+            respuestaTexto.textContent =
+                pregunta.respuesta;
 
 
             /*
-             * Texto para el buscador.
-             * Buscará en pregunta + respuesta.
+             * Texto utilizado por el buscador
              */
 
             elemento.dataset.busqueda =
@@ -1130,7 +1104,7 @@ function mostrarListado() {
 
 
             /*
-             * Añadir contenido
+             * Añadir pregunta y respuesta
              */
 
             elemento.appendChild(
@@ -1144,11 +1118,7 @@ function mostrarListado() {
 
 
             /*
-             * IMPORTANTE:
-             * NO hay evento click.
-             *
-             * El listado es solamente
-             * consultivo.
+             * El listado es solamente consultivo.
              */
 
             listaPreguntasElemento.appendChild(
@@ -1213,30 +1183,93 @@ function filtrarPreguntas() {
 
 
 /* ========================================================
-   NOMBRE DE LA ASIGNATURA
+   NOMBRE DEL CAPÍTULO
 ======================================================== */
 
 function obtenerNombreAsignatura(
     nombreArchivo
 ) {
 
-    return nombreArchivo
+    const partes =
+        nombreArchivo.split("/");
 
-        .replace(
-            /\.json$/i,
-            ""
-        )
 
-        .replace(
-            /[-_]+/g,
-            " "
-        )
+    const carpeta =
+        partes[0] || "";
 
-        .replace(
-            /\b\w/g,
-            letra =>
-                letra.toUpperCase()
-        );
+
+    const archivo =
+        partes[partes.length - 1] || "";
+
+
+    /*
+     * Nombre de la asignatura
+     */
+
+    let nombreAsignatura =
+        carpeta;
+
+
+    if (
+        carpeta.toLowerCase() ===
+        "constitucion"
+    ) {
+
+        nombreAsignatura =
+            "Constitución Española";
+
+    }
+
+
+    /*
+     * Nombre del capítulo
+     */
+
+    let nombreCapitulo =
+        archivo
+            .replace(
+                /\.json$/i,
+                ""
+            )
+            .replace(
+                /[-_]+/g,
+                " "
+            );
+
+
+    /*
+     * Nombres especiales
+     */
+
+    if (
+        nombreCapitulo.toLowerCase() ===
+        "preambulo"
+    ) {
+
+        nombreCapitulo =
+            "Preámbulo";
+
+    }
+
+
+    else {
+
+        nombreCapitulo =
+            nombreCapitulo
+                .replace(
+                    /\b\w/g,
+                    letra =>
+                        letra.toUpperCase()
+                );
+
+    }
+
+
+    return (
+        nombreAsignatura +
+        " - " +
+        nombreCapitulo
+    );
 
 }
 
