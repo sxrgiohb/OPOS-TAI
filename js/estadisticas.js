@@ -16,10 +16,10 @@
    Se separan tres conceptos:
 
    1. ESTADÍSTICAS DEL TEST
-      → Las seguirá gestionando test.js.
+      → Las gestiona test.js.
 
    2. ESTADO DE REPASO
-      → Lo seguirá gestionando test.js.
+      → Lo gestiona test.js.
 
    3. RENDIMIENTO GLOBAL
       → Lo gestiona este archivo.
@@ -34,7 +34,7 @@
 
 /*
  * Clave utilizada para guardar todas las estadísticas
- * de la aplicación en localStorage.
+ * permanentes de la aplicación.
  */
 
 const CLAVE_ESTADISTICAS =
@@ -42,28 +42,17 @@ const CLAVE_ESTADISTICAS =
 
 
 /*
- * Número máximo de respuestas que utilizaremos
- * para calcular el rendimiento reciente.
- *
- * Se puede cambiar en el futuro:
- *
- * 50
- * 100
- * 200
- * etc.
+ * Número máximo de respuestas recientes utilizadas
+ * para calcular el rendimiento.
  */
 
-const VENTANA_RENDIMIENTO =
+const VENTANA_ESTADISTICAS =
     100;
 
 
 /*
  * Número máximo de puntos que conservaremos
- * en el histórico de rendimiento de cada pregunta.
- *
- * Esto evita que el histórico crezca indefinidamente.
- *
- * Más adelante podemos modificar este valor.
+ * en el histórico de rendimiento.
  */
 
 const MAXIMO_PUNTOS_HISTORICO =
@@ -71,37 +60,51 @@ const MAXIMO_PUNTOS_HISTORICO =
 
 
 /* ========================================================
-   ESTRUCTURA DE UNA ESTADÍSTICA
-   ========================================================
-
-   Cada pregunta tendrá una estructura como:
-
-   {
-       historial: [
-           true,
-           true,
-           false
-       ],
-
-       aciertosTotales: 2,
-
-       fallosTotales: 1,
-
-       ultimaRespuesta:
-           "2026-08-11T20:30:00.000Z",
-
-       historico: [
-           {
-               fecha: "...",
-               rendimiento: 66.67
-           }
-       ]
-   }
-
-   "true"  = respuesta correcta
-   "false" = respuesta incorrecta
-
+   CREAR ESTADÍSTICA VACÍA
    ======================================================== */
+
+function crearEstadisticaPregunta() {
+
+    return {
+
+        /*
+         * Últimas respuestas utilizadas para calcular
+         * el rendimiento reciente.
+         */
+
+        historial: [],
+
+
+        /*
+         * Número total de respuestas correctas.
+         */
+
+        aciertosTotales: 0,
+
+
+        /*
+         * Número total de respuestas incorrectas.
+         */
+
+        fallosTotales: 0,
+
+
+        /*
+         * Fecha de la última respuesta.
+         */
+
+        ultimaRespuesta: null,
+
+
+        /*
+         * Evolución del rendimiento.
+         */
+
+        historico: []
+
+    };
+
+}
 
 
 /* ========================================================
@@ -115,11 +118,6 @@ function obtenerEstadisticasGlobales() {
             CLAVE_ESTADISTICAS
         );
 
-
-    /*
-     * Si todavía no existen estadísticas,
-     * devolvemos un objeto vacío.
-     */
 
     if (!datos) {
 
@@ -136,10 +134,6 @@ function obtenerEstadisticasGlobales() {
             );
 
 
-        /*
-         * Nos aseguramos de que sea un objeto.
-         */
-
         if (
             !estadisticas ||
             typeof estadisticas !== "object" ||
@@ -154,7 +148,6 @@ function obtenerEstadisticasGlobales() {
         return estadisticas;
 
     }
-
 
     catch (error) {
 
@@ -193,7 +186,6 @@ function guardarEstadisticasGlobales(
 
     }
 
-
     catch (error) {
 
         console.error(
@@ -210,66 +202,12 @@ function guardarEstadisticasGlobales(
 
 
 /* ========================================================
-   CREAR ESTADÍSTICA VACÍA
-   ======================================================== */
-
-function crearEstadisticaPregunta() {
-
-    return {
-
-        /*
-         * Respuestas utilizadas para calcular
-         * el rendimiento reciente.
-         */
-
-        historial: [],
-
-
-        /*
-         * Número total de respuestas correctas
-         * realizadas a lo largo del tiempo.
-         */
-
-        aciertosTotales: 0,
-
-
-        /*
-         * Número total de respuestas incorrectas
-         * realizadas a lo largo del tiempo.
-         */
-
-        fallosTotales: 0,
-
-
-        /*
-         * Fecha de la última respuesta.
-         */
-
-        ultimaRespuesta: null,
-
-
-        /*
-         * Evolución del rendimiento.
-         */
-
-        historico: []
-
-    };
-
-}
-
-
-/* ========================================================
    OBTENER ESTADÍSTICA DE UNA PREGUNTA
    ======================================================== */
 
 function obtenerEstadisticaPregunta(
     idPregunta
 ) {
-
-    /*
-     * Sin ID no podemos identificar la pregunta.
-     */
 
     if (!idPregunta) {
 
@@ -282,11 +220,6 @@ function obtenerEstadisticaPregunta(
         obtenerEstadisticasGlobales();
 
 
-    /*
-     * Si la pregunta todavía no tiene estadísticas,
-     * devolvemos una estructura vacía.
-     */
-
     if (
         !estadisticas[idPregunta]
     ) {
@@ -296,7 +229,68 @@ function obtenerEstadisticaPregunta(
     }
 
 
-    return estadisticas[idPregunta];
+    const estadistica =
+        estadisticas[idPregunta];
+
+
+    /*
+     * Compatibilidad y protección frente
+     * a datos antiguos o corruptos.
+     */
+
+    if (
+        !Array.isArray(
+            estadistica.historial
+        )
+    ) {
+
+        estadistica.historial =
+            [];
+
+    }
+
+
+    if (
+        !Number.isFinite(
+            Number(
+                estadistica.aciertosTotales
+            )
+        )
+    ) {
+
+        estadistica.aciertosTotales =
+            0;
+
+    }
+
+
+    if (
+        !Number.isFinite(
+            Number(
+                estadistica.fallosTotales
+            )
+        )
+    ) {
+
+        estadistica.fallosTotales =
+            0;
+
+    }
+
+
+    if (
+        !Array.isArray(
+            estadistica.historico
+        )
+    ) {
+
+        estadistica.historico =
+            [];
+
+    }
+
+
+    return estadistica;
 
 }
 
@@ -305,7 +299,7 @@ function obtenerEstadisticaPregunta(
    REGISTRAR UNA RESPUESTA
    ========================================================
 
-   Esta será la función principal que utilizará test.js.
+   Esta es la función principal que utiliza test.js.
 
    Ejemplo:
 
@@ -342,8 +336,8 @@ function registrarRespuestaPregunta(
 
 
     /*
-     * Crear estadísticas si es la primera vez
-     * que vemos esta pregunta.
+     * Crear estadística si es la primera vez
+     * que aparece esta pregunta.
      */
 
     if (
@@ -361,10 +355,7 @@ function registrarRespuestaPregunta(
 
 
     /*
-     * Asegurarnos de que el historial existe.
-     *
-     * Esto también hace el sistema más resistente
-     * frente a datos antiguos.
+     * Asegurar estructura.
      */
 
     if (
@@ -379,8 +370,48 @@ function registrarRespuestaPregunta(
     }
 
 
+    if (
+        !Array.isArray(
+            estadistica.historico
+        )
+    ) {
+
+        estadistica.historico =
+            [];
+
+    }
+
+
+    if (
+        !Number.isFinite(
+            Number(
+                estadistica.aciertosTotales
+            )
+        )
+    ) {
+
+        estadistica.aciertosTotales =
+            0;
+
+    }
+
+
+    if (
+        !Number.isFinite(
+            Number(
+                estadistica.fallosTotales
+            )
+        )
+    ) {
+
+        estadistica.fallosTotales =
+            0;
+
+    }
+
+
     /*
-     * Normalizar el valor.
+     * Normalizar resultado.
      */
 
     const resultado =
@@ -390,7 +421,7 @@ function registrarRespuestaPregunta(
 
 
     /*
-     * Añadir la respuesta al historial reciente.
+     * Guardar en historial reciente.
      */
 
     estadistica.historial.push(
@@ -399,13 +430,13 @@ function registrarRespuestaPregunta(
 
 
     /*
-     * Si superamos la ventana configurada,
-     * eliminamos las respuestas más antiguas.
+     * Mantener únicamente las últimas
+     * VENTANA_ESTADISTICAS respuestas.
      */
 
     while (
         estadistica.historial.length >
-        VENTANA_RENDIMIENTO
+        VENTANA_ESTADISTICAS
     ) {
 
         estadistica.historial.shift();
@@ -414,7 +445,7 @@ function registrarRespuestaPregunta(
 
 
     /*
-     * Actualizar estadísticas históricas.
+     * Actualizar totales históricos.
      */
 
     if (resultado) {
@@ -431,7 +462,7 @@ function registrarRespuestaPregunta(
 
 
     /*
-     * Guardar fecha de la última respuesta.
+     * Guardar fecha.
      */
 
     estadistica.ultimaRespuesta =
@@ -439,17 +470,17 @@ function registrarRespuestaPregunta(
 
 
     /*
-     * Calcular el rendimiento actual.
+     * Calcular rendimiento actual.
      */
 
     const rendimiento =
-        calcularRendimientoReciente(
+        calcularRendimientoEstadistica(
             estadistica
         );
 
 
     /*
-     * Guardar un nuevo punto en el histórico.
+     * Guardar evolución.
      */
 
     guardarPuntoHistorico(
@@ -467,10 +498,6 @@ function registrarRespuestaPregunta(
     );
 
 
-    /*
-     * Devolver la estadística actualizada.
-     */
-
     return estadistica;
 
 }
@@ -478,21 +505,9 @@ function registrarRespuestaPregunta(
 
 /* ========================================================
    CALCULAR RENDIMIENTO RECIENTE
-   ========================================================
-
-   El rendimiento se calcula únicamente sobre las
-   respuestas existentes dentro de VENTANA_RENDIMIENTO.
-
-   Ejemplo:
-
-   80 aciertos
-   20 fallos
-
-   → 80%
-
    ======================================================== */
 
-function calcularRendimientoReciente(
+function calcularRendimientoEstadistica(
     estadistica
 ) {
 
@@ -529,10 +544,10 @@ function calcularRendimientoReciente(
 
 
 /* ========================================================
-   OBTENER RENDIMIENTO RECIENTE DE UNA PREGUNTA
+   OBTENER RENDIMIENTO RECIENTE
    ======================================================== */
 
-function obtenerRendimientoReciente(
+function obtenerRendimientoRecientePregunta(
     idPregunta
 ) {
 
@@ -549,7 +564,7 @@ function obtenerRendimientoReciente(
     }
 
 
-    return calcularRendimientoReciente(
+    return calcularRendimientoEstadistica(
         estadistica
     );
 
@@ -591,20 +606,6 @@ function obtenerNumeroRespuestasRecientes(
    CALCULAR CONFIANZA
    ========================================================
 
-   IMPORTANTE:
-
-   La confianza NO es lo mismo que el rendimiento.
-
-   Ejemplo:
-
-   2/2   → 100% de rendimiento
-   50/50 → 100% de rendimiento
-   100/100 → 100% de rendimiento
-
-   Pero tenemos mucha más información en el último caso.
-
-   De momento utilizamos cuatro niveles sencillos:
-
    0 respuestas
        → ninguna
 
@@ -619,8 +620,6 @@ function obtenerNumeroRespuestasRecientes(
 
    100 respuestas
        → muy alta
-
-   Los umbrales pueden modificarse posteriormente.
 
    ======================================================== */
 
@@ -662,7 +661,7 @@ function obtenerConfianza(
 
 
     if (
-        numeroRespuestas < VENTANA_RENDIMIENTO
+        numeroRespuestas < VENTANA_ESTADISTICAS
     ) {
 
         return "alta";
@@ -677,16 +676,6 @@ function obtenerConfianza(
 
 /* ========================================================
    OBTENER INFORMACIÓN COMPLETA DE RENDIMIENTO
-   ========================================================
-
-   Devuelve algo como:
-
-   {
-       rendimiento: 94,
-       respuestas: 100,
-       confianza: "muy alta"
-   }
-
    ======================================================== */
 
 function obtenerRendimientoPregunta(
@@ -723,7 +712,7 @@ function obtenerRendimientoPregunta(
 
 
     const rendimiento =
-        calcularRendimientoReciente(
+        calcularRendimientoEstadistica(
             estadistica
         );
 
@@ -731,7 +720,9 @@ function obtenerRendimientoPregunta(
     return {
 
         rendimiento:
-            rendimiento,
+            Number(
+                rendimiento.toFixed(2)
+            ),
 
         respuestas:
             respuestas,
@@ -748,18 +739,6 @@ function obtenerRendimientoPregunta(
 
 /* ========================================================
    GUARDAR PUNTO HISTÓRICO
-   ========================================================
-
-   Guardamos la evolución del rendimiento para poder
-   crear gráficas posteriormente.
-
-   Ejemplo:
-
-   {
-       fecha: "2026-08-11T20:30:00.000Z",
-       rendimiento: 94
-   }
-
    ======================================================== */
 
 function guardarPuntoHistorico(
@@ -803,10 +782,6 @@ function guardarPuntoHistorico(
         punto
     );
 
-
-    /*
-     * Limitar el tamaño del histórico.
-     */
 
     while (
         estadistica.historico.length >
@@ -852,7 +827,7 @@ function obtenerHistoricoPregunta(
 
 
 /* ========================================================
-   OBTENER ESTADÍSTICAS HISTÓRICAS
+   OBTENER TOTALES HISTÓRICOS
    ======================================================== */
 
 function obtenerTotalesPregunta(
@@ -977,14 +952,6 @@ function borrarEstadisticasPregunta(
 
 /* ========================================================
    BORRAR TODAS LAS ESTADÍSTICAS
-   ========================================================
-
-   Esta función NO la utilizaremos todavía desde la
-   interfaz.
-
-   Se deja preparada para futuras opciones de
-   configuración.
-
    ======================================================== */
 
 function borrarTodasLasEstadisticas() {
@@ -994,24 +961,3 @@ function borrarTodasLasEstadisticas() {
     );
 
 }
-
-
-/* ========================================================
-   EXPORTAR / EXPONER FUNCIONES
-   ========================================================
-
-   Como este archivo se carga mediante <script>,
-   las funciones quedan disponibles globalmente.
-
-   Por ejemplo, desde test.js podremos utilizar:
-
-   registrarRespuestaPregunta(
-       pregunta.id,
-       true
-   );
-
-   obtenerRendimientoPregunta(
-       pregunta.id
-   );
-
-   ======================================================== */
