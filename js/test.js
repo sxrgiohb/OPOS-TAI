@@ -3,34 +3,111 @@ let indice = 0;
 
 
 /*
- * Estado del botón del test:
- * "corregir" → todavía no hemos corregido
+ * ========================================================
+ * ESTADO DEL BOTÓN DEL TEST
+ * ========================================================
+ *
+ * "corregir"  → todavía no hemos corregido
  * "siguiente" → ya hemos corregido y esperamos al usuario
  */
 
 let estadoBoton = "corregir";
 
 
-/* ========================================================
-   ESTADÍSTICAS
-======================================================== */
+/*
+ * ========================================================
+ * ESTADÍSTICAS
+ * ========================================================
+ */
 
 let aciertos = 0;
 let fallos = 0;
 let respondidas = 0;
 
 
-/* ========================================================
-   CONFIGURACIÓN
-======================================================== */
+/*
+ * ========================================================
+ * CONFIGURACIÓN
+ * ========================================================
+ */
 
 const CLAVE_SESIONES =
     "opos_tai_sesiones";
 
 
-/* ========================================================
-   OBTENER PARÁMETROS DE LA URL
-======================================================== */
+/*
+ * ========================================================
+ * MODO ESTUDIO
+ * ========================================================
+ *
+ * Los tests normales que se abren mediante ?datos=
+ * SIEMPRE funcionan en modo estudio.
+ *
+ * En las sesiones:
+ *
+ *   modoEstudio: true  → modo estudio
+ *   modoEstudio: false → modo examen
+ *
+ *
+ * Una pregunta fallada entra en el sistema de repaso.
+ *
+ * Para considerar que una pregunta está dominada
+ * debe conseguir DOS ACIERTOS CONSECUTIVOS.
+ *
+ * Si falla durante el repaso:
+ *
+ *   aciertos consecutivos → 0
+ *
+ * y vuelve a necesitar dos aciertos consecutivos.
+ */
+
+
+/*
+ * Por defecto:
+ *
+ * Los tests que NO son sesiones utilizan
+ * siempre modo estudio.
+ */
+
+const MODO_ESTUDIO_POR_DEFECTO =
+    true;
+
+
+/*
+ * ========================================================
+ * INTERVALOS DE REPETICIÓN
+ * ========================================================
+ *
+ * Las preguntas de repaso nunca se muestran
+ * inmediatamente después de fallarlas.
+ *
+ * Se espera un número aleatorio de preguntas
+ * normales antes de volver a mostrarlas.
+ *
+ * Ejemplo:
+ *
+ *   P1 ❌
+ *   P2
+ *   P3
+ *   P4
+ *   P5
+ *   P1 🔁
+ *
+ * El intervalo concreto es aleatorio.
+ */
+
+const INTERVALO_REPETICION_MIN =
+    3;
+
+const INTERVALO_REPETICION_MAX =
+    7;
+
+
+/*
+ * ========================================================
+ * PARÁMETROS DE URL
+ * ========================================================
+ */
 
 const parametros =
     new URLSearchParams(
@@ -50,9 +127,11 @@ const archivoDatos =
     parametros.get("datos");
 
 
-/* ========================================================
-   ELEMENTOS DEL HTML
-======================================================== */
+/*
+ * ========================================================
+ * ELEMENTOS DEL HTML
+ * ========================================================
+ */
 
 const preguntaElemento =
     document.getElementById("pregunta");
@@ -94,9 +173,109 @@ const buscador =
     document.getElementById("search");
 
 
-/* ========================================================
-   CONFIGURAR LISTADO
-======================================================== */
+/*
+ * ========================================================
+ * ESTADO DEL MODO ESTUDIO
+ * ========================================================
+ */
+
+
+/*
+ * Indica si el test actual utiliza modo estudio.
+ */
+
+let modoEstudio =
+    MODO_ESTUDIO_POR_DEFECTO;
+
+
+/*
+ * Pregunta que se está mostrando actualmente.
+ */
+
+let preguntaActual =
+    null;
+
+
+/*
+ * Indica si la pregunta actual es una repetición.
+ */
+
+let preguntaActualEsRepeticion =
+    false;
+
+
+/*
+ * Número de preguntas ORIGINALES mostradas.
+ *
+ * Las repeticiones NO incrementan este contador.
+ *
+ * Por tanto, si el test tiene 50 preguntas:
+ *
+ *   preguntasNormalesMostradas = 50
+ *
+ * aunque se hayan mostrado 70 preguntas
+ * contando los repasos.
+ */
+
+let preguntasNormalesMostradas =
+    0;
+
+
+/*
+ * Indica si la última pregunta mostrada
+ * fue una repetición.
+ *
+ * Sirve para impedir que dos preguntas
+ * de repaso aparezcan consecutivamente
+ * mientras todavía quedan preguntas normales.
+ */
+
+let ultimaPreguntaFueRepeticion =
+    false;
+
+
+/*
+ * ========================================================
+ * ESTADO DE LAS PREGUNTAS EN REPASO
+ * ========================================================
+ *
+ * Cada pregunta fallada tendrá un objeto como:
+ *
+ * {
+ *     aciertosConsecutivos: 0,
+ *     pendiente: true,
+ *     proximaRepeticionEn: 8
+ * }
+ *
+ *
+ * "aciertosConsecutivos":
+ *
+ *   0 → no ha conseguido ningún acierto consecutivo
+ *   1 → ha acertado una vez
+ *   2 → DOMINADA
+ *
+ *
+ * Cuando se alcanza 2:
+ *
+ *   pendiente = false
+ *
+ *
+ * Si falla:
+ *
+ *   aciertosConsecutivos = 0
+ *
+ * y vuelve a necesitar dos aciertos seguidos.
+ */
+
+let estadoPreguntasEstudio =
+    new Map();
+
+
+/*
+ * ========================================================
+ * CONFIGURAR LISTADO
+ * ========================================================
+ */
 
 function configurarListado() {
 
@@ -113,7 +292,9 @@ function configurarListado() {
 
 
     const listadoCard =
-        listaPreguntasElemento.closest(".card");
+        listaPreguntasElemento.closest(
+            ".card"
+        );
 
 
     if (!listadoCard) {
@@ -125,6 +306,7 @@ function configurarListado() {
 
     /*
      * SESIÓN:
+     *
      * ocultamos completamente el listado.
      */
 
@@ -138,6 +320,7 @@ function configurarListado() {
 
     /*
      * CAPÍTULO:
+     *
      * mantenemos visible el listado.
      */
 
@@ -151,9 +334,11 @@ function configurarListado() {
 }
 
 
-/* ========================================================
-   OBTENER SESIONES
-======================================================== */
+/*
+ * ========================================================
+ * OBTENER SESIONES
+ * ========================================================
+ */
 
 function obtenerSesiones() {
 
@@ -173,10 +358,14 @@ function obtenerSesiones() {
     try {
 
         const sesiones =
-            JSON.parse(datos);
+            JSON.parse(
+                datos
+            );
 
 
-        return Array.isArray(sesiones)
+        return Array.isArray(
+            sesiones
+        )
             ? sesiones
             : [];
 
@@ -198,9 +387,11 @@ function obtenerSesiones() {
 }
 
 
-/* ========================================================
-   BUSCAR SESIÓN ACTUAL
-======================================================== */
+/*
+ * ========================================================
+ * BUSCAR SESIÓN ACTUAL
+ * ========================================================
+ */
 
 function obtenerSesionActual() {
 
@@ -223,9 +414,83 @@ function obtenerSesionActual() {
 }
 
 
-/* ========================================================
-   CARGAR PREGUNTAS
-======================================================== */
+/*
+ * ========================================================
+ * CONFIGURAR MODO ESTUDIO
+ * ========================================================
+ */
+
+function configurarModoEstudio(
+    sesion = null
+) {
+
+    /*
+     * TEST NORMAL:
+     *
+     * Siempre modo estudio.
+     */
+
+    if (!idSesion) {
+
+        modoEstudio =
+            true;
+
+        return;
+
+    }
+
+
+    /*
+     * SESIÓN:
+     *
+     * El valor se obtiene de la configuración
+     * guardada de la sesión.
+     *
+     * true  → modo estudio
+     * false → modo examen
+     */
+
+    modoEstudio =
+        sesion?.modoEstudio === true;
+
+}
+
+
+/*
+ * ========================================================
+ * REINICIAR ESTADO DEL MODO ESTUDIO
+ * ========================================================
+ */
+
+function reiniciarEstadoEstudio() {
+
+    estadoPreguntasEstudio =
+        new Map();
+
+
+    preguntasNormalesMostradas =
+        0;
+
+
+    ultimaPreguntaFueRepeticion =
+        false;
+
+
+    preguntaActual =
+        null;
+
+
+    preguntaActualEsRepeticion =
+        false;
+
+}
+
+
+/*
+ * ========================================================
+ * CARGAR PREGUNTAS
+ * ========================================================
+ */
 
 async function cargarPreguntas() {
 
@@ -266,7 +531,9 @@ async function cargarPreguntas() {
 
     catch (error) {
 
-        console.error(error);
+        console.error(
+            error
+        );
 
 
         if (estadoElemento) {
@@ -276,7 +543,8 @@ async function cargarPreguntas() {
 
 
             estadoElemento.textContent =
-                "❌ " + error.message;
+                "❌ " +
+                error.message;
 
         }
 
@@ -285,9 +553,11 @@ async function cargarPreguntas() {
 }
 
 
-/* ========================================================
-   CARGAR PREGUNTAS DE UNA SESIÓN
-======================================================== */
+/*
+ * ========================================================
+ * CARGAR PREGUNTAS DE UNA SESIÓN
+ * ========================================================
+ */
 
 async function cargarPreguntasDeSesion() {
 
@@ -318,6 +588,15 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
+     * Configurar modo de la sesión.
+     */
+
+    configurarModoEstudio(
+        sesion
+    );
+
+
+    /*
      * Mostrar nombre de la sesión.
      */
 
@@ -334,11 +613,12 @@ async function cargarPreguntasDeSesion() {
      * Aquí almacenaremos todas las preguntas.
      */
 
-    let preguntasCombinadas = [];
+    let preguntasCombinadas =
+        [];
 
 
     /*
-     * Cargar cada archivo seleccionado.
+     * Cargar cada capítulo.
      */
 
     for (
@@ -392,7 +672,9 @@ async function cargarPreguntasDeSesion() {
 
 
         const respuesta =
-            await fetch(ruta);
+            await fetch(
+                ruta
+            );
 
 
         if (!respuesta.ok) {
@@ -472,6 +754,13 @@ async function cargarPreguntasDeSesion() {
 
     /*
      * Limitar número de preguntas.
+     *
+     * IMPORTANTE:
+     *
+     * Este número representa las preguntas
+     * DIFERENTES del test.
+     *
+     * Las repeticiones no se añaden al array.
      */
 
     const numeroPreguntas =
@@ -485,7 +774,8 @@ async function cargarPreguntasDeSesion() {
             numeroPreguntas
         ) &&
         numeroPreguntas > 0 &&
-        preguntas.length > numeroPreguntas
+        preguntas.length >
+            numeroPreguntas
     ) {
 
         preguntas =
@@ -498,16 +788,19 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
+     * Reiniciar estado.
+     */
+
+    reiniciarEstadoEstudio();
+
+
+    /*
      * Hemos terminado de cargar.
      */
 
     estadoElemento.style.display =
         "none";
 
-
-    /*
-     * Estadísticas.
-     */
 
     actualizarEstadisticas();
 
@@ -516,25 +809,30 @@ async function cargarPreguntasDeSesion() {
      * Primera pregunta.
      */
 
-    indice = 0;
+    indice =
+        0;
+
 
     mostrarPregunta();
-
-
-    /*
-     * IMPORTANTE:
-     *
-     * NO mostramos el listado en sesiones.
-     */
 
 }
 
 
-/* ========================================================
-   CARGAR PREGUNTAS DE UN CAPÍTULO
-======================================================== */
+/*
+ * ========================================================
+ * CARGAR PREGUNTAS DE UN CAPÍTULO
+ * ========================================================
+ */
 
 async function cargarPreguntasAntiguo() {
+
+    /*
+     * Los tests antiguos SIEMPRE utilizan
+     * modo estudio.
+     */
+
+    configurarModoEstudio();
+
 
     /*
      * archivoDatos:
@@ -563,7 +861,9 @@ async function cargarPreguntasAntiguo() {
 
 
     const respuesta =
-        await fetch(ruta);
+        await fetch(
+            ruta
+        );
 
 
     if (!respuesta.ok) {
@@ -580,7 +880,9 @@ async function cargarPreguntasAntiguo() {
 
 
     if (
-        !Array.isArray(preguntas) ||
+        !Array.isArray(
+            preguntas
+        ) ||
         preguntas.length === 0
     ) {
 
@@ -591,11 +893,19 @@ async function cargarPreguntasAntiguo() {
     }
 
 
+    /*
+     * Reiniciar sistema de estudio.
+     */
+
+    reiniciarEstadoEstudio();
+
+
     estadoElemento.style.display =
         "none";
 
 
-    indice = 0;
+    indice =
+        0;
 
 
     actualizarEstadisticas();
@@ -613,33 +923,64 @@ async function cargarPreguntasAntiguo() {
 }
 
 
-/* ========================================================
-   MOSTRAR PREGUNTA
-======================================================== */
+/*
+ * ========================================================
+ * MOSTRAR PREGUNTA
+ * ========================================================
+ */
 
-function mostrarPregunta() {
+function mostrarPregunta(
+    pregunta = null,
+    esRepeticion = false
+) {
 
-    if (preguntas.length === 0) {
+    /*
+     * Si no se proporciona una pregunta,
+     * obtenemos la siguiente mediante el
+     * sistema de selección.
+     */
 
-        preguntaElemento.textContent =
-            "No hay preguntas.";
+    if (!pregunta) {
+
+        pregunta =
+            obtenerSiguientePregunta();
 
 
-        opcionesElemento.innerHTML =
-            "";
+        if (!pregunta) {
+
+            finalizarTest();
+
+            return;
+
+        }
 
 
-        return;
+        esRepeticion =
+            esPreguntaPendiente(
+                pregunta
+            );
 
     }
 
 
-    const preguntaActual =
-        preguntas[indice];
+    /*
+     * Guardar estado actual.
+     */
 
+    preguntaActual =
+        pregunta;
+
+
+    preguntaActualEsRepeticion =
+        esRepeticion;
+
+
+    /*
+     * Mostrar pregunta.
+     */
 
     preguntaElemento.textContent =
-        preguntaActual.pregunta;
+        pregunta.pregunta;
 
 
     opcionesElemento.innerHTML =
@@ -650,7 +991,7 @@ function mostrarPregunta() {
      * Crear opciones.
      */
 
-    preguntaActual.opciones.forEach(
+    pregunta.opciones.forEach(
         (
             opcion,
             posicion
@@ -691,7 +1032,8 @@ function mostrarPregunta() {
 
             label.appendChild(
                 document.createTextNode(
-                    " " + opcion
+                    " " +
+                    opcion
                 )
             );
 
@@ -705,7 +1047,7 @@ function mostrarPregunta() {
 
 
     /*
-     * Limpiar cualquier mensaje anterior.
+     * Limpiar resultado anterior.
      */
 
     resultadoElemento.textContent =
@@ -717,7 +1059,7 @@ function mostrarPregunta() {
 
 
     /*
-     * El botón vuelve a ser "Corregir".
+     * El botón vuelve a "Corregir".
      */
 
     estadoBoton =
@@ -730,14 +1072,561 @@ function mostrarPregunta() {
 }
 
 
-/* ========================================================
-   CORREGIR / SIGUIENTE
-======================================================== */
+/*
+ * ========================================================
+ * OBTENER SIGUIENTE PREGUNTA
+ * ========================================================
+ */
+
+function obtenerSiguientePregunta() {
+
+    /*
+     * ====================================================
+     * MODO EXAMEN
+     * ====================================================
+     *
+     * No existen repeticiones.
+     */
+
+    if (!modoEstudio) {
+
+        if (
+            indice >=
+            preguntas.length
+        ) {
+
+            return null;
+
+        }
+
+
+        const siguiente =
+            preguntas[indice];
+
+
+        indice++;
+
+
+        preguntasNormalesMostradas++;
+
+
+        ultimaPreguntaFueRepeticion =
+            false;
+
+
+        return siguiente;
+
+    }
+
+
+    /*
+     * ====================================================
+     * MODO ESTUDIO
+     * ====================================================
+     */
+
+
+    /*
+     * Buscar preguntas de repaso que
+     * ya hayan cumplido su intervalo.
+     */
+
+    const repeticionesDisponibles =
+        obtenerRepeticionesDisponibles();
+
+
+    /*
+     * Si existen repasos disponibles y
+     * todavía podemos intercalar preguntas normales,
+     * escogemos uno aleatoriamente.
+     *
+     * Nunca mostramos dos repeticiones seguidas
+     * mientras queden preguntas normales.
+     */
+
+    if (
+        repeticionesDisponibles.length > 0 &&
+        !(
+            ultimaPreguntaFueRepeticion &&
+            indice < preguntas.length
+        )
+    ) {
+
+        const candidatos =
+            repeticionesDisponibles.filter(
+                pregunta =>
+                    pregunta !==
+                    preguntaActual
+            );
+
+
+        const lista =
+            candidatos.length > 0
+                ? candidatos
+                : repeticionesDisponibles;
+
+
+        const repeticion =
+            obtenerElementoAleatorio(
+                lista
+            );
+
+
+        ultimaPreguntaFueRepeticion =
+            true;
+
+
+        return repeticion;
+
+    }
+
+
+    /*
+     * ====================================================
+     * PREGUNTAS NORMALES
+     * ====================================================
+     */
+
+    if (
+        indice <
+        preguntas.length
+    ) {
+
+        const siguiente =
+            preguntas[indice];
+
+
+        indice++;
+
+
+        preguntasNormalesMostradas++;
+
+
+        ultimaPreguntaFueRepeticion =
+            false;
+
+
+        return siguiente;
+
+    }
+
+
+    /*
+     * ====================================================
+     * FIN DE LAS PREGUNTAS NORMALES
+     * ====================================================
+     *
+     * Aquí cambia la regla:
+     *
+     * Si ya no quedan preguntas normales,
+     * mostramos las preguntas pendientes aunque
+     * todavía no hayan alcanzado su intervalo.
+     *
+     * Si hay varias, se escoge aleatoriamente.
+     */
+
+    const pendientes =
+        obtenerPreguntasPendientes();
+
+
+    if (
+        pendientes.length > 0
+    ) {
+
+        /*
+         * Intentar evitar repetir inmediatamente
+         * la misma pregunta.
+         */
+
+        const candidatos =
+            pendientes.filter(
+                pregunta =>
+                    pregunta !==
+                    preguntaActual
+            );
+
+
+        const lista =
+            candidatos.length > 0
+                ? candidatos
+                : pendientes;
+
+
+        const repeticion =
+            obtenerElementoAleatorio(
+                lista
+            );
+
+
+        ultimaPreguntaFueRepeticion =
+            true;
+
+
+        return repeticion;
+
+    }
+
+
+    /*
+     * No quedan preguntas.
+     */
+
+    return null;
+
+}
+
+
+/*
+ * ========================================================
+ * OBTENER REPETICIONES DISPONIBLES
+ * ========================================================
+ */
+
+function obtenerRepeticionesDisponibles() {
+
+    const resultado =
+        [];
+
+
+    estadoPreguntasEstudio.forEach(
+        (
+            estado,
+            pregunta
+        ) => {
+
+            /*
+             * Si ya está dominada,
+             * no vuelve a aparecer.
+             */
+
+            if (
+                !estado.pendiente
+            ) {
+
+                return;
+
+            }
+
+
+            /*
+             * La repetición puede aparecer
+             * cuando se ha alcanzado la posición
+             * programada.
+             */
+
+            if (
+                preguntasNormalesMostradas >=
+                estado.proximaRepeticionEn
+            ) {
+
+                resultado.push(
+                    pregunta
+                );
+
+            }
+
+        }
+    );
+
+
+    return resultado;
+
+}
+
+
+/*
+ * ========================================================
+ * OBTENER PREGUNTAS PENDIENTES
+ * ========================================================
+ */
+
+function obtenerPreguntasPendientes() {
+
+    const resultado =
+        [];
+
+
+    estadoPreguntasEstudio.forEach(
+        (
+            estado,
+            pregunta
+        ) => {
+
+            if (
+                estado.pendiente
+            ) {
+
+                resultado.push(
+                    pregunta
+                );
+
+            }
+
+        }
+    );
+
+
+    return resultado;
+
+}
+
+
+/*
+ * ========================================================
+ * COMPROBAR SI UNA PREGUNTA ESTÁ PENDIENTE
+ * ========================================================
+ */
+
+function esPreguntaPendiente(
+    pregunta
+) {
+
+    const estado =
+        estadoPreguntasEstudio.get(
+            pregunta
+        );
+
+
+    return Boolean(
+        estado &&
+        estado.pendiente
+    );
+
+}
+
+
+/*
+ * ========================================================
+ * CREAR ESTADO DE UNA PREGUNTA FALLADA
+ * ========================================================
+ *
+ * Primera vez que se falla:
+ *
+ *   aciertosConsecutivos = 0
+ *   pendiente = true
+ *
+ * Se programa su primera repetición.
+ */
+
+function crearEstadoPregunta(
+    pregunta
+) {
+
+    const estado = {
+
+        aciertosConsecutivos:
+            0,
+
+        pendiente:
+            true,
+
+        proximaRepeticionEn:
+            calcularProximaRepeticion()
+
+    };
+
+
+    estadoPreguntasEstudio.set(
+        pregunta,
+        estado
+    );
+
+
+    return estado;
+
+}
+
+
+/*
+ * ========================================================
+ * CALCULAR PRÓXIMA REPETICIÓN
+ * ========================================================
+ */
+
+function calcularProximaRepeticion() {
+
+    const intervalo =
+        Math.floor(
+            Math.random() *
+            (
+                INTERVALO_REPETICION_MAX -
+                INTERVALO_REPETICION_MIN +
+                1
+            )
+        ) +
+        INTERVALO_REPETICION_MIN;
+
+
+    return (
+        preguntasNormalesMostradas +
+        intervalo
+    );
+
+}
+
+
+/*
+ * ========================================================
+ * PROCESAR RESULTADO EN MODO ESTUDIO
+ * ========================================================
+ */
+
+function procesarResultadoEstudio(
+    pregunta,
+    esCorrecta,
+    eraRepeticion
+) {
+
+    /*
+     * ====================================================
+     * PRIMERA APARICIÓN
+     * ====================================================
+     */
+
+    if (!eraRepeticion) {
+
+        /*
+         * Si se acierta a la primera:
+         *
+         * no necesita ningún repaso.
+         */
+
+        if (
+            esCorrecta
+        ) {
+
+            return;
+
+        }
+
+
+        /*
+         * Si falla:
+         *
+         * entra en modo repaso.
+         *
+         * Necesitará dos aciertos consecutivos.
+         */
+
+        crearEstadoPregunta(
+            pregunta
+        );
+
+
+        return;
+
+    }
+
+
+    /*
+     * ====================================================
+     * REPETICIÓN
+     * ====================================================
+     */
+
+    const estado =
+        estadoPreguntasEstudio.get(
+            pregunta
+        );
+
+
+    if (!estado) {
+
+        return;
+
+    }
+
+
+    /*
+     * ====================================================
+     * RESPUESTA CORRECTA
+     * ====================================================
+     */
+
+    if (
+        esCorrecta
+    ) {
+
+        estado.aciertosConsecutivos++;
+
+
+        /*
+         * DOS ACIERTOS CONSECUTIVOS:
+         *
+         * Pregunta dominada.
+         *
+         * Se elimina del sistema de repaso.
+         */
+
+        if (
+            estado.aciertosConsecutivos >=
+            2
+        ) {
+
+            estado.pendiente =
+                false;
+
+
+            return;
+
+        }
+
+
+        /*
+         * Solo lleva un acierto.
+         *
+         * Hay que conseguir otro acierto
+         * consecutivo.
+         *
+         * Por tanto, programamos otra aparición.
+         */
+
+        estado.proximaRepeticionEn =
+            calcularProximaRepeticion();
+
+
+        return;
+
+    }
+
+
+    /*
+     * ====================================================
+     * RESPUESTA INCORRECTA
+     * ====================================================
+     *
+     * Se rompe la racha.
+     */
+
+    estado.aciertosConsecutivos =
+        0;
+
+
+    /*
+     * Vuelve a necesitar DOS ACIERTOS
+     * CONSECUTIVOS desde cero.
+     *
+     * Por tanto, programamos una nueva
+     * repetición.
+     */
+
+    estado.proximaRepeticionEn =
+        calcularProximaRepeticion();
+
+}
+
+
+/*
+ * ========================================================
+ * CORREGIR / SIGUIENTE
+ * ========================================================
+ */
 
 function corregirRespuesta() {
 
     /*
-     * Si ya hemos corregido,
+     * Si ya hemos corregido:
+     *
      * el botón funciona como "Siguiente".
      */
 
@@ -753,6 +1642,10 @@ function corregirRespuesta() {
     }
 
 
+    /*
+     * Obtener respuesta seleccionada.
+     */
+
     const seleccion =
         document.querySelector(
             'input[name="opcion"]:checked'
@@ -760,12 +1653,6 @@ function corregirRespuesta() {
 
 
     if (!seleccion) {
-
-        /*
-         * Mantenemos únicamente este aviso
-         * porque no se ha seleccionado ninguna
-         * respuesta todavía.
-         */
 
         resultadoElemento.textContent =
             "⚠️ Selecciona una respuesta.";
@@ -780,8 +1667,13 @@ function corregirRespuesta() {
     }
 
 
-    const preguntaActual =
-        preguntas[indice];
+    /*
+     * Guardamos la pregunta que se está
+     * corrigiendo.
+     */
+
+    const preguntaQueSeCorrige =
+        preguntaActual;
 
 
     const posicionSeleccionada =
@@ -791,7 +1683,7 @@ function corregirRespuesta() {
 
 
     const respuestaSeleccionada =
-        preguntaActual.opciones[
+        preguntaQueSeCorrige.opciones[
             posicionSeleccionada
         ];
 
@@ -812,14 +1704,16 @@ function corregirRespuesta() {
 
     const esCorrecta =
         respuestaSeleccionada ===
-        preguntaActual.respuesta;
+        preguntaQueSeCorrige.respuesta;
 
+
+    /*
+     * ====================================================
+     * CORRECTA
+     * ====================================================
+     */
 
     if (esCorrecta) {
-
-        /*
-         * Correcta → verde.
-         */
 
         aciertos++;
 
@@ -835,11 +1729,13 @@ function corregirRespuesta() {
     }
 
 
-    else {
+    /*
+     * ====================================================
+     * INCORRECTA
+     * ====================================================
+     */
 
-        /*
-         * Incorrecta → rojo.
-         */
+    else {
 
         fallos++;
 
@@ -854,8 +1750,7 @@ function corregirRespuesta() {
 
 
         /*
-         * Marcar también la correcta
-         * en verde.
+         * Marcar también la respuesta correcta.
          */
 
         opciones.forEach(
@@ -868,10 +1763,10 @@ function corregirRespuesta() {
 
 
                 if (
-                    preguntaActual.opciones[
+                    preguntaQueSeCorrige.opciones[
                         posicion
                     ] ===
-                    preguntaActual.respuesta
+                    preguntaQueSeCorrige.respuesta
                 ) {
 
                     input
@@ -889,13 +1784,28 @@ function corregirRespuesta() {
 
 
     /*
-     * IMPORTANTE:
+     * ====================================================
+     * PROCESAR MODO ESTUDIO
+     * ====================================================
+     */
+
+    if (
+        modoEstudio
+    ) {
+
+        procesarResultadoEstudio(
+            preguntaQueSeCorrige,
+            esCorrecta,
+            preguntaActualEsRepeticion
+        );
+
+    }
+
+
+    /*
+     * No mostramos texto de correcto/incorrecto.
      *
-     * No mostramos ningún texto
-     * de "Correcto" o "Incorrecto".
-     *
-     * La información se muestra únicamente
-     * mediante los colores.
+     * La información se muestra mediante colores.
      */
 
     resultadoElemento.textContent =
@@ -905,6 +1815,10 @@ function corregirRespuesta() {
     resultadoElemento.className =
         "";
 
+
+    /*
+     * Actualizar estadísticas.
+     */
 
     actualizarEstadisticas();
 
@@ -924,7 +1838,7 @@ function corregirRespuesta() {
 
 
     /*
-     * Cambiar botón a "Siguiente".
+     * Cambiar botón.
      */
 
     estadoBoton =
@@ -937,20 +1851,27 @@ function corregirRespuesta() {
 }
 
 
-/* ========================================================
-   SIGUIENTE PREGUNTA
-======================================================== */
+/*
+ * ========================================================
+ * SIGUIENTE PREGUNTA
+ * ========================================================
+ */
 
 function siguientePregunta() {
 
+    const siguiente =
+        obtenerSiguientePregunta();
+
+
     if (
-        indice <
-        preguntas.length - 1
+        siguiente
     ) {
 
-        indice++;
+        mostrarPregunta(
+            siguiente,
+            ultimaPreguntaFueRepeticion
+        );
 
-        mostrarPregunta();
 
         return;
 
@@ -958,10 +1879,22 @@ function siguientePregunta() {
 
 
     /*
-     * Fin del test.
-     *
-     * No mostramos "Correcto" / "Incorrecto".
+     * No quedan preguntas normales
+     * ni preguntas pendientes.
      */
+
+    finalizarTest();
+
+}
+
+
+/*
+ * ========================================================
+ * FINALIZAR TEST
+ * ========================================================
+ */
+
+function finalizarTest() {
 
     resultadoElemento.textContent =
         "🎉 Has terminado el test.";
@@ -973,12 +1906,26 @@ function siguientePregunta() {
 
     actualizarEstadisticas();
 
+
+    estadoBoton =
+        "finalizado";
+
+
+    botonTest.textContent =
+        "Terminado";
+
+
+    botonTest.disabled =
+        true;
+
 }
 
 
-/* ========================================================
-   MEZCLAR ARRAY
-======================================================== */
+/*
+ * ========================================================
+ * MEZCLAR ARRAY
+ * ========================================================
+ */
 
 function mezclarArray(
     array
@@ -1014,9 +1961,53 @@ function mezclarArray(
 }
 
 
-/* ========================================================
-   ESTADÍSTICAS
-======================================================== */
+/*
+ * ========================================================
+ * ELEMENTO ALEATORIO
+ * ========================================================
+ */
+
+function obtenerElementoAleatorio(
+    array
+) {
+
+    if (
+        !array ||
+        array.length === 0
+    ) {
+
+        return null;
+
+    }
+
+
+    const indiceAleatorio =
+        Math.floor(
+            Math.random() *
+            array.length
+        );
+
+
+    return array[
+        indiceAleatorio
+    ];
+
+}
+
+
+/*
+ * ========================================================
+ * ESTADÍSTICAS
+ * ========================================================
+ *
+ * NO SE MODIFICA LA LÓGICA EXISTENTE.
+ *
+ * "Total" continúa representando:
+ *
+ *   número de preguntas DIFERENTES
+ *
+ * y no el número total de apariciones.
+ */
 
 function actualizarEstadisticas() {
 
@@ -1049,17 +2040,44 @@ function actualizarEstadisticas() {
 }
 
 
-/* ========================================================
-   REINICIAR ESTADÍSTICAS
-======================================================== */
+/*
+ * ========================================================
+ * REINICIAR ESTADÍSTICAS
+ * ========================================================
+ */
 
 function reiniciarEstadisticas() {
 
-    aciertos = 0;
+    aciertos =
+        0;
 
-    fallos = 0;
 
-    respondidas = 0;
+    fallos =
+        0;
+
+
+    respondidas =
+        0;
+
+
+    /*
+     * Reiniciar completamente
+     * el sistema de repaso.
+     */
+
+    reiniciarEstadoEstudio();
+
+
+    /*
+     * Volver a habilitar el botón.
+     */
+
+    botonTest.disabled =
+        false;
+
+
+    estadoBoton =
+        "corregir";
 
 
     actualizarEstadisticas();
@@ -1077,7 +2095,8 @@ function reiniciarEstadisticas() {
      * Volver a la primera pregunta.
      */
 
-    indice = 0;
+    indice =
+        0;
 
 
     /*
@@ -1110,15 +2129,16 @@ function reiniciarEstadisticas() {
 }
 
 
-/* ========================================================
-   LISTADO DE PREGUNTAS
-======================================================== */
+/*
+ * ========================================================
+ * LISTADO DE PREGUNTAS
+ * ========================================================
+ */
 
 function mostrarListado() {
 
     /*
-     * Por seguridad:
-     * jamás mostramos listado en sesiones.
+     * Nunca mostramos listado en sesiones.
      */
 
     if (idSesion) {
@@ -1201,7 +2221,7 @@ function mostrarListado() {
 
 
             /*
-             * Añadir pregunta y respuesta.
+             * Añadir elementos.
              */
 
             elemento.appendChild(
@@ -1214,10 +2234,6 @@ function mostrarListado() {
             );
 
 
-            /*
-             * El listado es solamente consultivo.
-             */
-
             listaPreguntasElemento.appendChild(
                 elemento
             );
@@ -1228,9 +2244,11 @@ function mostrarListado() {
 }
 
 
-/* ========================================================
-   BUSCADOR
-======================================================== */
+/*
+ * ========================================================
+ * BUSCADOR
+ * ========================================================
+ */
 
 function filtrarPreguntas() {
 
@@ -1279,9 +2297,11 @@ function filtrarPreguntas() {
 }
 
 
-/* ========================================================
-   NOMBRE DEL CAPÍTULO
-======================================================== */
+/*
+ * ========================================================
+ * NOMBRE DEL CAPÍTULO
+ * ========================================================
+ */
 
 function obtenerNombreAsignatura(
     nombreArchivo
@@ -1373,9 +2393,11 @@ function obtenerNombreAsignatura(
 }
 
 
-/* ========================================================
-   EVENTOS
-======================================================== */
+/*
+ * ========================================================
+ * EVENTOS
+ * ========================================================
+ */
 
 if (botonTest) {
 
@@ -1407,10 +2429,13 @@ if (buscador) {
 }
 
 
-/* ========================================================
-   INICIAR
-======================================================== */
+/*
+ * ========================================================
+ * INICIAR
+ * ========================================================
+ */
 
 configurarListado();
+
 
 cargarPreguntas();
