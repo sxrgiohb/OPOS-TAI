@@ -73,17 +73,17 @@
 
 
     #asignatura {
-      
+
       color: #222;
-      
+
       font-size: 1.35rem;
-      
+
       font-weight: 700;
-      
+
       margin: 0 0 1.2rem 0;
-      
+
       line-height: 1.3;
-      
+
     }
 
 
@@ -273,45 +273,56 @@
     }
 
 
+    /* ========================================================
+       BOTÓN VOLVER
+    ======================================================== */
+
     .volver {
+
       display: inline-flex;
-    
+
       align-items: center;
+
       justify-content: center;
-    
+
       width: 38px;
+
       height: 38px;
-    
+
       padding: 0;
+
       margin: 0 0 0.8rem 0;
-    
+
       background: transparent;
-    
+
       color: #555;
-    
+
       border: none;
+
       border-radius: 50%;
-    
+
       font-size: 1.5rem;
+
       font-weight: 400;
-    
+
       line-height: 1;
-    
+
       cursor: pointer;
-    
+
       transition:
         background 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
+
     }
-    
-    
+
+
     .volver:hover {
-    
+
       background: #f0f2f5;
-    
+
       color: #007bff;
-    
+
     }
 
 
@@ -345,199 +356,188 @@
 
     }
 
+
+    /* ========================================================
+       CABECERA DEL ESTADO
+    ======================================================== */
+
     .pregunta-listado-cabecera {
 
-  display: flex;
+      display: flex;
 
-  justify-content: flex-end;
+      justify-content: flex-end;
 
-  align-items: center;
+      align-items: center;
 
-  margin-bottom: 0.5rem;
-
-}
-
-
-.estado-pregunta {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 0.35rem;
-
-  font-size: 0.75rem;
-
-  font-weight: 700;
-
-  color: #555;
-
-}
-
-
-.estado-pregunta .circulo {
-
-  width: 10px;
-
-  height: 10px;
-
-  border-radius: 50%;
-
-  display: inline-block;
-
-}
-
-
-.estado-pregunta.dominada {
-
-  color: #198754;
-
-}
-
-
-.estado-pregunta.dominada .circulo {
-
-  background: #198754;
-
-}
-
-    .pregunta-listado-texto {
-
-    font-weight: 700;
-
-    font-size: 1rem;
-
-    line-height: 1.5;
-
-    margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
 
     }
 
+
     /* ========================================================
-   ESTADO DE LAS PREGUNTAS
-======================================================== */
+       INSIGNIA DE ESTADO
+    ======================================================== */
 
-.estado-pregunta {
+    .estado-pregunta {
 
-  display: flex;
+      display: inline-flex;
 
-  justify-content: flex-end;
+      justify-content: flex-end;
 
-  align-items: center;
+      align-items: center;
 
-  gap: 7px;
+      gap: 7px;
 
-  margin-bottom: 4px;
+      font-size: 0.75rem;
 
-  font-size: 0.75rem;
+      font-weight: 700;
 
-  font-weight: 700;
+      letter-spacing: 0.04em;
 
-  letter-spacing: 0.04em;
+      white-space: nowrap;
 
-}
-
-
-/* Círculo de estado */
-
-.circulo-estado {
-
-  width: 9px;
-
-  height: 9px;
-
-  border-radius: 50%;
-
-  display: inline-block;
-
-  flex-shrink: 0;
-
-}
+    }
 
 
-/* ========================================================
-   DÉBIL
-======================================================== */
+    /* Círculo */
 
-.estado-pregunta.debil {
+    .circulo-estado {
 
-  color: #c62828;
+      width: 9px;
 
-}
+      height: 9px;
 
+      border-radius: 50%;
 
-.estado-pregunta.debil .circulo-estado {
+      display: inline-block;
 
-  background-color: #c62828;
+      flex-shrink: 0;
 
-}
-
-
-/* ========================================================
-   EN PROGRESO
-======================================================== */
-
-.estado-pregunta.en-progreso {
-
-  color: #ef6c00;
-
-}
+    }
 
 
-.estado-pregunta.en-progreso .circulo-estado {
+    /* ========================================================
+       SIN DATOS
+    ======================================================== */
 
-  background-color: #ef6c00;
+    .estado-pregunta.sin-datos {
 
-}
+      color: #6c757d;
 
-
-/* ========================================================
-   BUEN DOMINIO
-======================================================== */
-
-.estado-pregunta.buen-dominio {
-
-  color: #b08a00;
-
-}
+    }
 
 
-.estado-pregunta.buen-dominio .circulo-estado {
+    .estado-pregunta.sin-datos .circulo-estado {
 
-  background-color: #b08a00;
+      background-color: #6c757d;
 
-}
-
-
-/* ========================================================
-   DOMINADA
-======================================================== */
-
-.estado-pregunta.dominado {
-
-  color: #2e7d32;
-
-}
+    }
 
 
-.estado-pregunta.dominado .circulo-estado {
+    /* ========================================================
+       DÉBIL
+    ======================================================== */
 
-  background-color: #2e7d32;
+    .estado-pregunta.debil {
 
-}
+      color: #c62828;
 
+    }
+
+
+    .estado-pregunta.debil .circulo-estado {
+
+      background-color: #c62828;
+
+    }
+
+
+    /* ========================================================
+       EN PROGRESO
+    ======================================================== */
+
+    .estado-pregunta.en-progreso {
+
+      color: #ef6c00;
+
+    }
+
+
+    .estado-pregunta.en-progreso .circulo-estado {
+
+      background-color: #ef6c00;
+
+    }
+
+
+    /* ========================================================
+       BUEN DOMINIO
+    ======================================================== */
+
+    .estado-pregunta.buen-dominio {
+
+      color: #b08a00;
+
+    }
+
+
+    .estado-pregunta.buen-dominio .circulo-estado {
+
+      background-color: #b08a00;
+
+    }
+
+
+    /* ========================================================
+       DOMINADA
+    ======================================================== */
+
+    .estado-pregunta.dominada {
+
+      color: #2e7d32;
+
+    }
+
+
+    .estado-pregunta.dominada .circulo-estado {
+
+      background-color: #2e7d32;
+
+    }
+
+
+    /* ========================================================
+       TEXTO DE LA PREGUNTA
+    ======================================================== */
+
+    .pregunta-listado-texto {
+
+      font-weight: 700;
+
+      font-size: 1rem;
+
+      line-height: 1.5;
+
+      margin-bottom: 0.75rem;
+
+    }
+
+
+    /* ========================================================
+       RESPUESTA DEL LISTADO
+    ======================================================== */
 
     .respuesta-listado {
 
-    padding-top: 0.75rem;
+      padding-top: 0.75rem;
 
-    border-top: 1px solid #eee;
+      border-top: 1px solid #eee;
 
-    line-height: 1.5;
+      line-height: 1.5;
 
-    color: #444;
+      color: #444;
 
-  }
+    }
 
 
     .pregunta-listado.activa {
@@ -546,25 +546,26 @@
 
     }
 
+
     /* ========================================================
-   RESPUESTAS CORREGIDAS
+       RESPUESTAS CORREGIDAS
     ======================================================== */
-    
+
     .option.correcta {
-    
-        background: #d4edda;
-    
-        border: 2px solid #28a745;
-    
+
+      background: #d4edda;
+
+      border: 2px solid #28a745;
+
     }
-    
-    
+
+
     .option.incorrecta {
-    
-        background: #f8d7da;
-    
-        border: 2px solid #dc3545;
-    
+
+      background: #f8d7da;
+
+      border: 2px solid #dc3545;
+
     }
 
   </style>
@@ -578,7 +579,9 @@
   <main class="contenedor">
 
 
-    <!-- TEST -->
+    <!-- =====================================================
+         TEST
+    ====================================================== -->
 
     <section class="card">
 
@@ -633,7 +636,9 @@
     </section>
 
 
-    <!-- LISTADO -->
+    <!-- =====================================================
+         LISTADO DE PREGUNTAS
+    ====================================================== -->
 
     <section class="card">
 
@@ -671,8 +676,9 @@
   </main>
 
 
-<script src="js/estadisticas.js"></script>
-<script src="js/test.js"></script>
+  <script src="js/estadisticas.js"></script>
+
+  <script src="js/test.js"></script>
 
 
 </body>
