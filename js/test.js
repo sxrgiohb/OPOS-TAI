@@ -730,7 +730,7 @@ async function cargarPreguntasAntiguo() {
      */
 
     asignaturaElemento.textContent =
-        obtenerNombreAsignatura(
+        await obtenerNombreAsignatura(
             archivoDatos
         );
 
@@ -2534,94 +2534,261 @@ function filtrarPreguntas() {
 }
 
 /* ========================================================
-NOMBRE DEL CAPÍTULO
-======================================================== */
+   OBTENER NOMBRE COMPLETO DESDE CONFIG.JSON
+   ========================================================
 
-function obtenerNombreAsignatura(
+   Ejemplo:
+
+   datos =
+   "test-flou/bloque-1-tema-1"
+
+   config.json:
+
+   Test FLOU
+   └── Bloque I
+       └── Tema 1
+           └── archivo: "bloque-1-tema-1"
+
+   Resultado:
+
+   "Test FLOU - Bloque I - Tema 1"
+
+   El sistema permite niveles infinitos.
+   ======================================================== */
+
+async function obtenerNombreRutaCompleta(
     nombreArchivo
 ) {
 
     const partes =
-        nombreArchivo.split("/");
-
-
-    const carpeta =
-        partes[0] || "";
-
-
-    const archivo =
-        partes[
-            partes.length - 1
-        ] || "";
+        nombreArchivo
+            .split("/")
+            .filter(Boolean);
 
 
     /*
-     * Nombre de la asignatura.
+     * Primera parte:
+     *
+     * ID de la asignatura.
      */
 
-    let nombreAsignatura =
-        carpeta;
+    const asignatura =
+        partes.shift();
 
 
-    if (
-        carpeta.toLowerCase() ===
-        "constitucion"
-    ) {
+    if (!asignatura) {
 
-        nombreAsignatura =
-            "Constitución Española";
+        return "Test";
 
     }
 
 
     /*
-     * Nombre del capítulo.
+     * Las partes restantes forman
+     * la ruta hasta el archivo.
      */
 
-    let nombreCapitulo =
-        archivo
-            .replace(
-                /\.json$/i,
-                ""
+    const rutaArchivo =
+        partes;
+
+
+    /*
+     * ====================================================
+     * CARGAR CONFIG.JSON
+     * ====================================================
+     */
+
+    const rutaConfig =
+        `data/${encodeURIComponent(asignatura)}/config.json`;
+
+
+    const respuesta =
+        await fetch(
+            rutaConfig
+        );
+
+
+    if (!respuesta.ok) {
+
+        throw new Error(
+            `No se ha podido cargar ${rutaConfig}`
+        );
+
+    }
+
+
+    const configuracion =
+        await respuesta.json();
+
+
+    /*
+     * ====================================================
+     * BUSCAR EL ARCHIVO RECURSIVAMENTE
+     * ====================================================
+     *
+     * Busca el archivo independientemente
+     * de cuántos niveles haya.
+     *
+     * Puede encontrar:
+     *
+     * Bloque
+     *   └── Tema
+     *       └── Apartado
+     *           └── Subapartado
+     *               └── archivo
+     *
+     * sin límite de profundidad.
+     * ====================================================
+     */
+
+    function buscarArchivo(
+        elementos,
+        rutaAcumulada
+    ) {
+
+        if (
+            !Array.isArray(
+                elementos
             )
-            .replace(
-                /[-_]+/g,
-                " "
-            );
+        ) {
+
+            return null;
+
+        }
+
+
+        for (
+            const elemento of elementos
+        ) {
+
+            /*
+             * =================================================
+             * DOCUMENTO
+             * =================================================
+             *
+             * Si tiene "archivo", hemos llegado
+             * al documento que buscamos.
+             */
+
+            if (
+                elemento.archivo
+            ) {
+
+                /*
+                 * Comparamos el nombre del archivo
+                 * con el último elemento de la URL.
+                 */
+
+                const archivoElemento =
+                    String(
+                        elemento.archivo
+                    )
+                    .replace(
+                        /\.json$/i,
+                        ""
+                    );
+
+
+                const archivoBuscado =
+                    String(
+                        rutaArchivo[
+                            rutaArchivo.length - 1
+                        ]
+                    )
+                    .replace(
+                        /\.json$/i,
+                        ""
+                    );
+
+
+                if (
+                    archivoElemento ===
+                    archivoBuscado
+                ) {
+
+                    return [
+                        ...rutaAcumulada,
+                        elemento.nombre ||
+                        elemento.id ||
+                        archivoElemento
+                    ];
+
+                }
+
+            }
+
+
+            /*
+             * =================================================
+             * SUBCOLECCIÓN
+             * =================================================
+             *
+             * Si tiene "contenido", seguimos bajando.
+             */
+
+            if (
+                Array.isArray(
+                    elemento.contenido
+                )
+            ) {
+
+                const resultado =
+                    buscarArchivo(
+                        elemento.contenido,
+                        [
+                            ...rutaAcumulada,
+                            elemento.nombre ||
+                            elemento.id ||
+                            "Sin nombre"
+                        ]
+                    );
+
+
+                if (resultado) {
+
+                    return resultado;
+
+                }
+
+            }
+
+        }
+
+
+        return null;
+
+    }
 
 
     /*
-     * Nombres especiales.
+     * Buscar desde la raíz de config.json.
      */
 
-    if (
-        nombreCapitulo.toLowerCase() ===
-        "preambulo"
-    ) {
-
-        nombreCapitulo =
-            "Preámbulo";
-
-    }
+    const nombresRuta =
+        buscarArchivo(
+            configuracion.contenido || [],
+            []
+        );
 
 
-    else {
+    /*
+     * ====================================================
+     * CONSTRUIR TÍTULO
+     * ====================================================
+     */
 
-        nombreCapitulo =
-            nombreCapitulo
-                .replace(
-                    /\b\w/g,
-                    letra =>
-                        letra.toUpperCase()
-                );
+    const resultado = [
 
-    }
+        configuracion.nombre ||
+        asignatura,
+
+        ...(nombresRuta || [])
+
+    ];
 
 
-    return (
-        nombreAsignatura +
-        " - " +
-        nombreCapitulo
+    return resultado.join(
+        " - "
     );
 
 }
