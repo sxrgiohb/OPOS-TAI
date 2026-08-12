@@ -1,0 +1,39 @@
+{
+  "id": "test-flou",
+  "nombre": "Test FLOU",
+  "icono": "📝",
+  "contenido": [
+    {
+      "id": "bloque-i",
+      "nombre": "Bloque I",
+      "contenido": [
+        {
+          "id": "tema-1",
+          "nombre": "Tema 1",
+          "archivo": "bloque-1-tema-1"
+        }
+      ]
+    },
+    {
+      "id": "bloque-ii",
+      "nombre": "Bloque II",
+      "contenido": [
+        
+      ]
+    },
+    {
+      "id": "bloque-iii",
+      "nombre": "Bloque III",
+      "contenido": [
+        
+      ]
+    },
+    {
+      "id": "bloque-iv",
+      "nombre": "Bloque IV",
+      "contenido": [
+        
+      ]
+    }
+  ]
+}
