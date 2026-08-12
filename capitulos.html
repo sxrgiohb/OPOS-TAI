@@ -313,7 +313,6 @@
 
     }
 
-
   </style>
 
 </head>
@@ -439,9 +438,13 @@
      *
      * ""
      *
-     * "titulo-preliminar"
+     * "bloque-i"
      *
-     * "titulo-preliminar/capitulo-1"
+     * "bloque-i/tema-1"
+     *
+     * "bloque-i/tema-1/capitulo-1"
+     *
+     * No existe límite de profundidad.
      */
 
     const rutaActual =
@@ -521,22 +524,17 @@
 
        Recorre config.json siguiendo la ruta de la URL.
 
-       Ejemplo:
+       IMPORTANTE:
 
-       rutaActual:
+       Una subcolección se identifica porque tiene:
 
-       titulo-preliminar/capitulo-1
+           contenido: [...]
 
-       Devuelve:
+       Un documento se identifica porque tiene:
 
-       nombresRuta:
+           archivo: "..."
 
-       [
-         "TÍTULO PRELIMINAR",
-         "CAPÍTULO I"
-       ]
-
-       y los elementos que hay dentro de CAPÍTULO I.
+       Esto permite una profundidad INFINITA.
 
     ======================================================== */
 
@@ -546,7 +544,11 @@
     ) {
 
       let elementos =
-        configuracion.contenido || [];
+        Array.isArray(
+          configuracion.contenido
+        )
+          ? configuracion.contenido
+          : [];
 
 
       const nombresRuta = [];
@@ -561,7 +563,6 @@
         return {
 
           elementos,
-
           nombresRuta
 
         };
@@ -576,23 +577,31 @@
 
 
       /*
-       * Recorrer todos los niveles
-       * de la ruta.
+       * Recorrer todos los niveles.
        */
 
       for (
         const parte of partes
       ) {
 
+        /*
+         * Buscar por ID.
+         */
+
         const encontrado =
           elementos.find(
             elemento =>
-              elemento.carpeta === parte
+              String(
+                elemento.id
+              ) ===
+              String(
+                parte
+              )
           );
 
 
         /*
-         * La carpeta no existe.
+         * La subcolección no existe.
          */
 
         if (!encontrado) {
@@ -604,7 +613,7 @@
             nombresRuta,
 
             error:
-              `No se ha encontrado la carpeta "${parte}".`
+              `No se ha encontrado la subcolección "${parte}".`
 
           };
 
@@ -612,28 +621,67 @@
 
 
         /*
-         * Guardar el nombre visible.
+         * Guardar nombre visible.
          */
 
         nombresRuta.push(
           encontrado.nombre ||
+          encontrado.id ||
           parte
         );
 
 
         /*
-         * Entrar en la carpeta.
-
-         * Si no tiene contenido,
-         * devolvemos un array vacío.
+         * IMPORTANTE:
+         *
+         * Para poder continuar navegando,
+         * el elemento debe tener "contenido".
          */
 
-        elementos =
-          Array.isArray(
+        if (
+          !Array.isArray(
             encontrado.contenido
           )
-            ? encontrado.contenido
-            : [];
+        ) {
+
+          /*
+           * Si hemos llegado a un documento
+           * antes de terminar la ruta,
+           * la ruta es incorrecta.
+           */
+
+          if (
+            encontrado.archivo
+          ) {
+
+            return {
+
+              elementos: [],
+
+              nombresRuta,
+
+              error:
+                `El elemento "${encontrado.nombre || encontrado.id}" es un documento y no contiene subcolecciones.`
+
+            };
+
+          }
+
+
+          elementos = [];
+
+        }
+
+        else {
+
+          /*
+           * Entrar en la siguiente subcolección.
+           */
+
+          elementos =
+            encontrado.contenido;
+
+        }
 
       }
 
@@ -651,32 +699,6 @@
 
     /* ========================================================
        OBTENER RUTA COMPLETA
-    ========================================================
-
-       IMPORTANTE:
-
-       La ruta completa comienza SIEMPRE
-       por el nombre de la asignatura.
-
-       Ejemplos:
-
-       ""
-
-       →
-       Constitución Española
-
-
-       "titulo-preliminar"
-
-       →
-       Constitución Española - TÍTULO PRELIMINAR
-
-
-       "titulo-preliminar/capitulo-1"
-
-       →
-       Constitución Española - TÍTULO PRELIMINAR - CAPÍTULO I
-
     ======================================================== */
 
     function obtenerRutaCompleta(
@@ -684,13 +706,13 @@
       nombresRuta
     ) {
 
-      /*
-       * Primer nivel:
-       * nombre de la asignatura.
-       */
-
       const ruta = [];
 
+
+      /*
+       * Nombre de la asignatura.
+
+       */
 
       if (
         configuracion.nombre
@@ -704,19 +726,14 @@
 
 
       /*
-       * Después añadimos todas las carpetas
-       * recorridas.
+       * Añadir todos los niveles.
+
        */
 
       ruta.push(
         ...nombresRuta
       );
 
-
-      /*
-       * Unimos todos los niveles
-       * mediante " - ".
-       */
 
       return ruta.join(
         " - "
@@ -757,9 +774,6 @@
 
         /*
          * Cargar configuración.
-
-         * Se mantiene el sistema que ya utiliza
-         * tu repositorio.
          */
 
         const respuesta =
@@ -776,8 +790,7 @@
 
 
         /*
-         * GitHub devuelve el archivo
-         * en Base64.
+         * GitHub devuelve Base64.
          */
 
         const archivo =
@@ -791,7 +804,7 @@
 
 
         /*
-         * Convertir JSON a objeto.
+         * Convertir JSON.
          */
 
         const configuracion =
@@ -799,9 +812,7 @@
 
 
         /*
-         * Mostrar cabecera.
-
-         * Mostrar contenido.
+         * Mostrar.
          */
 
         mostrarCabecera(
@@ -844,29 +855,12 @@
       configuracion
     ) {
 
-
-      /*
-       * Resolver la ruta actual.
-
-       * Esto obtiene todos los nombres de
-       * las carpetas recorridas.
-       */
-
       const resultado =
         resolverRuta(
           configuracion,
           rutaActual
         );
 
-
-      /*
-       * Construir la ruta COMPLETA.
-
-       * IMPORTANTE:
-
-       * Incluye también la asignatura.
-
-       */
 
       const titulo =
         obtenerRutaCompleta(
@@ -875,19 +869,10 @@
         );
 
 
-      /*
-       * Icono de la asignatura.
-
-       */
-
       const icono =
         configuracion.icono ||
         "📚";
 
-
-      /*
-       * Mostrar la cabecera.
-       */
 
       cabecera.innerHTML = `
 
@@ -928,14 +913,6 @@
       configuracion
     ) {
 
-
-      /*
-       * Resolver la ruta actual.
-
-       * Obtenemos los elementos que
-       * existen dentro de la carpeta actual.
-       */
-
       const resultado =
         resolverRuta(
           configuracion,
@@ -947,26 +924,12 @@
         resultado.elementos;
 
 
-      /*
-       * IMPORTANTE:
-
-       * El título de esta tarjeta
-       * siempre será "Contenido".
-
-       * No mostramos aquí el nombre
-       * de la carpeta actual.
-
-       * Esa información ya está
-       * completamente representada
-       * en la cabecera.
-       */
-
       tituloContenido.textContent =
         "📖 Contenido";
 
 
       /*
-       * Si la ruta no existe.
+       * Ruta incorrecta.
        */
 
       if (
@@ -989,7 +952,7 @@
 
 
       /*
-       * Si no existen elementos.
+       * Sin elementos.
        */
 
       if (
@@ -1005,24 +968,17 @@
       }
 
 
-      /*
-       * Ocultar mensaje de carga.
-       */
-
       estado.style.display =
         "none";
 
-
-      /*
-       * Limpiar contenido.
-       */
 
       contenido.innerHTML =
         "";
 
 
       /*
-       * Crear los elementos.
+       * Crear elementos.
+
        */
 
       elementos.forEach(
@@ -1044,36 +1000,41 @@
 
 
           /*
-           * Determinar si es carpeta.
-
-           * Si tiene "carpeta",
-           * es una carpeta navegable.
-
-           * Si tiene "archivo",
-           * es un archivo de preguntas.
+           * NUEVO SISTEMA:
+           *
+           * contenido → subcolección
+           *
+           * archivo → documento
            */
 
           const esCarpeta =
+            Array.isArray(
+              elemento.contenido
+            );
+
+
+          const esArchivo =
             Boolean(
-              elemento.carpeta
+              elemento.archivo
             );
 
 
           /*
            * Icono.
 
-           * Carpeta → 📁
-           * Archivo → 📘
            */
 
           const iconoElemento =
             esCarpeta
               ? "📁"
-              : "📘";
+              : esArchivo
+                ? "📘"
+                : "❓";
 
 
           /*
-           * Nombre visible.
+           * Nombre.
+
            */
 
           const nombre =
@@ -1112,7 +1073,7 @@
 
 
           /*
-           * Acción al pulsar.
+           * Acción.
 
            */
 
@@ -1148,40 +1109,26 @@
 
 
       /* ======================================================
-         CARPETA
+         SUBCOLECCIÓN
       ====================================================== */
 
       if (
-        elemento.carpeta
+        Array.isArray(
+          elemento.contenido
+        )
       ) {
 
-
         /*
-         * Construir nueva ruta.
-
-         * Si estamos en:
-
-         * titulo-preliminar
-
-         * y pulsamos:
-
-         * capitulo-1
-
-         * obtenemos:
-
-         * titulo-preliminar/capitulo-1
+         * Usamos el ID como segmento de ruta.
+         *
+         * Esto permite cualquier número de niveles.
          */
 
         const nuevaRuta =
           rutaActual
-            ? `${rutaActual}/${elemento.carpeta}`
-            : elemento.carpeta;
+            ? `${rutaActual}/${elemento.id}`
+            : elemento.id;
 
-
-        /*
-         * Navegar.
-
-         */
 
         window.location.href =
           `capitulos.html?asignatura=${encodeURIComponent(
@@ -1197,28 +1144,15 @@
 
 
       /* ======================================================
-         ARCHIVO JSON
+         DOCUMENTO / ARCHIVO
       ====================================================== */
 
       if (
         elemento.archivo
       ) {
 
-
         /*
-         * Construir la ruta al archivo.
-
-         * Ejemplo:
-
-         * titulo-preliminar/capitulo-1
-         *
-         * +
-         *
-         * preguntas.json
-
-         * =
-         *
-         * titulo-preliminar/capitulo-1/preguntas.json
+         * Construir ruta completa al JSON.
          */
 
         const rutaArchivo =
@@ -1228,8 +1162,7 @@
 
 
         /*
-         * Abrir test.html.
-
+         * Abrir test.
          */
 
         window.location.href =
@@ -1245,11 +1178,10 @@
 
       /*
        * Elemento incorrectamente configurado.
-
        */
 
       console.warn(
-        "Elemento sin carpeta ni archivo:",
+        "Elemento sin contenido ni archivo:",
         elemento
       );
 
@@ -1263,7 +1195,6 @@
     function escaparHTML(
       texto
     ) {
-
 
       const elemento =
         document.createElement(
