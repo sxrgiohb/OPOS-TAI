@@ -17,23 +17,17 @@
     {
       "id": "bloque-ii",
       "nombre": "Bloque II",
-      "contenido": [
-        
-      ]
+      "contenido": []
     },
     {
       "id": "bloque-iii",
       "nombre": "Bloque III",
-      "contenido": [
-        
-      ]
+      "contenido": []
     },
     {
       "id": "bloque-iv",
       "nombre": "Bloque IV",
-      "contenido": [
-        
-      ]
+      "contenido": []
     }
   ]
 }
