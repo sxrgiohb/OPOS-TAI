@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <link
+    rel="manifest"
+    href="./manifest.json"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="./icon-192.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="./icon-192.png"
+  >
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  >
+
+  <title>Configuración - OPOS TAI</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      font-family: 'Segoe UI', sans-serif;
+
+      background: #f2f4f8;
+
+      color: #333;
+
+      margin: 0;
+
+      min-height: 100vh;
+
+    }
+
+
+    .contenedor {
+
+      width: 100%;
+
+      max-width: 700px;
+
+      margin: 0 auto;
+
+      padding: 1rem;
+
+    }
+
+
+    .card {
+
+      background: white;
+
+      border-radius: 12px;
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+      padding: 1.5rem;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .volver {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      width: 38px;
+
+      height: 38px;
+
+      padding: 0;
+
+      margin: 0 0 0.8rem 0;
+
+      background: transparent;
+
+      color: #555;
+
+      border: none;
+
+      border-radius: 50%;
+
+      font-size: 1.5rem;
+
+      font-weight: 400;
+
+      line-height: 1;
+
+      cursor: pointer;
+
+      transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+    }
+
+
+    .volver:hover {
+
+      background: #f0f2f5;
+
+      color: #007bff;
+
+    }
+
+
+    .cabecera {
+
+      text-align: center;
+
+    }
+
+
+    .cabecera h1 {
+
+      margin: 0 0 0.4rem;
+
+      font-size: 1.5rem;
+
+    }
+
+
+    .cabecera p {
+
+      margin: 0;
+
+      color: #666;
+
+    }
+
+
+    .opcion {
+
+      border: 1px solid #e2e2e2;
+
+      border-radius: 10px;
+
+      padding: 1rem;
+
+      background: #fafafa;
+
+    }
+
+
+    .opcion-titulo {
+
+      font-weight: 600;
+
+      font-size: 1rem;
+
+      margin-bottom: 0.4rem;
+
+    }
+
+
+    .opcion-descripcion {
+
+      color: #666;
+
+      font-size: 0.9rem;
+
+      line-height: 1.5;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .boton-peligro {
+
+      width: 100%;
+
+      border: 1px solid #dc3545;
+
+      border-radius: 8px;
+
+      background: white;
+
+      color: #dc3545;
+
+      padding: 0.8rem 1rem;
+
+      font-family: inherit;
+
+      font-size: 0.95rem;
+
+      font-weight: 600;
+
+      cursor: pointer;
+
+      transition: 0.2s;
+
+    }
+
+
+    .boton-peligro:hover {
+
+      background: #dc3545;
+
+      color: white;
+
+    }
+
+
+    #mensaje {
+
+      text-align: center;
+
+      margin-top: 1rem;
+
+      font-size: 0.9rem;
+
+    }
+
+
+    .exito {
+
+      color: #198754;
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <main class="contenedor">
+
+
+    <!-- =====================================================
+         CABECERA
+    ====================================================== -->
+
+    <section class="card">
+
+      <button
+        class="volver"
+        onclick="history.back()"
+        aria-label="Volver"
+        title="Volver"
+      >
+        ←
+      </button>
+
+
+      <div class="cabecera">
+
+        <h1>
+          ⚙️ Configuración
+        </h1>
+
+        <p>
+          Configura y gestiona los datos de la aplicación.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ESTADÍSTICAS
+    ====================================================== -->
+
+    <section class="card">
+
+      <div class="opcion">
+
+        <div class="opcion-titulo">
+
+          🗑️ Borrar estadísticas
+
+        </div>
+
+
+        <div class="opcion-descripcion">
+
+          Elimina todo el historial de respuestas y
+          estadísticas de las preguntas.
+
+          <br><br>
+
+          Esto hará que todas las preguntas vuelvan a
+          aparecer como <strong>SIN DATOS</strong>.
+
+          <br><br>
+
+          Esta acción no elimina tus sesiones ni las
+          preguntas de la aplicación.
+
+        </div>
+
+
+        <button
+          class="boton-peligro"
+          onclick="borrarEstadisticas()"
+        >
+
+          🗑️ Borrar todas las estadísticas
+
+        </button>
+
+
+        <div id="mensaje"></div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <script>
+
+
+    /* ========================================================
+       CONFIGURACIÓN
+    ======================================================== */
+
+
+    const CLAVE_ESTADISTICAS =
+      "opos_tai_estadisticas";
+
+
+    /* ========================================================
+       BORRAR ESTADÍSTICAS
+    ======================================================== */
+
+
+    function borrarEstadisticas() {
+
+
+      const confirmar =
+        confirm(
+
+          "⚠️ ¿Seguro que quieres borrar TODAS las estadísticas?\n\n" +
+
+          "Se eliminará todo el historial de respuestas " +
+          "y todas las estadísticas de las preguntas.\n\n" +
+
+          "Esta acción no se puede deshacer."
+
+        );
+
+
+      if (!confirmar) {
+
+        return;
+
+      }
+
+
+      /*
+       * Eliminar únicamente las estadísticas.
+       *
+       * Las sesiones utilizan otra clave:
+       *
+       * opos_tai_sesiones
+       *
+       * Por tanto, no se modifican.
+       */
+
+      localStorage.removeItem(
+        CLAVE_ESTADISTICAS
+      );
+
+
+      /*
+       * Mostrar confirmación.
+       */
+
+      const mensaje =
+        document.getElementById(
+          "mensaje"
+        );
+
+
+      mensaje.textContent =
+        "✅ Todas las estadísticas han sido borradas.";
+
+
+      mensaje.className =
+        "exito";
+
+
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>
