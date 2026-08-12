@@ -1,6 +1,6 @@
 {
   "id": "test-flou",
-  "nombre": "Test FLOU",
+  "nombre": "TEST",
   "icono": "📝",
   "contenido": [
     {
@@ -11,6 +11,11 @@
           "id": "tema-1",
           "nombre": "Tema 1",
           "archivo": "bloque-i-tema-1.json"
+        },
+        {
+          "id": "tema-2",
+          "nombre": "Tema 2",
+          "archivo": "bloque-i-tema-2.json"
         }
       ]
     },
