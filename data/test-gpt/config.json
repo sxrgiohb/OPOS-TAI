@@ -1,7 +1,7 @@
 {
   "id": "test-gpt",
   "nombre": "TEST GPT",
-  "icono": "📘",
+  "icono": "📝",
   "contenido": [
     {
       "id": "constitucion",
