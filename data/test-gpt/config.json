@@ -1,7 +1,7 @@
 {
-  "id": "constitucion",
-  "nombre": "Constitución Española",
-  "icono": "📓",
+  "id": "test-gpt",
+  "nombre": "TEST GPT",
+  "icono": "📘",
   "contenido": [
     {
       "id": "constitucion",
