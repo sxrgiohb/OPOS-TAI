@@ -1,17 +1,23 @@
 {
   "id": "constitucion",
   "nombre": "Constitución Española",
-  "icono": "📜",
+  "icono": "📓",
   "contenido": [
     {
-      "id": "preambulo",
-      "nombre": "Preámbulo",
-      "archivo": "preambulo.json"
-    },
-    {
-      "id": "titulo-i",
-      "nombre": "Título I",
-      "archivo": "titulo-i.json"
+      "id": "constitucion",
+      "nombre": "Constitución ",
+      "contenido": [
+        {
+          "id": "preambulo",
+          "nombre": "Preámbulo",
+          "contenido": "preambulo.json"
+        },
+        {
+          "id": "titulo-i",
+          "nombre": "Título I",
+          "contenido": "titulo-i.json"
+        }
+      ]
     }
   ]
 }
