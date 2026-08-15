@@ -364,30 +364,6 @@
 
     }
 
-    .fila-opcion {
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 0.7rem;
-
-      padding: 0.5rem 0;
-
-      cursor: pointer;
-
-    }
-
-    .fila-opcion input {
-
-      width: 18px;
-
-      height: 18px;
-
-      cursor: pointer;
-
-    }
-
     .acciones {
 
       display: flex;
@@ -605,21 +581,6 @@
         </div>
 
       </div>
-
-
-      <label class="fila-opcion">
-
-        <input
-          type="checkbox"
-          id="aleatorio"
-          checked
-        >
-
-        <span>
-          🔀 Preguntas aleatorias
-        </span>
-
-      </label>
 
 
       <div
@@ -1393,7 +1354,7 @@
 
     /* ========================================================
        OBTENER SELECCIONADOS
-       
+
        IMPORTANTE:
        Se guarda la ruta completa del archivo.
     ======================================================== */
@@ -1453,11 +1414,6 @@
             "numeroPreguntas"
           ).value
         );
-
-      const aleatorio =
-        document.getElementById(
-          "aleatorio"
-        ).checked;
 
       const capitulos =
         obtenerCapitulosSeleccionados();
@@ -1545,9 +1501,6 @@
           numeroPreguntas:
             numeroPreguntas,
 
-          aleatorio:
-            aleatorio,
-
           fechaCreacion:
             sesionAnterior.fechaCreacion ||
             new Date().toISOString()
@@ -1581,9 +1534,6 @@
 
           numeroPreguntas:
             numeroPreguntas,
-
-          aleatorio:
-            aleatorio,
 
           fechaCreacion:
             new Date().toISOString()
@@ -1668,12 +1618,6 @@
         "numeroPreguntas"
       ).value =
         sesion.numeroPreguntas || 30;
-
-
-      document.getElementById(
-        "aleatorio"
-      ).checked =
-        sesion.aleatorio !== false;
 
 
       const seleccionados =
