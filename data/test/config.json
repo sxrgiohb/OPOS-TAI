@@ -21,6 +21,11 @@
           "id": "tema-3",
           "nombre": "Tema 3",
           "archivo": "tema-3.json"
+        },
+        {
+          "id": "tema-4",
+          "nombre": "Tema 4",
+          "archivo": "tema-4.json"
         }
       ]
     },
