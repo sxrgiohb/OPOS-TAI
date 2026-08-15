@@ -1,0 +1,1014 @@
+[
+    {
+        "id": "bloque-i-tema-4-0000",
+        "pregunta": "¿Cuántos días de permiso por matrimonio corresponden a los funcionarios públicos?",
+        "respuesta": "15 días.",
+        "opciones": [
+            "10 días.",
+            "15 días.",
+            "25 días.",
+            "20 días."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0001",
+        "pregunta": "Respecto a los principios generales de la publicidad activa, el cumplimiento de las obligaciones derivadas de la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, podrá realizarse utilizando los medios electrónicos puestos a su disposición por la Administración Pública cuando",
+        "respuesta": "Se trate de entidades sin ánimo de lucro que persigan exclusivamente fines de interés social o cultural y cuyo prespuesto sea inferior a 50.000 euros",
+        "opciones": [
+            "Se trate de entidades sin ánimo de lucro que persigan exclusivamente fines de interés social o cultural y cuyo prespuesto sea inferior a 50.000 euros",
+            "Se trate de entidades cuyo prespuesto sea inferior a 50.000 euros",
+            "Se trate de entidades cuyo prespuesto sea inferior a 75.000 euros",
+            "Se trate de entidades sin ánimo de lucro que persigan exclusivamente fines de interés social o cultural y cuyo prespuesto sea inferior a 75.000 euros"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0002",
+        "pregunta": "Las Administraciones Públicas, referente a la información de relevancia jurídica, en el ámbito de sus competencias, no publicarán",
+        "respuesta": "Los proyectos de Ley cuya iniciativa les corresponda",
+        "opciones": [
+            "Las directrices, instrucciones, acuerdos, circulares o respuestas a consultas planteadas",
+            "Los proyectos de Reglamentos cuya iniciativa les corresponda",
+            "Los proyectos de Ley cuya iniciativa les corresponda",
+            "Las memorias e informes que conformen los expedientes de elaboración de los textos normativos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0003",
+        "pregunta": "El Título II de la Ley 19/2013 regula lo relativo a",
+        "respuesta": "El Buen Gobierno",
+        "opciones": [
+            "El Portal de la Transparencia",
+            "El Buen Gobierno",
+            "El Foro Gobierno Abierto",
+            "La publicidad activa"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0004",
+        "pregunta": "España forma parte de la Alianza para el Gobierno Abierto desde",
+        "respuesta": "Abril de 2011",
+        "opciones": [
+            "Abril de 2013",
+            "Abril de 2012",
+            "Abril de 2011",
+            "Abril de 2015"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0005",
+        "pregunta": "Según establece el Art. 4 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿a cuál de las siguientes opciones no se aplicarán directamente las disposiciones del Estatuto Básico del Empleado Público, ya que es incorrecta o falsa?",
+        "respuesta": "Jueces, Magistrados, Fiscales y demás personal funcionario al no servicio de la Administración de Justicia",
+        "opciones": [
+            "Jueces, Magistrados, Fiscales y demás personal funcionario al no servicio de la Administración de Justicia",
+            "Personal militar de las Fuerzas Armadas",
+            "Personal funcionario de las Cortes Generales y de las asambleas legislativas de las comunidades autónomas",
+            "Personal del Centro Nacional de Inteligencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0006",
+        "pregunta": "En qué situación administrativa se encuentran los funcionarios de carrera que han sido designados miembros del Gobierno o de los órganos de gobierno de las comunidades autónomas y ciudades de Ceuta y Melilla?",
+        "respuesta": "Servicios especiales.",
+        "opciones": [
+            "Excedencia.",
+            "Servicio en otras Administraciones Públicas.",
+            "Servicios especiales.",
+            "Servicio activo."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0007",
+        "pregunta": "A tenor de los principios de buena regulación, la iniciativa que se proponga deerá contener la regulación imprescindible para atender la necesidad a cubrir con la norma, tras constatar que no existen otras medidas menos restrictivas de derechos, o que impongan menos obligaciones a los destinataríos en virtud de",
+        "respuesta": "El princpio de proporcionalidad",
+        "opciones": [
+            "El princpio de transparencia",
+            "El princpio de eficiencia",
+            "El principio de seguridad jurídica",
+            "El princpio de proporcionalidad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0008",
+        "pregunta": "¿Cuántos días hábiles corresponde de permiso por fallecimiento de un familiar dentro del primer grado de consanguinidad o afinidad, cuando el suceso se produce en la misma localidad?",
+        "respuesta": "3 días hábiles.",
+        "opciones": [
+            "3 días hábiles.",
+            "5 días hábiles.",
+            "2 días hábiles.",
+            "1 día hábil."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0009",
+        "pregunta": "¿Cuál es la duración del permiso por lactancia de un hijo menor de doce meses?",
+        "respuesta": "1 hora al día.",
+        "opciones": [
+            "1 hora al día.",
+            "4 horas al día.",
+            "2 horas al día.",
+            "3 horas al día."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0010",
+        "pregunta": "¿En qué situación administrativa se encuentran los funcionarios de carrera que han obtenido destino en una Administración Pública distinta?",
+        "respuesta": "Servicio en otras Administraciones Públicas.",
+        "opciones": [
+            "Servicio en otras Administraciones Públicas.",
+            "Excedencia.",
+            "Servicio activo.",
+            "Servicios especiales."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0011",
+        "pregunta": "¿Qué caracteriza a los funcionarios de carrera?",
+        "respuesta": "Desempeñan funciones retribuidas de carácter permanente.",
+        "opciones": [
+            "Desempeñan funciones retribuidas de carácter permanente.",
+            "Están vinculados a una Administración Pública por una relación laboral.",
+            "Su selección se realiza a través de procedimientos de igualdad y celeridad.",
+            "Son nombrados con carácter temporal para cubrir plazas vacantes."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0012",
+        "pregunta": "A tenor del art.30 referente al Buen Gobierno, ¿qué grado de infracciones serán sancionadas con una amonestación?",
+        "respuesta": "Las infracciones leves",
+        "opciones": [
+            "Las infracciones muy graves",
+            "Las infracciones moderadas",
+            "Las infracciones leves",
+            "Las infracciones graves"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0013",
+        "pregunta": "¿Cuál es uno de los principios de provisión de puestos de trabajo del personal funcionario de carrera?",
+        "respuesta": "Publicidad.",
+        "opciones": [
+            "Competencia.",
+            "Igualdad.",
+            "Movilidad.",
+            "Publicidad."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0014",
+        "pregunta": "A tenor del art.29 referente al Buen Gobierno y las infracciones disciplinarias, la negligencia en la custodia de secretos oficiales, declarados así por Ley o clasificados como tales, que sea causa de su publicación o que provoque su difusión o conocimiento indebido, se considera una",
+        "respuesta": "Infracción muy grave",
+        "opciones": [
+            "Infracción moderada",
+            "Infracción leve",
+            "Infracción muy grave",
+            "Infracción grave"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0015",
+        "pregunta": "¿Qué se considera retribución diferida?",
+        "respuesta": "Las aportaciones a planes de pensiones de empleo o contratos de seguro colectivos.",
+        "opciones": [
+            "Las retribuciones básicas de los funcionarios de carrera.",
+            "Las aportaciones a planes de pensiones de empleo o contratos de seguro colectivos.",
+            "Las retribuciones complementarias de los funcionarios.",
+            "Las cantidades destinadas a la financiación de las pagas extraordinarias."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0016",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la tramitación, cuando la solicitud no identifique de forma suficiente la información, se pedirá al solicitante que la concrete en un plazo de",
+        "respuesta": "Diez días",
+        "opciones": [
+            "Veinte días",
+            "Quince días",
+            "Diez días",
+            "Cinco días"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0017",
+        "pregunta": "Conforme al artículo 6 bis de la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, cual de las siguientes categorías de responsables o encargados de tratamiento no deberán hacer público un inventario de sus actividades de tratamiento de datos de carácter personal accesible por medios electrónicos",
+        "respuesta": "Las Universidades Privadas",
+        "opciones": [
+            "Las Universidades Privadas",
+            "Los órganos jurisdiccionales",
+            "Los consorcios",
+            "El Banco de España"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0018",
+        "pregunta": "¿Cuál de las siguientes opciones NO es un permiso de los funcionarios públicos?",
+        "respuesta": "Permiso por realizar funciones de mediación en conflictos colectivos.",
+        "opciones": [
+            "Permiso por realizar funciones de mediación en conflictos colectivos.",
+            "Permiso por concurrir a exámenes finales y pruebas definitivas de aptitud.",
+            "Permiso por traslado de domicilio sin cambio de residencia.",
+            "Permiso por participar en reuniones sindicales."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0019",
+        "pregunta": "¿Cuáles son los principios que deben regir la carrera profesional de los funcionarios de carrera?",
+        "respuesta": "Igualdad, mérito y capacidad.",
+        "opciones": [
+            "Antigüedad, experiencia y formación.",
+            "Estabilidad, promoción y remuneración.",
+            "Igualdad, mérito y capacidad.",
+            "Competencia, eficiencia y productividad."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0020",
+        "pregunta": "Las Administraciones Públicas, harán público un Plan Normativo que contendrá las iniciativas legales o reglamentarias que vayan a ser elevadas para su aprobación, de manera",
+        "respuesta": "Anual",
+        "opciones": [
+            "Trimestral",
+            "Anual",
+            "Cuatrimestral",
+            "Semestral"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0021",
+        "pregunta": "A tenor de los principios de buena regulación, la iniciativa se ejercerá de manera coherente con el resto del ordenamiento jurídico, nacional y de la Unión Europea, para generar un marco normativo establle, predecible, integrado claro y de certidumbre, que facilite su conocimiento y comprensión y, en consecuencia, la actuación y toma de decisiones de las personas y empresas en virtud de",
+        "respuesta": "El principio de seguridad jurídica",
+        "opciones": [
+            "El principio de seguridad jurídica",
+            "El princpio de transparencia",
+            "El principio de proporcionalidad",
+            "Los princpios de necesidad y eficacia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0022",
+        "pregunta": "Si la información solicitada contuviera datos personales que revelen la ideología, afiliación sindical, religió o creencias, el acceso únicamente se podrá autorizar en caso de que",
+        "respuesta": "Se contase con el consentimiento expreso y por escrito del afectado",
+        "opciones": [
+            "Siempre se podrá autorizar el acceso",
+            "Se contase con el consentimiento expreso y verbal del afectado",
+            "Se contase con el consentimiento expreso y por escrito o verbal del afectado",
+            "Se contase con el consentimiento expreso y por escrito del afectado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0023",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la tramitación, si la información solicitada pudiera afectar a derechos o intereses de terceros, se les concederá un plazo de",
+        "respuesta": "Quince días para realizar alegaciones",
+        "opciones": [
+            "Treinta días para realizar alegaciones",
+            "Veinte días para realizar alegaciones",
+            "Quince días para realizar alegaciones",
+            "Veinticinco días para realizar alegaciones"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0024",
+        "pregunta": "A tenor del art.29 referente al Buen Gobierno y las infracciones disciplinarias, la intervención en un procedimiento administrativo cuando se dé alguna de las causas de abstención legalmente señaladas, se considera una",
+        "respuesta": "Infracción grave",
+        "opciones": [
+            "Infracción muy grave",
+            "Infracción grave",
+            "Infracción moderada",
+            "Infracción leve"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0025",
+        "pregunta": "Según establece el Art. 5 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿el personal de cuál de los siguientes órganos se regirá por sus normas específicas y supletoriamente por lo dispuesto en este Estatuto?",
+        "respuesta": "El personal funcionario de la Sociedad Estatal Correos y Telégrafos",
+        "opciones": [
+            "El personal retribuido por arancel",
+            "El personal de las Fuerzas y Cuerpos de Seguridad",
+            "El personal funcionario de la Sociedad Estatal Correos y Telégrafos",
+            "El personal del Banco de España y del Fondo de Garantía de Depósitos de Entidades de Crédito"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0026",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la reclamación ante el Consejo de Transparencia y Buen Gobierno, la Interposición se realizará",
+        "respuesta": "En el plazo de un mes a contar desde el día siguiente al de la noticicación del acto impugnado",
+        "opciones": [
+            "En el plazo de quince días a contar desde el día de la noticicación del acto impugnado",
+            "En el plazo de quince días a contar desde el día siguiente al de la noticicación del acto impugnado",
+            "En el plazo de un mes a contar desde el día de la noticicación del acto impugnado",
+            "En el plazo de un mes a contar desde el día siguiente al de la noticicación del acto impugnado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0027",
+        "pregunta": "¿Qué garantiza el derecho a la carrera profesional y a la promoción interna?",
+        "respuesta": "El acceso a oportunidades de desarrollo y crecimiento dentro de la organización.",
+        "opciones": [
+            "El acceso a oportunidades de desarrollo y crecimiento dentro de la organización.",
+            "La igualdad de oportunidades de empleo para todos los trabajadores.",
+            "La estabilidad laboral y la seguridad en el empleo.",
+            "El derecho a un salario justo y equitativo."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0028",
+        "pregunta": "¿Qué se evalúa en la evaluación del desempeño de los empleados públicos?",
+        "respuesta": "La conducta profesional y el rendimiento o logro de resultados.",
+        "opciones": [
+            "La satisfacción del cliente y la productividad.",
+            "La capacidad de liderazgo y trabajo en equipo.",
+            "La antigüedad y la formación académica.",
+            "La conducta profesional y el rendimiento o logro de resultados."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0029",
+        "pregunta": "Según establece el Art. 2 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿a cuál de las siguientes opciones no se aplica el Estatuto Básico del Empleado Público?",
+        "respuesta": "A las Universidades Privadas",
+        "opciones": [
+            "A las Administraciones de las entidades locales",
+            "A las Administraciones de las comunidades autónomas y de las ciudades de Ceuta y Melilla",
+            "A los organismos públicos, agencias y demás entidades de derecho público con personalidad jurídica propia, vinculadas o dependientes de cualquiera de las Administraciones Públicas",
+            "A las Universidades Privadas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0030",
+        "pregunta": "A tenor de los arts. 17 a 22 de la Ley 19/2013, la solicitud de acceso a la información podrña presentarse por cualquier medio que permita tener constancia de",
+        "respuesta": "La identidad del solicitante, la información que se solicita, una dirección de contacto, preferentemente electrónica y, en su caso, la modalidad que se prefiera para acceder a la información",
+        "opciones": [
+            "La identidad del solicitante, la información que se solicita, una dirección de contacto, preferentemente electrónica y, en su caso, la modalidad que se prefiera para acceder a la información",
+            "La identidad del solicitante y la información que se solicita",
+            "La identidad del solicitante, la información que se solicita y un teléfono de contacto",
+            "La identidad del solicitante, la información que se solicita, una dirección de contacto, preferentemente física y, en su caso, la modalidad que se prefiera para acceder a la información"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0031",
+        "pregunta": "¿Cuáles son los principios que rigen los procedimientos de selección del personal laboral?",
+        "respuesta": "Igualdad, mérito y capacidad.",
+        "opciones": [
+            "Mérito, capacidad y celeridad.",
+            "Igualdad, mérito y capacidad.",
+            "Mérito, igualdad y celeridad.",
+            "Mérito, capacidad y publicidad."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0032",
+        "pregunta": "¿Cómo se rige el personal laboral al servicio de las Administraciones públicas en materia de permisos y licencias?",
+        "respuesta": "Por las disposiciones del EBEP que así lo dispongan.",
+        "opciones": [
+            "Por las disposiciones del EBEP que así lo dispongan.",
+            "No se les aplican las previsiones del Estatuto de los Trabajadores.",
+            "Por la legislación específica de cada comunidad autónoma.",
+            "Por la legislación laboral y el Estatuto de los Trabajadores."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0033",
+        "pregunta": "Según establece el Art. 6 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿cuál de los siguientes órganos aprobará, en el ámbito de sus competencias, las leyes reguladoras de la Función Pública de la Administración General del Estado y de las comunidades autónomas?",
+        "respuesta": "Las Cortes Generales y las asambleas legislativas de las comunidades autónomas",
+        "opciones": [
+            "La Comisión interpresidencial de coordinación de la Administración periférica del Estado y las asambleas judiciales de las provincias",
+            "La Comisión interpresidencial de coordinación de la Administración periférica del Estado y las asambleas ejecutivas de las provincias",
+            "El Senado y el Tribunal Superior de Justicia",
+            "Las Cortes Generales y las asambleas legislativas de las comunidades autónomas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0034",
+        "pregunta": "¿Cómo se define el personal laboral al servicio de las Administraciones Públicas?",
+        "respuesta": "Aquel que presta servicios retribuidos bajo contrato de trabajo.",
+        "opciones": [
+            "Aquel que realiza funciones propias de funcionarios de carrera de manera temporal.",
+            "Aquel que presta servicios retribuidos bajo contrato de trabajo.",
+            "Aquel que realiza funciones de confianza o asesoramiento especial.",
+            "Aquel que está vinculado por una relación estatutaria regulada por el Derecho Administrativo."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0035",
+        "pregunta": "A tenor del art.30 referente al Buen Gobierno, cuando las infracciones pudieran ser constitutivas de delito, la Administración pondrá los hechos en conocimiento de",
+        "respuesta": "El Fiscal General del Estado",
+        "opciones": [
+            "El Rey",
+            "El Fiscal General del Estado",
+            "El Defensor del Pueblo",
+            "El Presidente del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0036",
+        "pregunta": "A tenor del art.29 referente al Buen Gobierno y las infracciones disciplinarias, el abuso de autoridad en el ejercicio del cargo, se considera",
+        "respuesta": "Infracción grave",
+        "opciones": [
+            "Infracción leve",
+            "Infracción muy grave",
+            "Infracción moderada",
+            "Infracción grave"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0037",
+        "pregunta": "El Tercer Plan de Gobierno Abierto de España contiene 20 medidas estructuradas en torno a",
+        "respuesta": "Cinco grandes ejes: Colaboración, Participación, Transparencia, Formación y Rendición de cuentas",
+        "opciones": [
+            "Cuatro grandes ejes: Colaboración, Participación, Transparencia y Formación",
+            "Cinco grandes ejes: Colaboración, Participación, Transparencia, Formación y Rendición de cuentas",
+            "Tres grandes ejes: Colaboración, Participación y Formación",
+            "Tres grandes ejes: Colaboración, Participación y Rendición de cuentas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0038",
+        "pregunta": "¿Qué régimen se aplica al personal funcionario interino en cuanto a sus derechos?",
+        "respuesta": "Régimen general del personal funcionario de carrera.",
+        "opciones": [
+            "Régimen general del personal funcionario de carrera.",
+            "Régimen laboral establecido para el personal laboral.",
+            "Régimen especial para empleados públicos temporales.",
+            "Régimen específico para funcionarios interinos."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0039",
+        "pregunta": "A tenor del art.31 referente al Buen Gobierno, el órgano competente para ordenar la incoación, cuando los presuntos responsables sean personas al servicio de la Administración General del Estado, excepto los que tengan la condición de miembro del Gobierno o de Secretario de Estado, será",
+        "respuesta": "El Ministro de Política Territorial y Función Pública, únicamente",
+        "opciones": [
+            "El Consejo de Ministros únicamente",
+            "El Ministro de Política Territorial y Función Pública, únicamente",
+            "El Ministro de Política Territorial y Función Pública a propuesta del Consejo de Ministros",
+            "El Consejo de Ministros a propuesta el Ministro de Política Territorial y Función Pública"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0040",
+        "pregunta": "El Portal de la Transparencia tendrá los siguientes principios técnicos",
+        "respuesta": "Accesibilidad, interoperabilidad y reutilización",
+        "opciones": [
+            "Accesibilidad, interoperabilidad y reutilización",
+            "Usabilidad, interoperabilidad y reutilización",
+            "Accesibilidad, usabilidad e interoperabilidad",
+            "Accesibilidad, usabilidad, interoperabilidad y reutilización"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0041",
+        "pregunta": "¿Quiénes están sujetos al código de conducta de los empleados públicos?",
+        "respuesta": "Todos los empleados públicos.",
+        "opciones": [
+            "Solo los empleados de nivel inferior.",
+            "Todos los empleados públicos.",
+            "Solo los funcionarios de alto nivel.",
+            "Solo los funcionarios interinos."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0042",
+        "pregunta": "A tenor del art.31 referente al Buen Gobierno, el órgano competente para ordenar la incoación, cuando el alto cargo tenga la condición de miembro del Gobierno o de Secretario de Estado, será",
+        "respuesta": "El Consejo de Ministros a propuesta el Ministro de Política Territorial y Función Pública",
+        "opciones": [
+            "El Consejo de Ministros únicamente",
+            "El Ministro de Política Territorial y Función Pública, únicamente",
+            "El Ministro de Política Territorial y Función Pública a propuesta del Consejo de Ministros",
+            "El Consejo de Ministros a propuesta el Ministro de Política Territorial y Función Pública"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0043",
+        "pregunta": "En el Foro, ¿Cuántos vocales hay en representación de la Administración General del Estado?",
+        "respuesta": "Ocho vocales",
+        "opciones": [
+            "Ocho vocales",
+            "Seis vocales",
+            "Cuatro vocales",
+            "Diez vocales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0044",
+        "pregunta": "¿Cuál es el propósito de los derechos individuales de los empleados públicos?",
+        "respuesta": "Proteger sus intereses personales.",
+        "opciones": [
+            "Establecer un marco de actuación ética.",
+            "Proteger sus intereses personales.",
+            "Promover la igualdad en el servicio público.",
+            "Facilitar su participación en decisiones colectivas."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0045",
+        "pregunta": "Según establece el Art. 3 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Los Cuerpos de Policía Local se rigen también por el Estatuto Básico del Empleado Público y por la legislación de las comunidades autónomas, excepto en lo establecido para ellos en la Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad",
+        "opciones": [
+            "Los Cuerpos de Policía Local se rigen también por el Estatuto Básico del Empleado Público y por la legislación de las comunidades autónomas, excepto en lo establecido para ellos en la Ley Orgánica 12/1996, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad",
+            "Los Cuerpos de Policía Local se rigen también por el Estatuto Básico del Empleado Público y por la legislación de las comarcas, excepto en lo establecido para ellos en la Ley Orgánica 12/1996, de 23 de marzo, de Fuerzas y Cuerpos de Seguridad",
+            "Los Cuerpos de Policía Local se rigen también por el Estatuto Básico del Empleado Público y por la legislación de las provincias, excepto en lo establecido para ellos en la Ley Orgánica 21/1986, de 3 de marzo, de Fuerzas y Cuerpos de Seguridad",
+            "Los Cuerpos de Policía Local se rigen también por el Estatuto Básico del Empleado Público y por la legislación de las comunidades autónomas, excepto en lo establecido para ellos en la Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0046",
+        "pregunta": "¿A quién se aplica el Estatuto Básico del Empleado Público (TREBEP)?",
+        "respuesta": "Todas las anteriores.",
+        "opciones": [
+            "Las Administraciones de las comunidades autónomas y de las ciudades de Ceuta y Melilla.",
+            "Las Administraciones de las entidades locales.",
+            "La Administración General del Estado.",
+            "Todas las anteriores."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0047",
+        "pregunta": "El derecho de acceso a la información pública podrá ser limitado cuando suponga un perjuicio para",
+        "respuesta": "La defensa, la seguridad nacional, las relaciones exteriores, entre otros",
+        "opciones": [
+            "La defensa, las relaciones exteriores, la sanidad pública, entre otros",
+            "La defensa, la seguridad nacional, las relaciones exteriores, entre otros",
+            "La seguridad nacional, las relaciones exteriores, la sanidad pública, entre otros",
+            "La defensa, la seguridad nacional, la sanidad pública, entre otros"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0048",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la reclamación ante el Consejo de Transparencia y Buen Gobierno, ¿Quién tiene que comunicar las resoluciones?",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "El Defensor del Pueblo",
+            "El Congreso de los Diputados",
+            "El Presidente del Gobierno",
+            "El Rey"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0049",
+        "pregunta": "A tenor de los principios de buena regulación, la iniciativa normativa debe evitar cargas administrativas innecesarias o accesorias y racionalizar, en su aplicación, la gestión de los recursos públicos, a tenor de",
+        "respuesta": "El princpio de eficiencia",
+        "opciones": [
+            "El princpio de proporcionalidad",
+            "Los princpios de necesidad y eficacia",
+            "El princpio de transparencia",
+            "El princpio de eficiencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0050",
+        "pregunta": "¿Bajo qué circunstancias se nombran funcionarios interinos?",
+        "respuesta": "Por necesidades urgentes y temporales.",
+        "opciones": [
+            "Por su desempeño excepcional en funciones de confianza.",
+            "Por su experiencia previa en el sector público.",
+            "Por su destacada trayectoria profesional.",
+            "Por necesidades urgentes y temporales."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0051",
+        "pregunta": "El Capítulo II del Titulo I se refiere a la publicidad activa en los artículos",
+        "respuesta": "Del 5 al 11",
+        "opciones": [
+            "Del 16 al 19",
+            "Del 11 al 15",
+            "Del 5 al 11",
+            "Del 1 al 5"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0052",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la resolución, el incumplimiento reiterado de la obligación de resolver en plazo tendrá la consideración de",
+        "respuesta": "Infracción grave",
+        "opciones": [
+            "Infracción media",
+            "Infracción leve",
+            "Infracción moderada",
+            "Infracción grave"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0053",
+        "pregunta": "¿Qué factores se tienen en cuenta para establecer las retribuciones complementarias de los funcionarios?",
+        "respuesta": "La progresión alcanzada por el funcionario dentro del sistema de carrera administrativa.",
+        "opciones": [
+            "El número de trienios acumulados por el funcionario.",
+            "La antigüedad del funcionario en el puesto de trabajo.",
+            "La cantidad de servicios extraordinarios prestados por el funcionario.",
+            "La progresión alcanzada por el funcionario dentro del sistema de carrera administrativa."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0054",
+        "pregunta": "¿Qué retribuciones perciben los funcionarios interinos?",
+        "respuesta": "Todas las anteriores.",
+        "opciones": [
+            "Las retribuciones correspondientes a la categoría de entrada en el cuerpo o escala en el que se le nombre.",
+            "Las retribuciones complementarias a las que se refieren los apartados B), C) y D) del artículo 24.",
+            "Todas las anteriores.",
+            "Las retribuciones básicas correspondientes a su Subgrupo o Grupo de adscripción."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0055",
+        "pregunta": "¿Qué son las retribuciones básicas de los funcionarios de carrera?",
+        "respuesta": "Las retribuciones que retribuyen al funcionario según la adscripción de su cuerpo o escala a un determinado Subgrupo o Grupo de clasificación profesional.",
+        "opciones": [
+            "Las retribuciones que se determinan de acuerdo con la legislación laboral y el convenio colectivo aplicable.",
+            "Las retribuciones que se establecen por las correspondientes leyes de cada Administración Pública.",
+            "Las retribuciones que se reflejan en la Ley de Presupuestos Generales del Estado.",
+            "Las retribuciones que retribuyen al funcionario según la adscripción de su cuerpo o escala a un determinado Subgrupo o Grupo de clasificación profesional."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0056",
+        "pregunta": "Una vez aprobado el Plan Normativo de la Administración Pública correspondiente, se publicará en",
+        "respuesta": "El Portal de la Transparencia",
+        "opciones": [
+            "El Portal de la Transparencia",
+            "El BOE",
+            "El Foro Gobierno Abierto",
+            "Los medios de comunicación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0057",
+        "pregunta": "Según establece el Art. 1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿cuál de las siguientes opciones no es un fundamento de actuación del Estatuto Básico del Empleado Público, ya que es incorrecta o falsa?",
+        "respuesta": "Sometimiento parcial a la ley y al Derecho",
+        "opciones": [
+            "Jerarquía en la atribución, ordenación y desempeño de las funciones y tareas",
+            "Sometimiento parcial a la ley y al Derecho",
+            "Eficacia en la planificación y gestión de los recursos humanos",
+            "Igualdad, mérito y capacidad en el acceso y en la promoción profesional"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0058",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la formalización del acceso, el acceso a la información será",
+        "respuesta": "Gratuito",
+        "opciones": [
+            "Gratuito",
+            "Anónimo",
+            "Previo pago de tasas",
+            "Preferente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0059",
+        "pregunta": "A tenor de los principios de buena regulación, las Administraciones Públicas definirán claramente los objetivos de las iniciativas normativas y su justificación en el preámbulo o exposición de motivos en virtud de",
+        "respuesta": "El principio de transparencia",
+        "opciones": [
+            "El princpio de proporcionalidad",
+            "El principio de seguridad jurídica",
+            "El princpio de eficiencia",
+            "El principio de transparencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0060",
+        "pregunta": "¿Cuál es la duración máxima de la relación de interinidad para los funcionarios interinos?",
+        "respuesta": "3 años.",
+        "opciones": [
+            "No hay límite de duración.",
+            "2 años.",
+            "3 años.",
+            "1 año."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0061",
+        "pregunta": "El cumplimiento por la Administración General del Estado de las obligaciones será objeto de control por parte de",
+        "respuesta": "El Consejo de Transparencia y Buen Gobierno",
+        "opciones": [
+            "El Congreso de los Diputados",
+            "Las Cortes",
+            "El Consejo de Transparencia y Buen Gobierno",
+            "El Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0062",
+        "pregunta": "¿Qué caracteriza al personal eventual?",
+        "respuesta": "Realiza funciones de confianza o asesoramiento especial.",
+        "opciones": [
+            "Puede acceder a la condición de funcionario de carrera.",
+            "Tiene un contrato por tiempo indefinido.",
+            "Realiza funciones de confianza o asesoramiento especial.",
+            "No está sujeto a un límite máximo de duración en su cargo."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0063",
+        "pregunta": "Según establece el Art. 7 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "En materia de permisos de nacimiento, adopción, del progenitor diferente de la madre biológica y lactancia, el personal laboral al servicio de las Administraciones públicas se regirá por lo previsto en el presente Estatuto, no siendo de aplicación a este personal, por tanto, las previsiones del texto refundido de la Ley del Estatuto de los Trabajadores sobre las suspensiones de los contratos de trabajo que, en su caso, corresponderían por los mismos supuestos de hecho",
+        "opciones": [
+            "En materia de permisos de nacimiento, adopción, del progenitor diferente de la madre biológica y lactancia, el personal laboral al servicio de las Administraciones privadas se regirá por lo previsto en el presente Estatuto, siendo de aplicación a este personal, por tanto, las previsiones del texto refundido de la Ley del Estatuto de los Trabajadores sobre las suspensiones de los contratos de trabajo que, en su caso, corresponderían por los mismos supuestos de hecho",
+            "En materia de permisos de nacimiento, adopción, del progenitor diferente de la madre biológica y lactancia, el personal laboral al servicio de las Administraciones públicas se regirá por lo previsto en el presente Estatuto, siendo de aplicación a este personal, por tanto, las previsiones del texto refundido de la Ley del Estatuto de los Trabajadores sobre las suspensiones de los contratos de trabajo que, en su caso, corresponderían por los mismos supuestos de hecho",
+            "En materia de permisos de nacimiento, adopción, del progenitor diferente de la madre biológica y lactancia, el personal laboral al servicio de las Administraciones públicas se regirá por lo previsto en el presente Estatuto, no siendo de aplicación a este personal, por tanto, las previsiones del texto refundido de la Ley del Estatuto de los Trabajadores sobre las suspensiones de los contratos de trabajo que, en su caso, corresponderían por los mismos supuestos de hecho",
+            "En materia de permisos de nacimiento, adopción, del progenitor diferente de la madre biológica y lactancia, el personal laboral al servicio de las Administraciones privadas se regirá por lo previsto en el presente Estatuto, no siendo de aplicación a este personal, por tanto, las previsiones del texto refundido de la Ley del Estatuto de los Trabajadores sobre las suspensiones de los contratos de trabajo que, en su caso, corresponderían por los mismos supuestos de hecho"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0064",
+        "pregunta": "¿Quiénes están legitimados para promover elecciones a Delegados y Juntas de Personal?",
+        "respuesta": "Los sindicatos más representativos y aquellos que hayan obtenido al menos el 10% de los representantes en el conjunto de las Administraciones Públicas.",
+        "opciones": [
+            "Los sindicatos más representativos y aquellos que hayan obtenido al menos el 10% de los representantes en el conjunto de las Administraciones Públicas.",
+            "Únicamente los sindicatos más representativos a nivel estatal.",
+            "Los sindicatos más representativos a nivel de comunidad autónoma y los funcionarios de la unidad electoral.",
+            "Todos los funcionarios de la unidad electoral."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0065",
+        "pregunta": "A tenor del art.29 referente al Buen Gobierno y las infracciones disciplinarias, la incorrección con los superiores, compañeros o subordinados, se considera una",
+        "respuesta": "Infracción leve",
+        "opciones": [
+            "Infracción leve",
+            "Infracción muy grave",
+            "Infracción moderada",
+            "Infracción grave"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0066",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, las solicitudes que se refieran a información que esté en curso de elaboración o de publicación general serán",
+        "respuesta": "Inadmitidas a trámite, mediante resolución motivada",
+        "opciones": [
+            "Inadmitidas a trámite, mediante resolución motivada",
+            "Admitidas a trámites",
+            "Secretas",
+            "Derivadas a otro departamento"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0067",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la reclamación ante el Consejo de Transparencia y Buen Gobierno, ¿A quién hay que comunicar las resoluciones?",
+        "respuesta": "Al Defensor del Pueblo",
+        "opciones": [
+            "Al Presidente del Gobierno",
+            "Al Congreso de los Diputados",
+            "Al Defensor del Pueblo",
+            "Al Rey"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0068",
+        "pregunta": "¿Qué requisitos deben cumplir los funcionarios para acceder a la promoción interna?",
+        "respuesta": "Tener una antigüedad mínima de dos años en el mismo Subgrupo o Grupo de clasificación profesional.",
+        "opciones": [
+            "Superar las pruebas selectivas y obtener la evaluación positiva del desempeño.",
+            "Contar con la aprobación de la autoridad competente.",
+            "Demostrar habilidades de liderazgo y capacidad de trabajo en equipo.",
+            "Tener una antigüedad mínima de dos años en el mismo Subgrupo o Grupo de clasificación profesional."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0069",
+        "pregunta": "El Portal de la Transparencia será desarrollado por",
+        "respuesta": "La Administración General del Estado",
+        "opciones": [
+            "El Consejo de Transparencia",
+            "La Administración General del Estado",
+            "El Bueno Gobierno",
+            "El Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0070",
+        "pregunta": "A tenor del art.29 referente al Buen Gobierno y las infracciones disciplinarias, el incumplimiento del deber de respeto a la Constitución y a los respectivos Estatutos de Autonomía de las Comunidades Autónomas y Ciudades de Ceuta y Melilla, en el ejercicio de sus funciones, se considera una",
+        "respuesta": "Infracción muy grave",
+        "opciones": [
+            "Infracción leve",
+            "Infracción muy grave",
+            "Infracción grave",
+            "Infracción moderada"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0071",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la resolución, deberá notificarse al solicitante y a terceros afectados que asó lo hayan solicitado en el plazo",
+        "respuesta": "Máximo de un mes desde la recepción de la solicitud",
+        "opciones": [
+            "Máximo de dos meses desde la recepción de la solicitud",
+            "Máximo de quince días desde la recepción de la solicitud",
+            "Máximo de un mes desde la recepción de la solicitud",
+            "Máximo de veinte días desde la recepción de la solicitud"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0072",
+        "pregunta": "¿En qué casos procederá la negociación de las condiciones de trabajo de los funcionarios públicos que afecten a las potestades de organización de las Administraciones Públicas?",
+        "respuesta": "Cuando dichas condiciones de trabajo tengan repercusión sobre las condiciones de trabajo contempladas en el artículo 37 del Estatuto.",
+        "opciones": [
+            "Cuando dichas condiciones de trabajo tengan repercusión sobre el ejercicio de los derechos sindicales y de participación.",
+            "Cuando dichas condiciones de trabajo tengan repercusión sobre las retribuciones complementarias de los funcionarios.",
+            "Cuando dichas condiciones de trabajo tengan repercusión sobre el acceso al empleo público y la promoción profesional.",
+            "Cuando dichas condiciones de trabajo tengan repercusión sobre las condiciones de trabajo contempladas en el artículo 37 del Estatuto."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0073",
+        "pregunta": "A tenor de los principios de buena regulación, la iniciativa normativa debe estar justificada por una razón de interés general, basarse en una identificación clara de los fines perseguidos y ser el instrumento más adecuado para garantizar su consecución en virtud de",
+        "respuesta": "Los principios de necesidad y eficacia",
+        "opciones": [
+            "El princpio de proporcionalidad",
+            "Los principios de necesidad y eficacia",
+            "El princpio de transparencia",
+            "El princpio de eficiencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0074",
+        "pregunta": "¿Cómo pueden ejercer sus derechos los empleados públicos?",
+        "respuesta": "Individualmente o de forma conjunta.",
+        "opciones": [
+            "Solo de forma individual.",
+            "No tienen derechos individuales.",
+            "Individualmente o de forma conjunta.",
+            "Solo de forma conjunta."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0075",
+        "pregunta": "En el Foro, ¿Cuántos vocales hay en representación de la Real Academia de las Ciencias Morales y Políticas?",
+        "respuesta": "Cuatro vocales",
+        "opciones": [
+            "Diez vocales",
+            "Seis vocales",
+            "Cuatro vocales",
+            "Ocho vocales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0076",
+        "pregunta": "¿Qué sucede con las plazas vacantes ocupadas por personal funcionario interino?",
+        "respuesta": "Deberán ser objeto de cobertura mediante cualquiera de los mecanismos de provisión o movilidad previstos en la normativa de cada Administración Pública.",
+        "opciones": [
+            "Pueden ser ocupadas por personal laboral.",
+            "Se mantienen ocupadas por personal funcionario interino indefinidamente.",
+            "Son eliminadas y no se cubren.",
+            "Deberán ser objeto de cobertura mediante cualquiera de los mecanismos de provisión o movilidad previstos en la normativa de cada Administración Pública."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0077",
+        "pregunta": "¿Cuál es el objetivo del código de conducta de los empleados públicos?",
+        "respuesta": "Definir las responsabilidades y obligaciones de los empleados públicos.",
+        "opciones": [
+            "Definir las responsabilidades y obligaciones de los empleados públicos.",
+            "Establecer los derechos individuales de los empleados públicos.",
+            "Regular el proceso de selección de los empleados públicos.",
+            "Establecer los deberes éticos de los empleados públicos."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0078",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la reclamación ante el Consejo de Transparencia y Buen Gobierno, el plazo máximo para resolver y notificar la resolución será de",
+        "respuesta": "Tres meses",
+        "opciones": [
+            "Cuatro meses",
+            "Seis meses",
+            "Un año",
+            "Tres meses"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0079",
+        "pregunta": "A tenor del art.29 referente al Buen Gobierno y las infracciones disciplinarias, el acoso laboral, se considera una",
+        "respuesta": "Infracción muy grave",
+        "opciones": [
+            "Infracción leve",
+            "Infracción moderada",
+            "Infracción muy grave",
+            "Infracción grave"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0080",
+        "pregunta": "La creación de un Foro de Gobierno Abierto es un compromiso asumido por España en el",
+        "respuesta": "Tercer Plan de Acción",
+        "opciones": [
+            "Primer Plan de Acción",
+            "Cuarto Plan de Acción",
+            "Tercer Plan de Acción",
+            "Segundo Plan de Acción"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0081",
+        "pregunta": "¿Qué tipos de contratos pueden tener los empleados públicos laborales?",
+        "respuesta": "Contrato por tiempo indefinido y contrato temporal.",
+        "opciones": [
+            "Contrato de interinidad y contrato de prácticas.",
+            "Contrato fijo y contrato de relevo.",
+            "Contrato por tiempo indefinido y contrato temporal.",
+            "Contrato eventual y contrato en prácticas."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0082",
+        "pregunta": "El Foro estará integrado por",
+        "respuesta": "El Presidente, 64 vocales, 32 en representación de las Administraciones Públicas y 32 en representación de la sociedad civil",
+        "opciones": [
+            "El Presidente, 64 vocales, 64 en representación de las Administraciones Públicas y 64 en representación de la sociedad civil",
+            "El Presidente, 32 vocales, 32 en representación de las Administraciones Públicas y 32 en representación de la sociedad civil",
+            "El Presidente, 64 vocales, 64 en representación de las Administraciones Públicas y 32 en representación de la sociedad civil",
+            "El Presidente, 64 vocales, 32 en representación de las Administraciones Públicas y 32 en representación de la sociedad civil"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0083",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la formalización del acceso, cuando no pueda darse el acceso en el momento de la notificación de la resolución deberá otorgarse, en cualquier caso, en un plazo",
+        "respuesta": "No superior a diez días",
+        "opciones": [
+            "No superior a tres días",
+            "No superior a quince días",
+            "No superior a diez días",
+            "No superior a cincodías"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0084",
+        "pregunta": "¿Cuál es la base jurídica de los derechos individuales de los empleados públicos?",
+        "respuesta": "Estatuto del Empleado Público.",
+        "opciones": [
+            "Código de Conducta de los Empleados Públicos.",
+            "Estatuto del Empleado Público.",
+            "Constitución.",
+            "Ley de Función Pública."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0085",
+        "pregunta": "Según su artículo 1, el objeto de la Ley 19/2013 no es",
+        "respuesta": "Disminuir la transparencia de la actividad pública",
+        "opciones": [
+            "Establecer las obligaciones de buen gobierno que deben cumplir los responsables públicos",
+            "Regular y garantizar el derecho de acceso a la información relativa",
+            "Establecer las consecuencias derivadas del incumplimiento de las obligaciones de buen gobierno",
+            "Disminuir la transparencia de la actividad pública"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0086",
+        "pregunta": "A tenor del art.29 referente al Buen Gobierno y las infracciones disciplinarias, no guardar el debido sigilo respecto a los asuntos que se conozcan por razón del cargo, cuando causen perjuicio a la Administración o se utilicen en provecho proppio, se considera",
+        "respuesta": "Infracción grave",
+        "opciones": [
+            "Infracción grave",
+            "Infracción muy grave",
+            "Infracción moderada",
+            "Infracción leve"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0087",
+        "pregunta": "¿Qué aspectos se valoran en la carrera horizontal de los funcionarios de carrera?",
+        "respuesta": "Trayectoria y actuación profesional, calidad de los trabajos realizados y resultado de la evaluación del desempeño.",
+        "opciones": [
+            "Trayectoria y actuación profesional, calidad de los trabajos realizados y resultado de la evaluación del desempeño.",
+            "Antigüedad en el servicio y cumplimiento de los requisitos exigidos.",
+            "Grado de especialización y formación académica.",
+            "Experiencia laboral y dominio de idiomas extranjeros."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0088",
+        "pregunta": "Sobre la información económica, presupuestaria y estadística, los sujetos incluidos en este ámbito de aplicación, no deberán hacer público, como mínimo",
+        "respuesta": "Las cuentas trimestrales",
+        "opciones": [
+            "Los presupuestos",
+            "Todos los contratos",
+            "Las cuentas trimestrales",
+            "Las subvenciones y ayudas públicas concedidas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0089",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la resolución, en el caso de que el volumen o la complejidad de la información que se solicita sea necesario y previa notificación al solicitante, el plazo podrá ampliarse",
+        "respuesta": "Por otro mes",
+        "opciones": [
+            "Por otro mes",
+            "Por veinte días",
+            "Por quince días",
+            "Por diez días"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0090",
+        "pregunta": "A tenor del derecho de acceso a los ciudadanos a la información pública, referente a la formalización del acceso, se realizará, preferentemente",
+        "respuesta": "Por vía electrónica",
+        "opciones": [
+            "Por correo ordinario",
+            "Por correo certificado",
+            "Telefónicamente",
+            "Por vía electrónica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-4-0091",
+        "pregunta": "¿A quién se aplica el Estatuto Básico del Empleado Público?",
+        "respuesta": "Todas las opciones anteriores.",
+        "opciones": [
+            "Personal funcionario de carrera.",
+            "Todas las opciones anteriores.",
+            "Personal laboral al servicio de las Administraciones Públicas.",
+            "Personal docente y personal estatutario de los Servicios de Salud."
+        ]
+    }
+]
