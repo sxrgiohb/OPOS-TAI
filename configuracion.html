@@ -172,6 +172,13 @@
     }
 
 
+    .opcion + .opcion {
+
+      margin-top: 1rem;
+
+    }
+
+
     .opcion-titulo {
 
       font-weight: 600;
@@ -232,7 +239,8 @@
     }
 
 
-    #mensaje {
+    #mensajeEstadisticas,
+    #mensajeSesiones {
 
       text-align: center;
 
@@ -267,6 +275,7 @@
 
     <section class="card">
 
+
       <button
         class="volver"
         onclick="history.back()"
@@ -289,6 +298,7 @@
 
       </div>
 
+
     </section>
 
 
@@ -298,7 +308,9 @@
 
     <section class="card">
 
+
       <div class="opcion">
+
 
         <div class="opcion-titulo">
 
@@ -335,9 +347,72 @@
         </button>
 
 
-        <div id="mensaje"></div>
+        <div
+          id="mensajeEstadisticas"
+        ></div>
+
 
       </div>
+
+
+    </section>
+
+
+    <!-- =====================================================
+         SESIONES
+    ====================================================== -->
+
+    <section class="card">
+
+
+      <div class="opcion">
+
+
+        <div class="opcion-titulo">
+
+          🗑️ Borrar sesiones
+
+        </div>
+
+
+        <div class="opcion-descripcion">
+
+          Elimina todas las sesiones que hayas creado
+          en la aplicación.
+
+          <br><br>
+
+          Esto eliminará los nombres, contenidos,
+          configuración y demás datos guardados de
+          todas las sesiones.
+
+          <br><br>
+
+          <strong>
+            Esta acción no elimina las estadísticas
+            ni las preguntas de la aplicación.
+          </strong>
+
+        </div>
+
+
+        <button
+          class="boton-peligro"
+          onclick="borrarSesiones()"
+        >
+
+          🗑️ Borrar todas las sesiones
+
+        </button>
+
+
+        <div
+          id="mensajeSesiones"
+        ></div>
+
+
+      </div>
+
 
     </section>
 
@@ -349,18 +424,20 @@
 
 
     /* ========================================================
-       CONFIGURACIÓN
+       CLAVES DE LOCALSTORAGE
     ======================================================== */
-
 
     const CLAVE_ESTADISTICAS =
       "opos_tai_estadisticas";
 
 
+    const CLAVE_SESIONES =
+      "opos_tai_sesiones";
+
+
     /* ========================================================
        BORRAR ESTADÍSTICAS
     ======================================================== */
-
 
     function borrarEstadisticas() {
 
@@ -400,13 +477,9 @@
       );
 
 
-      /*
-       * Mostrar confirmación.
-       */
-
       const mensaje =
         document.getElementById(
-          "mensaje"
+          "mensajeEstadisticas"
         );
 
 
@@ -417,6 +490,93 @@
       mensaje.className =
         "exito";
 
+    }
+
+
+    /* ========================================================
+       BORRAR TODAS LAS SESIONES
+    ======================================================== */
+
+    function borrarSesiones() {
+
+
+      /*
+       * Primera confirmación.
+       */
+
+      const confirmar =
+        confirm(
+
+          "⚠️ ¿Seguro que quieres borrar TODAS las sesiones?\n\n" +
+
+          "Se eliminarán todas las sesiones creadas " +
+          "y toda su configuración.\n\n" +
+
+          "Esta acción no se puede deshacer."
+
+        );
+
+
+      if (!confirmar) {
+
+        return;
+
+      }
+
+
+      /*
+       * Segunda confirmación para evitar
+       * borrados accidentales.
+       */
+
+      const confirmarFinal =
+        confirm(
+
+          "⚠️ ÚLTIMA CONFIRMACIÓN\n\n" +
+
+          "Se van a eliminar TODAS las sesiones " +
+          "guardadas en este dispositivo.\n\n" +
+
+          "¿Quieres continuar?"
+
+        );
+
+
+      if (!confirmarFinal) {
+
+        return;
+
+      }
+
+
+      /*
+       * Eliminar únicamente las sesiones.
+       *
+       * NO se toca:
+       *
+       * - opos_tai_estadisticas
+       * - preguntas
+       * - configuración de asignaturas
+       * - archivos de GitHub
+       */
+
+      localStorage.removeItem(
+        CLAVE_SESIONES
+      );
+
+
+      const mensaje =
+        document.getElementById(
+          "mensajeSesiones"
+        );
+
+
+      mensaje.textContent =
+        "✅ Todas las sesiones han sido borradas.";
+
+
+      mensaje.className =
+        "exito";
 
     }
 
