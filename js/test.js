@@ -1,38 +1,55 @@
+/* ========================================================
+   TEST.JS
+   Sistema de tests + sesiones + modo estudio
+   Compatible con:
+   - test.html actual
+   - estadisticas.js actual
+   ======================================================== */
+
+
+/* ========================================================
+   VARIABLES PRINCIPALES
+   ======================================================== */
+
 let preguntas = [];
+
 let indice = 0;
 
 
 /* ========================================================
-ESTADO DEL BOTÓN DEL TEST
+   ESTADO DEL BOTÓN
+   ========================================================
 
-"corregir"  → todavía no hemos corregido
-"siguiente" → ya hemos corregido y esperamos al usuario
-"finalizado" → el test ha terminado
-======================================================== */
+   corregir  → todavía no se ha corregido
+   siguiente → ya se ha corregido
+   finalizado → test terminado
+   ======================================================== */
 
 let estadoBoton = "corregir";
 
 
 /* ========================================================
-ESTADÍSTICAS DEL TEST ACTUAL
-======================================================== */
+   ESTADÍSTICAS DEL TEST ACTUAL
+   ======================================================== */
 
 let aciertos = 0;
+
 let fallos = 0;
+
 let respondidas = 0;
 
 
 /* ========================================================
-CONFIGURACIÓN
-======================================================== */
+   CONFIGURACIÓN
+   ======================================================== */
 
 const CLAVE_SESIONES =
     "opos_tai_sesiones";
 
 
 /* ========================================================
-PARÁMETROS DE URL
-======================================================== */
+   PARÁMETROS DE URL
+   ======================================================== */
 
 const parametros =
     new URLSearchParams(
@@ -44,17 +61,13 @@ const idSesion =
     parametros.get("sesion");
 
 
-/*
- * Sistema antiguo mediante ?datos=
- */
-
 const archivoDatos =
     parametros.get("datos");
 
 
 /* ========================================================
-ELEMENTOS DEL HTML
-======================================================== */
+   ELEMENTOS DEL HTML
+   ======================================================== */
 
 const preguntaElemento =
     document.getElementById("pregunta");
@@ -97,8 +110,8 @@ const buscador =
 
 
 /* ========================================================
-ESTADO DEL MODO ESTUDIO
-======================================================== */
+   MODO ESTUDIO
+   ======================================================== */
 
 const MODO_ESTUDIO_POR_DEFECTO =
     true;
@@ -108,16 +121,17 @@ let modoEstudio =
     MODO_ESTUDIO_POR_DEFECTO;
 
 
-/*
- * Pregunta actualmente mostrada.
- */
+/* ========================================================
+   PREGUNTA ACTUAL
+   ======================================================== */
 
 let preguntaActual =
     null;
 
 
 /*
- * Indica si la pregunta actual es una repetición.
+ * Indica si la pregunta actual procede
+ * del sistema de repaso.
  */
 
 let preguntaActualEsRepeticion =
@@ -125,9 +139,9 @@ let preguntaActualEsRepeticion =
 
 
 /*
- * Número de preguntas ORIGINALES mostradas.
+ * Número de preguntas normales mostradas.
  *
- * Las repeticiones NO incrementan este contador.
+ * Las repeticiones no incrementan este contador.
  */
 
 let preguntasNormalesMostradas =
@@ -135,8 +149,7 @@ let preguntasNormalesMostradas =
 
 
 /*
- * Indica si la última pregunta mostrada
- * fue una repetición.
+ * Indica si la última pregunta fue una repetición.
  */
 
 let ultimaPreguntaFueRepeticion =
@@ -144,18 +157,16 @@ let ultimaPreguntaFueRepeticion =
 
 
 /* ========================================================
-ESTADO DE LAS PREGUNTAS EN REPASO
-======================================================== */
+   ESTADO DEL SISTEMA DE REPASO
+   ======================================================== */
 
 let estadoPreguntasEstudio =
     new Map();
 
 
 /*
- * Las preguntas falladas no aparecen inmediatamente.
- *
- * Se espera un número aleatorio de preguntas
- * normales antes de volver a mostrarlas.
+ * Número mínimo y máximo de preguntas normales
+ * antes de repetir una pregunta fallada.
  */
 
 const INTERVALO_REPETICION_MIN =
@@ -167,49 +178,134 @@ const INTERVALO_REPETICION_MAX =
 
 
 /* ========================================================
-CONFIGURAR LISTADO
-======================================================== */
+   UTILIDADES
+   ======================================================== */
 
-function configurarListado() {
 
-    if (!listaPreguntasElemento) {
+/*
+ * Normaliza una ruta.
+ *
+ * Ejemplos:
+ *
+ * constitucion/titulo-i/archivo.json
+ *
+ * /constitucion/titulo-i/archivo.json
+ *
+ * data/constitucion/titulo-i/archivo.json
+ *
+ * devuelven una ruta válida relativa a /data.
+ */
 
-        return;
+function normalizarRutaDatos(
+    ruta
+) {
+
+    if (!ruta) {
+
+        return "";
 
     }
 
 
-    const listadoCard =
-        listaPreguntasElemento.closest(
-            ".card"
+    let resultado =
+        String(ruta)
+            .trim()
+            .replace(/\\/g, "/");
+
+
+    resultado =
+        resultado.replace(
+            /^\/+/,
+            ""
         );
 
 
-    if (!listadoCard) {
+    resultado =
+        resultado.replace(
+            /^data\//i,
+            ""
+        );
 
-        return;
+
+    if (
+        !/\.json$/i.test(
+            resultado
+        )
+    ) {
+
+        resultado += ".json";
+
+    }
+
+
+    return resultado;
+
+}
+
+
+/*
+ * Codifica cada parte de una ruta
+ * sin convertir "/" en "%2F".
+ */
+
+function codificarRuta(
+    ruta
+) {
+
+    return ruta
+        .split("/")
+        .filter(
+            parte =>
+                parte !== ""
+        )
+        .map(
+            parte =>
+                encodeURIComponent(
+                    parte
+                )
+        )
+        .join("/");
+
+}
+
+
+/*
+ * Carga un JSON.
+ */
+
+async function cargarJSON(
+    ruta
+) {
+
+    const respuesta =
+        await fetch(
+            ruta,
+            {
+                cache: "no-store"
+            }
+        );
+
+
+    if (!respuesta.ok) {
+
+        throw new Error(
+            `No se ha podido cargar ${ruta} (${respuesta.status}).`
+        );
 
     }
 
 
-    /*
-     * SESIÓN:
-     *
-     * El listado es únicamente consultivo
-     * para los capítulos, no para sesiones.
-     */
+    try {
 
-    if (idSesion) {
-
-        listadoCard.style.display =
-            "none";
+        return await respuesta.json();
 
     }
 
-    else {
+    catch (error) {
 
-        listadoCard.style.display =
-            "";
+        throw new Error(
+            `El archivo ${ruta} no contiene un JSON válido.`
+        );
 
     }
 
@@ -217,8 +313,74 @@ function configurarListado() {
 
 
 /* ========================================================
-OBTENER SESIONES
-======================================================== */
+   MEZCLAR ARRAY
+   ======================================================== */
+
+function mezclarArray(
+    array
+) {
+
+    for (
+        let i = array.length - 1;
+        i > 0;
+        i--
+    ) {
+
+        const j =
+            Math.floor(
+                Math.random() *
+                (i + 1)
+            );
+
+
+        [
+            array[i],
+            array[j]
+        ] =
+        [
+            array[j],
+            array[i]
+        ];
+
+    }
+
+
+    return array;
+
+}
+
+
+/* ========================================================
+   ELEMENTO ALEATORIO
+   ======================================================== */
+
+function obtenerElementoAleatorio(
+    array
+) {
+
+    if (
+        !Array.isArray(array) ||
+        array.length === 0
+    ) {
+
+        return null;
+
+    }
+
+
+    return array[
+        Math.floor(
+            Math.random() *
+            array.length
+        )
+    ];
+
+}
+
+
+/* ========================================================
+   OBTENER SESIONES
+   ======================================================== */
 
 function obtenerSesiones() {
 
@@ -267,8 +429,8 @@ function obtenerSesiones() {
 
 
 /* ========================================================
-BUSCAR SESIÓN ACTUAL
-======================================================== */
+   OBTENER SESIÓN ACTUAL
+   ======================================================== */
 
 function obtenerSesionActual() {
 
@@ -279,37 +441,35 @@ function obtenerSesionActual() {
     }
 
 
-    const sesiones =
-        obtenerSesiones();
-
-
-    return sesiones.find(
+    return obtenerSesiones().find(
         sesion =>
-            String(sesion.id) ===
-            String(idSesion)
+            String(
+                sesion.id
+            ) ===
+            String(
+                idSesion
+            )
     ) || null;
 
 }
 
 
 /* ========================================================
-CONFIGURAR MODO ESTUDIO
-======================================================== */
+   CONFIGURAR MODO ESTUDIO
+   ======================================================== */
 
 function configurarModoEstudio(
     sesion = null
 ) {
 
     /*
-     * TEST NORMAL:
-     *
-     * Siempre modo estudio.
+     * Los capítulos funcionan siempre
+     * en modo estudio.
      */
 
     if (!idSesion) {
 
-        modoEstudio =
-            MODO_ESTUDIO_POR_DEFECTO;
+        modoEstudio = true;
 
         return;
 
@@ -317,10 +477,8 @@ function configurarModoEstudio(
 
 
     /*
-     * SESIÓN:
-     *
-     * El valor se obtiene de la configuración
-     * guardada de la sesión.
+     * En las sesiones se respeta
+     * la configuración guardada.
      */
 
     modoEstudio =
@@ -330,8 +488,8 @@ function configurarModoEstudio(
 
 
 /* ========================================================
-REINICIAR ESTADO DEL MODO ESTUDIO
-======================================================== */
+   REINICIAR ESTADO DEL REPASO
+   ======================================================== */
 
 function reiniciarEstadoEstudio() {
 
@@ -358,16 +516,12 @@ function reiniciarEstadoEstudio() {
 
 
 /* ========================================================
-CARGAR PREGUNTAS
-======================================================== */
+   CARGAR PREGUNTAS
+   ======================================================== */
 
 async function cargarPreguntas() {
 
     try {
-
-        /*
-         * Si venimos desde una sesión personalizada.
-         */
 
         if (idSesion) {
 
@@ -377,10 +531,6 @@ async function cargarPreguntas() {
 
         }
 
-
-        /*
-         * Sistema antiguo mediante ?datos=
-         */
 
         if (archivoDatos) {
 
@@ -392,7 +542,7 @@ async function cargarPreguntas() {
 
 
         throw new Error(
-            "No se ha indicado ninguna sesión o capítulo."
+            "No se ha indicado ninguna sesión ni ningún capítulo."
         );
 
     }
@@ -400,22 +550,14 @@ async function cargarPreguntas() {
     catch (error) {
 
         console.error(
-            "Error cargando preguntas:",
+            "ERROR CARGANDO EL TEST:",
             error
         );
 
 
-        if (estadoElemento) {
-
-            estadoElemento.style.display =
-                "block";
-
-
-            estadoElemento.textContent =
-                "❌ " +
-                error.message;
-
-        }
+        mostrarError(
+            error.message
+        );
 
     }
 
@@ -423,18 +565,61 @@ async function cargarPreguntas() {
 
 
 /* ========================================================
-CARGAR PREGUNTAS DE UNA SESIÓN
-======================================================== */
+   MOSTRAR ERROR
+   ======================================================== */
+
+function mostrarError(
+    mensaje
+) {
+
+    if (estadoElemento) {
+
+        estadoElemento.style.display =
+            "block";
+
+
+        estadoElemento.textContent =
+            "❌ " +
+            mensaje;
+
+    }
+
+
+    if (preguntaElemento) {
+
+        preguntaElemento.textContent =
+            "No se ha podido cargar el test.";
+
+    }
+
+
+    if (opcionesElemento) {
+
+        opcionesElemento.innerHTML =
+            "";
+
+    }
+
+
+    if (botonTest) {
+
+        botonTest.disabled =
+            true;
+
+    }
+
+}
+
+
+/* ========================================================
+   CARGAR SESIÓN
+   ======================================================== */
 
 async function cargarPreguntasDeSesion() {
 
     const sesion =
         obtenerSesionActual();
 
-
-    /*
-     * Comprobar que existe la sesión.
-     */
 
     if (!sesion) {
 
@@ -445,12 +630,10 @@ async function cargarPreguntasDeSesion() {
     }
 
 
-    /*
-     * Obtener los contenidos seleccionados.
-     */
-
     const capitulos =
-        Array.isArray(sesion.capitulos)
+        Array.isArray(
+            sesion.capitulos
+        )
             ? sesion.capitulos
             : [];
 
@@ -464,18 +647,10 @@ async function cargarPreguntasDeSesion() {
     }
 
 
-    /*
-     * Configurar modo de estudio.
-     */
-
     configurarModoEstudio(
         sesion
     );
 
-
-    /*
-     * Mostrar nombre de la sesión.
-     */
 
     if (asignaturaElemento) {
 
@@ -491,17 +666,11 @@ async function cargarPreguntasDeSesion() {
         estadoElemento.style.display =
             "block";
 
-
         estadoElemento.textContent =
             "Cargando preguntas...";
 
     }
 
-
-    /*
-     * Aquí se almacenarán todas las preguntas
-     * procedentes de los contenidos seleccionados.
-     */
 
     let preguntasCombinadas =
         [];
@@ -509,32 +678,13 @@ async function cargarPreguntasDeSesion() {
 
     /*
      * ====================================================
-     * CARGAR CADA CONTENIDO
+     * CARGAR TODOS LOS CAPÍTULOS
      * ====================================================
      */
 
     for (
         const capitulo of capitulos
     ) {
-
-        /*
-         * ------------------------------------------------
-         * DETERMINAR LA RUTA
-         * ------------------------------------------------
-         *
-         * Formato nuevo:
-         *
-         * ruta:
-         * "constitucion/titulo-i/capitulo-1.json"
-         *
-         * Formato antiguo:
-         *
-         * asignatura:
-         * "constitucion"
-         *
-         * archivo:
-         * "capitulo-1.json"
-         */
 
         let ruta =
             capitulo?.ruta;
@@ -556,14 +706,10 @@ async function cargarPreguntasDeSesion() {
         }
 
 
-        /*
-         * Comprobar ruta.
-         */
-
         if (!ruta) {
 
             console.warn(
-                "Contenido de sesión sin ruta válida:",
+                "Contenido sin ruta:",
                 capitulo
             );
 
@@ -572,51 +718,17 @@ async function cargarPreguntasDeSesion() {
         }
 
 
-        /*
-         * Limpiar barras iniciales.
-         */
-
         ruta =
-            String(ruta)
-                .trim()
-                .replace(/^\/+/, "");
+            normalizarRutaDatos(
+                ruta
+            );
 
-
-        /*
-         * Asegurar extensión JSON.
-         */
-
-        if (
-            !/\.json$/i.test(ruta)
-        ) {
-
-            ruta += ".json";
-
-        }
-
-
-        /*
-         * Codificar cada parte de la ruta.
-         */
 
         const rutaCodificada =
-            ruta
-                .split("/")
-                .filter(
-                    parte => parte !== ""
-                )
-                .map(
-                    parte =>
-                        encodeURIComponent(
-                            parte
-                        )
-                )
-                .join("/");
+            codificarRuta(
+                ruta
+            );
 
-
-        /*
-         * Ruta final dentro de /data.
-         */
 
         const url =
             `data/${rutaCodificada}`;
@@ -628,92 +740,11 @@ async function cargarPreguntasDeSesion() {
         );
 
 
-        /*
-         * FETCH
-         */
-
-        let respuesta;
-
-        try {
-
-            respuesta =
-                await fetch(
-                    url,
-                    {
-                        cache: "no-store"
-                    }
-                );
-
-        }
-
-        catch (error) {
-
-            console.error(
-                "Error haciendo fetch de:",
-                url,
-                error
-            );
-
-            throw new Error(
-                `Error al cargar ${url}. Comprueba que el archivo existe.`
-            );
-
-        }
-
-
-        /*
-         * Comprobar respuesta HTTP.
-         */
-
-        if (!respuesta.ok) {
-
-            console.error(
-                "Respuesta HTTP incorrecta:",
-                respuesta.status,
-                respuesta.statusText,
+        const preguntasArchivo =
+            await cargarJSON(
                 url
             );
 
-
-            throw new Error(
-                `No se ha podido cargar ${url} ` +
-                `(${respuesta.status}).`
-            );
-
-        }
-
-
-        /*
-         * Leer JSON.
-         */
-
-        let preguntasArchivo;
-
-        try {
-
-            preguntasArchivo =
-                await respuesta.json();
-
-        }
-
-        catch (error) {
-
-            console.error(
-                "El archivo no contiene JSON válido:",
-                url,
-                error
-            );
-
-            throw new Error(
-                `El archivo ${url} no contiene un JSON válido.`
-            );
-
-        }
-
-
-        /*
-         * Comprobar estructura.
-         */
 
         if (
             !Array.isArray(
@@ -721,21 +752,12 @@ async function cargarPreguntasDeSesion() {
             )
         ) {
 
-            console.error(
-                `El archivo ${url} no contiene un array:`,
-                preguntasArchivo
-            );
-
             throw new Error(
                 `El archivo ${url} no contiene un array de preguntas.`
             );
 
         }
 
-
-        /*
-         * Añadir preguntas.
-         */
 
         preguntasCombinadas =
             preguntasCombinadas.concat(
@@ -745,31 +767,23 @@ async function cargarPreguntasDeSesion() {
     }
 
 
-    /*
-     * Comprobar que hay preguntas.
-     */
-
     if (
         preguntasCombinadas.length === 0
     ) {
 
         throw new Error(
-            "No se han encontrado preguntas en los contenidos seleccionados."
+            "No se han encontrado preguntas en la sesión."
         );
 
     }
 
-
-    /*
-     * Guardar preguntas.
-     */
 
     preguntas =
         preguntasCombinadas;
 
 
     /*
-     * Aleatoriedad.
+     * Mezclar sesión.
      */
 
     if (
@@ -811,92 +825,30 @@ async function cargarPreguntasDeSesion() {
     }
 
 
-    /*
-     * Reiniciar estado del test.
-     */
-
-    reiniciarEstadoEstudio();
-
-
-    /*
-     * Reiniciar estadísticas del test.
-     */
-
-    aciertos = 0;
-    fallos = 0;
-    respondidas = 0;
-
-
-    /*
-     * Ocultar mensaje de carga.
-     */
-
-    if (estadoElemento) {
-
-        estadoElemento.style.display =
-            "none";
-
-    }
-
-
-    /*
-     * Actualizar estadísticas.
-     */
-
-    actualizarEstadisticas();
-
-
-    /*
-     * Mostrar primera pregunta.
-     */
-
-    indice =
-        0;
-
-
-    mostrarPregunta();
+    prepararTest();
 
 }
 
 
 /* ========================================================
-OBTENER NOMBRE DE LA RUTA COMPLETA
-========================================================
-
-Ejemplo:
-
-datos =
-"test-flou/bloque-1-tema-1"
-
-config.json:
-
-Test FLOU
-└── Bloque I
-    └── Tema 1
-        └── archivo: "bloque-1-tema-1"
-
-Resultado:
-
-"Test FLOU - Bloque I - Tema 1"
-
-El sistema permite niveles infinitos.
-======================================================== */
+   OBTENER NOMBRE DE RUTA COMPLETA
+   ======================================================== */
 
 async function obtenerNombreRutaCompleta(
     nombreArchivo
 ) {
 
+    const rutaNormalizada =
+        normalizarRutaDatos(
+            nombreArchivo
+        );
+
+
     const partes =
-        String(nombreArchivo)
+        rutaNormalizada
             .split("/")
             .filter(Boolean);
 
-
-    /*
-     * Primera parte:
-     *
-     * ID de la asignatura.
-     */
 
     const asignatura =
         partes.shift();
@@ -909,52 +861,56 @@ async function obtenerNombreRutaCompleta(
     }
 
 
-    /*
-     * Las partes restantes forman
-     * la ruta hasta el archivo.
-     */
-
-    const rutaArchivo =
-        partes;
+    const archivoBuscado =
+        partes[
+            partes.length - 1
+        ];
 
 
-    /*
-     * Cargar config.json.
-     */
+    const archivoSinExtension =
+        String(
+            archivoBuscado || ""
+        )
+        .replace(
+            /\.json$/i,
+            ""
+        );
+
 
     const rutaConfig =
-        `data/${encodeURIComponent(asignatura)}/config.json`;
+        `data/${encodeURIComponent(
+            asignatura
+        )}/config.json`;
 
 
-    const respuesta =
-        await fetch(
-            rutaConfig,
-            {
-                cache: "no-store"
-            }
+    let configuracion;
+
+
+    try {
+
+        configuracion =
+            await cargarJSON(
+                rutaConfig
+            );
+
+    }
+
+    catch (error) {
+
+        console.warn(
+            "No se pudo cargar config.json:",
+            error
         );
 
 
-    if (!respuesta.ok) {
-
-        throw new Error(
-            `No se ha podido cargar ${rutaConfig}`
-        );
+        return asignatura;
 
     }
 
 
-    const configuracion =
-        await respuesta.json();
-
-
-    /*
-     * Buscar archivo recursivamente.
-     */
-
     function buscarArchivo(
         elementos,
-        rutaAcumulada
+        rutaAcumulada = []
     ) {
 
         if (
@@ -972,12 +928,23 @@ async function obtenerNombreRutaCompleta(
             const elemento of elementos
         ) {
 
+            if (
+                !elemento ||
+                typeof elemento !==
+                    "object"
+            ) {
+
+                continue;
+
+            }
+
+
             /*
-             * Documento.
+             * Si encontramos un archivo,
+             * comprobar si coincide.
              */
 
             if (
-                elemento &&
                 elemento.archivo
             ) {
 
@@ -985,34 +952,26 @@ async function obtenerNombreRutaCompleta(
                     String(
                         elemento.archivo
                     )
-                        .replace(
-                            /\.json$/i,
-                            ""
-                        );
-
-
-                const archivoBuscado =
-                    String(
-                        rutaArchivo[
-                            rutaArchivo.length - 1
-                        ] || ""
-                    )
-                        .replace(
-                            /\.json$/i,
-                            ""
-                        );
+                    .replace(
+                        /\.json$/i,
+                        ""
+                    );
 
 
                 if (
                     archivoElemento ===
-                    archivoBuscado
+                    archivoSinExtension
                 ) {
 
                     return [
+
                         ...rutaAcumulada,
+
                         elemento.nombre ||
+                        elemento.titulo ||
                         elemento.id ||
                         archivoElemento
+
                     ];
 
                 }
@@ -1021,11 +980,10 @@ async function obtenerNombreRutaCompleta(
 
 
             /*
-             * Subcolección.
+             * Buscar en contenido.
              */
 
             if (
-                elemento &&
                 Array.isArray(
                     elemento.contenido
                 )
@@ -1036,9 +994,12 @@ async function obtenerNombreRutaCompleta(
                         elemento.contenido,
                         [
                             ...rutaAcumulada,
+
                             elemento.nombre ||
+                            elemento.titulo ||
                             elemento.id ||
                             "Sin nombre"
+
                         ]
                     );
 
@@ -1059,32 +1020,24 @@ async function obtenerNombreRutaCompleta(
     }
 
 
-    /*
-     * Buscar desde la raíz de config.json.
-     */
-
     const nombresRuta =
         buscarArchivo(
-            configuracion.contenido || [],
+            configuracion.contenido ||
+            configuracion.capitulos ||
+            [],
             []
         );
 
 
-    /*
-     * Construir título.
-     */
-
-    const resultado = [
+    return [
 
         configuracion.nombre ||
+        configuracion.titulo ||
         asignatura,
 
         ...(nombresRuta || [])
 
-    ];
-
-
-    return resultado.join(
+    ].join(
         " - "
     );
 
@@ -1092,84 +1045,68 @@ async function obtenerNombreRutaCompleta(
 
 
 /* ========================================================
-CARGAR PREGUNTAS DE UN CAPÍTULO
-======================================================== */
+   CARGAR CAPÍTULO
+   ======================================================== */
 
 async function cargarPreguntasAntiguo() {
-
-    /*
-     * Los tests antiguos siempre utilizan
-     * modo estudio.
-     */
 
     configurarModoEstudio();
 
 
-    /*
-     * Mostrar asignatura y capítulo.
-     */
-
     if (asignaturaElemento) {
 
-        asignaturaElemento.textContent =
-            await obtenerNombreRutaCompleta(
-                archivoDatos
+        try {
+
+            asignaturaElemento.textContent =
+                await obtenerNombreRutaCompleta(
+                    archivoDatos
+                );
+
+        }
+
+        catch (error) {
+
+            console.warn(
+                "No se pudo obtener el nombre:",
+                error
             );
+
+
+            asignaturaElemento.textContent =
+                "Test";
+
+        }
 
     }
 
 
-    /*
-     * Ruta del JSON.
-     */
-
     const ruta =
-        `data/${archivoDatos}`;
+        normalizarRutaDatos(
+            archivoDatos
+        );
+
+
+    const rutaCodificada =
+        codificarRuta(
+            ruta
+        );
+
+
+    const url =
+        `data/${rutaCodificada}`;
 
 
     console.log(
-        "Cargando capítulo:",
-        ruta
+        "Capítulo → cargando:",
+        url
     );
 
 
-    const respuesta =
-        await fetch(
-            ruta,
-            {
-                cache: "no-store"
-            }
+    preguntas =
+        await cargarJSON(
+            url
         );
 
-
-    if (!respuesta.ok) {
-
-        throw new Error(
-            `No se ha podido cargar ${ruta}`
-        );
-
-    }
-
-
-    try {
-
-        preguntas =
-            await respuesta.json();
-
-    }
-
-    catch (error) {
-
-        throw new Error(
-            `El archivo ${ruta} no contiene un JSON válido.`
-        );
-
-    }
-
-
-    /*
-     * Comprobar preguntas.
-     */
 
     if (
         !Array.isArray(
@@ -1185,20 +1122,57 @@ async function cargarPreguntasAntiguo() {
     }
 
 
+    prepararTest();
+
+
     /*
-     * Reiniciar sistema de estudio.
+     * El listado solamente se muestra
+     * en capítulos.
      */
+
+    mostrarListado();
+
+}
+
+
+/* ========================================================
+   PREPARAR TEST
+   ======================================================== */
+
+function prepararTest() {
 
     reiniciarEstadoEstudio();
 
 
-    /*
-     * Reiniciar estadísticas del test.
-     */
+    indice =
+        0;
 
-    aciertos = 0;
-    fallos = 0;
-    respondidas = 0;
+
+    aciertos =
+        0;
+
+
+    fallos =
+        0;
+
+
+    respondidas =
+        0;
+
+
+    estadoBoton =
+        "corregir";
+
+
+    if (botonTest) {
+
+        botonTest.disabled =
+            false;
+
+        botonTest.textContent =
+            "Corregir";
+
+    }
 
 
     if (estadoElemento) {
@@ -1209,28 +1183,91 @@ async function cargarPreguntasAntiguo() {
     }
 
 
-    indice =
-        0;
-
-
     actualizarEstadisticas();
 
 
     mostrarPregunta();
 
+}
 
-    /*
-     * Mostrar listado en capítulos.
-     */
 
-    mostrarListado();
+/* ========================================================
+   VALIDAR PREGUNTA
+   ======================================================== */
+
+function validarPregunta(
+    pregunta
+) {
+
+    if (
+        !pregunta ||
+        typeof pregunta !==
+            "object"
+    ) {
+
+        throw new Error(
+            "Una pregunta no tiene un formato válido."
+        );
+
+    }
+
+
+    if (
+        typeof pregunta.pregunta !==
+            "string"
+    ) {
+
+        throw new Error(
+            "Una pregunta no contiene el campo 'pregunta'."
+        );
+
+    }
+
+
+    if (
+        !Array.isArray(
+            pregunta.opciones
+        )
+    ) {
+
+        throw new Error(
+            "Una pregunta no contiene el campo 'opciones'."
+        );
+
+    }
+
+
+    if (
+        pregunta.opciones.length === 0
+    ) {
+
+        throw new Error(
+            "Una pregunta no contiene opciones."
+        );
+
+    }
+
+
+    if (
+        typeof pregunta.respuesta ===
+            "undefined"
+    ) {
+
+        throw new Error(
+            "Una pregunta no contiene el campo 'respuesta'."
+        );
+
+    }
+
+
+    return true;
 
 }
 
 
 /* ========================================================
-MOSTRAR PREGUNTA
-======================================================== */
+   MOSTRAR PREGUNTA
+   ======================================================== */
 
 function mostrarPregunta(
     pregunta = null,
@@ -1238,8 +1275,8 @@ function mostrarPregunta(
 ) {
 
     /*
-     * Si no se proporciona una pregunta,
-     * obtenemos la siguiente.
+     * Si no se proporciona pregunta,
+     * obtener la siguiente.
      */
 
     if (!pregunta) {
@@ -1258,104 +1295,24 @@ function mostrarPregunta(
 
 
         esRepeticion =
-            esPreguntaPendiente(
-                pregunta
-            );
+            preguntaActualEsRepeticion;
 
     }
 
 
-    /*
-     * Comprobar estructura.
-     */
+    validarPregunta(
+        pregunta
+    );
 
-    if (
-        !pregunta ||
-        typeof pregunta !== "object"
-    ) {
-
-        console.error(
-            "Pregunta inválida:",
-            pregunta
-        );
-
-
-        throw new Error(
-            "La pregunta no tiene un formato válido."
-        );
-
-    }
-
-
-    if (
-        typeof pregunta.pregunta !== "string" ||
-        !pregunta.pregunta.trim()
-    ) {
-
-        console.error(
-            "La pregunta no tiene el campo 'pregunta':",
-            pregunta
-        );
-
-
-        throw new Error(
-            "Una pregunta del JSON no contiene el campo 'pregunta'."
-        );
-
-    }
-
-
-    if (
-        !Array.isArray(
-            pregunta.opciones
-        )
-    ) {
-
-        console.error(
-            "La pregunta no tiene un array 'opciones':",
-            pregunta
-        );
-
-
-        throw new Error(
-            "Una pregunta del JSON no contiene el campo 'opciones'."
-        );
-
-    }
-
-
-    if (
-        pregunta.opciones.length === 0
-    ) {
-
-        throw new Error(
-            "Una pregunta no contiene opciones de respuesta."
-        );
-
-    }
-
-
-    if (
-        typeof pregunta.respuesta !== "string"
-    ) {
-
-        throw new Error(
-            "Una pregunta no contiene una respuesta válida."
-        );
-
-    }
-
-
-    /*
-     * Guardar estado actual.
-     */
 
     preguntaActual =
         pregunta;
 
 
     preguntaActualEsRepeticion =
-        esRepeticion;
+        Boolean(
+            esRepeticion
+        );
 
 
     /*
@@ -1372,7 +1329,9 @@ function mostrarPregunta(
 
     if (!opcionesElemento) {
 
-        return;
+        throw new Error(
+            "No se ha encontrado #opciones en test.html."
+        );
 
     }
 
@@ -1382,10 +1341,7 @@ function mostrarPregunta(
 
 
     /*
-     * Mezclar respuestas.
-     *
-     * Se utiliza una COPIA para no modificar
-     * el JSON original.
+     * Copiar y mezclar opciones.
      */
 
     const opcionesMezcladas =
@@ -1400,7 +1356,7 @@ function mostrarPregunta(
 
 
     /*
-     * Crear opciones.
+     * Crear radios.
      */
 
     opcionesMezcladas.forEach(
@@ -1430,8 +1386,22 @@ function mostrarPregunta(
                 "opcion";
 
 
+            /*
+             * MUY IMPORTANTE:
+             *
+             * El valor es el texto de la opción.
+             *
+             * Tu JSON utiliza:
+             *
+             * "respuesta": "..."
+             *
+             * y "opciones": ["...", "..."]
+             */
+
             input.value =
-                opcion;
+                String(
+                    opcion
+                );
 
 
             label.appendChild(
@@ -1442,7 +1412,9 @@ function mostrarPregunta(
             label.appendChild(
                 document.createTextNode(
                     " " +
-                    opcion
+                    String(
+                        opcion
+                    )
                 )
             );
 
@@ -1456,7 +1428,7 @@ function mostrarPregunta(
 
 
     /*
-     * Limpiar resultado anterior.
+     * Limpiar resultado.
      */
 
     if (resultadoElemento) {
@@ -1464,16 +1436,11 @@ function mostrarPregunta(
         resultadoElemento.textContent =
             "";
 
-
         resultadoElemento.className =
             "";
 
     }
 
-
-    /*
-     * Botón vuelve a "Corregir".
-     */
 
     estadoBoton =
         "corregir";
@@ -1484,7 +1451,6 @@ function mostrarPregunta(
         botonTest.disabled =
             false;
 
-
         botonTest.textContent =
             "Corregir";
 
@@ -1494,11 +1460,8 @@ function mostrarPregunta(
 
 
 /* ========================================================
-CONSULTA LAS ESTADÍSTICAS PERMANENTES
-
-La función estaPreguntaDominada()
-pertenece a estadisticas.js.
-======================================================== */
+   ESTADÍSTICAS GLOBALES
+   ======================================================== */
 
 function estaDominada(
     pregunta
@@ -1516,13 +1479,8 @@ function estaDominada(
 
     if (
         typeof estaPreguntaDominada !==
-        "function"
+            "function"
     ) {
-
-        console.warn(
-            "No se ha encontrado estaPreguntaDominada(). Comprueba que estadisticas.js se carga antes que test.js."
-        );
-
 
         return false;
 
@@ -1537,8 +1495,8 @@ function estaDominada(
 
 
 /* ========================================================
-OBTENER SIGUIENTE PREGUNTA
-======================================================== */
+   OBTENER SIGUIENTE PREGUNTA
+   ======================================================== */
 
 function obtenerSiguientePregunta() {
 
@@ -1546,8 +1504,6 @@ function obtenerSiguientePregunta() {
      * ====================================================
      * MODO EXAMEN
      * ====================================================
-     *
-     * No existen repeticiones.
      */
 
     if (!modoEstudio) {
@@ -1576,6 +1532,10 @@ function obtenerSiguientePregunta() {
             false;
 
 
+        preguntaActualEsRepeticion =
+            false;
+
+
         return siguiente;
 
     }
@@ -1587,44 +1547,53 @@ function obtenerSiguientePregunta() {
      * ====================================================
      */
 
-    const repeticionesDisponibles =
+    const repeticiones =
         obtenerRepeticionesDisponibles();
 
 
     /*
-     * Si existen repasos disponibles,
-     * intercalarlos con preguntas normales.
+     * No poner dos repeticiones consecutivas
+     * si todavía quedan preguntas normales.
      */
 
     if (
-        repeticionesDisponibles.length > 0 &&
+        repeticiones.length > 0 &&
         !(
             ultimaPreguntaFueRepeticion &&
-            indice < preguntas.length
+            indice <
+                preguntas.length
         )
     ) {
 
-        const candidatos =
-            repeticionesDisponibles.filter(
+        let candidatos =
+            repeticiones.filter(
                 pregunta =>
                     pregunta !==
                     preguntaActual
             );
 
 
-        const lista =
-            candidatos.length > 0
-                ? candidatos
-                : repeticionesDisponibles;
+        if (
+            candidatos.length === 0
+        ) {
+
+            candidatos =
+                repeticiones;
+
+        }
 
 
         const repeticion =
             obtenerElementoAleatorio(
-                lista
+                candidatos
             );
 
 
         ultimaPreguntaFueRepeticion =
+            true;
+
+
+        preguntaActualEsRepeticion =
             true;
 
 
@@ -1635,7 +1604,7 @@ function obtenerSiguientePregunta() {
 
     /*
      * ====================================================
-     * PREGUNTAS NORMALES
+     * PREGUNTA NORMAL
      * ====================================================
      */
 
@@ -1658,6 +1627,10 @@ function obtenerSiguientePregunta() {
             false;
 
 
+        preguntaActualEsRepeticion =
+            false;
+
+
         return siguiente;
 
     }
@@ -1665,7 +1638,7 @@ function obtenerSiguientePregunta() {
 
     /*
      * ====================================================
-     * FIN DE LAS PREGUNTAS NORMALES
+     * YA NO QUEDAN NORMALES
      * ====================================================
      */
 
@@ -1677,7 +1650,7 @@ function obtenerSiguientePregunta() {
         pendientes.length > 0
     ) {
 
-        const candidatos =
+        let candidatos =
             pendientes.filter(
                 pregunta =>
                     pregunta !==
@@ -1685,19 +1658,27 @@ function obtenerSiguientePregunta() {
             );
 
 
-        const lista =
-            candidatos.length > 0
-                ? candidatos
-                : pendientes;
+        if (
+            candidatos.length === 0
+        ) {
+
+            candidatos =
+                pendientes;
+
+        }
 
 
         const repeticion =
             obtenerElementoAleatorio(
-                lista
+                candidatos
             );
 
 
         ultimaPreguntaFueRepeticion =
+            true;
+
+
+        preguntaActualEsRepeticion =
             true;
 
 
@@ -1707,7 +1688,7 @@ function obtenerSiguientePregunta() {
 
 
     /*
-     * No quedan preguntas.
+     * No queda nada.
      */
 
     return null;
@@ -1716,8 +1697,8 @@ function obtenerSiguientePregunta() {
 
 
 /* ========================================================
-OBTENER REPETICIONES DISPONIBLES
-======================================================== */
+   REPETICIONES DISPONIBLES
+   ======================================================== */
 
 function obtenerRepeticionesDisponibles() {
 
@@ -1731,12 +1712,8 @@ function obtenerRepeticionesDisponibles() {
             pregunta
         ) => {
 
-            /*
-             * Si ya está repasada,
-             * no vuelve a aparecer.
-             */
-
             if (
+                !estado ||
                 !estado.pendiente
             ) {
 
@@ -1746,8 +1723,8 @@ function obtenerRepeticionesDisponibles() {
 
 
             /*
-             * Si está DOMINADA a nivel global,
-             * ya no necesita aparecer como repaso.
+             * Si ya está dominada globalmente,
+             * eliminarla del repaso.
              */
 
             if (
@@ -1766,8 +1743,7 @@ function obtenerRepeticionesDisponibles() {
 
 
             /*
-             * Comprobar si ha llegado
-             * su momento de repetición.
+             * ¿Ha llegado su momento?
              */
 
             if (
@@ -1791,8 +1767,8 @@ function obtenerRepeticionesDisponibles() {
 
 
 /* ========================================================
-OBTENER PREGUNTAS PENDIENTES
-======================================================== */
+   PREGUNTAS PENDIENTES
+   ======================================================== */
 
 function obtenerPreguntasPendientes() {
 
@@ -1807,6 +1783,7 @@ function obtenerPreguntasPendientes() {
         ) => {
 
             if (
+                !estado ||
                 !estado.pendiente
             ) {
 
@@ -1814,12 +1791,6 @@ function obtenerPreguntasPendientes() {
 
             }
 
-
-            /*
-             * Una pregunta DOMINADA deja de estar
-             * pendiente incluso si fue fallada
-             * anteriormente en este test.
-             */
 
             if (
                 estaDominada(
@@ -1850,38 +1821,16 @@ function obtenerPreguntasPendientes() {
 
 
 /* ========================================================
-COMPROBAR SI UNA PREGUNTA ESTÁ PENDIENTE
-======================================================== */
-
-function esPreguntaPendiente(
-    pregunta
-) {
-
-    const estado =
-        estadoPreguntasEstudio.get(
-            pregunta
-        );
-
-
-    return Boolean(
-        estado &&
-        estado.pendiente
-    );
-
-}
-
-
-/* ========================================================
-CREAR ESTADO DE UNA PREGUNTA FALLADA
-======================================================== */
+   CREAR ESTADO DE PREGUNTA FALLADA
+   ======================================================== */
 
 function crearEstadoPregunta(
     pregunta
 ) {
 
     /*
-     * Si ya está DOMINADA a nivel global,
-     * no necesitamos crear un estado de repaso.
+     * Si ya está dominada,
+     * no necesita repaso.
      */
 
     if (
@@ -1896,19 +1845,19 @@ function crearEstadoPregunta(
 
 
     /*
-     * Si ya existe un estado,
-     * no lo sobrescribimos innecesariamente.
+     * Si ya existe estado,
+     * no lo sobrescribimos.
      */
 
-    if (
-        estadoPreguntasEstudio.has(
-            pregunta
-        )
-    ) {
-
-        return estadoPreguntasEstudio.get(
+    const existente =
+        estadoPreguntasEstudio.get(
             pregunta
         );
+
+
+    if (existente) {
+
+        return existente;
 
     }
 
@@ -1939,8 +1888,8 @@ function crearEstadoPregunta(
 
 
 /* ========================================================
-CALCULAR PRÓXIMA REPETICIÓN
-======================================================== */
+   CALCULAR PRÓXIMA REPETICIÓN
+   ======================================================== */
 
 function calcularProximaRepeticion() {
 
@@ -1965,8 +1914,8 @@ function calcularProximaRepeticion() {
 
 
 /* ========================================================
-PROCESAR RESULTADO EN MODO ESTUDIO
-======================================================== */
+   PROCESAR RESULTADO DEL MODO ESTUDIO
+   ======================================================== */
 
 function procesarResultadoEstudio(
     pregunta,
@@ -1975,31 +1924,17 @@ function procesarResultadoEstudio(
 ) {
 
     /*
-     * ====================================================
-     * PRIMERA APARICIÓN
-     * ====================================================
+     * Primera aparición.
      */
 
     if (!eraRepeticion) {
 
-        /*
-         * Si se acierta a la primera:
-         * no necesita repaso.
-         */
-
-        if (
-            esCorrecta
-        ) {
+        if (esCorrecta) {
 
             return;
 
         }
 
-
-        /*
-         * Si falla:
-         * entra en modo repaso.
-         */
 
         crearEstadoPregunta(
             pregunta
@@ -2012,9 +1947,7 @@ function procesarResultadoEstudio(
 
 
     /*
-     * ====================================================
-     * REPETICIÓN
-     * ====================================================
+     * Repetición.
      */
 
     const estado =
@@ -2031,23 +1964,17 @@ function procesarResultadoEstudio(
 
 
     /*
-     * ====================================================
-     * RESPUESTA CORRECTA
-     * ====================================================
+     * Correcta.
      */
 
-    if (
-        esCorrecta
-    ) {
+    if (esCorrecta) {
 
         estado.aciertosConsecutivos++;
 
 
         /*
-         * DOS ACIERTOS CONSECUTIVOS:
-         *
-         * La pregunta deja de estar pendiente
-         * dentro de este test.
+         * Dos aciertos consecutivos:
+         * deja de estar pendiente.
          */
 
         if (
@@ -2057,7 +1984,6 @@ function procesarResultadoEstudio(
 
             estado.pendiente =
                 false;
-
 
             return;
 
@@ -2078,9 +2004,8 @@ function procesarResultadoEstudio(
 
 
     /*
-     * ====================================================
-     * RESPUESTA INCORRECTA
-     * ====================================================
+     * Incorrecta:
+     * romper la racha.
      */
 
     estado.aciertosConsecutivos =
@@ -2094,14 +2019,13 @@ function procesarResultadoEstudio(
 
 
 /* ========================================================
-CORREGIR / SIGUIENTE
-======================================================== */
+   CORREGIR RESPUESTA
+   ======================================================== */
 
 function corregirRespuesta() {
 
     /*
-     * Si ya hemos corregido:
-     * el botón funciona como "Siguiente".
+     * El botón ya está en Siguiente.
      */
 
     if (
@@ -2117,7 +2041,8 @@ function corregirRespuesta() {
 
 
     /*
-     * Si el test ya terminó, no hacemos nada.
+     * Si terminó el test,
+     * no hacer nada.
      */
 
     if (
@@ -2130,8 +2055,15 @@ function corregirRespuesta() {
     }
 
 
+    if (!preguntaActual) {
+
+        return;
+
+    }
+
+
     /*
-     * Obtener respuesta seleccionada.
+     * Buscar respuesta seleccionada.
      */
 
     const seleccion =
@@ -2147,10 +2079,6 @@ function corregirRespuesta() {
             resultadoElemento.textContent =
                 "⚠️ Selecciona una respuesta.";
 
-
-            resultadoElemento.className =
-                "";
-
         }
 
 
@@ -2159,46 +2087,31 @@ function corregirRespuesta() {
     }
 
 
-    /*
-     * Guardar pregunta corregida.
-     */
-
-    const preguntaQueSeCorrige =
+    const pregunta =
         preguntaActual;
 
 
-    if (!preguntaQueSeCorrige) {
-
-        return;
-
-    }
-
-
-    /*
-     * Respuesta seleccionada.
-     */
-
     const respuestaSeleccionada =
-        seleccion.value;
+        String(
+            seleccion.value
+        );
 
 
-    /*
-     * Todas las opciones.
-     */
+    const respuestaCorrecta =
+        String(
+            pregunta.respuesta
+        );
+
+
+    const esCorrecta =
+        respuestaSeleccionada ===
+        respuestaCorrecta;
+
 
     const opciones =
         document.querySelectorAll(
             'input[name="opcion"]'
         );
-
-
-    /*
-     * Comprobar respuesta.
-     */
-
-    const esCorrecta =
-        respuestaSeleccionada ===
-        preguntaQueSeCorrige.respuesta;
 
 
     /*
@@ -2210,6 +2123,7 @@ function corregirRespuesta() {
     if (esCorrecta) {
 
         aciertos++;
+
 
         respondidas++;
 
@@ -2239,6 +2153,7 @@ function corregirRespuesta() {
 
         fallos++;
 
+
         respondidas++;
 
 
@@ -2256,15 +2171,17 @@ function corregirRespuesta() {
 
 
         /*
-         * Marcar también la respuesta correcta.
+         * Marcar la correcta.
          */
 
         opciones.forEach(
             input => {
 
                 if (
-                    input.value ===
-                    preguntaQueSeCorrige.respuesta
+                    String(
+                        input.value
+                    ) ===
+                    respuestaCorrecta
                 ) {
 
                     if (
@@ -2289,41 +2206,19 @@ function corregirRespuesta() {
 
     /*
      * ====================================================
-     * ESTADÍSTICAS GLOBALES
+     * ESTADÍSTICAS PERMANENTES
      * ====================================================
      */
 
     if (
-        preguntaQueSeCorrige.id
+        pregunta.id &&
+        typeof registrarRespuestaPregunta ===
+            "function"
     ) {
 
-        if (
-            typeof registrarRespuestaPregunta ===
-            "function"
-        ) {
-
-            registrarRespuestaPregunta(
-                preguntaQueSeCorrige.id,
-                esCorrecta
-            );
-
-        }
-
-        else {
-
-            console.warn(
-                "estadisticas.js no está cargado. No se ha podido guardar la estadística global."
-            );
-
-        }
-
-    }
-
-    else {
-
-        console.warn(
-            "La pregunta no tiene ID. No se puede guardar la estadística global.",
-            preguntaQueSeCorrige
+        registrarRespuestaPregunta(
+            pregunta.id,
+            esCorrecta
         );
 
     }
@@ -2331,7 +2226,7 @@ function corregirRespuesta() {
 
     /*
      * ====================================================
-     * PROCESAR MODO ESTUDIO
+     * MODO ESTUDIO
      * ====================================================
      */
 
@@ -2340,7 +2235,7 @@ function corregirRespuesta() {
     ) {
 
         procesarResultadoEstudio(
-            preguntaQueSeCorrige,
+            pregunta,
             esCorrecta,
             preguntaActualEsRepeticion
         );
@@ -2349,16 +2244,15 @@ function corregirRespuesta() {
 
 
     /*
-     * No mostramos "Correcto" / "Incorrecto".
+     * No mostrar "Correcto" / "Incorrecto".
      *
-     * La información se muestra mediante colores.
+     * El resultado se muestra mediante colores.
      */
 
     if (resultadoElemento) {
 
         resultadoElemento.textContent =
             "";
-
 
         resultadoElemento.className =
             "";
@@ -2374,7 +2268,7 @@ function corregirRespuesta() {
 
 
     /*
-     * Desactivar opciones.
+     * Desactivar radios.
      */
 
     opciones.forEach(
@@ -2406,8 +2300,8 @@ function corregirRespuesta() {
 
 
 /* ========================================================
-SIGUIENTE PREGUNTA
-======================================================== */
+   SIGUIENTE PREGUNTA
+   ======================================================== */
 
 function siguientePregunta() {
 
@@ -2415,34 +2309,26 @@ function siguientePregunta() {
         obtenerSiguientePregunta();
 
 
-    if (
-        siguiente
-    ) {
+    if (!siguiente) {
 
-        mostrarPregunta(
-            siguiente,
-            ultimaPreguntaFueRepeticion
-        );
-
+        finalizarTest();
 
         return;
 
     }
 
 
-    /*
-     * No quedan preguntas normales
-     * ni preguntas pendientes.
-     */
-
-    finalizarTest();
+    mostrarPregunta(
+        siguiente,
+        preguntaActualEsRepeticion
+    );
 
 }
 
 
 /* ========================================================
-FINALIZAR TEST
-======================================================== */
+   FINALIZAR TEST
+   ======================================================== */
 
 function finalizarTest() {
 
@@ -2450,7 +2336,6 @@ function finalizarTest() {
 
         resultadoElemento.textContent =
             "🎉 Has terminado el test.";
-
 
         resultadoElemento.className =
             "";
@@ -2470,7 +2355,6 @@ function finalizarTest() {
         botonTest.textContent =
             "Terminado";
 
-
         botonTest.disabled =
             true;
 
@@ -2480,82 +2364,8 @@ function finalizarTest() {
 
 
 /* ========================================================
-MEZCLAR ARRAY
-======================================================== */
-
-function mezclarArray(
-    array
-) {
-
-    for (
-        let i = array.length - 1;
-        i > 0;
-        i--
-    ) {
-
-        const j =
-            Math.floor(
-                Math.random() *
-                (i + 1)
-            );
-
-
-        [
-            array[i],
-            array[j]
-        ] =
-        [
-            array[j],
-            array[i]
-        ];
-
-    }
-
-
-    return array;
-
-}
-
-
-/* ========================================================
-ELEMENTO ALEATORIO
-======================================================== */
-
-function obtenerElementoAleatorio(
-    array
-) {
-
-    if (
-        !array ||
-        array.length === 0
-    ) {
-
-        return null;
-
-    }
-
-
-    const indiceAleatorio =
-        Math.floor(
-            Math.random() *
-            array.length
-        );
-
-
-    return array[
-        indiceAleatorio
-    ];
-
-}
-
-
-/* ========================================================
-ESTADÍSTICAS DEL TEST ACTUAL
-
-Estas estadísticas NO son las estadísticas globales.
-
-Se reinician al reiniciar el test.
-======================================================== */
+   ESTADÍSTICAS DEL TEST ACTUAL
+   ======================================================== */
 
 function actualizarEstadisticas() {
 
@@ -2589,12 +2399,8 @@ function actualizarEstadisticas() {
 
 
 /* ========================================================
-REINICIAR TEST
-
-IMPORTANTE:
-
-Reiniciar el test NO borra las estadísticas globales.
-======================================================== */
+   REINICIAR TEST
+   ======================================================== */
 
 function reiniciarEstadisticas() {
 
@@ -2610,38 +2416,32 @@ function reiniciarEstadisticas() {
         0;
 
 
-    /*
-     * Reiniciar completamente
-     * el sistema de repaso.
-     */
-
     reiniciarEstadoEstudio();
 
 
-    /*
-     * Volver a habilitar el botón.
-     */
-
-    if (botonTest) {
-
-        botonTest.disabled =
-            false;
-
-    }
+    indice =
+        0;
 
 
     estadoBoton =
         "corregir";
 
 
-    actualizarEstadisticas();
+    if (botonTest) {
+
+        botonTest.disabled =
+            false;
+
+        botonTest.textContent =
+            "Corregir";
+
+    }
 
 
     if (resultadoElemento) {
 
         resultadoElemento.textContent =
             "";
-
 
         resultadoElemento.className =
             "";
@@ -2650,15 +2450,7 @@ function reiniciarEstadisticas() {
 
 
     /*
-     * Volver a la primera pregunta.
-     */
-
-    indice =
-        0;
-
-
-    /*
-     * Si es una sesión aleatoria,
+     * En sesiones aleatorias,
      * volver a mezclar.
      */
 
@@ -2682,19 +2474,22 @@ function reiniciarEstadisticas() {
     }
 
 
+    actualizarEstadisticas();
+
+
     mostrarPregunta();
 
 }
 
 
 /* ========================================================
-LISTADO DE PREGUNTAS
-======================================================== */
+   LISTADO DE PREGUNTAS
+   ======================================================== */
 
 function mostrarListado() {
 
     /*
-     * Nunca mostramos listado en sesiones.
+     * Las sesiones NO muestran listado.
      */
 
     if (idSesion) {
@@ -2729,18 +2524,18 @@ function mostrarListado() {
 
 
             /*
-             * ====================================================
-             * CABECERA DEL ESTADO
-             * ====================================================
+             * =================================================
+             * ESTADO
+             * =================================================
              */
 
-            const cabeceraEstado =
+            const cabecera =
                 document.createElement(
                     "div"
                 );
 
 
-            cabeceraEstado.className =
+            cabecera.className =
                 "pregunta-listado-cabecera";
 
 
@@ -2753,10 +2548,6 @@ function mostrarListado() {
             estado.className =
                 "estado-pregunta";
 
-
-            /*
-             * Obtener estadísticas permanentes.
-             */
 
             let informacion =
                 null;
@@ -2776,35 +2567,22 @@ function mostrarListado() {
             }
 
 
-            /*
-             * Valores por defecto.
-             */
-
             const intentos =
-                informacion?.intentos || 0;
+                Number(
+                    informacion?.intentos
+                ) || 0;
 
 
             const porcentaje =
-                informacion?.porcentaje || 0;
+                Number(
+                    informacion?.porcentaje
+                ) || 0;
 
 
-            /*
-             * ====================================================
-             * DETERMINAR ESTADO
-             * ====================================================
-             */
+            let textoEstado;
 
-            let textoEstado =
-                "";
+            let claseEstado;
 
-
-            let claseEstado =
-                "";
-
-
-            /*
-             * SIN DATOS
-             */
 
             if (
                 intentos === 0
@@ -2813,16 +2591,10 @@ function mostrarListado() {
                 textoEstado =
                     "SIN DATOS";
 
-
                 claseEstado =
                     "sin-datos";
 
             }
-
-
-            /*
-             * DOMINADA
-             */
 
             else if (
                 informacion?.dominada === true
@@ -2831,16 +2603,10 @@ function mostrarListado() {
                 textoEstado =
                     "DOMINADA";
 
-
                 claseEstado =
                     "dominada";
 
             }
-
-
-            /*
-             * DÉBIL
-             */
 
             else if (
                 intentos < 20 ||
@@ -2850,59 +2616,38 @@ function mostrarListado() {
                 textoEstado =
                     "DÉBIL";
 
-
                 claseEstado =
                     "debil";
 
             }
-
-
-            /*
-             * EN PROCESO
-             */
 
             else if (
                 porcentaje < 75
             ) {
 
                 textoEstado =
-                    "EN PROCESO";
-
+                    "EN PROGRESO";
 
                 claseEstado =
                     "en-progreso";
 
             }
 
-
-            /*
-             * CASI DOMINADA
-             */
-
             else {
 
                 textoEstado =
-                    "CASI DOMINADA";
-
+                    "BUEN DOMINIO";
 
                 claseEstado =
-                    "casi-dominada";
+                    "buen-dominio";
 
             }
 
-
-            /*
-             * Aplicar clase.
-             */
 
             estado.classList.add(
                 claseEstado
             );
 
-
-            /*
-             * Texto del estado.
-             */
 
             estado.appendChild(
                 document.createTextNode(
@@ -2912,7 +2657,9 @@ function mostrarListado() {
 
 
             /*
-             * Círculo.
+             * IMPORTANTE:
+             *
+             * El HTML utiliza .circulo-estado.
              */
 
             const circulo =
@@ -2922,7 +2669,7 @@ function mostrarListado() {
 
 
             circulo.className =
-                "circulo";
+                "circulo-estado";
 
 
             estado.appendChild(
@@ -2930,20 +2677,20 @@ function mostrarListado() {
             );
 
 
-            cabeceraEstado.appendChild(
+            cabecera.appendChild(
                 estado
             );
 
 
             elemento.appendChild(
-                cabeceraEstado
+                cabecera
             );
 
 
             /*
-             * ====================================================
+             * =================================================
              * PREGUNTA
-             * ====================================================
+             * =================================================
              */
 
             const preguntaTexto =
@@ -2966,9 +2713,9 @@ function mostrarListado() {
 
 
             /*
-             * ====================================================
+             * =================================================
              * RESPUESTA
-             * ====================================================
+             * =================================================
              */
 
             const respuestaTexto =
@@ -2991,26 +2738,22 @@ function mostrarListado() {
 
 
             /*
-             * ====================================================
-             * TEXTO PARA EL BUSCADOR
-             * ====================================================
+             * =================================================
+             * BUSCADOR
+             * =================================================
              */
 
             elemento.dataset.busqueda =
                 (
                     String(
-                        pregunta.pregunta || ""
+                        pregunta.pregunta
                     ) +
                     " " +
                     String(
-                        pregunta.respuesta || ""
+                        pregunta.respuesta
                     )
                 ).toLowerCase();
 
-
-            /*
-             * Añadir al listado.
-             */
 
             listaPreguntasElemento.appendChild(
                 elemento
@@ -3019,19 +2762,12 @@ function mostrarListado() {
         }
     );
 
-
-    /*
-     * Aplicar filtro actual si existe.
-     */
-
-    filtrarPreguntas();
-
 }
 
 
 /* ========================================================
-BUSCADOR
-======================================================== */
+   BUSCADOR
+   ======================================================== */
 
 function filtrarPreguntas() {
 
@@ -3066,14 +2802,10 @@ function filtrarPreguntas() {
                 "";
 
 
-            const coincide =
+            elemento.style.display =
                 contenido.includes(
                     texto
-                );
-
-
-            elemento.style.display =
-                coincide
+                )
                     ? ""
                     : "none";
 
@@ -3084,8 +2816,55 @@ function filtrarPreguntas() {
 
 
 /* ========================================================
-EVENTOS
-======================================================== */
+   CONFIGURAR VISIBILIDAD DEL LISTADO
+   ======================================================== */
+
+function configurarListado() {
+
+    if (!listaPreguntasElemento) {
+
+        return;
+
+    }
+
+
+    const listadoCard =
+        listaPreguntasElemento.closest(
+            ".card"
+        );
+
+
+    if (!listadoCard) {
+
+        return;
+
+    }
+
+
+    /*
+     * En sesiones se oculta completamente.
+     */
+
+    if (idSesion) {
+
+        listadoCard.style.display =
+            "none";
+
+    }
+
+    else {
+
+        listadoCard.style.display =
+            "";
+
+    }
+
+}
+
+
+/* ========================================================
+   EVENTOS
+   ======================================================== */
 
 if (botonTest) {
 
@@ -3117,27 +2896,11 @@ if (buscador) {
 }
 
 
-/*
- * No hace falta cargar manualmente el historial aquí.
- *
- * estadisticas.js lo obtiene directamente de localStorage
- * cada vez que registra una respuesta.
- */
-
-
 /* ========================================================
-INICIALIZACIÓN
-======================================================== */
-
-/*
- * Configurar listado.
- */
+   INICIALIZACIÓN
+   ======================================================== */
 
 configurarListado();
 
-
-/*
- * Cargar preguntas.
- */
 
 cargarPreguntas();
