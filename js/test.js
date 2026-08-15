@@ -427,14 +427,18 @@ async function cargarPreguntas() {
 
 
 /* ========================================================
-CARGAR PREGUNTAS DE UNA SESIÓN
-======================================================== */
+   CARGAR PREGUNTAS DE UNA SESIÓN
+   ======================================================== */
 
 async function cargarPreguntasDeSesion() {
 
     const sesion =
         obtenerSesionActual();
 
+
+    /*
+     * Comprobar que existe la sesión.
+     */
 
     if (!sesion) {
 
@@ -445,8 +449,14 @@ async function cargarPreguntasDeSesion() {
     }
 
 
+    /*
+     * Obtener los contenidos seleccionados.
+     */
+
     const capitulos =
-        sesion.capitulos || [];
+        Array.isArray(sesion.capitulos)
+            ? sesion.capitulos
+            : [];
 
 
     if (capitulos.length === 0) {
@@ -459,7 +469,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Configurar modo de la sesión.
+     * Configurar modo de estudio.
      */
 
     configurarModoEstudio(
@@ -471,17 +481,29 @@ async function cargarPreguntasDeSesion() {
      * Mostrar nombre de la sesión.
      */
 
-    asignaturaElemento.textContent =
-        sesion.nombre ||
-        "Sesión personalizada";
+    if (asignaturaElemento) {
+
+        asignaturaElemento.textContent =
+            sesion.nombre ||
+            "Sesión personalizada";
+
+    }
 
 
-    estadoElemento.textContent =
-        "Cargando preguntas...";
+    if (estadoElemento) {
+
+        estadoElemento.style.display =
+            "block";
+
+        estadoElemento.textContent =
+            "Cargando preguntas...";
+
+    }
 
 
     /*
-     * Aquí almacenaremos todas las preguntas.
+     * Aquí se almacenarán todas las preguntas
+     * procedentes de los contenidos seleccionados.
      */
 
     let preguntasCombinadas =
@@ -489,7 +511,9 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Cargar cada archivo seleccionado.
+     * ========================================================
+     * CARGAR CADA CONTENIDO
+     * ========================================================
      */
 
     for (
@@ -497,39 +521,40 @@ async function cargarPreguntasDeSesion() {
     ) {
 
         /*
-         * ====================================================
-         * NUEVO SISTEMA
+         * ----------------------------------------------------
+         * DETERMINAR LA RUTA
+         * ----------------------------------------------------
          *
-         * La sesión guarda directamente:
+         * Formato nuevo:
          *
-         * ruta: "constitucion/preambulo.json"
-         *
-         * o:
-         *
+         * ruta:
          * "constitucion/titulo-i/capitulo-1.json"
-         * ====================================================
+         *
+         * Formato antiguo:
+         *
+         * asignatura:
+         * "constitucion"
+         *
+         * archivo:
+         * "capitulo-1.json"
+         *
+         * Primero utilizamos "ruta".
          */
 
         let ruta =
-            capitulo.ruta;
+            capitulo?.ruta;
 
 
         /*
-         * ====================================================
+         * ----------------------------------------------------
          * COMPATIBILIDAD CON SESIONES ANTIGUAS
-         *
-         * Si todavía tienes sesiones guardadas con:
-         *
-         * asignatura + archivo
-         *
-         * también las podremos cargar.
-         * ====================================================
+         * ----------------------------------------------------
          */
 
         if (
             !ruta &&
-            capitulo.asignatura &&
-            capitulo.archivo
+            capitulo?.asignatura &&
+            capitulo?.archivo
         ) {
 
             ruta =
@@ -539,7 +564,9 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * No hay ruta válida.
+         * ----------------------------------------------------
+         * COMPROBAR RUTA
+         * ----------------------------------------------------
          */
 
         if (!ruta) {
@@ -549,78 +576,174 @@ async function cargarPreguntasDeSesion() {
                 capitulo
             );
 
-
             continue;
 
         }
 
 
         /*
-         * Asegurarnos de que no empiece
-         * por una barra.
+         * Convertir a texto y limpiar barras iniciales.
          */
 
         ruta =
             String(ruta)
+                .trim()
                 .replace(/^\/+/, "");
 
 
         /*
-         * ====================================================
-         * CONSTRUIR URL
+         * ----------------------------------------------------
+         * ASEGURAR EXTENSIÓN JSON
+         * ----------------------------------------------------
          *
-         * Convertimos cada parte de la ruta por separado
-         * para NO codificar las barras "/".
-         * ====================================================
+         * Si la ruta no termina en .json, la añadimos.
+         */
+
+        if (
+            !/\.json$/i.test(ruta)
+        ) {
+
+            ruta += ".json";
+
+        }
+
+
+        /*
+         * ----------------------------------------------------
+         * CODIFICAR LA RUTA
+         * ----------------------------------------------------
+         *
+         * Es importante codificar cada parte por separado.
+         *
+         * NO debemos hacer:
+         *
+         * encodeURIComponent(ruta)
+         *
+         * porque convertiría "/" en "%2F".
          */
 
         const rutaCodificada =
             ruta
                 .split("/")
+                .filter(
+                    parte => parte !== ""
+                )
                 .map(
                     parte =>
-                        encodeURIComponent(parte)
+                        encodeURIComponent(
+                            parte
+                        )
                 )
                 .join("/");
 
+
+        /*
+         * Ruta final dentro de /data
+         */
 
         const url =
             `data/${rutaCodificada}`;
 
 
         console.log(
-            "Cargando preguntas:",
+            "Sesión → cargando:",
             url
         );
 
 
-        const respuesta =
-            await fetch(
-                url
-            );
+        /*
+         * ----------------------------------------------------
+         * FETCH
+         * ----------------------------------------------------
+         */
 
+        let respuesta;
 
-        if (!respuesta.ok) {
+        try {
+
+            respuesta =
+                await fetch(
+                    url,
+                    {
+                        cache: "no-store"
+                    }
+                );
+
+        }
+
+        catch (error) {
 
             console.error(
-                `No se ha podido cargar ${url}`
+                "Error haciendo fetch de:",
+                url,
+                error
             );
 
-
             throw new Error(
-                `No se ha podido cargar ${url}`
+                `Error al cargar ${url}. Comprueba que el archivo existe.`
             );
 
         }
 
 
-        const preguntasArchivo =
-            await respuesta.json();
+        /*
+         * ----------------------------------------------------
+         * COMPROBAR RESPUESTA HTTP
+         * ----------------------------------------------------
+         */
+
+        if (!respuesta.ok) {
+
+            console.error(
+                "Respuesta HTTP incorrecta:",
+                respuesta.status,
+                respuesta.statusText,
+                url
+            );
+
+
+            throw new Error(
+                `No se ha podido cargar ${url} ` +
+                `(${respuesta.status}).`
+            );
+
+        }
 
 
         /*
-         * El archivo debe contener
-         * directamente un array de preguntas.
+         * ----------------------------------------------------
+         * LEER JSON
+         * ----------------------------------------------------
+         */
+
+        let preguntasArchivo;
+
+        try {
+
+            preguntasArchivo =
+                await respuesta.json();
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "El archivo no contiene JSON válido:",
+                url,
+                error
+            );
+
+            throw new Error(
+                `El archivo ${url} no contiene un JSON válido.`
+            );
+
+        }
+
+
+        /*
+         * ----------------------------------------------------
+         * COMPROBAR ESTRUCTURA
+         * ----------------------------------------------------
          */
 
         if (
@@ -629,18 +752,22 @@ async function cargarPreguntasDeSesion() {
             )
         ) {
 
-            console.warn(
-                `El archivo ${url} no contiene un array de preguntas.`
+            console.error(
+                `El archivo ${url} no contiene un array:`,
+                preguntasArchivo
             );
 
-
-            continue;
+            throw new Error(
+                `El archivo ${url} no contiene un array de preguntas.`
+            );
 
         }
 
 
         /*
-         * Añadir las preguntas.
+         * ----------------------------------------------------
+         * AÑADIR PREGUNTAS
+         * ----------------------------------------------------
          */
 
         preguntasCombinadas =
@@ -652,7 +779,9 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * No se encontró ninguna pregunta.
+     * ========================================================
+     * COMPROBAR QUE HAY PREGUNTAS
+     * ========================================================
      */
 
     if (
@@ -667,7 +796,9 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Guardar preguntas.
+     * ========================================================
+     * GUARDAR PREGUNTAS
+     * ========================================================
      */
 
     preguntas =
@@ -675,7 +806,9 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Aleatoriedad.
+     * ========================================================
+     * ALEATORIEDAD
+     * ========================================================
      */
 
     if (
@@ -690,7 +823,9 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Limitar número de preguntas.
+     * ========================================================
+     * LIMITAR NÚMERO DE PREGUNTAS
+     * ========================================================
      */
 
     const numeroPreguntas =
@@ -718,21 +853,37 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Reiniciar estado.
+     * ========================================================
+     * REINICIAR ESTADO DEL TEST
+     * ========================================================
      */
 
     reiniciarEstadoEstudio();
 
 
-    estadoElemento.style.display =
-        "none";
+    /*
+     * Ocultar mensaje de carga.
+     */
 
+    if (estadoElemento) {
+
+        estadoElemento.style.display =
+            "none";
+
+    }
+
+
+    /*
+     * Actualizar estadísticas.
+     */
 
     actualizarEstadisticas();
 
 
     /*
-     * Primera pregunta.
+     * ========================================================
+     * MOSTRAR PRIMERA PREGUNTA
+     * ========================================================
      */
 
     indice =
