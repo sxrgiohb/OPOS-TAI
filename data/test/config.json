@@ -16,13 +16,34 @@
           "id": "tema-2",
           "nombre": "Tema 2",
           "archivo": "tema-2.json"
+        },
+        {
+          "id": "tema-3",
+          "nombre": "Tema 3",
+          "archivo": "tema-3.json"
         }
       ]
     },
     {
       "id": "bloque-ii",
       "nombre": "Bloque II",
-      "contenido": []
+      "contenido": [
+        {
+          "id": "tema-1",
+          "nombre": "Tema 1",
+          "archivo": "tema-1.json"
+        },
+        {
+          "id": "tema-2",
+          "nombre": "Tema 2",
+          "archivo": "tema-2.json"
+        },
+        {
+          "id": "tema-3",
+          "nombre": "Tema 3",
+          "archivo": "tema-3.json"
+        }
+      ]
     },
     {
       "id": "bloque-iii",
