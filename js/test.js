@@ -7,6 +7,7 @@ ESTADO DEL BOTÓN DEL TEST
 
 "corregir"  → todavía no hemos corregido
 "siguiente" → ya hemos corregido y esperamos al usuario
+"finalizado" → el test ha terminado
 ======================================================== */
 
 let estadoBoton = "corregir";
@@ -194,7 +195,8 @@ function configurarListado() {
     /*
      * SESIÓN:
      *
-     * ocultamos completamente el listado.
+     * El listado es únicamente consultivo
+     * para los capítulos, no para sesiones.
      */
 
     if (idSesion) {
@@ -203,13 +205,6 @@ function configurarListado() {
             "none";
 
     }
-
-
-    /*
-     * CAPÍTULO:
-     *
-     * mantenemos visible el listado.
-     */
 
     else {
 
@@ -290,7 +285,8 @@ function obtenerSesionActual() {
 
     return sesiones.find(
         sesion =>
-            sesion.id === idSesion
+            String(sesion.id) ===
+            String(idSesion)
     ) || null;
 
 }
@@ -313,7 +309,7 @@ function configurarModoEstudio(
     if (!idSesion) {
 
         modoEstudio =
-            true;
+            MODO_ESTUDIO_POR_DEFECTO;
 
         return;
 
@@ -401,10 +397,10 @@ async function cargarPreguntas() {
 
     }
 
-
     catch (error) {
 
         console.error(
+            "Error cargando preguntas:",
             error
         );
 
@@ -427,8 +423,8 @@ async function cargarPreguntas() {
 
 
 /* ========================================================
-   CARGAR PREGUNTAS DE UNA SESIÓN
-   ======================================================== */
+CARGAR PREGUNTAS DE UNA SESIÓN
+======================================================== */
 
 async function cargarPreguntasDeSesion() {
 
@@ -495,6 +491,7 @@ async function cargarPreguntasDeSesion() {
         estadoElemento.style.display =
             "block";
 
+
         estadoElemento.textContent =
             "Cargando preguntas...";
 
@@ -511,9 +508,9 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * ========================================================
+     * ====================================================
      * CARGAR CADA CONTENIDO
-     * ========================================================
+     * ====================================================
      */
 
     for (
@@ -521,9 +518,9 @@ async function cargarPreguntasDeSesion() {
     ) {
 
         /*
-         * ----------------------------------------------------
+         * ------------------------------------------------
          * DETERMINAR LA RUTA
-         * ----------------------------------------------------
+         * ------------------------------------------------
          *
          * Formato nuevo:
          *
@@ -537,8 +534,6 @@ async function cargarPreguntasDeSesion() {
          *
          * archivo:
          * "capitulo-1.json"
-         *
-         * Primero utilizamos "ruta".
          */
 
         let ruta =
@@ -546,9 +541,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * COMPATIBILIDAD CON SESIONES ANTIGUAS
-         * ----------------------------------------------------
+         * Compatibilidad con sesiones antiguas.
          */
 
         if (
@@ -564,9 +557,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * COMPROBAR RUTA
-         * ----------------------------------------------------
+         * Comprobar ruta.
          */
 
         if (!ruta) {
@@ -582,7 +573,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * Convertir a texto y limpiar barras iniciales.
+         * Limpiar barras iniciales.
          */
 
         ruta =
@@ -592,11 +583,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * ASEGURAR EXTENSIÓN JSON
-         * ----------------------------------------------------
-         *
-         * Si la ruta no termina en .json, la añadimos.
+         * Asegurar extensión JSON.
          */
 
         if (
@@ -609,17 +596,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * CODIFICAR LA RUTA
-         * ----------------------------------------------------
-         *
-         * Es importante codificar cada parte por separado.
-         *
-         * NO debemos hacer:
-         *
-         * encodeURIComponent(ruta)
-         *
-         * porque convertiría "/" en "%2F".
+         * Codificar cada parte de la ruta.
          */
 
         const rutaCodificada =
@@ -638,7 +615,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * Ruta final dentro de /data
+         * Ruta final dentro de /data.
          */
 
         const url =
@@ -652,9 +629,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
          * FETCH
-         * ----------------------------------------------------
          */
 
         let respuesta;
@@ -687,9 +662,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * COMPROBAR RESPUESTA HTTP
-         * ----------------------------------------------------
+         * Comprobar respuesta HTTP.
          */
 
         if (!respuesta.ok) {
@@ -711,9 +684,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * LEER JSON
-         * ----------------------------------------------------
+         * Leer JSON.
          */
 
         let preguntasArchivo;
@@ -741,9 +712,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * COMPROBAR ESTRUCTURA
-         * ----------------------------------------------------
+         * Comprobar estructura.
          */
 
         if (
@@ -765,9 +734,7 @@ async function cargarPreguntasDeSesion() {
 
 
         /*
-         * ----------------------------------------------------
-         * AÑADIR PREGUNTAS
-         * ----------------------------------------------------
+         * Añadir preguntas.
          */
 
         preguntasCombinadas =
@@ -779,9 +746,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * ========================================================
-     * COMPROBAR QUE HAY PREGUNTAS
-     * ========================================================
+     * Comprobar que hay preguntas.
      */
 
     if (
@@ -796,9 +761,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * ========================================================
-     * GUARDAR PREGUNTAS
-     * ========================================================
+     * Guardar preguntas.
      */
 
     preguntas =
@@ -806,9 +769,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * ========================================================
-     * ALEATORIEDAD
-     * ========================================================
+     * Aleatoriedad.
      */
 
     if (
@@ -823,9 +784,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * ========================================================
-     * LIMITAR NÚMERO DE PREGUNTAS
-     * ========================================================
+     * Limitar número de preguntas.
      */
 
     const numeroPreguntas =
@@ -853,12 +812,19 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * ========================================================
-     * REINICIAR ESTADO DEL TEST
-     * ========================================================
+     * Reiniciar estado del test.
      */
 
     reiniciarEstadoEstudio();
+
+
+    /*
+     * Reiniciar estadísticas del test.
+     */
+
+    aciertos = 0;
+    fallos = 0;
+    respondidas = 0;
 
 
     /*
@@ -881,9 +847,7 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * ========================================================
-     * MOSTRAR PRIMERA PREGUNTA
-     * ========================================================
+     * Mostrar primera pregunta.
      */
 
     indice =
@@ -923,7 +887,7 @@ async function obtenerNombreRutaCompleta(
 ) {
 
     const partes =
-        nombreArchivo
+        String(nombreArchivo)
             .split("/")
             .filter(Boolean);
 
@@ -955,9 +919,7 @@ async function obtenerNombreRutaCompleta(
 
 
     /*
-     * ====================================================
-     * CARGAR CONFIG.JSON
-     * ====================================================
+     * Cargar config.json.
      */
 
     const rutaConfig =
@@ -966,7 +928,10 @@ async function obtenerNombreRutaCompleta(
 
     const respuesta =
         await fetch(
-            rutaConfig
+            rutaConfig,
+            {
+                cache: "no-store"
+            }
         );
 
 
@@ -984,23 +949,7 @@ async function obtenerNombreRutaCompleta(
 
 
     /*
-     * ====================================================
-     * BUSCAR EL ARCHIVO RECURSIVAMENTE
-     * ====================================================
-     *
-     * Busca el archivo independientemente
-     * de cuántos niveles haya.
-     *
-     * Puede encontrar:
-     *
-     * Bloque
-     *   └── Tema
-     *       └── Apartado
-     *           └── Subapartado
-     *               └── archivo
-     *
-     * sin límite de profundidad.
-     * ====================================================
+     * Buscar archivo recursivamente.
      */
 
     function buscarArchivo(
@@ -1024,43 +973,34 @@ async function obtenerNombreRutaCompleta(
         ) {
 
             /*
-             * =================================================
-             * DOCUMENTO
-             * =================================================
-             *
-             * Si tiene "archivo", hemos llegado
-             * al documento que buscamos.
+             * Documento.
              */
 
             if (
+                elemento &&
                 elemento.archivo
             ) {
-
-                /*
-                 * Comparamos el nombre del archivo
-                 * con el último elemento de la URL.
-                 */
 
                 const archivoElemento =
                     String(
                         elemento.archivo
                     )
-                    .replace(
-                        /\.json$/i,
-                        ""
-                    );
+                        .replace(
+                            /\.json$/i,
+                            ""
+                        );
 
 
                 const archivoBuscado =
                     String(
                         rutaArchivo[
                             rutaArchivo.length - 1
-                        ]
+                        ] || ""
                     )
-                    .replace(
-                        /\.json$/i,
-                        ""
-                    );
+                        .replace(
+                            /\.json$/i,
+                            ""
+                        );
 
 
                 if (
@@ -1081,14 +1021,11 @@ async function obtenerNombreRutaCompleta(
 
 
             /*
-             * =================================================
-             * SUBCOLECCIÓN
-             * =================================================
-             *
-             * Si tiene "contenido", seguimos bajando.
+             * Subcolección.
              */
 
             if (
+                elemento &&
                 Array.isArray(
                     elemento.contenido
                 )
@@ -1134,9 +1071,7 @@ async function obtenerNombreRutaCompleta(
 
 
     /*
-     * ====================================================
-     * CONSTRUIR TÍTULO
-     * ====================================================
+     * Construir título.
      */
 
     const resultado = [
@@ -1163,7 +1098,7 @@ CARGAR PREGUNTAS DE UN CAPÍTULO
 async function cargarPreguntasAntiguo() {
 
     /*
-     * Los tests antiguos SIEMPRE utilizan
+     * Los tests antiguos siempre utilizan
      * modo estudio.
      */
 
@@ -1172,25 +1107,21 @@ async function cargarPreguntasAntiguo() {
 
     /*
      * Mostrar asignatura y capítulo.
-     *
-     * CORREGIDO:
-     *
-     * Antes se llamaba a:
-     *
-     * obtenerNombreAsignatura()
-     *
-     * pero esa función ya no existe.
-     *
-     * Ahora utilizamos:
-     *
-     * obtenerNombreRutaCompleta()
      */
 
-    asignaturaElemento.textContent =
-        await obtenerNombreRutaCompleta(
-            archivoDatos
-        );
+    if (asignaturaElemento) {
 
+        asignaturaElemento.textContent =
+            await obtenerNombreRutaCompleta(
+                archivoDatos
+            );
+
+    }
+
+
+    /*
+     * Ruta del JSON.
+     */
 
     const ruta =
         `data/${archivoDatos}`;
@@ -1204,7 +1135,10 @@ async function cargarPreguntasAntiguo() {
 
     const respuesta =
         await fetch(
-            ruta
+            ruta,
+            {
+                cache: "no-store"
+            }
         );
 
 
@@ -1217,9 +1151,25 @@ async function cargarPreguntasAntiguo() {
     }
 
 
-    preguntas =
-        await respuesta.json();
+    try {
 
+        preguntas =
+            await respuesta.json();
+
+    }
+
+    catch (error) {
+
+        throw new Error(
+            `El archivo ${ruta} no contiene un JSON válido.`
+        );
+
+    }
+
+
+    /*
+     * Comprobar preguntas.
+     */
 
     if (
         !Array.isArray(
@@ -1242,8 +1192,21 @@ async function cargarPreguntasAntiguo() {
     reiniciarEstadoEstudio();
 
 
-    estadoElemento.style.display =
-        "none";
+    /*
+     * Reiniciar estadísticas del test.
+     */
+
+    aciertos = 0;
+    fallos = 0;
+    respondidas = 0;
+
+
+    if (estadoElemento) {
+
+        estadoElemento.style.display =
+            "none";
+
+    }
 
 
     indice =
@@ -1303,8 +1266,7 @@ function mostrarPregunta(
 
 
     /*
-     * Comprobar que la pregunta tiene
-     * la estructura esperada.
+     * Comprobar estructura.
      */
 
     if (
@@ -1326,7 +1288,8 @@ function mostrarPregunta(
 
 
     if (
-        !pregunta.pregunta
+        typeof pregunta.pregunta !== "string" ||
+        !pregunta.pregunta.trim()
     ) {
 
         console.error(
@@ -1361,6 +1324,28 @@ function mostrarPregunta(
     }
 
 
+    if (
+        pregunta.opciones.length === 0
+    ) {
+
+        throw new Error(
+            "Una pregunta no contiene opciones de respuesta."
+        );
+
+    }
+
+
+    if (
+        typeof pregunta.respuesta !== "string"
+    ) {
+
+        throw new Error(
+            "Una pregunta no contiene una respuesta válida."
+        );
+
+    }
+
+
     /*
      * Guardar estado actual.
      */
@@ -1377,8 +1362,19 @@ function mostrarPregunta(
      * Mostrar pregunta.
      */
 
-    preguntaElemento.textContent =
-        pregunta.pregunta;
+    if (preguntaElemento) {
+
+        preguntaElemento.textContent =
+            pregunta.pregunta;
+
+    }
+
+
+    if (!opcionesElemento) {
+
+        return;
+
+    }
 
 
     opcionesElemento.innerHTML =
@@ -1386,19 +1382,10 @@ function mostrarPregunta(
 
 
     /*
-     * ====================================================
-     * MEZCLAR RESPUESTAS
-     * ====================================================
+     * Mezclar respuestas.
      *
-     * Creamos una COPIA de las opciones originales.
-     *
-     * De esta forma:
-     *
-     * - No modificamos el JSON.
-     * - No modificamos pregunta.opciones.
-     * - Las respuestas pueden cambiar de posición.
-     * - La respuesta correcta sigue siendo la misma.
-     * ====================================================
+     * Se utiliza una COPIA para no modificar
+     * el JSON original.
      */
 
     const opcionesMezcladas =
@@ -1417,9 +1404,7 @@ function mostrarPregunta(
      */
 
     opcionesMezcladas.forEach(
-        (
-            opcion
-        ) => {
+        opcion => {
 
             const label =
                 document.createElement(
@@ -1444,11 +1429,6 @@ function mostrarPregunta(
             input.name =
                 "opcion";
 
-
-            /*
-             * Guardamos directamente el texto
-             * de la respuesta.
-             */
 
             input.value =
                 opcion;
@@ -1479,12 +1459,16 @@ function mostrarPregunta(
      * Limpiar resultado anterior.
      */
 
-    resultadoElemento.textContent =
-        "";
+    if (resultadoElemento) {
+
+        resultadoElemento.textContent =
+            "";
 
 
-    resultadoElemento.className =
-        "";
+        resultadoElemento.className =
+            "";
+
+    }
 
 
     /*
@@ -1495,14 +1479,22 @@ function mostrarPregunta(
         "corregir";
 
 
-    botonTest.textContent =
-        "Corregir";
+    if (botonTest) {
+
+        botonTest.disabled =
+            false;
+
+
+        botonTest.textContent =
+            "Corregir";
+
+    }
 
 }
 
 
 /* ========================================================
-CONSULTA LAS ESTADÍSTICAS PERMANENTES.
+CONSULTA LAS ESTADÍSTICAS PERMANENTES
 
 La función estaPreguntaDominada()
 pertenece a estadisticas.js.
@@ -1903,6 +1895,24 @@ function crearEstadoPregunta(
     }
 
 
+    /*
+     * Si ya existe un estado,
+     * no lo sobrescribimos innecesariamente.
+     */
+
+    if (
+        estadoPreguntasEstudio.has(
+            pregunta
+        )
+    ) {
+
+        return estadoPreguntasEstudio.get(
+            pregunta
+        );
+
+    }
+
+
     const estado = {
 
         aciertosConsecutivos:
@@ -1974,7 +1984,6 @@ function procesarResultadoEstudio(
 
         /*
          * Si se acierta a la primera:
-         *
          * no necesita repaso.
          */
 
@@ -1989,7 +1998,6 @@ function procesarResultadoEstudio(
 
         /*
          * Si falla:
-         *
          * entra en modo repaso.
          */
 
@@ -2073,18 +2081,11 @@ function procesarResultadoEstudio(
      * ====================================================
      * RESPUESTA INCORRECTA
      * ====================================================
-     *
-     * Se rompe la racha.
      */
 
     estado.aciertosConsecutivos =
         0;
 
-
-    /*
-     * Vuelve a necesitar dos aciertos
-     * consecutivos.
-     */
 
     estado.proximaRepeticionEn =
         calcularProximaRepeticion();
@@ -2100,7 +2101,6 @@ function corregirRespuesta() {
 
     /*
      * Si ya hemos corregido:
-     *
      * el botón funciona como "Siguiente".
      */
 
@@ -2110,6 +2110,20 @@ function corregirRespuesta() {
     ) {
 
         siguientePregunta();
+
+        return;
+
+    }
+
+
+    /*
+     * Si el test ya terminó, no hacemos nada.
+     */
+
+    if (
+        estadoBoton ===
+        "finalizado"
+    ) {
 
         return;
 
@@ -2128,12 +2142,16 @@ function corregirRespuesta() {
 
     if (!seleccion) {
 
-        resultadoElemento.textContent =
-            "⚠️ Selecciona una respuesta.";
+        if (resultadoElemento) {
+
+            resultadoElemento.textContent =
+                "⚠️ Selecciona una respuesta.";
 
 
-        resultadoElemento.className =
-            "";
+            resultadoElemento.className =
+                "";
+
+        }
 
 
         return;
@@ -2149,10 +2167,15 @@ function corregirRespuesta() {
         preguntaActual;
 
 
+    if (!preguntaQueSeCorrige) {
+
+        return;
+
+    }
+
+
     /*
-     * ====================================================
-     * RESPUESTA SELECCIONADA
-     * ====================================================
+     * Respuesta seleccionada.
      */
 
     const respuestaSeleccionada =
@@ -2191,11 +2214,17 @@ function corregirRespuesta() {
         respondidas++;
 
 
-        seleccion
-            .parentElement
-            .classList.add(
-                "correcta"
-            );
+        if (
+            seleccion.parentElement
+        ) {
+
+            seleccion
+                .parentElement
+                .classList.add(
+                    "correcta"
+                );
+
+        }
 
     }
 
@@ -2213,11 +2242,17 @@ function corregirRespuesta() {
         respondidas++;
 
 
-        seleccion
-            .parentElement
-            .classList.add(
-                "incorrecta"
-            );
+        if (
+            seleccion.parentElement
+        ) {
+
+            seleccion
+                .parentElement
+                .classList.add(
+                    "incorrecta"
+                );
+
+        }
 
 
         /*
@@ -2232,11 +2267,17 @@ function corregirRespuesta() {
                     preguntaQueSeCorrige.respuesta
                 ) {
 
-                    input
-                        .parentElement
-                        .classList.add(
-                            "correcta"
-                        );
+                    if (
+                        input.parentElement
+                    ) {
+
+                        input
+                            .parentElement
+                            .classList.add(
+                                "correcta"
+                            );
+
+                    }
 
                 }
 
@@ -2253,7 +2294,6 @@ function corregirRespuesta() {
      */
 
     if (
-        preguntaQueSeCorrige &&
         preguntaQueSeCorrige.id
     ) {
 
@@ -2309,21 +2349,25 @@ function corregirRespuesta() {
 
 
     /*
-     * No mostramos texto de correcto/incorrecto.
+     * No mostramos "Correcto" / "Incorrecto".
      *
      * La información se muestra mediante colores.
      */
 
-    resultadoElemento.textContent =
-        "";
+    if (resultadoElemento) {
+
+        resultadoElemento.textContent =
+            "";
 
 
-    resultadoElemento.className =
-        "";
+        resultadoElemento.className =
+            "";
+
+    }
 
 
     /*
-     * Actualizar estadísticas del test.
+     * Actualizar estadísticas.
      */
 
     actualizarEstadisticas();
@@ -2351,8 +2395,12 @@ function corregirRespuesta() {
         "siguiente";
 
 
-    botonTest.textContent =
-        "Siguiente";
+    if (botonTest) {
+
+        botonTest.textContent =
+            "Siguiente";
+
+    }
 
 }
 
@@ -2398,12 +2446,16 @@ FINALIZAR TEST
 
 function finalizarTest() {
 
-    resultadoElemento.textContent =
-        "🎉 Has terminado el test.";
+    if (resultadoElemento) {
+
+        resultadoElemento.textContent =
+            "🎉 Has terminado el test.";
 
 
-    resultadoElemento.className =
-        "";
+        resultadoElemento.className =
+            "";
+
+    }
 
 
     actualizarEstadisticas();
@@ -2413,12 +2465,16 @@ function finalizarTest() {
         "finalizado";
 
 
-    botonTest.textContent =
-        "Terminado";
+    if (botonTest) {
+
+        botonTest.textContent =
+            "Terminado";
 
 
-    botonTest.disabled =
-        true;
+        botonTest.disabled =
+            true;
+
+    }
 
 }
 
@@ -2566,8 +2622,12 @@ function reiniciarEstadisticas() {
      * Volver a habilitar el botón.
      */
 
-    botonTest.disabled =
-        false;
+    if (botonTest) {
+
+        botonTest.disabled =
+            false;
+
+    }
 
 
     estadoBoton =
@@ -2577,12 +2637,16 @@ function reiniciarEstadisticas() {
     actualizarEstadisticas();
 
 
-    resultadoElemento.textContent =
-        "";
+    if (resultadoElemento) {
+
+        resultadoElemento.textContent =
+            "";
 
 
-    resultadoElemento.className =
-        "";
+        resultadoElemento.className =
+            "";
+
+    }
 
 
     /*
@@ -2837,7 +2901,7 @@ function mostrarListado() {
 
 
             /*
-             * Primero el texto.
+             * Texto del estado.
              */
 
             estado.appendChild(
@@ -2848,7 +2912,7 @@ function mostrarListado() {
 
 
             /*
-             * Después el círculo.
+             * Círculo.
              */
 
             const circulo =
@@ -2934,9 +2998,13 @@ function mostrarListado() {
 
             elemento.dataset.busqueda =
                 (
-                    pregunta.pregunta +
+                    String(
+                        pregunta.pregunta || ""
+                    ) +
                     " " +
-                    pregunta.respuesta
+                    String(
+                        pregunta.respuesta || ""
+                    )
                 ).toLowerCase();
 
 
@@ -2951,6 +3019,13 @@ function mostrarListado() {
         }
     );
 
+
+    /*
+     * Aplicar filtro actual si existe.
+     */
+
+    filtrarPreguntas();
+
 }
 
 
@@ -2960,7 +3035,10 @@ BUSCADOR
 
 function filtrarPreguntas() {
 
-    if (!buscador) {
+    if (
+        !buscador ||
+        !listaPreguntasElemento
+    ) {
 
         return;
 
