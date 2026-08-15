@@ -1101,7 +1101,7 @@ async function cargarPreguntasAntiguo() {
     );
 
 
-    preguntas =
+        preguntas =
         await cargarJSON(
             url
         );
@@ -1119,6 +1119,18 @@ async function cargarPreguntasAntiguo() {
         );
 
     }
+
+
+    /*
+     * Mezclar siempre las preguntas del capítulo.
+     *
+     * De esta forma nunca se mantiene
+     * el orden original del JSON.
+     */
+
+    mezclarArray(
+        preguntas
+    );
 
 
     prepararTest();
