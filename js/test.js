@@ -783,18 +783,17 @@ async function cargarPreguntasDeSesion() {
 
 
     /*
-     * Mezclar sesión.
+     * ====================================================
+     * LAS SESIONES SIEMPRE SON ALEATORIAS
+     * ====================================================
+     *
+     * Ya no existe una opción para activar o desactivar
+     * el orden aleatorio.
      */
 
-    if (
-        sesion.aleatorio !== false
-    ) {
-
-        mezclarArray(
-            preguntas
-        );
-
-    }
+    mezclarArray(
+        preguntas
+    );
 
 
     /*
@@ -2450,26 +2449,19 @@ function reiniciarEstadisticas() {
 
 
     /*
-     * En sesiones aleatorias,
-     * volver a mezclar.
+     * ====================================================
+     * SESIONES SIEMPRE ALEATORIAS
+     * ====================================================
+     *
+     * Al reiniciar una sesión se vuelve a mezclar
+     * el orden de las preguntas.
      */
 
     if (idSesion) {
 
-        const sesion =
-            obtenerSesionActual();
-
-
-        if (
-            sesion &&
-            sesion.aleatorio !== false
-        ) {
-
-            mezclarArray(
-                preguntas
-            );
-
-        }
+        mezclarArray(
+            preguntas
+        );
 
     }
 
