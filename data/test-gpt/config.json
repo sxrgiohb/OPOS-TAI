@@ -19,27 +19,27 @@
             {
               "id": "titulo-1-capitulo-1",
               "nombre": "Capítulo I - De los españoles y los extranjeros",
-              "archivo": "titulo-1-capitulo-1.json"
+              "archivo": "titulo-1/titulo-1-capitulo-1.json"
             },
             {
               "id": "titulo-1-capitulo-2",
               "nombre": "Capítulo II - Derechos y libertades",
-              "archivo": "titulo-1-capitulo-2.json"
+              "archivo": "titulo-1/titulo-1-capitulo-2.json"
             },
             {
               "id": "titulo-1-capitulo-3",
               "nombre": "Capítulo III - Principios rectores de la política social y económica",
-              "archivo": "titulo-1-capitulo-3.json"
+              "archivo": "titulo-1/titulo-1-capitulo-3.json"
             },
             {
               "id": "titulo-1-capitulo-4",
               "nombre": "Capítulo IV - Garantías de las libertades y derechos fundamentales",
-              "archivo": "titulo-1-capitulo-4.json"
+              "archivo": "titulo-1/titulo-1-capitulo-4.json"
             },
             {
               "id": "titulo-1-capitulo-5",
               "nombre": "Capítulo V - Suspensión de los derechos y libertades",
-              "archivo": "titulo-1-capitulo-5.json"
+              "archivo": "titulo-1/titulo-1-capitulo-5.json"
             }
           ]
         }
