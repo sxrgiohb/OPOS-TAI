@@ -1,1 +1,552 @@
-
+[
+  {
+    "id": "constitucion-titulo1-cap1-0001",
+    "pregunta": "¿Cómo se denomina el Capítulo Primero del Título I de la Constitución Española?",
+    "respuesta": "De los españoles y los extranjeros",
+    "opciones": [
+      "De los derechos y libertades",
+      "De los españoles y los extranjeros",
+      "De la nacionalidad y la ciudadanía",
+      "De los derechos fundamentales"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0002",
+    "pregunta": "¿Qué artículos comprende el Capítulo Primero del Título I de la Constitución Española?",
+    "respuesta": "Los artículos 11, 12 y 13",
+    "opciones": [
+      "Los artículos 10, 11 y 12",
+      "Los artículos 11, 12 y 13",
+      "Los artículos 12, 13 y 14",
+      "Los artículos 10, 11, 12 y 13"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0003",
+    "pregunta": "¿En qué artículo de la Constitución Española se regula que la nacionalidad española se adquiere, se conserva y se pierde de acuerdo con lo establecido por la ley?",
+    "respuesta": "En el artículo 11",
+    "opciones": [
+      "En el artículo 10",
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0004",
+    "pregunta": "¿En qué artículo se establece que ningún español de origen podrá ser privado de su nacionalidad?",
+    "respuesta": "En el artículo 11",
+    "opciones": [
+      "En el artículo 10",
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0005",
+    "pregunta": "¿En qué artículo se contempla la posibilidad de que el Estado concierte tratados de doble nacionalidad?",
+    "respuesta": "En el artículo 11",
+    "opciones": [
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13",
+      "En el artículo 14"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0006",
+    "pregunta": "¿En qué artículo se establece la mayoría de edad de los españoles a los dieciocho años?",
+    "respuesta": "En el artículo 12",
+    "opciones": [
+      "En el artículo 10",
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0007",
+    "pregunta": "¿En qué artículo se regulan las libertades públicas de los extranjeros en España?",
+    "respuesta": "En el artículo 13",
+    "opciones": [
+      "En el artículo 10",
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0008",
+    "pregunta": "¿En qué artículo se establece la regla general sobre la titularidad de los derechos reconocidos en el artículo 23?",
+    "respuesta": "En el artículo 13",
+    "opciones": [
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13",
+      "En el artículo 14"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0009",
+    "pregunta": "¿En qué artículo se regula la extradición y la exclusión de los delitos políticos?",
+    "respuesta": "En el artículo 13",
+    "opciones": [
+      "En el artículo 10",
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0010",
+    "pregunta": "¿En qué artículo se establece que la ley regulará los términos en que los ciudadanos de otros países y los apátridas podrán gozar del derecho de asilo en España?",
+    "respuesta": "En el artículo 13",
+    "opciones": [
+      "En el artículo 11",
+      "En el artículo 12",
+      "En el artículo 13",
+      "En el artículo 14"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0011",
+    "pregunta": "Según el artículo 11.1, ¿de acuerdo con qué se adquiere, se conserva y se pierde la nacionalidad española?",
+    "respuesta": "De acuerdo con lo establecido por la ley",
+    "opciones": [
+      "De acuerdo con lo establecido por la Constitución exclusivamente",
+      "De acuerdo con lo establecido por la ley",
+      "De acuerdo con los tratados internacionales",
+      "De acuerdo con lo establecido por el Gobierno"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0012",
+    "pregunta": "¿Qué españoles no podrán ser privados de su nacionalidad?",
+    "respuesta": "Los españoles de origen",
+    "opciones": [
+      "Todos los españoles, cualquiera que sea su nacionalidad de origen",
+      "Los españoles de origen",
+      "Los españoles que hayan adquirido la nacionalidad por residencia",
+      "Los españoles que posean doble nacionalidad"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0013",
+    "pregunta": "¿Qué establece el artículo 11.2 respecto a la nacionalidad de los españoles de origen?",
+    "respuesta": "Que ninguno podrá ser privado de su nacionalidad",
+    "opciones": [
+      "Que podrán perderla por resolución administrativa",
+      "Que ninguno podrá ser privado de su nacionalidad",
+      "Que podrán renunciar a ella únicamente mediante tratado",
+      "Que podrán ser privados de ella por decisión judicial"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0014",
+    "pregunta": "¿Quién podrá concertar tratados de doble nacionalidad según el artículo 11.3?",
+    "respuesta": "El Estado",
+    "opciones": [
+      "El Gobierno exclusivamente",
+      "Las Cortes Generales",
+      "El Estado",
+      "Las Comunidades Autónomas"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0015",
+    "pregunta": "¿Con qué países podrá concertar el Estado tratados de doble nacionalidad?",
+    "respuesta": "Con los países iberoamericanos o con aquellos que hayan tenido o tengan una particular vinculación con España",
+    "opciones": [
+      "Con todos los países de la Unión Europea",
+      "Con los países iberoamericanos o con aquellos que hayan tenido o tengan una particular vinculación con España",
+      "Exclusivamente con los países iberoamericanos",
+      "Con cualquier país que reconozca la reciprocidad"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0016",
+    "pregunta": "¿Qué tipo de vinculación con España deben haber tenido o tener determinados países para poder concertar tratados de doble nacionalidad?",
+    "respuesta": "Una particular vinculación",
+    "opciones": [
+      "Una vinculación exclusivamente económica",
+      "Una vinculación militar",
+      "Una particular vinculación",
+      "Una vinculación exclusivamente cultural"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0017",
+    "pregunta": "Según el artículo 11.3, ¿qué podrán hacer los españoles en los países iberoamericanos o en aquellos con particular vinculación con España?",
+    "respuesta": "Naturalizarse sin perder su nacionalidad de origen",
+    "opciones": [
+      "Adquirir otra nacionalidad renunciando obligatoriamente a la española",
+      "Naturalizarse sin perder su nacionalidad de origen",
+      "Conservar su nacionalidad únicamente si existe reciprocidad",
+      "Adquirir la nacionalidad de esos países sin cumplir sus requisitos legales"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0018",
+    "pregunta": "¿Qué condición establece el artículo 11.3 para que los españoles puedan naturalizarse en determinados países sin perder su nacionalidad de origen?",
+    "respuesta": "Podrán hacerlo aun cuando esos países no reconozcan a sus ciudadanos un derecho recíproco",
+    "opciones": [
+      "Es necesario que esos países reconozcan siempre un derecho recíproco",
+      "Podrán hacerlo aun cuando esos países no reconozcan a sus ciudadanos un derecho recíproco",
+      "Es necesario que exista un tratado bilateral de reciprocidad en todos los casos",
+      "Solo podrán hacerlo si renuncian previamente a su nacionalidad española"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0019",
+    "pregunta": "¿La posibilidad de naturalizarse sin perder la nacionalidad de origen depende de que exista reciprocidad por parte del otro país?",
+    "respuesta": "No, podrán hacerlo incluso cuando ese país no reconozca a sus ciudadanos un derecho recíproco",
+    "opciones": [
+      "Sí, siempre es necesaria la reciprocidad",
+      "No, podrán hacerlo incluso cuando ese país no reconozca a sus ciudadanos un derecho recíproco",
+      "Sí, salvo que se trate de países iberoamericanos",
+      "No, pero únicamente si existe autorización del Gobierno español"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0020",
+    "pregunta": "¿Qué nacionalidad conservarán los españoles que se naturalicen en los países contemplados en el artículo 11.3?",
+    "respuesta": "Su nacionalidad de origen",
+    "opciones": [
+      "Únicamente la nacionalidad del país en el que se naturalicen",
+      "Su nacionalidad de origen",
+      "La nacionalidad que determine el Gobierno",
+      "Una nacionalidad distinta de las dos anteriores"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0021",
+    "pregunta": "¿A qué edad alcanzan los españoles la mayoría de edad según la Constitución?",
+    "respuesta": "A los dieciocho años",
+    "opciones": [
+      "A los dieciséis años",
+      "A los diecisiete años",
+      "A los dieciocho años",
+      "A los veintiún años"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0022",
+    "pregunta": "Según el artículo 12, ¿quiénes son mayores de edad a los dieciocho años?",
+    "respuesta": "Los españoles",
+    "opciones": [
+      "Todos los residentes en España",
+      "Los extranjeros que tengan residencia legal",
+      "Los españoles",
+      "Todos los ciudadanos de la Unión Europea residentes en España"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0023",
+    "pregunta": "¿Qué libertades garantiza el artículo 13.1 a los extranjeros en España?",
+    "respuesta": "Las libertades públicas que garantiza el presente Título",
+    "opciones": [
+      "Todos los derechos reconocidos exclusivamente a los españoles",
+      "Las libertades públicas que garantiza el presente Título",
+      "Únicamente los derechos civiles y económicos",
+      "Las libertades reconocidas en los tratados internacionales exclusivamente"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0024",
+    "pregunta": "¿En qué condiciones gozarán los extranjeros de las libertades públicas garantizadas por el Título I?",
+    "respuesta": "En los términos que establezcan los tratados y la ley",
+    "opciones": [
+      "En los términos que establezca exclusivamente el Gobierno",
+      "En los términos que establezcan los tratados y la ley",
+      "En los mismos términos que los españoles, sin excepción",
+      "En los términos que establezcan los Estatutos de Autonomía"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0025",
+    "pregunta": "¿Quiénes serán titulares de los derechos reconocidos en el artículo 23, según la regla general del artículo 13.2?",
+    "respuesta": "Solamente los españoles",
+    "opciones": [
+      "Todos los residentes legales en España",
+      "Los españoles y los ciudadanos de la Unión Europea",
+      "Solamente los españoles",
+      "Todos los extranjeros con residencia permanente"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0026",
+    "pregunta": "¿Qué excepción contempla el artículo 13.2 a la regla general sobre la titularidad de los derechos reconocidos en el artículo 23?",
+    "respuesta": "El derecho de sufragio activo y pasivo en las elecciones municipales",
+    "opciones": [
+      "El derecho de sufragio activo en las elecciones generales",
+      "El derecho de sufragio activo y pasivo en las elecciones autonómicas",
+      "El derecho de sufragio activo y pasivo en las elecciones municipales",
+      "El derecho de acceso a cualquier cargo público"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0027",
+    "pregunta": "¿A qué tipo de elecciones se refiere la excepción del artículo 13.2 respecto al sufragio de los extranjeros?",
+    "respuesta": "A las elecciones municipales",
+    "opciones": [
+      "A las elecciones generales",
+      "A las elecciones autonómicas",
+      "A las elecciones municipales",
+      "A las elecciones europeas"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0028",
+    "pregunta": "¿Qué modalidades de sufragio contempla expresamente el artículo 13.2 para las elecciones municipales?",
+    "respuesta": "El sufragio activo y pasivo",
+    "opciones": [
+      "Únicamente el sufragio activo",
+      "Únicamente el sufragio pasivo",
+      "El sufragio activo y pasivo",
+      "El sufragio universal y obligatorio"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0029",
+    "pregunta": "¿Atendiendo a qué criterio podrá establecerse la excepción relativa al sufragio activo y pasivo en las elecciones municipales?",
+    "respuesta": "A criterios de reciprocidad",
+    "opciones": [
+      "A criterios de residencia",
+      "A criterios de nacionalidad de origen",
+      "A criterios de reciprocidad",
+      "A criterios de antigüedad de residencia"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0030",
+    "pregunta": "¿Mediante qué instrumentos podrá establecerse la excepción relativa al sufragio municipal de los extranjeros?",
+    "respuesta": "Por tratado o ley",
+    "opciones": [
+      "Por reglamento o decreto",
+      "Por tratado o ley",
+      "Por resolución judicial",
+      "Por acuerdo del Gobierno"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0031",
+    "pregunta": "Según el artículo 13.3, ¿en cumplimiento de qué podrá concederse la extradición?",
+    "respuesta": "De un tratado o de la ley",
+    "opciones": [
+      "De una resolución administrativa",
+      "De un tratado o de la ley",
+      "De una decisión del Gobierno exclusivamente",
+      "De una resolución judicial extranjera exclusivamente"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0032",
+    "pregunta": "¿A qué principio atenderá la extradición según el artículo 13.3?",
+    "respuesta": "Al principio de reciprocidad",
+    "opciones": [
+      "Al principio de legalidad exclusivamente",
+      "Al principio de territorialidad",
+      "Al principio de reciprocidad",
+      "Al principio de doble nacionalidad"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0033",
+    "pregunta": "¿Qué delitos quedan excluidos de la extradición según el artículo 13.3?",
+    "respuesta": "Los delitos políticos",
+    "opciones": [
+      "Los delitos económicos",
+      "Los delitos contra la Administración pública",
+      "Los delitos políticos",
+      "Los delitos cometidos fuera del territorio español"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0034",
+    "pregunta": "¿Cómo considera el artículo 13.3 los actos de terrorismo a efectos de la exclusión de extradición por delitos políticos?",
+    "respuesta": "No se consideran delitos políticos",
+    "opciones": [
+      "Se consideran siempre delitos políticos",
+      "No se consideran delitos políticos",
+      "Se consideran delitos políticos únicamente si son cometidos por extranjeros",
+      "Quedan excluidos de extradición en todo caso"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0035",
+    "pregunta": "¿Qué establece el artículo 13.3 respecto a los delitos políticos?",
+    "respuesta": "Quedan excluidos de la extradición, no considerándose como tales los actos de terrorismo",
+    "opciones": [
+      "Quedan excluidos de la extradición, no considerándose como tales los actos de terrorismo",
+      "Podrán dar lugar a extradición cuando exista reciprocidad",
+      "Quedan excluidos de la extradición, incluidos los actos de terrorismo",
+      "Solo quedan excluidos cuando no exista tratado internacional"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0036",
+    "pregunta": "¿Quién establecerá los términos en que los ciudadanos de otros países y los apátridas podrán gozar del derecho de asilo en España?",
+    "respuesta": "La ley",
+    "opciones": [
+      "El Gobierno",
+      "Las Cortes Generales mediante acuerdo",
+      "La ley",
+      "Los tratados internacionales exclusivamente"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0037",
+    "pregunta": "¿A quiénes se refiere el artículo 13.4 en relación con el derecho de asilo en España?",
+    "respuesta": "A los ciudadanos de otros países y a los apátridas",
+    "opciones": [
+      "Exclusivamente a los ciudadanos de países iberoamericanos",
+      "A los ciudadanos de otros países y a los apátridas",
+      "Únicamente a los ciudadanos de la Unión Europea",
+      "A los españoles que hayan perdido su nacionalidad"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0038",
+    "pregunta": "¿Qué derecho podrán gozar en España los ciudadanos de otros países y los apátridas en los términos que establezca la ley?",
+    "respuesta": "El derecho de asilo",
+    "opciones": [
+      "El derecho de sufragio en todas las elecciones",
+      "El derecho de nacionalidad española automática",
+      "El derecho de asilo",
+      "El derecho de acceso a cualquier cargo público"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0039",
+    "pregunta": "¿Qué apartado del artículo 11 establece que ningún español de origen podrá ser privado de su nacionalidad?",
+    "respuesta": "El apartado 2",
+    "opciones": [
+      "El apartado 1",
+      "El apartado 2",
+      "El apartado 3",
+      "El artículo no está dividido en apartados"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0040",
+    "pregunta": "¿En qué apartado del artículo 11 se contempla la posibilidad de concertar tratados de doble nacionalidad?",
+    "respuesta": "En el apartado 3",
+    "opciones": [
+      "En el apartado 1",
+      "En el apartado 2",
+      "En el apartado 3",
+      "En los apartados 1 y 2"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0041",
+    "pregunta": "¿En qué apartado del artículo 13 se reconoce a los extranjeros el disfrute de las libertades públicas garantizadas por el Título I?",
+    "respuesta": "En el apartado 1",
+    "opciones": [
+      "En el apartado 1",
+      "En el apartado 2",
+      "En el apartado 3",
+      "En el apartado 4"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0042",
+    "pregunta": "¿En qué apartado del artículo 13 se regula la titularidad de los derechos reconocidos en el artículo 23 y la excepción relativa al sufragio municipal?",
+    "respuesta": "En el apartado 2",
+    "opciones": [
+      "En el apartado 1",
+      "En el apartado 2",
+      "En el apartado 3",
+      "En el apartado 4"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0043",
+    "pregunta": "¿En qué apartado del artículo 13 se regula la extradición?",
+    "respuesta": "En el apartado 3",
+    "opciones": [
+      "En el apartado 1",
+      "En el apartado 2",
+      "En el apartado 3",
+      "En el apartado 4"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0044",
+    "pregunta": "¿En qué apartado del artículo 13 se regula el derecho de asilo?",
+    "respuesta": "En el apartado 4",
+    "opciones": [
+      "En el apartado 1",
+      "En el apartado 2",
+      "En el apartado 3",
+      "En el apartado 4"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0045",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la nacionalidad española es correcta según el artículo 11?",
+    "respuesta": "Ningún español de origen podrá ser privado de su nacionalidad",
+    "opciones": [
+      "Todo español podrá ser privado de su nacionalidad por decisión administrativa",
+      "Ningún español de origen podrá ser privado de su nacionalidad",
+      "Los españoles naturalizados no podrán adquirir otra nacionalidad",
+      "La nacionalidad española solo podrá perderse mediante resolución judicial"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0046",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la doble nacionalidad es correcta?",
+    "respuesta": "El Estado podrá concertar tratados de doble nacionalidad con países iberoamericanos o con países que hayan tenido o tengan una particular vinculación con España",
+    "opciones": [
+      "El Estado podrá concertar tratados de doble nacionalidad con cualquier país sin limitación",
+      "El Estado podrá concertar tratados de doble nacionalidad con países iberoamericanos o con países que hayan tenido o tengan una particular vinculación con España",
+      "El Estado solo podrá concertar tratados de doble nacionalidad con países de la Unión Europea",
+      "El Estado únicamente podrá concertar tratados de doble nacionalidad con países que reconozcan reciprocidad"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0047",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre los extranjeros y los derechos del artículo 23 es correcta?",
+    "respuesta": "La regla general es que solamente los españoles serán titulares de esos derechos, con la excepción prevista para el sufragio activo y pasivo en las elecciones municipales",
+    "opciones": [
+      "Los extranjeros serán titulares de todos los derechos del artículo 23 en igualdad de condiciones",
+      "La regla general es que solamente los españoles serán titulares de esos derechos, con la excepción prevista para el sufragio activo y pasivo en las elecciones municipales",
+      "Los extranjeros podrán ejercer el sufragio en todas las elecciones si tienen residencia legal",
+      "Los extranjeros solo podrán ejercer el sufragio activo en las elecciones municipales"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0048",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la extradición es correcta según el artículo 13.3?",
+    "respuesta": "La extradición solo se concederá en cumplimiento de un tratado o de la ley, atendiendo al principio de reciprocidad",
+    "opciones": [
+      "La extradición podrá concederse libremente por decisión del Gobierno",
+      "La extradición solo se concederá en cumplimiento de un tratado o de la ley, atendiendo al principio de reciprocidad",
+      "La extradición será obligatoria cuando exista una solicitud de otro Estado",
+      "La extradición se concederá únicamente cuando el delito sea político"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0049",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre el derecho de asilo es correcta según el artículo 13.4?",
+    "respuesta": "La ley establecerá los términos en que los ciudadanos de otros países y los apátridas podrán gozar de este derecho en España",
+    "opciones": [
+      "La Constitución reconoce directamente el derecho de asilo a todos los extranjeros sin condiciones",
+      "La ley establecerá los términos en que los ciudadanos de otros países y los apátridas podrán gozar de este derecho en España",
+      "El Gobierno establecerá libremente los términos del derecho de asilo mediante reglamento",
+      "El derecho de asilo se reconoce exclusivamente a los ciudadanos de países iberoamericanos"
+    ]
+  },
+  {
+    "id": "constitucion-titulo1-cap1-0050",
+    "pregunta": "¿Cuál de las siguientes opciones relaciona correctamente cada materia con su artículo constitucional?",
+    "respuesta": "Nacionalidad española: artículo 11; mayoría de edad: artículo 12; extranjeros, extradición y asilo: artículo 13",
+    "opciones": [
+      "Nacionalidad española: artículo 12; mayoría de edad: artículo 11; extranjeros, extradición y asilo: artículo 13",
+      "Nacionalidad española: artículo 11; mayoría de edad: artículo 12; extranjeros, extradición y asilo: artículo 13",
+      "Nacionalidad española: artículo 13; mayoría de edad: artículo 12; extranjeros, extradición y asilo: artículo 11",
+      "Nacionalidad española: artículo 11; mayoría de edad: artículo 13; extranjeros, extradición y asilo: artículo 12"
+    ]
+  }
+]
