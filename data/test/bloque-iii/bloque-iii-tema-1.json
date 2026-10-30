@@ -1,0 +1,1102 @@
+[
+    {
+        "id": "bloque-iii-tema-1-0000",
+        "pregunta": "¿Qué corresponde a la integridad referencial?",
+        "respuesta": "Relación M a N",
+        "opciones": [
+            "Interrelación 1 a N",
+            "Interrelación 1 a 1",
+            "Relación M a N",
+            "Relación N a N"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0001",
+        "pregunta": "Para la relación varios a varios…",
+        "respuesta": "Se representa en la base de datos mediante dos relaciones uno a varios",
+        "opciones": [
+            "Se representa en la base de datos mediante dos relaciones uno a varios",
+            "No se puede representar en el modelo relacional básico",
+            "Se representa en la base de datos mediante una relación uno a varios",
+            "Se representa en la base de datos mediante dos relaciones varios a varios"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0002",
+        "pregunta": "¿En qué flujograma se presentan las series de operaciones, el sujeto que las realiza y cómo suele realizarlas?",
+        "respuesta": "Flujograma de método",
+        "opciones": [
+            "Flujograma combinado",
+            "Flujograma de segundo nivel",
+            "Flujograma de método",
+            "Flujograma de labores"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0003",
+        "pregunta": "¿Quién comprobó que existían bases de datos en el mercado que decían ser relacionales, pero lo único que hacían era guardar la información en las tablas, sin estar literalmente normalizadas dichas tablas?",
+        "respuesta": "Edgar Frank Codd",
+        "opciones": [
+            "Edgar Frank Codd",
+            "Edgar Frank Cool",
+            "Edgar Frank Cold",
+            "Edgar Frank Colt"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0004",
+        "pregunta": "¿Qué modelo de datos no está basado en objetos?",
+        "respuesta": "Ninguno",
+        "opciones": [
+            "Semántico",
+            "Entidad - relación",
+            "Funcional",
+            "Ninguno"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0005",
+        "pregunta": "La dependencia transitiva de X a Z…",
+        "respuesta": "X-Z por virtud de X-Y e Y-Z",
+        "opciones": [
+            "X-Y por virtud de X-Z e Y-Z",
+            "X-Z por virtud de X-Y e Y-Z",
+            "X-Z por virtud de Y-X e X-Z",
+            "Y-Z por virtud de X-Y e Y-Z"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0006",
+        "pregunta": "¿Qué notificación corresponde a los cambios de valores, asignaciones u operaciones aritméticas?",
+        "respuesta": "Proceso general",
+        "opciones": [
+            "Proceso general",
+            "Iteración",
+            "Entrada general",
+            "Decisión"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0007",
+        "pregunta": "¿Qué modelo de datos no está basado en registros?",
+        "respuesta": "Modelo de datos funcional",
+        "opciones": [
+            "Modelo de datos en red",
+            "Modelo de datos funcional",
+            "Modelo de datos relacional",
+            "Modelo de datos jerárquico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0008",
+        "pregunta": "¿Cuál es un medio de asegurar que las modificaciones hechas a la base de datos por los usuarios autorizados no provoquen la pérdida de la consistencia de los datos?",
+        "respuesta": "Restricciones de integridad",
+        "opciones": [
+            "Clave externa",
+            "Restricciones de integridad",
+            "Restricciones de registros",
+            "Claves ajenas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0009",
+        "pregunta": "¿Qué afirmación sobre los modelos de datos en red es cierta?",
+        "respuesta": "Los registros se organizan como estructuras de grafos generalizados, en la que los registros aparecen como nodos y los conjuntos como aristas del grafo",
+        "opciones": [
+            "Los registros se organizan como estructuras de grafos generalizados, en la que los registros aparecen como nodos y los conjuntos como aristas del grafo",
+            "Solo requiere que la base de datos sea percibida por el usuario como una serie de tablas",
+            "Este modelo se puede representar como un grafo en árbol, donde los registros aparecen como nodos y los conjuntos como aristas",
+            "Los datos y las relaciones se representan mediante tablas, cada una tiene una serie de columnas con nombres distintivos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0010",
+        "pregunta": "¿Qué mecanismo evita duplicidades e incorrecciones?",
+        "respuesta": "Integridad referencial",
+        "opciones": [
+            "Clave principal primaria",
+            "Integridad referencial",
+            "Regla de modelización",
+            "Entidad fuerte"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0011",
+        "pregunta": "¿Cómo se le llama a la clave principal que está formada por más de una columna?",
+        "respuesta": "Clave compuesta",
+        "opciones": [
+            "Clave externa",
+            "Clave genérica",
+            "Superclave",
+            "Clave compuesta"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0012",
+        "pregunta": "¿Qué se denomina clave externa?",
+        "respuesta": "Es la clave principal de otra entidad",
+        "opciones": [
+            "Es la clave secundaria formada por más de una columna",
+            "Es la clave principal que identifica bilateralmente cada registro",
+            "Es la clave principal de otra entidad",
+            "Es la clave principal formada por más de una columna"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0013",
+        "pregunta": "¿Cuáles son los componentes genéricos de un modelo de datos?",
+        "respuesta": "Parte estructural, parte manipulativa, conjunto de restricciones de Integridad",
+        "opciones": [
+            "Parte estructural, parte mayor y conjunto de restricciones de estructuras",
+            "Parte estructural, parte manual y conjunto de restricciones íntegras",
+            "Parte estructural, parte manipulativa, conjunto de restricciones de Integridad",
+            "Parte entera, parte real y conjunto de restricciones manipulativa"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0014",
+        "pregunta": "¿Qué restricción evita la aparición de valores duplicados en las columnas?",
+        "respuesta": "Restricciones de unicidad",
+        "opciones": [
+            "Restricciones de unicidad",
+            "Restricción referencial",
+            "Restricciones de existencia",
+            "Restricciones de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0015",
+        "pregunta": "¿Cuál no sería un criterio a tener en cuenta a la hora de realizar los pasos del diseño físico?",
+        "respuesta": "Perder independencia",
+        "opciones": [
+            "Integridad",
+            "Perder independencia",
+            "Mejorar el rendimiento",
+            "Escalabilidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0016",
+        "pregunta": "Si un atributo no contiene información sobre el asunto de la entidad…",
+        "respuesta": "Pertenece a una entidad diferente",
+        "opciones": [
+            "Pertenece a una entidad diferente",
+            "Se puede calcular a partir de otros atributos existentes",
+            "Pon ese elemento que falta en el atributo",
+            "Se necesite dividir en una relación de uno a varios"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0017",
+        "pregunta": "Las tablas auxiliares de una tabla principal son…",
+        "respuesta": "Entidades débiles",
+        "opciones": [
+            "Entidades débiles",
+            "Ejemplares",
+            "Atributos",
+            "Entidades fuertes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0018",
+        "pregunta": "¿Qué corresponde con el modelo E-R?",
+        "respuesta": "Es un modelo de datos que permite representar cualquier abstracción, percepción y conocimiento en un sistema de información formado por un conjunto de objetos.",
+        "opciones": [
+            "Es el proceso de construír un modelo del uso de la información dentro de una empresa.",
+            "También se suelen denominar modelos lógicos y conceptuales.",
+            "Debe de ser independiente de los detalles de implementación, como por ejemplo SGBD de destino, los programas de aplicación…",
+            "Es un modelo de datos que permite representar cualquier abstracción, percepción y conocimiento en un sistema de información formado por un conjunto de objetos."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0019",
+        "pregunta": "¿Qué afirmación no corresponde al modelo conceptual?",
+        "respuesta": "También se suelen denominar modelos lógicos y conceptuales.",
+        "opciones": [
+            "Es el proceso de construír un modelo del uso de la información dentro de una empresa.",
+            "También se suelen denominar modelos lógicos y conceptuales.",
+            "Es un modelo de datos que permite representar cualquier abstracción, percepción y conocimiento en un sistema de información formado por un conjunto de objetos.",
+            "Es independiente de todos los detalles de implementación."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0020",
+        "pregunta": "¿Qué tabla es la que está en primera forma normal y además debe satisfacer criterios adicionales para calificar?",
+        "respuesta": "2NF",
+        "opciones": [
+            "No corresponde a ninguna",
+            "2NF",
+            "3NF",
+            "1NF y 3NF"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0021",
+        "pregunta": "En un flujograma, el símbolo de la elipse…",
+        "respuesta": "Indica el inicio y fin de un procedimiento",
+        "opciones": [
+            "Indica el inicio y fin de un procedimiento",
+            "Representa una etapa del proceso",
+            "Indica cuando hay que tomar una decisión y escribirla dentro",
+            "Es el documento que resulta de un proceso"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0022",
+        "pregunta": "¿De qué se constituyen las Entidades fuertes?",
+        "respuesta": "De tablas principales de bases de datos que contienen los registros principales del sistema de información y que requieren de entidades o tablas auxiliares para completar su descripción o información",
+        "opciones": [
+            "De tablas principales de bases de datos que contienen los registros principales del sistema de información y que requieren de entidades o tablas principales para completar su descripción o información",
+            "De tablas principales de bases de datos que contienen los registros auxiliares del sistema de información y que requieren de entidades o tablas auxiliares para completar su descripción o información",
+            "De tablas principales de bases de datos que contienen los registros principales del sistema de información y que requieren de entidades o tablas auxiliares para completar su descripción o información",
+            "De tablas auxiliares de bases de datos que contienen los registros principales del sistema de información y que requieren de entidades o tablas auxiliares para completar su descripción o información"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0023",
+        "pregunta": "¿A qué parte de un modelo ER se le conoce como 'registros de una tabla de una base de datos'?",
+        "respuesta": "Ejemplares",
+        "opciones": [
+            "Entidades fuertes",
+            "Ejemplares",
+            "Clave",
+            "Interrelación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0024",
+        "pregunta": "¿Qué se representa por un rectángulo, sin trazo discontinuo, subdividido en tres casillas?",
+        "respuesta": "Proceso",
+        "opciones": [
+            "Proceso",
+            "Flujo de datos",
+            "Proceso de control",
+            "Flujo de control"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0025",
+        "pregunta": "¿Por cuál símbolo identificaríamos al vínculo que permite definir una dependencia entre los conjuntos de dos o más entidades?",
+        "respuesta": "R",
+        "opciones": [
+            "R",
+            "ɏ",
+            "E",
+            "A"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0026",
+        "pregunta": "¿Qué es el componente?",
+        "respuesta": "Es la unidad de construcción elemental de un diseño físico",
+        "opciones": [
+            "Es la unidad de construcción elemental de un diseño lógico",
+            "Es la unidad de construcción elemental de un diseño conceptual",
+            "Es la unidad de construcción elemental de un diseño físico",
+            "Es la unidad de construcción elemental de un diseño interno"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0027",
+        "pregunta": "¿Cuál no sería una ventaja en la normalización de bases de datos?",
+        "respuesta": "Obtiene modificaciones y borrados",
+        "opciones": [
+            "Evita la redundancia de los datos",
+            "Mejora la independencia de datos",
+            "Disminuye problemas de actualización de los datos en las tablas",
+            "Obtiene modificaciones y borrados"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0028",
+        "pregunta": "¿Cuál no correspondería a la característica de un componente?",
+        "respuesta": "No puede contener otros componentes",
+        "opciones": [
+            "Encapsula sus funciones y sus datos",
+            "No puede contener otros componentes",
+            "Puede verse como una caja negra",
+            "Reusable a través de operaciones"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0029",
+        "pregunta": "¿Cuál no sería una característica de un flujograma?",
+        "respuesta": "Identificar las entidades",
+        "opciones": [
+            "Identificar las entidades",
+            "Uso de símbolos para representar diferentes etapas de un proceso",
+            "Trafico de documentos y de datos",
+            "Sucesión de operaciones"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0030",
+        "pregunta": "¿Qué es un modelo?",
+        "respuesta": "Es una representación de objetos y sucesos del 'mundo real', así como de sus asociaciones. Se trata de una abstracción que se concentra en aspectos esenciales e inherentes de una organización e ignora las propiedades accesorias.",
+        "opciones": [
+            "Es una representación de objetos y sucesos del 'mundo real', así como de sus asociaciones. Se trata de una abstracción que se concentra en aspectos esenciales e inherentes de una organización teniendo en cuenta las propiedades accesorias.",
+            "Es una representación de objetos y sucesos del 'mundo real', así como de sus asociaciones. Se trata de una abstracción que se concentra en aspectos esenciales e inherentes de una organización e ignora las propiedades accesorias.",
+            "Es una representación de objetos y sucesos del 'mundo irreal', así como de sus asociaciones. Se trata de una abstracción que se concentra en aspectos esenciales e inherentes de una organización e ignora las propiedades accesorias.",
+            "Es una representación de objetos y sucesos del 'mundo irreal', así como de sus asociaciones. Se trata de una abstracción que se concentra en aspectos esenciales e inherentes de una organización teniendo en cuenta las propiedades accesorias."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0031",
+        "pregunta": "¿Qué representa el modelo de Datos Externos?",
+        "respuesta": "Representa la vista que cada usuario tiene de la organización. Se denomina en ocasiones Universo de Discurso",
+        "opciones": [
+            "Representa el esquema conceptual de tal forma que puede ser comprendido por el SGBD",
+            "Representa la vista que cada usuario tiene de la organización. Se denomina en ocasiones Universo de Discurso",
+            "Representa la vista lógica, que es independiente del SGBD",
+            "Representa la vista lógica, que es dependiente del SGBD"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0032",
+        "pregunta": "El campo o atributo de una entidad o tabla que tiene como objetivo distinguir cada registro del conjunto es…",
+        "respuesta": "La clave",
+        "opciones": [
+            "La clave externa",
+            "La entidad fuerte",
+            "El atributo",
+            "La clave"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0033",
+        "pregunta": "¿Qué no corresponde a un tipo de diagrama de flujo?",
+        "respuesta": "Formato en árbol",
+        "opciones": [
+            "Formato arquitectónico",
+            "Formato vertical",
+            "Formato en árbol",
+            "Diagrama de bloque de modelo matemático"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0034",
+        "pregunta": "¿Qué paso no corresponde al proceso de diseño?",
+        "respuesta": "Convertir elementos de información en registros",
+        "opciones": [
+            "Determinar la finalidad de la base de datos",
+            "Dividir la información en tablas",
+            "Especificar claves principales",
+            "Convertir elementos de información en registros"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0035",
+        "pregunta": "¿Qué permite verificar los valores introducidos en la base de datos sino también examinar las consultas para asegurarse de que tengan sentido las comparaciones que hagan?",
+        "respuesta": "Restricciones de los dominios",
+        "opciones": [
+            "Restricciones de los dominios",
+            "Crear una nueva tabla de relación n:m",
+            "Solución de claves ajenas",
+            "Integridad referencial"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0036",
+        "pregunta": "¿A qué corresponde establecer las alternativas de diseño en relación con la situación actual y elegir la mejor de ellas a través de un proceso de evaluación?",
+        "respuesta": "Diseño lógico global",
+        "opciones": [
+            "Diseño lógico global",
+            "Diseño físico",
+            "Diseño conceptual",
+            "Diseño de diagramas de flujo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0037",
+        "pregunta": "¿Qué afirmación no correspondería a un diseño de bases de datos?",
+        "respuesta": "Admite el procesamiento de datos y no las necesidades reporting",
+        "opciones": [
+            "Admite el procesamiento de datos y no las necesidades reporting",
+            "Proporciona acceso a la información que se requiere para unir la información de las entidades según sea necesario",
+            "Ayuda a garantizar la exactitud e integridad de su información",
+            "Divide la información en entidades basadas en temas para reducir los datos redundantes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0038",
+        "pregunta": "¿Qué tipo de flujograma se utiliza para tener una perspectiva básica del procedimiento y para determinar e identificar los cambios que se van produciendo?",
+        "respuesta": "Flujograma de dirección descendente",
+        "opciones": [
+            "Flujograma analítico",
+            "Flujograma de segundo nivel o detallado",
+            "Flujograma de dirección descendente",
+            "Flujograma en formato vertical"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0039",
+        "pregunta": "Para cubrir las necesidades de la mayoría de las bases de datos son suficientes…",
+        "respuesta": "Las primeras tres formas normales",
+        "opciones": [
+            "Las primeras cuatro formas normales",
+            "Las primeras dos formas normales",
+            "Las primeras tres formas normales",
+            "La primera forma normal"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0040",
+        "pregunta": "¿Qué no indica que una tabla está en 3NF?",
+        "respuesta": "Ningún atributo primario de la tabla es dependiente transitivamente de una clave no primaria",
+        "opciones": [
+            "Ningún atributo primario de la tabla es dependiente transitivamente de una clave no primaria",
+            "Es una relación que no incluye ningún atributo clave",
+            "La tabla está en la segunda forma normal",
+            "Ningún atributo no-primario de la tabla es dependiente transitivamente de una clave primaria"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0041",
+        "pregunta": "Al añadir una nueva tabla a la relación n:m …",
+        "respuesta": "La nueva tabla tiene una clave ajena a cada una de las dos tablas y también los atributos de la relación binaria. La clave primaria variará según el significado de la relación binaria",
+        "opciones": [
+            "La nueva tabla tiene una clave ajena a cada una de las dos tablas y también los atributos de la relación binaria. La clave primaria variará según el significado de la relación binaria",
+            "La nueva tabla tiene una clave ajena a cada una de las dos tablas y también los atributos de la relación binaria con cardinalidad máxima 1",
+            "La nueva tabla tiene una clave ajena a cada una de las dos tablas y también los atributos de la relación binaria con cardinalidad mínima de 1",
+            "La nueva tabla tiene una clave ajena a cada una de las dos tablas y también a los atributos de la relación binaria. La clave primaria no variará según el significado de la relación binaria"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0042",
+        "pregunta": "¿Qué parte corresponde al modelo ER como registros que guardan una serie de características similares o que pueden ser clasificados dadas sus características comunes en grupos bien delimitados?",
+        "respuesta": "Ejemplares",
+        "opciones": [
+            "Relación",
+            "Ejemplares",
+            "Entidad",
+            "Atributos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0043",
+        "pregunta": "En un componente genérico, la parte manipulativa…",
+        "respuesta": "Define los tipos de operaciones que pueden realizarse sobre los datos",
+        "opciones": [
+            "Define los tipos de operaciones que pueden realizarse sobre los datos",
+            "Indica cómo se pueden construir las bases de datos",
+            "Garantiza la precisión de los datos",
+            "Permite diseñar las bases de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0044",
+        "pregunta": "¿Qué se activa en cuanto creamos una clave foránea y a partir de ese momento se comprueba cada vez que se modifiquen datos que puedan alterarla?",
+        "respuesta": "Integridad referencial",
+        "opciones": [
+            "Restricción de unicidad",
+            "Integridad referencial",
+            "Restricción del dominio",
+            "Restricción de existencia"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0045",
+        "pregunta": "¿Qué significa el término SGBD?",
+        "respuesta": "Sistema de gestión de base de datos",
+        "opciones": [
+            "Base de datos relacional",
+            "Sistema de datos relacionados",
+            "Sistema de gestión de base de datos",
+            "Modelo de sistemas de gestión"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0046",
+        "pregunta": "¿Qué restricción evita la aparición de valores nulos en las columnas?",
+        "respuesta": "Restricciones de existencia",
+        "opciones": [
+            "Restricciones de unicidad",
+            "Restricciones de existencia",
+            "Restricción referencial",
+            "Restricciones de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0047",
+        "pregunta": "En las etapas del diseño lógico detallado, ¿cómo se denominan los requerimientos hacia el interior?",
+        "respuesta": "Inputs",
+        "opciones": [
+            "Outputs",
+            "Querys",
+            "Orders",
+            "Inputs"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0048",
+        "pregunta": "¿Qué notificación indica que una instrucción o grupo de instrucciones deben ejecutarse varias veces?",
+        "respuesta": "Iteración",
+        "opciones": [
+            "Iteración",
+            "Decisión",
+            "Entrada por teclado",
+            "Llamada a subrutina"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0049",
+        "pregunta": "¿Qué representa el modelo de Datos Conceptual?",
+        "respuesta": "Representa la vista lógica, que es independiente del SGBD",
+        "opciones": [
+            "Representa la vista lógica, que es independiente del SGBD",
+            "Representa el esquema conceptual de tal forma que puede ser comprendido por el SGBD",
+            "Representa la vista lógica, que es dependiente del SGBD",
+            "Representa la vista que cada usuario tiene de la organización"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0050",
+        "pregunta": "¿Cuál sería una dificultad al intentar realizar criterios en el diseño físico?",
+        "respuesta": "Criterios contrapuestos",
+        "opciones": [
+            "Disponibilidad",
+            "Mejorar el tiempo de contención",
+            "Facilidad de administración",
+            "Criterios contrapuestos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0051",
+        "pregunta": "¿En qué formato un flujograma pormenoriza el itinerario de ruta de personas, materiales a través del espacio de trabajo donde se mueve?",
+        "respuesta": "Formato arquitectónico",
+        "opciones": [
+            "Formato panorámico",
+            "Formato arquitectónico",
+            "Formato analítico",
+            "Formato vertical"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0052",
+        "pregunta": "¿Qué afirmación corresponde al modelo de datos jerárquico?",
+        "respuesta": "Los datos se representan como colecciones de registros. Solo se permite que cada nodo tenga un padre",
+        "opciones": [
+            "Se enlazan mediante un atributo específico",
+            "Cada nodo puede tener 'N' padres",
+            "Los registros no aparecen como nodos",
+            "Los datos se representan como colecciones de registros. Solo se permite que cada nodo tenga un padre"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0053",
+        "pregunta": "Decimos que Z es funcionalmente dependiente de X…",
+        "respuesta": "Si X determina el valor de Z",
+        "opciones": [
+            "Si Z contiene el valor de X",
+            "Si X contiene el valor de Z",
+            "Si X determina el valor de Z",
+            "Si Z determina el valor de X"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0054",
+        "pregunta": "¿Qué puede suceder en un proceso de desnormalización?",
+        "respuesta": "Se pueden introducir redundancias que serán necesarias controlar",
+        "opciones": [
+            "Se pueden introducir redundancias que serán necesarias controlar",
+            "Mejora la memoria de datos",
+            "Se pueden introducir menor número de datos",
+            "Todos los datos son cíclicos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0055",
+        "pregunta": "¿Qué formato está representado en un solo diagrama de flujo, tanto en sentido vertical como horizontal, permitiendo distintas acciones simultáneas?",
+        "respuesta": "Formato panorámico",
+        "opciones": [
+            "Formato horizontal",
+            "Formato arquitectónico",
+            "Formato vertical",
+            "Formato panorámico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0056",
+        "pregunta": "¿Cuál sería una sugerencia para determinar los atributos?",
+        "respuesta": "No incluir datos calculados",
+        "opciones": [
+            "No incluir datos vinculados",
+            "No almacenar la información en sus partes lógicas más generales",
+            "No almacenar la información en sus partes lógicas más pequeñas",
+            "No incluir datos calculados"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0057",
+        "pregunta": "¿Qué es un atributo no-primario?",
+        "respuesta": "Es un atributo que no pertenece a ninguna clave candidata",
+        "opciones": [
+            "Es un atributo que contiene más atributos pertenecientes a otras entidades",
+            "Es un atributo que no pertenece a ninguna clave candidata",
+            "Es un atributo que pertenece a una clave candidata",
+            "Es un atributo que pertenece a otra entidad pero con diferente clave"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0058",
+        "pregunta": "¿Cuándo una tabla 1NF no está en 2NF?",
+        "respuesta": "Si y solo si, satisface un cierto conjunto mínimo de criterios que se refieren básicamente a asegurarse que la tabla es una representación fiel de una relación y está libre de 'grupos repetitivos'",
+        "opciones": [
+            "Si y solo si, satisface un cierto conjunto mínimo de criterios que se refieren básicamente a asegurarse que la tabla es una representación fiel de una relación y está libre de 'grupos repetitivos'",
+            "Si y solo si, ninguno de sus atributos no principales son funcionalmente dependientes en una parte de una clave candidata.",
+            "Si y solo si, está en 1NF y, además, cada atributo no clave depende completamente de la clave primaria",
+            "Si y solo si, dada una clave primaria y cualquier atributo que no sea un constituyente de la clave primaria, el atributo no clave depende de toda la clave primaria en vez, solo, de una parte de ella"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0059",
+        "pregunta": "¿Qué afirmación no corresponde a un diagrama de flujo?",
+        "respuesta": "Ofrece una gestión informática de las actividades implicadas en un proceso mostrando la relación secuencial entre ellas",
+        "opciones": [
+            "Ofrece una gestión informática de las actividades implicadas en un proceso mostrando la relación secuencial entre ellas",
+            "Son la manera más práctica con que se especifican detalladamente los algoritmos que posee un proceso",
+            "Ofrece una descripción visual de las actividades implicadas en un proceso mostrando la relación secuencial entre ellas",
+            "Está constituido por diferentes gráficos utilizados para hacer esquemas de diferentes conceptos que se vinculan con programaciones en prcesos económicos, de psicología..."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0060",
+        "pregunta": "¿Qué indica el seguimiento lógico del diagrama?",
+        "respuesta": "Flujo",
+        "opciones": [
+            "Conector",
+            "Acción",
+            "Entrada General",
+            "Flujo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0061",
+        "pregunta": "¿Cómo se denomina el proceso de aplicar las reglas para el diseño de la base de datos?",
+        "respuesta": "Normalizar la base de datos o normalización",
+        "opciones": [
+            "Minimizar la base de datos o minimalización",
+            "Maximizar la base de datos o maximalización",
+            "Organizar la base de datos",
+            "Normalizar la base de datos o normalización"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0062",
+        "pregunta": "¿Cuál no sería una regla de contrucción de Diagramas?",
+        "respuesta": "Determinar los dominios de los atributos",
+        "opciones": [
+            "Se deben inicializar las variables que se utilicen o permitir la asignación de valores mediante consulta al usuario",
+            "Todo el diagrama debe de ser claro, ordenado y fácil de recorrer",
+            "La dirección de flujo se debe representar por medio de flechas",
+            "Determinar los dominios de los atributos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0063",
+        "pregunta": "¿Qué no corresponde a una dependencia funcional?",
+        "respuesta": "Es un modelo de Entidad - Relación",
+        "opciones": [
+            "Representa una relación de uno a muchos",
+            "Es una noción semántica",
+            "Es una clase especial de regla de integridad",
+            "Es un modelo de Entidad - Relación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0064",
+        "pregunta": "La relación entre un registro de una tabla y otro de la tabla relacionada, que debe existir siempre, es un tipo de relación…",
+        "respuesta": "Modalidad obligatoria",
+        "opciones": [
+            "Cardinalidad de tipo 1 a N",
+            "Modalidad optativa",
+            "Modalidad obligatoria",
+            "Cardinalidad de tipo 1 a 1"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0065",
+        "pregunta": "¿Qué relación requiere de una tercera entidad?",
+        "respuesta": "Relación de varios a varios",
+        "opciones": [
+            "Relación de uno a varios",
+            "Las relaciones no requieren de entidades",
+            "Relación de uno a uno",
+            "Relación de varios a varios"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0066",
+        "pregunta": "¿Qué son los atributos?",
+        "respuesta": "Son los rasgos y propiedades de una tabla, que toman como valor una instancia particular.",
+        "opciones": [
+            "Son las condiciones de identificación única de registros, pero que no fueron definidos como principales por el diseñador.",
+            "Es la combinación de campos clave que identifican unívocamente un registro en una tabla o entidad.",
+            "Son los rasgos y propiedades de una tabla, que toman como valor una instancia particular.",
+            "Son las tablas auxiliares de una tabla principal a la que completan o complementan con la información de sus registros relacionados."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0067",
+        "pregunta": "¿Qué atributo se utiliza para identificar exclusivamente cada registro?",
+        "respuesta": "Clave principal",
+        "opciones": [
+            "Clave genérica",
+            "Clave principal",
+            "Superclave",
+            "Clave secundaria"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0068",
+        "pregunta": "La combinación de campos clave que identifican unívocamente un registro en una tabla o entidad es….",
+        "respuesta": "Superclave",
+        "opciones": [
+            "Interrelación",
+            "Relación",
+            "Clave candidata",
+            "Superclave"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0069",
+        "pregunta": "¿Qué se representa por dos líneas paralelas cerradas en un extremo y una linea vertical que las une?",
+        "respuesta": "Almacén de datos",
+        "opciones": [
+            "Flujo de control",
+            "Proceso de control",
+            "Entidad externa",
+            "Almacén de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0070",
+        "pregunta": "¿En qué se divide el proceso de creación del modelo lógico relacional?",
+        "respuesta": "Construír y validar los esquemas lógicos locales para cada vista de usuario; Construír y validar el esquema lógico global",
+        "opciones": [
+            "Construír y validar los esquemas conceptuales locales para cada vista de usuario; Construír y validar el esquema global",
+            "Construír y validar los esquemas lógicos físicos para cada vista de usuario; Construír y validar el esquema lógico global",
+            "Construír y validar los esquemas lógicos locales para cada vista de usuario; Construír y validar el esquema físico global",
+            "Construír y validar los esquemas lógicos locales para cada vista de usuario; Construír y validar el esquema lógico global"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0071",
+        "pregunta": "¿Cuál no sería una tarea para realizar en el diseño físico?",
+        "respuesta": "Descripción de la información de Salida",
+        "opciones": [
+            "Diseñar los mecanismos de seguridad",
+            "Descripción de la información de Salida",
+            "Diseñar la representación física",
+            "Monitorizar y afinar el sistema"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0072",
+        "pregunta": "La relación entre un registro de una tabla y varios de la tabla relacionada, que puede existir o no, es un tipo de relación…",
+        "respuesta": "Modalidad optativa",
+        "opciones": [
+            "Modalidad obligatoria",
+            "Modalidad optativa",
+            "Cardinalidad de tipo M a N",
+            "Cardinalidad de tipo 1 a N"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0073",
+        "pregunta": "¿Qué esquema es el 'corazón' de la base de datos?",
+        "respuesta": "Modelo conceptual",
+        "opciones": [
+            "Modelo lógico",
+            "Modelo conceptual",
+            "Modelo Entidad-Relación",
+            "Modelo físico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0074",
+        "pregunta": "¿Qué es el dominio de un atributo?",
+        "respuesta": "Es el conjunto de valores que puede tomar el atributo",
+        "opciones": [
+            "Son los principales objetos que interesan al usuario",
+            "Es el conjunto de relaciones existentes entre los atributos",
+            "Es el conjunto de valores que puede tomar el atributo",
+            "Son los identificadores de cada una de las entidades en las que se encuentra el atributo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0075",
+        "pregunta": "¿En qué modelo se usa el Diseño del Sistema?",
+        "respuesta": "Modelo lógico",
+        "opciones": [
+            "Modelo digital",
+            "Modelo Externo",
+            "Modelo conceptual",
+            "Modelo lógico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0076",
+        "pregunta": "¿Qué afirmación no corresponde con el diseño lógico?",
+        "respuesta": "Se considera como un análisis de actividades y consiste en la solución de sistemas teóricos para el usuario",
+        "opciones": [
+            "Traduce los escenarios de uso creados en el diseño conceptual en un conjunto de objetos del sistema teórico y sus posibles servicios",
+            "Es independiente de la tecnología",
+            "Se considera como un análisis de actividades y consiste en la solución de sistemas teóricos para el usuario",
+            "Se convierte en parte en la especificación funcional que se usa en el diseño físico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0077",
+        "pregunta": "¿Qué es una Entidad?",
+        "respuesta": "Es un conjunto de elementos, presentes o no, en un contexto determinado dado por el sistema de información o las funciones y procesos que se definen en un plan de automatización.",
+        "opciones": [
+            "Son los rasgos y propiedades de una tabla, que toman como valor una instancia particular.",
+            "Es una tabla que tiene como objetivo distinguir cada registro del conjunto, sirviendo sus valores como datos vinculantes de una relación entre registros de varias tablas.",
+            "Son las tablas auxiliares de una tabla principal a la que completan o complementan con la información de sus registros relacionados.",
+            "Es un conjunto de elementos, presentes o no, en un contexto determinado dado por el sistema de información o las funciones y procesos que se definen en un plan de automatización."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0078",
+        "pregunta": "Para poner una clave ajena en una tabla de relación 1:1…",
+        "respuesta": "Se puede poner en cualquiera de las tablas",
+        "opciones": [
+            "Los atributos de la relación binaria se ponen como atributos que recibe la clave ajena",
+            "Se puede poner en cualquiera de las tablas",
+            "Se debe poner en la tabla correspondiente a la entidad que participa en la relación binaria con cardinalidad máxima 1",
+            "No se puede poner clave ajena a esta relación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0079",
+        "pregunta": "¿Qué es una dependencia transitiva?",
+        "respuesta": "Es una dependencia funcional X a Z en la cual Z no es inmediatamente dependiente de X, pero sí de un tercer conjunto de atributos Y, que a su vez depende de X",
+        "opciones": [
+            "Es una dependencia funcional X a Z en la cual Z es inmediatamente dependiente de X, y de un tercer conjunto de atributos Y, que a su vez depende de X",
+            "Es una dependencia funcional X a Z en la cual Z no es inmediatamente dependiente de X, pero sí de un tercer conjunto de atributos Y, que a su vez depende de Z",
+            "Es una dependencia funcional X a Z en la cual X no es inmediatamente dependiente de Z, pero sí de un tercer conjunto de atributos Y, que a su vez depende de X",
+            "Es una dependencia funcional X a Z en la cual Z no es inmediatamente dependiente de X, pero sí de un tercer conjunto de atributos Y, que a su vez depende de X"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0080",
+        "pregunta": "¿Qué forma requiere que cada atributo no-clave sea totalmente dependiente de la clave primaria, no solo en parte de la clave?",
+        "respuesta": "Segunda forma normal",
+        "opciones": [
+            "Primera forma normal",
+            "Cuarta forma normal",
+            "Tercera forma normal",
+            "Segunda forma normal"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0081",
+        "pregunta": "¿Para qué se aplican las reglas de normalización?",
+        "respuesta": "Para ver si las entidades están estructuradas correctamente y realizar ajustes en las entidades",
+        "opciones": [
+            "Para saber si los datos están estructurados según el atributo",
+            "Para ver si las entidades están estructuradas correctamente y realizar ajustes en las entidades",
+            "Para ver si las entidades están creadas siguiendo el criterio de maximación de la información correctamente",
+            "Para realizar ajustes en los datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0082",
+        "pregunta": "En un componente genérico, la parte estructural…",
+        "respuesta": "Define cómo pueden construirse las bases de datos",
+        "opciones": [
+            "Define los tipos de operaciones que pueden realizarse sobre los datos",
+            "Define cómo pueden construirse las bases de datos",
+            "Diseña las bases de datos",
+            "Garantiza la precisión de las bases de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0083",
+        "pregunta": "Los campos que cumplen las condiciones de identificación única de registros, pero que no fueron definidos como principales por el diseñador, se le llama...",
+        "respuesta": "Clave candidata",
+        "opciones": [
+            "Clave externa",
+            "Clave candidata",
+            "Clave",
+            "Superclave"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0084",
+        "pregunta": "¿Cuándo no se producen errores en los datos?",
+        "respuesta": "Cuando al insertar una nueva fila en la tabla secundaria y el valor de la clave foránea existe en la tabla principal",
+        "opciones": [
+            "Cuando modificamos el valor de la clave principal de un registro que tiene hijos",
+            "Cuando queremos borrar una fila de la tabla principal y ese registro tiene hijos",
+            "Cuando modificamos el valor de la clave foránea, el nuevo valor debe existir en la tabla principal",
+            "Cuando al insertar una nueva fila en la tabla secundaria y el valor de la clave foránea existe en la tabla principal"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0085",
+        "pregunta": "Si al probar la base de datos inicial, la información está duplicada en alguna de las entidades...",
+        "respuesta": "Probablemente se necesite dividir la entidad en dos entidades que tienen una relación uno a varios",
+        "opciones": [
+            "Probablemente se necesite dividir la entidad en tres entidades que tienen una relación uno a varios",
+            "Probablemente se necesite dividir la entidad en dos entidades que tienen una relación uno a varios",
+            "Probablemente se necesite dividir la entidad en dos entidades que tienen una relación varios a varios",
+            "Probablemente se necesite dividir la entidad en dos entidades que tienen una relación uno a uno"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0086",
+        "pregunta": "¿Qué afirmación sobre los modelos de datos relacional no es correcta?",
+        "respuesta": "Las relaciones están modeladas de forma explícita por los conjuntos, que se transforman en punteros a la hora de la implementación.",
+        "opciones": [
+            "Las relaciones están modeladas de forma explícita por los conjuntos, que se transforman en punteros a la hora de la implementación.",
+            "Se enlazan mediante un atributo específico",
+            "Los datos y las relaciones se representan mediante tablas, cada una tiene una serie de columnas con nombres distintivos",
+            "Solo requiere que la base de datos sea percibida por el usuario como una serie de tablas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0087",
+        "pregunta": "¿Qué se representa por una flecha con trazo discontinuo?",
+        "respuesta": "Flujo de control",
+        "opciones": [
+            "Proceso de control",
+            "Flujo de datos",
+            "Flujo de control",
+            "Proceso"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0088",
+        "pregunta": "¿Qué forma establece que en cada intersección de fila y atributo de la entidad existe un único valor y nunca una lista de valores?",
+        "respuesta": "Primera forma normal",
+        "opciones": [
+            "Primera forma normal",
+            "Cuarta forma normal",
+            "Tercera forma normal",
+            "Segunda forma normal"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0089",
+        "pregunta": "¿Qué opción no es un principio básico del diseño de base de datos?",
+        "respuesta": "Saber qué información duplicada es correcta, para aprovechar espacio",
+        "opciones": [
+            "Saber qué información duplicada es incorrecta, porque aumenta la probabilidad de errores",
+            "Saber qué información duplicada es correcta, para aprovechar espacio",
+            "Saber qué información duplicada es incorrecta, porque aumenta la probabilidad de incoherencias",
+            "Saber qué información duplicada es incorrecta, porque desperdicia espacio"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0090",
+        "pregunta": "¿En qué modelo la realidad a la que se enfrenta el diseñador requerirá un análisis del problema que surge al preparar el diseño?",
+        "respuesta": "Modelo conceptual",
+        "opciones": [
+            "Modelo lógico",
+            "Modelo digital",
+            "Modelo físico",
+            "Modelo conceptual"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0091",
+        "pregunta": "Los tipos de interrelaciones entre entidades o tablas se realizan aplicando las reglas de…",
+        "respuesta": "Cardinalidad y modalidad",
+        "opciones": [
+            "Coordinadas y módulos",
+            "Cardinalidad y modalidad",
+            "Cardenal y medital",
+            "Coordinalidad y modalidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0092",
+        "pregunta": "¿Qué forma exige que no solo cada atributo no clave sea dependiente de toda clave principal, sino que los atributos no clave sean independientes entre sí?",
+        "respuesta": "Tercera forma normal",
+        "opciones": [
+            "Primera forma normal",
+            "Tercera forma normal",
+            "Segunda forma normal",
+            "Cuarta forma normal"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0093",
+        "pregunta": "En los estándares de diseño, ¿cómo se llama a la información duplicada?",
+        "respuesta": "Datos redundantes",
+        "opciones": [
+            "Datos estándar",
+            "Datos cíclicos",
+            "Datos homologados",
+            "Datos redundantes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0094",
+        "pregunta": "¿Cómo represento una relación de uno a varios en el diseño de base de datos?",
+        "respuesta": "Toma la clave principal del lado 'uno' de la relación y agrégala como un atributo a la entidad del lado 'varios' de la relación",
+        "opciones": [
+            "Toma la clave principal del lado 'varios' de la relación y agrégala como un atributo a la entidad del lado 'uno' de la relación",
+            "Toma la clave principal del lado 'uno' de la relación y agrégala como un atributo a la entidad del lado 'varios' de la relación",
+            "Toma la clave externa del lado 'varios' de la relación y agrégala como un atributo a la entidad del lado 'uno' de la relación",
+            "Toma la clave externa del lado 'uno' de la relación y agrégala como un atributo a la entidad del lado 'varios' de la relación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0095",
+        "pregunta": "El campo clave conformado por el valor de una clave principal primaria de otra tabla, se le llama…",
+        "respuesta": "Clave externa",
+        "opciones": [
+            "Clave externa",
+            "Clave principal primaria",
+            "Clave principal secundaria",
+            "Clave interna"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0096",
+        "pregunta": "¿Qué no serviría para derivar un conjunto de relaciones para cada esquema lógico global?",
+        "respuesta": "Los atributos de la entidad no se convierten en los atributos de la tabla",
+        "opciones": [
+            "De entre los identificadores de la entidad se debe escoger uno como clave primaria de la tabla",
+            "Cada componente de un atributo compuesto se convierte en un atributo de la tabla",
+            "Por cada atributo con cardinalidad máxima mayor que uno se incluye una tabla dentro de la tabla, como un atributo más",
+            "Los atributos de la entidad no se convierten en los atributos de la tabla"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0097",
+        "pregunta": "¿Cuál sería el orden de ejecución de los siguientes modelos?",
+        "respuesta": "Conceptual - Lógico - Físico",
+        "opciones": [
+            "Conceptual - Lógico - Físico",
+            "Físico - Lógico - Conceptual",
+            "Conceptual - Físico - Lógico",
+            "Físico - Conceptual - Lógico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0098",
+        "pregunta": "¿Cómo se le llama al proceso de fundir varias relaciones en una si se usan juntas con frecuencia mediante operaciones JOIN?",
+        "respuesta": "Desnormalización",
+        "opciones": [
+            "Desnormalización",
+            "Normalización",
+            "Segunda forma normal",
+            "Tercera forma normal"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-1-0099",
+        "pregunta": "¿Qué tabla de base de datos relacional satisface cierto conjunto mínimo de criterios?",
+        "respuesta": "La tabla está en 1NF",
+        "opciones": [
+            "No corresponde a ninguna tabla",
+            "La tabla está en 1NF",
+            "La tabla está en 3NF",
+            "La tabla está en 2NF"
+        ]
+    }
+]
