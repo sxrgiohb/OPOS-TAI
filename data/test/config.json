@@ -92,47 +92,47 @@
         {
           "id": "tema-1",
           "nombre": "Tema 1",
-          "archivo": "bloque-i-tema-1.json"
+          "archivo": "bloque-iii-tema-1.json"
         },
         {
           "id": "tema-2",
           "nombre": "Tema 2",
-          "archivo": "bloque-i-tema-2.json"
+          "archivo": "bloque-iii-tema-2.json"
         },
         {
           "id": "tema-3",
           "nombre": "Tema 3",
-          "archivo": "bloque-i-tema-3.json"
+          "archivo": "bloque-iii-tema-3.json"
         },
         {
           "id": "tema-4",
           "nombre": "Tema 4",
-          "archivo": "bloque-i-tema-4.json"
+          "archivo": "bloque-iii-tema-4.json"
         },
         {
           "id": "tema-5",
           "nombre": "Tema 5",
-          "archivo": "bloque-i-tema-5.json"
+          "archivo": "bloque-iii-tema-5.json"
         },
         {
           "id": "tema-6",
           "nombre": "Tema 6",
-          "archivo": "bloque-i-tema-6.json"
+          "archivo": "bloque-iii-tema-6.json"
         },
         {
           "id": "tema-7",
           "nombre": "Tema 7",
-          "archivo": "bloque-i-tema-7.json"
+          "archivo": "bloque-iii-tema-7.json"
         },
         {
           "id": "tema-8",
           "nombre": "Tema 8",
-          "archivo": "bloque-i-tema-8.json"
+          "archivo": "bloque-iii-tema-8.json"
         },
         {
           "id": "tema-9",
           "nombre": "Tema 9",
-          "archivo": "bloque-i-tema-9.json"
+          "archivo": "bloque-iii-tema-9.json"
         }
       ]
     },
