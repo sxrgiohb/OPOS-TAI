@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-i-tema-8-0000",
+        "pregunta": "Según establece el Art.38 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, marque la respuesta correcta:",
+        "respuesta": "Las anotaciones en el Registro General de la Administración General del Estado tendrán plena eficacia y validez para todas las Administraciones Públicas.",
+        "opciones": [
+            "Las anotaciones en el Registro General de la Administración General del Estado no tendrán plena eficacia y validez para todas las Administraciones Públicas.",
+            "Las anotaciones en el Registro General de la Administración General del Estado tendrán plena eficacia y validez para todas las Administraciones Públicas.",
+            "Las anotaciones de salida en el Registro General de la Administración General del Estado tendrán plena eficacia y validez para todas las Administraciones Públicas.",
+            "Las anotaciones en el Registro General de la Administración General del Estado sólo tendrán plena eficacia y validez para las Administraciones Públicas que hayan suscrito el correspondiendo convenio"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0001",
+        "pregunta": "¿Cómo se denomina el Reglamento de actuación y funcionamiento del sector público por medios electrónicos?",
+        "respuesta": "Real Decreto 203/2021, de 30 de marzo",
+        "opciones": [
+            "Real Decreto 201/2021, de 31 de marzo",
+            "Real Decreto 203/2021, de 1 de marzo",
+            "Real Decreto 203/2021, de 30 de marzo",
+            "Real Decreto 204/2021, de 30 de marzo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0002",
+        "pregunta": "Según establece el Art. 9 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las Administraciones Públicas están obligadas a verificar la identidad de los interesados en el procedimiento administrativo, mediante la comprobación de su nombre y apellidos o denominación o razón social, según corresponda, que consten en el Documento Nacional de Identidad o documento identificativo equivalente",
+        "opciones": [
+            "Las Administraciones Privadas están obligadas a verificar la identidad de los interesados en el procedimiento administrativo, mediante la comprobación de su nombre y apellidos o denominación o razón social, según corresponda, que consten en el Documento Nacional de Identidad o documento identificativo equivalente",
+            "Las Administraciones Públicas no están obligadas a verificar la identidad de los interesados en el procedimiento administrativo, mediante la comprobación de su nombre y apellidos o denominación o razón social, según corresponda, que consten en el Documento Nacional de Identidad o documento identificativo equivalente",
+            "Las Administraciones Privadas no están obligadas a verificar la identidad de los interesados en el procedimiento administrativo, mediante la comprobación de su nombre y apellidos o denominación o razón social, según corresponda, que consten en el Documento Nacional de Identidad o documento identificativo equivalente",
+            "Las Administraciones Públicas están obligadas a verificar la identidad de los interesados en el procedimiento administrativo, mediante la comprobación de su nombre y apellidos o denominación o razón social, según corresponda, que consten en el Documento Nacional de Identidad o documento identificativo equivalente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0003",
+        "pregunta": "Según establece el Art. 44 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cuál es el plazo en que se entiende rechazada la notificación desde la puesta a disposición de la notificación sin acceder al contenido de la misma, dará por efectuado el trámite de notificación y se continuará el procedimiento?",
+        "respuesta": "10 días naturales",
+        "opciones": [
+            "15 días naturales",
+            "15 días hábiles",
+            "10 días hábiles",
+            "10 días naturales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0004",
+        "pregunta": "Según establece el Art. 16 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cómo deben ser los documentos presentados de manera presencial ante las Administraciones Pública, de acuerdo con lo previsto en el artículo 27 y demás normativa aplicable, por la oficina de asistencia en materia de registros en la que hayan sido presentados para su incorporación al expediente administrativo electrónico?",
+        "respuesta": "Digitalizados",
+        "opciones": [
+            "Digitalizados",
+            "Transferidos",
+            "Destruidos",
+            "Transmitidos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0005",
+        "pregunta": "Según establece el Art.40 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Qué naturaleza tienen las Oficinas de asistencia en materia de registros ?",
+        "respuesta": "Órgano administrativo",
+        "opciones": [
+            "Entidad administrativa",
+            "Administración Publica",
+            "Unidad administrativa",
+            "Órgano administrativo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0006",
+        "pregunta": "Según establece el Art.40 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cuál de las siguientes no es una función de las Oficinas de asistencia en materia de registros?",
+        "respuesta": "La representación de la administración en caso de solicitar un informe preceptivo",
+        "opciones": [
+            "La digitalización de las solicitudes, escritos y comunicaciones en papel que se presenten o sean recibidos en la Oficina y se dirijan a cualquier órgano, organismo público o entidad de derecho público de cualquier Administración Pública, así como su anotación en el Registro Electrónico General o Registro electrónico de cada organismo o entidad según corresponda.",
+            "La comunicación a las personas interesadas del código de identificación del órgano, organismo público o entidad a la que se dirige la solicitud, escrito o comunicación.",
+            "La representación de la administración en caso de solicitar un informe preceptivo",
+            "La práctica de notificaciones, en el ámbito de actuación de esa Oficina, cuando el interesado o su representante comparezcan de forma espontánea en la Oficina y solicite la comunicación o notificación personal en ese momento."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0007",
+        "pregunta": "Según establece el Art. 5 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "La representación podrá acreditarse mediante cualquier medio válido en Derecho que deje constancia fidedigna de su existencia",
+        "opciones": [
+            "La representación podrá acreditarse mediante cualquier medio válido en Derecho que deje constancia fidedigna de su existencia",
+            "La representación podrá acreditarse mediante cualquier medio válido en Derecho que deje constancia no fidedigna de su existencia",
+            "La representación no podrá acreditarse mediante cualquier medio válido en Derecho que deje constancia fidedigna de su existencia",
+            "La representación podrá acreditarse mediante cualquier medio, aunque no sea válido en Derecho, que deje constancia fidedigna de su existencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0008",
+        "pregunta": "Según establece el Art. 44 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cómo se realizará la notificación cuando los interesados en un procedimiento sean desconocidos, se ignore el lugar de la notificación o bien, intentada ésta, no se hubiese podido practicar?",
+        "respuesta": "Por medio de un anuncio publicado en el «Boletín Oficial del Estado»",
+        "opciones": [
+            "Por medio de un anuncio publicado en el «Boletín Oficial Europeo»",
+            "Por medio de un anuncio publicado en el periódico de mayor difusión estatal",
+            "Por medio de un anuncio publicado en el periódico de menor difusión estatal",
+            "Por medio de un anuncio publicado en el «Boletín Oficial del Estado»"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0009",
+        "pregunta": "Según establece el Art.51 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, marque la respuesta correcta:",
+        "respuesta": "Un mismo documento electrónico podrá formar parte de distintos expedientes administrativos.",
+        "opciones": [
+            "Un mismo documento electrónico no podrá formar parte de distintos expedientes administrativos.",
+            "Un mismo documento electrónico deberá formar parte de distintos expedientes administrativos.",
+            "Un mismo documento electrónico podrá formar parte de distintos expedientes administrativos.",
+            "Un mismo documento electrónico podrá formar parte de un solo expediente administrativo."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0010",
+        "pregunta": "Según establece el Art. 48 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cuáles de los siguientes no serán competentes para la expedición de copias auténticas de documentos públicos administrativos o documentos privados?",
+        "respuesta": "Los órganos y oficinas a los que corresponda la custodia y archivo de documentos",
+        "opciones": [
+            "Los órganos a los que corresponda la emisión de los documentos originales.",
+            "Las oficinas de asistencia en materia de registros, respecto de los documentos originales o copias auténticas presentados por las personas interesadas para que se remitan desde la Oficina a la unidad competente para su incorporación a un expediente administrativo.",
+            "Los órganos que hayan previsto sus normas de competencia.",
+            "Los órganos y oficinas a los que corresponda la custodia y archivo de documentos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0011",
+        "pregunta": "Según establece el Art. 44 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, ¿en cuál de los siguientes supuestos las condiciones y garantías citadas en el presente artículo se establecerán mediante convenio suscrito entre aquellas?",
+        "respuesta": "Cuando los participantes pertenezcan a distintas Administraciones",
+        "opciones": [
+            "Cuando los participantes pertenezcan a las mismas Administraciones",
+            "Cuando los participantes formen parte de la misma Administración",
+            "Cuando los participantes pertenezcan a distintas Administraciones",
+            "Cuando los participantes no pertenezcan a distintas Administraciones"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0012",
+        "pregunta": "Según establece el Art. 30 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera? \"_____\"",
+        "respuesta": "Los plazos expresados por horas se contarán de hora en hora y de minuto en minuto desde la hora y minuto en que tenga lugar la notificación o publicación del acto de que se trate y no podrán tener una duración superior a veinticuatro horas, en cuyo caso se expresarán en días\" \"",
+        "opciones": [
+            "Los plazos expresados por horas se contarán de hora en hora y de minuto en minuto desde la hora y minuto en que tenga lugar la notificación o publicación del acto de que se trate y no podrán tener una duración superior a veinticuatro horas, en cuyo caso se expresarán en días\" \"",
+            "Los plazos expresados por horas se contarán de día en día y de semana en semana desde la hora y minuto en que tenga lugar la notificación o publicación del acto de que se trate y no podrán tener una duración superior a veinticuatro meses, en cuyo caso se expresarán en días\" \"",
+            "Los plazos expresados por horas se contarán de hora en hora y de minuto en minuto desde la hora y segundo en que tenga lugar la notificación o publicación del acto de que se trate y podrán tener una duración superior a veinticuatro horas, en cuyo caso no se expresarán en días\" \"",
+            "Los plazos expresados por horas se contarán de mes en mes y de año en año desde la hora y minuto en que tenga lugar la notificación o publicación del acto de que se trate y podrán tener una duración superior a veinticuatro días, en cuyo caso se expresarán en días"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0013",
+        "pregunta": "Según establece el Art. 42 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿En que plazo debe una persona o entidad que suceda al interesado en un procedimiento del que conozca su existencia?",
+        "respuesta": "15 días hábiles",
+        "opciones": [
+            "Un mes",
+            "15 días hábiles",
+            "10 días hábiles",
+            "15 días naturales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0014",
+        "pregunta": "Según establece el Art. 46 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cómo se denomina a la información de cualquier naturaleza en forma electrónica, archivada en un soporte electrónico, según un formato determinado y susceptible de identificación y tratamiento diferenciado admitido en el Esquema Nacional de Interoperabilidad y normativa correspondiente, y que haya sido generada, recibida o incorporada por las Administraciones Públicas en el ejercicio de sus funciones sujetas a Derecho administrativo?",
+        "respuesta": "Documento administrativo electrónico",
+        "opciones": [
+            "Registro administrativo electrónico",
+            "Expediente administrativo electrónico",
+            "Documento administrativo electrónico",
+            "Archivo administrativo electrónico"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0015",
+        "pregunta": "Según establece el Art. 50 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Dónde deberá estar incluida la relación de prestadores cualificados de servicios de confianza que prestan servicios de sellado de tiempo en el sector público?",
+        "respuesta": "Lista de confianza de prestadores cualificados de servicios de confianza",
+        "opciones": [
+            "Dirección electrónica habilitada",
+            "Lista de confianza de prestadores cualificados de servicios de confianza",
+            "Carpeta ciudadana",
+            "Sede electrónica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0016",
+        "pregunta": "Según establece el Art.40 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cuál de las siguientes no es una función de las Oficinas de asistencia en materia de registros?",
+        "respuesta": "La publicación en el Boletín oficial correspondida cuanto el interesado sea de imposible notificación",
+        "opciones": [
+            "La emisión del correspondiente recibo que acredite la fecha y hora de presentación de solicitudes, comunicaciones y documentos que presenten las personas interesadas.",
+            "La expedición de copias electrónicas auténticas tras la digitalización de cualquier documento original o copia auténtica que presenten las personas interesadas y que se vaya a incorporar a un expediente administrativo a través de dicha oficina en el registro electrónico correspondiente.",
+            "La identificación o firma electrónica del interesado, cuando se trate de una persona no obligada a la relación electrónica con la Administración, en los procedimientos administrativos para los que se haya previsto habilitación.",
+            "La publicación en el Boletín oficial correspondida cuanto el interesado sea de imposible notificación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0017",
+        "pregunta": "Según establece el Art. 16 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones se anotarán respetando el orden temporal de recepción o salida de los documentos, e indicarán la fecha del día en que se produzcan?",
+        "respuesta": "Los asientos",
+        "opciones": [
+            "Las transferencias",
+            "Los asientos",
+            "Las subsanaciones",
+            "Las representaciones diplomáticas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0018",
+        "pregunta": "Según establece el Art.37 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cómo deberán ser los registros electrónicos para la recepción y remisión de solicitudes, escritos y comunicaciones de las Administraciones Publicas?",
+        "respuesta": "Plenamente interoperables",
+        "opciones": [
+            "Plenamente accesibles",
+            "Plenamente compatibles",
+            "Plenamente interconectados",
+            "Plenamente interoperables"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0019",
+        "pregunta": "Según establece el Art. 16 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿en cuál de las siguientes opciones no podrán presentarse los documentos que los interesados dirijan a los órganos de las Administraciones Públicas?",
+        "respuesta": "En el registro electrónico de la Administración u Organismo al que no se dirijan",
+        "opciones": [
+            "En las representaciones diplomáticas u oficinas consulares de España en el extranjero",
+            "En el registro electrónico de la Administración u Organismo al que no se dirijan",
+            "En el registro electrónico de la Administración u Organismo al que se dirijan, así como en los restantes registros electrónicos de cualquiera de los sujetos a los que se refiere el artículo 2.1",
+            "En las oficinas de Correos, en la forma que reglamentariamente se establezca"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0020",
+        "pregunta": "Según establece el Art. 51 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Quién firma el índice electrónico autenticado?",
+        "respuesta": "El titular del órgano competente",
+        "opciones": [
+            "El interesado",
+            "El titular del órgano competente",
+            "Se digitaliza pero no se firme",
+            "El delegado del gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0021",
+        "pregunta": "Según establece el Art. 40 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado, y deberá contener el texto íntegro de la resolución, con indicación de si pone fin o no a la vía administrativa, la expresión de los recursos que procedan, en su caso, en vía administrativa y judicial, el órgano ante el que hubieran de presentarse y el plazo para interponerlos, sin perjuicio de que los interesados puedan ejercitar, en su caso, cualquier otro que estimen procedente",
+        "opciones": [
+            "Toda notificación deberá ser cursada dentro del plazo de siete días a partir de la fecha en que el acto haya sido dictado, y deberá contener el texto íntegro de la resolución, con indicación de si pone fin o no a la vía administrativa, la expresión de los recursos que procedan, en su caso, en vía administrativa y judicial, el órgano ante el que hubieran de presentarse y el plazo para interponerlos, sin perjuicio de que los interesados puedan ejercitar, en su caso, cualquier otro que estimen procedente",
+            "Toda notificación deberá ser cursada dentro del plazo de tres días a partir de la fecha en que el acto haya sido dictado, y deberá contener el texto íntegro de la resolución, con indicación de si pone fin o no a la vía administrativa, la expresión de los recursos que procedan, en su caso, en vía administrativa y judicial, el órgano ante el que hubieran de presentarse y el plazo para interponerlos, sin perjuicio de que los interesados puedan ejercitar, en su caso, cualquier otro que estimen procedente",
+            "Toda notificación deberá ser cursada dentro del plazo de quince días a partir de la fecha en que el acto haya sido dictado, y deberá contener el texto íntegro de la resolución, con indicación de si pone fin o no a la vía administrativa, la expresión de los recursos que procedan, en su caso, en vía administrativa y judicial, el órgano ante el que hubieran de presentarse y el plazo para interponerlos, sin perjuicio de que los interesados puedan ejercitar, en su caso, cualquier otro que estimen procedente",
+            "Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado, y deberá contener el texto íntegro de la resolución, con indicación de si pone fin o no a la vía administrativa, la expresión de los recursos que procedan, en su caso, en vía administrativa y judicial, el órgano ante el que hubieran de presentarse y el plazo para interponerlos, sin perjuicio de que los interesados puedan ejercitar, en su caso, cualquier otro que estimen procedente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0022",
+        "pregunta": "Según establece el Art. 16 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones funcionará como un portal que facilitará el acceso a los registros electrónicos de cada Organismo?",
+        "respuesta": "El Registro Electrónico General de cada Administración",
+        "opciones": [
+            "El Archivo Electrónico General de cada Administración",
+            "El Informe Electrónico General de cada Administración",
+            "El Registro Electrónico General de cada Administración",
+            "El Comité Electrónico General de cada Administración"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0023",
+        "pregunta": "Según establece el Art. 29 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Los términos y plazos establecidos en ésta u otras leyes obligan a las autoridades y personal al servicio de las Administraciones Públicas competentes para la tramitación de los asuntos, así como a los interesados en los mismos",
+        "opciones": [
+            "Los términos y plazos establecidos en ésta u otras leyes obligan a las autoridades y personal al servicio de las Administraciones Públicas competentes para la tramitación de los asuntos, pero no a los interesados en los mismos",
+            "Los términos y plazos establecidos en ésta u otras leyes obligan a las autoridades y personal al servicio de las Administraciones Privadas competentes para la tramitación de los asuntos, así como a los interesados en los mismos",
+            "Los términos y plazos establecidos en ésta u otras leyes obligan a las autoridades y personal al servicio de las Administraciones Públicas competentes para la tramitación de los asuntos, así como a los interesados en los mismos",
+            "Los términos y plazos establecidos en ésta u otras leyes no obligan a las autoridades y personal al servicio de las Administraciones Públicas competentes para la tramitación de los asuntos, así como a los interesados en los mismos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0024",
+        "pregunta": "Según establece el Art.43 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, marque la respuesta correcta:",
+        "respuesta": "La falta de práctica de este aviso, de carácter meramente informativo, no impedirá que la notificación sea considerada plenamente válida.",
+        "opciones": [
+            "La falta de práctica de este aviso, de carácter meramente informativo, no impedirá que la notificación sea considerada plenamente válida.",
+            "La falta de práctica de este aviso, de carácter meramente informativo, impedirá que la notificación sea considerada plenamente válida, salvo que se haya abierto por el interesado.",
+            "La falta de práctica de este aviso, de carácter meramente informativo, no impedirá que la notificación sea considerada eficaz y en plazo",
+            "La falta de práctica de este aviso, de carácter meramente informativo, impedirá que la notificación sea considerada plenamente válida."
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0025",
+        "pregunta": "Según establece el Art. 44 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, ¿cuál de las siguientes opciones determinará las condiciones y garantías por las que se regirá que, al menos, comprenderá la relación de emisores y receptores autorizados y la naturaleza de los datos a intercambia, cuando los participantes en las comunicaciones pertenezcan a la misma?",
+        "respuesta": "La Administración Pública",
+        "opciones": [
+            "La Administración Secreta",
+            "La Administración Privada",
+            "La Administración Pública",
+            "La Administración Reservada"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0026",
+        "pregunta": "Según establece el Art.53 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cuánto tiempo serán conservados los documentos presentados por el interesado en formato electrónico dentro de un dispositivo, que por cualquier circunstancia no le puedan ser devueltos en el momento de su presentación, una vez incorporados al expediente?",
+        "respuesta": "Seis meses",
+        "opciones": [
+            "Indefinidamente",
+            "Doce meses",
+            "Seis meses",
+            "Tres meses"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0027",
+        "pregunta": "Según establece el Art. 43 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Cuando la notificación por medios electrónicos sea de carácter obligatorio, o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando hayan transcurrido diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido",
+        "opciones": [
+            "Cuando la notificación por medios electrónicos sea de carácter obligatorio, o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando hayan transcurrido tres días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido",
+            "Cuando la notificación por medios electrónicos sea de carácter obligatorio, o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando hayan transcurrido siete días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido",
+            "Cuando la notificación por medios electrónicos sea de carácter obligatorio, o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando hayan transcurrido diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido",
+            "Cuando la notificación por medios electrónicos sea de carácter obligatorio, o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando hayan transcurrido cinco días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0028",
+        "pregunta": "Según establece el Art. 6 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones se otorgará mediante comparecencia electrónica en la correspondiente sede electrónica haciendo uso de los sistemas de firma electrónica previstos en esta Ley, o bien mediante comparecencia personal en las oficinas de asistencia en materia de registros?",
+        "respuesta": "El apoderamiento «apud acta»",
+        "opciones": [
+            "El apoderamiento motu proprio",
+            "El apoderamiento ad libitum",
+            "El apoderamiento «apud acta»",
+            "El apoderamiento ad nutum"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0029",
+        "pregunta": "Según establece el Art. 9 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones no es un sistema a través del cual los interesados podrán identificarse electrónicamente ante las Administraciones Públicas, ya que es incorrecto o falso?",
+        "respuesta": "Sistemas basados en certificados electrónicos no cualificados de sello electrónico expedidos por prestadores no incluidos en la ‘‘Lista de confianza de prestadores de servicios de certificación’",
+        "opciones": [
+            "Sistemas basados en certificados electrónicos no cualificados de sello electrónico expedidos por prestadores no incluidos en la ‘‘Lista de confianza de prestadores de servicios de certificación’",
+            "Sistemas basados en certificados electrónicos cualificados de sello electrónico expedidos por prestadores incluidos en la ‘‘Lista de confianza de prestadores de servicios de certificación’",
+            "Sistemas basados en certificados electrónicos cualificados de firma electrónica expedidos por prestadores incluidos en la ‘‘Lista de confianza de prestadores de servicios de certificación’’",
+            "Sistemas de clave concertada y cualquier otro sistema, que las Administraciones consideren válido en los términos y condiciones que se establezca, siempre que cuenten con un registro previo como usuario que permita garantizar su identidad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0030",
+        "pregunta": "Según establece el Art.39 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Qué ocurre en el caso de que se detecte código malicioso susceptible de afectar a la integridad o seguridad del sistema en documentos que ya hayan sido registrados?",
+        "respuesta": "Se requerirá su subsanación",
+        "opciones": [
+            "Se requerirá su subsanación",
+            "Se archivará el expediente",
+            "Se tendrá por no presentado",
+            "Se eliminará el documento"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0031",
+        "pregunta": "Según establece el Art. 30 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, siempre que por Ley o en el Derecho de la Unión Europea no se exprese otro cómputo, cuando los plazos se señalen por días, se entiende que éstos son hábiles, sin excluir del cómputo ¿cuál de los siguientes días?",
+        "respuesta": "El viernes",
+        "opciones": [
+            "Los días festivos",
+            "El sábado",
+            "El domingo",
+            "El viernes"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0032",
+        "pregunta": "Según establece el Art. 26 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de los siguientes aspectos no es considerado óptimo para que un documento electrónico administrativo sea válido, ya que es incorrecto o falso?",
+        "respuesta": "Disponer de los datos de identificación que permitan su colectivación, con perjuicio de su posible incorporación a un expediente electrónico",
+        "opciones": [
+            "Incorporar las firmas electrónicas que correspondan de acuerdo con lo previsto en la normativa aplicable",
+            "Disponer de los datos de identificación que permitan su colectivación, con perjuicio de su posible incorporación a un expediente electrónico",
+            "Contener información de cualquier naturaleza archivada en un soporte electrónico según un formato determinado susceptible de identificación y tratamiento diferenciado",
+            "Incorporar una referencia temporal del momento en que han sido emitidos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0033",
+        "pregunta": "Según establece el Art. 13 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, quienes de conformidad con el artículo 3, tienen capacidad de obrar ante las Administraciones Públicas, son titulares, en sus relaciones con ellas, de algunos derechos. Así pues, ¿cuál de las siguientes opciones no es un derecho que los mismos poseen, ya que es incorrecto o falso?",
+        "respuesta": "Al acceso a la información pública, archivos y registros, de acuerdo con lo previsto en la Ley 9/2003, de 19 de diciembre, de transparencia, acceso a la información privada y buen gobierno y el resto del Ordenamiento Jurídico",
+        "opciones": [
+            "A ser asistidos en el uso de medios electrónicos en sus relaciones con las Administraciones Públicas",
+            "A comunicarse con las Administraciones Públicas a través de un Punto de Acceso General electrónico de la Administración",
+            "Al acceso a la información pública, archivos y registros, de acuerdo con lo previsto en la Ley 9/2003, de 19 de diciembre, de transparencia, acceso a la información privada y buen gobierno y el resto del Ordenamiento Jurídico",
+            "A utilizar las lenguas oficiales en el territorio de su Comunidad Autónoma, de acuerdo con lo previsto en esta Ley y en el resto del ordenamiento jurídico"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0034",
+        "pregunta": "Según establece el Art. 21 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, el plazo máximo en el que debe notificarse la resolución expresa será el fijado por la norma reguladora del correspondiente procedimiento. Así pues, ¿cuál es el plazo máximo en el que debe notificarse salvo que una norma con rango de Ley establezca uno mayor o así venga previsto en el Derecho de la Unión Europea?",
+        "respuesta": "Seis meses",
+        "opciones": [
+            "Tres meses",
+            "Seis meses",
+            "Cuatro meses",
+            "Un mes"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0035",
+        "pregunta": "Según establece el Art. 12 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la Administración General del Estado, las Comunidades Autónomas y las Entidades Locales mantendrán actualizado un registro, u otro sistema equivalente, donde constarán los funcionarios habilitados para la identificación o firma regulada en este artículo. Así, ¿cómo deben de ser estos registros o sistemas?",
+        "respuesta": "Plenamente interoperables y estar interconectados con los de las restantes Administraciones Públicas, a los efectos de comprobar la validez de las citadas habilitaciones",
+        "opciones": [
+            "Parcialmente interoperables y no estar interconectados con los de las restantes Administraciones Públicas, a los efectos de comprobar la validez de las citadas habilitaciones",
+            "Plenamente interoperables y no estar interconectados con los de las restantes Administraciones Públicas, a los efectos de comprobar la validez de las citadas habilitaciones",
+            "Plenamente interoperables y estar interconectados con los de las restantes Administraciones Públicas, a los efectos de comprobar la validez de las citadas habilitaciones",
+            "Parcialmente interoperables y estar interconectados con los de las restantes Administraciones Públicas, a los efectos de comprobar la validez de las citadas habilitaciones"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0036",
+        "pregunta": "Según establece el Art. 42 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, cuando la notificación se practique en el domicilio del interesado, de no hallarse presente éste en el momento de entregarse la notificación, ¿quién podrá hacerse cargo de la misma?",
+        "respuesta": "Cualquier persona mayor de catorce años que se encuentre en el domicilio y haga constar su identidad",
+        "opciones": [
+            "Cualquier persona mayor de dieciséis años que se encuentre en el domicilio, aunque no haga constar su identidad",
+            "Cualquier persona mayor de catorce años que se encuentre en el domicilio y haga constar su identidad",
+            "Cualquier persona mayor de diez años que se encuentre en el domicilio y haga constar su identidad",
+            "Cualquier persona mayor de doce años que se encuentre en el domicilio, aunque no haga constar su identidad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0037",
+        "pregunta": "Según establece el Art. 36 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cómo se producirán los actos administrativos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia?",
+        "respuesta": "Por escrito a través de medios electrónicos",
+        "opciones": [
+            "De manera oral, a través de llamadas telefónicas grabadas",
+            "Por escrito a través de correo postal",
+            "Por escrito a través de medios electrónicos",
+            "De manera oral, a través de llamadas telefónicas no grabadas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0038",
+        "pregunta": "Según establece el Art.42 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cuál de los siguientes no es requisito mínimo del acuse?",
+        "respuesta": "Código de la Administración saliente",
+        "opciones": [
+            "Código de la Administración saliente",
+            "identificación del acto notificado",
+            "fecha y hora de la puesta a disposición",
+            "persona destinatario"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0039",
+        "pregunta": "Según establece el Art. 47 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cómo se denomina a la copia realizada, cualquiera que sea su soporte, por los órganos competentes de las Administraciones Públicas en las que quede garantizada la identidad del órgano que ha realizado la copia y su contenido?",
+        "respuesta": "Copia autentica",
+        "opciones": [
+            "Copia original",
+            "Copia digitalizada",
+            "Copia compulsada",
+            "Copia autentica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0040",
+        "pregunta": "Según establece el Art. 44 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Cómo se denomina al sistema de información para la notificación electrónica cuya gestión corresponde al Ministerio de Asuntos Económicos y Transformación Digital en colaboración con el Ministerio de Política Territorial y Función Pública?",
+        "respuesta": "Dirección Electrónica Habilitada",
+        "opciones": [
+            "Carpeta ciudadana",
+            "Dirección Electrónica Habilitada",
+            "Sede electrónica habilitada",
+            "Sede electrónica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0041",
+        "pregunta": "Según establece el Art. 17 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Los documentos electrónicos deberán conservarse en un formato que permita garantizar la autenticidad, integridad y conservación del documento, así como su consulta con independencia del tiempo transcurrido desde su emisión",
+        "opciones": [
+            "Los documentos electrónicos deberán conservarse en un formato que permita garantizar la ilegitimidad, integridad y desprotección del documento, así como su consulta con independencia del tiempo transcurrido desde su emisión",
+            "Los documentos electrónicos deberán conservarse en un formato que permita garantizar la autenticidad, integridad y conservación del documento, pero no su consulta, con independencia del tiempo transcurrido desde su emisión",
+            "Los documentos electrónicos deberán conservarse en un formato que no permita garantizar la autenticidad, integridad y conservación del documento, así como su consulta con independencia del tiempo transcurrido desde su emisión",
+            "Los documentos electrónicos deberán conservarse en un formato que permita garantizar la autenticidad, integridad y conservación del documento, así como su consulta con independencia del tiempo transcurrido desde su emisión"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0042",
+        "pregunta": "Según establece el Art. 44 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, ¿cuál de las siguientes opciones serán considerados válidos a efectos de autenticación e identificación de los emisores y receptores en las condiciones establecidas en este artículo?",
+        "respuesta": "Los documentos electrónicos transmitidos en entornos cerrados de comunicaciones establecidos entre Administraciones Públicas, órganos, organismos públicos y entidades de derecho público",
+        "opciones": [
+            "Los documentos electrónicos transmitidos en entornos abiertos de comunicaciones establecidos entre Administraciones Públicas, órganos, organismos públicos y entidades de derecho privado",
+            "Los documentos electrónicos transmitidos en entornos cerrados de comunicaciones establecidos entre Administraciones Públicas, órganos, organismos públicos y entidades de derecho público",
+            "Los documentos electrónicos transmitidos en entornos cerrados de comunicaciones establecidos entre Administraciones Públicas, órganos, organismos públicos y entidades de derecho privado",
+            "Los documentos electrónicos transmitidos en entornos abiertos de comunicaciones establecidos entre Administraciones Públicas, órganos, organismos públicos y entidades de derecho público"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0043",
+        "pregunta": "Según establece el Art. 44 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, ¿qué deberá garantizarse en todo caso?",
+        "respuesta": "La seguridad del entorno cerrado de comunicaciones y la protección de los datos que se transmitan",
+        "opciones": [
+            "La inseguridad del entorno cerrado de comunicaciones y la desprotección de los datos que se transmitan",
+            "La inseguridad del entorno cerrado de comunicaciones y la protección de los datos que se transmitan",
+            "La seguridad del entorno cerrado de comunicaciones y la protección de los datos que se transmitan",
+            "La seguridad del entorno cerrado de comunicaciones y la desprotección de los datos que se transmitan"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0044",
+        "pregunta": "Según establece el Art. 5 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cómo será entendida la representación realizada mediante apoderamiento apud acta efectuado por comparecencia personal o comparecencia electrónica en la correspondiente sede electrónica, o a través de la acreditación de su inscripción?",
+        "respuesta": "Acreditada",
+        "opciones": [
+            "Acreditada",
+            "Alterada",
+            "Difamada",
+            "Desacreditada"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0045",
+        "pregunta": "Según establece el Art. 26 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cómo se entiende a los documentos válidamente emitidos por los órganos de las Administraciones Públicas?",
+        "respuesta": "Documentos públicos administrativos",
+        "opciones": [
+            "Documentos reservados administrativos",
+            "Documentos privados administrativos",
+            "Documentos confidenciales administrativos",
+            "Documentos públicos administrativos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0046",
+        "pregunta": "Según establece el Art. 6 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de los siguientes órganos no dispondrá de un registro electrónico general de apoderamientos, en el que deberán inscribirse, al menos, los de carácter general otorgados apud acta, presencial o electrónicamente, por quien ostente la condición de interesado en un procedimiento administrativo a favor de representante, para actuar en su nombre ante las Administraciones Públicas?",
+        "respuesta": "Las Mancomunidades",
+        "opciones": [
+            "La Administración General del Estado",
+            "Las Comunidades Autónomas",
+            "Las Mancomunidades",
+            "Las Entidades Locales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0047",
+        "pregunta": "Según establece el Art.53 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿Durante que plazo serán conservados los documentos presentados por el interesado en soporte papel que por cualquier circunstancia no le puedan ser devueltos en el momento de su presentación, una vez digitalizados?",
+        "respuesta": "Seis meses",
+        "opciones": [
+            "Seis meses",
+            "Doce meses",
+            "Indefinidamente",
+            "Tres meses"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0048",
+        "pregunta": "Según establece el Art. 41 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿en cuál de los siguientes casos se tomará como fecha de notificación la de aquélla que se hubiera producido en primer lugar?",
+        "respuesta": "Cuando el interesado fuera notificado por distintos cauces",
+        "opciones": [
+            "Cuando el interesado fuera notificado solamente a través de cartas postales",
+            "Cuando el interesado fuera notificado por distintos cauces",
+            "Cuando el interesado no fuera notificado por distintos cauces",
+            "Cuando el interesado fuera notificado solamente a través de medios electrónicos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-8-0049",
+        "pregunta": "Según establece el Art. 21 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de tres meses",
+        "opciones": [
+            "Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de seis meses",
+            "Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de tres meses",
+            "Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de nueve meses",
+            "Cuando las normas reguladoras de los procedimientos no fijen el plazo máximo, éste será de doce meses"
+        ]
+    }
+]

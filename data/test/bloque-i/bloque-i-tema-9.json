@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-i-tema-9-0000",
+        "pregunta": "Según establece el Art. 22 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones serán cualificados y se ajustarán a lo señalado en el Esquema Nacional de Interoperabilidad y la legislación vigente en materia de identidad y firma electrónica?",
+        "respuesta": "Los certificados electrónicos de empleado público",
+        "opciones": [
+            "Los certificados electrónicos de empleado privado",
+            "Los certificados electrónicos de empleado público",
+            "Los certificados no electrónicos de empleado privado",
+            "Los certificados no electrónicos de empleado público"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0001",
+        "pregunta": "Según establece el Art. 10 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, en el ámbito estatal, tanto la creación o supresión de una sede electrónica asociada a la sede electrónica del PAGe de la Administración General del Estado como la creación o supresión de sedes electrónicas o sedes electrónicas asociadas de los organismos públicos y entidades de derecho público vinculados o dependientes se hará mediante orden de ¿cuál de los siguientes órganos?",
+        "respuesta": "De la persona titular del Departamento competente o por resolución de la persona titular de la Presidencia o de la Dirección del organismo o entidad de derecho público competente, con el informe previo favorable del Ministerio de Política Territorial y Función Pública y del Ministerio de Asuntos Económicos y Transformación Digital",
+        "opciones": [
+            "De la persona titular del Departamento competente o por resolución de la persona titular de la Secretaría o de la Dirección del organismo o entidad de derecho privado competente, con el informe previo favorable del Ministerio de Política Territorial y Función Reservada y del Ministerio de Asuntos Económicos y Transformación Digital",
+            "De la persona titular del Departamento competente o por resolución de la persona titular de la Presidencia o de la Dirección del organismo o entidad de derecho público competente, con el informe previo favorable del Ministerio de Política Territorial y Función Pública y del Ministerio de Asuntos Económicos y Transformación Digital",
+            "De la persona titular del Departamento competente o por resolución de la persona titular de la Presidencia o de la Dirección del organismo o entidad de derecho público competente, sin el informe previo favorable del Ministerio de Política Territorial y Función Pública y del Ministerio de Asuntos Económicos y Transformación Digital",
+            "De la persona titular del Departamento competente o por resolución de la persona titular de la Secretaría o de la Dirección del organismo o entidad de derecho público competente, sin el informe previo favorable del Ministerio de Política Territorial y Función Pública y del Ministerio de Asuntos Económicos y Transformación Digital"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0002",
+        "pregunta": "Según establece el Art. 26 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de los siguientes sistemas no será admitido, de acuerdo con lo previsto en el artículo 9.2 de la Ley 39/2015, de 1 de octubre, ya que es incorrecto o falso?",
+        "respuesta": "Sistemas basados en certificados electrónicos no cualificados de sello electrónico expedidos por destinatarios incluidos en la «Lista de confianza de destinatarios no cualificados de servicios de confianza»",
+        "opciones": [
+            "Sistemas basados en certificados electrónicos no cualificados de sello electrónico expedidos por destinatarios incluidos en la «Lista de confianza de destinatarios no cualificados de servicios de confianza»",
+            "Sistemas basados en certificados electrónicos cualificados de sello electrónico expedidos por prestadores incluidos en la «Lista de confianza de prestadores cualificados de servicios de confianza»",
+            "Sistemas de clave concertada y cualquier otro sistema que las Administraciones Públicas consideren válido, en los términos y condiciones que se establezca, siempre que cuenten con un registro previo como usuario que permita garantizar su identidad, previa autorización por parte de la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital, que solo podrá ser denegada por motivos de seguridad pública, previo informe vinculante de la Secretaría de Estado de Seguridad del Ministerio del Interior",
+            "Sistemas basados en certificados electrónicos cualificados de firma electrónica expedidos por prestadores incluidos en la «Lista de confianza de prestadores cualificados de servicios de confianza»"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0003",
+        "pregunta": "Según establece el Art. 10 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El acto o resolución de creación o supresión de una sede electrónica o sede electrónica asociada será publicado en el boletín oficial que corresponda en función de cuál sea la Administración Pública titular de la sede o sede asociada y también en el directorio del Punto de Acceso General Electrónico que corresponda",
+        "opciones": [
+            "El acto o resolución de creación o supresión de una sede electrónica o sede electrónica asociada no será publicado en el boletín oficial que corresponda en función de cuál sea la Administración Pública titular de la sede o sede asociada ni tampoco en el directorio del Punto de Acceso General Electrónico que corresponda",
+            "El acto o resolución de creación o supresión de una sede electrónica o sede electrónica asociada será publicado en el boletín oficial que corresponda en función de cuál sea la Administración Pública titular de la sede o sede asociada y también en el directorio del Punto de Acceso General Electrónico que corresponda",
+            "El acto o resolución de creación o supresión de una sede electrónica o sede electrónica asociada no será publicado en el boletín oficial que corresponda en función de cuál sea la Administración Pública titular de la sede o sede asociada, pero sí en el directorio del Punto de Acceso General Electrónico que corresponda",
+            "El acto o resolución de creación o supresión de una sede electrónica o sede electrónica asociada será publicado en el boletín oficial que corresponda en función de cuál sea la Administración Pública titular de la sede o sede asociada, pero no en el directorio del Punto de Acceso General Electrónico que corresponda"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0004",
+        "pregunta": "Según establece el Art. 7 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El PAGe de la Administración General del Estado, a través de su sede, permitirá la comprobación de la autenticidad e integridad de los documentos facilitados por el sector público estatal a través del Código Seguro de Verificación o de cualquier otro sistema de firma o sello basado en certificado electrónico cualificado que se haya utilizado en su generación. También permitirá, en su caso, su recuperación",
+        "opciones": [
+            "El PAGe de la Administración General del Estado, a través de su sede, permitirá la comprobación de la autenticidad e integridad de los documentos facilitados por el sector público estatal a través del Código Seguro de Verificación o de cualquier otro sistema de firma o sello basado en certificado electrónico cualificado que se haya utilizado en su generación. pero no permitirá, en su caso, su recuperación",
+            "El PAGe de la Administración General del Estado, a través de su sede, permitirá la comprobación de la autenticidad e integridad de los documentos facilitados por el sector privado estatal a través del Código Seguro de Verificación, pero no a través del sistema de firma o sello basado en certificado electrónico cualificado que se haya utilizado en su generación. También permitirá, en su caso, su recuperación",
+            "El PAGe de la Administración General del Estado, a través de su sede, permitirá la comprobación de la autenticidad e integridad de los documentos facilitados por el sector privado estatal a través del Código Seguro de Verificación o de cualquier otro sistema de firma o sello basado en certificado electrónico no cualificado que se haya utilizado en su generación. pero no permitirá, en su caso, su recuperación",
+            "El PAGe de la Administración General del Estado, a través de su sede, permitirá la comprobación de la autenticidad e integridad de los documentos facilitados por el sector público estatal a través del Código Seguro de Verificación o de cualquier otro sistema de firma o sello basado en certificado electrónico cualificado que se haya utilizado en su generación. También permitirá, en su caso, su recuperación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0005",
+        "pregunta": "Según establece el Art. 34 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones estará sujeta al Reglamento eIDAS, a la Política Marco de Firma Electrónica y de Certificados a que hace referencia el Esquema Nacional de Interoperabilidad y además, a los requisitos que disponga cada Administración?",
+        "respuesta": "La aceptación de certificados electrónicos cualificados de representante de persona jurídica de alcance no general",
+        "opciones": [
+            "La aceptación de certificados electrónicos no cualificados de representante de persona jurídica de alcance general",
+            "La aceptación de certificados electrónicos no cualificados de representante de persona jurídica de alcance no general",
+            "La aceptación de certificados electrónicos cualificados de representante de persona jurídica de alcance general",
+            "La aceptación de certificados electrónicos cualificados de representante de persona jurídica de alcance no general"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0006",
+        "pregunta": "Según establece el Art. 7 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El PAGe de cada Administración Pública facilitará el acceso a los servicios, trámites e información de los órganos, organismos públicos y entidades vinculados o dependientes de la Administración Pública correspondiente",
+        "opciones": [
+            "El PAGe de cada Administración Pública no facilitará el acceso a los servicios, trámites e información de los órganos, organismos públicos y entidades vinculados o dependientes de la Administración Pública correspondiente",
+            "El PAGe de cada Administración Privada facilitará el acceso a los servicios, trámites e información de los órganos, organismos públicos y entidades vinculados o dependientes de la Administración Pública correspondiente",
+            "El PAGe de cada Administración Pública facilitará el acceso a los servicios, trámites e información de los órganos, organismos públicos y entidades vinculados o dependientes de la Administración Pública correspondiente",
+            "El PAGe de cada Administración Pública facilitará el acceso a los servicios, trámites e información de los órganos, organismos públicos y entidades desvinculados o independientes de la Administración Pública correspondiente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0007",
+        "pregunta": "Según establece el Art. 7 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿qué significan las siglas «PAGe»?",
+        "respuesta": "Punto de Acceso General electrónico",
+        "opciones": [
+            "Punto de Avería General electrónica",
+            "Punto de Administración Global electrónico",
+            "Procesador de Acceso Global electrónico",
+            "Punto de Acceso General electrónico"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0008",
+        "pregunta": "Según establece el Art. 17 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones está constituida por las directrices y normas técnicas aplicables a la utilización de certificados y firma electrónica?",
+        "respuesta": "La política de firma electrónica y de certificados en el ámbito estatal",
+        "opciones": [
+            "La política de firma electrónica y de certificados en el ámbito estatal",
+            "La política de firma electrónica y de certificados en el ámbito europeo",
+            "La política de firma electrónica y de certificados en el ámbito extranjero",
+            "La política de firma electrónica y de certificados en el ámbito no local"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0009",
+        "pregunta": "Según establece el Art. 31 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿por quién será gestionado el Registro de Funcionarios Habilitados?",
+        "respuesta": "Por la Secretaría de Estado de Política Territorial y Función Pública del Ministerio de Política Territorial y Función Pública, en colaboración con la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital",
+        "opciones": [
+            "Por la Secretaría de Estado de Política Territorial y Función Pública del Ministerio de Política Territorial y Función Pública, sin la colaboración con la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital",
+            "Por la Secretaría de Estado de Política Territorial y Función Pública del Ministerio de Política Territorial y Función Pública, en colaboración con la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital",
+            "Por la Secretaría de Estado de Política Territorial y Función Pública del Ministerio de Política Territorial y Función Reservada, en colaboración con la Subsecretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital",
+            "Por la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital, en colaboración con la Secretaría de Estado de Política Territorial y Función Pública del Ministerio de Política Territorial y Función Pública"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0010",
+        "pregunta": "Según establece el Art. 15 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿quiénes admitirán, en sus relaciones por medios electrónicos, sistemas de firma electrónica que sean conformes a lo establecido en la normativa vigente sobre firma electrónica y resulten adecuados para garantizar la identificación de las personas interesadas y, en su caso, la autenticidad e integridad de los documentos electrónicos?",
+        "respuesta": "Las Administraciones Públicas",
+        "opciones": [
+            "Las Administraciones Reservadas",
+            "Las Administraciones Privadas",
+            "Las Administraciones Confidenciales",
+            "Las Administraciones Públicas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0011",
+        "pregunta": "Según establece el Art. 6 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de los siguientes dominios debe contener el acto o resolución de creación de un nuevo portal de internet en el ámbito estatal?",
+        "respuesta": "«.gob.es»",
+        "opciones": [
+            "«.gouv.fr»",
+            "«.gob.es»",
+            "«.gob.eu»",
+            "«.gov.es»"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0012",
+        "pregunta": "Según establece el Art. 6 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿de cuál de los siguientes órganos se requerirá su previa aprobación para la supresión de portales?",
+        "respuesta": "Del Ministerio de Política Territorial y Función Pública y al Ministerio de Asuntos Económicos y Transformación Digital",
+        "opciones": [
+            "Del Ministerio de Política Territorial y Función Pública y al Ministerio de Asuntos Exteriores",
+            "Del Ministerio de Política Territorial y Función Reservada y al Ministerio de Asuntos Exteriores",
+            "Del Ministerio de Hacienda y Función Pública y al Ministerio de Asuntos Económicos y Transformación Digital",
+            "Del Ministerio de Política Territorial y Función Pública y al Ministerio de Asuntos Económicos y Transformación Digital"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0013",
+        "pregunta": "Según establece el Art. 8 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El interesado deberá asegurar el buen uso de los sistemas de identificación y velar por que el acceso a su carpeta Ciudadana solo se haga por sí mismo o por tercero autorizado",
+        "opciones": [
+            "El interesado deberá asegurar el buen uso de los sistemas de identificación y velar por que el acceso a su carpeta Ciudadana solo se haga por sí mismo o por tercero autorizado",
+            "El interesado no deberá asegurar el buen uso de los sistemas de identificación y velar por que el acceso a su carpeta Ciudadana solo se haga por sí mismo o por tercero autorizado",
+            "El interesado deberá asegurar el buen uso de los sistemas de identificación, pero no deberá velar por que el acceso a su carpeta Ciudadana solo se haga por sí mismo o por tercero no autorizado",
+            "El interesado deberá asegurar el buen uso de los sistemas de identificación y velar por que el acceso a su carpeta Ciudadana solo se haga por sí mismo o por tercero no autorizado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0014",
+        "pregunta": "Según establece el Art. 25 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿en cuál de los siguientes casos la Administración Pública establecerá las condiciones y garantías por las que se regirá, que comprenderán, al menos, la relación de emisores y receptores autorizados y la naturaleza de los datos a intercambiar?",
+        "respuesta": "Cuando los participantes en las comunicaciones pertenezcan a una misma Administración Pública",
+        "opciones": [
+            "Cuando los participantes en las comunicaciones pertenezcan a una misma Administración Reservada",
+            "Cuando los participantes en las comunicaciones pertenezcan a una misma Administración Pública",
+            "Cuando los participantes pertenezcan a distintas Administraciones Públicas",
+            "Cuando los participantes en las comunicaciones pertenezcan a una misma Administración Privada"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0015",
+        "pregunta": "Según establece el Art. 29 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El uso de la firma electrónica no excluye la obligación de incluir en el documento o comunicación electrónica los datos de identificación del interesado y, en su caso, del representante o la representante, que sean necesarios de acuerdo con la legislación que le sea aplicable",
+        "opciones": [
+            "El uso de la firma electrónica no excluye la obligación de incluir en el documento o comunicación electrónica los datos de identificación del interesado y, en su caso, del representante o la representante, que sean necesarios de acuerdo con la legislación que le sea aplicable",
+            "El uso de la firma electrónica excluye la obligación de incluir en el documento o comunicación electrónica los datos de identificación del interesado, pero no la del representante o la representante, que sean necesarios de acuerdo con la legislación que le sea aplicable",
+            "El uso de la firma electrónica no excluye la obligación de incluir en el documento o comunicación electrónica los datos de identificación del interesado, pero no del representante o la representante, que sean necesarios de acuerdo con la legislación que le sea aplicable",
+            "El uso de la firma electrónica excluye la obligación de incluir en el documento o comunicación electrónica los datos de identificación del interesado y, en su caso, del representante o la representante, que sean necesarios de acuerdo con la legislación que le sea aplicable"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0016",
+        "pregunta": "Según establece el Art. 21 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es incorrecta o falsa?",
+        "respuesta": "El sistema de código seguro de verificación deberá garantizar el origen, pero no la integridad de los documentos, mediante el acceso a la sede electrónica o sede electrónica asociada correspondiente",
+        "opciones": [
+            "El sistema de código seguro de verificación deberá garantizar la posibilidad de verificar el documento en la sede electrónica o sede electrónica asociada, como mínimo, por el tiempo que se establezca en la resolución que autorice la utilización de este procedimiento",
+            "El sistema de código seguro de verificación deberá garantizar un acceso restringido al documento a quien disponga del código seguro de verificación, sin perjuicio de las garantías adicionales que se puedan establecer",
+            "El sistema de código seguro de verificación deberá garantizar el origen, pero no la integridad de los documentos, mediante el acceso a la sede electrónica o sede electrónica asociada correspondiente",
+            "El sistema de código seguro de verificación deberá garantizar el carácter único del código generado para cada documento"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0017",
+        "pregunta": "Según establece el Art. 5 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Cada Administración podrá determinar los contenidos y canales mínimos de atención a las personas interesadas y de difusión y prestación de servicios que deban tener sus portales, así como criterios obligatorios de imagen institucional",
+        "opciones": [
+            "Las Administraciones no podrá determinar los contenidos y canales mínimos de atención a las personas interesadas y de difusión y prestación de servicios que deban tener sus portales, así como criterios obligatorios de imagen institucional",
+            "Cada Administración podrá determinar los contenidos y canales mínimos de atención a las personas interesadas y de difusión y prestación de servicios que deban tener sus portales, pero no los criterios obligatorios de imagen institucional",
+            "Las Administraciones no podrán determinar los contenidos y canales mínimos de atención a las personas interesadas y de difusión y prestación de servicios que deban tener sus portales, pero sí podrán establecer criterios obligatorios de imagen institucional",
+            "Cada Administración podrá determinar los contenidos y canales mínimos de atención a las personas interesadas y de difusión y prestación de servicios que deban tener sus portales, así como criterios obligatorios de imagen institucional"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0018",
+        "pregunta": "Según establece el Art. 33 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones será gestionado por el Ministerio de Política Territorial y Función Pública con la colaboración del Ministerio de Asuntos Económicos y Transformación Digital, y será accesible desde la sede electrónica del PAGe de la Administración General del Estado así como desde las sedes y sedes electrónicas asociadas de la Administración General del Estado y de los organismos públicos o entidades de derecho público vinculados o dependientes?",
+        "respuesta": "El Registro Electrónico de Apoderamientos de la Administración General del Estado",
+        "opciones": [
+            "El Registro no Electrónico de Apoderamientos de la Administración General del Estado",
+            "El Registro Electrónico de Apoderamientos de la Administración General del Estado Europeo",
+            "El Registro no Electrónico de Apoderamientos de la Administración General del Estado Europeo",
+            "El Registro Electrónico de Apoderamientos de la Administración General del Estado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0019",
+        "pregunta": "Según establece el Art. 16 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, la Administración General del Estado dispondrá de una plataforma para la verificación de la vigencia y del contenido de los certificados cualificados admitidos en el sector público. Así pues, ¿cuál de los siguientes órganos será el órgano responsable de esta plataforma, que estará disponible para todo el sector público previa formalización del correspondiente instrumento de adhesión?",
+        "respuesta": "La Secretaría General de Administración Digital",
+        "opciones": [
+            "La Secretaría General de Administración Educativa",
+            "La Secretaría General de Administración Digital",
+            "La Secretaría General de Administración Patrimonial",
+            "La Secretaría General de Administración Judicial"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0020",
+        "pregunta": "Según establece el Art. 8 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es el área personalizada de las personas interesadas a que se refiere el artículo 7.3 en su relación con el sector público estatal?",
+        "respuesta": "La Carpeta Ciudadana",
+        "opciones": [
+            "El Registro Electrónico General de la Administración General del Estado",
+            "El Registro de Funcionarios Habilitados",
+            "El Registro Electrónico de Apoderamientos",
+            "La Carpeta Ciudadana"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0021",
+        "pregunta": "Según establece el Art. 10 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones no será determinada por el acto o resolución de creación de una sede electrónica o sede electrónica asociada, ya que es incorrecto o falso?",
+        "respuesta": "La identificación de su titular o de un tercero no autorizado",
+        "opciones": [
+            "La identificación del órgano u órganos encargados de la gestión y de los servicios puestos a disposición en la misma",
+            "La identificación de la dirección electrónica de referencia de la sede electrónica o sede electrónica asociada que se cree, así como de las direcciones electrónicas de las sedes electrónicas que desde el momento de la creación ya sean asociadas de aquella",
+            "La identificación de su titular o de un tercero no autorizado",
+            "El ámbito de aplicación de la sede electrónica o sede electrónica asociada"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0022",
+        "pregunta": "Según establece el Art. 5 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿de acuerdo con lo previsto en cuál de las siguientes Leyes, se entiende por portal de internet el punto de acceso electrónico cuya titularidad corresponda a una Administración Pública, organismo público o entidad de derecho público que permite el acceso a través de internet a la información y, en su caso, a la sede electrónica o sede electrónica asociada correspondiente?",
+        "respuesta": "De acuerdo con lo previsto en el artículo 39 de la Ley 40/2015, de 1 de octubre",
+        "opciones": [
+            "De acuerdo con lo previsto en el artículo 39 de la Ley 40/2005, de 11 de octubre",
+            "De acuerdo con lo previsto en el artículo 3 de la Ley 4/2015, de 1 de octubre",
+            "De acuerdo con lo previsto en el artículo 39 de la Ley 40/2015, de 1 de octubre",
+            "De acuerdo con lo previsto en el artículo 3 de la Ley 4/2005, de 11 de octubre"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0023",
+        "pregunta": "Según establece el Art. 24 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿quién podrá identificarse con aquellos sistemas que, entre los previstos en la Ley 39/2015, de 1 de octubre, se establezcan en función del nivel de seguridad que corresponda al trámite de que se trate de acuerdo al Esquema Nacional de Seguridad?",
+        "respuesta": "El personal al servicio de la Administración General del Estado y sus organismos públicos y entidades de derecho público vinculados o dependientes",
+        "opciones": [
+            "El personal al servicio de la Administración General del Estado y sus organismos reservados y entidades de derecho reservado desvinculados o dependientes",
+            "El personal al servicio de la Administración General del Estado y sus organismos públicos y entidades de derecho público vinculados o dependientes",
+            "El personal al servicio de la Administración General del Estado y sus organismos públicos y entidades de derecho público desvinculados o independientes",
+            "El personal al servicio de la Administración General del Estado y sus organismos reservados y entidades de derecho reservado vinculados o independientes"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0024",
+        "pregunta": "Según establece el Art. 14 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, si existe la obligación del interesado de relacionarse a través de medios electrónicos y aquel no los hubiese utilizado, el órgano administrativo competente en el ámbito de actuación requerirá la correspondiente subsanación, advirtiendo al interesado, o en su caso su representante, que, de no ser atendido el requerimiento en ¿qué período de tiempo, se le tendrá por desistido de su solicitud o se le podrá declarar decaído en su derecho al trámite correspondiente?",
+        "respuesta": "En el plazo de diez días",
+        "opciones": [
+            "En el plazo de quince días",
+            "En el plazo de tres días",
+            "En el plazo de siete días",
+            "En el plazo de diez días"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0025",
+        "pregunta": "Según establece el Art. 11 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones no es un servicio a disposición de las personas interesadas que toda sede electrónica o sede electrónica asociada debe disponer, ya que es incorrecta o falsa?",
+        "respuesta": "Un acceso a los servicios y trámites disponibles en la sede electrónica o sede electrónica asociada, con indicación de los plazos mínimos de duración de los procedimientos, incluyendo las posibles ampliaciones o suspensiones que en su caso, pudiera acordar el órgano competente",
+        "opciones": [
+            "Los mecanismos de comunicación y procedimiento de reclamación establecidos al respecto de los requisitos de accesibilidad de los sitios web y aplicaciones móviles del sector público",
+            "Un enlace para la formulación de sugerencias y quejas ante los órganos que en cada caso resulten competentes",
+            "Un acceso a los servicios y trámites disponibles en la sede electrónica o sede electrónica asociada, con indicación de los plazos mínimos de duración de los procedimientos, incluyendo las posibles ampliaciones o suspensiones que en su caso, pudiera acordar el órgano competente",
+            "Un servicio de comprobación de la autenticidad e integridad de los documentos emitidos por los órganos, organismos públicos o entidades de derecho público comprendidos en el ámbito de la sede electrónica, que hayan sido firmados por cualquiera de los sistemas de firma conformes a la Ley 40/2015, 1 de octubre, y para los cuales se haya generado un código seguro de verificación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0026",
+        "pregunta": "Según establece el Art. 12 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿quién será el responsable de la integridad, veracidad y actualización de la información y los servicios de su competencia a los que pueda accederse a través de la misma?",
+        "respuesta": "El titular de la sede electrónica y, en su caso, de la sede electrónica asociada",
+        "opciones": [
+            "El Presidente del Ministerio de Política Territorial y Función Pública",
+            "El Presidente de la Comunidad Autónoma",
+            "El Presidente del Ministerio de Asuntos Económicos y Transformación Digital",
+            "El titular de la sede electrónica y, en su caso, de la sede electrónica asociada"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0027",
+        "pregunta": "Según establece el Art. 23 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿quiénes podrán consignar un número de identificación profesional en el certificado electrónico de empleado público, a petición de la Administración en la que presta servicios el empleado o empleada de que se trate, si dicho certificado se va a utilizar en actuaciones que afecten a información clasificada, a la seguridad pública, a la defensa nacional o a otras actuaciones para cuya realización esté legalmente justificado el anonimato, sin perjuicio de lo previsto en el artículo 22.3 de este Reglamento, de acuerdo con lo previsto en el artículo 43.2 de la Ley 40/2015, de 1 de octubre?",
+        "respuesta": "Los prestadores cualificados de servicios de confianza",
+        "opciones": [
+            "Los no prestadores cualificados de servicios de confianza",
+            "Los prestadores cualificados de servicios de confianza",
+            "Los prestadores no cualificados de servicios de confianza",
+            "Los destinatarios cualificados de servicios de confianza"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0028",
+        "pregunta": "Según establece el Art. 28 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿por cuál de los siguientes órganos deben ser autorizados previamente los sistemas de identificación?",
+        "respuesta": "Por la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital, que solo podrá ser denegada por motivos de seguridad pública, previo informe vinculante de la Secretaría de Estado de Seguridad del Ministerio del Interior",
+        "opciones": [
+            "Por la Subsecretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital, que solo podrá ser aceptada por motivos de seguridad privada, previo informe vinculante de la Secretaría de Estado de Seguridad del Ministerio del Interior",
+            "Por la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital, que solo podrá ser denegada por motivos de seguridad pública, previo informe vinculante de la Secretaría de Estado de Seguridad del Ministerio del Exterior",
+            "Por la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital, que solo podrá ser denegada por motivos de seguridad pública, previo informe vinculante de la Secretaría de Estado de Seguridad del Ministerio del Interior",
+            "Por la Subsecretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital, que solo podrá ser aceptada por motivos de seguridad privada, previo informe vinculante de la Secretaría de Estado de Seguridad del Ministerio del Exterior"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0029",
+        "pregunta": "Según establece el Art. 32 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "De acuerdo con lo previsto en el artículo 5.7 de la Ley 39/2015, de 1 de octubre, las Administraciones Públicas podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones por medios electrónicos en representación de las personas interesadas",
+        "opciones": [
+            "De acuerdo con lo previsto en el artículo 5.7 de la Ley 39/2005, de 21 de octubre, las Administraciones Públicas podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones por medios electrónicos en representación de las personas interesadas",
+            "De acuerdo con lo previsto en el artículo 3.7 de la Ley 3/2015, de 21 de octubre, las Administraciones Públicas podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones por medios electrónicos en representación de las personas interesadas",
+            "De acuerdo con lo previsto en el artículo 5.7 de la Ley 39/2015, de 1 de octubre, las Administraciones Públicas podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones por medios electrónicos en representación de las personas interesadas",
+            "De acuerdo con lo previsto en el artículo 1.7 de la Ley 9/2015, de 1 de octubre, las Administraciones Públicas podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones por medios electrónicos en representación de las personas interesadas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0030",
+        "pregunta": "Según establece el Art. 6 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿por quién se llevará a cabo la creación o supresión de portales, en el ámbito estatal?",
+        "respuesta": "Por orden de la persona titular del ministerio correspondiente o por resolución de la persona titular del órgano superior, en el caso de la Administración General del Estado, y por resolución de la persona titular de la Presidencia o de la Dirección en el caso de sus organismos públicos y entidades de derecho público vinculados o dependientes",
+        "opciones": [
+            "Por orden de la persona titular del ministerio correspondiente o por resolución de la persona titular del órgano inferior, en el caso de la Administración General del Estado, y por resolución de la persona titular de la Secretaría o de la Administración, en el caso de sus organismos públicos y entidades de derecho público vinculados o dependientes",
+            "Por orden de la persona titular del ministerio correspondiente o por resolución de la persona titular del órgano inferior, en el caso de la Administración General del Estado, y por resolución de la persona titular de la Presidencia o de la Dirección en el caso de sus organismos públicos y entidades de derecho privado vinculados o independientes",
+            "Por orden de la persona titular del ministerio correspondiente o por resolución de la persona titular del órgano superior, en el caso de la Administración General del Estado, y por resolución de la persona titular de la Presidencia o de la Dirección en el caso de sus organismos públicos y entidades de derecho privado vinculados o independientes",
+            "Por orden de la persona titular del ministerio correspondiente o por resolución de la persona titular del órgano superior, en el caso de la Administración General del Estado, y por resolución de la persona titular de la Presidencia o de la Dirección en el caso de sus organismos públicos y entidades de derecho público vinculados o dependientes"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0031",
+        "pregunta": "Según establece el Art. 11 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones no es contenido mínimo a disposición de las personas interesadas que toda sede electrónica o sede electrónica asociada debe disponer, ya que es incorrecta o falsa?",
+        "respuesta": "Relación actualizada de los servicios, procedimientos y trámites indisponibles",
+        "opciones": [
+            "La información necesaria para la correcta utilización de la sede electrónica, incluyendo su mapa o información equivalente, con especificación de la estructura de navegación y las distintas secciones disponibles, así como la relativa a propiedad intelectual, protección de datos personales y accesibilidad",
+            "La identificación de la sede electrónica o sede electrónica asociada, así como del órgano u organismo titular de la misma y los órganos competentes para la gestión de la información, servicios, procedimientos y trámites puestos a disposición en ella",
+            "La identificación del acto o disposición de creación y el acceso al mismo, directamente o mediante enlace a su publicación en el Boletín Oficial correspondiente",
+            "Relación actualizada de los servicios, procedimientos y trámites indisponibles"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0032",
+        "pregunta": "Según establece el Art. 7 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿por cuál de los siguientes órganos serán gestionados el PAGe de la Administración General del Estado y su sede electrónica?",
+        "respuesta": "Por el Ministerio de Política Territorial y Función Pública en colaboración con la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital",
+        "opciones": [
+            "Por el Ministerio de Política Territorial y Función Pública en colaboración con la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital",
+            "Por el Asuntos Económicos y Transformación Digital en colaboración con la Secretaría General de Administración Digital del Ministerio de Política Territorial y Función Pública",
+            "Por el Asuntos Económicos y Transformación Digital en colaboración con la Secretaría General de Administración Digital del Ministerio de Política Territorial y Función Privada",
+            "Por el Ministerio de la Presidencia en colaboración con la Secretaría General de Administración Digital del Ministerio de Justicia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0033",
+        "pregunta": "Según establece el Art. 30 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, en el ámbito estatal la identificación y firma electrónica del interesado conforme al procedimiento descrito en el apartado anterior se realizará necesariamente por un funcionario público inscrito a tal efecto ¿en cuál de los siguientes Registros?",
+        "respuesta": "En el Registro de Funcionarios Habilitados de la Administración General del Estado",
+        "opciones": [
+            "En el Registro de Funcionarios Habilitados de la Administración General del Estado",
+            "En el Registro de Funcionarios Deshabilitados de la Administración General del Estado",
+            "En el Registro de la Propiedad Intelectual",
+            "En el Registro de la Propiedad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0034",
+        "pregunta": "Según establece el Art. 9 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿a quién corresponde la titularidad de la sede electrónica?",
+        "respuesta": "A una Administración Pública, o bien a uno o varios organismos públicos o entidades de derecho público en el ámbito de sus competencias",
+        "opciones": [
+            "A una Administración Pública, o bien a uno o varios organismos privados o entidades de derecho privado en el ámbito de sus competencias",
+            "A una Administración Privada, o bien a uno o varios organismos públicos o entidades de derecho público en el ámbito de sus competencias",
+            "A una Administración Pública, o bien a uno o varios organismos públicos o entidades de derecho público en el ámbito de sus competencias",
+            "A una Administración Privada, o bien a uno o varios organismos públicos o entidades de derecho privado en el ámbito de sus competencias"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0035",
+        "pregunta": "Según establece el Art. 5 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, los portales de internet dispondrán de sistemas que permitan el establecimiento de medidas de seguridad de acuerdo con lo establecido en ¿cuál de las siguientes opciones?",
+        "respuesta": "En el Real Decreto 3/2010, de 8 de enero, por el que se regula el Esquema Nacional de Seguridad en el ámbito de la Administración Electrónica",
+        "opciones": [
+            "En el Real Decreto 13/2000, de 8 de enero, por el que se regula el Esquema Nacional de Seguridad en el ámbito de la Administración Electrónica",
+            "En el Real Decreto 3/2000, de 18 de enero, por el que se regula el Esquema Nacional de Seguridad en el ámbito de la Administración Electrónica",
+            "En el Real Decreto 3/2010, de 8 de enero, por el que se regula el Esquema Nacional de Seguridad en el ámbito de la Administración Electrónica",
+            "En el Real Decreto 32/2010, de 28 de enero, por el que se regula el Esquema Nacional de Seguridad en el ámbito de la Administración Electrónica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0036",
+        "pregunta": "Según establece el Art. 6 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿de cuál de los siguientes órganos se requerirá un informe favorable para la creación de portales de internet?",
+        "respuesta": "De la Comisión Ministerial de Administración Digital respectiva y posterior comunicación al Ministerio de Política Territorial y Función Pública y al Ministerio de Asuntos Económicos y Transformación Digital",
+        "opciones": [
+            "De la Comisión Ministerial de Administración Digital respectiva y posterior comunicación al Ministerio de Política Territorial y Función Pública y al Ministerio de Asuntos Económicos y Transformación Digital",
+            "De la Comisión Ministerial de Justicia Digital respectiva y posterior comunicación al Ministerio de Política Territorial y Función Reservada y al Ministerio de Asuntos Económicos y Transformación Digital",
+            "De la Comisión Ministerial de Administración Digital respectiva y posterior comunicación al Ministerio de Política Territorial y Función Privada y al Ministerio de Hacienda",
+            "De la Comisión Ministerial de Justicia Digital respectiva y posterior comunicación al Ministerio de Política Europea y Función Común y al Ministerio de Asuntos Políticos y Transformación Digital"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0037",
+        "pregunta": "Según establece el Art. 20 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, de acuerdo con lo previsto en el artículo 42 de la Ley 40/2015, de 1 de octubre, en la tramitación administrativa automatizada de los procedimientos, cada Administración Pública podrá determinar los supuestos de utilización algunos sistemas de firma electrónica. Así pues, ¿cuál de los siguientes sistemas de firma electrónica no podrá ser empleado, ya que es falso o incorrecto?",
+        "respuesta": "Sello electrónico de Administración Pública, órgano, organismo privado o entidad de derecho público, a que se refiere el artículo 9 de este Reglamento, basado en certificado electrónico cualificado que reúna los requisitos exigidos por la legislación de firma electrónica",
+        "opciones": [
+            "Sello electrónico de Administración Pública, órgano, organismo público o entidad de derecho público, a que se refiere el artículo 19 de este Reglamento, basado en certificado electrónico cualificado que reúna los requisitos exigidos por la legislación de firma electrónica",
+            "Código seguro de verificación asociado a la Administración Pública, órgano, organismo público o entidad de derecho público, en los términos y condiciones establecidos, posibilitándose en todo caso la comprobación de la integridad del documento mediante el acceso a la sede electrónica correspondiente",
+            "Código seguro de verificación vinculado a la Administración Pública, órgano, organismo público o entidad de derecho público, en los términos y condiciones establecidos, permitiéndose en todo caso la comprobación de la integridad del documento mediante el acceso a la sede electrónica correspondiente",
+            "Sello electrónico de Administración Pública, órgano, organismo privado o entidad de derecho público, a que se refiere el artículo 9 de este Reglamento, basado en certificado electrónico cualificado que reúna los requisitos exigidos por la legislación de firma electrónica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0038",
+        "pregunta": "Según establece el Art. 35 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿quiénes efectuarán la verificación de la autenticidad e integridad del traslado a papel y el acceso a los metadatos necesarios para la tramitación automatizada de la certificación registral electrónica, mediante el acceso electrónico y gratuito a la dirección electrónica que el Consejo General del Notariado o el Colegio de Registradores, respectivamente, habrán de tener habilitada a tales efectos?",
+        "respuesta": "Las Administraciones Públicas",
+        "opciones": [
+            "Las Administraciones Reservadas",
+            "Las Administraciones Públicas",
+            "Las Administraciones Secretas",
+            "Las Administraciones Privadas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0039",
+        "pregunta": "Según establece el Art. 5 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cómo se denomina al punto de acceso electrónico cuya titularidad corresponda a una Administración Pública, organismo público o entidad de derecho público que permite el acceso a través de internet a la información y, en su caso, a la sede electrónica o sede electrónica asociada correspondiente?",
+        "respuesta": "Portal de internet",
+        "opciones": [
+            "Red social",
+            "Correo electrónico",
+            "Portal de internet",
+            "Software"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0040",
+        "pregunta": "Según establece el Art. 18 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿de acuerdo con lo previsto en cuál de las siguientes Leyes las sedes electrónicas y sedes electrónicas asociadas utilizarán, para identificarse y garantizar una comunicación segura con las mismas, certificados cualificados de autenticación de sitio web o medio equivalente?",
+        "respuesta": "De acuerdo con lo previsto en el artículo 38 de la Ley 40/2015, de 1 de octubre",
+        "opciones": [
+            "De acuerdo con lo previsto en el artículo 38 de la Ley 40/2015, de 1 de octubre",
+            "De acuerdo con lo previsto en el artículo 38 de la Ley 4/2015, de 11 de octubre",
+            "De acuerdo con lo previsto en el artículo 38 de la Ley 40/2005, de 11 de octubre",
+            "De acuerdo con lo previsto en el artículo 38 de la Ley 4/2005, de 1 de octubre"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0041",
+        "pregunta": "Según establece el Art. 6 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿a cuál de las siguientes opciones tienen que estar referenciados los portales de internet en el ámbito estatal?",
+        "respuesta": "En el PAGe de la Administración General del Estado",
+        "opciones": [
+            "En el GAGe de la Administración General del Estado Europeo",
+            "En el PAGe de la Administración General del Estado Europeo",
+            "En el GAGe de la Administración General del Estado",
+            "En el PAGe de la Administración General del Estado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0042",
+        "pregunta": "Según establece el Art. 15 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de los siguientes sistemas no podrá ser utilizado por las Administraciones Públicas para su identificación electrónica y para garantizar el origen e integridad de los documentos electrónicos, ya que es incorrecto o falso?",
+        "respuesta": "Sello electrónico basado en un certificado electrónico cualificado y que no reúna los requisitos exigidos por la legislación de firma electrónica",
+        "opciones": [
+            "Firma electrónica del personal al servicio de las Administraciones Públicas",
+            "Intercambio electrónico de datos en entornos cerrados de comunicación, conforme a lo específicamente acordado entre las partes",
+            "Sello electrónico basado en un certificado electrónico cualificado y que no reúna los requisitos exigidos por la legislación de firma electrónica",
+            "Sistemas de identificación de las sedes electrónicas y sedes electrónicas asociadas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0043",
+        "pregunta": "Según establece el Art. 19 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, en el ámbito estatal, la creación de sellos electrónicos se realizará mediante resolución de ¿cuál de los siguientes órganos?",
+        "respuesta": "La persona titular de la Subsecretaría del Ministerio o de la persona titular de la Presidencia o de la Dirección del organismo público o entidad de derecho público vinculado o dependiente, que se publicará en la sede electrónica o sede electrónica asociada correspondiente",
+        "opciones": [
+            "La persona titular de la Subsecretaría del Ministerio o de la persona titular de la Secretaría o de la Subsecretaría del organismo privado o entidad de derecho privado vinculado o dependiente, que se publicará en la sede electrónica o sede electrónica asociada correspondiente",
+            "La persona titular de la Subsecretaría del Ministerio o de la persona titular de la Secretaría o de la Subsecretaría del organismo privado o entidad de derecho privado desvinculado o dependiente, que se publicará en la sede electrónica o sede electrónica asociada correspondiente",
+            "La persona titular de la Subsecretaría del Ministerio o de la persona titular de la Presidencia o de la Dirección del organismo público o entidad de derecho público vinculado o dependiente, que se publicará en la sede electrónica o sede electrónica asociada correspondiente",
+            "La persona titular de la Secretaría del Ministerio o de la persona titular de la Presidencia o de la Dirección del organismo público o entidad de derecho público no vinculado o independiente, que se publicará en la sede electrónica o sede electrónica asociada correspondiente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0044",
+        "pregunta": "Según establece el Art. 12 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "En caso de que la sede electrónica o sede electrónica asociada contenga un enlace o vínculo a otra sede o sede asociada, será el titular de esta última el responsable de la integridad, veracidad y actualización de la información o procedimientos que figuren en la misma, sin perjuicio de la debida diligencia del titular de la primera respecto de la incorporación de los contenidos en la misma",
+        "opciones": [
+            "En caso de que la sede electrónica o sede electrónica asociada contenga un enlace o vínculo a otra sede o sede asociada, no será el titular de esta última el responsable de la integridad, veracidad y actualización de la información o procedimientos que figuren en la misma, sin perjuicio de la debida diligencia del titular de la primera respecto de la incorporación de los contenidos en la misma",
+            "En caso de que la sede electrónica o sede electrónica asociada contenga un enlace o vínculo a otra sede o sede asociada, será el titular de esta última el responsable de la integridad, veracidad y actualización de la información o procedimientos que figuren en la misma, sin perjuicio de la debida diligencia del titular de la primera respecto de la incorporación de los contenidos en la misma",
+            "En caso de que la sede electrónica o sede electrónica asociada contenga un enlace o vínculo a otra sede o sede asociada, no será el titular de esta última el responsable de la integridad, veracidad y actualización de la información o procedimientos que figuren en la misma, con perjuicio de la debida diligencia del titular de la primera respecto de la incorporación de los contenidos en la misma",
+            "En caso de que la sede electrónica o sede electrónica asociada contenga un enlace o vínculo a otra sede o sede asociada, será el titular de esta última el responsable de la integridad, veracidad y actualización de la información o procedimientos que figuren en la misma, con perjuicio de la debida diligencia del titular de la primera respecto de la incorporación de los contenidos en la misma"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0045",
+        "pregunta": "Según establece el Art. 27 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Los sistemas basados en certificados cualificados de firma electrónica admitidos por las Administraciones Públicas para la identificación electrónica de persona física a que se refiere el artículo 9.2.a) de la Ley 39/2015, de 1 de octubre, emitidos al amparo de la Ley 6/2020, de 11 de noviembre, deberán contener como atributos, al menos, su nombre y apellidos y su número de Documento Nacional de Identidad, Número de Identificación de Extranjero o Número de Identificación Fiscal que conste como tal de manera inequívoca",
+        "opciones": [
+            "Los sistemas basados en certificados cualificados de firma electrónica admitidos por las Administraciones Públicas para la identificación electrónica de persona física a que se refiere el artículo 9.2.a) de la Ley 39/2015, de 1 de octubre, emitidos al amparo de la Ley 6/2020, de 11 de noviembre, deberán contener como atributos, al menos, su nombre y apellidos y su número de Documento Nacional de Identidad, Número de Identificación de Extranjero o Número de Identificación Fiscal que conste como tal de manera inequívoca",
+            "Los sistemas basados en certificados cualificados de firma electrónica admitidos por las Administraciones Públicas para la identificación electrónica de persona física a que se refiere el artículo 9.2.a) de la Ley 139/2015, de 1 de octubre, emitidos al amparo de la Ley 61/2020, de 1 de noviembre, deberán contener como atributos, al menos, su nombre y apellidos y su número de Documento Nacional de Identidad, Número de Identificación de Extranjero o Número de Identificación Fiscal que conste como tal de manera inequívoca",
+            "Los sistemas basados en certificados cualificados de firma electrónica admitidos por las Administraciones Privadas para la identificación electrónica de persona física a que se refiere el artículo 9.1.a) de la Ley 3/2015, de 1 de octubre, emitidos al amparo de la Ley 6/2020, de 11 de noviembre, deberán contener como atributos, al menos, su nombre y apellidos y su número de Documento Nacional de Identidad, Número de Identificación de Extranjero o Número de Identificación Fiscal que conste como tal de manera inequívoca",
+            "Los sistemas basados en certificados cualificados de firma electrónica admitidos por las Administraciones Públicas para la identificación electrónica de persona física a que se refiere el artículo 9.2.a) de la Ley 9/2015, de 11 de octubre, emitidos al amparo de la Ley 16/2020, de 1 de noviembre, deberán contener como atributos, al menos, su nombre y apellidos y su número de Documento Nacional de Identidad, Número de Identificación de Extranjero o Número de Identificación Fiscal que conste como tal de manera inequívoca"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0046",
+        "pregunta": "Según establece el Art. 36 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "La Administración General del Estado y sus organismos públicos y entidades de derecho público vinculados o dependientes, de acuerdo con lo previsto en el artículo 5.7 de la Ley 39/2015, de 1 de octubre, podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones electrónicas en representación de las personas interesadas",
+        "opciones": [
+            "La Administración General del Estado y sus organismos públicos y entidades de derecho público vinculados o dependientes, de acuerdo con lo previsto en el artículo 5.7 de la Ley 39/2015, de 1 de octubre, podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones electrónicas en representación de las personas interesadas",
+            "La Administración General del Estado y sus organismos públicos y entidades de derecho privado vinculados o dependientes, de acuerdo con lo previsto en el artículo 5.7 de la Ley 9/2015, de 1 de octubre, podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones electrónicas en representación de las personas interesadas",
+            "La Administración General del Estado y sus organismos públicos y entidades de derecho privado vinculados o dependientes, de acuerdo con lo previsto en el artículo 5.7 de la Ley 9/2015, de 1 de octubre, no podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones electrónicas en representación de las personas interesadas",
+            "La Administración General del Estado y sus organismos públicos y entidades de derecho público vinculados o dependientes, de acuerdo con lo previsto en el artículo 5.7 de la Ley 39/2015, de 1 de octubre, no podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones electrónicas en representación de las personas interesadas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0047",
+        "pregunta": "Según establece el Art. 11 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "De acuerdo con lo previsto en el artículo 66.1 de la Ley 39/2015, de 1 de octubre, las Administraciones Públicas deberán mantener y actualizar en la sede electrónica correspondiente un listado con los códigos de identificación vigentes de sus órganos, centros o unidades administrativas",
+        "opciones": [
+            "De acuerdo con lo previsto en el artículo 46.1 de la Ley 39/2005, de 11 de octubre, las Administraciones Privadas deberán mantener y actualizar en la sede electrónica correspondiente un listado con los códigos de identificación vigentes de sus órganos, centros o unidades administrativas",
+            "De acuerdo con lo previsto en el artículo 66.1 de la Ley 39/2015, de 1 de octubre, las Administraciones Públicas deberán mantener y actualizar en la sede electrónica correspondiente un listado con los códigos de identificación vigentes de sus órganos, centros o unidades administrativas",
+            "De acuerdo con lo previsto en el artículo 36.1 de la Ley 39/2005, de 1 de octubre, las Administraciones Privadas deberán mantener y actualizar en la sede electrónica correspondiente un listado con los códigos de identificación vigentes de sus órganos, centros o unidades administrativas",
+            "De acuerdo con lo previsto en el artículo 6.1 de la Ley 9/2015, de 11 de octubre, las Administraciones Públicas deberán mantener y actualizar en la sede electrónica correspondiente un listado con los códigos de identificación vigentes de sus órganos, centros o unidades administrativas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0048",
+        "pregunta": "Según establece el Art. 8 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones no es una funcionalidad que los interesados o representantes tienen al acceder a la carpeta ciudadana, ya que es incorrecta o falsa?",
+        "respuesta": "Conocer qué datos suyos obran en poder del sector privado estatal, con perjuicio de las limitaciones que establezca la normativa vigente",
+        "opciones": [
+            "Facilitar la obtención de certificaciones administrativas exigidas por la normativa correspondiente",
+            "Permitir el acceso a sus comunicaciones y notificaciones",
+            "Permitir el seguimiento del estado de tramitación de los procedimientos en que sea interesado, de acuerdo con lo previsto en el artículo 53.1.a) de la Ley 39/ 2015, de 1 de octubre",
+            "Conocer qué datos suyos obran en poder del sector privado estatal, con perjuicio de las limitaciones que establezca la normativa vigente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-9-0049",
+        "pregunta": "Según establece el Art. 13 del Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, en el ámbito de las Entidades Locales, en caso de actuación administrativa automatizada se estará a lo dispuesto en la disposición adicional octava ¿de cuál de los siguientes Reales Decretos?",
+        "respuesta": "Del Real Decreto 128/2018, de 16 de marzo, por el que se regula el régimen jurídico de los funcionarios de Administración Local con habilitación de carácter nacional",
+        "opciones": [
+            "Del Real Decreto 18/2008, de 16 de marzo, por el que se regula el régimen jurídico de los funcionarios de Administración Local con habilitación de carácter nacional",
+            "Del Real Decreto 128/2008, de 16 de marzo, por el que se regula el régimen jurídico de los funcionarios de Administración Local con habilitación de carácter nacional",
+            "Del Real Decreto 12/2018, de 6 de marzo, por el que se regula el régimen jurídico de los funcionarios de Administración Local con habilitación de carácter nacional",
+            "Del Real Decreto 128/2018, de 16 de marzo, por el que se regula el régimen jurídico de los funcionarios de Administración Local con habilitación de carácter nacional"
+        ]
+    }
+]

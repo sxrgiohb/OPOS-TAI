@@ -1,0 +1,937 @@
+[
+    {
+        "id": "bloque-i-tema-3-0000",
+        "pregunta": "Los miembros de los Gabinetes realizan tareas de",
+        "respuesta": "Confianza y asesoramiento especial",
+        "opciones": [
+            "Asesoramiento jurídico",
+            "Confianza y asesoramiento especial",
+            "Asesoramiento jurídico y confianza",
+            "Confianza"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0001",
+        "pregunta": "El Gobierno ejerce",
+        "respuesta": "La función ejecutiva y la potestad reglamentaria de acuerdo con la Constitución y las leyes",
+        "opciones": [
+            "La función ejecutiva y la potestad reglamentaria y administrativa de acuerdo con la Constitución y las leyes",
+            "La función ejecutiva y la potestad legislativa de acuerdo con la Constitución y las leyes",
+            "La función ejecutiva y la potestad reglamentaria de acuerdo con la Constitución y las leyes",
+            "La función legislativa y la potestad reglamentaria de acuerdo ocn la Constitución y las leyes"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0002",
+        "pregunta": "Para ser miembro del Gobierno se requiere",
+        "respuesta": "Ser español, mayor de edad, disfrutar de los derechos de sufragio activo y pasivo, así como no estar inhabilitado para ejercer empleo o cargo público por sentencia judicial firme",
+        "opciones": [
+            "Vivir en España, mayor de edad, disfrutar de los derechos de sufragio activo y pasivo, así como no estar inhabilitado para ejercer empleo o cargo público por sentencia judicial firme",
+            "Ser español, mayor de edad, disfrutar de los derechos de sufragio activo, así como no estar inhabilitado para ejercer empleo o cargo público por sentencia judicial firme",
+            "Ser español, mayor de edad, disfrutar de los derechos de sufragio activo y pasivo, así como no estar inhabilitado para ejercer empleo o cargo público por sentencia judicial firme",
+            "Ser español, mayor de edad, disfrutar de los derechos de sufragio pasivo, así como no estar inhabilitado para ejercer empleo o cargo público por sentencia judicial firme"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0003",
+        "pregunta": "Los miembros del Gobierno",
+        "respuesta": "No podrán ejercer otras funciones representativas que las propias del mandato parlamentario",
+        "opciones": [
+            "No podrán ejercer otras funciones representativas que las propias del mandato parlamentario",
+            "No podrán ejercer otras funciones representativas que las propias del mandato gubernativo",
+            "Podrán ejercer otras funciones representativas, tanto derivadas del mandato parlamentario como las que no lo sean",
+            "No podrán ejercer otras funciones representativas que las propias del mandato imperativo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0004",
+        "pregunta": "¿Quién declarará el estado de sitio?",
+        "respuesta": "La mayoría absoluta de los miembros del Congreso de los Diputados, a propuesta del Gobierno",
+        "opciones": [
+            "El Gobierno, previa autorización del Congreso de los Diputados",
+            "La mayoría simple de las Cortes Generales, a propuesta del Gobierno",
+            "La mayoría absoluta de los miembros del Congreso de los Diputados, por iniciativa propia",
+            "La mayoría absoluta de los miembros del Congreso de los Diputados, a propuesta del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0005",
+        "pregunta": "¿Quién puede plantear una cuestión de confianza, según el artículo 112?",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "El Rey",
+            "El Presidente del Gobierno",
+            "El Ministro de Interior",
+            "El Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0006",
+        "pregunta": "Según el artículo 101 de la Constitución, el Gobierno cesará",
+        "respuesta": "Tras la celebración de elecciones generales",
+        "opciones": [
+            "Por incapacidad de su Presidente",
+            "Por dimisión de un Ministro",
+            "Tras la celebración de elecciones generales",
+            "Tras la proclamación de los resultados electorales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0007",
+        "pregunta": "¿En qué artículo de la Constitución se menciona que el Consejo de Estado es el supremo órgano consultivo del Gobierno?",
+        "respuesta": "Artículo 107",
+        "opciones": [
+            "Artículo 113",
+            "Artículo 107",
+            "Artículo 109",
+            "Artículo 105"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0008",
+        "pregunta": "El Gobierno cesante continuará en funciones hasta",
+        "respuesta": "La toma de posesión del nuevo Gobierno",
+        "opciones": [
+            "La celebración de las elecciones generales",
+            "La convocatoria de eleciones generales",
+            "La proclamación de los resultados electorales, manteniéndose en el mismo si resultan reelegidos",
+            "La toma de posesión del nuevo Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0009",
+        "pregunta": "¿Quién coordina las funciones de los miembos del Gobierno?",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "El Congreso de los Diputados",
+            "El Consejo de Ministros",
+            "El Presidente del Gobierno",
+            "Las Cortes Generales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0010",
+        "pregunta": "Los miembros del Gobierno se reúnen en",
+        "respuesta": "Consejo de Ministros y en Comisiones Delegadas del Gobierno",
+        "opciones": [
+            "Consejo de Ministros y Delegaciones",
+            "Consejos de Ministros",
+            "Comisiones Delegadas del Gobierno",
+            "Consejo de Ministros y en Comisiones Delegadas del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0011",
+        "pregunta": "El Director del Departamento de Seguridad Nacional será convocado a las reuniones del Consejo de Seguridad Nacional, de conformidad con lo dispuesto en",
+        "respuesta": "El artículo 6.3 de la Ley 50/1997",
+        "opciones": [
+            "El artículo 6.3 de la Ley 50/1999",
+            "El artículo 6.3 de la Ley 50/1996",
+            "El artículo 6.3 de la Ley 50/1997",
+            "El artículo 6.3 de la Ley 50/1998"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0012",
+        "pregunta": "La moción de censura no podrá ser votada hasta que transcurran",
+        "respuesta": "Cinco días desde su presentación",
+        "opciones": [
+            "Cinco días desde su presentación",
+            "Tres días desde su presentación",
+            "Treinta días desde su presentación",
+            "Quince días desde su presentación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0013",
+        "pregunta": "La creación, modificación y supresión de las Comisiones Delegadas del Gobierno se acuerda mediante",
+        "respuesta": "Real Decreto",
+        "opciones": [
+            "Decreto-Ley",
+            "Ley",
+            "Ley orgánica",
+            "Real Decreto"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0014",
+        "pregunta": "Si ninguno de los candidatos a la Presidencia del Gobierno obtiene la confianza del Congreso en el plazo previsto",
+        "respuesta": "El Rey disolverá ambas Cámaras y convocará nuevas elecciones",
+        "opciones": [
+            "El Rey nombrará al Presidente del Gobierno al representante del Grupo Parlamentario con mayor representación en el Congreso de los Diputados",
+            "El Rey disolverá el Congreso de los Diputados y convocará nuevas elecciones",
+            "El Rey nombrará Presidente del Gobierno al candidato que hubiera obtenido mayor apoyo parlamentario",
+            "El Rey disolverá ambas Cámaras y convocará nuevas elecciones"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0015",
+        "pregunta": "Según el artículo 116 de la Constitución y en relación con la declaración del estado de alarma",
+        "respuesta": "Se dará cuenta al Congreso de los Diputados, reunido inmediatamente al efecto",
+        "opciones": [
+            "Se dará cuenta a las Cortes Generales, reunidas inmediatamente al efecto",
+            "Se dará cuenta al Congreso de los Diputados, reunido inmediatamente al efecto",
+            "Se dará cuenta al Congreso de los Diputados, reunido al efecto en el plazo de quince días",
+            "Se dará cuenta a las Cortes Generales, reunido al efecto en el plazo de quince días"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0016",
+        "pregunta": "Los Gabinetes son órganos de apoyo político y técnico de",
+        "respuesta": "El Presidente del Gobierno, de los Vicepresidentes, de los Ministros y de los Secretarios de Estado",
+        "opciones": [
+            "El Presidente del Gobierno, de los Ministros y de los Secretarios de Estado",
+            "El Presidente del Gobierno y de los Vicepresidentes",
+            "El Presidente del Gobierno, de los Vicepresidentes y de los Ministros",
+            "El Presidente del Gobierno, de los Vicepresidentes, de los Ministros y de los Secretarios de Estado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0017",
+        "pregunta": "Corresponden al Consejo de Seguridad Nacional, además de las competencias atribuidas por el artículo 6.4 de la Ley 50/1997, las establecidas en",
+        "respuesta": "La Ley 36/2015 de Seguridad Nacional",
+        "opciones": [
+            "La Ley 36/2014 de Seguridad Nacional",
+            "La Ley 36/2013 de Seguridad Nacional",
+            "La Ley 36/2016 de Seguridad Nacional",
+            "La Ley 36/2015 de Seguridad Nacional"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0018",
+        "pregunta": "¿En qué plazo podrán presentarse mociones alternativas a una moción de censura?",
+        "respuesta": "En los dos primeros días",
+        "opciones": [
+            "En los cinco primeros días",
+            "En los siete primeros días",
+            "En los tres primeros días",
+            "En los dos primeros días"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0019",
+        "pregunta": "Las deliberaciones de las Comisiones son",
+        "respuesta": "Secretas",
+        "opciones": [
+            "Públicas",
+            "Televisadas",
+            "Públicas y televisadas",
+            "Secretas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0020",
+        "pregunta": "Según el artículo 12 de la Ley del Gobierno, los Vicepresidentes y Ministros serán nombrados y separados a propuesta de",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "El Presidente del Gobierno",
+            "El Rey",
+            "Las Cortes Generales",
+            "El Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0021",
+        "pregunta": "Si la moción de censura no fuere aprobada por el Congreso, sus signatarios",
+        "respuesta": "No podrán presentar otra durante el mismo período de sesiones",
+        "opciones": [
+            "Deberán presentar otra durante el mismo período de sesiones",
+            "No podrán presentar otra durante el mismo período de sesiones",
+            "Podrán presentar otra durante el mismo período de sesiones",
+            "Deberán presentar al menos dos durante el mismo período de sesiones"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0022",
+        "pregunta": "El Rey, en los casos fijados en la Constitución, propondrá un candidato a la Presidencia del Gobierno",
+        "respuesta": "A través del Presidente del Congreso",
+        "opciones": [
+            "A través del Presidente del Congreso",
+            "A través del Presidente de las Cortes Generales",
+            "A través de la Diputación Permanente",
+            "De manera directa"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0023",
+        "pregunta": "¿Cuál de los siguientes órganos indicados es un órgano superior de un departamento ministerial?",
+        "respuesta": "El Secretario de Estado",
+        "opciones": [
+            "El Director General",
+            "El Secretario General Técnico",
+            "El Secretario General",
+            "El Secretario de Estado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0024",
+        "pregunta": "El estatuto e incompatibilidades de los miembros del Gobierno se regulará",
+        "respuesta": "Por ley",
+        "opciones": [
+            "Por ley",
+            "Mediante un Real Decreto",
+            "En la Constitución",
+            "Por ley orgánica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0025",
+        "pregunta": "Según el artículo 12 de la Ley del Gobierno, los Vicepresidentes y Ministros serán nombrados y separados por",
+        "respuesta": "El Rey",
+        "opciones": [
+            "El Rey",
+            "El Presidente del Gobierno",
+            "El Congreso de los Diputados",
+            "Las Cortes Generales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0026",
+        "pregunta": "El Secretariado del Gobierno no ejercerá la función",
+        "respuesta": "Velar por la incorrecta y fiel publicación de las disposiciones y normas emanadas del Gobierno que deban insertarse en el BOE",
+        "opciones": [
+            "Velar por la incorrecta y fiel publicación de las disposiciones y normas emanadas del Gobierno que deban insertarse en el BOE",
+            "La asistencia al Minisro-Secretario del Consejo de Ministros",
+            "La colaboración con las Secretarías Técnicas de las Comisiones Delegadas del Gobierno",
+            "El archivo y custodia de las convocatorias, órdenes del día y actas de las reuniones"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0027",
+        "pregunta": "El candidato propuesto solicitará la confianza de",
+        "respuesta": "La Cámara",
+        "opciones": [
+            "Su Grupo Parlamentario",
+            "El pueblo español",
+            "Las Cortes Generales",
+            "La Cámara"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0028",
+        "pregunta": "Las deliberaciones del Consejo de Ministros serán",
+        "respuesta": "Secretas",
+        "opciones": [
+            "Secretas",
+            "Públicas",
+            "Televisadas",
+            "Públicas y televisadas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0029",
+        "pregunta": "¿Qué mayoría será necesaria para otorgar la confianza al candidato la Presidencia del Gobierno en segunda votación?",
+        "respuesta": "La mayoría simple de los miembros del Congreso de los Diputados",
+        "opciones": [
+            "La mayoría absoluta de los miembros del Congreso de los Diputados",
+            "Dos tercios de los miembros del Congreso de los Diputados",
+            "La mayoría simple de los miembros del Congreso de los Diputados",
+            "Dos tercios de los miembros de las Cortes Generales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0030",
+        "pregunta": "Si, en primera votación, el candidato a la Presidencia del Gobierno no obtiene la confianza del Congreso de los Diputados",
+        "respuesta": "Se someterá la misma propuesta a una nueva votación 48 horas después",
+        "opciones": [
+            "Se someterá la misma propuesta a una nueva votación 72 horas después",
+            "El Rey procederá a proponer a un nuevo candidato",
+            "Se repite la votación media hora después",
+            "Se someterá la misma propuesta a una nueva votación 48 horas después"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0031",
+        "pregunta": "La Ministra Portavoz del Gobierno",
+        "respuesta": "Podrá ser convocada a las reuniones de las Comisiones Delegadas del Gobierno si así lo estiman conveniente sus respectivos Presidentes",
+        "opciones": [
+            "Podrá ser convocada a las reuniones de las Comisiones Delegadas del Gobierno si así lo estima conveniente el Presidente del Gobierno",
+            "Deberá ser convocada a las reuniones de las Comisiones Delegadas del Gobierno",
+            "Podrá ser convocada a las reuniones de las Comisiones Delegadas del Gobierno si así lo estiman conveniente sus respectivos Presidentes",
+            "Deberá ser convocada a las reuniones de las Comisiones Delegadas del Gobierno si así lo estima conveniente el Rey"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0032",
+        "pregunta": "Si la acusación al Gobierno fuere por traición o por cualquier delito contra la seguridad del Estado en el ejercicio de sus funciones, solo podrá ser planteada por iniciativa de",
+        "respuesta": "La cuarta parte de los miembros del Congreso",
+        "opciones": [
+            "Dos quintas partes de los miembros del Congreso",
+            "La tercera parte de los miembros del Congreso",
+            "Tres quintas partes de los miembros del Congreso",
+            "La cuarta parte de los miembros del Congreso"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0033",
+        "pregunta": "Al Presidente del Gobierno le corresponde proponer al Rey",
+        "respuesta": "La disolución del Congreso, del Senado o de las Cortes Generales, previa deliberación del Consejo de Ministros",
+        "opciones": [
+            "La disolución del Senado, únicamente, previa deliberación del Consejo de Ministros",
+            "La disolución del Congreso, únicamente, previa deliberación del Consejo de Ministros",
+            "La disolución del Congreso, del Senado o de las Cortes Generales, cuando lo estime oportuno",
+            "La disolución del Congreso, del Senado o de las Cortes Generales, previa deliberación del Consejo de Ministros"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0034",
+        "pregunta": "A propuesta del Presidente del Gobierno, el Consejo de Seguridad Nacional informará a S.M. El Rey",
+        "respuesta": "Al menos una vez al año",
+        "opciones": [
+            "Al menos dos veces al año",
+            "Al menos cuatro veces al año",
+            "Al menos una vez al año",
+            "Al menos tres veces al año"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0035",
+        "pregunta": "¿Quién dirige la política interior y exterior?",
+        "respuesta": "El Gobierno",
+        "opciones": [
+            "Las Cortes Generales",
+            "El Senado",
+            "El Gobierno",
+            "El Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0036",
+        "pregunta": "El Real Decreto de creación de las Comisiones Delegadas del Gobierno no deberá especificar",
+        "respuesta": "Las funciones que no se atribuyen a la Comisión",
+        "opciones": [
+            "Las funciones que no se atribuyen a la Comisión",
+            "El miembro de la Comisión al que corresponde la Secretaría de la misma",
+            "El régimen interno de funcionamiento",
+            "El miembro del Gobierno que asume la presidencia de la Comisión"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0037",
+        "pregunta": "El Gabinete de la Presidencia del Gobierno se regulará por",
+        "respuesta": "Real Decreto del Presidente",
+        "opciones": [
+            "Real Decreto del Presidente",
+            "Ley Orgánica del Gabinete",
+            "Ley Orgánica del Presidente",
+            "Real Decreto del Gabinete"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0038",
+        "pregunta": "A las reuniones del Consejo de Ministros",
+        "respuesta": "Podrán asistir los Secretarios de Estado y excepcionalmente otros altos cargos, cuando sean convocados",
+        "opciones": [
+            "Podrán asistir altos cargos y excepcionalmente los Secretarios de Estado, cuando sean convocados",
+            "Deberán asistir altos cargos y excepcionalmente los Secretarios de Estado, cuando sean convocados",
+            "Podrán asistir los Secretarios de Estado y excepcionalmente otros altos cargos, cuando sean convocados",
+            "Deberán asistir los Secretarios de Estado y excepcionalmente otros altos cargos, cuando sean convocados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0039",
+        "pregunta": "El Presidente del Gobierno dirige la acción del mismo y coordina las funciones de los demás miembros del mismo",
+        "respuesta": "Sin perjuicio de la competencia y responsabilidad directa de éstos en su gestión",
+        "opciones": [
+            "Sin perjuicio de la competencia y responsabilidad directa de éstos en su gestión",
+            "Sin perjuicio de la competencia y responsabilidad directa de éstos en su organización",
+            "Con el perjuicio de la competencia y responsabilidad directa de éstos en su gestión",
+            "Sin perjuicio de la competencia y responsabilidad indirecta de éstos en su organización"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0040",
+        "pregunta": "¿En qué artículo se establece que el Gobierno responde solidariamente en su gestión política ante el Congreso de los Diputados?",
+        "respuesta": "En el artículo 108 de la Constitución",
+        "opciones": [
+            "En el artículo 109 de la Constitución",
+            "En el artículo 108 de la Constitución",
+            "En el artículo 113 de la Constitución",
+            "En el artículo 107 de la Constitución"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0041",
+        "pregunta": "¿Qué Título de la Constitución está dedicado a las relaciones entre el Gobierno y las Cortes Generales?",
+        "respuesta": "Título V",
+        "opciones": [
+            "Título III",
+            "Título IV",
+            "Título VI",
+            "Título V"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0042",
+        "pregunta": "Para un adecuado ejercicio de sus funciones la convocatoria podrá hacerse únicamente a los miembros con competencias más directamente relacionadas con los temas a tratar en el orden del día, a decisión de",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "El Rey",
+            "La Ministra de Hacienda",
+            "La Ministra de Asuntos Exteriores, Unión Europea y Cooperación",
+            "El Presidente del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0043",
+        "pregunta": "La declaración de los estados de alarma, de excepción y de sitio",
+        "respuesta": "No modificará el principio de responsabilidad del Gobierno",
+        "opciones": [
+            "Modificará el principio de responsabilidad del Presidente del Gobierno durante la vigencia de los mismos",
+            "Modificará el principio de responsabilidad del Gobierno durante la vigencia de los mismos",
+            "Solo modificará el principio de responsabilidad de los agentes del Gobierno",
+            "No modificará el principio de responsabilidad del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0044",
+        "pregunta": "¿En qué plazo disolverá el Rey ambas Cámaras y convocará nuevas elecciones si ningún candidato a la Presidencia del Gobierno hubiere obtenido la confianza del Congreso de los Diputados?",
+        "respuesta": "En el plazo de dos meses, a partir de la primera votación de investidura",
+        "opciones": [
+            "En el plazo de dos meses, a partir de la primera votación de investidura",
+            "En el plazo de tres meses, a partir de la celebración de las elecciones generales",
+            "En el plazo de dos meses, a partir de la celebración de las elecciones generales",
+            "En el plazo de tres meses, a partir de la primera votación de investidura"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0045",
+        "pregunta": "El Gobierno se compone",
+        "respuesta": "Del Presidente, del Vicepresidente o Vicepresidentes, en su caso, y de los Ministros",
+        "opciones": [
+            "Del Presidente, dos Vicepresidentes y de los Ministros",
+            "Del Presidente, del Vicepresidente o Vicepresidentes, en su caso, y de los Ministros",
+            "Del Presidente, Vicepresidente y de los Ministros",
+            "Del Presidente, tres Vicepresidentes y de los Ministros"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0046",
+        "pregunta": "El Gobierno en funciones podrá ejercer lo siguiente:",
+        "respuesta": "Facilitar el normal desarrollo del proceso de formación del nuevo Gobierno",
+        "opciones": [
+            "Aprobar el Proyecto de Ley de Presupuestos Generales del Estado",
+            "Plantear la cuestión de confaianza",
+            "Proponer al Rey la convocatoria de un referéndum consultivo",
+            "Facilitar el normal desarrollo del proceso de formación del nuevo Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0047",
+        "pregunta": "¿Qué ocurre si en segunda votación, el candidato no obtiene la confianza del Congreso de los Diputados?",
+        "respuesta": "Se tramitarán sucesivas propuestas a la forma prevista en la Constitución",
+        "opciones": [
+            "Se disolverán las Cámaras y se procederá a la convocatoria de nuevas elecciones",
+            "El Rey procederá a nombrar Presidente del Gobierno al representante del Grupo Parlamentario con mayor representación en el Congreso de los Diputados",
+            "Se procederá a una tercera y última votación",
+            "Se tramitarán sucesivas propuestas a la forma prevista en la Constitución"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0048",
+        "pregunta": "¿Qué mayoría será necesaria para otorgar la confianza al candidato la Presidencia del Gobierno en primera votación?",
+        "respuesta": "La mayoría absoluta de los miembros del Congreso de los Diputados",
+        "opciones": [
+            "La mayoría simple de los miembros del Congreso de los Diputados",
+            "Dos tercios de los miembros de las Cortes Generales",
+            "Dos tercios de los miembros del Congreso de los Diputados",
+            "La mayoría absoluta de los miembros del Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0049",
+        "pregunta": "¿Qué Título de la Constitución está dedicado a la regulación del Gobierno?",
+        "respuesta": "Título IV",
+        "opciones": [
+            "Título IV",
+            "Título V",
+            "Título III",
+            "Título VI"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0050",
+        "pregunta": "Corresponde a las Comisiones Delegadas del Gobierno el ejercicio de las funciones previstas en",
+        "respuesta": "El artículo 6.4 de la Ley 50/1997",
+        "opciones": [
+            "El artículo 6.4 de la Ley 50/1996",
+            "El artículo 6.4 de la Ley 50/1997",
+            "El artículo 6.4 de la Ley 50/1998",
+            "El artículo 6.4 de la Ley 50/1999"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0051",
+        "pregunta": "¿Ante quién se plantea la cuestión de confianza, según el artículo 112?",
+        "respuesta": "Ante el Congreso de los Diputados",
+        "opciones": [
+            "Ante el Rey",
+            "Ente el Presidente del Gobierno",
+            "Ante las Cámaras",
+            "Ante el Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0052",
+        "pregunta": "¿En qué artículo se regula la responsabilidad criminal del Presidente y los demás miembros del Gobierno?",
+        "respuesta": "En el artículo 102 de la Constitución",
+        "opciones": [
+            "En el artículo 107 de la Constitución",
+            "En el artículo 102 de la Constitución",
+            "En el artículo 113 de la Constitución",
+            "En el artículo 109 de la Constitución"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0053",
+        "pregunta": "El Consejo de Seguridad Nacional se reunirá a iniciativa de",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "El Congreso de los Diputados",
+            "El Rey",
+            "El Presidente del Gobierno",
+            "El consejo de Ministros"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0054",
+        "pregunta": "El  Consejo de Seguridad Nacional se reunirá",
+        "respuesta": "Como mínimo con carácter bimestral o cuantas veces lo considere necesario",
+        "opciones": [
+            "Como mínimo con carácter anual o cuantas veces lo considere necesario",
+            "Como mínimo con carácter trimestral o cuantas veces lo considere necesario",
+            "Como mínimo con carácter bimestral o cuantas veces lo considere necesario",
+            "Como mínimo con carácter semestral o cuantas veces lo considere necesario"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0055",
+        "pregunta": "Declarado el estado de alarma",
+        "respuesta": "Se dará cuenta al Congreso de los Diputados, sin cuya autorización no podrá ser prorrogado dicho plazo",
+        "opciones": [
+            "Se dará cuenta al Consejo de Ministros, sin cuya autorización no podrá ser prorrogado dicho plazo",
+            "Se dará cuenta al Congreso de los Diputados, siendo improrrogable el plazo inicialmente marcado para la duración",
+            "Se dará cuenta al Rey, sin cuya autorización no podrá ser prorrogado dicho plazo",
+            "Se dará cuenta al Congreso de los Diputados, sin cuya autorización no podrá ser prorrogado dicho plazo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0056",
+        "pregunta": "Al Presidente del Gobierno le corresponde proponer al Rey",
+        "respuesta": "Crear, modificar y suprimir, por Real Decreto, los Departamentos Ministeriales así como las Secretarías de Estado",
+        "opciones": [
+            "Crear, modificar y suprimir, por Real Decreto, los Departamentos Ministeriales así como las Secretarías de Estado",
+            "Crear, modificar y suprimir, por Real Decreto, las Secretarías de Estado, únicamente",
+            "Crear, modificar y suprimir, por ley, los Departamentos Ministeriales así como las Secretarías de Estado",
+            "Crear, modificar y suprimir, por ley orgánica, los Departamentos Ministeriales así como las Secretarías de Estado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0057",
+        "pregunta": "¿Quién dirige la acción del Gobierno?",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "El Congreso de los Diputados",
+            "El Consejo de Ministros",
+            "El Presidente del Gobierno",
+            "Las Cortes Generales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0058",
+        "pregunta": "¿A quién le corresponde dirigir la política de defensa y ejercer respecto de las Fuerzas Armadas las funciones preistas en la legislación reguladora de la defensa nacional y de la organización militar?",
+        "respuesta": "Al Presidente del Gobierno",
+        "opciones": [
+            "Al Rey",
+            "Al Consejo de Ministros",
+            "Al Presidente del Gobierno",
+            "A las Cortes Generales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0059",
+        "pregunta": "La creación, modificación y supresión de las Comisiones Delegadas del Gobierno se acuerda por",
+        "respuesta": "El Consejo de Ministros",
+        "opciones": [
+            "El Presidente del Gobierno",
+            "El Consejo de Ministros",
+            "Las Cortes Generales",
+            "El Rey"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0060",
+        "pregunta": "La creación, modificación y supresión de las Comisiones Delegadas del Gobierno se acuerda a propuesta de",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "Las Cortes Generales",
+            "El Rey",
+            "El Consejo de Ministros",
+            "El Presidente del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0061",
+        "pregunta": "¿Quién propone al candidato a la Presidencia del Gobierno?",
+        "respuesta": "El Rey, previa consulta con los representantes designados por los Grupos Políticos con representación parlamentaria",
+        "opciones": [
+            "El Presidente del Congreso, previa consulta con los representantes designados por los Grupos Políticos con representación parlamentaria",
+            "El Presidente del Congreso, previa consulta al Rey y a los representantes designados por los Grupos Políticos con representación parlamentaria",
+            "El Rey, previa consulta con los Portavoces de los Grupos Políticos que concurrieron a las elecciones",
+            "El Rey, previa consulta con los representantes designados por los Grupos Políticos con representación parlamentaria"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0062",
+        "pregunta": "Las interpelaciones al Gobierno de la Nación pueden dar lugar, por sí mismas, a",
+        "respuesta": "Una moción",
+        "opciones": [
+            "Una moción de censura y cuestión de confianza",
+            "Una cuestión de confianza",
+            "Una moción de censura",
+            "Una moción"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0063",
+        "pregunta": "El candidato a la Presidencia del Gobierno expondrá el programa político del Gobierno ante",
+        "respuesta": "El Congreso de los Diputados",
+        "opciones": [
+            "El Rey",
+            "El Congreso de los Diputados y el Rey",
+            "El Senado",
+            "El Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0064",
+        "pregunta": "Las deliberaciones de la Comisión General de Secretarios de Estado y Subsecretarios serán",
+        "respuesta": "Reservadas",
+        "opciones": [
+            "Reservadas",
+            "Anónimas",
+            "Secretas",
+            "Públicas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0065",
+        "pregunta": "Los Secretarios de Estado, cuando estén adscritos a la Presidencia del Gobierno, actúan bajo la dirección de",
+        "respuesta": "El Presidente",
+        "opciones": [
+            "La Ministra de la Presidencia",
+            "El Presidente",
+            "El Rey",
+            "El Ministro de Interior"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0066",
+        "pregunta": "¿Quién asumirá las competencias del Congreso, se encontrara disuelto o hubiera expirado su mandato, si se produjere alguna de las situaciones que dan lugar a cualquiera de los estados recogidos en el artículo 116?",
+        "respuesta": "La Diputación Permanente del Congreso de los Diputados",
+        "opciones": [
+            "El Senado",
+            "El Gobierno y de sus Departamentos",
+            "La Diputación Permanente del Congreso de los Diputados",
+            "La Mesa en funciones del Congreso de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0067",
+        "pregunta": "El Secretariado del Gobierno no ejercerá la función",
+        "respuesta": "La tramitación de los actos y disposiciones que el ordenamiento administrativo atribuye a la competencia del Presidente del Gobierno",
+        "opciones": [
+            "La tramitación de los actos y disposiciones que el ordenamiento jurídico atribuye a la competencia del Presidente del Gobierno",
+            "La tramitación de los actos y disposiciones que el ordenamiento administrativo atribuye a la competencia del Presidente del Gobierno",
+            "Los trámites relativos a la sanción y promulgación real de las leyes aprobadas por las Cortes Generales y la expedición de los Reales Decretos",
+            "La tramitación de los actos y disposiciones del Rey cuyo refrendo corresponde al Presidente del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0068",
+        "pregunta": "Los miembros del Gobierno",
+        "respuesta": "No podrán ejercer otra función pública que no derive de su cargo, ni actividad profesional o mercantil alguna",
+        "opciones": [
+            "Únicamente podrán ejercer otra función pública que no derive de su cargo, o actividad profesional o mercantil alguna, cuando sean autorizados por el Consejo de Ministros",
+            "Únicamente podrán ejercer actividades profesionales o mercantiles, no siendo posible ejercer otra función pública que no derive de su cargo",
+            "Podrán ejercer otra función pública, pero no podrán ejercer actividad profesional o mercantil alguna",
+            "No podrán ejercer otra función pública que no derive de su cargo, ni actividad profesional o mercantil alguna"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0069",
+        "pregunta": "En relación con el estado de excepción, su duración no podrá exceder",
+        "respuesta": "De treinta días, prorrogables por otro plazo igual",
+        "opciones": [
+            "De treinta días, prorrogables por otro plazo igual",
+            "De quince días, improrrogables",
+            "De treinta días, improrrogables",
+            "De quince días, prorrogables por otro plazo igual"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0070",
+        "pregunta": "La confianza se entenderá otorgada cuando vote a favor de la misma",
+        "respuesta": "La mayoría simple de los Diputados",
+        "opciones": [
+            "Tres quintas partes de los Diputados",
+            "La mayoría simple de los Diputados",
+            "Dos quintas partes de los Diputados",
+            "La mayoría absoluta de los Diputados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0071",
+        "pregunta": "Las Cámaras y sus Comisiones podrán recabar, a través de los Presidentes de aquellas, la información y ayuda que precisen de",
+        "respuesta": "El Gobierno y de sus Departamentos y de cualesquiera Autoridades del Estado y de las Comunidades Autónomas",
+        "opciones": [
+            "El Gobierno y de cualesquiera Autoridades del Estado y de las Comunidades Autónomas",
+            "El Gobierno y de sus Departamentos y de cualesquiera Autoridades del Estado y de las Comunidades Autónomas",
+            "El Gobierno y de sus Departamentos",
+            "El Gobierno y de las Comunidades Autónomas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0072",
+        "pregunta": "¿Quién acordará la convocatoria de sus reuniones y la fijación del orden del día de cada Comisión Delegada?",
+        "respuesta": "Su Presidente",
+        "opciones": [
+            "Su Vicepresidente",
+            "El Presidente del Gobierno",
+            "Su Presidente",
+            "Su Secretario"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0073",
+        "pregunta": "La Comisión Delegada del Gobierno para Asuntos de Inteligencia será presidida por",
+        "respuesta": "Vicepresidenta Primera del Gobierno y Ministra de Hacienda",
+        "opciones": [
+            "La Ministra de Asuntos Exteriores, Unión Europea y Cooperación",
+            "La Ministra de la Presidencia, Relaciones con las Cortes y Memoria Democrática",
+            "El Presidente del Gobierno",
+            "Vicepresidenta Primera del Gobierno y Ministra de Hacienda"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0074",
+        "pregunta": "¿Quién determinará el ámbito territorial, duración y condiciones del estado de sitio?",
+        "respuesta": "El Congreso de los Diputados",
+        "opciones": [
+            "Las Cortes Generales",
+            "El Congreso de los Diputados",
+            "El Gobierno, de acuerdo con las Cortes Generales",
+            "El Congreso de los Diputados, a propuesta del Gobierno"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0075",
+        "pregunta": "¿Cuál es el supremo órgano consultivo del Gobierno?",
+        "respuesta": "El Consejo de Estado",
+        "opciones": [
+            "El Consejo de Ministros",
+            "La Comisión de Secretarios y Subsecretarios de Estado",
+            "El Consejo de Estado",
+            "Los Gabinetes de Presidencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0076",
+        "pregunta": "¿Dónde se establece que el Consejo de Estado tiene su sede en el Palacio de los Consejos de Madrid?",
+        "respuesta": "En la Ley Orgánica 3/1980",
+        "opciones": [
+            "En la Ley Orgánica 3/1986",
+            "En la Ley Orgánica 3/1995",
+            "En la Ley Orgánica 3/2003",
+            "En la Ley Orgánica 3/1980"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0077",
+        "pregunta": "El Estado de alarma será declarado por el Gobierno por un plazo máximo",
+        "respuesta": "De quince días prorrogables",
+        "opciones": [
+            "De veinte días prorrogables",
+            "De quince días prorrogables",
+            "De siete días prorrogables",
+            "De treinta días prorrogables"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0078",
+        "pregunta": "El Consejo de Seguridad Nacional lo presidirá",
+        "respuesta": "El Presidente del Gobierno, excepto cuando S.M. El Rey asista a sus reuniones",
+        "opciones": [
+            "La Ministra de Asuntos Exteriores, Unión Europea y Cooperación",
+            "La Ministra de Hacienda",
+            "El Presidente del Gobierno, excepto cuando S.M. El Rey asista a sus reuniones",
+            "El Presidente del Gobierno, únicamente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0079",
+        "pregunta": "El Gobierno de la Nación, en relación con los Presupuestos Generales del Estado",
+        "respuesta": "Aprueba su Proyecto de Ley",
+        "opciones": [
+            "Los convalida",
+            "Los ratifica",
+            "Los aprueba",
+            "Aprueba su Proyecto de Ley"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0080",
+        "pregunta": "Según el art.113 el Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción",
+        "respuesta": "Por mayoría absoluta de la moción de censura",
+        "opciones": [
+            "Por la mayoría simple de la moción de censura",
+            "Por la mayoría simple de la cuestión de confianza",
+            "Por mayoría absoluta de la moción de censura",
+            "Por la mayoría absoluta de la cuestión de confianza"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0081",
+        "pregunta": "Entre las funciones del Consejo de Ministros se encuentra la de",
+        "respuesta": "Declarar los estados de alarma y de excepción y proponer al Congreso de los Diputados la declaración del estado de sitio",
+        "opciones": [
+            "Declarar los estados de alarma y de excepción y proponer al Congreso de los Diputados la declaración del estado de sitio",
+            "Declarar los estados de alarma, de excepción y de sitio",
+            "Declarar los estados de sitio y de excepción y proponer al Congreso de los Diputados la declaración del estado de alarma",
+            "Declarar los estados de alarma y de sitio y proponer al Congreso de los Diputados la declaración del estado de excepción"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0082",
+        "pregunta": "¿Dónde se establece que el Consejo de Estado no está integrado en ninguno de los Departamentos Ministeriales?",
+        "respuesta": "En el art.1 del Reglamento Orgánico del Consejo de Estado",
+        "opciones": [
+            "En el art.1 del Reglamento Orgánico del Consejo de Estado",
+            "En el art.7 del Reglamento Orgánico del Consejo de Estado",
+            "En el art.1 del Reglamento Interno del Consejo de Estado",
+            "En el art.7 del Reglamento Interno del Consejo de Estado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0083",
+        "pregunta": "El Gobierno y cada uno de sus miembros están sometidos a las interpelaciones y preguntas que se le formulen en",
+        "respuesta": "Las Cámaras",
+        "opciones": [
+            "Las Cámaras",
+            "Las Mesas",
+            "El Pleno",
+            "El Juicio"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-3-0084",
+        "pregunta": "Se podrán crear Comités Especializados en los ámbitos de actuación identificados en la Estrategia de Seguridad Nacional por iniciativa de",
+        "respuesta": "El Consejo de Seguridad Nacional",
+        "opciones": [
+            "El Congreso de los Diputados",
+            "El Rey",
+            "El Consejo de Seguridad Nacional",
+            "El Consejo de Ministros"
+        ]
+    }
+]

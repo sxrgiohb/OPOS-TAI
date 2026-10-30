@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-i-tema-7-0000",
+        "pregunta": "Según establece el Art. 22 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿quién tendrá derecho a no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la elaboración de perfiles, que produzca efectos jurídicos en él o le afecte significativamente de modo similar?",
+        "respuesta": "Todo interesado",
+        "opciones": [
+            "Los interesados con mayor poder adquisitivo",
+            "Todo interesado",
+            "Los interesados con menor poder adquisitivo",
+            "Nadie"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0001",
+        "pregunta": "Según establece el Art. 17 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de los siguientes derechos se ejercerá de acuerdo con lo establecido en el artículo 20 del Reglamento (UE) 2016/679?",
+        "respuesta": "El derecho a la portabilidad",
+        "opciones": [
+            "El derecho de oposición",
+            "El derecho a la limitación del tratamiento",
+            "El derecho de supresión",
+            "El derecho a la portabilidad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0002",
+        "pregunta": "Según establece el Art. 33 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cómo se denomina a quien en su propio nombre y sin que conste que actúa por cuenta de otro, establezca relaciones con los afectados aun cuando exista un contrato o acto jurídico con el contenido fijado en el artículo 28.3 del Reglamento (UE) 2016/679?",
+        "respuesta": "Responsable del tratamiento",
+        "opciones": [
+            "Encargado",
+            "Apoderado",
+            "Responsable del tratamiento",
+            "Interesado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0003",
+        "pregunta": "Según establece el Art. 14 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de los siguientes datos no serán facilitados por parte del responsable del tratamiento, cuando los datos personales no se hayan obtenido del interesado?",
+        "respuesta": "La identidad y los datos de contacto del interesado y, en su caso, de su representante",
+        "opciones": [
+            "Las categorías de datos personales de que se trate",
+            "La identidad y los datos de contacto del interesado y, en su caso, de su representante",
+            "La identidad y los datos de contacto del responsable y, en su caso, de su representante",
+            "En su caso, la intención del responsable de transferir datos personales a un destinatario en un tercer país u organización internacional y la existencia o ausencia de una decisión de adecuación de la Comisión, o, en el caso de las transferencias indicadas en los artículos 46 o 47 o el artículo 49, apartado 1, párrafo segundo, referencia a las garantías adecuadas o apropiadas y a los medios para obtener una copia de ellas o al hecho de que se hayan prestado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0004",
+        "pregunta": "Según establece el Art. 44 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es una autoridad administrativa independiente de ámbito estatal, de las previstas en la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, con personalidad jurídica y plena capacidad pública y privada, que actúa con plena independencia de los poderes públicos en el ejercicio de sus funciones?",
+        "respuesta": "La Agencia Española de Protección de Datos",
+        "opciones": [
+            "El Consejo General del Poder Judicial",
+            "El Consejo de Estado",
+            "La Agencia Española de Protección de Datos",
+            "El Comité Económico y Social"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0005",
+        "pregunta": "Según establece el Art. 1 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "La libre circulación de los datos personales en la Unión no podrá ser restringida ni prohibida por motivos relacionados con la protección de las personas físicas en lo que respecta al tratamiento de datos personales",
+        "opciones": [
+            "La libre circulación de los datos personales en la Unión podrá ser restringida pero no prohibida por motivos relacionados con la protección de las personas físicas en lo que respecta al tratamiento de datos personales",
+            "La libre circulación de los datos personales en la Unión no podrá ser restringida pero si prohibida por motivos relacionados con la protección de las personas físicas en lo que respecta al tratamiento de datos personales",
+            "La libre circulación de los datos personales en la Unión podrá ser restringida y prohibida por motivos relacionados con la protección de las personas físicas en lo que respecta al tratamiento de datos personales",
+            "La libre circulación de los datos personales en la Unión no podrá ser restringida ni prohibida por motivos relacionados con la protección de las personas físicas en lo que respecta al tratamiento de datos personales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0006",
+        "pregunta": "Según establece el Art. 21 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿en cuál de los siguientes casos el interesado tendrá derecho a oponerse en todo momento al tratamiento de los datos personales que le conciernan, incluida la elaboración de perfiles en la medida en que esté relacionada con la citada mercadotecnia?",
+        "respuesta": "Cuando el tratamiento de datos personales tenga por objeto la mercadotecnia directa",
+        "opciones": [
+            "Cuando el tratamiento de datos personales tenga por objeto la mercadotecnia directa",
+            "Cuando el tratamiento de datos personales tenga por objeto la mercadotecnia indirecta",
+            "Cuando el tratamiento de datos personales no tenga por objeto la mercadotecnia directa",
+            "Cuando el tratamiento de datos personales no tenga ningún fin"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0007",
+        "pregunta": "Según establece el Art. 6 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cómo se denomina a toda manifestación de voluntad libre, específica, informada e inequívoca por la que este acepta, ya sea mediante una declaración o una clara acción afirmativa, el tratamiento de datos personales que le conciernen, de conformidad con lo dispuesto en el artículo 4.11 del Reglamento (UE) 2016/679?",
+        "respuesta": "Consentimiento del afectado",
+        "opciones": [
+            "Desaprobación del afectado",
+            "Consentimiento del afectado",
+            "Desapoderamiento del afectado",
+            "Desacuerdo del afectado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0008",
+        "pregunta": "Según establece el Art. 7 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuándo pondrá fundarse en su consentimiento el tratamiento de los datos personales de un menor de edad?",
+        "respuesta": "Cuando sea mayor de catorce años",
+        "opciones": [
+            "Cuando sea mayor de doce años",
+            "Cuando sea mayor de catorce años",
+            "Cuando sea mayor de diez años",
+            "Cuando sea mayor de dieciséis años"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0009",
+        "pregunta": "Según establece el Art. 48 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿por quiénes serán nombrados la Presidencia de la Agencia Española de Protección de Datos y su Adjunto?",
+        "respuesta": "Por el Gobierno, a propuesta del Ministerio de Justicia, entre personas de reconocida competencia profesional, en particular en materia de protección de datos",
+        "opciones": [
+            "Por el Gobierno, a propuesta del Ministerio de Hacienda, entre personas de reconocida competencia profesional, en particular en materia de protección de datos",
+            "Por el Gobierno, a propuesta del Ministerio de la Presidencia, entre personas de reconocida competencia profesional, en particular en materia de protección de datos",
+            "Por el Gobierno, a propuesta del Ministerio de Justicia, entre personas de reconocida competencia profesional, en particular en materia de protección de datos",
+            "Por el Gobierno, a propuesta del Ministerio de Patrimonio, entre personas de reconocida competencia profesional, en particular en materia de protección de datos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0010",
+        "pregunta": "Según establece el Art. 31 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿quiénes harán público un inventario de sus actividades de tratamiento accesible por medios electrónicos en el que constará la información establecida en el artículo 30 del Reglamento (UE) 2016/679 y su base legal?",
+        "respuesta": "Los sujetos enumerados en el artículo 77.1 de esta ley orgánica",
+        "opciones": [
+            "Los sujetos enumerados en el artículo 27.1 de esta ley orgánica",
+            "Los sujetos enumerados en el artículo 57.1 de esta ley orgánica",
+            "Los sujetos enumerados en el artículo 77.1 de esta ley orgánica",
+            "Los sujetos enumerados en el artículo 7.1 de esta ley orgánica"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0011",
+        "pregunta": "Según establece el Art. 1 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones no es un objetivo de la presente ley orgánica, ya que es incorrecto o falso?",
+        "respuesta": "Adaptar el ordenamiento jurídico español al Reglamento (UE) 2006/619 del Parlamento Europeo y el Consejo, de 20 de abril de 2006, relativo a la protección de las personas físicas en lo que respecta al tratamiento de sus datos personales y a la libre circulación de estos datos, y completar sus disposiciones",
+        "opciones": [
+            "Garantizar los derechos digitales de la ciudadanía conforme al mandato establecido en el artículo 18.4 de la Constitución",
+            "Proteger los derechos digitales de la ciudadanía conforme al mandato establecido en el artículo 18.4 de la Constitución",
+            "Adaptar el ordenamiento jurídico español al Reglamento (UE) 2006/619 del Parlamento Europeo y el Consejo, de 20 de abril de 2006, relativo a la protección de las personas físicas en lo que respecta al tratamiento de sus datos personales y a la libre circulación de estos datos, y completar sus disposiciones",
+            "Adaptar el ordenamiento jurídico español al Reglamento (UE) 2016/679 del Parlamento Europeo y el Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de sus datos personales y a la libre circulación de estos datos, y completar sus disposiciones"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0012",
+        "pregunta": "Según establece el Art. 45 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El Gobierno, a propuesta de la Agencia Española de Protección de Datos, aprobará su Estatuto mediante real decreto",
+        "opciones": [
+            "El Gobierno, a propuesta de la Comisión Europea de Protección de Datos, aprobará su Estatuto mediante ordenanza",
+            "El Gobierno, a propuesta de la Agencia Europea de Protección de Datos, aprobará su Estatuto mediante normativa",
+            "El Gobierno, a propuesta del Consejo General del Poder Judicial, aprobará su Estatuto mediante directiva",
+            "El Gobierno, a propuesta de la Agencia Española de Protección de Datos, aprobará su Estatuto mediante real decreto"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0013",
+        "pregunta": "Según establece el Art. 96 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones no es una regla con la que el acceso a contenidos gestionados por prestadores de servicios de la sociedad de la información sobre personas fallecidas se deba regir, ya que es incorrecta o falsa?",
+        "respuesta": "Las personas vinculadas al fallecido por razones familiares o de hecho, así como sus herederos no podrán dirigirse a los prestadores de servicios de la sociedad de la información al objeto de acceder a dichos contenidos e impartirles las instrucciones que estimen oportunas sobre su utilización, destino o supresión",
+        "opciones": [
+            "Las personas vinculadas al fallecido por razones familiares o de hecho, así como sus herederos no podrán dirigirse a los prestadores de servicios de la sociedad de la información al objeto de acceder a dichos contenidos e impartirles las instrucciones que estimen oportunas sobre su utilización, destino o supresión",
+            "El albacea testamentario así como aquella persona o institución a la que el fallecido hubiese designado expresamente para ello también podrá solicitar, con arreglo a las instrucciones recibidas, el acceso a los contenidos con vistas a dar cumplimiento a tales instrucciones",
+            "En caso de fallecimiento de personas con discapacidad, estas facultades podrán ejercerse también, además de por quienes señala la letra anterior, por quienes hubiesen sido designados para el ejercicio de funciones de apoyo si tales facultades se entendieran comprendidas en las medidas de apoyo prestadas por el designado",
+            "En caso de personas fallecidas menores de edad, estas facultades podrán ejercerse también por sus representantes legales o, en el marco de sus competencias, por el Ministerio Fiscal, que podrá actuar de oficio o a instancia de cualquier persona física o jurídica interesada"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0014",
+        "pregunta": "Según establece el Art. 30 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "En los supuestos en que el Reglamento (UE) 2016/679 sea aplicable a un responsable o encargado del tratamiento no establecido en la Unión Europea en virtud de lo dispuesto en su artículo 3.2 y el tratamiento se refiera a afectados que se hallen en España, la Agencia Española de Protección de Datos o, en su caso, las autoridades autonómicas de protección de datos podrán imponer al representante, solidariamente con el responsable o encargado del tratamiento, las medidas establecidas en el Reglamento (UE) 2016/679",
+        "opciones": [
+            "En los supuestos en que el Reglamento (UE) 2016/679 sea aplicable a un responsable o encargado del tratamiento no establecido en la Unión Europea en virtud de lo dispuesto en su artículo 23.2 y el tratamiento se refiera a afectados que no se hallen en España, la Agencia Española de Protección de Datos o, en su caso, las autoridades autonómicas de protección de datos podrán imponer al representante, solidariamente con el responsable o encargado del tratamiento, las medidas establecidas en el Reglamento (UE) 2016/609",
+            "En los supuestos en que el Reglamento (UE) 2016/679 sea aplicable a un responsable o encargado del tratamiento no establecido en la Unión Europea en virtud de lo dispuesto en su artículo 13.2 y el tratamiento se refiera a afectados que se hallen en España, la Agencia Europea de Protección de Datos o, en su caso, las autoridades autonómicas de protección de datos podrán imponer al representante, solidariamente con el responsable o encargado del tratamiento, las medidas establecidas en el Reglamento (UE) 2006/679",
+            "En los supuestos en que el Reglamento (UE) 2016/679 sea aplicable a un responsable o encargado del tratamiento no establecido en la Unión Europea en virtud de lo dispuesto en su artículo 33.2 y el tratamiento se refiera a afectados que se hallen en España, la Agencia Española de Protección de Datos o, en su caso, las autoridades autonómicas de protección de datos podrán imponer al no representante, solidariamente con el responsable o encargado del tratamiento, las medidas establecidas en el Reglamento (UE) 2006/679",
+            "En los supuestos en que el Reglamento (UE) 2016/679 sea aplicable a un responsable o encargado del tratamiento no establecido en la Unión Europea en virtud de lo dispuesto en su artículo 3.2 y el tratamiento se refiera a afectados que se hallen en España, la Agencia Española de Protección de Datos o, en su caso, las autoridades autonómicas de protección de datos podrán imponer al representante, solidariamente con el responsable o encargado del tratamiento, las medidas establecidas en el Reglamento (UE) 2016/679"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0015",
+        "pregunta": "Según establece el Art. 97 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El Gobierno presentará un informe anual ante la comisión parlamentaria correspondiente del Congreso de los Diputados en el que se dará cuenta de la evolución de los derechos, garantías y mandatos contemplados en el presente Título y de las medidas necesarias para promover su impulso y efectividad",
+        "opciones": [
+            "El Gobierno presentará un informe anual ante la comisión parlamentaria correspondiente del Congreso de los Diputados en el que se dará cuenta de la evolución de los derechos, garantías y mandatos contemplados en el presente Título y de las medidas necesarias para promover su impulso y efectividad",
+            "El Gobierno presentará un informe semanal ante la comisión parlamentaria correspondiente del Tribunal Constitucional en el que se dará cuenta de la evolución de los derechos, garantías y mandatos contemplados en el presente Título y de las medidas necesarias para promover su impulso y efectividad",
+            "El Gobierno presentará un informe mensual ante la comisión parlamentaria correspondiente del Comité Económico y Social en el que se dará cuenta de la evolución de los derechos, garantías y mandatos contemplados en el presente Título y de las medidas necesarias para promover su impulso y efectividad",
+            "El Gobierno presentará un informe diario ante la comisión parlamentaria correspondiente del Senado en el que se dará cuenta de la evolución de los derechos, garantías y mandatos contemplados en el presente Título y de las medidas necesarias para promover su impulso y efectividad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0016",
+        "pregunta": "Según establece el Art. 12 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El responsable del tratamiento estará obligado a informar al afectado sobre los medios a su disposición para ejercer los derechos que le corresponden. Los medios deberán ser fácilmente accesibles para el afectado. El ejercicio del derecho no podrá ser denegado por el solo motivo de optar el afectado por otro medio",
+        "opciones": [
+            "El responsable del tratamiento estará obligado a informar al afectado sobre los medios a su disposición para ejercer los derechos que le corresponden. Los medios deberán ser fácilmente accesibles para el afectado. El ejercicio del derecho podrá ser denegado por el solo motivo de optar el afectado por otro medio",
+            "El responsable del tratamiento no estará obligado a informar al afectado sobre los medios a su disposición para ejercer los derechos que le corresponden. Los medios deberán ser fácilmente inaccesibles para el afectado. El ejercicio del derecho no podrá ser denegado por el solo motivo de optar el afectado por otro medio",
+            "El responsable del tratamiento estará obligado a informar al afectado sobre los medios a su disposición para ejercer los derechos que le corresponden. Los medios deberán ser fácilmente accesibles para el afectado. El ejercicio del derecho no podrá ser denegado por el solo motivo de optar el afectado por otro medio",
+            "El responsable del tratamiento no estará obligado a informar al afectado sobre los medios a su disposición para ejercer los derechos que le corresponden. Los medios deberán ser fácilmente accesibles para el afectado. El ejercicio del derecho no podrá ser denegado por el solo motivo de optar el afectado por otro medio"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0017",
+        "pregunta": "Según establece el Art. 4 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de las siguientes opciones es el tratamiento de datos personales de manera tal que ya no puedan atribuirse a un interesado sin utilizar información adicional, siempre que dicha información adicional figure por separado y esté sujeta a medidas técnicas y organizativas destinadas a garantizar que los datos personales no se atribuyan a una persona física identificada o identificable?",
+        "respuesta": "Seudonimización",
+        "opciones": [
+            "Pseudominación",
+            "Seudonimización",
+            "Seudominicación",
+            "Pseudomininación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0018",
+        "pregunta": "Según establece el Art. 20 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de las siguientes opciones es correcta o verdadera? \"_____\"",
+        "respuesta": "El interesado tendrá derecho a recibir los datos personales que le incumban, que haya facilitado a un responsable del tratamiento, en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del\ntratamiento sin que lo impida el responsable al que se los hubiera facilitado\" \"",
+        "opciones": [
+            "El interesado tendrá derecho a recibir los datos personales que le incumban, que haya facilitado a un responsable del tratamiento, en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del\ntratamiento sin que lo impida el responsable al que se los hubiera facilitado\" \"",
+            "El interesado no tendrá derecho a recibir los datos personales que le incumban, que haya facilitado a un responsable del tratamiento, en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del\ntratamiento sin que lo impida el responsable al que se los hubiera facilitado\" \"",
+            "El interesado tendrá derecho a recibir los datos personales que le incumban, aunque no los haya facilitado a un responsable del tratamiento, en un formato estructurado, de uso común y lectura mecánica, pero no a transmitirlos a otro responsable del\ntratamiento",
+            "El interesado tendrá derecho a recibir los datos personales que no le incumban, que haya facilitado a un responsable del tratamiento, en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del\ntratamiento sin que lo impida el responsable al que se los hubiera facilitado\" \""
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0019",
+        "pregunta": "Según establece el Art. 18 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), el interesado no tendrá derecho a obtener del responsable del tratamiento la limitación del tratamiento de los datos cuando se cumpla ¿cuál de las siguientes condiciones?",
+        "respuesta": "El tratamiento sea lícito y el interesado no se oponga a la supresión de los datos personales y solicite en su lugar la limitación de su uso",
+        "opciones": [
+            "El interesado impugne la exactitud de los datos personales, durante un plazo que permita al responsable verificar la exactitud de los mismos",
+            "El responsable ya no necesite los datos personales para los fines del tratamiento, pero el interesado los necesite para la formulación, el ejercicio o la defensa de reclamaciones",
+            "El interesado se haya opuesto al tratamiento en virtud del artículo 21, apartado 1, mientras se verifica si los motivos legítimos del responsable prevalecen sobre los del interesado",
+            "El tratamiento sea lícito y el interesado no se oponga a la supresión de los datos personales y solicite en su lugar la limitación de su uso"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0020",
+        "pregunta": "Según establece el Art. 5 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿a cuál de los siguientes principios están sujetos los responsables y encargados del tratamiento de datos así como todas las personas que intervengan en cualquier fase de este, al que se refiere el artículo 5.1.f) del Reglamento (UE) 2016/679?",
+        "respuesta": "Al deber de confidencialidad",
+        "opciones": [
+            "Al deber de centralización",
+            "Al deber de confidencialidad",
+            "Al deber de autonomía",
+            "Al deber de coordinación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0021",
+        "pregunta": "Según establece el Art. 1 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿qué establece el presente Reglamento?",
+        "respuesta": "Las normas relativas a la protección de las personas físicas en lo que respecta al tratamiento de los datos personales y las normas relativas a la libre circulación de tales datos",
+        "opciones": [
+            "Las normas relativas a la protección de las personas físicas en lo que respecta al tratamiento de los datos personales, pero no las normas relativas a la libre circulación de tales datos",
+            "Las normas relativas a la desprotección de las personas físicas en lo que respecta al tratamiento de los datos personales, pero no las normas relativas a la libre circulación de tales datos",
+            "Las normas relativas a la desprotección de las personas físicas en lo que respecta al tratamiento de los datos personales y las normas relativas a la libre circulación de tales datos",
+            "Las normas relativas a la protección de las personas físicas en lo que respecta al tratamiento de los datos personales y las normas relativas a la libre circulación de tales datos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0022",
+        "pregunta": "Según establece el Art. 2 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿a cuál de las siguientes opciones se aplica el presente Reglamento?",
+        "respuesta": "Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero",
+        "opciones": [
+            "Al tratamiento solo totalmente automatizado de datos personales",
+            "Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero",
+            "Al tratamiento total o parcialmente no automatizado de datos personales, pero no al tratamiento automatizado de datos personales contenidos o destinados a ser incluidos en un fichero",
+            "Al tratamiento total o parcialmente automatizado de datos personales, pero no al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0023",
+        "pregunta": "Según establece el Art. 12 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Si el responsable del tratamiento no da curso a la solicitud del interesado, le informará sin dilación, y a más tardar transcurrido un mes de la recepción de la solicitud, de las razones de su no actuación y de la posibilidad de presentar una reclamación ante una autoridad de control y de ejercitar acciones judiciales",
+        "opciones": [
+            "Si el responsable del tratamiento no da curso a la solicitud del interesado, le informará sin dilación, y a más tardar transcurridos quince días desde la recepción de la solicitud, de las razones de su no actuación y de la posibilidad de presentar una reclamación ante una autoridad de control y de ejercitar acciones judiciales",
+            "Si el responsable del tratamiento no da curso a la solicitud del interesado, le informará sin dilación, y a más tardar transcurridos siete días desde la recepción de la solicitud, de las razones de su no actuación y de la posibilidad de presentar una reclamación ante una autoridad de control y de ejercitar acciones judiciales",
+            "Si el responsable del tratamiento no da curso a la solicitud del interesado, le informará sin dilación, y a más tardar transcurrido un mes de la recepción de la solicitud, de las razones de su no actuación y de la posibilidad de presentar una reclamación ante una autoridad de control y de ejercitar acciones judiciales",
+            "Si el responsable del tratamiento no da curso a la solicitud del interesado, le informará sin dilación, y a más tardar transcurridos tres meses desde la recepción de la solicitud, de las razones de su no actuación y de la posibilidad de presentar una reclamación ante una autoridad de control y de ejercitar acciones judiciales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0024",
+        "pregunta": "Según establece el Art. 83 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El sistema educativo garantizará la plena inserción del alumnado en la sociedad digital y el aprendizaje de un consumo responsable y un uso crítico y seguro de los medios digitales y respetuoso con la dignidad humana, la justicia social y la sostenibilidad medioambiental, los valores constitucionales, los derechos fundamentales y, particularmente con el respeto y la garantía de la intimidad personal y familiar y la protección de datos personales",
+        "opciones": [
+            "El sistema educativo no garantizará la plena inserción del alumnado en la sociedad digital y el aprendizaje de un consumo responsable y un uso crítico y seguro de los medios digitales y respetuoso con la dignidad humana, la justicia social y la sostenibilidad medioambiental, los valores constitucionales, los derechos fundamentales y, particularmente con el respeto y la garantía de la intimidad personal y familiar y la protección de datos personales",
+            "El sistema educativo garantizará la plena inserción del alumnado en la sociedad digital y el aprendizaje de un consumo responsable y un uso crítico y seguro de los medios digitales y respetuoso con la dignidad humana, la justicia social y la sostenibilidad medioambiental, los valores inconstitucionales, los derechos fundamentales y, particularmente con el respeto y la no garantía de la intimidad personal y familiar y la protección de datos personales",
+            "El sistema educativo garantizará la plena inserción del alumnado en la sociedad digital y el aprendizaje de un consumo irresponsable y un uso crítico y seguro de los medios digitales y respetuoso con la dignidad humana, la justicia social y la sostenibilidad medioambiental, los valores constitucionales, los derechos fundamentales y, particularmente con el respeto y la garantía de la intimidad personal y familiar y la protección de datos personales",
+            "El sistema educativo garantizará la plena inserción del alumnado en la sociedad digital y el aprendizaje de un consumo responsable y un uso crítico y seguro de los medios digitales y respetuoso con la dignidad humana, la justicia social y la sostenibilidad medioambiental, los valores constitucionales, los derechos fundamentales y, particularmente con el respeto y la garantía de la intimidad personal y familiar y la protección de datos personales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0025",
+        "pregunta": "Según establece el Art. 49 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, la Presidencia de la Agencia Española de Protección de Datos estará asesorada por un Consejo Consultivo. Ahora bien, ¿cuál de los siguientes órganos no formará parte de este Consejo Consultivo?",
+        "respuesta": "El Presidente del Gobierno",
+        "opciones": [
+            "Un representante designado por el Consejo General del Poder Judicial",
+            "El Presidente del Gobierno",
+            "Un representante de los profesionales de la protección de datos y de la privacidad, propuesto por la asociación de ámbito estatal con mayor número de asociados",
+            "Un representante de la Administración General del Estado con experiencia en la materia, propuesto por el Ministro de Justicia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0026",
+        "pregunta": "Según establece el Art. 17 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿en cuál de los siguientes supuestos el responsable del tratamiento no está obligado a suprimir sin dilación indebida los datos personales de un interesado? \"",
+        "respuesta": "Cuando los datos personales sean necesarios en relación con los fines para los que fueron recogidos o tratados de otro\nmodo\"",
+        "opciones": [
+            "Cuando los datos personales hayan sido tratados ilícitamente",
+            "Cuando el interesado se oponga al tratamiento con arreglo al artículo 21, apartado 1, y no prevalezcan otros motivos legítimos para el tratamiento, o el interesado se oponga al tratamiento con arreglo al artículo 21, apartado 2",
+            "Cuando los datos personales deban suprimirse para el cumplimiento de una obligación legal establecida en el Derecho de la Unión o de los Estados miembros que se aplique al responsable del tratamiento",
+            "Cuando los datos personales sean necesarios en relación con los fines para los que fueron recogidos o tratados de otro\nmodo\""
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0027",
+        "pregunta": "Según establece el Art. 88 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿quién elaborará una política interna dirigida a trabajadores, incluidos los que ocupen puestos directivos, en la que definirán las modalidades de ejercicio del derecho a la desconexión y las acciones de formación y de sensibilización del personal sobre un uso razonable de las herramientas tecnológicas que evite el riesgo de fatiga informática?",
+        "respuesta": "El empleador, previa audiencia de los representantes de los trabajadores",
+        "opciones": [
+            "El empleador, previa audiencia de los representantes del Comité Económico y Social Europeo",
+            "El trabajador, previa audiencia de los representantes del Comité Económico y Social Europeo",
+            "El empleador, previa audiencia de los representantes de los trabajadores",
+            "El trabajador, previa audiencia de los representantes de los trabajadores"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0028",
+        "pregunta": "Según establece el Art. 37 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Cuando el afectado presente una reclamación ante la Agencia Española de Protección de Datos o, en su caso, ante las autoridades autonómicas de protección de datos, aquellas podrán remitir la reclamación al delegado de protección de datos a fin de que este responda en el plazo de un mes",
+        "opciones": [
+            "Cuando el afectado presente una reclamación ante la Agencia Española de Protección de Datos o, en su caso, ante las autoridades autonómicas de protección de datos, aquellas podrán remitir la reclamación al delegado de protección de datos a fin de que este responda en el plazo de tres meses",
+            "Cuando el afectado presente una reclamación ante la Agencia Española de Protección de Datos o, en su caso, ante las autoridades autonómicas de protección de datos, aquellas podrán remitir la reclamación al delegado de protección de datos a fin de que este responda en el plazo de un mes",
+            "Cuando el afectado presente una reclamación ante la Agencia Española de Protección de Datos o, en su caso, ante las autoridades autonómicas de protección de datos, aquellas podrán remitir la reclamación al delegado de protección de datos a fin de que este responda en el plazo de siete días",
+            "Cuando el afectado presente una reclamación ante la Agencia Española de Protección de Datos o, en su caso, ante las autoridades autonómicas de protección de datos, aquellas podrán remitir la reclamación al delegado de protección de datos a fin de que este responda en el plazo de quince días"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0029",
+        "pregunta": "Según establece el Art. 3 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, las personas o instituciones a las que el fallecido hubiese designado expresamente para ello podrán también solicitar, con arreglo a las instrucciones recibidas, el acceso a los datos personales de este y, en su caso su rectificación o supresión. Así, ¿mediante cuál de las siguientes formas se establecerán los requisitos y condiciones para acreditar la validez y vigencia de estos mandatos e instrucciones y, en su caso, el registro de los mismos?",
+        "respuesta": "Mediante Real Decreto",
+        "opciones": [
+            "Mediante Ordenanza Municipal",
+            "Mediante Normativa Europea",
+            "Mediante Real Decreto",
+            "Mediante Directiva Europea"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0030",
+        "pregunta": "Según establece el Art. 13 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, a los efectos establecidos en el artículo 12.5 del Reglamento (UE) 2016/679 se podrá considerar repetitivo el ejercicio del derecho de acceso en más de una ocasión durante el plazo ¿de cuántos meses?",
+        "respuesta": "Seis meses",
+        "opciones": [
+            "Nueve meses",
+            "Doce meses",
+            "Tres meses",
+            "Seis meses"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0031",
+        "pregunta": "Según establece el Art. 93 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Toda persona tiene derecho a que los motores de búsqueda en Internet eliminen de las listas de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre los enlaces publicados que contuvieran información relativa a esa persona cuando fuesen inadecuados, inexactos, no pertinentes, no actualizados o excesivos o hubieren devenido como tales por el transcurso del tiempo, teniendo en cuenta los fines para los que se recogieron o trataron, el tiempo transcurrido y la naturaleza e interés público de la información",
+        "opciones": [
+            "Nadie tiene derecho a que los motores de búsqueda en Internet eliminen de las listas de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre los enlaces publicados que contuvieran información relativa a esa persona cuando fuesen adecuados, exactos, pertinentes, actualizados o excesivos o hubieren devenido como tales por el transcurso del tiempo, teniendo en cuenta los fines para los que se recogieron o trataron, el tiempo transcurrido y la naturaleza e interés público de la información",
+            "Toda persona tiene derecho a que los motores de búsqueda en Internet eliminen de las listas de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre los enlaces publicados que contuvieran información relativa a esa persona cuando fuesen inadecuados, inexactos, no pertinentes, no actualizados o excesivos o hubieren devenido como tales por el transcurso del tiempo, teniendo en cuenta los fines para los que se recogieron o trataron, el tiempo transcurrido y la naturaleza e interés público de la información",
+            "Toda persona tiene derecho a que los motores de búsqueda en Internet eliminen de las listas de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre los enlaces publicados que contuvieran información relativa a esa persona cuando fuesen adecuados, exactos, pertinentes, actualizados o excesivos o hubieren devenido como tales por el transcurso del tiempo, teniendo en cuenta los fines para los que se recogieron o trataron, el tiempo transcurrido y la naturaleza e interés público de la información",
+            "Nadie tiene derecho a que los motores de búsqueda en Internet eliminen de las listas de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre los enlaces publicados que contuvieran información relativa a esa persona cuando fuesen inadecuados, inexactos, no pertinentes, no actualizados o excesivos o hubieren devenido como tales por el transcurso del tiempo, teniendo en cuenta los fines para los que se recogieron o trataron, el tiempo transcurrido y la naturaleza e interés público de la información"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0032",
+        "pregunta": "Según establece el Art. 84 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿en cuál de las siguientes Leyes están previstas las medidas cautelares y de protección del menor?",
+        "respuesta": "En la Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor",
+        "opciones": [
+            "En la Ley Orgánica 11/1986, de 15 de enero, de Protección Jurídica del Menor",
+            "En la Ley Orgánica 11/1996, de 25 de enero, de Protección Jurídica del Menor",
+            "En la Ley Orgánica 1/1986, de 25 de enero, de Protección Jurídica del Menor",
+            "En la Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0033",
+        "pregunta": "Según establece el Art. 15 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Cuando se transfieran datos personales a un tercer país o a una organización internacional, el interesado tendrá derecho a ser informado de las garantías adecuadas en virtud del artículo 46 relativas a la transferencia",
+        "opciones": [
+            "Cuando se transfieran datos personales a un tercer país o a una organización internacional, el interesado tendrá derecho a ser informado de las garantías adecuadas en virtud del artículo 46 relativas a la transferencia",
+            "Cuando se transfieran datos personales a un tercer país o a una organización internacional, el interesado no tendrá derecho a ser informado de las garantías adecuadas en virtud del artículo 46 relativas a la transferencia",
+            "Cuando se transfieran datos personales a un segundo país o a una organización internacional, el interesado tendrá derecho a ser informado de las garantías adecuadas en virtud del artículo 6 relativas a la transferencia",
+            "Cuando se transfieran datos personales a un segundo país o a una organización internacional, el interesado no tendrá derecho a ser informado de las garantías adecuadas en virtud del artículo 6 relativas a la transferencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0034",
+        "pregunta": "Según establece el Art. 15 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de los siguientes derechos se ejercerá de acuerdo con lo establecido en el artículo 17 del Reglamento (UE) 2016/679?",
+        "respuesta": "El derecho de supresión",
+        "opciones": [
+            "El derecho de supresión",
+            "El derecho de aprobación",
+            "El derecho a la limitación del tratamiento",
+            "El derecho de subsanación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0035",
+        "pregunta": "Según establece el Art. 91 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Los convenios colectivos podrán establecer garantías adicionales de los derechos y libertades relacionados con el tratamiento de los datos personales de los trabajadores y la salvaguarda de derechos digitales en el ámbito laboral",
+        "opciones": [
+            "Los convenios colectivos no podrán establecer garantías adicionales de los derechos y libertades relacionados con el tratamiento de los datos personales de los trabajadores y la salvaguarda de derechos digitales en el ámbito laboral",
+            "Los convenios colectivos podrán establecer garantías adicionales de los derechos, pero no libertades relacionados con el tratamiento de los datos personales de los trabajadores y la salvaguarda de derechos digitales en el ámbito laboral",
+            "Los convenios colectivos podrán establecer garantías adicionales de los derechos y libertades relacionados con el tratamiento de los datos personales de los trabajadores y la salvaguarda de derechos digitales en el ámbito laboral",
+            "Los convenios colectivos no podrán establecer garantías adicionales de los derechos, pero sí libertades relacionados con el tratamiento de los datos personales de los trabajadores y la salvaguarda de derechos digitales en el ámbito laboral"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0036",
+        "pregunta": "Según establece el Art. 19 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿quién comunicará cualquier rectificación o supresión de datos personales o limitación del tratamiento efectuada con arreglo al artículo 16, al artículo 17, apartado 1, y al artículo 18 a cada uno de los destinatarios a los que se hayan comunicado los datos personales, salvo que sea imposible o exija un esfuerzo desproporcionado?",
+        "respuesta": "El responsable del tratamiento",
+        "opciones": [
+            "Cualquier persona del departamento al que competa, aunque no sea el responsable del tratamiento",
+            "La pareja del interesado",
+            "El responsable del tratamiento",
+            "El no responsable del tratamiento"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0037",
+        "pregunta": "Según establece el Art. 46 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Corresponde a la Presidencia de la Agencia Española de Protección de Datos autorizar las modificaciones presupuestarias que impliquen hasta un tres por ciento de la cifra inicial de su presupuesto total de gastos, siempre que no se incrementen los créditos para gastos de personal",
+        "opciones": [
+            "Corresponde a la Secretaría de la Agencia Española de Protección de Datos autorizar las modificaciones presupuestarias que impliquen hasta un cinco por ciento de la cifra inicial de su presupuesto total de gastos, siempre que no se incrementen los créditos para gastos de personal",
+            "Corresponde a la Presidencia de la Agencia Española de Protección de Datos autorizar las modificaciones presupuestarias que impliquen hasta un diez por ciento de la cifra inicial de su presupuesto total de gastos, siempre que se incrementen los créditos para gastos de personal",
+            "Corresponde a la Presidencia de la Agencia Española de Protección de Datos autorizar las modificaciones presupuestarias que impliquen hasta un tres por ciento de la cifra inicial de su presupuesto total de gastos, siempre que no se incrementen los créditos para gastos de personal",
+            "Corresponde a la Secretaría de la Agencia Española de Protección de Datos autorizar las modificaciones presupuestarias que impliquen hasta un ocho por ciento de la cifra inicial de su presupuesto total de gastos, siempre que se incrementen los créditos para gastos de personal"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0038",
+        "pregunta": "Según establece el Art. 32 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones consiste en la identificación y reserva de los mismos, adoptando medidas técnicas y organizativas, para impedir su tratamiento, incluyendo su visualización, excepto para la puesta a disposición de los datos a los jueces y tribunales, el Ministerio Fiscal o las Administraciones Públicas competentes, en particular de las autoridades de protección de datos, para la exigencia de posibles responsabilidades derivadas del tratamiento y solo por el plazo de prescripción de las mismas?",
+        "respuesta": "El bloqueo de los datos",
+        "opciones": [
+            "La transferencia de los datos",
+            "La subsanación de los datos",
+            "El bloqueo de los datos",
+            "La legitimación de los datos"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0039",
+        "pregunta": "Según establece el Art. 3 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El presente Reglamento se aplica al tratamiento de datos personales por parte de un responsable que no esté establecido en la Unión sino en un lugar en que el Derecho de los Estados miembros sea de aplicación en virtud del Derecho internacional público",
+        "opciones": [
+            "El presente Reglamento se aplica al tratamiento de datos personales por parte de un responsable que esté establecido en la Unión y en un lugar en que el Derecho de los Estados miembros sea de aplicación en virtud del Derecho internacional privado",
+            "El presente Reglamento se aplica al tratamiento de datos personales por parte de un responsable que no esté establecido en la Unión sino en un lugar en que el Derecho de los Estados miembros sea de aplicación en virtud del Derecho internacional público",
+            "El presente Reglamento se aplica al tratamiento de datos personales por parte de un responsable que esté establecido en la Unión y en un lugar en que el Derecho de los Estados miembros sea de aplicación en virtud del Derecho internacional público",
+            "El presente Reglamento se aplica al tratamiento de datos personales por parte de un responsable que no esté establecido en la Unión sino en un lugar en que el Derecho de los Estados miembros sea de aplicación en virtud del Derecho internacional privado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0040",
+        "pregunta": "Según establece el Art. 1 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál es el fin del presente Reglamento?",
+        "respuesta": "Proteger los derechos y libertades fundamentales de las personas físicas y, en particular, su derecho a la protección de los datos personales",
+        "opciones": [
+            "Proteger los derechos y libertades fundamentales de las personas físicas y, en particular, su derecho a la no protección de los datos personales",
+            "Proteger los derechos y libertades fundamentales de las personas físicas, pero no su derecho a la protección de los datos personales",
+            "Atacar los derechos y libertades fundamentales de las personas físicas y, en particular, su derecho a la protección de los datos personales",
+            "Proteger los derechos y libertades fundamentales de las personas físicas y, en particular, su derecho a la protección de los datos personales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0041",
+        "pregunta": "Según establece el Art. 11 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿en cuál de los siguientes casos el responsable podrá dar cumplimiento al deber de información establecido en el artículo 14 del Reglamento (UE) 2016/679 facilitando a aquel la información básica señalada en el presente artículo, indicándole una dirección electrónica u otro medio que permita acceder de forma sencilla e inmediata a la restante información?",
+        "respuesta": "Cuando los datos personales no hubieran sido obtenidos del afectado",
+        "opciones": [
+            "Cuando los datos personales hubieran sido obtenidos del afectado",
+            "Cuando los datos personales no hubieran sido obtenidos del afectado",
+            "Cuando los datos personales hubieran sido obtenidos del responsable",
+            "Cuando los datos personales hubieran sido obtenidos por parte del interesado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0042",
+        "pregunta": "Según establece el Art. 34 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, los responsables y encargados del tratamiento deberán designar un delegado de protección de datos en los supuestos previstos en el artículo 37.1 del Reglamento (UE) 2016/679. Pero, ¿en cuál de las siguientes opciones este hecho no se produce, ya que es incorrecto o falso?",
+        "respuesta": "Las entidades no incluidas en el artículo 1 de la Ley 10/2014, de 26 de junio, de ordenación, supervisión y solvencia de entidades de crédito",
+        "opciones": [
+            "Los colegios profesionales y sus consejos generales",
+            "Los centros docentes que ofrezcan enseñanzas en cualquiera de los niveles establecidos en la legislación reguladora del derecho a la educación, así como las Universidades públicas y privadas",
+            "Las entidades no incluidas en el artículo 1 de la Ley 10/2014, de 26 de junio, de ordenación, supervisión y solvencia de entidades de crédito",
+            "Los prestadores de servicios de la sociedad de la información cuando elaboren a gran escala perfiles de los usuarios del servicio"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0043",
+        "pregunta": "Según establece el Art. 36 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de los siguientes órganos actuará como interlocutor del responsable o encargado del tratamiento ante la Agencia Española de Protección de Datos y las autoridades autonómicas de protección de datos?",
+        "respuesta": "El delegado de protección de datos",
+        "opciones": [
+            "El delegado de justicia",
+            "El delegado de sanidad",
+            "El delegado de protección de datos",
+            "El delegado de hacienda"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0044",
+        "pregunta": "Según establece el Art. 13 del REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), ¿cuál de los siguientes datos no será requerido por el responsable del tratamiento cuando se obtengan de un interesado datos personales relativos a él?",
+        "respuesta": "La identidad y los datos de contacto de su pareja y, en su caso, de su representante",
+        "opciones": [
+            "La identidad y los datos de contacto del responsable y, en su caso, de su representante \"",
+            "La identidad y los datos de contacto de su pareja y, en su caso, de su representante",
+            "Los fines del tratamiento a que se destinan los datos personales y la base jurídica del tratamiento\n\"",
+            "Los destinatarios o las categorías de destinatarios de los datos personales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0045",
+        "pregunta": "Según establece el Art. 4 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Conforme al artículo 5.1.d) del Reglamento (UE) 2016/679 los datos serán exactos y, si fuere necesario, actualizados",
+        "opciones": [
+            "Conforme al artículo 5.1.d) del Reglamento (UE) 2016/679 los datos serán inexactos y, si fuere necesario, actualizados",
+            "Conforme al artículo 5.1.d) del Reglamento (UE) 2016/679 los datos serán exactos y, si fuere necesario, actualizados",
+            "Conforme al artículo 15.1.d) del Reglamento (UE) 2006/679 los datos serán inexactos y, si fuere necesario, actualizados",
+            "Conforme al artículo 15.1.d) del Reglamento (UE) 2006/679 los datos serán exactos y, si fuere necesario, actualizados"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0046",
+        "pregunta": "Según establece el Art. 10 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cómo se puede llevar a cabo el tratamiento de datos personales relativos a condenas e infracciones penales, así como a procedimientos y medidas cautelares y de seguridad conexas, para fines distintos de los de prevención, investigación, detección o enjuiciamiento de infracciones penales o de ejecución de sanciones penales?",
+        "respuesta": "Solo podrá llevarse a cabo cuando se encuentre amparado en una norma de Derecho de la Unión, en esta ley orgánica o en otras normas de rango legal",
+        "opciones": [
+            "Solo podrá llevarse a cabo cuando no se encuentre amparado en una norma de Derecho de la Unión, en esta ley orgánica o en otras normas de rango legal",
+            "Solo podrá llevarse a cabo cuando se encuentre amparado en una norma de Derecho Estatal, en esta ley orgánica o en otras normas de rango ilegal",
+            "Solo podrá llevarse a cabo cuando se encuentre amparado en una norma de Derecho Estatal, en esta ley ordinaria o en otras normas de rango ilegal",
+            "Solo podrá llevarse a cabo cuando se encuentre amparado en una norma de Derecho de la Unión, en esta ley orgánica o en otras normas de rango legal"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0047",
+        "pregunta": "Según establece el Art. 79 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Los derechos y libertades consagrados en la Constitución y en los Tratados y Convenios Internacionales en que España sea parte son plenamente aplicables en Internet",
+        "opciones": [
+            "Los derechos y libertades no consagrados en la Constitución y en los Tratados y Convenios Internacionales en que España sea parte son parcialmente aplicables en Internet",
+            "Los derechos y libertades consagrados en la Constitución y en los Tratados y Convenios Internacionales en que España sea parte son plenamente aplicables en Internet",
+            "Los derechos y libertades consagrados en la Constitución y en los Tratados y Convenios Internacionales en que España no sea parte son plenamente aplicables en Internet",
+            "Los derechos y libertades consagrados en la Constitución y en los Tratados y Convenios Internacionales en que España sea parte son parcialmente aplicables en Internet"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0048",
+        "pregunta": "Según establece el Art. 9 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "A los efectos del artículo 9.2.a) del Reglamento (UE) 2016/679, a fin de evitar situaciones discriminatorias, el solo consentimiento del afectado no bastará para levantar la prohibición del tratamiento de datos cuya finalidad principal sea identificar su ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico",
+        "opciones": [
+            "A los efectos del artículo 9.2.a) del Reglamento (UE) 206/609, a fin de evitar situaciones discriminatorias, el solo consentimiento del afectado no bastará para levantar la prohibición del tratamiento de datos cuya finalidad principal sea identificar su ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico",
+            "A los efectos del artículo 9.2.a) del Reglamento (UE) 2016/679, a fin de evitar situaciones discriminatorias, el solo consentimiento del afectado bastará para levantar la prohibición del tratamiento de datos cuya finalidad principal sea identificar su ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico",
+            "A los efectos del artículo 9.2.a) del Reglamento (UE) 2016/679, a fin de evitar situaciones discriminatorias, el solo consentimiento del afectado no bastará para levantar la prohibición del tratamiento de datos cuya finalidad principal sea identificar su ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico",
+            "A los efectos del artículo 9.2.a) del Reglamento (UE) 2006/679, a fin de evitar situaciones discriminatorias, el solo consentimiento del afectado bastará para levantar la prohibición del tratamiento de datos cuya finalidad principal sea identificar su ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-7-0049",
+        "pregunta": "Según establece el Art. 81 de la Ley Orgánica 3 /2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cómo es el acceso a Internet?",
+        "respuesta": "Universal, asequible, de calidad y no discriminatorio para toda la población",
+        "opciones": [
+            "Reducido, inasequible, de calidad y no discriminatorio para toda la población",
+            "Universal, asequible, de calidad y no discriminatorio para toda la población",
+            "Universal, asequible, de calidad y discriminatorio para toda la población",
+            "Universal, inasequible, de calidad y no discriminatorio para toda la población"
+        ]
+    }
+]

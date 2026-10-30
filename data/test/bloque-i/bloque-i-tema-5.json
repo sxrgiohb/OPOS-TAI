@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-i-tema-5-0000",
+        "pregunta": "Según establece el Art. 16 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿quiénes establecerán el régimen jurídico y las condiciones de actuación de los centros privados concertados?",
+        "respuesta": "Las Comunidades Autónomas",
+        "opciones": [
+            "Las Comunidades Autónomas",
+            "Las Mancomunidades",
+            "Las Provincias",
+            "Las Comarcas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0001",
+        "pregunta": "Según establece el Art. 3 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿qué supone el principio de igualdad de trato entre mujeres y hombres?",
+        "respuesta": "La ausencia de toda discriminación, directa o indirecta, por razón de sexo, y, especialmente, las derivadas de la maternidad, la asunción de obligaciones familiares y el estado civil",
+        "opciones": [
+            "La ausencia de toda discriminación, directa, pero no indirecta, por razón de sexo, y, especialmente, las derivadas de la maternidad, la asunción de obligaciones familiares y el estado civil",
+            "La presencia de toda discriminación, directa, pero no indirecta, por razón de sexo, y, especialmente, las derivadas de la maternidad, la asunción de obligaciones familiares y el estado civil",
+            "La ausencia de toda discriminación, directa o indirecta, por razón de sexo, y, especialmente, las derivadas de la maternidad, la asunción de obligaciones familiares y el estado civil",
+            "La presencia de toda discriminación, directa o indirecta, por razón de sexo, y, especialmente, las derivadas de la maternidad, la asunción de obligaciones familiares y el estado civil"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0002",
+        "pregunta": "Según establece el Art. 22 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de las siguientes opciones facilita asistencia a los beneficiarios mediante el uso de tecnologías de la comunicación y de la información, con apoyo de los medios personales necesarios, en respuesta inmediata ante situaciones de emergencia, o de inseguridad, soledad y aislamiento. Puede ser un servicio independiente o complementario al de ayuda a domicilio?",
+        "respuesta": "El Servicio de Teleasistencia",
+        "opciones": [
+            "El Servicio de Teleasistencia",
+            "El Servicio de Centro de día y de Noche",
+            "El Servicio de Ayuda a Domicilio",
+            "El Servicio de Atención residencial"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0003",
+        "pregunta": "Según establece el Art. 12 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿cuál de los siguientes órganos no estará legitimado para ejercitar ante los Tribunales la acción de cesación de publicidad ilícita por utilizar en forma vejatoria la imagen de la mujer, en los términos de la Ley 34/1988, de 11 de noviembre, General de Publicidad, ya que es incorrecto o falso?",
+        "respuesta": "La Delegación Especial del Gobierno a favor de la Violencia sobre la Mujer",
+        "opciones": [
+            "La Delegación Especial del Gobierno a favor de la Violencia sobre la Mujer",
+            "El Ministerio Fiscal",
+            "El Instituto de la Mujer",
+            "Las Asociaciones que tengan como objetivo único la defensa de los intereses de la mujer"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0004",
+        "pregunta": "Según establece el Art. 13 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cómo se denomina a los procesos o a cualquier otra medida de intervención dirigidos a que las personas con discapacidad adquieran su máximo nivel de desarrollo y autonomía personal, y a lograr y mantener su máxima independencia, capacidad física, mental y social, y su inclusión y participación plena en todos los aspectos de la vida, así como la obtención de un empleo adecuado?",
+        "respuesta": "Atención integral",
+        "opciones": [
+            "Inclusión social",
+            "Atención integral",
+            "Accesibilidad universal",
+            "Medidas de acción positiva"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0005",
+        "pregunta": "Según establece el Art. 2 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de las siguientes opciones es la atención prestada a personas en situación de dependencia en su domicilio, por personas de la familia o de su entorno, no vinculadas a un servicio de atención profesionalizada?",
+        "respuesta": "Cuidados no profesionales",
+        "opciones": [
+            "Actividades Básicas de la Vida Diaria",
+            "Cuidados profesionales",
+            "Autonomía",
+            "Cuidados no profesionales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0006",
+        "pregunta": "Según establece el Art. 10 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia establecerá los criterios para determinar la intensidad de protección de cada uno de los servicios previstos en el Catálogo, y la compatibilidad e incompatibilidad entre los mismos, para su aprobación por el Gobierno mediante Real Decreto",
+        "opciones": [
+            "El Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia establecerá los criterios para determinar la intensidad de protección de cada uno de los servicios previstos en el Catálogo, y la compatibilidad e incompatibilidad entre los mismos, para su aprobación por el Gobierno mediante Real Decreto",
+            "El Consejo Territorial del Sistema para la Autonomía y Atención a la Independencia establecerá los criterios para determinar la intensidad de protección de cada uno de los servicios previstos en el Catálogo, y la compatibilidad e incompatibilidad entre los mismos, para su aprobación por el Gobierno mediante Normativa",
+            "El Consejo Territorial del Sistema para la Autonomía y Atención a la Independencia establecerá los criterios para determinar la intensidad de protección de cada uno de los servicios previstos en el Catálogo, y la compatibilidad e incompatibilidad entre los mismos, para su aprobación por el Gobierno mediante Decreto",
+            "El Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia establecerá los criterios para determinar la intensidad de protección de cada uno de los servicios previstos en el Catálogo, y la compatibilidad e incompatibilidad entre los mismos, para su aprobación por el Gobierno mediante Ordenanza Municipal"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0007",
+        "pregunta": "Según establece el Art. 24 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿en qué período de tiempo el Gobierno deberá realizar los estudios integrales sobre la accesibilidad a dichos bienes o servicios que se consideren más relevantes desde el punto de vista de la no discriminación y accesibilidad universal?",
+        "respuesta": "En el plazo de dos años desde la entrada en vigor de esta ley",
+        "opciones": [
+            "En el plazo de dos meses desde la entrada en vigor de esta ley",
+            "En el plazo de seis meses desde la entrada en vigor de esta ley",
+            "En el plazo de un año desde la entrada en vigor de esta ley",
+            "En el plazo de dos años desde la entrada en vigor de esta ley"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0008",
+        "pregunta": "Según establece el Art. 42 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál de las siguientes opciones tendrá como uno de sus objetivos prioritarios aumentar la participación de las mujeres en el mercado de trabajo y avanzar en la igualdad efectiva entre mujeres y hombres?",
+        "respuesta": "Las políticas de empleo",
+        "opciones": [
+            "Las políticas de educabilidad",
+            "Las políticas de negociación",
+            "Las políticas de comunicación institucional",
+            "Las políticas de empleo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0009",
+        "pregunta": "Según establece el Art. 46 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál de las siguientes opciones son un conjunto ordenado de medidas, adoptadas después de realizar un diagnóstico de situación, tendentes a alcanzar en la empresa la igualdad de trato y de oportunidades entre mujeres y hombres y a eliminar la discriminación por razón de sexo?",
+        "respuesta": "Los planes de igualdad de las empresas",
+        "opciones": [
+            "Los planes de igualdad de las empresas",
+            "Los deberes de conciliación de la vida personal, familiar y laboral",
+            "Los derechos de conciliación de la vida personal, familiar y laboral",
+            "Las retribuciones de las empresas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0010",
+        "pregunta": "Según establece el Art. 12 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones no es una función de los equipos multiprofesionales de calificación y reconocimiento del grado de discapacidad, ya que es incorrecta o falsa?",
+        "respuesta": "La orientación para la deshabilitación y rehabilitación, con parcial respeto a la autonomía de la persona con discapacidad, proponiendo las necesidades, aptitudes y posibilidades de recuperación, así como el seguimiento y revisión",
+        "opciones": [
+            "La orientación para la deshabilitación y rehabilitación, con parcial respeto a la autonomía de la persona con discapacidad, proponiendo las necesidades, aptitudes y posibilidades de recuperación, así como el seguimiento y revisión",
+            "Emitir un dictamen técnico normalizado sobre las deficiencias, las limitaciones para realizar actividades y las barreras en la participación social, recogiendo las capacidades y habilidades para las que la persona necesita apoyos",
+            "La valoración y calificación de la situación de discapacidad será revisable en la forma que reglamentariamente se determine",
+            "La valoración y calificación de la situación de discapacidad, determinando el tipo y grado de discapacidad en relación con los beneficios, derechos económicos y servicios previstos en la legislación, sin perjuicio del reconocimiento del derecho que corresponda efectuar al órgano administrativo competente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0011",
+        "pregunta": "Según establece el Art. 50 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál de los siguientes órganos creará un distintivo para reconocer a aquellas empresas que destaquen por la aplicación de políticas de igualdad de trato y de oportunidades con sus trabajadores y trabajadoras, que podrá ser utilizado en el tráfico comercial de la empresa y con fines publicitarios?",
+        "respuesta": "El Ministerio de Trabajo y Asuntos Sociales",
+        "opciones": [
+            "El Ministerio de Justicia",
+            "El Ministerio de Hacienda",
+            "El Ministerio de Trabajo y Asuntos Sociales",
+            "El Ministerio de Educación y Formación Profesional"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0012",
+        "pregunta": "Según establece el Art. 3 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones no es un principio de la presente Ley, ya que es incorrecto o falso?",
+        "respuesta": "La no normalización",
+        "opciones": [
+            "El respeto al desarrollo de la personalidad de las personas con discapacidad, y, en especial, de las niñas y los niños con discapacidad y de su derecho a preservar su identidad",
+            "La no normalización",
+            "El respeto de la dignidad inherente, la autonomía individual, incluida la libertad de tomar las propias decisiones, y la independencia de las personas",
+            "La igualdad entre mujeres y hombres"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0013",
+        "pregunta": "Según establece el Art. 20 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones no es una garantía adicional establecida con el fin de garantizar el derecho a una educación inclusiva de las personas con discapacidad y sin perjuicio de las medidas previstas en la normativa en materia de educación, ya que es incorrecta o falsa?",
+        "respuesta": "Los hospitales infantiles, de rehabilitación y aquellos que tengan servicios pediátricos permanentes, siempre que sean de titularidad pública, que regularmente ocupen al menos la mitad de sus camas con pacientes cuya estancia y atención sanitaria sean financiadas con cargo a recursos públicos, deberán contar con una sección pedagógica para prevenir y evitar la marginación del proceso educativo de los alumnos de edad escolar ingresados en dichos hospitales",
+        "opciones": [
+            "Las personas que cursen estudios universitarios, cuya discapacidad les dificulte gravemente la adaptación al régimen de convocatorias establecido con carácter general, podrán solicitar y las universidades habrán de conceder, de acuerdo con lo que dispongan sus correspondientes normas de permanencia que, en todo caso, deberán tener en cuenta la situación de las personas con discapacidad que cursen estudios en la universidad, la ampliación del número de las mismas en la medida que compense su dificultad, sin mengua del nivel exigido",
+            "Los hospitales infantiles, de rehabilitación y aquellos que tengan servicios pediátricos permanentes, siempre que sean de titularidad pública, que regularmente ocupen al menos la mitad de sus camas con pacientes cuya estancia y atención sanitaria sean financiadas con cargo a recursos públicos, deberán contar con una sección pedagógica para prevenir y evitar la marginación del proceso educativo de los alumnos de edad escolar ingresados en dichos hospitales",
+            "Se realizarán programas de sensibilización, información y formación continua de los equipos directivos, el profesorado y los profesionales de la educación, dirigida a su especialización en la atención a las necesidades educativas especiales del alumnado con discapacidad, de modo que puedan contar con los conocimientos y herramientas necesarias para ello",
+            "Los centros de educación especial crearán las condiciones necesarias para facilitar la conexión con los centros ordinarios, y la inclusión de sus alumnos en el sistema educativo ordinario"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0014",
+        "pregunta": "Según establece el Art. 48 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las personas con discapacidad y sus familias tienen derecho a unos servicios y prestaciones sociales que atiendan con garantías de suficiencia y sostenibilidad sus necesidades, dirigidos al desarrollo de su personalidad y su inclusión en la comunidad, incrementando su calidad de vida y bienestar social",
+        "opciones": [
+            "Las personas con discapacidad y sus familias tienen derecho a unos servicios y prestaciones sociales que atiendan con garantías de suficiencia y sostenibilidad sus necesidades, dirigidos al desarrollo de su personalidad y su inclusión en la comunidad, incrementando su calidad de vida y bienestar social",
+            "Las personas con discapacidad y sus familias tienen derecho a unos servicios y prestaciones sociales que atiendan con garantías de suficiencia y sostenibilidad sus necesidades, dirigidos al desarrollo de su personalidad y su inclusión en la comunidad, disminuyendo su calidad de vida y bienestar social",
+            "Las personas con discapacidad y sus familias no tienen derecho a unos servicios y prestaciones sociales que atiendan con garantías de suficiencia y sostenibilidad sus necesidades, dirigidos al desarrollo de su personalidad y su inclusión en la comunidad, disminuyendo su calidad de vida y bienestar social",
+            "Las personas con discapacidad, pero no sus familias, tienen derecho a unos servicios y prestaciones sociales que atiendan con garantías de suficiencia y sostenibilidad sus necesidades, dirigidos al desarrollo de su personalidad y su inclusión en la comunidad, incrementando su calidad de vida y bienestar social"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0015",
+        "pregunta": "Según establece el Art. 1 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El Sistema para la Autonomía y Atención a la Dependencia responderá a una acción coordinada y cooperativa de la Administración General del Estado y las Comunidades Autónomas, que contemplará medidas en todas las áreas que afectan a las personas en situación de dependencia, con la participación, en su caso, de las Entidades Locales",
+        "opciones": [
+            "El Sistema para la Autonomía y Atención a la Dependencia responderá a una acción coordinada y cooperativa de la Administración General del Estado y las Comunidades Autónomas, que contemplará medidas en todas las áreas que afectan a las personas en situación de dependencia, con la participación, en su caso, de las Entidades Locales",
+            "El Sistema para la Autonomía y Atención a la Independencia responderá a una acción coordinada y cooperativa de la Administración General del Estado y las Provincias, que contemplará medidas en todas las áreas que afectan a las personas en situación de dependencia, con la participación, en su caso, de las Entidades Locales",
+            "El Sistema para la Autonomía y Atención a la Dependencia responderá a una acción descoordinada y no cooperativa de la Administración General del Estado y las Comunidades Autónomas, que contemplará medidas en todas las áreas que afectan a las personas en situación de dependencia, con la participación, en su caso, de las Entidades Locales",
+            "El Sistema para la Autonomía y Atención a la Independencia responderá a una acción coordinada y cooperativa de la Administración General del Estado y las Provincias, que contemplará medidas en todas las áreas que afectan a las personas en situación de dependencia, con la participación, en su caso, de las Comunidades Autónomas"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0016",
+        "pregunta": "Según establece el Art. 6 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cómo se denomina a la situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada, en atención a su sexo, de manera menos favorable que otra en situación comparable?",
+        "respuesta": "Discriminación directa por razón de sexo",
+        "opciones": [
+            "Discriminación directa por razón de edad",
+            "Discriminación directa por razón de sexo",
+            "Discriminación indirecta por razón de edad",
+            "Discriminación indirecta por razón de sexo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0017",
+        "pregunta": "Según establece el Art. 2 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es el principio en virtud del cual las organizaciones representativas de personas con discapacidad y de sus familias participan, en los términos que establecen las leyes y demás disposiciones normativas, en la elaboración, ejecución, seguimiento y evaluación de las políticas oficiales que se desarrollan en la esfera de las personas con discapacidad, las cuales garantizarán, en todo caso, el derecho de los niños y las niñas con discapacidad a expresar su opinión libremente sobre todas las cuestiones que les afecten y a recibir asistencia apropiada con arreglo a su discapacidad y edad para poder ejercer ese derecho?",
+        "respuesta": "Diálogo civil",
+        "opciones": [
+            "Inclusión social",
+            "Normalización",
+            "Diálogo civil",
+            "Accesibilidad universal"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0018",
+        "pregunta": "Según establece el Art. 8 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿a cuál de los siguientes órganos está adscrito el Consejo Territorial de Servicios Sociales y del Sistema para la Autonomía y Atención a la Dependencia?",
+        "respuesta": "Al Ministerio de Sanidad, Servicios Sociales e Igualdad, a través de la Secretaría de Estado de Servicios Sociales e Igualdad",
+        "opciones": [
+            "Al Ministerio de Igualdad, a través de la Secretaría de Estado de Servicios sanitarios",
+            "Al Ministerio de Sanidad, Servicios Sociales e Igualdad, a través de la Secretaría de Estado de Hacienda",
+            "Al Ministerio de Hacienda, a través de la Secretaría de Estado de Servicios sanitarios",
+            "Al Ministerio de Sanidad, Servicios Sociales e Igualdad, a través de la Secretaría de Estado de Servicios Sociales e Igualdad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0019",
+        "pregunta": "Según establece el Art. 18 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las personas con discapacidad tienen derecho a una educación inclusiva, de calidad y gratuita, en igualdad de condiciones con las demás",
+        "opciones": [
+            "Las personas con discapacidad tienen derecho a una educación inclusiva, de calidad y gratuita, en igualdad de condiciones con las demás",
+            "Las personas con discapacidad tienen derecho a una educación inclusiva, de calidad y costosa, pero no en igualdad de condiciones con las demás",
+            "Las personas con discapacidad tienen derecho a una educación inclusiva, de calidad y gratuita, en desigualdad de condiciones con las demás",
+            "Las personas con discapacidad no tienen derecho a una educación inclusiva, de calidad y gratuita, en igualdad de condiciones con las demás"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0020",
+        "pregunta": "Según establece el Art. 3 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿en cuál de los siguientes principios no se inspira la presente Ley, ya que es incorrecto o falso?",
+        "respuesta": "La no cooperación interadministrativa",
+        "opciones": [
+            "La integración de las prestaciones establecidas en esta Ley en las redes de servicios sociales de las Comunidades Autónomas, en el ámbito de las competencias que tienen asumidas, y el reconocimiento y garantía de su oferta mediante centros y servicios públicos o privados concertados",
+            "La personalización de la atención, teniendo en cuenta de manera especial la situación de quienes requieren de mayor acción positiva como consecuencia de tener mayor grado de discriminación o menor igualdad de oportunidades",
+            "La transversalidad de las políticas de atención a las personas en situación de dependencia",
+            "La no cooperación interadministrativa"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0021",
+        "pregunta": "Según establece el Art. 4 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿qué grado de discapacidad debe poseer una persona para ser considerada como una persona con discapacidad?",
+        "respuesta": "Un grado de discapacidad igual o superior al 33 por ciento",
+        "opciones": [
+            "Un grado de discapacidad igual o superior al 33 por ciento",
+            "Un grado de discapacidad igual o superior al 44 por ciento",
+            "Un grado de discapacidad igual o superior al 23 por ciento",
+            "Un grado de discapacidad igual o superior al 50 por ciento"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0022",
+        "pregunta": "Según establece el Art. 31 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las personas con discapacidad con dificultades para utilizar transportes colectivos, que reúnan los requisitos establecidos reglamentariamente, tendrán derecho a la percepción de un subsidio de movilidad y compensación por gastos de transporte, cuya cuantía se fijará anualmente en la Ley de Presupuestos Generales del Estado",
+        "opciones": [
+            "Las personas con discapacidad con dificultades para utilizar transportes colectivos, que reúnan los requisitos establecidos reglamentariamente, tendrán derecho a la percepción de un subsidio de movilidad y compensación por gastos de transporte, cuya cuantía se fijará mensualmente en la Ley de Presupuestos Generales del Estado",
+            "Las personas con discapacidad con dificultades para utilizar transportes colectivos, que no reúnan los requisitos establecidos reglamentariamente, tendrán derecho a la percepción de un subsidio de movilidad y compensación por gastos de transporte, cuya cuantía se fijará mensualmente en la Ley de Presupuestos Generales del Estado",
+            "Las personas con discapacidad con dificultades para utilizar transportes colectivos, que no reúnan los requisitos establecidos reglamentariamente, tendrán derecho a la percepción de un subsidio de movilidad y compensación por gastos de transporte, cuya cuantía se fijará anualmente en la Ley de Presupuestos Generales del Estado",
+            "Las personas con discapacidad con dificultades para utilizar transportes colectivos, que reúnan los requisitos establecidos reglamentariamente, tendrán derecho a la percepción de un subsidio de movilidad y compensación por gastos de transporte, cuya cuantía se fijará anualmente en la Ley de Presupuestos Generales del Estado"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0023",
+        "pregunta": "Según establece el Art. 28 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las condiciones básicas de accesibilidad y no discriminación que deberán reunir las oficinas públicas, dispositivos y servicios de atención al ciudadano y aquellos de participación en los asuntos públicos, incluidos los relativos a la Administración de Justicia y a la participación en la vida política y los procesos electorales serán exigibles en los plazos y términos establecidos reglamentariamente",
+        "opciones": [
+            "Las condiciones básicas de accesibilidad y discriminación que deberán reunir las oficinas públicas, dispositivos y servicios de atención al ciudadano y aquellos de participación en los asuntos públicos, incluidos los relativos a la Administración de Justicia y a la participación en la vida política y los procesos electorales serán exigibles en los plazos y términos establecidos reglamentariamente",
+            "Las condiciones básicas de accesibilidad y no discriminación que deberán reunir las oficinas públicas, dispositivos y servicios de atención al ciudadano y aquellos de participación en los asuntos públicos, incluidos los relativos a la Administración de Justicia y a la participación en la vida política y los procesos electorales serán exigibles en los plazos y términos establecidos reglamentariamente",
+            "Las condiciones básicas de accesibilidad y discriminación que deberán reunir las oficinas privadas, dispositivos y servicios de atención al ciudadano y aquellos de participación en los asuntos privados, incluidos los relativos a la Administración de Justicia y a la participación en la vida política y los procesos electorales serán exigibles en los plazos y términos establecidos reglamentariamente",
+            "Las condiciones básicas de accesibilidad y no discriminación que deberán reunir las oficinas públicas, dispositivos y servicios de atención al ciudadano y aquellos de participación en los asuntos públicos, sin incluir los relativos a la Administración de Justicia y a la participación en la vida política y los procesos electorales serán exigibles en los plazos y términos establecidos reglamentariamente"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0024",
+        "pregunta": "Según establece el Art. 36 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es la ausencia de toda discriminación directa o indirecta por motivo o por razón de discapacidad, en el empleo, en la formación y la promoción profesionales y en las condiciones de trabajo?",
+        "respuesta": "Igualdad de trato",
+        "opciones": [
+            "Discriminación directa por razón de edad",
+            "Igualdad de trato",
+            "Orientación laboral",
+            "Discriminación indirecta por razón de sexo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0025",
+        "pregunta": "Según establece el Art. 18 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿a cuál de los siguientes órganos se dará cuenta del informe periódico sobre el conjunto de sus actuaciones en relación con la efectividad del principio de igualdad entre mujeres y hombres que elabora el Gobierno?",
+        "respuesta": "A las Cortes Generales",
+        "opciones": [
+            "Al Comité Económico y Social",
+            "A la Comisión de Conciliación",
+            "Al Tribunal de Honor",
+            "A las Cortes Generales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0026",
+        "pregunta": "Según establece el Art. 25 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de las siguientes opciones ofrece, desde un enfoque biopsicosocial, servicios continuados de carácter personal y sanitario?",
+        "respuesta": "El servicio de atención residencial",
+        "opciones": [
+            "El servicio de Centro de Día o de Noche",
+            "El servicio de ayuda a domicilio",
+            "El servicio de atención residencial",
+            "El servicio de Teleasistencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0027",
+        "pregunta": "Según establece el Art. 26 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de los siguientes grados de dependencia de produce cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria varias veces al día y, por su pérdida total de autonomía física, mental, intelectual o sensorial, necesita el apoyo indispensable y continuo de otra persona o tiene necesidades de apoyo generalizado para su autonomía personal?",
+        "respuesta": "Grado III. Gran dependencia",
+        "opciones": [
+            "Grado II. Dependencia severa",
+            "Grado I. Dependencia moderada",
+            "Grado IV. Gran independencia",
+            "Grado III. Gran dependencia"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0028",
+        "pregunta": "Según establece el Art. 2 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Todas las personas gozarán de los derechos derivados del principio de igualdad de trato y de la prohibición de discriminación por razón de sexo",
+        "opciones": [
+            "Todas las personas gozarán de los derechos derivados del principio de igualdad de trato y de la autorización de discriminación por razón de sexo",
+            "Algunas personas gozarán de los derechos derivados del principio de desigualdad de trato y de la prohibición de discriminación por razón de sexo",
+            "Todas las personas gozarán de los derechos derivados del principio de igualdad de trato y de la prohibición de discriminación por razón de sexo",
+            "Algunas personas gozarán de los derechos derivados del principio de igualdad de trato y de la autorización de discriminación por razón de sexo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0029",
+        "pregunta": "Según establece el Art. 21 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las empresas que formalicen contratos de interinidad para sustituir a trabajadoras víctimas de violencia de género que hayan suspendido su contrato de trabajo o ejercitado su derecho a la movilidad geográfica o al cambio de centro de trabajo, tendrán derecho a una bonificación del 100 por 100 de las cuotas empresariales a la Seguridad Social por contingencias comunes, durante todo el período de suspensión de la trabajadora sustituida o durante seis meses en los supuestos de movilidad geográfica o cambio de centro de trabajo",
+        "opciones": [
+            "Las empresas que formalicen contratos de interinidad para sustituir a trabajadoras víctimas de violencia de género que hayan suspendido su contrato de trabajo o ejercitado su derecho a la movilidad geográfica o al cambio de centro de trabajo, tendrán derecho a una bonificación del 20 por 100 de las cuotas empresariales a la Seguridad Social por contingencias comunes, durante todo el período de suspensión de la trabajadora sustituida o durante tres meses en los supuestos de movilidad geográfica o cambio de centro de trabajo",
+            "Las empresas que formalicen contratos de interinidad para sustituir a trabajadoras víctimas de violencia de género que hayan suspendido su contrato de trabajo o ejercitado su derecho a la movilidad geográfica o al cambio de centro de trabajo, tendrán derecho a una bonificación del 70 por 100 de las cuotas empresariales a la Seguridad Social por contingencias comunes, durante todo el período de suspensión de la trabajadora sustituida o durante tres meses en los supuestos de movilidad geográfica o cambio de centro de trabajo",
+            "Las empresas que formalicen contratos de interinidad para sustituir a trabajadoras víctimas de violencia de género que hayan suspendido su contrato de trabajo o ejercitado su derecho a la movilidad geográfica o al cambio de centro de trabajo, tendrán derecho a una bonificación del 50 por 100 de las cuotas empresariales a la Seguridad Social por contingencias comunes, durante todo el período de suspensión de la trabajadora sustituida o durante seis meses en los supuestos de movilidad geográfica o cambio de centro de trabajo",
+            "Las empresas que formalicen contratos de interinidad para sustituir a trabajadoras víctimas de violencia de género que hayan suspendido su contrato de trabajo o ejercitado su derecho a la movilidad geográfica o al cambio de centro de trabajo, tendrán derecho a una bonificación del 100 por 100 de las cuotas empresariales a la Seguridad Social por contingencias comunes, durante todo el período de suspensión de la trabajadora sustituida o durante seis meses en los supuestos de movilidad geográfica o cambio de centro de trabajo"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0030",
+        "pregunta": "Según establece el Art. 27 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, cuando las víctimas de violencia de género careciesen de rentas superiores, en cómputo mensual, al 75 por 100 del salario mínimo interprofesional, excluida la parte proporcional de dos pagas extraordinarias, recibirán una ayuda de pago único, siempre que se presuma que debido a su edad, falta de preparación general o especializada y circunstancias sociales, la víctima tendrá especiales dificultades para obtener un empleo y por dicha circunstancia no participará en los programas de empleo establecidos para su inserción profesional. Así, ¿a cuántos meses de subsidio por desempleo equivale el importe de esta ayuda social?",
+        "respuesta": "A seis meses",
+        "opciones": [
+            "A nueve meses",
+            "A doce meses",
+            "A seis meses",
+            "A tres meses"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0031",
+        "pregunta": "Según establece el Art. 34 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de los siguientes órganos deberá prever planes municipales de actuación, al objeto de adaptar las vías públicas, parques y jardines, a las normas aprobadas con carácter general, viniendo obligados a destinar un porcentaje de su presupuesto a dichos fines?",
+        "respuesta": "Los ayuntamientos",
+        "opciones": [
+            "Los Ministerios",
+            "Los ayuntamientos",
+            "Los Comités",
+            "Las Conserjerías"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0032",
+        "pregunta": "Según establece el Art. 14 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones tiene como objetivo conseguir la máxima funcionalidad de las capacidades físicas, sensoriales, mentales o intelectuales?",
+        "respuesta": "La habilitación o rehabilitación médico-funcional",
+        "opciones": [
+            "La habilitación o rehabilitación médico-funcional",
+            "La habilitación o no rehabilitación médico-funcional",
+            "La no habilitación o no rehabilitación médico-funcional",
+            "La no habilitación o rehabilitación médico-funcional"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0033",
+        "pregunta": "Según establece el Art. 20 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "La cuantía de las prestaciones económicas reguladas en los artículos de la Sección 2ª del Capítulo II del Título I de la presente Ley se acordará por el Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia, para su aprobación posterior por el Gobierno mediante Real Decreto",
+        "opciones": [
+            "La cuantía de las prestaciones económicas reguladas en los artículos de la Sección 2ª del Capítulo II del Título I de la presente Ley se acordará por el Consejo Territorial del Sistema para la Autonomía y Atención a la Independencia, para su aprobación posterior por el Gobierno mediante Normativa",
+            "La cuantía de las prestaciones económicas reguladas en los artículos de la Sección 2ª del Capítulo II del Título I de la presente Ley se acordará por el Consejo Territorial del Sistema para la Autonomía y Atención a la Independencia, para su aprobación posterior por el Gobierno Europeo mediante Decreto",
+            "La cuantía de las prestaciones económicas reguladas en los artículos de la Sección 2ª del Capítulo II del Título I de la presente Ley se acordará por el Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia, para su aprobación posterior por el Gobierno mediante Real Decreto",
+            "La cuantía de las prestaciones económicas reguladas en los artículos de la Sección 2ª del Capítulo II del Título I de la presente Ley se acordará por el Consejo Territorial del Sistema para la Autonomía y Atención a la Dependencia, para su aprobación posterior por el Gobierno Europeo mediante Directiva"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0034",
+        "pregunta": "Según establece el Art. 11 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Con el fin de hacer efectivo el derecho constitucional de la igualdad, los Poderes Públicos adoptarán medidas específicas en favor de las mujeres para corregir situaciones patentes de desigualdad de hecho respecto de los hombres. Tales medidas, que serán aplicables en tanto subsistan dichas situaciones, habrán de ser razonables y proporcionadas en relación con el objetivo perseguido en cada caso",
+        "opciones": [
+            "Con el fin de hacer efectivo el derecho constitucional de la desigualdad, los Poderes Públicos adoptarán medidas específicas en favor de las mujeres para corregir situaciones patentes de desigualdad de hecho respecto de los hombres. Tales medidas, que serán aplicables en tanto subsistan dichas situaciones, habrán de ser razonables y proporcionadas en relación con el objetivo perseguido en cada caso",
+            "Con el fin de hacer efectivo el derecho constitucional de la igualdad, los Poderes Privados adoptarán medidas específicas en favor de los hombres para corregir situaciones patentes de igualdad de hecho respecto de las mujeres. Tales medidas, que serán aplicables en tanto subsistan dichas situaciones, habrán de ser razonables y proporcionadas en relación con el objetivo perseguido en cada caso",
+            "Con el fin de hacer efectivo el derecho constitucional de la igualdad, los Poderes Públicos adoptarán medidas específicas en favor de las mujeres para corregir situaciones patentes de desigualdad de hecho respecto de los hombres. Tales medidas, que serán aplicables en tanto subsistan dichas situaciones, habrán de ser razonables y proporcionadas en relación con el objetivo perseguido en cada caso",
+            "Con el fin de hacer efectivo el derecho constitucional de la igualdad, los Poderes Privados adoptarán medidas específicas en favor de los hombres para corregir situaciones patentes de desigualdad de hecho respecto de las mujeres. Tales medidas, que serán aplicables en tanto subsistan dichas situaciones, habrán de ser irrazonables y proporcionadas en relación con el objetivo perseguido en cada caso"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0035",
+        "pregunta": "Según establece el Art. 17 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Todas las mujeres víctimas de violencia de género, con independencia de su origen, religión o cualquier otra condición o circunstancia personal o social, tienen garantizados los derechos reconocidos en esta Ley",
+        "opciones": [
+            "Todas las mujeres víctimas de violencia de género, con independencia de su origen, religión o cualquier otra condición o circunstancia personal o social, tienen garantizados los derechos reconocidos en esta Ley",
+            "Todas las mujeres víctimas de violencia de género, con dependencia de su origen, religión o cualquier otra condición o circunstancia personal o social, tienen garantizados algunos de los derechos reconocidos en esta Ley",
+            "Algunas de las mujeres víctimas de violencia de género, con independencia de su origen, religión o cualquier otra condición o circunstancia personal o social, tienen garantizados algunos de los derechos reconocidos en esta Ley",
+            "Algunas de las mujeres víctimas de violencia de género, con dependencia de su origen, religión o cualquier otra condición o circunstancia personal o social, tienen garantizados los derechos reconocidos en esta Ley"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0036",
+        "pregunta": "Según establece el Art. 10 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿de acuerdo con lo establecido en cuál de las siguientes Leyes se considerará ilícita la publicidad que utilice la imagen de la mujer con carácter vejatorio o discriminatorio?",
+        "respuesta": "De acuerdo con lo establecido en la Ley 34/1988, de 11 de noviembre, General de Publicidad",
+        "opciones": [
+            "De acuerdo con lo establecido en la Ley 34/1988, de 11 de noviembre, General de Publicidad",
+            "De acuerdo con lo establecido en la Ley 14/1978, de 11 de noviembre, General de Publicidad",
+            "De acuerdo con lo establecido en la Ley 4/1998, de 1 de noviembre, General de Publicidad",
+            "De acuerdo con lo establecido en la Ley 24/1988, de 1 de noviembre, General de Publicidad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0037",
+        "pregunta": "Según establece el Art. 23 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "El Gobierno, sin perjuicio de las competencias atribuidas a las comunidades autónomas y a las entidades locales, regulará las condiciones básicas de accesibilidad y no discriminación que garanticen los mismos niveles de igualdad de oportunidades a todas las personas con discapacidad",
+        "opciones": [
+            "El Gobierno, con perjuicio de las competencias atribuidas a las comunidades autónomas y a las entidades locales, regulará las condiciones básicas de accesibilidad y no discriminación que garanticen los mismos niveles de igualdad de oportunidades a todas las personas con discapacidad",
+            "El Gobierno, con perjuicio de las competencias atribuidas a las comunidades autónomas y a las entidades locales, regulará las condiciones básicas de accesibilidad y discriminación que garanticen los mismos niveles de igualdad de oportunidades a todas las personas con discapacidad",
+            "El Gobierno, sin perjuicio de las competencias atribuidas a las comunidades autónomas y a las entidades locales, regulará las condiciones básicas de accesibilidad y no discriminación que garanticen los mismos niveles de igualdad de oportunidades a todas las personas con discapacidad",
+            "El Gobierno, sin perjuicio de las competencias atribuidas a las comunidades autónomas y a las entidades locales, regulará las condiciones básicas de accesibilidad y discriminación que garanticen los mismos niveles de desigualdad de oportunidades a todas las personas con discapacidad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0038",
+        "pregunta": "Según establece el Art. 14 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál de las siguientes opciones no es un criterio general de actuación de los Poderes Públicos, ya que es incorrecto o falso?",
+        "respuesta": "La implantación de un lenguaje sexista en el ámbito administrativo y su fomento en la totalidad de las relaciones sociales, culturales y artísticas",
+        "opciones": [
+            "La integración del principio de igualdad de trato y de oportunidades en el conjunto de las políticas económica, laboral, social, cultural y artística, con el fin de evitar la segregación laboral y eliminar las diferencias retributivas, así como potenciar el crecimiento del empresariado femenino en todos los ámbitos que abarque el conjunto de políticas y el valor del trabajo de las mujeres, incluido el doméstico",
+            "La implantación de un lenguaje sexista en el ámbito administrativo y su fomento en la totalidad de las relaciones sociales, culturales y artísticas",
+            "La consideración de las singulares dificultades en que se encuentran las mujeres de colectivos de especial vulnerabilidad como son las que pertenecen a minorías, las mujeres migrantes, las niñas, las mujeres con discapacidad, las mujeres mayores, las mujeres viudas y las mujeres víctimas de violencia de género, para las cuales los poderes públicos podrán adoptar, igualmente, medidas de acción positiva",
+            "El compromiso con la efectividad del derecho constitucional de igualdad entre mujeres y hombres"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0039",
+        "pregunta": "Según establece el Art. 6 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿con qué fin las Administraciones educativas velarán para que en todos los materiales educativos se eliminen los estereotipos sexistas o discriminatorios y para que fomenten el igual valor de hombres y mujeres?",
+        "respuesta": "Con el fin de garantizar la efectiva igualdad entre hombres y mujeres",
+        "opciones": [
+            "Con el fin de erradicar la efectiva igualdad entre hombres y mujeres",
+            "Con el fin de garantizar la efectiva desigualdad entre hombres y mujeres",
+            "Con el fin de no garantizar la efectiva igualdad entre hombres y mujeres",
+            "Con el fin de garantizar la efectiva igualdad entre hombres y mujeres"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0040",
+        "pregunta": "Según establece el Art. 2 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿cuál de las siguientes opciones no es un fin que se presenta alcanzar a través de esta Ley en la que se articula un conjunto integral de medidas, ya que es incorrecto o falso?",
+        "respuesta": "Promover la colaboración y participación de las entidades, asociaciones y organizaciones que desde la sociedad civil actúan a favor de la violencia de género",
+        "opciones": [
+            "Reforzar hasta la consecución de los mínimos exigidos por los objetivos de la ley los servicios sociales de información, de atención, de emergencia, de apoyo y de recuperación integral, así como establecer un sistema para la más eficaz coordinación de los servicios ya existentes a nivel municipal y autonómico",
+            "Promover la colaboración y participación de las entidades, asociaciones y organizaciones que desde la sociedad civil actúan a favor de la violencia de género",
+            "Fortalecer las medidas de sensibilización ciudadana de prevención, dotando a los poderes públicos de instrumentos eficaces en el ámbito educativo, servicios sociales, sanitario, publicitario y mediático",
+            "Establecer un sistema integral de tutela institucional en el que la Administración General del Estado, a través de la Delegación Especial del Gobierno contra la Violencia sobre la Mujer, en colaboración con el Observatorio Estatal de la Violencia sobre la Mujer, impulse la creación de políticas públicas dirigidas a ofrecer tutela a las víctimas de la violencia contemplada en la presente Ley"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0041",
+        "pregunta": "Según establece el Art. 6 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿de acuerdo a cuál de los siguientes principios se realizará el ejercicio de los derechos de las personas con discapacidad?",
+        "respuesta": "De acuerdo con el principio de libertad en la toma de decisiones",
+        "opciones": [
+            "De acuerdo con el principio de libertad en la toma de decisiones",
+            "De acuerdo con el principio de jerarquía",
+            "De acuerdo con el principio de coordinación",
+            "De acuerdo con el principio de centralización"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0042",
+        "pregunta": "Según establece el Art. 4 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál de las siguientes opciones es un principio informador del ordenamiento jurídico y, como tal, se integrará y observará en la interpretación y aplicación de las normas jurídicas?",
+        "respuesta": "La igualdad de trato y de oportunidades entre mujeres y hombres",
+        "opciones": [
+            "La jerarquía en materia de oportunidades de los hombres frente a las mujeres",
+            "La desigualdad de trato y de oportunidades entre mujeres y hombres",
+            "La jerarquía en materia de oportunidades de mujeres frente a hombres",
+            "La igualdad de trato y de oportunidades entre mujeres y hombres"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0043",
+        "pregunta": "Según establece el Art. 16 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿en qué período de tiempo se constituirá, en el seno del Consejo Interterritorial del Sistema Nacional de Salud, una Comisión contra la Violencia de Género que apoye técnicamente y oriente la planificación de las medidas sanitarias contempladas en este capítulo, evalúe y proponga las necesarias para la aplicación del protocolo sanitario y cualesquiera otras medidas que se estimen precisas para que el sector sanitario contribuya a la erradicación de esta forma de violencia?",
+        "respuesta": "En el plazo de un año desde la entrada en vigor de la presente Ley",
+        "opciones": [
+            "En el plazo de un mes desde la entrada en vigor de la presente Ley",
+            "En el plazo de seis meses desde la entrada en vigor de la presente Ley",
+            "En el plazo de un año desde la entrada en vigor de la presente Ley",
+            "En el plazo de tres meses desde la entrada en vigor de la presente Ley"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0044",
+        "pregunta": "Según establece el Art. 29 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿a cuál de los siguientes órganos está adscrita la Delegación Especial del Gobierno contra la Violencia sobre la Mujer?",
+        "respuesta": "Al Ministerio de Trabajo y Asuntos Sociales",
+        "opciones": [
+            "Al Ministerio de Justicia",
+            "Al Ministerio de Educación",
+            "Al Ministerio de Hacienda",
+            "Al Ministerio de Trabajo y Asuntos Sociales"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0045",
+        "pregunta": "Según establece el Art. 12 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones son los órganos encargados de valorar y calificar las situaciones de discapacidad, para su reconocimiento oficial por el órgano administrativo competente?",
+        "respuesta": "Los equipos multiprofesionales de calificación y reconocimiento del grado de discapacidad",
+        "opciones": [
+            "Los equipos multiprofesionales de calificación y reconocimiento administrativo",
+            "Los equipos multiprofesionales de descalificación y reconocimiento administrativo",
+            "Los equipos multiprofesionales de descalificación y reconocimiento del grado de discapacidad",
+            "Los equipos multiprofesionales de calificación y reconocimiento del grado de discapacidad"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0046",
+        "pregunta": "Según establece el Art. 4 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las Universidades incluirán y fomentarán en todos los ámbitos académicos la formación, docencia e investigación en igualdad de género y no discriminación de forma transversal",
+        "opciones": [
+            "Las Universidades incluirán y fomentarán en algunos de los ámbitos académicos la formación, docencia e investigación en igualdad de género y no discriminación de forma transversal",
+            "Las Universidades incluirán y fomentarán en algunos de los ámbitos académicos la formación, docencia e investigación en igualdad de género y discriminación de forma transversal",
+            "Las Universidades incluirán y fomentarán en todos los ámbitos académicos la formación, docencia e investigación en igualdad de género y discriminación de forma transversal",
+            "Las Universidades incluirán y fomentarán en todos los ámbitos académicos la formación, docencia e investigación en igualdad de género y no discriminación de forma transversal"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0047",
+        "pregunta": "Según establece el Art. 10 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, ¿cuál de las siguientes opciones es correcta o verdadera?",
+        "respuesta": "Las personas con discapacidad tienen derecho a la protección de la salud, incluyendo la prevención de la enfermedad y la protección, promoción y recuperación de la salud, sin discriminación por motivo o por razón de discapacidad, prestando especial atención a la salud mental y a la salud sexual y reproductiva",
+        "opciones": [
+            "Las personas con discapacidad no tienen derecho a la protección de la salud, incluyendo la prevención de la enfermedad y la protección, promoción y recuperación de la salud, sin discriminación por motivo o por razón de discapacidad, prestando especial atención a la salud mental y a la salud sexual y reproductiva",
+            "Las personas con discapacidad tienen derecho a la protección de la salud, sin incluir la prevención de la enfermedad y la protección, promoción y recuperación de la salud, con discriminación por motivo o por razón de discapacidad, prestando especial atención a la salud mental y a la salud sexual y reproductiva",
+            "Las personas con discapacidad tienen derecho a la protección de la salud, incluyendo la prevención de la enfermedad y la protección, promoción y recuperación de la salud, sin discriminación por motivo o por razón de discapacidad, prestando especial atención a la salud mental y a la salud sexual y reproductiva",
+            "Las personas con discapacidad tienen derecho a la protección de la salud, sin incluir la prevención de la enfermedad y la protección, promoción y recuperación de la salud, sin discriminación por motivo o por razón de discapacidad, prestando especial atención a la salud mental y a la salud sexual y reproductiva"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0048",
+        "pregunta": "Según establece el Art. 15 de la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género, ¿quiénes promoverán e impulsarán actuaciones de los profesionales sanitarios para la detección precoz de la violencia de género y propondrán las medidas que estimen necesarias a fin de optimizar la contribución del sector sanitario en la lucha contra este tipo de violencia?",
+        "respuesta": "Las Administraciones sanitarias, en el seno del Consejo Interterritorial del Sistema Nacional de Salud",
+        "opciones": [
+            "Las Administraciones educativas, en el seno del Consejo Interterritorial del Sistema Nacional de Educación",
+            "Las Administraciones sanitarias, en el seno del Consejo Interterritorial del Sistema Nacional de Salud",
+            "Las Administraciones sanitarias, en el seno del Consejo Territorial del Sistema Municipal de Salud",
+            "Las Administraciones educativas, en el seno del Consejo Interterritorial del Sistema Municipal de Educación"
+        ]
+    },
+    {
+        "id": "bloque-i-tema-5-0049",
+        "pregunta": "Según establece el Art. 6 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, ¿cuál de los siguientes órganos garantiza las condiciones básicas y el contenido común a que se refiere la presente Ley; sirve de cauce para la colaboración y participación de las Administraciones Públicas, en el ejercicio de sus respectivas competencias, en materia de promoción de la autonomía personal y la atención y protección a las personas en situación de dependencia; optimiza los recursos públicos y privados disponibles, y contribuye a la mejora de las condiciones de vida de los ciudadanos?",
+        "respuesta": "El Sistema para la Autonomía y Atención a la Dependencia",
+        "opciones": [
+            "El Sistema para la Protección y Atención a la Independencia",
+            "El Sistema para la Autonomía y Atención a la Independencia",
+            "El Sistema para la Autonomía y Atención a la Dependencia",
+            "El Sistema para la Protección y Derecho a la Dependencia"
+        ]
+    }
+]
