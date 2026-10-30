@@ -1,0 +1,519 @@
+[
+    {
+        "id": "bloque-iii-tema-7-0000",
+        "pregunta": "¿Cómo se representa en HTML el carácter '>'?",
+        "respuesta": ">",
+        "opciones": [
+            "&",
+            "\"",
+            "<",
+            ">"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0001",
+        "pregunta": "¿Para qué sirve indexOf('s'); ?",
+        "respuesta": "Para devolver la posición donde se ha encontrado 's' en el texto almacenado, o devuelve -1 si no se ha encontrado ese carácter",
+        "opciones": [
+            "Para extraer la útlima posición del carácter 's'",
+            "Para devolver la posición donde se ha encontrado 's' en el texto almacenado, o devuelve -1 si no se ha encontrado ese carácter",
+            "*Para convertir en mayúscula el carácter 's'",
+            "Para concatenar el texto almacenado con la 's'"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0002",
+        "pregunta": "¿Qué se puede afirmar de: CGI, ASP, PHP, JSP?",
+        "respuesta": "Son tecnologías de programación empleadas en el servidor",
+        "opciones": [
+            "Son tecnologías de programación empleadas en el servidor",
+            "Son lenguajes de programación de base de datos",
+            "Son lenguajes de programación de servidor",
+            "Son lenguajes de programación de clientes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0003",
+        "pregunta": "¿Qué afirmación no es correcta sobre Applet?",
+        "respuesta": "Son seguros y se han vuelto muy populares, lo que ha hecho que otras tecnologías, como CGI, se hayan dejado de utilizar",
+        "opciones": [
+            "Vulnerabilidad de código, explotadas por hackers",
+            "Vienen descritos en el documento HTML entre las etiquetas ...",
+            "Los ficheros de java compilados se descargan al servidor web hasta el navegador y se ejecuta en la máquina virtual de Java",
+            "Son seguros y se han vuelto muy populares, lo que ha hecho que otras tecnologías, como CGI, se hayan dejado de utilizar"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0004",
+        "pregunta": "var ejemplo = false; ¿Qué tipo de variable es en Javascript?",
+        "respuesta": "Booleano",
+        "opciones": [
+            "Numérico",
+            "Cadena de texto",
+            "Array",
+            "Booleano"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0005",
+        "pregunta": "Las aplicaciones web basadas en este tipo de sistemas tienen como función la publicación de contenido configurando y adaptando módulos con una interfaz web…",
+        "respuesta": "los sistemas de gestores de contenidos",
+        "opciones": [
+            "el protocolo TCP / IP",
+            "las tecnologías de desarrollo",
+            "los sistemas de gestores de contenidos",
+            "el protocolo HTTP"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0006",
+        "pregunta": "¿Qué estándar abierto implementa la conexión desde Java a bases de datos relacionales?",
+        "respuesta": "JDBC",
+        "opciones": [
+            "JDBC",
+            "JSF",
+            "JSP",
+            "Servlet"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0007",
+        "pregunta": "¿Qué no pertenecería al ciclo de vida de un servlet?",
+        "respuesta": "El contenedor servlet genera el texto en HTML pero no devuelve la página al navegador del cliente que la solicitó",
+        "opciones": [
+            "Una vez inicializado el servlet, ya puede manejar peticiones de cliente",
+            "El navegador de cliente pide una página a través de HTTP al contenedor sevlet",
+            "Un servlet se carga cuando se hace una solicitud por primera vez",
+            "El contenedor servlet genera el texto en HTML pero no devuelve la página al navegador del cliente que la solicitó"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0008",
+        "pregunta": "¿Cómo se representa en HTML el carácter: \" ?",
+        "respuesta": "\"",
+        "opciones": [
+            ">",
+            "\"",
+            "<",
+            "&"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0009",
+        "pregunta": "¿Cómo se llama al programa escrito en Java que forma parte de los componentes de una página web?",
+        "respuesta": "Applet",
+        "opciones": [
+            "HTML5",
+            "HTML",
+            "Applet",
+            "XHTML"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0010",
+        "pregunta": "En relación con los servicios web, ¿qué se utiliza para especificar los interfaces de un servicio web para que puedan ser usados por una aplicación?",
+        "respuesta": "UDDI",
+        "opciones": [
+            "UDDI",
+            "WSDL",
+            "CGI",
+            "SOAP"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0011",
+        "pregunta": "¿Para qué se usa toUpperCase y toLowerCase?",
+        "respuesta": "Para convertir en mayúsculas y minúsculas el texto almacenado, respectivamente",
+        "opciones": [
+            "Para mostrar el tamaño de la variable de texto",
+            "Para extraer, de una posición en concreto, el carácter del texto almacenado",
+            "Para concatenar el texto almacenado con otro texto",
+            "Para convertir en mayúsculas y minúsculas el texto almacenado, respectivamente"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0012",
+        "pregunta": "¿Cómo se llama el lenguaje de programación orientado a objetos implementado sobre la plataforma Java?",
+        "respuesta": "Groovy",
+        "opciones": [
+            ".NET",
+            "HTML",
+            "Groovy",
+            "Javascript"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0013",
+        "pregunta": "¿Cuál no sería un método para controlar la creación, ejecución, parada o destrucción de Applet?",
+        "respuesta": "create",
+        "opciones": [
+            "stop",
+            "create",
+            "destroy",
+            "init"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0014",
+        "pregunta": "¿Cómo se le llama al programa que se puede incrustar en una página web y ejecutarse en un navegador utilizando una máquina virtual de Java?",
+        "respuesta": "Applet",
+        "opciones": [
+            "Applet",
+            "App",
+            "Adobe",
+            "Flash"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0015",
+        "pregunta": "var ejemplo = \"Buenos dias\"; ¿Qué tipo de variable es en Javascript?",
+        "respuesta": "Cadena de texto",
+        "opciones": [
+            "Booleano",
+            "Numérico",
+            "Array",
+            "Cadena de texto"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0016",
+        "pregunta": "¿Qué tecnología de programación es un proyecto de Apache Software Foundation?",
+        "respuesta": "PHP",
+        "opciones": [
+            "CGI",
+            "ASP",
+            "TCP",
+            "PHP"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0017",
+        "pregunta": "¿Qué afirmación no corresponde a un servlet?",
+        "respuesta": "Tienen problemas de seguridad y vulnerabilidad de su código que han sido explotadas por los hackers",
+        "opciones": [
+            "Se ejecutan en una máquina virtual de java en el servidor",
+            "Tienen problemas de seguridad y vulnerabilidad de su código que han sido explotadas por los hackers",
+            "Están escritos en Java",
+            "Se cargan una vez en el servidor y se crea un thread por cada petición"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0018",
+        "pregunta": "var ejemplo1 = -1; ++ejemplo1; ¿Qué valor tiene ahora 'ejemplo1'?",
+        "respuesta": "0",
+        "opciones": [
+            "0",
+            "2",
+            "1",
+            "-1"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0019",
+        "pregunta": "¿Qué es el CGI?",
+        "respuesta": "Es un mecanismo de comunicación por el que una aplicación que corre en una computadora cliente puede solicitar datos de un programa ejecutado en un servidor web",
+        "opciones": [
+            "Es un mecanismo de comunicación por el que una aplicación que corre en una computadora cliente puede solicitar datos de un programa ejecutado en un servidor web",
+            "Es el protocolo HTTP que especifica la comunicación entre cliente y servidor",
+            "Es un protocolo muy usado en las comunicaciones entre cliente y servidor que permite que el tráfico vaya encriptado de extremo a extremo",
+            "Es un servidor web que atiende las peticiones de los clientes y devuelve el resultado de la petición o un error si el recurso no existe"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0020",
+        "pregunta": "¿Cuál sería una tecnología multiplataforma, que suele ir integrado en un paquete LAMP que utiliza LINUX como sistema operativo, APACHE como servidor web y MySQL como gestor de base de datos?",
+        "respuesta": "PHP",
+        "opciones": [
+            "Servlet",
+            "Applet",
+            "JSP",
+            "PHP"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0021",
+        "pregunta": "¿Cómo se llama el protocolo que permite que ordenadores diferentes se puedan comunicar entre sí a pesar de pertenecer a diferentes redes?",
+        "respuesta": "IP",
+        "opciones": [
+            "IP",
+            "DARPA",
+            "HTTP",
+            "NSFNET"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0022",
+        "pregunta": "¿Qué lenguaje específico trabaja con 'frontend'?",
+        "respuesta": "Javascript",
+        "opciones": [
+            "PHP",
+            "HTML",
+            "Javascript",
+            "Java"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0023",
+        "pregunta": "¿Qué versión actual ha supuesto una gran revolución para el dinamismo del cliente y ofrece muchas tecnologías y librerías avanzadas para el diseño de aplicaciones web?",
+        "respuesta": "HTML5",
+        "opciones": [
+            "XHTML",
+            "XML",
+            "HTML5",
+            "HTML"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0024",
+        "pregunta": "¿Qué es XHTML?",
+        "respuesta": "Es HTML pero expresado como XML",
+        "opciones": [
+            "Es la versión 5 de HTML",
+            "Es HTML pero en una versión menos estricta a nivel técnico",
+            "Es HTML pero expresado como XML",
+            "Es la versión 10 de HTML"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0025",
+        "pregunta": "¿Qué lenguaje combina HTML para mostrar datos y XML para describir datos?",
+        "respuesta": "XHTML",
+        "opciones": [
+            "XMLHTML",
+            "XHTML",
+            "HTXML",
+            "HTMLX"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0026",
+        "pregunta": "¿De qué tipo son las variables que se definen dentro de una función en Javascript?",
+        "respuesta": "Locales",
+        "opciones": [
+            "De salida",
+            "De entrada",
+            "Globales",
+            "Locales"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0027",
+        "pregunta": "Indica la tecnología que hace referencia a: 'Cuando se pulsa un enlace, se hace la petición al servidor en segundo plano utilizando Javascript y cuando llega el resultado, se actualizan solo las partes de la página necesaria mejorando mucho la experiencia de navegación del usuario'.",
+        "respuesta": "AJAX",
+        "opciones": [
+            "HTML",
+            "XHTML",
+            "AJAX",
+            "Servlet"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0028",
+        "pregunta": "El éxito del servicio WWW…",
+        "respuesta": "Se basa en la simplicidad de HTML y HTTP",
+        "opciones": [
+            "Se basa en la complejidad de HTML y HTTP",
+            "Se basa en la simplicidad de HTML y HTTP",
+            "Se basa en la conexión entre HTML y HTTP",
+            "Se basa en el conjunto encriptado de HTML y HTTP"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0029",
+        "pregunta": "¿Para qué se utiliza el CSS?",
+        "respuesta": "para gestionar la presentación de documentos y separarlo de la estructura de los documentos",
+        "opciones": [
+            "para gestionar la presentación de documentos y separarlo de la estructura de los documentos",
+            "para añadir efectos gráficos en las páginas web",
+            "para mejorar la experiencia de navegación con el usuario",
+            "para simular una aplicación de escritorio, teniendo una única página cuyo contenido va cambiando a medida que el usuario interactúa con las pestañas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0030",
+        "pregunta": "¿Qué es lo que provee con un catálogo de negocios en internet en el contexto de los servicios web?",
+        "respuesta": "WSDL",
+        "opciones": [
+            "CGI",
+            "SOAP",
+            "UDDI",
+            "WSDL"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0031",
+        "pregunta": "¿Qué tipo de tecnología se ha popularizado con Gmail y Maps de Google?",
+        "respuesta": "Single Page Applicaction con Api Rest",
+        "opciones": [
+            "Single Page Applicaction con Api Rest",
+            "AJAX",
+            "Javascript",
+            "CSS"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0032",
+        "pregunta": "¿En qué tecnología un usuario la invoca, creando un hilo en la máquina virtual en lugar de una nueva instancia, haciéndola más eficiente que los CGI?",
+        "respuesta": "Servlet",
+        "opciones": [
+            "HTML5",
+            "PHP",
+            "Applet",
+            "Servlet"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0033",
+        "pregunta": "¿Qué afirmación es falsa sobre XML?",
+        "respuesta": "XML es un lenguaje especialmente diseñado para la presentación de documentos",
+        "opciones": [
+            "En XML existen tecnologías propias para la presentación de documentos como XSL-FO",
+            "En XML existen tecnologías propias para la presentación de documentos como XSL",
+            "En XML es posible enlazar una hoja de estilos CCS",
+            "XML es un lenguaje especialmente diseñado para la presentación de documentos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0034",
+        "pregunta": "¿Qué tiene en cuenta la entidad que se pretende desarrollar, dependiendo de la arquitectura de la aplicación web?",
+        "respuesta": "la tecnología de desarrollo",
+        "opciones": [
+            "el protocolo TCP / IP",
+            "el protocolo HTTP",
+            "la tecnología de desarrollo",
+            "los sistemas gestores de contenido"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0035",
+        "pregunta": "¿Cuál es el punto débil del CGI?",
+        "respuesta": "Necesita un runtime enviroment, un entorno en el que el programa se esté ejecutando",
+        "opciones": [
+            "Necesita un runtime enviroment, un entorno en el que el programa se esté ejecutando",
+            "Necesita crear subrutinas",
+            "La salida de datos es enviada a cliente sin ser depurada",
+            "Necesita un lenguaje de programación exclusivo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0036",
+        "pregunta": "¿Qué es lo que permite efectos gráficos, menús desplegables, páginas que se adaptan al tipo de terminal con el que se está accediendo a ella?",
+        "respuesta": "Javascript",
+        "opciones": [
+            "XHTML",
+            "Javascript",
+            "HTML",
+            "CGI"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0037",
+        "pregunta": "¿Cómo se representa en HTML '&'?",
+        "respuesta": "&",
+        "opciones": [
+            ">",
+            "<",
+            "\"",
+            "&"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0038",
+        "pregunta": "¿Qué ocurre si en una función se utiliza una variable que no se ha definido dentro de esa función de Javascript?",
+        "respuesta": "La variable pasa a ser global",
+        "opciones": [
+            "Es una variable local",
+            "No es necesario definir variables",
+            "La variable pasa a ser global",
+            "Da error al ejecutar"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0039",
+        "pregunta": "¿Qué respuesta no es correcta sobre las normas básicas que debe cumplir un documento XML para afirmar que está bien formado?",
+        "respuesta": "Los elementos XML pueden poseer atributos. Estos deben ir entre corchetes",
+        "opciones": [
+            "No se pueden solapar las etiquetas de distintos elementos",
+            "Las etiquetas de elementos anidados se deben cerrar en el orden correcto",
+            "Los elementos XML pueden poseer atributos. Estos deben ir entre corchetes",
+            "En un documento XML debe haber un solo elemento raíz"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0040",
+        "pregunta": "¿Cómo se representa en HTML el carácter '<'?",
+        "respuesta": "<",
+        "opciones": [
+            "<",
+            ">",
+            "&",
+            "\""
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0041",
+        "pregunta": "¿Cuál no pertenece a una funcionalidad de los Applet?",
+        "respuesta": "Juegos de gran complejidad",
+        "opciones": [
+            "Pueden realizar funciones matemáticas, financieras…",
+            "Juegos de gran complejidad",
+            "Se pueden conseguir diagramas y gráficas, gráficos que interactúen con el ratón",
+            "Se pueden conseguir diferentes efectos sobre el texto"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0042",
+        "pregunta": "¿Cuál no sería una regla de sintaxis en Javascript?",
+        "respuesta": "Siempre es necesario separar las instrucciones con punto y coma ';'",
+        "opciones": [
+            "Se distinguen las mayúsculas de las minúsculas",
+            "Los espacios en blanco son ignorados",
+            "Se pueden poner comentarios al código para añadir información",
+            "Siempre es necesario separar las instrucciones con punto y coma ';'"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0043",
+        "pregunta": "¿Qué estándar abierto se basa en el uso de componentes web para el desarrollo de aplicaciones?",
+        "respuesta": "JSF",
+        "opciones": [
+            "Java EE",
+            "JSP",
+            "JSF",
+            "EJB"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0044",
+        "pregunta": "¿En qué año aparecieron los applets junto con el lenguaje Java?",
+        "respuesta": "1995",
+        "opciones": [
+            "1985",
+            "1998",
+            "1990",
+            "1995"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0045",
+        "pregunta": "¿Qué tienen en común: JavaEE, Servlet, JSP, JSF?",
+        "respuesta": "Son lenguajes de programación de servidor con tecnología basada en Java",
+        "opciones": [
+            "Son lenguajes de programación de servidor con tecnología basada en Java",
+            "Son lenguajes de programación de servidor con tecnología basada en Javascript",
+            "Son lenguajes de programación de cliente con tecnología basada en Java",
+            "Son lenguajes de programación de base de datos con tecnología basada en Javascript"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-7-0046",
+        "pregunta": "var ejemplo = [\"dni\",\"nombre\",\"edad\"]; ¿Qué tipo de variable es en Javascript?",
+        "respuesta": "Array",
+        "opciones": [
+            "Array",
+            "Numérico",
+            "Cadena de texto",
+            "Booleano"
+        ]
+    }
+]

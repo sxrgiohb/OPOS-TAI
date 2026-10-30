@@ -1,0 +1,542 @@
+[
+    {
+        "id": "bloque-iii-tema-3-0000",
+        "pregunta": "¿Qué objeto permite llevar un valor correlativo especificándose su valor inicial, valor de incremento, su valor mínimo, máximo puede asociarse a una columna de la tabla?",
+        "respuesta": "Sequences",
+        "opciones": [
+            "Drop",
+            "Sequences",
+            "Alter Value",
+            "Index"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0001",
+        "pregunta": "Seleccione la afirmación correcta.",
+        "respuesta": "La operación 'selección' selecciona tuplas que satisfacen un predicado dado. Se utiliza la letra σ",
+        "opciones": [
+            "La operación 'selección' selecciona tuplas que satisfacen un predicado dado. Se utiliza la letra α",
+            "La operación 'selección' selecciona todos los atributos de la relación que aparece en los argumentos de dicha operación.",
+            "La operación 'selección' busca las tuplas que estén en una relación y no en otra.",
+            "La operación 'selección' selecciona tuplas que satisfacen un predicado dado. Se utiliza la letra σ"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0002",
+        "pregunta": "¿Qué quiere decir que las uniones se realicen entre relaciones compatibles?",
+        "respuesta": "Que se cumplan que las dos relaciones deben ser de la misma paridad, es decir, mismo número de atributos y que los dominios de los atributos sean iguales.",
+        "opciones": [
+            "Que se cumpla únicamente que las dos relaciones deben ser de la misma paridad, es decir, mismo número de atributos.",
+            "Que se cumplan que las dos relaciones deben ser de la misma paridad, es decir, mismo número de atributos y que los dominios de los atributos sean iguales.",
+            "Que se cumpla o que las dos relaciones deban ser de la misma paridad, es decir, mismo número de atributos o que los dominios de los atributos sean iguales.",
+            "Que se cumpla únicamente que los dominios de los atributos sean iguales."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0003",
+        "pregunta": "Si necesitamos sacar todos los números de empleado de todos los trabajadores y subcontratados, ¿qué expresión utilizaríamos?",
+        "respuesta": "π NumEmpleado (Trabajador) U π NumEmpleado (Subcontratado)",
+        "opciones": [
+            "σ NumEmpleado (Trabajador) U π NumEmpleado (Subcontratado)",
+            "σ NumEmpleado (Trabajador) U σ NumEmpleado (Subcontratado)",
+            "π NumEmpleado (Trabajador) O π NumEmpleado (Subcontratado)",
+            "π NumEmpleado (Trabajador) U π NumEmpleado (Subcontratado)"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0004",
+        "pregunta": "¿Qué operación se define a partir de las operaciones fundamentales?",
+        "respuesta": "Intersección de conjuntos.",
+        "opciones": [
+            "Proyección",
+            "Producto cartesiano",
+            "Intersección de conjuntos.",
+            "Diferencia de conjuntos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0005",
+        "pregunta": "¿Qué operador es el utilizado para especificar registros de una base de datos?",
+        "respuesta": "IN",
+        "opciones": [
+            "LIKE",
+            ">",
+            "IN",
+            "<>"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0006",
+        "pregunta": "¿Cuál no es una operación unaria?",
+        "respuesta": "Unión",
+        "opciones": [
+            "Unión",
+            "Proyección.",
+            "Renombramiento.",
+            "Selección."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0007",
+        "pregunta": "¿Qué cláusula se deberá utilizar si queremos definir el disparador a nivel de fila?",
+        "respuesta": "For Each Row",
+        "opciones": [
+            "Before Row",
+            "When Each Row",
+            "When Row",
+            "For Each Row"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0008",
+        "pregunta": "Si quiero sacar el 20% de los pacientes de un médico en concreto con el nivel de glucosa más alto...",
+        "respuesta": "Select TOP 20 PERCENT Nombre, apellido from Pacientes",
+        "opciones": [
+            "Select TOP 20 from Pacientes (Nombre, Apellido)",
+            "Select TOP 20 PERCENT Nombre, apellido from Pacientes",
+            "Select TOP 20 % from Pacientes( Nombre, apellido)",
+            "Select TOP 20 % Nombre, apellido from Pacientes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0009",
+        "pregunta": "¿Cuál es una función agregada de SQL?",
+        "respuesta": "SUM",
+        "opciones": [
+            "OR",
+            "AND",
+            "BETWEEN",
+            "SUM"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0010",
+        "pregunta": "¿Qué letra denota la proyección?",
+        "respuesta": "Se utiliza la letra π",
+        "opciones": [
+            "Se utiliza la letra σ",
+            "Se utiliza la letra π",
+            "Se utiliza la letra µ",
+            "Se utiliza la letra Ω"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0011",
+        "pregunta": "¿Cómo se escribiría la consulta de crear una lista de todos los DNI con el número de registro de empleado en la relación trabajador?",
+        "respuesta": "πDNI,NumEmpleado(trabajador)",
+        "opciones": [
+            "σNumEmpleado",
+            "DNI(trabajador)",
+            "σDNI,NumEmpleado(trabajador)",
+            "πDNI,NumEmpleado(trabajador)",
+            "πDNI(trabajador)"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0012",
+        "pregunta": "¿Qué afirmación sobre la restricción de los Trigger, es incorrecta?",
+        "respuesta": "El modificador BEFORE o AFTER indica que el Trigger no se podrá ejecutar antes o después de ejecutarse la sentencia SQL.",
+        "opciones": [
+            "Ningún procedure o función llamada por el disparador puede emitir órdenes de control de transacciones.",
+            "El modificador BEFORE o AFTER indica que el Trigger no se podrá ejecutar antes o después de ejecutarse la sentencia SQL.",
+            "Un disparador no puede emitir ninguna orden de control de transacciones (COM-MIT, ROLLBACK o SAVEPOINT).",
+            "El disparador no puede declarar variables de tipo LONG."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0013",
+        "pregunta": "¿Cuál no es una operación fundamental?",
+        "respuesta": "Separación",
+        "opciones": [
+            "Diferencia de conjuntos",
+            "Proyección",
+            "Renombramiento",
+            "Separación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0014",
+        "pregunta": "¿Cuál sería una cláusula SQL?",
+        "respuesta": "Where",
+        "opciones": [
+            "Insert",
+            "Delete",
+            "Into",
+            "Where"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0015",
+        "pregunta": "¿Qué operación se define a partir de las operaciones fundamentales?",
+        "respuesta": "Unión natural",
+        "opciones": [
+            "Producto cartesiano",
+            "Unión natural",
+            "Selección",
+            "Proyección"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0016",
+        "pregunta": "¿Qué predicado utilizaré para omitir registros que contengan datos duplicados en las columnas seleccionadas?",
+        "respuesta": "Distinct",
+        "opciones": [
+            "Distinct",
+            "Top",
+            "Select",
+            "Percent"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0017",
+        "pregunta": "¿Qué es el álgebra relacional?",
+        "respuesta": "Es un lenguaje de consulta procedimental",
+        "opciones": [
+            "Es un lenguaje de consulta procedimental",
+            "Es un lenguaje de consulta no procedural",
+            "Es un lenguaje de consulta no procedimental",
+            "Es un lenguaje de programación."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0018",
+        "pregunta": "¿Cuál es el producto cartesiano de dos relaciones A y B de grados m y n respectivamente?",
+        "respuesta": "A x B y es el conjunto formado por todas las posibles tuplas de m + n atributos en las que los m primeros atributos son de A y los n restantes pertenecen a B.",
+        "opciones": [
+            "A x B y es el conjunto formado por todas las posibles tuplas de m * n atributos en las que los m primeros atributos son de A y los n restantes pertenecen a B.",
+            "A - B y es el conjunto formado por todas las posibles tuplas de m * n atributos en las que los m primeros atributos son de A y los n restantes pertenecen a B.",
+            "A U B y es el conjunto formado por todas las posibles tuplas de m + n atributos en las que los m primeros atributos son de A y los n restantes pertenecen a B.",
+            "A x B y es el conjunto formado por todas las posibles tuplas de m + n atributos en las que los m primeros atributos son de A y los n restantes pertenecen a B."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0019",
+        "pregunta": "¿Cuál es una operación binaria?",
+        "respuesta": "Producto cartesiano",
+        "opciones": [
+            "Producto cartesiano",
+            "Selección.",
+            "Proyección.",
+            "Renombramiento."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0020",
+        "pregunta": "¿Qué cláusula es la utilizada para especificar las condiciones que deben cumplir los registros que se van a seleccionar?",
+        "respuesta": "Where",
+        "opciones": [
+            "Select",
+            "Where",
+            "Order",
+            "From"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0021",
+        "pregunta": "¿Cuál no sería una cláusula SQL?",
+        "respuesta": "Into",
+        "opciones": [
+            "Having",
+            "Into",
+            "From",
+            "Where"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0022",
+        "pregunta": "Para encontrar el DNI de los empleados que están en la tabla Trabajador y no en la tabla Subcontratado, ¿qué expresión se escribiría?",
+        "respuesta": "π DNI (Trabajador) - π DNI (Subcontratado)",
+        "opciones": [
+            "σ DNI (Trabajador) - σ DNI (Subcontratado)",
+            "σ DNI (Trabajador) - π DNI (Subcontratado)",
+            "π DNI (Trabajador) - σ DNI (Subcontratado)",
+            "π DNI (Trabajador) - π DNI (Subcontratado)"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0023",
+        "pregunta": "¿Qué afirmación corresponde con los Lenguajes procedurales o procedimentales?",
+        "respuesta": "El usuario instruye al sistema para que lleve a cabo una serie de operaciones en la base de datos para calcular el resultado deseado.",
+        "opciones": [
+            "El usuario instruye al sistema para que lleve a cabo una serie de procedimientos en la base de datos para calcular el resultado deseado.",
+            "El usuario describe la información deseada con o sin dar valor concreto para obtener la información de datos.",
+            "El usuario instruye al sistema para que lleve a cabo una serie de operaciones en la base de datos para calcular el resultado deseado.",
+            "El usuario describe la información deseada sin dar un procedimiento concreto para obtener esa información."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0024",
+        "pregunta": "¿Cuál no es una operación binaria?",
+        "respuesta": "Proyección",
+        "opciones": [
+            "Producto cartesiano",
+            "Diferencia de conjuntos",
+            "Proyección",
+            "Unión"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0025",
+        "pregunta": "¿Qué cláusula determina el orden de los registros recuperados en la consulta?",
+        "respuesta": "Order By",
+        "opciones": [
+            "Having",
+            "Order By",
+            "Select From",
+            "Group By"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0026",
+        "pregunta": "¿Cuál no es una función agregada de SQL?",
+        "respuesta": "AND",
+        "opciones": [
+            "AND",
+            "AVG",
+            "COUNT",
+            "MAX"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0027",
+        "pregunta": "¿Qué corresponde a la cláusula Having?",
+        "respuesta": "Especifica qué registros agrupados se muestran en una instrucción SELECT con una cláusula Group By. Cuando Group By ya ha combinado registros.",
+        "opciones": [
+            "Especifica qué registros agrupados se muestran en una instrucción SELECT con una cláusula Group By. Cuando Group By ya ha combinado registros.",
+            "Especifica qué registros agrupados se muestran en una instrucción UPDATE con una cláusula Group By. Cuando Group By ya ha combinado registros.",
+            "Especifica qué registros agrupados se muestran en una instrucción INSERT con una cláusula Group By. Cuando Group By ya ha combinado registros.",
+            "Especifica la columna o columnas utilizadas como clave de ordenación, especificando a continuación si los registros se ordenarán de forma ascendente o descendente."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0028",
+        "pregunta": "¿Qué símbolo se utiliza para denotar el producto cartesiano?",
+        "respuesta": "Se utiliza la letra x",
+        "opciones": [
+            "Se utiliza la letra x",
+            "Se utiliza la letra c",
+            "Se utiliza la letra µ",
+            "Se utiliza la letra Ω"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0029",
+        "pregunta": "¿Qué es el cálculo relacional de tuplas?",
+        "respuesta": "Es un lenguaje de consulta no procedimental que describe la información deseada sin dar un procedimiento específico para obtenerla.",
+        "opciones": [
+            "Es un lenguaje de consulta no procedimental que describe la información deseada sin dar un procedimiento específico para obtenerla.",
+            "Es un lenguaje de consulta procedimental que describe la información deseada sin dar un procedimiento específico para obtenerla.",
+            "Es un lenguaje de programación que describe la información deseada dando un procedimiento específico para obtenerla.",
+            "Es un lenguaje de consulta procedural que describe la información deseada dando un procedimiento específico para obtenerla."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0030",
+        "pregunta": "¿Cuál no sería una instrucción DML?",
+        "respuesta": "From",
+        "opciones": [
+            "From",
+            "Select",
+            "Update",
+            "Insert"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0031",
+        "pregunta": "¿Qué ocurre si utilizo Right Join?",
+        "respuesta": "Todos los registros de la segunda tabla se incluyen en la combinación, junto con los registros de la primera tabla en los que coinciden los campos especificados.",
+        "opciones": [
+            "Todos los registros de la segunda tabla se incluyen en la combinación, junto con los registros de la primera tabla en los que coinciden los campos especificados.",
+            "Todos los registros de la primera tabla se incluyen en la combinación, junto con los registros de la segunda tabla en los que coinciden los campos especificados.",
+            "Todos los registros de la primera tabla se excluyen en la combinación, junto con los registros de la segunda tabla en los que coinciden los campos especificados.",
+            "Todos los registros de la segunda tabla se excluyen de la combinación, junto con los registros de la primera tabla en los que coinciden los campos especificados."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0032",
+        "pregunta": "¿Qué símbolo se utiliza para denotar la intersección de conjuntos?",
+        "respuesta": "Se utiliza el símbolo ᴖ",
+        "opciones": [
+            "Se utiliza el símbolo ᴖ",
+            "Se utiliza el símbolo µ",
+            "Se utiliza el símbolo σ",
+            "Se utiliza el símbolo ᵘ"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0033",
+        "pregunta": "¿Qué operación se define a partir de las operaciones fundamentales?",
+        "respuesta": "Asignación",
+        "opciones": [
+            "Diferencia de conjuntos",
+            "Unión entera",
+            "Asignación",
+            "Unión"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0034",
+        "pregunta": "¿Cuál es la abreviatura del Lenguaje de Definición de datos?",
+        "respuesta": "DDL",
+        "opciones": [
+            "DDL",
+            "DML",
+            "DCL",
+            "LDD"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0035",
+        "pregunta": "¿Cuál no es un operador lógico?",
+        "respuesta": "Where",
+        "opciones": [
+            "OR",
+            "AND",
+            "Where",
+            "NOT"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0036",
+        "pregunta": "¿Cuál no es una operación unaria?",
+        "respuesta": "diferencia de conjuntos",
+        "opciones": [
+            "diferencia de conjuntos",
+            "renombramiento",
+            "selección",
+            "proyección"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0037",
+        "pregunta": "¿Qué cláusula es la utilizada para expresar la condición que debe cumplir cada grupo?",
+        "respuesta": "Having",
+        "opciones": [
+            "Having",
+            "Order",
+            "Insert",
+            "From"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0038",
+        "pregunta": "¿Qué función es la utilizada para calcular el promedio de los valores de un determinado grupo?",
+        "respuesta": "AVG",
+        "opciones": [
+            "SUM",
+            "MAX",
+            "AVG",
+            "COUNT"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0039",
+        "pregunta": "¿Qué objetos se asocian con tablas y se almacenan en la base de datos?",
+        "respuesta": "Los triggers o disparadores",
+        "opciones": [
+            "Los Dynasets",
+            "Los Inner Join",
+            "Los triggers o disparadores",
+            "Los Snapshots"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0040",
+        "pregunta": "¿Cuál de las siguientes afirmaciones no crea un índice en una tabla?",
+        "respuesta": "Create Trigger",
+        "opciones": [
+            "Create Trigger",
+            "Create Table",
+            "Create Index",
+            "Alter Table"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0041",
+        "pregunta": "¿Qué significa ɏ S Ɛ R(Q(S))?",
+        "respuesta": "Q es verdadera para todas las tuplas s de la relación R",
+        "opciones": [
+            "S es verdadera para todas las tuplas Q de la relación R",
+            "Q es verdadera para todas las tuplas s de la relación R",
+            "R es verdadera para todas las tuplas s de la relación Q",
+            "S es verdadera para todas las tuplas R de la relación Q"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0042",
+        "pregunta": "¿Qué instrucción debo utilizar si quiero agregar registros a una tabla o crear una consulta de datos anexados?",
+        "respuesta": "Insert Into",
+        "opciones": [
+            "Insert Into",
+            "Having",
+            "Select From",
+            "Update"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0043",
+        "pregunta": "¿Qué cláusula opcional combina en un único registro, registros con valores idénticos en la lista de campos especificada?",
+        "respuesta": "Group By",
+        "opciones": [
+            "Select From",
+            "Order By",
+            "Group By",
+            "Having"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0044",
+        "pregunta": "¿Cuál no sería una instrucción DML?",
+        "respuesta": "Having",
+        "opciones": [
+            "Select",
+            "Having",
+            "Update",
+            "Delete"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0045",
+        "pregunta": "¿Qué símbolo se utiliza para denotar la selección?",
+        "respuesta": "Se utiliza la letra σ",
+        "opciones": [
+            "Se utiliza la letra β",
+            "Se utiliza la letra Ω",
+            "Se utiliza la letra π",
+            "Se utiliza la letra σ"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0046",
+        "pregunta": "¿Qué afirmación corresponde con los Lenguajes no procedurales o no procedimentales?",
+        "respuesta": "El usuario describe la información deseada sin dar un procedimiento concreto para obtener esa información.",
+        "opciones": [
+            "El usuario describe la información deseada con o sin dar valor concreto para obtener la información de datos.",
+            "El usuario instruye al sistema para que lleve a cabo una serie de procedimientos en la base de datos para calcular el resultado deseado.",
+            "El usuario instruye al sistema para que lleve a cabo una serie de operaciones en la base de datos para calcular el resultado deseado.",
+            "El usuario describe la información deseada sin dar un procedimiento concreto para obtener esa información."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0047",
+        "pregunta": "¿Cuál es una operación unaria?",
+        "respuesta": "Selección",
+        "opciones": [
+            "Producto cartesiano",
+            "Diferencia de conjuntos",
+            "Selección",
+            "Unión"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-3-0048",
+        "pregunta": "¿Cuáles son todas las operaciones fundamentales del álgebra relacional?",
+        "respuesta": "Selección, proyección, unión, diferencia de conjuntos, producto cartesiano y renombramiento.",
+        "opciones": [
+            "Selección, proyección, unión, diferencia de conjuntos, producto cartesiano y renombramiento.",
+            "Unión, selección, proyección, intersección, producto polar y nombramiento.",
+            "Selección, proyección, conjunción, unaria, binaria y renombramiento.",
+            "Selección, renombramiento, diferencia de conjuntos y producto cartesiano."
+        ]
+    }
+]

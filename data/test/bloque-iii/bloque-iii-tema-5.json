@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-iii-tema-5-0000",
+        "pregunta": "Después de la compilación en Java, se genera un archivo…",
+        "respuesta": ".class",
+        "opciones": [
+            ".compile",
+            ".java",
+            ".class",
+            ".j"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0001",
+        "pregunta": "Un programa traductor traduce el código del programa en código máquina. El enlazador, unirá los ficheros de código objeto del programa principal con los de las librerías para producir el programa ejecutable...",
+        "respuesta": "lenguajes compilados",
+        "opciones": [
+            "lenguajes simples",
+            "lenguajes interpretados",
+            "lenguajes compilados",
+            "lenguajes mixtos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0002",
+        "pregunta": "¿Cuál no es un elemento de un programa C?",
+        "respuesta": "La función main exclusivamente",
+        "opciones": [
+            "Directivas para el preprocesador",
+            "Resto de funciones generadas por el programador",
+            "Declaraciones globales de funciones",
+            "La función main exclusivamente"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0003",
+        "pregunta": "La funcionalidad de Java EE para facilitar el acceso a los distintos Sistemas de Información Empresarial, se le llama…",
+        "respuesta": "servicios de conectividad",
+        "opciones": [
+            "servicios de conectividad",
+            "servicios de acceso a datos",
+            "servicios de mensajería",
+            "servicio de despliegue"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0004",
+        "pregunta": "Java Server Faces en Java EE se desarrolla en la capa…",
+        "respuesta": "Web",
+        "opciones": [
+            "Web",
+            "Negocio",
+            "Cliente",
+            "Componentes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0005",
+        "pregunta": "¿Qué tipo de característica permite el uso específico de palabras reservadas porque reduce las ambigüedades problemas, aunque también puede resultar una restricción?",
+        "respuesta": "Ortogonalidad",
+        "opciones": [
+            "Ortogonalidad",
+            "Fiabilidad",
+            "Tipificidad",
+            "Portabilidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0006",
+        "pregunta": "Java Standard Edition es…",
+        "respuesta": "Componente cliente",
+        "opciones": [
+            "Componente cliente",
+            "Componente servicio",
+            "Componente de negocio",
+            "Componente web"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0007",
+        "pregunta": "¿Qué lenguajes están pensados para un objetivo concreto?",
+        "respuesta": "de propósito específico",
+        "opciones": [
+            "de script",
+            "de programación de sistemas",
+            "de propósito general",
+            "de propósito específico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0008",
+        "pregunta": "¿Qué es el debugger?",
+        "respuesta": "Una herramienta para depurar el código",
+        "opciones": [
+            "Una herramienta para crear el código",
+            "Una herramienta para compilar el código",
+            "Una herramienta para depurar el código",
+            "Una herramienta para crear la interfaz"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0009",
+        "pregunta": "¿Cuál no sería una característica de la programación modular?",
+        "respuesta": "Cada módulo es dependiente, se programa de forma autónoma",
+        "opciones": [
+            "Cada uno de los módulos debe de ser nombrado en su respectiva cabecera con un nombre distinto para evitar posibles colisiones",
+            "Cada módulo es dependiente, se programa de forma autónoma",
+            "Cada módulo se constituye por dos elementos fundamentales; la cabecera y el cuerpo",
+            "La información bascula del módulo principal al resto de módulos sin ningún tipo de problemas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0010",
+        "pregunta": "En qué etapa del proceso de programación se describe el comportamiento esperado en el software una vez desarrollado…",
+        "respuesta": "Especificación",
+        "opciones": [
+            "Especificación",
+            "Prueba",
+            "Programación",
+            "Arquitectura"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0011",
+        "pregunta": "Java Beans Activation Framework (JAF)…",
+        "respuesta": "Maneja los datos en diferentes tipos de extensiones multipropósito de correo de internet o MIME",
+        "opciones": [
+            "Es el encargado de dotar de persistencia a objetos del lenguaje",
+            "Se encarga de administrar las transacciones del lado del servidor, abstrayendo casi en su totalidad al programador de abrir o cerrar las transacciones",
+            "Maneja los datos en diferentes tipos de extensiones multipropósito de correo de internet o MIME",
+            "Permite a los clientes descubrir y buscar objetos y datos a través de un nombre"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0012",
+        "pregunta": "¿Qué característica se relaciona con la facilidad de generar estructuras de datos que ahorren al programador tiempo de desarrollo?",
+        "respuesta": "Abstracción",
+        "opciones": [
+            "Tipificidad",
+            "Coste",
+            "Abstracción",
+            "Fiabilidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0013",
+        "pregunta": "¿Qué es el CLS?",
+        "respuesta": "Es el conjunto de reglas que tienen que cumplir los datos para que sean accesibles desde otros lenguajes",
+        "opciones": [
+            "Es el conjunto de datos de tipo Java",
+            "Es el conjunto de registros de datos de un lenguaje",
+            "Es el conjunto de reglas que tienen que cumplir los datos para que sean accesibles desde otros lenguajes",
+            "Es el conjunto de datos que son accesibles desde otros lenguajes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0014",
+        "pregunta": "¿Qué lenguajes están diseñados para relizar sistemas operativos o drivers?",
+        "respuesta": "de programación de sistemas",
+        "opciones": [
+            "de script",
+            "de propósito específico",
+            "de programación de sistemas",
+            "de propósito general"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0015",
+        "pregunta": "Java EE Conector Arquitecture…",
+        "respuesta": "Permite el acceso a otro tipo de sistemas de información empresarial como parte de soluciones de integración de aplicación de empresa",
+        "opciones": [
+            "Permite a las aplicaciones acceder a servicios de control de autenticación y acceso",
+            "Es el encargado de dotar de persistencia a objetos del lenguaje",
+            "Permite el acceso a otro tipo de sistemas de información empresarial como parte de soluciones de integración de aplicación de empresa",
+            "Permite a los clientes descubrir y buscar objetos y datos a través de un nombre"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0016",
+        "pregunta": "¿Cómo se llama el entorno donde se ejecutan los componentes?",
+        "respuesta": "Contenedores",
+        "opciones": [
+            "Función",
+            "Servicios",
+            "Contenedores",
+            "Interfaz"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0017",
+        "pregunta": "¿Qué lenguajes están pensados para realizar tanto tareas de control como auxiliares?",
+        "respuesta": "de script",
+        "opciones": [
+            "de programación de sistemas",
+            "de script",
+            "de propósito específico",
+            "de propósito general"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0018",
+        "pregunta": "El conjunto de técnicas de programación que se llevan a cabo para desarrollar el código del sftware sin tener en cuenta ningún tipo de consideración previa es…",
+        "respuesta": "la programación convencional",
+        "opciones": [
+            "la programación modular",
+            "la programación convencional",
+            "la programación estructurada",
+            "la programación orientada a objetos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0019",
+        "pregunta": "En qué etapa del proceso de programación se comprueba que el software realice correctamente las tareas indicadas en la especificación del problema.",
+        "respuesta": "Prueba",
+        "opciones": [
+            "Documentación",
+            "Prueba",
+            "Arquitectura",
+            "Mantenimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0020",
+        "pregunta": "¿Qué tipo de característica las variables se deben declarar, la declaración se puede hacer o durante la compilación o en la ejecución?",
+        "respuesta": "Tipificidad",
+        "opciones": [
+            "Tipificidad",
+            "Fiabilidad",
+            "Simplicidad",
+            "Ortogonalidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0021",
+        "pregunta": "Los comentarios en el lenguaje C comienzan con…",
+        "respuesta": "/*",
+        "opciones": [
+            "/",
+            "//",
+            "*/",
+            "/*"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0022",
+        "pregunta": "Java Transaction API (JTA)…",
+        "respuesta": "Se encarga de administrar las transacciones del lado del servidor, abstrayendo casi en su totalidad al programador de abrir o cerrar las transacciones",
+        "opciones": [
+            "Es el encargado de dotar de persistencia a objetos del lenguaje",
+            "Permite a los clientes descubrir y buscar objetos y datos a través de un nombre",
+            "Encargado de ejecutar distintas acciones en una misma unidad transaccional",
+            "Se encarga de administrar las transacciones del lado del servidor, abstrayendo casi en su totalidad al programador de abrir o cerrar las transacciones"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0023",
+        "pregunta": "Fortran es un lenguaje de…",
+        "respuesta": "alto nivel",
+        "opciones": [
+            "medio nivel",
+            "bajo nivel",
+            "alto nivel",
+            "super nivel"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0024",
+        "pregunta": "¿Qué es el MSIL?",
+        "respuesta": "Es el código que interpreta el CLR",
+        "opciones": [
+            "Es un lenguaje complementario de C++",
+            "Es un lenguaje intermedio de Java",
+            "Es el código que interpreta el CLR",
+            "Es un lenguaje complementario de Java"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0025",
+        "pregunta": "Las funciones en el lenguaje C++ se declaran como…",
+        "respuesta": "Tipo_valor_retorno nombre _de_la_fucnión(parámetros).",
+        "opciones": [
+            "Tipo_valor_retorno nombre _de_la_fucnión(parámetros).",
+            "Tipo_valor_retorno nombre _de_la_fucnión(parámetros, valores).",
+            "Tipo_valor_entrada nombre _de_la_fucnión(parámetros).",
+            "Tipo_valor_entrada nombre _de_la_fucnión(parámetros, valores)."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0026",
+        "pregunta": "La ejecución de instrucciones en el orden que aparecen, de tal manera que se ejecutan una sola vez cada una…",
+        "respuesta": "estructuras ssecuenciales",
+        "opciones": [
+            "estructuras objetivas",
+            "estructuras ssecuenciales",
+            "estructuras repetitivas",
+            "estructuras selectivas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0027",
+        "pregunta": "Java Generic Security Services…",
+        "respuesta": "Es una interfaz genérica para la autenticación y la mensajería segura.",
+        "opciones": [
+            "Incorpora funciones criptográficas que son necesarias para que determinadas aplicaciones se pueden ejecutar.",
+            "Está destinado a proveer un proceso de comunicación segura en Internet.",
+            "Es una interfaz genérica para la autenticación y la mensajería segura.",
+            "Realiza los procesos de autenticación y autorización en protocolos de Internet."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0028",
+        "pregunta": "¿Qué lenguajes son aptos para resolver cualquier tipo de tareas?",
+        "respuesta": "de propósito general",
+        "opciones": [
+            "de script",
+            "de propósito general",
+            "de propósito específico",
+            "de programación de sistemas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0029",
+        "pregunta": "Las bibliotecas de clases seguras…",
+        "respuesta": "Usa peticiones de seguridad para asegurarse de que los solicitantes de la biblioteca tienen permiso para acceder a los recursos que expone",
+        "opciones": [
+            "Usa peticiones de seguridad para asegurarse de que los solicitantes de la biblioteca tienen permiso para acceder a los recursos que expone",
+            "No es necesario que existan permisos para poder acceder a cualquier biblioteca que use el código",
+            "La plataforma .NET no tiene bibliotecas de clases seguras",
+            "La plataforma .NET tiene bibliotecas de herencias"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0030",
+        "pregunta": "El lenguaje C es un lenguaje…",
+        "respuesta": "estructurado",
+        "opciones": [
+            "de alta tipificdad",
+            "de baja tipificidad",
+            "estructurado",
+            "de propósito específico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0031",
+        "pregunta": "En relación con Java Persistence API (JPA), selecciona la incorrecta:",
+        "respuesta": "JPA se puede definir como un modelo de persistencia estándat para todas las aplicaciones Java, no pudiendo ser utilizado tanto en Java SE, como en Java EE",
+        "opciones": [
+            "JPA se puede definir como un modelo de persistencia estándat para todas las aplicaciones Java, no pudiendo ser utilizado tanto en Java SE, como en Java EE",
+            "El objetivo principal que persigue JPA es mantener las ventajas de la orientación a objetos al interactuar con base de datos",
+            "JPA emplea un modelo de anotaciones de metadatos y archivos des descriptor XML para configurar el mapeo entre objetos Java en el ámbito de aplicación y las tablas de la base de datos relacional",
+            "Es una solución completa, que se caracteriza por soportar tanto la herencia como el polimorfismo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0032",
+        "pregunta": "Selecciona la opción incorrecta sobre CLR:",
+        "respuesta": "Algunas de las aplicaciones que lo usen deben interactuar con el sistema de seguridad",
+        "opciones": [
+            "Puede aislar totalmente ensamblados entre sí, cuando el código tiene seguridad de tipos",
+            "Las aplicaciones que lo usen deben interactuar con el sistema de seguridad",
+            "Algunas de las aplicaciones que lo usen deben interactuar con el sistema de seguridad",
+            "Ayuda a garantizar que los ensamblados no pueden ejercer actuaciones negativas entre ellos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0033",
+        "pregunta": "Java Autentication and Authorization Service (JAAS)…",
+        "respuesta": "Permite a las aplicaciones acceder a servicios de control de autenticación y acceso",
+        "opciones": [
+            "Permite a los clientes descubrir y buscar objetos y datos a través de un nombre",
+            "Permite a las aplicaciones acceder a servicios de control de autenticación y acceso",
+            "Permite el acceso a otro tipo de sistemas de información empresarial como parte de soluciones de integración de aplicación de empresa",
+            "Es el encargado de dotar de persistencia a objetos del lenguaje"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0034",
+        "pregunta": "¿Qué es el BCL?",
+        "respuesta": "Es el encargado de permitir el acceso a los servicios que ofrece el CLR",
+        "opciones": [
+            "Permite el acceso a los servicios del CLS",
+            "Es una librería de generación de código deJava",
+            "Es una librería predeterminada escrita en Java",
+            "Es el encargado de permitir el acceso a los servicios que ofrece el CLR"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0035",
+        "pregunta": "Un ORM…",
+        "respuesta": "Tiene como objetivo establecer una correspondencia entre el modelo de objetos y el modelo relacional, asociando cada clase persistente a una tabla y cada uno de sus atributos a un campo de la tabla",
+        "opciones": [
+            "Tiene como onjetivo establecer una correspondencia entre el modelo de objetos y el modelo relacional, asociando cada clase persistente a un sistema y cada una de sus herencias a un campo de la tabla",
+            "Tiene como objetivo establecer una correspondencia entre el modelo de análisis y el modelo convergente, asociando cada clase persistente a una tabla y cada uno de sus atributos a un campo de la tabla",
+            "Tiene como objetivo establecer una correspondencia entre el modelo de análisis y el modelo convergente, asociando cada clase persistente a un sistema y cada una de sus herencias a un campo de la tabla",
+            "Tiene como objetivo establecer una correspondencia entre el modelo de objetos y el modelo relacional, asociando cada clase persistente a una tabla y cada uno de sus atributos a un campo de la tabla"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0036",
+        "pregunta": "El conjunto de técnicas de programación que tiene por objeto la redacción de programas de forma clara y sencilla, reduciendo la etapa de depuración…",
+        "respuesta": "programación estructurada",
+        "opciones": [
+            "programación orientada a objetos",
+            "programación modular",
+            "programación estructurada",
+            "programación convencional"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0037",
+        "pregunta": "La funcionalidad de Java EE para poder ejecutar distintas acciones en una misma unidad, se le llama...",
+        "respuesta": "servicio de transaccionalidad",
+        "opciones": [
+            "servicio de conectividad",
+            "servicio de directorio",
+            "servicio de seguridad",
+            "servicio de transaccionalidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0038",
+        "pregunta": "¿Cuál no sería un problema fundamental de la programación convencional?",
+        "respuesta": "Puede desarrollar un programa en paralelo",
+        "opciones": [
+            "Puede desarrollar un programa en paralelo",
+            "Los cambios organizativos afectan negativamente al proceso de desarrollo",
+            "Dificultades en el proceso de control del desarrollo software",
+            "Resultados finales son impredecibles"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0039",
+        "pregunta": "Permiten la selección de una o varias acciones alternativas, dependiendo de la decisión del usuario…",
+        "respuesta": "estructuras selectivas",
+        "opciones": [
+            "estructuras selectivas",
+            "estructuras repetitivas",
+            "estructuras objetivas",
+            "estructuras secuenciales"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0040",
+        "pregunta": "Se basa en la realización del programa mediante la incorporación de módulos o subprogramas…",
+        "respuesta": "programación modular",
+        "opciones": [
+            "programación estructurada",
+            "programación modular",
+            "programación orientada a objetos",
+            "programación convencional"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0041",
+        "pregunta": "Hacen posible la ejecución de instrucciones que se repiten un número determinado de veces…",
+        "respuesta": "estructuras repetitivas",
+        "opciones": [
+            "estructuras repetitivas",
+            "estructuras secuenciales",
+            "estructuras selectivas",
+            "estructuras objetivas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0042",
+        "pregunta": "En qué etapa mejora el software para enfrentar errores descubiertos y nuevos requisitos…",
+        "respuesta": "Mantenimiento",
+        "opciones": [
+            "Mantenimiento",
+            "Especificación",
+            "Prueba",
+            "Programación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0043",
+        "pregunta": "La funcionalidad de Java EE para facilitar la descripción y personalización de componentes a la hora de su instalación, se le llama…",
+        "respuesta": "servicios de despliegue",
+        "opciones": [
+            "servicios de despliegue",
+            "servicios de conectividad",
+            "servicios de transaccionalidad",
+            "servicios de acceso a datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0044",
+        "pregunta": "En qué etapa la complejidad y la duración están relacionadas con los lenguajes de programación utilizados, asi como en el diseño previo.",
+        "respuesta": "Programación",
+        "opciones": [
+            "Especificación",
+            "Programación",
+            "Prueba",
+            "Mantenimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0045",
+        "pregunta": "¿Qué capa se conoce como EIS (Enterprise Information System)?",
+        "respuesta": "de datos",
+        "opciones": [
+            "web",
+            "de negocio",
+            "de datos",
+            "de componentes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0046",
+        "pregunta": "Escoja una tarea del JVM:",
+        "respuesta": "Asegurar la portabilidad de las aplicaciones programadas",
+        "opciones": [
+            "Compilación del código",
+            "Liberar el uso de memoria",
+            "Asegurar la portabilidad de las aplicaciones programadas",
+            "Generar el bytecode"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0047",
+        "pregunta": "Java Security Socket Extension…",
+        "respuesta": "Está destinado a proveer un proceso de comunicación segura.",
+        "opciones": [
+            "Está destinado a proveer un proceso de comunicación segura.",
+            "Es una interfaz genérica para la autenticación y la mensajería segura.",
+            "Realiza los procesos de autenticación y autorización en protocolos de Internet.",
+            "Incorpora funciones criptográficas que son necesarias para que determinadas aplicaciones se pueden ejecutar."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0048",
+        "pregunta": "Un programa ejecuta las instrucciones del programa de manera directa…",
+        "respuesta": "lenguajes interpretados",
+        "opciones": [
+            "lenguajes compilados",
+            "lenguajes interpretados",
+            "lenguajes simples",
+            "lenguajes mixtos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-5-0049",
+        "pregunta": "Enterprise Java Beans es un contenedor…",
+        "respuesta": "de negocio",
+        "opciones": [
+            "de cliente",
+            "de componentes",
+            "de negocio",
+            "de datos"
+        ]
+    }
+]

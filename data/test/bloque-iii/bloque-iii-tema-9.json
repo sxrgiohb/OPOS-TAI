@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-iii-tema-9-0000",
+        "pregunta": "Señala la respuesta incorrecta sobre EasyCASE:",
+        "respuesta": "Está integrado con Oracle Developer",
+        "opciones": [
+            "Trabaja para proveer una solución comprensible para el diseño, consistencia y documentación del sistema en conjunto",
+            "Es una plataforma de desarrollo colaborativo de software",
+            "Está integrado con Oracle Developer",
+            "Genera esquemas de base de datos e ingeniería reversa"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0001",
+        "pregunta": "Selecciona la respuesta incorrecta sobre la plataforma SNAP:",
+        "respuesta": "No permite construír sistemas de calidad adheridos a los estándares IBM",
+        "opciones": [
+            "Proporciona el ambiente integral de trabajo",
+            "Es una plataforma de desarrollo colaborativo de software",
+            "Es un CASE para el desarrollo de aplicaciones en Sistemas AS/400 de IBM",
+            "No permite construír sistemas de calidad adheridos a los estándares IBM"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0002",
+        "pregunta": "¿Cuál no sería un objetivo de la tecnología CASE?",
+        "respuesta": "complejidad en el mantenimiento de los programas",
+        "opciones": [
+            "complejidad en el mantenimiento de los programas",
+            "aumentar la portabilidad de las aplicaciones",
+            "facilitar la reutilización de componentes software",
+            "mejorar y estandarizar documentación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0003",
+        "pregunta": "¿Qué prueba es crucial para asegurar la calidad del producto software?",
+        "respuesta": "pruebas funcionales",
+        "opciones": [
+            "pruebas de integración",
+            "prueba unitaria",
+            "pruebas funcionales",
+            "prueb as de rendimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0004",
+        "pregunta": "¿Cuál no sería un requisito para que un entorno I-CASE se cumpla?",
+        "respuesta": "Un cambio en un elemento de información no siga hasta los demás elementos relacionados",
+        "opciones": [
+            "Un cambio en un elemento de información no siga hasta los demás elementos relacionados",
+            "Proporcionar un mecanismo para compartir la información de ingeniería del software entre todas las herramientas contenidas en el entorno",
+            "Establecer un entorno automatizado para un contexto de procedimientos",
+            "Proporcionar un control de versiones y una gestión de configuración general para toda la información de la inteligencia del software"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0005",
+        "pregunta": "¿Qué componente de CASE constará de editores de texto y herramientas de diseño gráfico que permitan, mediante la utilización de un sistema de ventanas, iconos…?",
+        "respuesta": "interfaz de usuario",
+        "opciones": [
+            "generador de informes",
+            "metamodelo",
+            "repositorio",
+            "interfaz de usuario"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0006",
+        "pregunta": "¿Qué componente es sinónimo de diccionario?",
+        "respuesta": "repositorio",
+        "opciones": [
+            "interfaz de usuario",
+            "metamodelo",
+            "generador de informes",
+            "repositorio"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0007",
+        "pregunta": "En la metodología de Diseño Orientada a Objetos, ¿en qué diagrama se muestra los eventos que se producen en el sistema y como éste reacciona ante ellos?",
+        "respuesta": "diagrama de Secuencia",
+        "opciones": [
+            "diagrama de Caso de Uso",
+            "diagrama modelo de Datos",
+            "diagrama de Secuencia",
+            "diagrama de Clase"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0008",
+        "pregunta": "¿Qué entorno mejora la calidad de los sistemas, pero no mejora la productividad?",
+        "respuesta": "U-CASE",
+        "opciones": [
+            "Tools-CASE",
+            "L-CASE",
+            "I-CASE",
+            "U-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0009",
+        "pregunta": "Selecciona la respuesta correcta sobre la plataforma System Architect:",
+        "respuesta": "Posee un repositorio único que integra todas las herramientas y metodologías usadas",
+        "opciones": [
+            "No asegura la compatibilidad entre el Modelo de Datos y el Modelo Funcional",
+            "No posee control automático de diagramas y datos",
+            "Posee un repositorio único que integra todas las herramientas y metodologías usadas",
+            "En la elaboración de los diagramas, no conecta directamente al diccionario de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0010",
+        "pregunta": "Los repositorios con 'r' …",
+        "respuesta": "almacenan objetos para una herramienta CASE en particular",
+        "opciones": [
+            "almacenan objetos para una herramienta CASE en particular",
+            "se basan en estándares e implementan un modelo de información abierto y extensible",
+            "tienen un alcance mayor",
+            "soportan un entorno integrado de ingeniería de software"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0011",
+        "pregunta": "¿Qué entorno tiene menor costo?",
+        "respuesta": "U-CASE",
+        "opciones": [
+            "I-CASE",
+            "L-CASE",
+            "Tools-CASE",
+            "U-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0012",
+        "pregunta": "¿En qué componente su gestión se realiza mediante el apoyo de un SGBD o sistema de gestión de ficheros?",
+        "respuesta": "repositorio",
+        "opciones": [
+            "repositorio",
+            "carga/descarga",
+            "metamodelo",
+            "generador de informes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0013",
+        "pregunta": "¿Qué es CASE?",
+        "respuesta": "Computer-Aided Systems Engineering",
+        "opciones": [
+            "Computer Assistant Software Enable",
+            "Computer Aided System Enable",
+            "Computer-Aided Systems Engineering",
+            "Computer Asisstant Hardware Enable"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0014",
+        "pregunta": "¿Qué herramientas son orientadas a la automatización y soporte de las actividades desarrolladas durante las primeras fases del desarrollo: análisis y diseño?",
+        "respuesta": "U-CASE",
+        "opciones": [
+            "L-CASE",
+            "I-CASE",
+            "U-CASE",
+            "Tools-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0015",
+        "pregunta": "¿Cuál no correspondería a una definición de CASE?",
+        "respuesta": "Conjunto de programas que no dan asistencia a analistas, pero sí a ingenieros de software y desarrolladores",
+        "opciones": [
+            "Bajo las herramientas CASE se agrupan una serie de productos destinados a la automatización de la producción del software",
+            "Sus herramientas abarcan cada etapa del proceso de ingeniería y cada actividad que se desarrolla a lo largo del mismo",
+            "Conjunto de programas que no dan asistencia a analistas, pero sí a ingenieros de software y desarrolladores",
+            "Son un complemento de la caja de herramientas del ingeniero del software que le proporciona la posibilidad de automatizar actividades manuales de mejorar su visión general de la ingeniería"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0016",
+        "pregunta": "Selecciona la respuesta incorrecta sobre el futuro de las plataformas de desarrollo colaborativo de software:",
+        "respuesta": "está evolucionando hacia la integración de máquinas virtuales",
+        "opciones": [
+            "está evolucionando hacia la integración de presentación",
+            "está evolucionando hacia la integración de herramientas",
+            "está evolucionando hacia la integración de datos",
+            "está evolucionando hacia la integración de máquinas virtuales"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0017",
+        "pregunta": "¿En qué metodología de desarrollo se le llama al proceso de codificación del software en un lenguaje de programación?",
+        "respuesta": "Implementación",
+        "opciones": [
+            "Diseño",
+            "Implementación",
+            "Despliegue",
+            "Pruebas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0018",
+        "pregunta": "¿Qué opción no es un elemento de la herramienta CASE?",
+        "respuesta": "analista",
+        "opciones": [
+            "repositorio",
+            "generador de informes",
+            "interfaz de usuario",
+            "analista"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0019",
+        "pregunta": "¿Qué es un sistema SCV?",
+        "respuesta": "Un sistema de control de versiones",
+        "opciones": [
+            "Un sistema de Content Versions",
+            "Un sistema de Content Visual",
+            "Un sistema de Count Versions",
+            "Un sistema de control de versiones"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0020",
+        "pregunta": "Las herramientas CASE computacionales que apoyan cada una de las distintas etapas del ciclo de desarrollo de un sistema de información se le llama…",
+        "respuesta": "I-CASE",
+        "opciones": [
+            "L-CASE",
+            "U-CASE",
+            "Tools-CASE",
+            "I-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0021",
+        "pregunta": "¿Cuál no pertenece a una herramienta CASE de programación?",
+        "respuesta": "de análisis estático",
+        "opciones": [
+            "de análisis estático",
+            "de codificación de cuarta generación",
+            "de programación orientada a objetos",
+            "de codificación convencional"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0022",
+        "pregunta": "¿En qué metodología de desarrollo se le llama a la resolución de problemas, mejora y adaptación del software en explotación?",
+        "respuesta": "Mantenimiento",
+        "opciones": [
+            "Pruebas",
+            "Despliegue",
+            "Implementación",
+            "Mantenimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0023",
+        "pregunta": "¿Qué herramientas son simples y las forman ese conjunto de herramientas orientadas cada una de ellas a resolver una determinada fase del desarrollo?",
+        "respuesta": "Tools-CASE",
+        "opciones": [
+            "L-CASE",
+            "I-CASE",
+            "Tools-CASE",
+            "U-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0024",
+        "pregunta": "¿Cómo se le llaman a las funciones que permiten definir las contraseñas de los usuarios, los privilegios de acceso y los procedimientos de respaldo?",
+        "respuesta": "utilerías",
+        "opciones": [
+            "utilerías",
+            "herramientas para análisis y documentación",
+            "diccionarios",
+            "diagramas de flujo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0025",
+        "pregunta": "Las herramientas CASE frontales son…",
+        "respuesta": "herramientas técnicas",
+        "opciones": [
+            "herramientas de gestión",
+            "herramientas técnicas",
+            "herramientas de análisis",
+            "herramientas CASE dorsales"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0026",
+        "pregunta": "¿En qué prueba se verifica la funcionalidad y la seguridad entre los componentes que han sido integrados?",
+        "respuesta": "pruebas de integración",
+        "opciones": [
+            "prueba unitaria",
+            "pruebas funcionales",
+            "pruebas de integración",
+            "pruebas de rendimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0027",
+        "pregunta": "¿Qué componente de CASE se almacenan los elementos definidos o creados por la herramienta?",
+        "respuesta": "repositorio",
+        "opciones": [
+            "generador de informes",
+            "metamodelo",
+            "repositorio",
+            "interfaz de usuario"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0028",
+        "pregunta": "Las herramientas CASE de gestión…",
+        "respuesta": "se encargan de la estimación, planificación y seguimiento del proyecto",
+        "opciones": [
+            "abarcan las primeras fases de análisis y diseño",
+            "herramientas orientadas a la automatización y soporte de las actividades",
+            "se encargan de la estimación, planificación y seguimiento del proyecto",
+            "su objetivo suele ser el diseño detallado y la generación de código"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0029",
+        "pregunta": "¿Cuál sería una desventaja de los entornos I-CASE?",
+        "respuesta": "Dependen del hardware y del software",
+        "opciones": [
+            "Dan énfasis en el modelo empresarial",
+            "Integran el ciclo de vida",
+            "Dependen del hardware y del software",
+            "Generan automáticamente la documentación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0030",
+        "pregunta": "¿Cuál no corresponde a una herramienta de integración y prueba?",
+        "respuesta": "de codificación convencional",
+        "opciones": [
+            "de análisis estático",
+            "de programación orientada a objetos",
+            "de codificación convencional",
+            "de codificación de cuarta generación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0031",
+        "pregunta": "¿Qué entorno no garantiza la eficiencia del análisis y diseño?",
+        "respuesta": "L-CASE",
+        "opciones": [
+            "Tools-CASE",
+            "L-CASE",
+            "U-CASE",
+            "I-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0032",
+        "pregunta": "Señala la respuesta incorrecta sobre la plataforma ERwin:",
+        "respuesta": "No es una plataforma de desarrollo colaborativo de software",
+        "opciones": [
+            "No es una plataforma de desarrollo colaborativo de software",
+            "Es una herramienta de diseño de base de datos",
+            "Genera automáticamente las tablas y miles de líneas de stored procedure y triggers para los principales tipos de base de datos",
+            "Permite visualizar la estructura, los elementos importantes y optimizar el diseño de la base de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0033",
+        "pregunta": "El directorio de datos engloba…",
+        "respuesta": "al catálogo",
+        "opciones": [
+            "al repositorio",
+            "al diccionario de recursos de información",
+            "al catálogo",
+            "al diccionario"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0034",
+        "pregunta": "¿Qué es el DRI?",
+        "respuesta": "es el diccionario de recursos de información",
+        "opciones": [
+            "es el catálogo",
+            "es el diccionario de datos",
+            "es el diccionario de recursos de información",
+            "es el directorio"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0035",
+        "pregunta": "¿En qué años surge la tecnología CASE?",
+        "respuesta": "a mediados de los años setenta",
+        "opciones": [
+            "a mediados de los años sesenta",
+            "a mediados de los años ochenta",
+            "a mediados de los años setenta",
+            "a medidaos de los años cincuenta"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0036",
+        "pregunta": "¿Qué herramientas son dirigidas a las últimas fases del desarrollo: construcción e implantación?",
+        "respuesta": "L-CASE",
+        "opciones": [
+            "I-CASE",
+            "U-CASE",
+            "Tools-CASE",
+            "L-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0037",
+        "pregunta": "¿En qué herramientas se engloban los compiladores, los editores y los depuradores d elos lenguajes de programación convencionales?",
+        "respuesta": "herramientas de programación",
+        "opciones": [
+            "herramientas de programación",
+            "herramientas de integración y prueba",
+            "herramientas de gestión de prototipos",
+            "herramientas de mantenimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0038",
+        "pregunta": "En la metodología de Diseño Orientada a Objetos, ¿en qué diagrama se plasma la funcionalidad del sistema y quién interacciona con él?",
+        "respuesta": "diagrama de Caso de Uso",
+        "opciones": [
+            "diagrama modelo de Datos",
+            "diagrama de Secuencia",
+            "diagrama de Clase",
+            "diagrama de Caso de Uso"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0039",
+        "pregunta": "CASE propone un nuevo concepto de ciclo devida del software basado en la…",
+        "respuesta": "automatización",
+        "opciones": [
+            "automatización",
+            "programación hardware",
+            "programación software",
+            "implantación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0040",
+        "pregunta": "¿Cuál no correspondería a una ventaja del SCV?",
+        "respuesta": "Los proyectos no pueden ser divididos para permitir el desarrollo simultáneo en varias versiones",
+        "opciones": [
+            "Las correcciones pueden ser creadas automáticamente",
+            "El desarrollo distribuído es soportado a través de las redes de datos con diferentes mecanismos de autentificación",
+            "Pueden desplegarse las diferencias entre distintas versiones",
+            "Los proyectos no pueden ser divididos para permitir el desarrollo simultáneo en varias versiones"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0041",
+        "pregunta": "¿Cuál no sería un CASE dorsal?",
+        "respuesta": "herramientas de soporte",
+        "opciones": [
+            "herramientas de mantenimiento",
+            "herramientas de programación",
+            "herramientas de integración y prueba",
+            "herramientas de soporte"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0042",
+        "pregunta": "¿I-CASE es costoso?",
+        "respuesta": "Sí",
+        "opciones": [
+            "Sí",
+            "Depende del ciclo de vida",
+            "Depende de la solución simple",
+            "No"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0043",
+        "pregunta": "Seleccione la afirmación falsa.",
+        "respuesta": "Los sistemas CASE almacenan información por proyecto, cada aplicación es considerada como un proyecto. La información que describe cada proyecto se mantiene en conjunto con la de otros.",
+        "opciones": [
+            "Algunas herramientas CASE ofrecen características tales como un conjunto de reportes que validan las descripciones del sistema.",
+            "Los diagramas de flujo de datos son uno de los muchos tipos de diagramas y cartas disponibles en las herramientas CASE.",
+            "Varias herramientas CASE proporcionan un método rápido y sencillo para desarrollar prototipos de pantallas para que los usuarios finales trabajen con ellas.",
+            "Los sistemas CASE almacenan información por proyecto, cada aplicación es considerada como un proyecto. La información que describe cada proyecto se mantiene en conjunto con la de otros."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0044",
+        "pregunta": "¿Qué herramienta permite lograt importantes mejoras de productividad a corto plazo?",
+        "respuesta": "L-CASE",
+        "opciones": [
+            "Tools-CASE",
+            "U-CASE",
+            "I-CASE",
+            "L-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0045",
+        "pregunta": "El repositorio de unaherramienta CASE…",
+        "respuesta": "Necesita el apoyo de un SGBD",
+        "opciones": [
+            "Es un generador de informes",
+            "Es un interfaz de usuario",
+            "Necesita el apoyo de un SGBD",
+            "Es un metamodelo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0046",
+        "pregunta": "Las herramientas CASE workbench se llaman…",
+        "respuesta": "I-CASE",
+        "opciones": [
+            "U-CASE",
+            "Tools-CASE",
+            "I-CASE",
+            "L-CASE"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0047",
+        "pregunta": "En qué metodología de desarrollo consiste en la insstalación del software en un entorno de producción y puesta en marcha para explotación?",
+        "respuesta": "Despliegue",
+        "opciones": [
+            "Implementación",
+            "Despliegue",
+            "Pruebas",
+            "Mantenimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0048",
+        "pregunta": "¿En qué herramienta se recogen las actividades aplicables en todo el proceso de desarrollo cmo herramientas de documentación, para software de sistemas, de control de calidad…?",
+        "respuesta": "herramientas de soporte",
+        "opciones": [
+            "herramientas de integración y prueba",
+            "herramientas de gestión de prototipos",
+            "herramientas de mantenimiento",
+            "herramientas de soporte"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-9-0049",
+        "pregunta": "¿Qué componente de CASE constituye el marco para la definición de las técnicas y metodologías soportadas por la herramienta?",
+        "respuesta": "metamodelo",
+        "opciones": [
+            "comprobación de errores",
+            "repositorio",
+            "metamodelo",
+            "interfaz de usuario"
+        ]
+    }
+]

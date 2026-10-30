@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-iii-tema-4-0000",
+        "pregunta": "Una clase hijo de otra clase se denomina…",
+        "respuesta": "subclase",
+        "opciones": [
+            "subclase",
+            "subrutina",
+            "clase abstracta",
+            "superclase"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0001",
+        "pregunta": "¿Qué diagrama nos indica cómo son las dependencias y el sistema de organización entre una serie de componentes, estableciendo una visión jerárquica?",
+        "respuesta": "Diagrama de componentes",
+        "opciones": [
+            "Diagrama de componentes",
+            "Diagrama de estructura compuesta",
+            "Diagrama de clases",
+            "Diagrama de paquetes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0002",
+        "pregunta": "¿Qué relación son las clases cuyos ejemplos son a su vez clases?",
+        "respuesta": "Metaclase",
+        "opciones": [
+            "Ejemplificación",
+            "Herencia",
+            "Metaclase",
+            "Asociación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0003",
+        "pregunta": "Los diagramas de interacción se subdividen en…",
+        "respuesta": "Diagramas de secuencia, comunicación, colaboración, de visión de conjunto y de tiempo",
+        "opciones": [
+            "Diagramas de secuencia, comunicación, colaboración, de visión de conjunto y de tiempo",
+            "Diagramas de clases, de objetos, de paquetes, de despliegue y de estructura",
+            "Diagramas de casos de uso, de estado y de actividad",
+            "Diagramas de secuencia, de estructura compuesta, de tiempo y de actividad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0004",
+        "pregunta": "Cuando el acceso está restringido a los métodos de esa clase…",
+        "respuesta": "Privado",
+        "opciones": [
+            "Privado",
+            "Protegido",
+            "Concertado",
+            "Público"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0005",
+        "pregunta": "¿Qué formaría parte de las propiedades fundamentales de la programación orientada a objetos?",
+        "respuesta": "Polimorfismo",
+        "opciones": [
+            "Objetividad",
+            "Polimorfismo",
+            "Tipificidad",
+            "Capsulado"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0006",
+        "pregunta": "En la programación orientada a objetos….",
+        "respuesta": "Se pone el foco en el escenario del problema",
+        "opciones": [
+            "Se pone el foco en lo que hay que hacer para resolver el problema",
+            "Se pone el foco en cómo minimizar el problema",
+            "Se pone el foco en el escenario del problema",
+            "Se pone el foco en cómo resolver el problema"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0007",
+        "pregunta": "El UML clasifica las cosas en:",
+        "respuesta": "Cosas de estructura, comportamiento, agrupamiento y anotación",
+        "opciones": [
+            "Cosas de estructura, comportamiento, relación, modelación y anotación",
+            "Cosas de formación, comportamiento y agrupamiento",
+            "Cosas de estructura, comportamiento, agrupamiento y anotación",
+            "Cosas de formación, estructura, comportamiento, agrupamiento y anotación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0008",
+        "pregunta": "¿Cuál no pertenece a un nivel de acceso de datos?",
+        "respuesta": "Concertado",
+        "opciones": [
+            "Abierto",
+            "Protegido",
+            "Concertado",
+            "Privado"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0009",
+        "pregunta": "¿Qué se define como el conjunto de conexiones tanto físicas como conceptuales que se dan entre objetos?",
+        "respuesta": "Links",
+        "opciones": [
+            "Links",
+            "Asociaciones",
+            "Agregaciones",
+            "Herencia"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0010",
+        "pregunta": "Las clases con método declarado pero no definido se denominan...",
+        "respuesta": "clase abstracta",
+        "opciones": [
+            "clase abstracta",
+            "superclase",
+            "subclase",
+            "metaclase"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0011",
+        "pregunta": "¿En qué relación una clase comparte la estructura y comportamiento definidos en una superclase?",
+        "respuesta": "Herencia",
+        "opciones": [
+            "Ejemplificación",
+            "Agregación",
+            "Herencia",
+            "Metaclases"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0012",
+        "pregunta": "¿Qué propiedad transmite los métodos y atributos de una clase a otra?",
+        "respuesta": "Herencia",
+        "opciones": [
+            "Encapsulado",
+            "Polimorfismo",
+            "Herencia",
+            "Abstracción"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0013",
+        "pregunta": "¿Qué permite dotar al objeto de unos valores iniciales acordes con la finalidad que queremos para dicho objeto?",
+        "respuesta": "La sobrecarga de constructores",
+        "opciones": [
+            "La sobrecarga de constructores",
+            "La sobrecarga de deconstructores",
+            "El método analizador",
+            "El método modificador"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0014",
+        "pregunta": "¿Qué indica relaciones de mandato bidireccionales?",
+        "respuesta": "Asociación",
+        "opciones": [
+            "Asociación",
+            "Agregación",
+            "Ejemplificación",
+            "Herencia"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0015",
+        "pregunta": "¿Qué diagrama muestra la relación entre componentes de software y el hardware donde se instale?",
+        "respuesta": "Diagrama de despliegue",
+        "opciones": [
+            "Diagrama de paquetes",
+            "Diagrama de estado",
+            "Diagrama de actividad",
+            "Diagrama de despliegue"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0016",
+        "pregunta": "¿Qué diagrama nos da una imagen estática de las cosas que existen en un diagrama de clase, pero introduciendo una perspectiva real?",
+        "respuesta": "Diagrama de objetos",
+        "opciones": [
+            "Diagrama de despliegue",
+            "Diagrama de paquetes",
+            "Diagrama de estructura compuesta",
+            "Diagrama de objetos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0017",
+        "pregunta": "¿Cómo se le llaman a las funciones que va a realizar el objeto, y que nos van a proporcionar algún tipo de funcionalidad?",
+        "respuesta": "Métodos",
+        "opciones": [
+            "Métodos",
+            "Mensajes",
+            "Atributos",
+            "Clases"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0018",
+        "pregunta": "¿Con qué propiedad pretendemos ignorar los detalles y centrarnos en los aspectos que para nosotros son más relevantes?",
+        "respuesta": "Abstracción",
+        "opciones": [
+            "Herencia",
+            "Encapsulado",
+            "Abstracción",
+            "Objetividad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0019",
+        "pregunta": "La sobrecarga de métodos es…",
+        "respuesta": "una forma de implementar el polimorfismo",
+        "opciones": [
+            "una forma de implementar el polimorfismo",
+            "una forma de implementar la herencia",
+            "una forma de implementar el encapsulado",
+            "una forma de implementar la abstracción"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0020",
+        "pregunta": "Cuando la metodología orientada a objetos presenta una disminución de la brecha semántica, se refiere…",
+        "respuesta": "Recorta la separación existente entre el mundo real y el mundo software",
+        "opciones": [
+            "Recorta la separación entre la fase de análisis e implementación",
+            "Recorta la separación existente entre el mundo real y el mundo software",
+            "Recorta la separación entre la fase de análisis y diseño",
+            "Recorta la separación entre la fase de diseño e implementación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0021",
+        "pregunta": "¿Qué no formaría parte de las propiedades fundamentales de la programación orientada a objetos?",
+        "respuesta": "Tipificidad",
+        "opciones": [
+            "Tipificidad",
+            "Herencia",
+            "Encapsulado",
+            "Polimorfismo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0022",
+        "pregunta": "El UML:",
+        "respuesta": "Propone una notación estándar y semánticas esenciales para el modelado de un sistema orientado a objetos",
+        "opciones": [
+            "Propone una notación y semántica según norma ASCI para el modelado de un sistema orientado a objetos",
+            "Propone una semántica esencial para el modelado de un sistema orientado a objetos",
+            "Propone una notación estándar esencial para el modelado de un sistema orientado a objetos",
+            "Propone una notación estándar y semánticas esenciales para el modelado de un sistema orientado a objetos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0023",
+        "pregunta": "¿Qué tipo de operación libera el estado de un objeto?",
+        "respuesta": "Destructor",
+        "opciones": [
+            "Constructor",
+            "Destructor",
+            "Modificador",
+            "Iterador"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0024",
+        "pregunta": "¿Qué tipo de operación permite a todas las partes de un objeto ser accedidas en un orden?",
+        "respuesta": "Iterador",
+        "opciones": [
+            "Destructor",
+            "Selector",
+            "Constructor",
+            "Iterador"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0025",
+        "pregunta": "¿De qué está constituído un objeto?",
+        "respuesta": "Identidad, estado y comportamiento",
+        "opciones": [
+            "Estado, comportamiento y clase",
+            "Identidad, estado y comportamiento",
+            "Identidad, estado y clase",
+            "Estado, comportamiento y rango"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0026",
+        "pregunta": "¿Cuáles son las partes estáticas de un modelo UML?",
+        "respuesta": "Cosas de estructura",
+        "opciones": [
+            "Cosas de estructura",
+            "Cosas de relación",
+            "Cosas de modelación",
+            "Cosas de agrupamiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0027",
+        "pregunta": "Las agregaciones se caracterizan porque…",
+        "respuesta": "Establecen relaciones entre un conjunto y una parte del mismo",
+        "opciones": [
+            "Establecen una asociación concreta por la que un objeto demanda el servicio de otro objeto",
+            "Establecen una asociación por la que un objeto llama a una parte de otro",
+            "Establecen relaciones entre un conjunto y una parte del mismo",
+            "Establecen una asociación por la que un objeto se relaciona con otro de su misma clase"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0028",
+        "pregunta": "¿Qué asociación es donde se especifica cuál es el cliente y cuál el servidor, permitiendo a los clientes acceder solo a las interfaces públicas?",
+        "respuesta": "Uso",
+        "opciones": [
+            "Metaclases",
+            "Ejemplificación",
+            "Uso",
+            "Herencia"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0029",
+        "pregunta": "¿Qué método se emplea para recuperar el valor de un atributo?",
+        "respuesta": "Analizador",
+        "opciones": [
+            "Destructor",
+            "Analizador",
+            "Constructor",
+            "Modificador"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0030",
+        "pregunta": "¿Qué es el polimorfismo?",
+        "respuesta": "El uso de operadores o funciones de forma diferente, dependiendo de los objetos sobre los que están actuando",
+        "opciones": [
+            "El uso de operadores o funciones de forma diferente, dependiendo de las funciones sobre las que están actuando",
+            "El uso de operadores o funciones de forma diferente, dependiendo de los datos sobre los que están actuando",
+            "El uso de operadores o funciones de forma diferente, dependiendo de los objetos sobre los que están actuando",
+            "El uso de operadores o funciones de forma diferente, dependiendo del criterio del programador"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0031",
+        "pregunta": "¿Qué representa una relación del tipo 'tener un' entre clases?",
+        "respuesta": "Agregación",
+        "opciones": [
+            "Ejemplificación",
+            "Herencia",
+            "Agregación",
+            "Asociación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0032",
+        "pregunta": "¿Cuál no sería una ventaja de la programación orientada a objetos?",
+        "respuesta": "Complejidad",
+        "opciones": [
+            "Flexibilidad",
+            "Concreción del caso",
+            "Complejidad",
+            "Fiabilidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0033",
+        "pregunta": "El método constructor…",
+        "respuesta": "está íntimamente relacionado con la creación del objeto",
+        "opciones": [
+            "se establece por defecto",
+            "se ejecuta cada vez que se crea un objeto",
+            "está íntimamente relacionado con la creación del objeto",
+            "está íntimamente relacionado cuando se crea la clase de ese objeto"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0034",
+        "pregunta": "Los atributos de un objeto son…",
+        "respuesta": "Un conjunto de valores numéricos o alfanuméricos",
+        "opciones": [
+            "Un conjunto de valores numéricos",
+            "Un conjunto de valores aleatorios",
+            "Un conjunto de valores alfanuméricos",
+            "Un conjunto de valores numéricos o alfanuméricos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0035",
+        "pregunta": "¿Qué nivel de acceso solo pueden acceder las funciones de clases heredadas?",
+        "respuesta": "Protegido",
+        "opciones": [
+            "Cerrado",
+            "Público",
+            "Abierto",
+            "Protegido"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0036",
+        "pregunta": "¿Con qué propiedad se procede a concentrar los datos y operaciones relacionadas en la misma unidad de programación?",
+        "respuesta": "Encapsulado",
+        "opciones": [
+            "Herencia",
+            "Abstracción",
+            "Encapsulado",
+            "Polimorfismo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0037",
+        "pregunta": "Los diagramas de clases:",
+        "respuesta": "Son para el modelado orientado a objetos",
+        "opciones": [
+            "Indican la jerarquía de clases",
+            "Son para el modelado orientado a objetos",
+            "Indica la división del sistema en paquetes",
+            "Indican las dependencias del sistema"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0038",
+        "pregunta": "¿Qué diagrama muestra las interacciones organizadas alrededor de los roles?",
+        "respuesta": "Diagrama de colaboración",
+        "opciones": [
+            "Diagrama de colaboración",
+            "Diagrama de comunicación",
+            "Diagrama de secuencia",
+            "Diagrama de tiempo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0039",
+        "pregunta": "¿Qué tipo de método se emplea para asignar el valor de un atributo?",
+        "respuesta": "Modificador",
+        "opciones": [
+            "Destructor",
+            "Analizador",
+            "Constructor",
+            "Modificador"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0040",
+        "pregunta": "¿Qué posibles tipos de relaciones existen en el UML?",
+        "respuesta": "Relaciones de asociación, de dependencia, de generalización",
+        "opciones": [
+            "Relaciones de asociación, disociación y dependencia",
+            "Relaciones de agrupación y disociación",
+            "Relaciones de asociación, de dependencia, de generalización",
+            "Relaciones de asociación dependencia"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0041",
+        "pregunta": "¿Qué es una clase?",
+        "respuesta": "Un conjunto de objetos que comparten una estructura y comportamiento comunes",
+        "opciones": [
+            "Un conjunto de objetos que comparten una estructura y objetivos comunes",
+            "Un conjunto de objetos que comparten una estructura y objetos comunes con un fin",
+            "Un conjunto de objetos que comparten una estructura y comportamiento comunes",
+            "Un conjunto de objetos que comparten un fin común"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0042",
+        "pregunta": "Los mensajes…",
+        "respuesta": "Son la forma que tienen los objetos de comunicarse entre sí",
+        "opciones": [
+            "Conjunto de valores que puede tomar un objeto",
+            "Son las funciones que va a realizar el objeto",
+            "Son la forma que tienen los objetos de comunicarse entre sí",
+            "Son la forma que tienen de comunicarse las clases entre sí"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0043",
+        "pregunta": "¿Cuál no es un objetivo del UML?",
+        "respuesta": "Destruír",
+        "opciones": [
+            "Documentar",
+            "Especificar",
+            "Visualizar",
+            "Destruír"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0044",
+        "pregunta": "Seleccione la opción correcta.",
+        "respuesta": "Las propiedades de los objetos suelen ser estáticas, mientras los valores que toman estas propiedades son dinámicas, cambian con el tiempo. Si los objetos tienen estado esto conlleva que necesiten ser almacenados en el mundo físico",
+        "opciones": [
+            "Las propiedades de los objetos suelen ser dinámicas, mientras los valores que toman estas propiedades son estáticas, cambian con el tiempo. Si los objetos tienen estado esto conlleva que necesiten ser almacenados en el mundo software",
+            "Las propiedades de los objetos suelen ser estáticas, mientras los valores que toman estas propiedades son dinámicas, cambian con el tiempo. Si los objetos tienen estado esto conlleva que necesiten ser almacenados en el mundo software",
+            "Las propiedades de los objetos suelen ser dinámicas, mientras los valores que toman estas propiedades son estáticas, cambian con el tiempo. Si los objetos tienen estado esto conlleva que necesiten ser almacenados en el mundo físico",
+            "Las propiedades de los objetos suelen ser estáticas, mientras los valores que toman estas propiedades son dinámicas, cambian con el tiempo. Si los objetos tienen estado esto conlleva que necesiten ser almacenados en el mundo físico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0045",
+        "pregunta": "¿Qué representa las relaciones entre las clases parametrizadas y las clases obtenidas cuando se concretan estos parámetros formales, inicializados con un ejemplo?",
+        "respuesta": "Ejemplificación",
+        "opciones": [
+            "Agregación",
+            "Ejemplificación",
+            "Herencia",
+            "Metaclases"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0046",
+        "pregunta": "¿Cuáles son las partes dinámicas de los modelos UML?",
+        "respuesta": "Cosas de comportamiento",
+        "opciones": [
+            "Cosas de agrupamiento",
+            "Cosas de estructura",
+            "Cosas de anotación",
+            "Cosas de comportamiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0047",
+        "pregunta": "La firma del método está constituída por…",
+        "respuesta": "Nombre del método, cantidad, tipo y orden de los parámetros",
+        "opciones": [
+            "Nombre del método y orden de los parámetros",
+            "Nombre del método y cantidad",
+            "Nombre del método, cantidad, tipo y orden de los parámetros",
+            "Nombre del método, cantidad y tipo de los parámetros"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0048",
+        "pregunta": "El diagrama de actividad…",
+        "respuesta": "muestra el proceso lógico de un procedimiento",
+        "opciones": [
+            "muestra el comportamiento de un objeto a lo largo de su vida",
+            "indica los mensajes que se pasan los objetos entre sí",
+            "muestra el proceso lógico de un procedimiento",
+            "describe los requerimientos funcionales de un sistema"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-4-0049",
+        "pregunta": "Las clases padre se denominan…",
+        "respuesta": "superclase",
+        "opciones": [
+            "metaclase",
+            "clase abstracta",
+            "superclase",
+            "subclase"
+        ]
+    }
+]

@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-iii-tema-2-0000",
+        "pregunta": "¿Qué lenguaje se caracteriza como lenguaje procedimental?",
+        "respuesta": "Lenguaje de alto nivel",
+        "opciones": [
+            "Lenguaje de alto nivel",
+            "Lenguaje de medio nivel",
+            "Lenguaje máquina",
+            "Lenguaje de bajo nivel"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0001",
+        "pregunta": "¿Cuál sería el módulo de 10,5%3?",
+        "respuesta": "1,5",
+        "opciones": [
+            "2",
+            "1,5",
+            "1",
+            "2,5"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0002",
+        "pregunta": "¿Qué entendemos por función?",
+        "respuesta": "Conjunto de sentencias a las que se asocia un identificador y que genera un valor nuevo, calculado a partir de los argumentos que recibe",
+        "opciones": [
+            "Conjunto de sentencias a las que se asocia un identificador, y que realiza una tarea que se conoce por los cambios que ejerce sobre el conjunto de variables",
+            "Conjunto de sentencias a las que se asocia un identificador y que genera un valor nuevo, calculado a partir de los argumentos que recibe",
+            "Conjunto de variables que se facilitan al procedimiento para que realice su tarea",
+            "Conjunto de variables globales, que pueden ser usadas y modificadas dentro de un procedimiento"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0003",
+        "pregunta": "¿Qué desventaja presenta la tercera generación?",
+        "respuesta": "Apenas son portables y normalmente son menos fáciles de mantener que los lenguajes de propósito general",
+        "opciones": [
+            "Código ineficiente y cuestionable mantenimiento",
+            "Lógica difusa",
+            "Dificultad y lentitud en la codificación, poca fiabilidad y los programas solo se ejecutan en la CPU",
+            "Apenas son portables y normalmente son menos fáciles de mantener que los lenguajes de propósito general"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0004",
+        "pregunta": "¿Cómo se le llama en informática al conjunto de implementaciones funcionales codificadas en un lenguaje de programación que ofrece una interfaz bien definida para la funcionalidad que se invoca?",
+        "respuesta": "biblioteca",
+        "opciones": [
+            "registros",
+            "biblioteca",
+            "datos",
+            "matriz"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0005",
+        "pregunta": "¿En qué lenguaje está el programa Adobe?",
+        "respuesta": "C++",
+        "opciones": [
+            "Java",
+            "C++",
+            "C",
+            "C"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0006",
+        "pregunta": "¿Cuál de los siguientes lenguajes no pertenece a una clasificación por nivel de abstracción del procesador?",
+        "respuesta": "Lenguaje de nivel trasversal",
+        "opciones": [
+            "Lenguaje de bajo nivel",
+            "Lenguaje de alto nivel",
+            "Lenguaje máquina",
+            "Lenguaje de nivel trasversal"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0007",
+        "pregunta": "La obtención del valor almacenado en la ubicación de un puntero de referencia, se le llama…",
+        "respuesta": "Desreferenciación del puntero",
+        "opciones": [
+            "Desreferenciación del puntero",
+            "Puntero de referencia",
+            "Registro de referencia",
+            "Puntero de registro"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0008",
+        "pregunta": "¿Cómo se llama el principio por el cual se aisla toda aquella información que no resulta relevante a un determinado nivel de conocimiento?",
+        "respuesta": "Abstracción",
+        "opciones": [
+            "Programación",
+            "Aislación",
+            "Agrupación",
+            "Abstracción"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0009",
+        "pregunta": "¿Cómo se calcula el operador módulo?",
+        "respuesta": "Calcula la diferencia entre el dividendo y el producto del divisor por la parte entera del cociente",
+        "opciones": [
+            "Calcula la diferencia entre el cociente y el producto del divisor por la parte entera del dividendo",
+            "Calcula la diferencia entre el dividendo y el producto del divisor por la parte entera del cociente",
+            "Calcula la diferencia entre el producto del divisor y el dividendo por la parte entera del cociente",
+            "Calcula el sumatorio del dividendo y el producto del divisor por la parte entera del cociente"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0010",
+        "pregunta": "Los vectores pueden ser…",
+        "respuesta": "Estáticos y dinámicos",
+        "opciones": [
+            "Dinámico y abstracto",
+            "Estáticos y dinámicos",
+            "Unidimensionales y dinámicos",
+            "Estáticos y abstractos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0011",
+        "pregunta": "¿Cuál es el lenguaje de programación de alto nivel más conocido?",
+        "respuesta": "Java",
+        "opciones": [
+            "Cobol",
+            "VHDL",
+            "Basic",
+            "Java"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0012",
+        "pregunta": "¿Cuál fue el lenguaje por defecto para desarrollar aplicaciones para Android?",
+        "respuesta": "Java",
+        "opciones": [
+            "Python",
+            "Java",
+            "Visual Basic",
+            "C++"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0013",
+        "pregunta": "¿Cuál no sería una parte principal de un programa?",
+        "respuesta": "Instrucción de salto condicional",
+        "opciones": [
+            "Entrada de datos",
+            "Salida de resultados",
+            "Instrucción de salto condicional",
+            "Algoritmo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0014",
+        "pregunta": "El tipo de dato 'int', ¿qué representa?",
+        "respuesta": "Conjunto de enteros de 32 bits",
+        "opciones": [
+            "Conjunto de enteros de 16 bytes",
+            "Conjunto de enteros de 32 bits",
+            "Conjunto de enteros de 32 bytes",
+            "Conjunto de enteros de 16 bits"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0015",
+        "pregunta": "¿Cuál es la característica más peculiar del lenguaje en C?",
+        "respuesta": "Uso apuntadores",
+        "opciones": [
+            "Utilización del sistema binario",
+            "Concatenación de cadenas de caracteres",
+            "Uso apuntadores",
+            "Utilización del operador 'suma'"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0016",
+        "pregunta": "¿Cómo se representan los colores?",
+        "respuesta": "3 bytes",
+        "opciones": [
+            "8 bits",
+            "8 bytes",
+            "3 bytes",
+            "3 bits"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0017",
+        "pregunta": "¿Cuál es la instrucción alternativa?",
+        "respuesta": "Son las que controla la ejecución de unas u otras instrucciones según una condición.",
+        "opciones": [
+            "Son las que indican al procesador que reserve espacio en la memoria para un objeto del programa.",
+            "Son las que hacen que se repitan una o varias instrucciones un número determinado o indeterminado de veces.",
+            "Son las que alteran la secuencia normal de ejecución de un programa, continuando la misma en la linea indicada en la propia instrucción.",
+            "Son las que controla la ejecución de unas u otras instrucciones según una condición."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0018",
+        "pregunta": "¿Cuánto son 2 Shorts?",
+        "respuesta": "32 bits",
+        "opciones": [
+            "28 bytes",
+            "24 bits",
+            "32 bits",
+            "36 bytes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0019",
+        "pregunta": "Clasificación de lenguaje Cobol o Pascal:",
+        "respuesta": "programación imperativos",
+        "opciones": [
+            "programación imperativos",
+            "programación orientado al problema",
+            "programación orientada a objetos",
+            "programación declarativos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0020",
+        "pregunta": "Cuál no sería una variable que realiza funciones específicas dentro de un programa...",
+        "respuesta": "Algoritmos",
+        "opciones": [
+            "Acumuladores",
+            "Contadores",
+            "Interruptores",
+            "Algoritmos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0021",
+        "pregunta": "¿Qué lenguajes son creados para la inteligencia artificial y procesamiento de lenguajes naturales?",
+        "respuesta": "Lenguajes de programación de quinta generación",
+        "opciones": [
+            "Lenguajes de programación de cuarta generación",
+            "Lenguajes de programación de segunda generación",
+            "Lenguajes de programación de quinta generación",
+            "Lenguajes de programación de tercera generación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0022",
+        "pregunta": "¿Cuál es la instrucción de salto condicional?",
+        "respuesta": "Es la que altera la secuencia normal de ejecución de un programa únicamente en el caso de cumplimiento de una condición asociada a la propia instrucción.",
+        "opciones": [
+            "Son las que controla la ejecución de unas u otras instrucciones según una condición.",
+            "Son las que hacen que se repitan una o varias instrucciones un número determinado o indeterminado de veces.",
+            "Son aquellas que ejecuta el procesador de modo inmediato.",
+            "Es la que altera la secuencia normal de ejecución de un programa únicamente en el caso de cumplimiento de una condición asociada a la propia instrucción."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0023",
+        "pregunta": "¿Cuál es el tamaño de un Char?",
+        "respuesta": "8 bits por carácter",
+        "opciones": [
+            "8 bits por carácter",
+            "8 bytes por carácter",
+            "3 bits por carácter",
+            "3 bytes por carácter"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0024",
+        "pregunta": "¿Qué lenguaje es la herramienta que permite construír aplicaciones sencillas combinando piezas prefabricadas?",
+        "respuesta": "Lenguaje de programación de cuarta generación",
+        "opciones": [
+            "Lenguaje de programación de segunda generación",
+            "Lenguaje de programación de cuarta generación",
+            "Lenguaje de programación de tercera generación",
+            "Lenguaje de programación de quinta generación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0025",
+        "pregunta": "¿Cómo escribimos \"No a es igual a b\"?",
+        "respuesta": "!(a==b)",
+        "opciones": [
+            "(a!=b)",
+            "(a>=b)",
+            "(a!||b)",
+            "!(a==b)"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0026",
+        "pregunta": "Clasificación del lenguaje C++:",
+        "respuesta": "orientados a objetos",
+        "opciones": [
+            "declarativos",
+            "imperativos",
+            "orientado al problema",
+            "orientados a objetos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0027",
+        "pregunta": "¿Cómo se le llaman a los dígitos que forman el alfabeto binario?",
+        "respuesta": "bits",
+        "opciones": [
+            "bits",
+            "combinaciones",
+            "beta",
+            "byte"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0028",
+        "pregunta": "¿Qué lenguaje puede ser utilizado para crear programas que luego son acoplados a una página web o dentro de programas más grandes?",
+        "respuesta": "JavaScript",
+        "opciones": [
+            "Java",
+            "Python",
+            "Visual Basic",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0029",
+        "pregunta": "Los ordenadores trabajan con dos tipos de pulsaciones electromagnéticas…",
+        "respuesta": "0 representa 0,3V y 1 representa 0,5V",
+        "opciones": [
+            "0 representa 0,3V y 1 representa 0,5V",
+            "0 representa 0V y 1 representa 1V",
+            "0 representa 1V y 1 representa 1,5V",
+            "0 representa 0,5V y 1 representa 1V"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0030",
+        "pregunta": "¿Cuáles son las instrucciones primitivas?",
+        "respuesta": "Son aquellas que ejecuta el procesador de modo inmediato.",
+        "opciones": [
+            "Son aquellas que controlan la ejecución de otras instrucciones.",
+            "Son aquellas que ejecuta el procesador de modo inmediato.",
+            "Son las que indican al procesador que reserve espacio en la memoria para un objeto del programa.",
+            "Son las que toman el valor de un objeto o expresión y lo lleva a un dispositivo externo."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0031",
+        "pregunta": "¿Qué lenguaje proporciona poca o ninguna abstracción del microprocesador de un ordenador?",
+        "respuesta": "Lenguaje de bajo nivel",
+        "opciones": [
+            "Lenguaje máquina",
+            "Lenguaje de medio nivel",
+            "Lenguaje de alto nivel",
+            "Lenguaje de bajo nivel"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0032",
+        "pregunta": "¿Qué ventaja presenta la segunda generación?",
+        "respuesta": "Uso óptimo de los recursos de hardware, permitiendo la obtención de un código muy eficiente",
+        "opciones": [
+            "Transferir un programa a la memoria sin traducción posterior",
+            "Estandarización, volumen de código y el rendimiento de ejecución",
+            "Flexibilidad, nuevas aplicaciones y conversión de código",
+            "Uso óptimo de los recursos de hardware, permitiendo la obtención de un código muy eficiente"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0033",
+        "pregunta": "Los programas de gestión…",
+        "respuesta": "Se caracterizan por el manejo de gran cantidad de datos con pocos cálculos",
+        "opciones": [
+            "Consisten en el anidamiento de acciones alternativas",
+            "Se caracterizan por la utilización de técnicas gráficas",
+            "Consisten en una secuencia de acciones primitivas",
+            "Se caracterizan por el manejo de gran cantidad de datos con pocos cálculos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0034",
+        "pregunta": "¿Cuáles son las instrucciones compuestas?",
+        "respuesta": "Son aquellas que el procesador no puede ejecutar directamente, sino que realiza una llamada a un subprograma, subrutina o párrafo.",
+        "opciones": [
+            "Son las que hacen que se repitan una o varias instrucciones un número determinado o indeterminado de veces.",
+            "Son las que toman el valor de un objeto o expresión y lo lleva a un dispositivo externo.",
+            "Son las que controla la ejecución de unas u otras instrucciones según una condición.",
+            "Son aquellas que el procesador no puede ejecutar directamente, sino que realiza una llamada a un subprograma, subrutina o párrafo."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0035",
+        "pregunta": "¿Qué entendemos por procedimiento?",
+        "respuesta": "Conjunto de sentencias a las que se asocia un identificador, y que realiza una tarea que se conoce por los cambios que ejerce sobre el conjunto de variables",
+        "opciones": [
+            "Conjunto de variables globales, que pueden ser usadas y modificadas dentro de una función",
+            "Conjunto de sentencias a las que se asocia un identificador, y que realiza una tarea que se conoce por los cambios que ejerce sobre el conjunto de variables",
+            "Conjunto de variables que se facilitan a la función para que realice su tarea",
+            "Conjunto de sentencias a las que se asocia un identificador y que genera un valor nuevo, calculado a partir de los argumentos que recibe"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0036",
+        "pregunta": "¿Cuántos es 1 float?",
+        "respuesta": "32 bits",
+        "opciones": [
+            "8 bits",
+            "24 bytes",
+            "16 bits",
+            "32 bits"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0037",
+        "pregunta": "¿Qué correspondería al lenguaje C?",
+        "respuesta": "Lenguaje de medio nivel",
+        "opciones": [
+            "Lenguaje de alto nivel",
+            "Lenguaje máquina",
+            "Lenguaje de bajo nivel",
+            "Lenguaje de medio nivel"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0038",
+        "pregunta": "¿Qué ventaja presenta la cuarta generación?",
+        "respuesta": "Flexibilidad, nuevas aplicaciones y conversión de código",
+        "opciones": [
+            "Transferir un programa a la memoria sin traducción posterior",
+            "Flexibilidad, nuevas aplicaciones y conversión de código",
+            "Estandarización, volumen de código y el rendimiento de ejecución",
+            "Uso óptimo de los recursos de hardware, permitiendo la obtención de un código muy eficiente"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0039",
+        "pregunta": "¿Qué desventaja presenta la quinta generación?",
+        "respuesta": "Lógica difusa",
+        "opciones": [
+            "Apenas son portables y normalmente son menos fáciles de mantener que los lenguajes de propósito general",
+            "Dificultad y lentitud en la codificación, poca fiabilidad y los programas solo se ejecutan en la CPU",
+            "Código ineficiente y cuestionable mantenimiento",
+            "Lógica difusa"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0040",
+        "pregunta": "¿Cuál no sería un tipo de operador?",
+        "respuesta": "Conceptual",
+        "opciones": [
+            "Lógico",
+            "Conceptual",
+            "Relacional",
+            "Aritmético"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0041",
+        "pregunta": "¿Qué tipo de dato es un puntero?",
+        "respuesta": "Dirección de memoria -int",
+        "opciones": [
+            "Char",
+            "String",
+            "Dirección de memoria -int",
+            "Booleano"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0042",
+        "pregunta": "El tipo Booleano, ¿cuántos bits son?",
+        "respuesta": "8 bits",
+        "opciones": [
+            "16 bits",
+            "48 bits",
+            "8 bits",
+            "32 bits"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0043",
+        "pregunta": "El bucle 'for'…",
+        "respuesta": "Cuando conocemos el número de veces que se ejecutará una sentencia o un bloque de sentencias",
+        "opciones": [
+            "Cuando conocemos el número de veces que se ejecutará una sentencia o un bloque de sentencias",
+            "Cuando no conocemos el número de veces que se ejecutará un bloque de sentencias",
+            "Cuando no conocemos el número de veces que se ejecutará una sentencia o unbloque de sentencias",
+            "Cuando no conocemos el número de veces que se ejecutará una sentencia"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0044",
+        "pregunta": "¿Cómo se representa en lenguaje máquina el comando suma '+'?",
+        "respuesta": "\"001011010\"",
+        "opciones": [
+            "\"000111010\"",
+            "\"110100101\"",
+            "\"011011010\"",
+            "\"001011010\""
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0045",
+        "pregunta": "¿Cuál es el lenguaje base con el que trabaja la mayoría de los sistemas informáticos?",
+        "respuesta": "Lenguaje máquina",
+        "opciones": [
+            "Lenguaje de bajo nivel",
+            "Lenguaje máquina",
+            "Lenguaje de alto nivel",
+            "Lenguaje de medio nivel"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0046",
+        "pregunta": "¿A qué lenguaje corresponde Pascal?",
+        "respuesta": "Lenguaje de alto nivel",
+        "opciones": [
+            "Lenguaje de alto nivel",
+            "Lenguaje de medio nivel",
+            "Lenguaje de bajo nivel",
+            "Lenguaje máquina"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0047",
+        "pregunta": "¿Qué lenguaje dejó de utilizarse por su gran dificultad y por la facilidad para cometer errores al escribir cadenas binarias?",
+        "respuesta": "Lenguaje máquina",
+        "opciones": [
+            "Lenguaje de bajo nivel",
+            "Lenguaje máquina",
+            "Lenguaje de alto nivel",
+            "Lenguaje de medio nivel"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0048",
+        "pregunta": "¿Qué tipo de programa realiza gran cantidad de cálculos con pocos datos?",
+        "respuesta": "Programa técnico-científico",
+        "opciones": [
+            "Programa de diseño",
+            "Programa de inteligencia artificial",
+            "Programa técnico-científico",
+            "Programa cíclico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-2-0049",
+        "pregunta": "¿Cuál sería una ventaja del lenguaje de bajo nivel?",
+        "respuesta": "Posibilidad de obtener la máxima velocidad con mínimo uso de memroia",
+        "opciones": [
+            "Posibilidad de obtener la máxima velocidad con mínimo uso de memroia",
+            "Es necesario conocer en detalle la arquitectura de la máquina",
+            "El código no es independiente de la máquina",
+            "El programador debe conocer más de un centenar de instrucciones"
+        ]
+    }
+]

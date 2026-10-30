@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-iii-tema-8-0000",
+        "pregunta": "¿Qué significan las siglas WAI?",
+        "respuesta": "Web Accesibility Initiative",
+        "opciones": [
+            "Web Access Initial",
+            "Web Accesibility Initial",
+            "Web Accesibility Initiative",
+            "Web Access Initiative"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0001",
+        "pregunta": "¿Cuáles son las 3 propuestas de adopción de los principios del diseño universal en el ámbito educativo?",
+        "respuesta": "la aplicación de los principios de diseño a los productos y entornos instructivos, la modificación de los siete principios del diseño universal y la creación de un nuevo conjunto de principios adaptados a los escenarios educativos",
+        "opciones": [
+            "la aplicación de los principios de diseño a los productos y entornos instructivos, la modificación de los siete principios del diseño universal y la creación de un nuevo conjunto de principios adaptados a los escenarios educativos",
+            "la aplicación de los principios de diseño a los entornos inductivos, la modificación de los siete principios del diseño universal y la creación de un nuevo conjunto de principios adaptados a los escenarios educativos",
+            "la aplicación de los principios de diseño a los entornos instructivos, la modificación de los seis principios del diseño universal y la creación de un nuevo conjunto de principios adaptados a los escenarios educativos",
+            "la aplicación de los principios de diseño a los productos y entornos inclusivos, la modificación de los seis principios del diseño universal y la creación de un nuevo conjunto de principios adaptados a los escenarios educativos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0002",
+        "pregunta": "¿Cómo se llama a la amenaza lógica que consiste en un programa capaz de ejecutarse y propagarse por sí mismo a través de redes y puede llevar virus o aprovechar bugs de los sistemas a los que conecta para dañarlos?",
+        "respuesta": "Gusanos",
+        "opciones": [
+            "Spoofing",
+            "Gusanos",
+            "Caballos de Troya",
+            "Exploits"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0003",
+        "pregunta": "¿A qué hace referencia la usabilidad?",
+        "respuesta": "A la capacidad de un software de ser comprendido, aprendido, usado y ser atractivo para el usuario en condiciones específicas de uso",
+        "opciones": [
+            "A la capacidad de un software de ser comprendido, aprendido, usado y ser atractivo para el usuario en condiciones específicas de uso",
+            "A la baja limitación del software, pero alta limitación del hardware",
+            "A la alta limitación del software, pero baja limitación del hardware",
+            "A la inadaptabilidad y a veces, satisfacción con la que un producto permite alcanzar objetivos específicos a usuarios específicos en un contexto específico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0004",
+        "pregunta": "El Rel Decreto 366/2007, de 16 de marzo…",
+        "respuesta": "por el que se establecen las condiciones de accesibilidad y no discriminación de las personas con discapacidad en sus relaciones con la Administración General del Estado",
+        "opciones": [
+            "por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones",
+            "por el que se regulan las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los modos de transporte para personas con discapacidad",
+            "por el que se establecen las condiciones de accesibilidad y no discriminación de las personas con discapacidad en sus relaciones con la Administración General del Estado",
+            "por el que se aprueba el Regalmento sobre las condiciones básicas de acceso de las personas con discapacidad a las tecnologías, productos y servicios relacionados con la sociedad de la información y medio de comunicación social"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0005",
+        "pregunta": "¿Cómo se le llama a la vulnerabilidad si varios procesos acceden al mismo tiempo a un recurso compartido?",
+        "respuesta": "race condition",
+        "opciones": [
+            "de Cross Site Scripting (XSS)",
+            "race condition",
+            "de desbordamiento de buffer",
+            "Window Spoofing"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0006",
+        "pregunta": "El Real Decreto 505/2007, de 20 de abril,…",
+        "respuesta": "por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones",
+        "opciones": [
+            "por el que se regulan las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los modos de transporte para personas con discapacidad",
+            "por el que se establecen las condiciones de accesibilidad y no discriminación de las personas con discapacidad en sus relaciones con la Administración General del Estado",
+            "por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones",
+            "por el que se aprueba el Regalmento sobre las condiciones básicas de acceso de las personas con discapacidad a las tecnologías, productos y servicios relacionados con la sociedad de la información y medio de comunicación social"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0007",
+        "pregunta": "¿Qué tipo de amenaza lógica intenta conseguir información confidencial de forma fraudulenta, haciendo una suplantación de identidad?",
+        "respuesta": "Phishing",
+        "opciones": [
+            "Phishing",
+            "Spyware",
+            "Spam",
+            "Spoofing"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0008",
+        "pregunta": "Para que se produzca el proceso de autorización de un usuario…",
+        "respuesta": "es necesario que se encuentre autenticado",
+        "opciones": [
+            "depende de la contraseña que use, puede encontrarse autenticado",
+            "es necesario que se encuentre autenticado, solo si depende del administrador",
+            "no es necesario que se encuentre autenticado",
+            "es necesario que se encuentre autenticado"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0009",
+        "pregunta": "¿Qué principio no pertenece a la seguridad informática?",
+        "respuesta": "verificación",
+        "opciones": [
+            "integridad",
+            "disponibilidad",
+            "confidencialidad",
+            "verificación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0010",
+        "pregunta": "¿Cuál no correspondería con una deficiencia en términos de accesibilidad?",
+        "respuesta": "Uso correcto de encabezados, dificultando la lectura, comprensión y navegación no visual",
+        "opciones": [
+            "Uso correcto de encabezados, dificultando la lectura, comprensión y navegación no visual",
+            "Se generaliza el hacer prevalecer las consideraciones de diseño visual sobre las posibles necesidades o preferencias que los usuarios pudieran tener",
+            "Incorrecto uso de las gramáticas formales en los documentos",
+            "Ausencia de alternativas a las imágenes y a las áreas activas de los mapas de imagen"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0011",
+        "pregunta": "Un sistema informático será seguro o fiable si presenta...",
+        "respuesta": "confidencialidad, integridad y disponibilidad",
+        "opciones": [
+            "confidencialidad, verificación y autenticación",
+            "confidencialidad, integridad y disponibilidad",
+            "accesibilidad, integridad y disponibilidad",
+            "confidencialidad, integridad y autenticación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0012",
+        "pregunta": "El Real Decreto 1494/2007, de 12 de noviembre,…",
+        "respuesta": "por el que se aprueba el Regalmento sobre las condiciones básicas de acceso de las personas con discapacidad a las tecnologías, productos y servicios relacionados con la sociedad de la información y medio de comunicación social",
+        "opciones": [
+            "por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones",
+            "por el que se aprueba el Regalmento sobre las condiciones básicas de acceso de las personas con discapacidad a las tecnologías, productos y servicios relacionados con la sociedad de la información y medio de comunicación social",
+            "por el que se establecen las condiciones de accesibilidad y no discriminación de las personas con discapacidad en sus relaciones con la Administración General del Estado",
+            "por el que se aprueba el Regalmento sobre las condiciones básicas de acceso de las personas sin discapacidad a las tecnologías, productos y servicios relacionados con la sociedad de la información y medio de comunicación social"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0013",
+        "pregunta": "¿Qué elemento de un sistema informático se considera más crítico a la hora de protegerlo?",
+        "respuesta": "Datos",
+        "opciones": [
+            "Software",
+            "Datos",
+            "Comunicaciones",
+            "Hardware"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0014",
+        "pregunta": "Selecciona la afirmación incorrecta.",
+        "respuesta": "Los problemas de acceso y asequibilidad son los únicos que dificultan la plena participación de las personas con diversidad funcional en laSociedad de la Información",
+        "opciones": [
+            "Son muy importantes las iniciativas dirigidas a impulsar un verdadero apropiamiento de las tecnologías de la información por parte de las personas con diversidad funcional y de sus organizaciones, facilitando su uso estratégico, político y creativo",
+            "Los datos disponibles sobre el uso de las tecnologías por parte de las personas con diversidad funcional y de sus organizaciones permiten conluír que muchas personas con discapacidad y la mayor parte de organizaciones del sector tienen algún tipo de acceso a la web, pero se sabe muy poco de cómo y para qué lo usan",
+            "Otra necesidad acuciante para las personas con discapacidad y para sus organizaciones es el aprendizaje de cómo apropiarse de la tecnología",
+            "Los problemas de acceso y asequibilidad son los únicos que dificultan la plena participación de las personas con diversidad funcional en laSociedad de la Información"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0015",
+        "pregunta": "Selecciona la afirmación correcta.",
+        "respuesta": "El 37% de las personas con diversidad funcional que carecen de acceso a internet citan como principal razón para ello el coste de la conexión y de las adaptaciones de accesibilidad que necesitan",
+        "opciones": [
+            "*El 17% de las personas con diversidad funcional que carecen de acceso a internet citan como principal razón para ello las pocas adaptaciones de accesibilidad que necesitan",
+            "El 87% de las personas con diversidad funcional que carecen de acceso a internet citan como principal razón para ello el coste de la conexión y de las adaptaciones de accesibilidad que necesitan",
+            "El 37% de las personas con diversidad funcional que carecen de acceso a internet citan como principal razón para ello el coste de la conexión y de las adaptaciones de accesibilidad que necesitan",
+            "El 57% de las personas con diversidad funcional que carecen de acceso a internet citan como principal razón para ello las pocas adaptaciones de accesibilidad que necesitan"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0016",
+        "pregunta": "Un hacker…",
+        "respuesta": "a veces posee una finalidad maliciosa, entonces se denomina cracker",
+        "opciones": [
+            "a veces posee una finalidad maliciosa, entonces se denomina cracker",
+            "siempre tienen una finalidad maliciosa",
+            "es un curioso con finalidad impredecible",
+            "la mayoría de las veces tiene una finalidad maliciosa"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0017",
+        "pregunta": "¿Cómo se llama la vulnerabilidad de las aplicaciones web, que permiten inyectar código VBScript o Javascript en páginas web vistas por el usuario?",
+        "respuesta": "XSS",
+        "opciones": [
+            "Vulnerabilidad de desbordamiento de buffer",
+            "Race condition",
+            "XSS",
+            "Window Spoofing"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0018",
+        "pregunta": "Selecciona la afirmación falsa.",
+        "respuesta": "Confidencialidad es desvelar datos a usuarios no autorizados; que comprenden también la privacidad",
+        "opciones": [
+            "Disponibilidad es que la información se encuentre accesible",
+            "Confidencialidad es desvelar datos a usuarios no autorizados; que comprenden también la privacidad",
+            "La integridad permite asegurar que los datos no se han falseado",
+            "En el 'no repudio' en destino, el receptor no puede negar que recibió el mensaje porque el emisor tiene pruebas de la recepción"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0019",
+        "pregunta": "¿Cómo se le llama al Comité Español de Representación de Personas con discapacidad?",
+        "respuesta": "CERMI",
+        "opciones": [
+            "CERDI",
+            "CERPD",
+            "CERPI",
+            "CERMI"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0020",
+        "pregunta": "¿Cómo se le llama al nuevo concepto de accesibilidad relacionado de manera directa con la aparición y desarrollo de la Web 2.0?",
+        "respuesta": "accesibilidad 2.0",
+        "opciones": [
+            "Web 5.0",
+            "Web 2.0",
+            "accesibilidad 2.0",
+            "percepción 2.0"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0021",
+        "pregunta": "Las copias ilícitas de programas o la escucha en línea de datos es una amenaza con factor de seguridad…",
+        "respuesta": "Interceptación",
+        "opciones": [
+            "Modificación",
+            "Fabricación",
+            "Interrupción",
+            "Interceptación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0022",
+        "pregunta": "¿Qué tipo de amenaza lógica es el robo automatizado de pequeñas cantidades de dinero de una gran cantidad origen, de difícil detección y se suelen utilizar para atacar sistemas bancarios?",
+        "respuesta": "Técnicas salami",
+        "opciones": [
+            "Adware",
+            "Caballos de Troya",
+            "Programas conejo",
+            "Técnicas salami"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0023",
+        "pregunta": "¿Qué ley se firmó el día 8 de octubre de 2010?",
+        "respuesta": "la Ley de Accesibilidad en las Comunicaciones y el Vídeo en el siglo XXI",
+        "opciones": [
+            "la Ley de Accesibilidad en las Comunicaciones y el Vídeo en el siglo XXI",
+            "la Ley de Convención Internacional sobre los Derechos de las Personas con Discapacidad",
+            "la Ley de Comisión Federal de las Comunicaciones",
+            "la Ley de Usabilidad en las Comunicaciones y el Vídeo en el siglo XXI"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0024",
+        "pregunta": "¿En qué no se caracteriza el nuevo enfoque definido como Accesibilidad 2.0?",
+        "respuesta": "orientado al cumplimiento de las pautas frente a las necesidades del usuario",
+        "opciones": [
+            "orientado al cumplimiento de las pautas frente a las necesidades del usuario",
+            "abierto al reconocimiento y la participación de un gran número de agentes implicados en el proceso de accesibilidad",
+            "consciente de la imposibilidad de ofrecer soluciones finales perfectas y orientado hacia aquellas que lo son suficientemente",
+            "sostenible en los servicios que ofrece"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0025",
+        "pregunta": "Entre las tendencias que más negativamente están afectando a la calidad web de la Pyme española…",
+        "respuesta": "Ausencia de una correcta estructuración de los contenidos mediante el uso de encabezados",
+        "opciones": [
+            "Uso correcto de las gramáticas HTML y CSS",
+            "Uso de tecnologías W3C",
+            "Uso eficiente de las teclas de acceso rápido",
+            "Ausencia de una correcta estructuración de los contenidos mediante el uso de encabezados"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0026",
+        "pregunta": "¿En qué consiste el Shoulder Surfing?",
+        "respuesta": "En espiar físicamente a los usuarios para obterner generalmente claves de acceso al sistema",
+        "opciones": [
+            "En espiar físicamente a los usuarios para obterner generalmente claves de acceso al sistema",
+            "En obtener información dejada alrededor de un sistema informático tras la ejecución de un trabajo",
+            "En suplantar la identidad de un usuario",
+            "En la manipulación de las personas para que voluntariamente realicen actos que normalmente no harían"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0027",
+        "pregunta": "El currículum flexible…",
+        "respuesta": "Se adapta a un rango de habilidades y preferencias",
+        "opciones": [
+            "Se adapta a un rango de habilidades y preferencias",
+            "No considera las variedades de estilos motrices",
+            "No considera las diversidades funcionales sensoriales",
+            "No percibe los ritmos de aprendizaje"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0028",
+        "pregunta": "A partir de los 65 años, la mayor parte de los usuarios de Internet son personas…",
+        "respuesta": "con estudios universitarios",
+        "opciones": [
+            "con alguna discapacidad",
+            "que viven en la ciudad",
+            "con diversidad funcional",
+            "con estudios universitarios"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0029",
+        "pregunta": "¿En qué principio no se basa el diseño universal?",
+        "respuesta": "Máximo esfuerzo físico",
+        "opciones": [
+            "Tolerancia al error",
+            "Máximo esfuerzo físico",
+            "Adecuado tamaño de aproximación y uso",
+            "Uso flexible"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0030",
+        "pregunta": "¿Qué opción no sería un principio del diseño universal?",
+        "respuesta": "Intolerancia al error",
+        "opciones": [
+            "Intolerancia al error",
+            "Mínimo esfuerzo físico",
+            "Uso equitativo",
+            "Uso intuitivo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0031",
+        "pregunta": "¿Qué es un ciclo PDCA?",
+        "respuesta": "planificar, hacer, verificar, actuar y volver a repetir el ciclo",
+        "opciones": [
+            "verificar, planificar, hacer, actuar y volver a repetir el ciclo",
+            "planificar, hacer, verificar, actuar y volver a repetir el ciclo",
+            "planificar, verificar, hacer, actuar y volver a repetir el ciclo",
+            "planificar, hacer, actuar, verificar y volver a repetir el ciclo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0032",
+        "pregunta": "El servicio de no repudio…",
+        "respuesta": "se puede verificar por un tercero",
+        "opciones": [
+            "lo verifica el receptor",
+            "se produce entre agente y servidor de la comunicación",
+            "se realiza por emisor y agente externo",
+            "se puede verificar por un tercero"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0033",
+        "pregunta": "Las personas con diversidad funcional utilizan más servicios de banda ancha que el conjunto de la población.",
+        "respuesta": "Es correcto",
+        "opciones": [
+            "Depende del conjunto de población por banda ancha",
+            "Depende de la disfunción",
+            "Es incorrecto",
+            "Es correcto"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0034",
+        "pregunta": "La accesibilidad significa…",
+        "respuesta": "proporcionar flexibilidad para acomodarse a las necesidades de cada usuario y sus preferencias",
+        "opciones": [
+            "proporcionar flexibilidad para acomodarse a las necesidades de cada usuario y sus preferencias",
+            "proporcionar malebilidad para acomodarse a las necesidades de cada servidor específico y sus preferencias específicas",
+            "proporcionar flexibilidad para acomodarse a las necesidades de cada servidor y sus preferencias",
+            "proporcionar maleabilidad para acomodarse a las necesidades de cada usuario y sus preferencias"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0035",
+        "pregunta": "¿Qué significa las siglas INREDIS?",
+        "respuesta": "Interfaces de relación entre el entorno y las personas con discapacidad",
+        "opciones": [
+            "Interrelación del entorno en personas con discapacidad",
+            "Interfaces de relación entre el entorno y las personas con discapacidad",
+            "Internet de las redes de entorno para personas con discapacidad",
+            "Interfaces de redes entre personas con discapacidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0036",
+        "pregunta": "El Real Decreto 1544/2007, de 23 de noviembre,…",
+        "respuesta": "por el que se regulan las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los modos de transporte para personas con discapacidad",
+        "opciones": [
+            "por el que se aprueban las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los espacios públicos urbanizados y edificaciones",
+            "por el que se establecen las condiciones de accesibilidad y no discriminación de las personas con discapacidad en sus relaciones con la Administración General del Estado",
+            "por el que se aprueba el Regalmento sobre las condiciones básicas de acceso de las personas con discapacidad a las tecnologías, productos y servicios relacionados con la sociedad de la información y medio de comunicación social",
+            "por el que se regulan las condiciones básicas de accesibilidad y no discriminación para el acceso y utilización de los modos de transporte para personas con discapacidad"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0037",
+        "pregunta": "¿Cuál es el propósito del diseño universal?",
+        "respuesta": "simplificar la realización de tareas cotidianas mediante la construcción de productos, servicios y entornos más sencillos de usar por todas las personas",
+        "opciones": [
+            "Conseguir algo inaccesible y exclusivo",
+            "simplificar la realización de tareas cotidianas mediante la construcción de productos, servicios y entornos más sencillos de usar por todas las personas",
+            "limitar el acceso a la información",
+            "Complicar la relización de las tareas cotidianas mediantes la construcción de productos, servicios y entornos más complejos de usar para todas las personas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0038",
+        "pregunta": "¿Qué es un cracker?",
+        "respuesta": "Es un término más preciso para describir a una persona que intenta obtener acceso no autorizado a los recursos de la red con intención maliciosa",
+        "opciones": [
+            "Es un término en general que se ha utilizado para describir a un experto en programación",
+            "Es un término más preciso para describir a una persona que intenta obtener acceso no autorizado a los recursos de la red con intención maliciosa",
+            "Se trata de piratas con gran experiencia en problemas de seguridad y un amplio conocimiento del sistema, que son pagados por una tercera parte",
+            "Se trata de personas descontentas con la organización que pueden aprovechar debilidades de un sistema que conocen perfectamente, pueden insertar troyanos, bombas lógicas, virus..."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0039",
+        "pregunta": "¿Cuál es el objetivo de WAI?",
+        "respuesta": "Facilitar el acceso de las personas con diversidad funcional, desarrollando pautas de accesibilidad, mejorando las herramientas para la evaluación y reparación de accesibilidad web",
+        "opciones": [
+            "Facilitar el acceso de las personas con diversidad funcional, desarrollando pautas de accesibilidad, mejorando las herramientas para la evaluación y reparación de accesibilidad web",
+            "Reducir el acceso de las personas con diversidad funcional, reduciendo pautas de accesibilidad",
+            "Aumentar el número de personas con diversidad funcional",
+            "Dificultar el acceso con diversidad funcional, desarrollando pautas de accesibilidad, mejorando las herramientas para la evaluación y reparación de accesibilidad web"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0040",
+        "pregunta": "Selecciona la incorrecta: Para que un contenido web sea accesible ha de ser…",
+        "respuesta": "imperceptible",
+        "opciones": [
+            "ligero",
+            "perceptible",
+            "comprensible",
+            "imperceptible"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0041",
+        "pregunta": "¿Cómo se le llaman a los programas que no hacen nada útil, sino que simplemente se dedican a reproducirse hasta que el número de copias acaba con los recursos del sistema como memoria, disco…?",
+        "respuesta": "programas conejo",
+        "opciones": [
+            "puertas traseras",
+            "programas conejo",
+            "Virus",
+            "gusanos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0042",
+        "pregunta": "¿Qué ataque consiste en suplantar la identidad de cierto usuario autorizado de un sistema informático o su entorno?",
+        "respuesta": "Masquerading",
+        "opciones": [
+            "Shoulder Surfing",
+            "Atacante externo",
+            "Basureo",
+            "Masquerading"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0043",
+        "pregunta": "¿Se puede autenticarse en un sistema con una contraseña corta?",
+        "respuesta": "Depende del sistema.",
+        "opciones": [
+            "Solo en sistemas operativos Windows.",
+            "No se puede.",
+            "Depende del sistema.",
+            "Siempre, independientemente del sistema."
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0044",
+        "pregunta": "Selecciona la incorrecta: Para que un contenido web sea accesible ha de ser…",
+        "respuesta": "ligero",
+        "opciones": [
+            "operable",
+            "robusto",
+            "perceptible",
+            "ligero"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0045",
+        "pregunta": "La Web 2.0 ...",
+        "respuesta": "supone un cambio de mentalidad en la cultura técnica, colocando al usuario final y sus necesidades como foco fundamental del proceso de desarrollo tecnológico",
+        "opciones": [
+            "supone un cambio de mentalidad en la cultura técnica, colocando al servidor intermedio y sus necesidades como foco fundamental del proceso de desarrollo tecnológico",
+            "supone un cambio de mentalidad en la cultura técnica, colocando al usuario intermedio y sus necesidades como foco fundamental del proceso de desarrollo tecnológico",
+            "supone un cambio de mentalidad en la cultura técnica, colocando al usuario final y sus necesidades como foco fundamental del proceso de desarrollo tecnológico",
+            "supone un cambio de mentalidad en la cultura técnica, colocando al servidor final y sus necesidades como foco fundamental del proceso de desarrollo tecnológico"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0046",
+        "pregunta": "¿Cuál sería un mecanismo de seguridad pasivo?",
+        "respuesta": "copias de seguridad que permitan recuperar datos",
+        "opciones": [
+            "uso de un software específico de seguridad, antimalware",
+            "copias de seguridad que permitan recuperar datos",
+            "filtrado de conexiones en redes",
+            "empleo de contraseñas adecuadas en el acceso a sistemas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0047",
+        "pregunta": "¿Qué característica es la que más puede contribuír al logro de la accesibilidad de los nuevos productos y servicios?",
+        "respuesta": "interoperabilidad",
+        "opciones": [
+            "Web 2.0",
+            "Televisión digital",
+            "interoperabilidad",
+            "Computación en la nube"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0048",
+        "pregunta": "Para que un contenido web sea accesible…",
+        "respuesta": "comprensible, operable, perceptible, robusto",
+        "opciones": [
+            "operable, robusto, perceptible, incomprensible",
+            "comprensible, operable, perceptible, robusto",
+            "imperceptible, operable, comprensible, ligero",
+            "perceptible, operable, ligero y comprensible"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-8-0049",
+        "pregunta": "¿Qué se conoce por LIONDAU?",
+        "respuesta": "Es la Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, no discriminación y accesibilidad universal de las personas con discapacidad",
+        "opciones": [
+            "Es la Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, no discriminación y accesibilidad universal de las personas con discapacidad",
+            "Es la Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, discriminación y accesibilidad universal de las personas con discapacidad",
+            "Es la Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, discriminación y no accesibilidad universal de las personas con discapacidad",
+            "Es la Ley 51/2003, de 2 de diciembre, de igualdad de oportunidades, no discriminación y no accesibilidad universal de las personas con discapacidad"
+        ]
+    }
+]

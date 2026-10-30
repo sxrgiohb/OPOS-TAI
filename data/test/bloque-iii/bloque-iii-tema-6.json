@@ -1,0 +1,530 @@
+[
+    {
+        "id": "bloque-iii-tema-6-0000",
+        "pregunta": "¿Cómo podemos optimizar el uso de las conexiones a Internet, reduciendo la carga en las redes?",
+        "respuesta": "Con servidores proxy",
+        "opciones": [
+            "Con servidores proxy",
+            "Con agentes móviles",
+            "Con código móvil",
+            "Con servicios proporcionados por múltiples servidores"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0001",
+        "pregunta": "¿Cómo se llama al documento UDDI mediante el cual se hace el registro de un servicio?",
+        "respuesta": "Type Model",
+        "opciones": [
+            "Write Model",
+            "Type Model",
+            "Type Document",
+            "Write Document"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0002",
+        "pregunta": "Las conexiones a las bases de datos se tienen entre el servidor de aplicación y el servidor de la base de datos y no es necesaria la instalación de drivers oportunos en los clientes para la conexión con la fuente de los datos…",
+        "respuesta": "Modelo de 3 capas",
+        "opciones": [
+            "Modelo multicapa",
+            "Modelo de 4 capas",
+            "Modelo de 3 capas",
+            "Modelo de 2 capas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0003",
+        "pregunta": "¿Cuál no sería una restricción presente en REST?",
+        "respuesta": "Sistema sin capas jerárquicas",
+        "opciones": [
+            "El servidor no tiene que almacenar ninguna infomación de estado relacionada con el cliente y será en este donde se almacene el estado de la sesión",
+            "Interfaz uniforme entre los componentes",
+            "Separar lo que es competencia del cliente de lo que es competencia del servidor",
+            "Sistema sin capas jerárquicas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0004",
+        "pregunta": "¿Cómo se le llama al almacén de datos utilizados recientemente?",
+        "respuesta": "Caché",
+        "opciones": [
+            "Memoria RAM",
+            "Disco duro",
+            "Memoria ROM",
+            "Caché"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0005",
+        "pregunta": "¿Qué sistema presenta mayor flexibilidad en cuanto al desarrollo de una gran variedad de aplicaciones?",
+        "respuesta": "Thin client",
+        "opciones": [
+            "Fat-thin server",
+            "Thin client",
+            "Thin server",
+            "Fat client"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0006",
+        "pregunta": "Se comunica con la lógica de datos para almacenar datos o para recuperar información…",
+        "respuesta": "Lógica de negocio",
+        "opciones": [
+            "Lógica de presentación",
+            "Lógica de datos",
+            "Lógica de negocio",
+            "Lógica de capas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0007",
+        "pregunta": "¿En qué modelo el cliente hace la petición que puede consistir en una o varias instrucciones SQL relacionadas con el acceso a la base de datos?",
+        "respuesta": "Modelo de 2 capas",
+        "opciones": [
+            "Modelo de 3 capas",
+            "Modelo multicapa",
+            "Modelo de 2 capas",
+            "Modelo de 4 capas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0008",
+        "pregunta": "¿Qué servidor es un recurso compartido en red, donde un servidor ofrece un sistema de ficheros disponibles para aquellas computadoras que lo necesiten?",
+        "respuesta": "Servidor de ficheros",
+        "opciones": [
+            "Servidor de base de datos",
+            "Servidor de ficheros",
+            "Servidor de objetos",
+            "Servidor de transacciones"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0009",
+        "pregunta": "¿Qué permite dirigirse directamente al proveedor de servicios y solicitar los servicios que proporciona para seleccionar aquellos que cumplan unos determinados requerimientos?",
+        "respuesta": "WS-Inspection",
+        "opciones": [
+            "WS-Inspection",
+            "WSDL",
+            "WS-Entrepeneur",
+            "WS-Interaction"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0010",
+        "pregunta": "¿Qué es SOAP?",
+        "respuesta": "Protocolo que especifica el intercambio de datos entre objetos de distintos procesos",
+        "opciones": [
+            "Protocolo que especifica todo lo necesario para que una aplicación pueda interactuar con un servicio web",
+            "Protocolo que especifica el intercambio de datos entre objetos de distintos procesos",
+            "Protocolo que especifica los interfaces de un servicio web para que puedan ser usados por una aplicación",
+            "Protocolo que gestiona el registro de un servicio web para que pueda ser encontrado por una aplicación"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0011",
+        "pregunta": "Define dónde está el servicio y el protocolo necesario para comunicarse con él…",
+        "respuesta": "WSDL",
+        "opciones": [
+            "RPC",
+            "SOAP",
+            "XML",
+            "WSDL"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0012",
+        "pregunta": "¿Qué función realiza el módulo middleware?",
+        "respuesta": "Permite a un usuario de un sistema de información poder acceder a distintas fuentes de información a través de una red",
+        "opciones": [
+            "Gestionar las peticiones de los usuarios",
+            "Gestionar la presentación de la información",
+            "Gestionar los requerimientos de los clientes",
+            "Permite a un usuario de un sistema de información poder acceder a distintas fuentes de información a través de una red"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0013",
+        "pregunta": "¿Qué función no corresponde al Cliente?",
+        "respuesta": "Gestionar los requerimientos de los clientes",
+        "opciones": [
+            "Gestionar la presentación de la información",
+            "Gestionar los requerimientos de los clientes",
+            "Gestionar las peticiones del usuario",
+            "Gestionar la interfaz del usuario"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0014",
+        "pregunta": "¿Qué lógica se conoce también como capa de usuario?",
+        "respuesta": "Lógica de presentación",
+        "opciones": [
+            "Lógica de negocio",
+            "Lógica de presentación",
+            "Lógica de datos",
+            "Lógica de capas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0015",
+        "pregunta": "¿Qué componente hace uso de un conector cliente para iniciar las peticiones?",
+        "respuesta": "Agente usuario",
+        "opciones": [
+            "Componente intermedio",
+            "Cliente",
+            "Agente usuario",
+            "Servidor"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0016",
+        "pregunta": "El rendimiento del sistema se mejora ya que se reduce considerablemente el tráfico en la red…",
+        "respuesta": "Modelo de 3 capas",
+        "opciones": [
+            "Modelo multicapa",
+            "Modelo de 3 capas",
+            "Modelo de 2 capas",
+            "Modelo de 4 capas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0017",
+        "pregunta": "¿Cuál no sería una ventaja de los sistemas distribuídos?",
+        "respuesta": "Suelen ser sistemas cerrados donde es posible combinar tanto hardware como software de distintos fabricantes",
+        "opciones": [
+            "En este sistema se da la concurrencia",
+            "Suelen ser sistemas cerrados donde es posible combinar tanto hardware como software de distintos fabricantes",
+            "Es más tolerante a fallos si se compara con un sistema centralizado",
+            "Permite compartir recursos tanto hardware como software"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0018",
+        "pregunta": "¿Cuáles son los principales conectores en REST?",
+        "respuesta": "Conector cliente, servidor y caché",
+        "opciones": [
+            "Conector cliente, servidor y caché",
+            "Conector cliente, intermediario y servidor",
+            "Conector usuario, intermediario y servidor",
+            "Conector usuario, servidor y cliente"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0019",
+        "pregunta": "¿En qué modelo existe independencia total entre la aplicación de usuario y el origen de los datos?",
+        "respuesta": "Modelo de 3 capas",
+        "opciones": [
+            "Modelo de 2 capas",
+            "Modelo multicapa",
+            "Modelo de 3 capas",
+            "Modelo de 4 capas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0020",
+        "pregunta": "¿Qué es un agente móvil?",
+        "respuesta": "Es un programa en ejecución que se va trasladando a distintos ordenadores de una red para realizar alguna función",
+        "opciones": [
+            "Es un servidor remoto muy potente en el que se ejecutan las aplicaciones",
+            "Es un programa en ejecución que se va trasladando a distintos ordenadores de una red para realizar alguna función",
+            "Es un servidor de archivos remoto",
+            "Es un código que se le conoce como applets o ActiveX"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0021",
+        "pregunta": "¿Qué modelo sería el ejemplo de Internet?",
+        "respuesta": "Modelo de 3 capas",
+        "opciones": [
+            "Modelo de 2 capas",
+            "Modelo de 4 capas",
+            "Modelo multicapa",
+            "Modelo de 3 capas"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0022",
+        "pregunta": "¿Qué significan las siglas WSDL?",
+        "respuesta": "Web Service Description Language",
+        "opciones": [
+            "Web Simple Description Language",
+            "Web Service Discovery Language",
+            "Web Service Description Language",
+            "Web Simple Data Label"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0023",
+        "pregunta": "¿Qué afirmación no corresponde al modelo cliente-servidor?",
+        "respuesta": "Es un protocolo con conexión",
+        "opciones": [
+            "Es un protocolo con conexión",
+            "El cliente inicia conversación mientras que los servidores están a la espera constante de mensajes por parte de algún cliente",
+            "La comunicación entre cliente y servidor se realiza intercambiando mensajes",
+            "Es un protocolo simple"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0024",
+        "pregunta": "¿Qué modelo corresponde a esta frase: 'Existe un código almacenado en un servidor. Cuando un usuario hace una petición, se descarga el código y se ejecuta de forma local' ?",
+        "respuesta": "Código móvil",
+        "opciones": [
+            "Computadores en red",
+            "Código móvil",
+            "Clientes ligeros",
+            "Agentes móviles"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0025",
+        "pregunta": "¿Cuál no corresponde a una función del servidor?",
+        "respuesta": "Gestionar la interfaz de usuario",
+        "opciones": [
+            "Gestionar las reglas de negocio",
+            "Dar el formato adecuado",
+            "Procesar la lógica de la aplicaicón",
+            "Gestionar la interfaz de usuario"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0026",
+        "pregunta": "¿Cómo se le llama la unidad abstracta en la que se produce la transformación de los datos a través de los interfaces?",
+        "respuesta": "Componentes",
+        "opciones": [
+            "Datos",
+            "Conectores",
+            "Caché",
+            "Componentes"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0027",
+        "pregunta": "¿En qué caso se utilizaría un servidor de transacciones?",
+        "respuesta": "En el caso de transacciones bancarias",
+        "opciones": [
+            "Para compartir ficheros en red",
+            "Para invocar métodos de objetos remotos",
+            "En el caso de transacciones bancarias",
+            "Para compartir datos web"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0028",
+        "pregunta": "¿En qué modelo el cliente implementa solo la lógica de presentación, mientras que el servidor implementa la lógica de negocio y la de datos?",
+        "respuesta": "Modelo de 2 capas",
+        "opciones": [
+            "Modelo de 2 capas",
+            "Modelo de 4 capas",
+            "Modelo de 3 capas",
+            "Modelo multicapa"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0029",
+        "pregunta": "¿Qué tipo de conector puede residir tanto en el cliente como en el servidor?",
+        "respuesta": "Conector caché",
+        "opciones": [
+            "Conector intermediario",
+            "Conector caché",
+            "Conector agente",
+            "Conector usuario"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0030",
+        "pregunta": "Gestiona todo lo que tiene que ver con la interfaz del usuario y la aplicación…",
+        "respuesta": "Lógica de presentación",
+        "opciones": [
+            "Lógica de presentación",
+            "Lógica de negocio",
+            "Lógica de capas",
+            "Lógica de datos"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0031",
+        "pregunta": "¿Con qué tipo de restricción en REST se consigue que se simplifique la arquitectura global y se mejore la visibilidad de las interacciones?",
+        "respuesta": "Interfaz uniforme entre componentes",
+        "opciones": [
+            "Interfaz uniforme entre componentes",
+            "Sistema de capas",
+            "Respuesta cacheable",
+            "Ausencia de estado"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0032",
+        "pregunta": "¿Qué se utiliza para que se facilite el intercambio de mensajes entre cliente y servidor?",
+        "respuesta": "middleware",
+        "opciones": [
+            "hardware",
+            "maleware",
+            "middleware",
+            "software"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0033",
+        "pregunta": "¿Qué afirmación no corresponde a un sistema distribuído?",
+        "respuesta": "Es altamente predecible y cada elemento del sistema tiene una función determinada",
+        "opciones": [
+            "Es altamente predecible y cada elemento del sistema tiene una función determinada",
+            "Hay que prestar especial atención a la seguridad",
+            "Los sistemas distribuídos son más complejos que los centralizados",
+            "Es necesario buscar algún tipo de mecanismo para lograr una sincronización común"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0034",
+        "pregunta": "¿Cuál no es una característica de los servicios web?",
+        "respuesta": "Los servicios web deben registrarse y lo suele hacer mediante UPPI",
+        "opciones": [
+            "Un usuario puede diseñar una aplicación que haga uso de un servicio web mediante los interfaces de los que disponga dicho servicio",
+            "Para los interfaces se suele utilizar un documento XML conocido como WSDL",
+            "Los servicios web deben registrarse y lo suele hacer mediante UPPI",
+            "Es necesario un protocolo que gestione la comunicación entre dos entidades u objetos de diferentes procesos mediante el intercambio de datos en XML"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0035",
+        "pregunta": "¿Qué es lo que se conoce como alternativa SOAP?",
+        "respuesta": "REST",
+        "opciones": [
+            "WSDL",
+            "XML",
+            "UDDI",
+            "REST"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0036",
+        "pregunta": "¿Qué serían un Proxy o un Gateway",
+        "respuesta": "Componente intermedio",
+        "opciones": [
+            "Servidor",
+            "Cliente",
+            "Componente intermedio",
+            "Agente usuario"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0037",
+        "pregunta": "Normalmente, en una red de una empresa se suele permitir…",
+        "respuesta": "el puerto 80 de TCP que corresponde a HTTP y los servicios web hacen uso de ese protocolo",
+        "opciones": [
+            "el puerto 40 de TCP que corresponde a HTTP y los servicios web hacen uso de ese protocolo",
+            "el puerto 80 de TCP que corresponde a HTTP y los servicios webn no suelen hacer uso de ese protocolo",
+            "el puerto 80 de TCP que corresponde a HTTP y los servicios web hacen uso de ese protocolo",
+            "el puerto 40 de TCP que corresponde a HTTP y los servicios webn no suelen hacer uso de ese protocolo"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0038",
+        "pregunta": "¿En qué tipo de modelos suele presentarse problemas de retardo cuando es necesario una fuerte interacción con el usuario, como en las aplicaciones gráficas?",
+        "respuesta": "Clientes ligeros",
+        "opciones": [
+            "Agentes móviles",
+            "Computadores en red",
+            "Clientes ligeros",
+            "Cñodigo móvil"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0039",
+        "pregunta": "¿Qué gestiona el registro de un servicio web para que pueda ser encontrado por una aplicación?",
+        "respuesta": "UDDI",
+        "opciones": [
+            "UPPI",
+            "WSDL",
+            "UDDI",
+            "SOAP"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0040",
+        "pregunta": "El transporte habitual en SOAP es…",
+        "respuesta": "HTTP",
+        "opciones": [
+            "XML",
+            "CORBA",
+            "HTTP",
+            "RPC"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0041",
+        "pregunta": "¿En qué modelo es necesario un servidor de integración?",
+        "respuesta": "Modelo multicapa",
+        "opciones": [
+            "Modelo de 2 capas",
+            "Modelo de 4 capas",
+            "Modelo de 3 capas",
+            "Modelo multicapa"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0042",
+        "pregunta": "En el modelo cliente-servidor, ¿quién se encarga de la gestión de la interfaz del usuario?",
+        "respuesta": "El cliente",
+        "opciones": [
+            "El software",
+            "El middleware",
+            "El cliente",
+            "El servidor"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0043",
+        "pregunta": "¿Qué es el RPC?",
+        "respuesta": "Son las llamadas a procedimientos remoto",
+        "opciones": [
+            "Es un protocolo de transporte",
+            "Es un lenguaje que se utiliza para describir los servicios web",
+            "Son las llamadas a subrutinas",
+            "Son las llamadas a procedimientos remoto"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0044",
+        "pregunta": "¿Qué componente conoce las representaciones de todos los recursos y es el receptor final de la modificación de los valores de los recursos?",
+        "respuesta": "Servidor",
+        "opciones": [
+            "Componente intermedio",
+            "Servidor",
+            "Agente usuario",
+            "Cliente"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0045",
+        "pregunta": "¿Qué provee de un catálogo de negocios en Internet en el contexto de los servicios web?",
+        "respuesta": "UDDI",
+        "opciones": [
+            "WSDL",
+            "UDDI",
+            "SOAP",
+            "HTTP"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0046",
+        "pregunta": "El proceso de registro en el catálogo mediante XML, consta de…",
+        "respuesta": "páginas blancas, páginas amarillas y páginas verdes",
+        "opciones": [
+            "páginas blancas, páginas amarillas y páginas verdes",
+            "páginas blancas, páginas amarillas, páginas azules y páginas verdes",
+            "páginas blancas, páginas amarillas y páginas rojas",
+            "páginas blancas, páginas amarillas y páginas azules"
+        ]
+    },
+    {
+        "id": "bloque-iii-tema-6-0047",
+        "pregunta": "En una arquitectura cliente-servidor, se dice que este tipo de arquitecturas está…",
+        "respuesta": "débilmente acoplada",
+        "opciones": [
+            "débilmente acoplada",
+            "fácilmente solapada",
+            "débilmente solapada",
+            "fácilmente acoplada"
+        ]
+    }
+]
