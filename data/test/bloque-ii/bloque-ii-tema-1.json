@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-ii-tema-1-0000",
+        "pregunta": "¿Cuál de las siguientes características no debe tener un Sistema de Información?",
+        "respuesta": "Flexibilidad ante la posible aparición de errores",
+        "opciones": [
+            "Realización de copias de seguridad",
+            "Flexibilidad ante la posible aparición de errores",
+            "Tiempo de respuesta adecuado",
+            "Exactitud en los datos mostrados"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0001",
+        "pregunta": "La arquitecturade un equipo informático básico se basa en la arquitectura de",
+        "respuesta": "Von Neumann",
+        "opciones": [
+            "Harvard modificada",
+            "Alan Turing",
+            "Von Neumann",
+            "Harvard básica"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0002",
+        "pregunta": "La memoria principal es la que se conoce como",
+        "respuesta": "RAM",
+        "opciones": [
+            "RAM",
+            "Disco Duro",
+            "ROM",
+            "Caché"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0003",
+        "pregunta": "En la unidad de control disponemos de",
+        "respuesta": "El controlador, reloj, secuenciador y registros",
+        "opciones": [
+            "El controlador, reloj, secuenciador y registros",
+            "La RAM y la ROM",
+            "La UC, la ALU y registros",
+            "Caché L1 y Caché L2"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0004",
+        "pregunta": "El direccionamiento relativo",
+        "respuesta": "Se da cuando la dirección real del objeto se obtiene sumando una cantidad fija a la dirección de la instrucción a ejecutar",
+        "opciones": [
+            "Se da cuando la dirección real del objeto se obtiene sumando una cantidad fija a la dirección de la instrucción a ejecutar",
+            "Se da cuando la dirección obtenida no es la dirección real del objeto sino su dirección, por lo que necesitamos un paso adicional",
+            "Se da cuando el objeto se encuentra incluido en la propia instrucción y no es necesario acceder a memoria",
+            "Se da cuando la dirección obtenida es la dirección real del objeto al que hay que acceder"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0005",
+        "pregunta": "El direccionamiento indirecto",
+        "respuesta": "Se da cuando la dirección obtenida no es la dirección real del objeto sino su dirección, por lo que necesitamos un paso adicional",
+        "opciones": [
+            "Se da cuando la dirección obtenida no es la dirección real del objeto sino su dirección, por lo que necesitamos un paso adicional",
+            "Se da cuando la dirección obtenida es la dirección real del objeto al que hay que acceder",
+            "Se da cuando el objeto se encuentra incluido en la propia instrucción y no es necesario acceder a memoria",
+            "Se da cuando la dirección real del objeto se obtiene sumando una cantidad fija a la dirección de la instrucción a ejecutar"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0006",
+        "pregunta": "En el sistema octal se usan los dígitos del",
+        "respuesta": "0 al 7",
+        "opciones": [
+            "1 al 8",
+            "2 al 8",
+            "0 al 9",
+            "0 al 7"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0007",
+        "pregunta": "El hardware básico incluye los siguientes elementos",
+        "respuesta": "CPU, memoria y dispositivo de entrada y salida",
+        "opciones": [
+            "CPU, memoria y tarjeta de red",
+            "CPU, tarjeta de red y dispositivo de entrada y salida",
+            "CPU, memoria y dispositivo de entrada y salida",
+            "CPU, memoria y tarjeta gráfica"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0008",
+        "pregunta": "La tecnología de fabricación utilizada en la tercera generación",
+        "respuesta": "Son los circuitos integrados",
+        "opciones": [
+            "Son los circuitos integrados",
+            "Es la inteligencia artificial",
+            "Son los microprocesadores",
+            "Son los transistores"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0009",
+        "pregunta": "¿Cuál de los siguientes dispositivos no es de salida?",
+        "respuesta": "WebCam",
+        "opciones": [
+            "Monitor",
+            "WebCam",
+            "Impresora",
+            "Altavoces"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0010",
+        "pregunta": "La BIOS es",
+        "respuesta": "La que se encarga de realizar las operaciones necesarias para que el ordenador pueda empezar a trabajar con el Sistema Operativo",
+        "opciones": [
+            "La que se encarga de realizar operaciones aritméticas y lógicas",
+            "La que almacena los datos que se están utilizando actualmente en el sistema",
+            "La que se encarga de realizar las operaciones necesarias para que el ordenador pueda empezar a trabajar con el Sistema Operativo",
+            "La que controla el sistema, gestiona los recursos del ordenador para ir realizando todas las tareas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0011",
+        "pregunta": "1 Byte es lo mismo que",
+        "respuesta": "8 bits",
+        "opciones": [
+            "10 bits",
+            "8 bits",
+            "16 bits",
+            "12 bits"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0012",
+        "pregunta": "Mediante el módulo de difusión de información",
+        "respuesta": "Se pueden generar tipologías de usuarios que reciban notificaciones cuando se introduzca en el sistema de información que pueda ser sensible a sus intereses",
+        "opciones": [
+            "Se define la estructura de las bases de datos y el formato de los documentos",
+            "Una vez se dispone de los datos, se encargará de ejecutar los algoritmos de análisis y procesamiento de la información",
+            "Se pueden generar tipologías de usuarios que reciban notificaciones cuando se introduzca en el sistema de información que pueda ser sensible a sus intereses",
+            "Se integran las distintas fuentes de información del sistema para que las búsquedas se lleven a cabo de forma coordinada y fácil"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0013",
+        "pregunta": "La memoria RAM es una memoria",
+        "respuesta": "Interna y volátil",
+        "opciones": [
+            "Interna y no volátil",
+            "Externa y no volátil",
+            "Interna y volátil",
+            "Externa y volátil"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0014",
+        "pregunta": "El sistema hexadecimal usa los dígitos del",
+        "respuesta": "0 al 9 y las letras de la A a la F",
+        "opciones": [
+            "1 al 9 y las letras de la A a la G",
+            "1 al 16",
+            "0 al 15",
+            "0 al 9 y las letras de la A a la F"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0015",
+        "pregunta": "En la CPU disponemos de",
+        "respuesta": "La UC, la ALU y registros",
+        "opciones": [
+            "La UC, la ALU y registros",
+            "La RAM y la ROM",
+            "Caché L1 y Caché L2",
+            "El controlador, reloj, secuenciador y registros"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0016",
+        "pregunta": "Hay dos grandes tipos de memoria",
+        "respuesta": "Interna y externa",
+        "opciones": [
+            "Interna y externa",
+            "RAM y ROM",
+            "CD y DVD",
+            "Física y Lógica"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0017",
+        "pregunta": "El número 63 en decimal es el equivalente en octal a",
+        "respuesta": "77",
+        "opciones": [
+            "69",
+            "77",
+            "65",
+            "101"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0018",
+        "pregunta": "Respecto la UC, señala la respuesta correcta",
+        "respuesta": "Mientras más rápido sea el reloj, más ordenes se podrán ejecutar por intervalo de tiempo",
+        "opciones": [
+            "Mientras más rápido sea el reloj, menos órdenes se podrán ejecutar por intervalo de tiempo",
+            "La velocidad del reloj no interfiere en la velocidad de ejecución de las órdenes",
+            "El reloj no se encuentra en la UC",
+            "Mientras más rápido sea el reloj, más ordenes se podrán ejecutar por intervalo de tiempo"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0019",
+        "pregunta": "Según la información que almacenan, los datos pueden ser",
+        "respuesta": "Numéricos, alfanuméricos, alfabéticos y lógicos",
+        "opciones": [
+            "De entrada, intermedios y de salida",
+            "Fijos y variables",
+            "Numéricos, alfanuméricos, alfabéticos y lógicos",
+            "De entrada y de salida"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0020",
+        "pregunta": "La Unidad de Control (UC) es",
+        "respuesta": "La que controla el sistema, gestiona los recursos del ordenador para ir realizando todas las tareas",
+        "opciones": [
+            "La que controla el sistema, gestiona los recursos del ordenador para ir realizando todas las tareas",
+            "La que se encarga de realizar operaciones aritméticas y lógicas",
+            "La que almacena los datos que se están utilizando actualmente en el sistema",
+            "El núcleo del sistema, ya que llevará a cabo todas las operaciones necesarias en él"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0021",
+        "pregunta": "La CPU es",
+        "respuesta": "El núcleo del sistema, ya que llevará a cabo todas las operaciones necesarias en él",
+        "opciones": [
+            "La que se encarga de realizar operaciones aritméticas y lógicas",
+            "El núcleo del sistema, ya que llevará a cabo todas las operaciones necesarias en él",
+            "La que almacena los datos que se están utilizando actualmente en el sistema",
+            "La que controla el sistema, gestiona los recursos del ordenador para ir realizando todas las tareas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0022",
+        "pregunta": "El direccionamiento directo",
+        "respuesta": "Se da cuando la dirección obtenida es la dirección real del objeto al que hay que acceder",
+        "opciones": [
+            "Se da cuando la dirección real del objeto se obtiene sumando una cantidad fija a la dirección de la instrucción a ejecutar",
+            "Se da cuando el objeto se encuentra incluido en la propia instrucción y no es necesario acceder a memoria",
+            "Se da cuando la dirección obtenida es la dirección real del objeto al que hay que acceder",
+            "Se da cuando la dirección obtenida no es la dirección real del objeto sino su dirección, por lo que necesitamos un paso adicional"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0023",
+        "pregunta": "Según el sistema de información, los datos pueden ser",
+        "respuesta": "De entrada, intermedios y de salida",
+        "opciones": [
+            "De entrada, intermedios y de salida",
+            "De entrada y de salida",
+            "Numéricos, alfanuméricos, alfabéticos o lógicos",
+            "Fijos y variables"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0024",
+        "pregunta": "El direccionamiento inmediato",
+        "respuesta": "Se da cuando el objeto se encuentra incluido en la propia instrucción y no es necesario acceder a memoria",
+        "opciones": [
+            "Se da cuando el objeto se encuentra incluido en la propia instrucción y no es necesario acceder a memoria",
+            "Se da cuando la dirección real del objeto se obtiene sumando una cantidad fija a la dirección de la instrucción a ejecutar",
+            "Se da cuando la dirección obtenida no es la dirección real del objeto sino su dirección, por lo que necesitamos un paso adicional",
+            "Se da cuando la dirección obtenida es la dirección real del objeto al que hay que acceder"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0025",
+        "pregunta": "Según la variación, los datos pueden ser",
+        "respuesta": "Fijos y variables",
+        "opciones": [
+            "Fijos y variables",
+            "De entrada, intermedios y de salida",
+            "De entrada y de salida",
+            "Numéricos, alfanuméricos, alfabéticos o lógicos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0026",
+        "pregunta": "La ALU es",
+        "respuesta": "La que se encarga de realizar operaciones aritméticas y lógicas",
+        "opciones": [
+            "La que se encarga de realizar operaciones aritméticas y lógicas",
+            "El núcleo del sistema, ya que llevará a cabo todas las operaciones necesarias en él",
+            "La que controla el sistema, gestiona los recursos del ordenador para ir realizando todas las tareas",
+            "La que almacena los datos que se están utilizando actualmente en el sistema"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0027",
+        "pregunta": "La tecnología de fabricación utilizada en la quinta generación",
+        "respuesta": "Es la inteligencia artificial",
+        "opciones": [
+            "Son los microprocesaores",
+            "Son los circuitos integrados",
+            "Es la inteligencia artificial",
+            "Son los transistores"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0028",
+        "pregunta": "El Hardware es",
+        "respuesta": "La parte física del ordenador",
+        "opciones": [
+            "El microprocesador del ordenador",
+            "La placa base del ordenador",
+            "La parte física del ordenador",
+            "La parte lógica del ordenador"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0029",
+        "pregunta": "El número 4F en hexadecimal es el equivalente en decimal a",
+        "respuesta": "79",
+        "opciones": [
+            "81",
+            "56",
+            "79",
+            "47"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0030",
+        "pregunta": "Las memorias que usa la CPU para llevar a cabo sus operaciones son",
+        "respuesta": "Los registros, memorias caché y memoria principal",
+        "opciones": [
+            "Los registros y memoria principal",
+            "Los registros, memorias caché y memoria principal",
+            "Los registros, memoria principal y memoria secundaria",
+            "Los registros, memorias caché, memoria principal y memoria secundaria"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0031",
+        "pregunta": "¿Qué rango de frecuencia tienen las memorias DDR3?",
+        "respuesta": "1066-2400 MHz",
+        "opciones": [
+            "266-400 GHz",
+            "1066-2400 GHz",
+            "266-400 MHz",
+            "1066-2400 MHz"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0032",
+        "pregunta": "El número 56 en octal es el equivalente en decimal a",
+        "respuesta": "46",
+        "opciones": [
+            "56",
+            "59",
+            "64",
+            "46"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0033",
+        "pregunta": "La memoria RAM no volátil porque está conectada a una pequeña fuente de alimentación es la memoria",
+        "respuesta": "NVRAM",
+        "opciones": [
+            "SDRAM",
+            "DRAM",
+            "NVRAM",
+            "SRAM"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0034",
+        "pregunta": "¿Cuál de los siguientes dispositivos no pertenece al Hardware básico?",
+        "respuesta": "Tarjeta de red",
+        "opciones": [
+            "Monitor",
+            "Teclado",
+            "Tarjeta de red",
+            "CPU"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0035",
+        "pregunta": "Algunos de los elementos de almacenamiento son",
+        "respuesta": "Memoria RAM, disco duro, DVD",
+        "opciones": [
+            "Teclado, Ratón, WebCam",
+            "CPU, ALU, ChipSet",
+            "Monitor, impresora, altavoces",
+            "Memoria RAM, disco duro, DVD"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0036",
+        "pregunta": "Elija el orden correcto de menor a mayor de las siguientes unidades",
+        "respuesta": "PetaByte, ExaByte, ZettaByte, YottaByte",
+        "opciones": [
+            "PetaByte, ExaByte, ZettaByte, YottaByte",
+            "YottaByte, ExaByte, ZettaByte, PetaByte",
+            "YottaByte, PetaByte, ZettaByte, ExaByte",
+            "ZettaByte, YottaByte, PetaByte, ExaByte"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0037",
+        "pregunta": "¿Cuál de los siguientes periféricos se considera bidireccional?",
+        "respuesta": "Tarjeta de red",
+        "opciones": [
+            "Impresora",
+            "Tarjeta de red",
+            "Teclado",
+            "Monitor"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0038",
+        "pregunta": "¿Cuál de los siguientes dispositivos no es de entrada?",
+        "respuesta": "Monitor",
+        "opciones": [
+            "Escáner",
+            "Raton",
+            "Monitor",
+            "Teclado"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0039",
+        "pregunta": "1 TeraByte son",
+        "respuesta": "1024 GigaBytes",
+        "opciones": [
+            "1024 KiloBytes",
+            "1024 GigaBytes",
+            "1024 Bytes",
+            "1024 MegaBytes"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0040",
+        "pregunta": "La memoria ROM es una memoria",
+        "respuesta": "Interna y no volátil",
+        "opciones": [
+            "Interna y volátil",
+            "Externa y volátil",
+            "Interna y no volátil",
+            "Externa y no volátil"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0041",
+        "pregunta": "La memoria que no se puede borrar y es donde está grabada la Bios es la memoria",
+        "respuesta": "ROM",
+        "opciones": [
+            "CMOS",
+            "ROM",
+            "Externa",
+            "RAM"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0042",
+        "pregunta": "Las dos principales tecnologías en la creación de las CPU son",
+        "respuesta": "RISC y CISC",
+        "opciones": [
+            "CD y DVD",
+            "UC y ALU",
+            "RAM y ROM",
+            "RISC y CISC"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0043",
+        "pregunta": "La memoria donde se guarda la fecha y hora del equipo y la configuración de los elementos es la memoria",
+        "respuesta": "CMOS",
+        "opciones": [
+            "CMOS",
+            "RAM",
+            "Externa",
+            "ROM"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0044",
+        "pregunta": "Mediante el módulo de definición del Sistema de información",
+        "respuesta": "Se define la estructura de las bases de datos y el formato de los documentos",
+        "opciones": [
+            "Una vez se dispone de los datos, se encargará de ejecutar los algoritmos de análisis y procesamiento de la información",
+            "Se define la estructura de las bases de datos y el formato de los documentos",
+            "Se integran las distintas fuentes de información del sistema para que las búsquedas se lleven a cabo de forma coordinada y fácil",
+            "Se pueden generar tipologías de usuarios que reciban notificaciones cuando se introduzca en el sistema de información que pueda ser sensible a sus intereses"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0045",
+        "pregunta": "La memoria que se usa mientras está encendido el sistema para llevar a cabo tareas del Sistema Operativo es la memoria",
+        "respuesta": "RAM",
+        "opciones": [
+            "Externa",
+            "CMOS",
+            "RAM",
+            "ROM"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0046",
+        "pregunta": "El orden de los tipos de memoria en función de la velocidad de acceso y prioridad es",
+        "respuesta": "Registros, Caché L1, Caché L2, memoria principal y memoria secundaria",
+        "opciones": [
+            "Memoria principal, memoria secundaria, registros, Caché L1 y Caché L2",
+            "Memoria principal, memoria secundaria, Caché L1, Caché L2 y registros",
+            "Registros, Caché L1, Caché L2, memoria principal y memoria secundaria",
+            "Caché L1, Caché L2, registros, memoria principal y memoria secundaria"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0047",
+        "pregunta": "El número 110111 en binario es el equivalente en decimal a",
+        "respuesta": "55",
+        "opciones": [
+            "43",
+            "55",
+            "45",
+            "53"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0048",
+        "pregunta": "La tecnología de fabricación utilizada en la primera generación",
+        "respuesta": "Son las válvulas de vacío",
+        "opciones": [
+            "Son los circuitos integrados",
+            "Son las válvulas de vacío",
+            "Son los microprocesadores",
+            "Son los transistores"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-1-0049",
+        "pregunta": "El número 92 en decimal es el equivalente en hexadecimal a",
+        "respuesta": "5C",
+        "opciones": [
+            "7F",
+            "5C",
+            "4D",
+            "CC"
+        ]
+    }
+]
