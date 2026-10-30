@@ -1,0 +1,551 @@
+[
+    {
+        "id": "bloque-ii-tema-40000",
+        "pregunta": "La técnica mediante la cual, el SO gestiona la memoria, de manera que la zona de intercambio está ubicada en el disco donde está el SO y se recomienta que sea un 20% del espacio se llama",
+        "respuesta": "Swapping",
+        "opciones": [
+            "Swapping",
+            "Paginación",
+            "Memoria virtual",
+            "Segmentación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40001",
+        "pregunta": "La función de la tecla F10 es",
+        "respuesta": "Activa las opciones de la barra de menús",
+        "opciones": [
+            "Salir del programa",
+            "Inicio",
+            "Activa las opciones de la barra de menús",
+            "Ayuda"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40002",
+        "pregunta": "El botón de la izquierda del ratón",
+        "respuesta": "Se utiliza para acceder y marcar elementos",
+        "opciones": [
+            "Se utiliza para acceder y marcar elementos",
+            "Se usa para modificar los DPI",
+            "Se usa para desplazarse por los documentos",
+            "Se usa para desplegar menús especiales"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40003",
+        "pregunta": "La función de las teclas Ctrl+Mayús+Esc es",
+        "respuesta": "Abre el administrador de tareas",
+        "opciones": [
+            "Activa las opciones de la barra de menús",
+            "Inicio",
+            "Abre el administrador de tareas",
+            "Ayuda"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40004",
+        "pregunta": "¿Qué hace que todos los programas o usuarios no puedan acceder a todo el sistema?",
+        "respuesta": "El administrador de autorizaciones",
+        "opciones": [
+            "El gestor de memoria del sistema",
+            "El administrador de autorizaciones",
+            "El gestor de ejecución de aplicaciones",
+            "El administrador del procesador"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40005",
+        "pregunta": "La función de las teclas Ctrl+V es",
+        "respuesta": "Pegar",
+        "opciones": [
+            "Copiar",
+            "Deshacer",
+            "Cortar",
+            "Pegar"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40006",
+        "pregunta": "La técnica mediante la cual, el SO gestiona la memoria, de manera que se divide la memoria en partes de tamaño variable hasta un máximo permitido, se llama",
+        "respuesta": "Segmentación",
+        "opciones": [
+            "Memoria virtual",
+            "Swapping",
+            "Segmentación",
+            "Paginación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40007",
+        "pregunta": "La función de las teclas Ctrl+A es",
+        "respuesta": "Seleccionar todos los elementos de la ventana activa",
+        "opciones": [
+            "Actualizar la ventana activa",
+            "Buscar todos los archivos",
+            "Seleccionar todos los elementos de la ventana activa",
+            "Minimizar todas las ventanas abiertas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40008",
+        "pregunta": "EL SO que solo es utilizado por un usuario, quedando todos los recursos del ordenador a su disposición es un SO",
+        "respuesta": "Monousuario",
+        "opciones": [
+            "Multitarea",
+            "Monousuario",
+            "Monotarea",
+            "Multiusuario"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40009",
+        "pregunta": "El botón de la derecha del ratón",
+        "respuesta": "Se usa para desplegar menús especiales",
+        "opciones": [
+            "Se usa para desplegar menús especiales",
+            "Se usa para modificar los DPI",
+            "Se utiliza para acceder y marcar elementos",
+            "Se usa para desplazarse por los documentos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40010",
+        "pregunta": "El sistema de archivos HPFS se usa en",
+        "respuesta": "OS/2",
+        "opciones": [
+            "MacOS",
+            "Windows",
+            "OS/2",
+            "Linux"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40011",
+        "pregunta": "El botón desde el que se accederá a todas las aplicaciones y recursos del SO es",
+        "respuesta": "Inicio",
+        "opciones": [
+            "Un acceso directo",
+            "El escritorio",
+            "Inicio",
+            "La barra de tareas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40012",
+        "pregunta": "En el SO multitarea, el algoritmo que hace que el planificador intervenga cuando el proceso queda en espera por enviar elementos a un dispositivo de E/S, o porque ha finalizado se llama",
+        "respuesta": "Preemption",
+        "opciones": [
+            "Prioridades",
+            "Intervalos de tiempo",
+            "Preemption",
+            "Deadlines"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40013",
+        "pregunta": "La función de la tecla F5 es",
+        "respuesta": "Actualizar la ventana activa",
+        "opciones": [
+            "Moverse entre paneles en el Explorador de Windows",
+            "Buscar todos los archivos",
+            "Minimizar todas las ventanas abiertas",
+            "Actualizar la ventana activa"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40014",
+        "pregunta": "La función de las teclas Ctrl+C es",
+        "respuesta": "Copiar",
+        "opciones": [
+            "Pegar",
+            "Cortar",
+            "Deshacer",
+            "Copiar"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40015",
+        "pregunta": "La función de las teclas Mayús+Supr",
+        "respuesta": "Elimina un elemento sin colocarlo en la papelera de reciclaje",
+        "opciones": [
+            "Muestra las propiedades",
+            "Elimina un elemento sin colocarlo en la papelera de reciclaje",
+            "Ejecuta el comando alternativo predeterminado",
+            "Muestra un menú contextual que contiene comandos alternativos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40016",
+        "pregunta": "El sistema de archivos ReiserFS se usa en",
+        "respuesta": "Linux",
+        "opciones": [
+            "MacOS",
+            "OS/2",
+            "Linux",
+            "Windows"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40017",
+        "pregunta": "Respecto a Windows Aero, el efecto de cristalizado en bordes de ventanas permitiendo ver a través de ellas se llama",
+        "respuesta": "Aero Glass",
+        "opciones": [
+            "Aero Glass",
+            "Aero Peek",
+            "Windows defender",
+            "Windows Flip"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40018",
+        "pregunta": "Un proceso es",
+        "respuesta": "Una tarea o programa en ejecución",
+        "opciones": [
+            "Un registro",
+            "Un algoritmo en ejecución",
+            "Una instrucción",
+            "Una tarea o programa en ejecución"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40019",
+        "pregunta": "La función de la tecla F2 es",
+        "respuesta": "Cambiar el nombre del objeto",
+        "opciones": [
+            "Cambiar el nombre del objeto",
+            "Activar y desactivar StickyKeys",
+            "Buscar todos los archivos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40020",
+        "pregunta": "La función de las teclas Logotipo de Windows+D es",
+        "respuesta": "Minimizar todas las ventanas abiertas",
+        "opciones": [
+            "Minimizar todas las ventanas abiertas",
+            "Buscar todos los archivos",
+            "Actualizar la ventana activa",
+            "Cambiar el nombre del objeto"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40021",
+        "pregunta": "La función de las teclas Ctrl+Z es",
+        "respuesta": "Deshacer",
+        "opciones": [
+            "Negrita",
+            "Deshacer",
+            "Copiar",
+            "Cortar"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40022",
+        "pregunta": "¿Qué se encarga de asignar recursos a las palicaciones que pretenden ejecutarse para que el Sistema no sature?",
+        "respuesta": "El gestor de ejecución de aplicaciones",
+        "opciones": [
+            "El gestor de memoria del sistema",
+            "El administrador de autorizaciones",
+            "El administrador del procesador",
+            "El gestor de ejecución de aplicaciones"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40023",
+        "pregunta": "La pantalla que aparecerá al cargar el Sistema Operativo es",
+        "respuesta": "El escritorio",
+        "opciones": [
+            "Un acceso directo",
+            "El escritorio",
+            "La barra de tareas",
+            "Inicio"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40024",
+        "pregunta": "La función de las teclas Alt+F4 es",
+        "respuesta": "Salir del programa",
+        "opciones": [
+            "Cambiar entre programas abiertos",
+            "Inicio",
+            "Ayuda",
+            "Salir del programa"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40025",
+        "pregunta": "En el SO multitarea, el algoritmo que establece tiempos límite para la ejecución del proceso se llama",
+        "respuesta": "Deadlines",
+        "opciones": [
+            "Deadlines",
+            "Intervalos de tiempo",
+            "Preemption",
+            "Prioridades"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40026",
+        "pregunta": "La función de las teclas Logotipo de Windows+F es",
+        "respuesta": "Buscar archivos o carpetas",
+        "opciones": [
+            "Minimizar todas las ventanas abiertas",
+            "Activar y desactivar StickyKeys",
+            "Moverse entre paneles en el Explorador de Windows",
+            "Buscar archivos o carpetas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40027",
+        "pregunta": "La función de las teclas Mayús+clic con el botón secundario es",
+        "respuesta": "Muestra un menú contextual que contiene comandos alternativos",
+        "opciones": [
+            "Ejecuta el comando alternativo predeterminado",
+            "Elimina un elemento sin colocarlo en la papelera de reciclaje",
+            "Muestra un menú contextual que contiene comandos alternativos",
+            "Muestra las propiedades"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40028",
+        "pregunta": "¿Qué parte del Sitema Operativo realiza las funciones básicas del sistema, gestión de memoria, procesos, entradas y salidas, etc?",
+        "respuesta": "Kernel",
+        "opciones": [
+            "Ínterprete de comandos",
+            "CPU",
+            "Sistema de Archivos",
+            "Kernel"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40029",
+        "pregunta": "Un programa o conjunto de programas que gestionan todas las tareas realizada en un sistema informático se llama",
+        "respuesta": "Sistema Operativo",
+        "opciones": [
+            "Sistema Operativo",
+            "Servidor",
+            "CPU",
+            "Kernel"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40030",
+        "pregunta": "¿Qué parte del SO posibilita la interacción a través de una serie de instrucciones que independiza al usuario de las características de los dispositivos?",
+        "respuesta": "Ínterprete de comandos",
+        "opciones": [
+            "CPU",
+            "Sistema de Archivos",
+            "Ínterprete de comandos",
+            "Kernel"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40031",
+        "pregunta": "El sistema de archivos MFS se usa en",
+        "respuesta": "MacOS",
+        "opciones": [
+            "Linux",
+            "Windows",
+            "OS/2",
+            "MacOS"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40032",
+        "pregunta": "¿Qué actúa como una capa intermedia entre el hardware y los programas de aplicaciones?",
+        "respuesta": "El Sistema Operativo",
+        "opciones": [
+            "El gestor de memoria",
+            "El Sistema Operativo",
+            "El administador de procesos",
+            "El gestor de entradas y salidas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40033",
+        "pregunta": "¿Qué parte del SO permite que los ficheros se guarden de manera ordenada en el sistema?",
+        "respuesta": "Sistema de Archivos",
+        "opciones": [
+            "Kernel",
+            "Ínterprete de comandos",
+            "CPU",
+            "Sistema de Archivos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40034",
+        "pregunta": "El SO en el cual se pueden ejecutar varios programas simultáneamente es un SO",
+        "respuesta": "Multitarea",
+        "opciones": [
+            "Multitarea",
+            "Monousuario",
+            "Multiusuario",
+            "Monotarea"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40035",
+        "pregunta": "¿Qué distribuye el uso de la memoria del sistema entre los distintos programas que se están ejecutando?",
+        "respuesta": "El gestor de memoria del sistema",
+        "opciones": [
+            "El administrador del procesador",
+            "El gestor de ejecución de aplicaciones",
+            "El administrador de autorizaciones",
+            "El gestor de memoria del sistema"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40036",
+        "pregunta": "La función de la tecla F6 es",
+        "respuesta": "Moverse entre paneles en el Explorador de Windows",
+        "opciones": [
+            "Activar y desactivar StickyKeys",
+            "Minimizar todas las ventanas abiertas",
+            "Moverse entre paneles en el Explorador de Windows",
+            "Cambiar el nombre del objeto"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40037",
+        "pregunta": "La función de las teclas Alt+doble clic es",
+        "respuesta": "Muestra las propiedades",
+        "opciones": [
+            "Muestra las propiedades",
+            "Elimina un elemento sin colocarlo en la papelera de reciclaje",
+            "Ejecuta el comando alternativo predeterminado",
+            "Muestra un menú contextual que contiene comandos alternativos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40038",
+        "pregunta": "La técnica mediante la cual, el SO gestiona la memoria, de manera que se dispone dentro del disco duro de una parte de memoria, que se considera RAM, se llama",
+        "respuesta": "Memoria virtual",
+        "opciones": [
+            "Swapping",
+            "Segmentación",
+            "Memoria virtual",
+            "Paginación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40039",
+        "pregunta": "La función de la tecla F3 es",
+        "respuesta": "Buscar todos los archivos",
+        "opciones": [
+            "Buscar todos los archivos",
+            "Cambiar el nombre del objeto",
+            "Activar y desactivar StickyKeys",
+            "Moverse entre paneles en el Explorador de Windows"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40040",
+        "pregunta": "¿Qué distribuye el uso del Micro entre los distintos programas que quieren acceder a él?",
+        "respuesta": "El administrador del procesador",
+        "opciones": [
+            "El administrador del procesador",
+            "El gestor de memoria del sistema",
+            "El gestor de ejecución de aplicaciones",
+            "El administrador de autorizaciones"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40041",
+        "pregunta": "La función de las teclas Ctrl+X es",
+        "respuesta": "Cortar",
+        "opciones": [
+            "Negrita",
+            "Cortar",
+            "Copiar",
+            "Pegar"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40042",
+        "pregunta": "Respecto a Windows Aero, el efecto que muestra una miniatura de las aplicaciones minimizadas en la barra de tareas al pasar sobre ellas se llama",
+        "respuesta": "Aero Peek",
+        "opciones": [
+            "Aero Peek",
+            "Aero Glass",
+            "Windows defender",
+            "Windows Flip"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40043",
+        "pregunta": "La función de presionar la tecla Mayús cinco veces es",
+        "respuesta": "Activar y desactivar StickyKeys",
+        "opciones": [
+            "Actualizar la ventana activa",
+            "Activar y desactivar StickyKeys",
+            "Minimizar todas las ventanas abiertas",
+            "Cambiar el nombre del objeto"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40044",
+        "pregunta": "Respecto a Windows Aero, el efecto que se utilizada para cambiar entre aplicaciones, mostrando una ventana de previsualización de las aplicaciones en ejecución se llama",
+        "respuesta": "Windows Flip",
+        "opciones": [
+            "Aero Glass",
+            "Aero Peek",
+            "Windows defender",
+            "Windows Flip"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40045",
+        "pregunta": "La técnica mediante la cual, el SO gestiona la memoria, de forma que divide la memoria interna en zonas iguales denominadas marcos, se llama",
+        "respuesta": "Paginación",
+        "opciones": [
+            "Memoria virtual",
+            "Paginación",
+            "Segmentación",
+            "Swapping"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40046",
+        "pregunta": "La función de la tecla F1 es",
+        "respuesta": "Ayuda",
+        "opciones": [
+            "Ayuda",
+            "Salir del programa",
+            "Inicio",
+            "Cambiar entre programas abiertos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40047",
+        "pregunta": "El scroll del ratón",
+        "respuesta": "Se usa para desplazarse por los documentos",
+        "opciones": [
+            "Se usa para desplegar menús especiales",
+            "Se usa para modificar los DPI",
+            "Se usa para desplazarse por los documentos",
+            "Se utiliza para acceder y marcar elementos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40048",
+        "pregunta": "El SO Linux es",
+        "respuesta": "El SO libre usado por usuarios algo más avanzados",
+        "opciones": [
+            "El SO por excelencia para el usuario medio",
+            "El SO libre usado por usuarios algo más avanzados",
+            "El SO propio de los Mac",
+            "El SO propio de los smartphone"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-40049",
+        "pregunta": "El sistema de archivos FAT32 se usa en",
+        "respuesta": "Windows",
+        "opciones": [
+            "Windows",
+            "OS/2",
+            "Linux",
+            "MS-DOS"
+        ]
+    }
+]

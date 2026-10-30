@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-ii-tema-2-0000",
+        "pregunta": "¿Qué tasa de transferencia de datos tienen los Thunderbolt 3?",
+        "respuesta": "Hasta 40 GB/s",
+        "opciones": [
+            "Hasta 50 GB/s",
+            "Hasta 20 GB/s",
+            "Hasta 30 GB/s",
+            "Hasta 40 GB/s"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0001",
+        "pregunta": "Los dispositivos multimedia son",
+        "respuesta": "Los elementos que nos porporcionan imagen y sonido",
+        "opciones": [
+            "Los elementos que nos permitirán mostrar la información",
+            "Los elementos que nos permitirán guardar la información",
+            "Los elementos que nos permitirán recibir la información",
+            "Los elementos que nos porporcionan imagen y sonido"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0002",
+        "pregunta": "RAID 0+1 es",
+        "respuesta": "Un espejo de divisiones",
+        "opciones": [
+            "Un espejo de divisiones",
+            "Una división de una distribución por bytes",
+            "Un espejo de divisiones por distribuciones por bytes",
+            "Una división de espejos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0003",
+        "pregunta": "¿Cuál de los siguientes buses se diseñó para mejorar la transferencia de datos de las tarjetas gráficas?",
+        "respuesta": "AGP",
+        "opciones": [
+            "SCSI",
+            "MCA",
+            "PC",
+            "AGP"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0004",
+        "pregunta": "¿Cómo se llama a las rpm con la que giran los discos?",
+        "respuesta": "Velocidad de rotación",
+        "opciones": [
+            "Velocidad de rotación",
+            "Número de sectores por pista",
+            "Latencia rotacional",
+            "Tiempo de búsqueda"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0005",
+        "pregunta": "RAID 1+0 es",
+        "respuesta": "Una división de espejos",
+        "opciones": [
+            "Un espejo de divisiones por distribuciones por bytes",
+            "Una división de espejos",
+            "Un espejo de divisiones",
+            "Una división de una distribución por bytes"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0006",
+        "pregunta": "La resolución de un monitor se mide en",
+        "respuesta": "Píxeles",
+        "opciones": [
+            "Píxeles",
+            "Centímetros",
+            "Centímetros cuadrados",
+            "Pulgadas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0007",
+        "pregunta": "¿En qué fecha surgió el USB?",
+        "respuesta": "En 1996",
+        "opciones": [
+            "En 1992",
+            "En 1999",
+            "En 1996",
+            "En 1989"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0008",
+        "pregunta": "El tamaño de un monitor se mide en",
+        "respuesta": "Pulgadas",
+        "opciones": [
+            "Pulgadas",
+            "Píxeles",
+            "Centímetros",
+            "Centímetros cuadrados"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0009",
+        "pregunta": "¿Qué impresoras se suelen usar para imprimir planos en grandes formatos?",
+        "respuesta": "Plotters",
+        "opciones": [
+            "Plotters",
+            "Impresoras térmicas",
+            "Impresoras láser",
+            "Impresoras 3D"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0010",
+        "pregunta": "La placa base es",
+        "respuesta": "La que proporciona lo necesario para interconectar todo el hardware",
+        "opciones": [
+            "La que proporciona lo necesario para interconectar todo el hardware",
+            "La que almacena los datos que se están utilizando actualmente en el sistema",
+            "La que se encarga de realizar operaciones aritméticas y lógicas",
+            "La que controla el sistema, gestiona los recursos del ordenador para ir realizando todas las tareas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0011",
+        "pregunta": "La resolución estándar de 4K es",
+        "respuesta": "3840 x 2160 píxeles",
+        "opciones": [
+            "3840 x 2160 píxeles",
+            "3680 x 2240 píxeles",
+            "4080 x 2400 píxeles",
+            "5120 x 2400 píxeles"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0012",
+        "pregunta": "La resolución estándar de Full HD es",
+        "respuesta": "1920 x 1080 píxeles",
+        "opciones": [
+            "2080 x 1400 píxeles",
+            "1920 x 1080 píxeles",
+            "1280 x 720 píxeles",
+            "1720 x 1080 píxeles"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0013",
+        "pregunta": "¿Qué tecnología usan las impresoras llamadas por impacto?",
+        "respuesta": "Matriciales",
+        "opciones": [
+            "Térmicas",
+            "Láser",
+            "Matriciales",
+            "Inyección"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0014",
+        "pregunta": "Elige el dispositivo multimedia",
+        "respuesta": "Webcam",
+        "opciones": [
+            "Monitor",
+            "Webcam",
+            "Escáner",
+            "Impresora"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0015",
+        "pregunta": "¿Cuáles son los dos formatos más extendidos de placas base?",
+        "respuesta": "ATX y micro-ATX",
+        "opciones": [
+            "RAM y ROM",
+            "ATX y micro-ATX",
+            "UC y ALU",
+            "RISC y CISC"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0016",
+        "pregunta": "Elige el dispositivo de almacenamiento",
+        "respuesta": "Disco duro",
+        "opciones": [
+            "Ratón",
+            "Disco duro",
+            "Teclado",
+            "Tarjeta gráica"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0017",
+        "pregunta": "¿Cuál es de los primeros buses que se diseñaron?",
+        "respuesta": "PC",
+        "opciones": [
+            "SCSI",
+            "MCA",
+            "PC",
+            "AGP"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0018",
+        "pregunta": "Elige ejemplos de soportes ópticos",
+        "respuesta": "CD, DVD",
+        "opciones": [
+            "VGA, DVI",
+            "SD, microSD",
+            "CD, DVD",
+            "INTEL, AMD"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0019",
+        "pregunta": "La forma de RAID en la que uno de los discos es espejo de otro es",
+        "respuesta": "RAID 1",
+        "opciones": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 2",
+            "RAID 4"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0020",
+        "pregunta": "¿Cuáles de los siguientes son buses?",
+        "respuesta": "PCI, SCSI",
+        "opciones": [
+            "INTEL, AMD",
+            "PCI, SCSI",
+            "VGA, DVI",
+            "IDE, SATA"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0021",
+        "pregunta": "¿Cuál de los siguientes buses se utiliza sobre todo en servidores?",
+        "respuesta": "SCSI",
+        "opciones": [
+            "SCSI",
+            "PC",
+            "MCA",
+            "AGP"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0022",
+        "pregunta": "¿Qué interfaz del monitor proporciona una señal digital de audio y vídeo?",
+        "respuesta": "HDMI",
+        "opciones": [
+            "HDMI",
+            "S-VIDEO",
+            "DVI",
+            "VGA"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0023",
+        "pregunta": "¿Qué tecnología usan las impresoras que hacen uso del tóner para generar las impresiones?",
+        "respuesta": "Láser",
+        "opciones": [
+            "Láser",
+            "Térmicas",
+            "Matriciales",
+            "Inyección"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0024",
+        "pregunta": "¿Cómo se llama el tiempo que tarda en situar el cabezal en la pista adecuada?",
+        "respuesta": "Tiempo de búsqueda",
+        "opciones": [
+            "Velocidad de rotación",
+            "Latencia rotacional",
+            "Número de sectores por pista",
+            "Tiempo de búsqueda"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0025",
+        "pregunta": "¿En qué sección podemos configuar nuestra impresora en Windows?",
+        "respuesta": "En Dispositivos e impresoras",
+        "opciones": [
+            "En Periféricos",
+            "En Impresoras y escáner",
+            "En Dispositivos e impresoras",
+            "En Dispositivos de salida"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0026",
+        "pregunta": "¿Qué elementos base conforman la placa?",
+        "respuesta": "BIOS, Pila, Zócalo de la CPU, Chipset y Buses",
+        "opciones": [
+            "El controlador, reloj, secuenciador y registros",
+            "BIOS, Pila, Zócalo de la CPU, Chipset y Buses",
+            "La UC, la ALU y registros",
+            "El monitor, teclado, ratón y disco duro"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0027",
+        "pregunta": "¿Qué impresoras permiten generar objetos de tipo plástico partiendo de esquemas?",
+        "respuesta": "Impresoras 3D",
+        "opciones": [
+            "Impresoras 3D",
+            "Plotters",
+            "Impresoras térmicas",
+            "Impresoras láser"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0028",
+        "pregunta": "RAID 3+0 es",
+        "respuesta": "Una división de una distribución por bytes",
+        "opciones": [
+            "Una división de espejos",
+            "Un espejo de divisiones",
+            "Un espejo de divisiones por distribuciones por bytes",
+            "Una división de una distribución por bytes"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0029",
+        "pregunta": "Los dispositivos de entrada son",
+        "respuesta": "Los elementos que nos permitirán recibir la información",
+        "opciones": [
+            "Los elementos que nos permitirán guardar la información",
+            "Los elementos que nos porporcionan imagen y sonido",
+            "Los elementos que nos permitirán recibir la información",
+            "Los elementos que nos permitirán mostrar la información"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0030",
+        "pregunta": "Elige el dispositio de salida",
+        "respuesta": "Impresora",
+        "opciones": [
+            "Teclado",
+            "Ratón",
+            "Webcam",
+            "Impresora"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0031",
+        "pregunta": "¿Qué tecnología usan las impresoras que necesitan un papel especial sensible al calor?",
+        "respuesta": "Térmicas",
+        "opciones": [
+            "Inyección",
+            "Láser",
+            "Matriciales",
+            "Térmicas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0032",
+        "pregunta": "¿Qué conexión es exclusiva de los MAC actualmente?",
+        "respuesta": "Thunderbolt",
+        "opciones": [
+            "Thunderbolt",
+            "Bluetooth",
+            "USB",
+            "Firewire"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0033",
+        "pregunta": "Los dispositivos de salida son",
+        "respuesta": "Los elementos que nos permitirán mostrar la información",
+        "opciones": [
+            "Los elementos que nos porporcionan imagen y sonido",
+            "Los elementos que nos permitirán recibir la información",
+            "Los elementos que nos permitirán guardar la información",
+            "Los elementos que nos permitirán mostrar la información"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0034",
+        "pregunta": "Elige el dispositivo de entrada",
+        "respuesta": "Teclado",
+        "opciones": [
+            "Altavoces",
+            "Teclado",
+            "Monitor",
+            "Disco duro"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0035",
+        "pregunta": "¿Cuál es la velocidad del USB 3.1?",
+        "respuesta": "10 Gbps",
+        "opciones": [
+            "480 Mbps",
+            "3.2 Gbps",
+            "10 Gbps",
+            "4.8 Gbps"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0036",
+        "pregunta": "¿Cómo se llama el tiempo que tarda en posicionarse en el sector adecuado en la pista?",
+        "respuesta": "Latencia rotacional",
+        "opciones": [
+            "Latencia rotacional",
+            "Velocidad de rotación",
+            "Tiempo de búsqueda",
+            "Número de sectores por pista"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0037",
+        "pregunta": "¿Qué interfaz del monitor proporciona una señal analógica aunque los procesos para conseguirla sean digitales?",
+        "respuesta": "VGA",
+        "opciones": [
+            "VGA",
+            "HDMI",
+            "S-VIDEO",
+            "DVI"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0038",
+        "pregunta": "¿Qué conexiones puede tener una impresora?",
+        "respuesta": "Por puerto paralelo, usb y wifi o red",
+        "opciones": [
+            "Por hdmi, usb y wifi o red",
+            "Por usb y wifi o red",
+            "Por puerto paralelo, usb y wifi o red",
+            "Por vga, usb y wifi o red"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0039",
+        "pregunta": "¿Cómo se llama la densidad de información que se podrá almacenar en el disco duro?",
+        "respuesta": "Número de sectores por pista",
+        "opciones": [
+            "Número de sectores por pista",
+            "Velocidad de rotación",
+            "Tiempo de búsqueda",
+            "Latencia rotacional"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0040",
+        "pregunta": "La resolución estándar de HD es",
+        "respuesta": "1280 x 720 píxeles",
+        "opciones": [
+            "1280 x 720 píxeles",
+            "1380 x 720 píxeles",
+            "720 x 680 píxeles",
+            "1140 x 800 píxeles"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0041",
+        "pregunta": "Los dispositivos de almacenamiento son",
+        "respuesta": "Los elementos que nos permitirán guardar la información",
+        "opciones": [
+            "Los elementos que nos permitirán recibir la información",
+            "Los elementos que nos permitirán guardar la información",
+            "Los elementos que nos permitirán mostrar la información",
+            "Los elementos que nos porporcionan imagen y sonido"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0042",
+        "pregunta": "¿Qué ingerfaces son las más destacadas en los discos duros?",
+        "respuesta": "IDE y SATA",
+        "opciones": [
+            "VGA, DVI",
+            "INTEL, AMD",
+            "IDE y SATA",
+            "PCI, SCSI"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0043",
+        "pregunta": "La resolución estándar de VGA es",
+        "respuesta": "640 x 480 píxeles",
+        "opciones": [
+            "720 x 680 píxeles",
+            "640 x 480 píxeles",
+            "1280 x 720 píxeles",
+            "800 x 720 píxeles"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0044",
+        "pregunta": "¿Qué tecnología usan las impresoras que proyectan tinta sobre el papel por el cabezal?",
+        "respuesta": "Inyección",
+        "opciones": [
+            "Térmicas",
+            "Láser",
+            "Inyección",
+            "Matriciales"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0045",
+        "pregunta": "¿Qué interfaz del monitor proporciona una señal de vídeo digital, sin que los proecsamientos tengan que ser convertidos a señal analógica?",
+        "respuesta": "DVI",
+        "opciones": [
+            "HDMI",
+            "S-VIDEO",
+            "VGA",
+            "DVI"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0046",
+        "pregunta": "La relación de aspecto de un monitor panorámico es",
+        "respuesta": "(16:9)",
+        "opciones": [
+            "(16:9)",
+            "(7:9)",
+            "(4:3)",
+            "(19:9)"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0047",
+        "pregunta": "¿Cuál es la frecuencia de uso del Bluetooth?",
+        "respuesta": "2.4 GHz",
+        "opciones": [
+            "4.8 GHz",
+            "2.4 GHz",
+            "3.2 GHz",
+            "1.6 GHz"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0048",
+        "pregunta": "¿Quién desarrolló la interfaz IDE?",
+        "respuesta": "Western Digital",
+        "opciones": [
+            "Toshiba",
+            "Western Digital",
+            "Seagate",
+            "Microsoft"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-2-0049",
+        "pregunta": "Los SSD usan interfaces",
+        "respuesta": "SATA, m-SATA y NVMe",
+        "opciones": [
+            "IDE, SATA y PATA",
+            "SATA, m-SATA y NVMe",
+            "IDE y NVMe",
+            "IDE y SATA"
+        ]
+    }
+]

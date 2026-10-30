@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-ii-tema-5-0000",
+        "pregunta": "¿Cuál de los siguientes atributos podría ser válido como clave?",
+        "respuesta": "DNI",
+        "opciones": [
+            "Fecha de nacimiento",
+            "DNI",
+            "Nombre",
+            "Apellidos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0001",
+        "pregunta": "En una tabla de una base de datos, el tipo de dato que permite la inserción de cualquier objeto de otro programa del paquete Office, se llama",
+        "respuesta": "Objeto OLE",
+        "opciones": [
+            "Autonumérico",
+            "Hipervínculo",
+            "Memo",
+            "Objeto OLE"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0002",
+        "pregunta": "Cuando un registro de la tabla secundaria solo puede estar relacionado con un registro de la tabla principal, pero un registro de la tabla principal puede estar relacionado con más de un registro de la tabla secundaria es",
+        "respuesta": "Relación uno a muchos",
+        "opciones": [
+            "Relación uno a uno",
+            "Relación uno a muchos",
+            "Relación muchos a muchos",
+            "Relación cero a uno"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0003",
+        "pregunta": "En una base de datos, se usan para representar un extracto de los datos",
+        "respuesta": "Informes",
+        "opciones": [
+            "Informes",
+            "Consultas",
+            "Formularios",
+            "Tablas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0004",
+        "pregunta": "Según la forma en la que almacenan la información, las bases de datos MongoDB o Azzure DocumentDB son del tipo",
+        "respuesta": "Documentales",
+        "opciones": [
+            "Clave/valor",
+            "En grafo",
+            "Documentales",
+            "Orientadas a objetos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0005",
+        "pregunta": "El lenguaje pde consulta de objetos es",
+        "respuesta": "OQL",
+        "opciones": [
+            "ODL",
+            "OQL",
+            "OML",
+            "OPL"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0006",
+        "pregunta": "Según la forma en la que almacenan la información, las bases de datos GridGain u Oracle Coherence son del tipo",
+        "respuesta": "Soluciones para Grid&Cloud",
+        "opciones": [
+            "Soluciones para Grid&Cloud",
+            "En grafo",
+            "Orientadas a objetos",
+            "Clave/valor"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0007",
+        "pregunta": "En una base de datos, se usan para almacenar datos de forma ordenada",
+        "respuesta": "Tablas",
+        "opciones": [
+            "Tablas",
+            "Formularios",
+            "Informes",
+            "Consultas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0008",
+        "pregunta": "Las bases de datos en forma de tablas que se relacionan unas con otras siguen el modelo",
+        "respuesta": "Relacional",
+        "opciones": [
+            "Relacional",
+            "Conceptual",
+            "En red",
+            "Jerárquico"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0009",
+        "pregunta": "Según la forma en la que almacenan la información, las bases de datos Versant o DB4o son del tipo",
+        "respuesta": "Orientadas a objetos",
+        "opciones": [
+            "En grafo",
+            "Documentales",
+            "Multimodelos",
+            "Orientadas a objetos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0010",
+        "pregunta": "Las consultas que generan cambios en los registros son",
+        "respuesta": "Consultas de acción",
+        "opciones": [
+            "Consultas de selección",
+            "Consultas de acción",
+            "Consultas de SQL",
+            "Consultas de MySQL"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0011",
+        "pregunta": "En una base de datos, son objetos utilizados para visionar las tablas en la forma que desee el usuario",
+        "respuesta": "Consultas",
+        "opciones": [
+            "Informes",
+            "Formularios",
+            "Consultas",
+            "Tablas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0012",
+        "pregunta": "¿En qué año fue definido el modelo relacional?",
+        "respuesta": "En 1970",
+        "opciones": [
+            "En 1970",
+            "En 1980",
+            "En 1995",
+            "En 1985"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0013",
+        "pregunta": "Las consultas que se generan directamente a través del lenguaje SQL son",
+        "respuesta": "Consultas de SQL",
+        "opciones": [
+            "Consultas de MySQL",
+            "Consultas de SQL",
+            "Consultas de acción",
+            "Consultas de selección"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0014",
+        "pregunta": "La propiedad de los campos de datos que sirve para crear un índice que acelera las búsquedas es",
+        "respuesta": "Indexado",
+        "opciones": [
+            "Indexado",
+            "Formato",
+            "Máscara de entrada",
+            "Título"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0015",
+        "pregunta": "Cuando un registro puede estar relacionado con más de un registro de la otra tabla y viceversa es",
+        "respuesta": "Relación muchos a muchos",
+        "opciones": [
+            "Relación cero a uno",
+            "Relación uno a muchos",
+            "Relación muchos a muchos",
+            "Relación uno a uno"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0016",
+        "pregunta": "Respecto a la clave principal",
+        "respuesta": "Solamente puede haber uno para cada tabla",
+        "opciones": [
+            "Tiene que haber al menos dos por cada tabla",
+            "Solamente puede haber uno para cada tabla",
+            "Tiene que haber al menos una por tabla",
+            "Puede haber o no alguna en cada tabla"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0017",
+        "pregunta": "La propiedad de los campos de datos que es una expresión que limita los valores de los datos introducidos en el campo es",
+        "respuesta": "Regla de validación",
+        "opciones": [
+            "Texto de validación",
+            "Máscara de entrada",
+            "Requerido",
+            "Regla de validación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0018",
+        "pregunta": "Según la forma en la que almacenan la información, las bases de datos Neo4J o Bigdata son del tipo",
+        "respuesta": "En grafo",
+        "opciones": [
+            "Documentales",
+            "En grafo",
+            "Multimodelos",
+            "Soluciones para Grid&Cloud"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0019",
+        "pregunta": "En una base de datos, se utilizan para la introducción de datos, visualización o modificación",
+        "respuesta": "Formularios",
+        "opciones": [
+            "Informes",
+            "Tablas",
+            "Consultas",
+            "Formularios"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0020",
+        "pregunta": "La propiedad de los campos de datos que indica si la introducción de datos en este campo es obligatoria es",
+        "respuesta": "Requerido",
+        "opciones": [
+            "Formato",
+            "Título",
+            "Requerido",
+            "Texto de validación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0021",
+        "pregunta": "Respecto los distintos niveles de abstracción de las bases de datos, el nivel más bajo de abstracción que se encarga de modelar cómo se almacenan los datos es",
+        "respuesta": "El nivel físico",
+        "opciones": [
+            "El nivel físico",
+            "El nivel conceptual",
+            "El nivel lógico",
+            "El nivel relacional"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0022",
+        "pregunta": "Cuando un registro de una tabla solo puede estar relacionado con otro registro de una tabla y viceversa es",
+        "respuesta": "Relación uno a uno",
+        "opciones": [
+            "Relación uno a uno",
+            "Relación uno a muchos",
+            "Relación cero a uno",
+            "Relación muchos a muchos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0023",
+        "pregunta": "¿Cuál de las siguientes no es una característica básica de todo SGBD?",
+        "respuesta": "Duplicado de los datos",
+        "opciones": [
+            "Duplicado de los datos",
+            "Facilidad de uso",
+            "Seguridad",
+            "Consistencia"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0024",
+        "pregunta": "Según la forma en la que almacenan la información, la base de datos ArangoDB es del tipo",
+        "respuesta": "Multimodelos",
+        "opciones": [
+            "Multimodelos",
+            "Clave/valor",
+            "Soluciones para Grid&Cloud",
+            "Orientadas a objetos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0025",
+        "pregunta": "Edgard F. Codd publicó",
+        "respuesta": "13 reglas",
+        "opciones": [
+            "10 reglas",
+            "15 reglas",
+            "11 reglas",
+            "13 reglas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0026",
+        "pregunta": "Para crear un estándar en los SGBD orientados a objetos surgió el",
+        "respuesta": "ODBMS",
+        "opciones": [
+            "ODBMS",
+            "ODBGMS",
+            "ODBSMG",
+            "ODBMG"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0027",
+        "pregunta": "Respecto los distintos niveles de abstracción de las bases de datos, el nivel que modela los datos que se almacenan en la base de datos y las relaciones existentes entre ellos es",
+        "respuesta": "El nivel conceptual",
+        "opciones": [
+            "El nivel lógico",
+            "El nivel conceptual",
+            "El nivel físico",
+            "El nivel relacional"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0028",
+        "pregunta": "La propiedad de los campos de datos que se usa para limitar la posible introducción de datos y obligar al usuario a hacerlo en el formato que deseemos es",
+        "respuesta": "Máscara de entrada",
+        "opciones": [
+            "Texto de validación",
+            "Máscara de entrada",
+            "Regla de validación",
+            "Título"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0029",
+        "pregunta": "Respecto los distintos niveles de abstracción de las bases de datos, el nivel de abstracción más cercano al usuario final y trata de modelar l a forma en que estos acceden a los datos es",
+        "respuesta": "El nivel lógico",
+        "opciones": [
+            "El nivel físico",
+            "El nivel conceptual",
+            "El nivel relacional",
+            "El nivel lógico"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0030",
+        "pregunta": "Según la forma en la que almacenan la información, las bases de datos Cassandra o Amazon SympleDB son del tipo",
+        "respuesta": "Clave/valor",
+        "opciones": [
+            "Documentales",
+            "En grafo",
+            "Multimodelos",
+            "Clave/valor"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0031",
+        "pregunta": "El lenguaje para definir los objetos es",
+        "respuesta": "ODL",
+        "opciones": [
+            "OQL",
+            "ODL",
+            "OML",
+            "OPL"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0032",
+        "pregunta": "Una plantilla en referencia a los intercambios de informaicón que deben cumplir los objetos que pertenecen a ella, es",
+        "respuesta": "Una clase",
+        "opciones": [
+            "Una clase",
+            "Una norma",
+            "Un elemento",
+            "Un objeto"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0033",
+        "pregunta": "En el modelo relacional, el número de relaciones que posee un objeto se llama",
+        "respuesta": "Grado",
+        "opciones": [
+            "Dominio",
+            "Grado",
+            "Clave",
+            "Atributo"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0034",
+        "pregunta": "En una tabla de una base de datos, el tipo de dato que es texto extenso o combinación de caracteres alfanuméricos hasta 64000 caracteres, se llama",
+        "respuesta": "Memo",
+        "opciones": [
+            "Objeto OLE",
+            "Hipervínculo",
+            "Autonumérico",
+            "Memo"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0035",
+        "pregunta": "Las restricciones propias del modelo elegido se denominan",
+        "respuesta": "Inherentes",
+        "opciones": [
+            "Inherentes",
+            "Semánticas",
+            "Coherentes",
+            "Lógicas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0036",
+        "pregunta": "La consistencia eventual en las bases de datos NoSQL se conoce como",
+        "respuesta": "BASE",
+        "opciones": [
+            "CASE",
+            "PASE",
+            "DASE",
+            "BASE"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0037",
+        "pregunta": "La propiedad de los campos de datos que permitirá elegir la representación en el campo del tipo de campo que hayas seleccionado es",
+        "respuesta": "Formato",
+        "opciones": [
+            "Máscara de entrada",
+            "Texto de validación",
+            "Título",
+            "Formato"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0038",
+        "pregunta": "En el modelo relacional, las propiedades de las entidades se llama",
+        "respuesta": "Atributos",
+        "opciones": [
+            "Atributos",
+            "Grados",
+            "Dominios",
+            "Claves"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0039",
+        "pregunta": "La propiedad de los campos de datos que es un mensaje de error que aparece cuando introduce un valor prohibido por la regla de validación es",
+        "respuesta": "Texto de validación",
+        "opciones": [
+            "Texto de validación",
+            "Regla de validación",
+            "Requerido",
+            "Máscara de entrada"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0040",
+        "pregunta": "¿Qué característica no posee una base de datos centralizada?",
+        "respuesta": "Dependencia de los datos",
+        "opciones": [
+            "Reducción de información innecesaria",
+            "Evita inconsistencia",
+            "Dependencia de los datos",
+            "Seguridad"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0041",
+        "pregunta": "En una base de datos, un elemento de la tabla que almacena los diferentes datos que forman parte de la estructura es un",
+        "respuesta": "Campo",
+        "opciones": [
+            "Dominio",
+            "Campo",
+            "Formularios",
+            "Informe"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0042",
+        "pregunta": "En el modelo entidad-relación, ¿cuál no es un tipo de relación?",
+        "respuesta": "Uno a dos 1-2",
+        "opciones": [
+            "Uno a uno 1-1",
+            "Uno a muchos 1-n",
+            "Uno a dos 1-2",
+            "Muchos a muchos n-m"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0043",
+        "pregunta": "En el modelo relacional, el atributo que nos determina de forma equívoca un objeto se llama",
+        "respuesta": "Clave principal",
+        "opciones": [
+            "Atributo",
+            "Dominio",
+            "Clave principal",
+            "Clave secundaria"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0044",
+        "pregunta": "El orden de los cuatro pasos fundamentales del modelo Entidad-Relación es",
+        "respuesta": "Determinar las entidades, establecer relaciones, definir identificadores y definir atributos",
+        "opciones": [
+            "Determinar las entidades, definir identificadores, definir atributos y establecer relaciones",
+            "Definir identificadores, definir atributos, determinar las entidaddes y establecer relaciones",
+            "Determinar las entidades, establecer relaciones, definir identificadores y definir atributos",
+            "Determinar las entidades, definir identificadores, establecer relaciones y definir atributos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0045",
+        "pregunta": "Hay dos tipos de propiedades de los elementos en el modelo conceptual",
+        "respuesta": "Estáticas y dinámicas",
+        "opciones": [
+            "Centralizadas y distribuidas",
+            "Estáticas y dinámicas",
+            "Hardware y Software",
+            "De alto nivel y de bajo nivel"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0046",
+        "pregunta": "Las consultas que extraen o muestran datos son",
+        "respuesta": "Consultas de selección",
+        "opciones": [
+            "Consultas de acción",
+            "Consultas de MySQL",
+            "Consultas de SQL",
+            "Consultas de selección"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0047",
+        "pregunta": "La propiedad de los campos de datos que te permite poner un nombre con el que aparecerá el campo en los formularios es",
+        "respuesta": "Título",
+        "opciones": [
+            "Máscara de entrada",
+            "Formato",
+            "Título",
+            "Regla de validación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0048",
+        "pregunta": "En el modelo relacional, el conjunto de valores válidos para un atributo en particular se llama",
+        "respuesta": "Dominio",
+        "opciones": [
+            "Dominio",
+            "Grado",
+            "Atributo",
+            "Clave"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-5-0049",
+        "pregunta": "La mayoría de las bases de datos NoSQL",
+        "respuesta": "Evitan utilizar el lenguaje SQL o lo utilizan como un lenguaje de apoyo",
+        "opciones": [
+            "No utilizan el lenguaje SQL",
+            "Únicamente utilizan el lenguaje SQL",
+            "Evitan utilizar el lenguaje SQL o lo utilizan como un lenguaje de apoyo",
+            "Utilizan tanto el lenguaje SQL como otros"
+        ]
+    }
+]

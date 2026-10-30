@@ -1,0 +1,552 @@
+[
+    {
+        "id": "bloque-ii-tema-3-0000",
+        "pregunta": "La estructura tipo donde los ficheros se van colocando según indique el valor del un campo determinado se llama",
+        "respuesta": "Ficheros ordenados",
+        "opciones": [
+            "Ficheros ordenados",
+            "Agrupación",
+            "Ficheros desordenados",
+            "Ficheros dispersos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0001",
+        "pregunta": "¿Qué operaciones podemos hacer con los TAD?",
+        "respuesta": "Creación, transformación y análisis",
+        "opciones": [
+            "Creación y análisis",
+            "Creación, análisis y representación",
+            "Transformación y análisis",
+            "Creación, transformación y análisis"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0002",
+        "pregunta": "El algoritmo de búsqueda en el que se debe partir de una tabla o lista ordenada y se divide en dos trozos y se comprueba los elementos es el algoritmo",
+        "respuesta": "Búsqueda Binaria",
+        "opciones": [
+            "Selección",
+            "Quicksort",
+            "Búsqueda Binaria",
+            "Secuencial"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0003",
+        "pregunta": "Si recorremos un árbol binario de tal manera que primero recorremos el subárbol izquierdo, después visitamos la raíz y por último recorremos el subárbol derecho, este método se llama",
+        "respuesta": "In-orden",
+        "opciones": [
+            "In-orden",
+            "Pre-orden",
+            "Post-orden",
+            "Out-orden"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0004",
+        "pregunta": "El paso el cual se realiza para intentar buscar la solución más eficaz al problema planteado se llama",
+        "respuesta": "Análisis",
+        "opciones": [
+            "Definición en lenguaje de alto nivel",
+            "Prueba del algoritmo",
+            "Implementación",
+            "Análisis"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0005",
+        "pregunta": "En las listas se deben cumplir unas premisas, elige la incorrecta",
+        "respuesta": "Número predefinido de componentes, no modificable",
+        "opciones": [
+            "Componentes del mismo tipo",
+            "Se utiliza algún tipo de orden para almacenar sus componentes",
+            "Número predefinido de componentes, no modificable",
+            "Cada elemento va seguido de otro o de ninguno"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0006",
+        "pregunta": "La estructura tipo donde los ficheros se insertan según se van generando las peticiones se llama",
+        "respuesta": "Ficheros desordenados",
+        "opciones": [
+            "Ficheros dispersos",
+            "Ficheros desordenados",
+            "Ficheros ordenados",
+            "Agrupación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0007",
+        "pregunta": "¿Qué extensión se usa para ficheros de comprensión sin pérdidas?",
+        "respuesta": ".LWZ",
+        "opciones": [
+            ".RAR",
+            ".ZIP",
+            ".LWZ",
+            ".CSV"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0008",
+        "pregunta": "La unidad de espacio más pequeña que se puede asignar a un fichero se llama",
+        "respuesta": "Clúster",
+        "opciones": [
+            "Byte",
+            "Clúster",
+            "Registro",
+            "Pista"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0009",
+        "pregunta": "Si recorremos un árbol binario de tal manera que primero visitamos la raíz, después recorremos el subárbol izquiero y por último el subárbol derecho, este método se llama",
+        "respuesta": "Pre-orden",
+        "opciones": [
+            "Pre-orden",
+            "Post-orden",
+            "Out-orden",
+            "In-orden"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0010",
+        "pregunta": "El paso en el que se traslada el algoritmo al lenguaje de programación elegido se llama",
+        "respuesta": "Implementación",
+        "opciones": [
+            "Análisis",
+            "Definición en lenguaje de alto nivel",
+            "Implementación",
+            "Prueba del algoritmo"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0011",
+        "pregunta": "El algoritmo de ordenación que se basa en la conocida técnica de divide y vencerás y utiliza un elemento denominado pivote es el algoritmo",
+        "respuesta": "Quicksort",
+        "opciones": [
+            "Burbuja",
+            "Quicksort",
+            "SHELL",
+            "Selección"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0012",
+        "pregunta": "En los mapas,",
+        "respuesta": "Las claves no pueden estar repetidas pero los valores si",
+        "opciones": [
+            "Las claves no pueden estar repetidas pero los valores si",
+            "Las claves y los valores no pueden estar repetidos",
+            "Las claves y los valores pueden estar repetidos",
+            "Las claves pueden estar repetidas pero los valores no"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0013",
+        "pregunta": "¿Qué extensión se usa para ficheros que contienen las entidades geométricas de los objetos para información geográfica?",
+        "respuesta": ".shp",
+        "opciones": [
+            ".xml",
+            ".swf",
+            ".shp",
+            ".ods"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0014",
+        "pregunta": "Un nodo sucesor directo o hijo es",
+        "respuesta": "El nodo inmediatamente inferior conectado",
+        "opciones": [
+            "El nodo inmediatamente inferior conectado",
+            "Cualquier nodo inferior",
+            "Cualquier nodo superior",
+            "El nodo inmediatamente superior conectado"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0015",
+        "pregunta": "Un nodo antecesor directo o padre es",
+        "respuesta": "El nodo inmediatamente superior conectado",
+        "opciones": [
+            "El nodo inmediatamente inferior conectado",
+            "Cualquier nodo inferior",
+            "El nodo inmediatamente superior conectado",
+            "Cualquier nodo superior"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0016",
+        "pregunta": "El árbol que no tiene límite en el numero de hijos de un nodo se llama",
+        "respuesta": "Árbol multirrama",
+        "opciones": [
+            "Árbol balanceado",
+            "Árbol multirrama",
+            "Árbol de segmento",
+            "Árbol binario"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0017",
+        "pregunta": "¿Qué operación es la que se usa para definir y generar los TAD y sus elementos?",
+        "respuesta": "Creación",
+        "opciones": [
+            "Análisis",
+            "Creación",
+            "Representación",
+            "Transformación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0018",
+        "pregunta": "El tiempo de espera desde que se posiciona en la pista correcta hasta que llega al sector deseado se llama",
+        "respuesta": "Tiempo de latencia",
+        "opciones": [
+            "Tiempo de latencia",
+            "Tiempo de respuesta",
+            "Tiempo de búsqueda",
+            "Tiempo de registro"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0019",
+        "pregunta": "Las extensiones de los ficheros con información únicamente de texto son",
+        "respuesta": ".txt, .rtf, .doc, .odt",
+        "opciones": [
+            ".jpg, .tiff, .gif, .png",
+            ".txt, .rtf, .doc, .odt",
+            ".csv, .xml, .ods, .shp",
+            ".zip, .rar, .lwz"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0020",
+        "pregunta": "El árbol donde cada nodo tiene un máximo de dos hijos se llama",
+        "respuesta": "Árbol binario",
+        "opciones": [
+            "Árbol multirrama",
+            "Árbol de segmento",
+            "Árbol balanceado",
+            "Árbol binario"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0021",
+        "pregunta": "El algoritmo de ordenación que es también denominado clasificación por urnas es el algoritmo",
+        "respuesta": "Binsort",
+        "opciones": [
+            "Binsort",
+            "Quicksort",
+            "Burbuja",
+            "SHELL"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0022",
+        "pregunta": "El tiempo que se tarda en encontrar el primer dato que hay que leer se llama",
+        "respuesta": "Tiempo de búsqueda",
+        "opciones": [
+            "Tiempo de búsqueda",
+            "Tiempo de registro",
+            "Tiempo de latencia",
+            "Tiempo de respuesta"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0023",
+        "pregunta": "La abstracción en el mundo de la programación se puede ver desde dos puntos de vista",
+        "respuesta": "Funcional y de datos",
+        "opciones": [
+            "Funcional y lógico",
+            "Funcional y de datos",
+            "Lógico y de datos",
+            "Funcional y de representación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0024",
+        "pregunta": "El algoritmo de ordenación que también basa su funcionamiento en el uso de urnas, aunque de una forma más genérica, y consiste en ordenar por dígitos o caracteres es el algoritmo",
+        "respuesta": "RadixSort",
+        "opciones": [
+            "Burbuja",
+            "Selección",
+            "Quicksort",
+            "RadixSort"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0025",
+        "pregunta": "Las extensiones de los ficheros con información de datos son",
+        "respuesta": ".csv, .xml, .ods, .shp",
+        "opciones": [
+            ".zip, .rar, .lwz",
+            ".jpg, .tiff, .gif, .png",
+            ".csv, .xml, .ods, .shp",
+            ".txt, .rtf, .doc, .odt"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0026",
+        "pregunta": "Una representación gráfica de los algoritmos en sus etapas tempranas se llama",
+        "respuesta": "Diagrama de flujo",
+        "opciones": [
+            "Diagrama de casos de uso",
+            "Diagrama de flujo",
+            "Diagrama de Gantt",
+            "Diagrama Entidad-Relación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0027",
+        "pregunta": "¿Qué operación es la que se usa para obtener información de los TAD?",
+        "respuesta": "Análisis",
+        "opciones": [
+            "Creación",
+            "Transformación",
+            "Análisis",
+            "Representación"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0028",
+        "pregunta": "El grado de un árbol es",
+        "respuesta": "El mayor de los grados de nodo",
+        "opciones": [
+            "El mayor de los grados de nodo",
+            "El número de hijos",
+            "El mayor nivel al que se puede llegar",
+            "El número de ramas"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0029",
+        "pregunta": "Un conjunto es",
+        "respuesta": "Una colección de valores no ordenados en la que no se permiten elementos repetidos",
+        "opciones": [
+            "Una colección de valores ordenados en la que no se permiten elementos repetidos",
+            "Una colección de valores ordenados en la que se permiten elementos repetidos",
+            "Una colección de valores no ordenados en la que se permiten elementos repetidos",
+            "Una colección de valores no ordenados en la que no se permiten elementos repetidos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0030",
+        "pregunta": "El algoritmo de ordenación que es una inserción directa optimizada y se utiliza para listas con muchos elementos es el algoritmo",
+        "respuesta": "SHELL",
+        "opciones": [
+            "SHELL",
+            "Quicksort",
+            "Burbuja",
+            "Selección"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0031",
+        "pregunta": "Las extensiones de los ficheros con información de imagen son",
+        "respuesta": ".jpg, .tiff, .gif, .png",
+        "opciones": [
+            ".csv, .xml, .ods, .shp",
+            ".txt, .rtf, .doc, .odt",
+            ".jpg, .tiff, .gif, .png",
+            ".zip, .rar, .lwz"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0032",
+        "pregunta": "Las extensiones de los ficheros con información comprimida son",
+        "respuesta": ".zip, .rar, .lwz",
+        "opciones": [
+            ".txt, .rtf, .doc, .odt",
+            ".zip, .rar, .lwz",
+            ".jpg, .tiff, .gif, .png",
+            ".csv, .xml, .ods, .shp"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0033",
+        "pregunta": "¿Qué extensión se usa para texto plano sin ningún tipo de formato?",
+        "respuesta": ".txt",
+        "opciones": [
+            ".doc",
+            ".txt",
+            ".docx",
+            ".odt"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0034",
+        "pregunta": "Los ficheros permanentes pueden ser",
+        "respuesta": "Maestros, Constantes e Históricos",
+        "opciones": [
+            "Constantes, Variables e Históricos",
+            "Masestros, Constantes y Variables",
+            "Maestros, Constantes e Históricos",
+            "Maestros, Variables e Históricos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0035",
+        "pregunta": "¿La estructura tipo donde la dirección de los registros se obtiene aplicando una función sobre uno de los campos se llama",
+        "respuesta": "Ficheros dispersos",
+        "opciones": [
+            "Ficheros ordenados",
+            "Agrupación",
+            "Ficheros dispersos",
+            "Ficheros desordenados"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0036",
+        "pregunta": "En la tabla se deben cumplir unas premisas, elige la incorrecta",
+        "respuesta": "Cada elemento va seguido de otro o de ninguno",
+        "opciones": [
+            "Número predefinido de componentes, no modificable",
+            "Cada elemento va seguido de otro o de ninguno",
+            "Los elementos contienen una clave única",
+            "Componentes del mismo tipo"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0037",
+        "pregunta": "El algoritmo de ordenaicón en el que se buscan pares de elementos adyacentes y se comparan entre sí ordenándolos es el algoritmo",
+        "respuesta": "Burbuja",
+        "opciones": [
+            "Selección",
+            "Quicksort",
+            "Burbuja",
+            "SHELL"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0038",
+        "pregunta": "El algoritmo de búsqueda que consiste en recorrer todos los elementos hasta encontrar lo que busca es el algoritmo",
+        "respuesta": "Secuencial",
+        "opciones": [
+            "Selección",
+            "Quicksort",
+            "Búsqueda Binaria",
+            "Secuencial"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0039",
+        "pregunta": "¿Qué extensión se usa para ficheros generados por Shockwave Flash?",
+        "respuesta": ".swf",
+        "opciones": [
+            ".ps",
+            ".wav",
+            ".swf",
+            ".png"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0040",
+        "pregunta": "Las extensiones de los ficheros con información diversa son",
+        "respuesta": ".ps, .pdf, .swf, .flac",
+        "opciones": [
+            ".jpg, .tiff, .gif, .png",
+            ".zip, .rar, .lwz",
+            ".txt, .rtf, .doc, .odt",
+            ".ps, .pdf, .swf, .flac"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0041",
+        "pregunta": "¿Qué extensión se usa para imágenes con un ligero movimiento?",
+        "respuesta": ".gif",
+        "opciones": [
+            ".tiff",
+            ".gif",
+            ".png",
+            ".jpg"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0042",
+        "pregunta": "Un algoritmo debe ser",
+        "respuesta": "Preciso, finito y obtener un resultado",
+        "opciones": [
+            "Variable, infinito y obtener un resultado",
+            "Variable, finito y obtener un resultado",
+            "Preciso, finito y obtener un resultado",
+            "Preciso, infinito y obtener un resultado"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0043",
+        "pregunta": "La complejidad algorítmica se mide en",
+        "respuesta": "Espacio o tiempo",
+        "opciones": [
+            "Tiempo o velocidad",
+            "Espacio, tiempo o velocidad",
+            "Espacio o velocidad",
+            "Espacio o tiempo"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0044",
+        "pregunta": "El algoritmo de ordenación en el que se busca el elemento más pequeño en el TAD y se coloca en primera posición, se repite para buscar el siguiente más pequeño y colocarlo a continuación y así sucesivamente es el algoritmo",
+        "respuesta": "Selección",
+        "opciones": [
+            "Quicksort",
+            "Burbuja",
+            "Selección",
+            "SHELL"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0045",
+        "pregunta": "Si recorremos un árbol binario de tal manera que primero recorremos el subárbol izquierdo, después recorremos el subárbol derecho y por último visitamos la raíz, este método se llama",
+        "respuesta": "Post-den",
+        "opciones": [
+            "In-orden",
+            "Pre-orden",
+            "Post-den",
+            "Out-orden"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0046",
+        "pregunta": "La velocidad de transferencia de la información se llama",
+        "respuesta": "Velocidad de rotación",
+        "opciones": [
+            "Velocidad de transmisión",
+            "Velocidad de latencia",
+            "Velocidad de rotación",
+            "Velocidad de respuesta"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0047",
+        "pregunta": "Un nodo hoja es",
+        "respuesta": "Un nodo sin hijos",
+        "opciones": [
+            "Un nodo con algún hijo",
+            "Cualquier nodo superior",
+            "Uel nodo inmediatamente superior conectado",
+            "Un nodo sin hijos"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0048",
+        "pregunta": "El árbol que entre todos sus nodos hoja no hay una diferencia mayor a un nivel se llama",
+        "respuesta": "Árbol balanceado",
+        "opciones": [
+            "Árbol binario",
+            "Árbol de segmento",
+            "Árbol multirrama",
+            "Árbol balanceado"
+        ]
+    },
+    {
+        "id": "bloque-ii-tema-3-0049",
+        "pregunta": "La altura de un árbol es",
+        "respuesta": "El mayor nivel al que se puede llegar",
+        "opciones": [
+            "El número de ramas",
+            "El número de hijos",
+            "El mayor de los grados de nodo",
+            "El mayor nivel al que se puede llegar"
+        ]
+    }
+]
