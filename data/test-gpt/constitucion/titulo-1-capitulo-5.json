@@ -1,0 +1,442 @@
+[
+    {
+        "id": "constitucion-titulo1-cap5-0001",
+        "pregunta": "¿En qué artículo de la Constitución se regula la suspensión de los derechos y libertades?",
+        "respuesta": "Artículo 55",
+        "opciones": [
+            "Artículo 53",
+            "Artículo 54",
+            "Artículo 55",
+            "Artículo 56"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0002",
+        "pregunta": "¿Qué artículo regula la suspensión de determinados derechos cuando se declara el estado de excepción o de sitio?",
+        "respuesta": "Artículo 55.1",
+        "opciones": [
+            "Artículo 53.2",
+            "Artículo 54",
+            "Artículo 55.1",
+            "Artículo 55.2"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0003",
+        "pregunta": "¿Qué artículo regula la suspensión individual de determinados derechos para personas concretas?",
+        "respuesta": "Artículo 55.2",
+        "opciones": [
+            "Artículo 55.1",
+            "Artículo 55.2",
+            "Artículo 53.3",
+            "Artículo 54"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0004",
+        "pregunta": "¿En qué circunstancias podrán suspenderse los derechos enumerados en el artículo 55.1?",
+        "respuesta": "Cuando se acuerde la declaración del estado de excepción o de sitio",
+        "opciones": [
+            "Cuando se declare el estado de alarma o de excepción",
+            "Cuando se acuerde la declaración del estado de excepción o de sitio",
+            "Cuando se declare el estado de sitio exclusivamente",
+            "Cuando lo acuerde el Gobierno en Consejo de Ministros"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0005",
+        "pregunta": "Los derechos susceptibles de suspensión conforme al artículo 55.1 podrán suspenderse",
+        "respuesta": "En los términos previstos en la Constitución",
+        "opciones": [
+            "En los términos previstos en la ley ordinaria",
+            "En los términos previstos en la Constitución",
+            "Por decisión del Gobierno",
+            "En los términos que establezca el Congreso"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0006",
+        "pregunta": "¿Qué artículo de la Constitución reconoce el derecho a la libertad y a la seguridad y aparece entre los derechos susceptibles de suspensión del artículo 55.1?",
+        "respuesta": "Artículo 17",
+        "opciones": [
+            "Artículo 15",
+            "Artículo 16",
+            "Artículo 17",
+            "Artículo 18"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0007",
+        "pregunta": "¿Qué apartados del artículo 18 pueden ser suspendidos conforme al artículo 55.1?",
+        "respuesta": "Los apartados 2 y 3",
+        "opciones": [
+            "Los apartados 1 y 2",
+            "Los apartados 2 y 3",
+            "Los apartados 1 y 3",
+            "Todos sus apartados"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0008",
+        "pregunta": "¿Qué derecho del artículo 18.2 puede ser suspendido conforme al artículo 55.1?",
+        "respuesta": "La inviolabilidad del domicilio",
+        "opciones": [
+            "El derecho al honor",
+            "La inviolabilidad del domicilio",
+            "El secreto de las comunicaciones",
+            "El derecho a la propia imagen"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0009",
+        "pregunta": "¿Qué derecho del artículo 18.3 puede ser suspendido conforme al artículo 55.1?",
+        "respuesta": "El secreto de las comunicaciones",
+        "opciones": [
+            "La libertad ideológica",
+            "El secreto de las comunicaciones",
+            "La libertad de residencia",
+            "El derecho al honor"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0010",
+        "pregunta": "¿Qué artículo reconoce la libertad de residencia y circulación y figura entre los susceptibles de suspensión del artículo 55.1?",
+        "respuesta": "Artículo 19",
+        "opciones": [
+            "Artículo 17",
+            "Artículo 18",
+            "Artículo 19",
+            "Artículo 20"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0011",
+        "pregunta": "¿Qué apartados y letras del artículo 20 pueden ser suspendidos conforme al artículo 55.1?",
+        "respuesta": "Los apartados 1, letras a) y d), y 5",
+        "opciones": [
+            "Los apartados 1, letras a) y d), y 5",
+            "Los apartados 1, letras b) y c), y 4",
+            "Los apartados 1, letras a), b) y c), y 5",
+            "Todos los apartados del artículo 20"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0012",
+        "pregunta": "¿Qué derecho del artículo 20.1.a) puede ser suspendido conforme al artículo 55.1?",
+        "respuesta": "El derecho a expresar y difundir libremente los pensamientos, ideas y opiniones",
+        "opciones": [
+            "El derecho a la producción y creación literaria, artística, científica y técnica",
+            "El derecho a expresar y difundir libremente los pensamientos, ideas y opiniones",
+            "El derecho a comunicar o recibir libremente información veraz",
+            "El derecho a la libertad de cátedra"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0013",
+        "pregunta": "¿Qué derecho del artículo 20.1.d) puede ser suspendido conforme al artículo 55.1?",
+        "respuesta": "El derecho a comunicar o recibir libremente información veraz por cualquier medio de difusión",
+        "opciones": [
+            "El derecho a la libertad de cátedra",
+            "El derecho a comunicar o recibir libremente información veraz por cualquier medio de difusión",
+            "El derecho a la producción y creación artística",
+            "El derecho a expresar libremente las opiniones"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0014",
+        "pregunta": "¿Qué establece el artículo 20.5, susceptible de suspensión conforme al artículo 55.1?",
+        "respuesta": "El secuestro de publicaciones, grabaciones y otros medios de información sólo podrá acordarse en virtud de resolución judicial",
+        "opciones": [
+            "La libertad de cátedra",
+            "La prohibición de censura previa",
+            "El secuestro de publicaciones, grabaciones y otros medios de información sólo podrá acordarse en virtud de resolución judicial",
+            "El derecho a comunicar información veraz"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0015",
+        "pregunta": "¿Qué artículo reconoce el derecho de reunión y aparece entre los susceptibles de suspensión del artículo 55.1?",
+        "respuesta": "Artículo 21",
+        "opciones": [
+            "Artículo 19",
+            "Artículo 20",
+            "Artículo 21",
+            "Artículo 22"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0016",
+        "pregunta": "¿Qué apartado del artículo 28 puede ser suspendido conforme al artículo 55.1?",
+        "respuesta": "El apartado 2",
+        "opciones": [
+            "El apartado 1",
+            "El apartado 2",
+            "Ambos apartados",
+            "Ninguno de ellos"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0017",
+        "pregunta": "¿Qué derecho reconoce el artículo 28.2, susceptible de suspensión conforme al artículo 55.1?",
+        "respuesta": "El derecho de huelga de los trabajadores para la defensa de sus intereses",
+        "opciones": [
+            "El derecho de sindicación",
+            "El derecho de huelga de los trabajadores para la defensa de sus intereses",
+            "El derecho de asociación empresarial",
+            "El derecho a la negociación colectiva"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0018",
+        "pregunta": "¿Qué apartado del artículo 37 puede ser suspendido conforme al artículo 55.1?",
+        "respuesta": "El apartado 2",
+        "opciones": [
+            "El apartado 1",
+            "El apartado 2",
+            "Ambos apartados",
+            "Ninguno de ellos"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0019",
+        "pregunta": "¿Qué derecho reconoce el artículo 37.2, susceptible de suspensión conforme al artículo 55.1?",
+        "respuesta": "El derecho de los trabajadores y empresarios a adoptar medidas de conflicto colectivo",
+        "opciones": [
+            "El derecho a la negociación colectiva",
+            "El derecho de los trabajadores y empresarios a adoptar medidas de conflicto colectivo",
+            "El derecho de huelga",
+            "El derecho de asociación sindical"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0020",
+        "pregunta": "¿Qué excepción establece el artículo 55.1 respecto del artículo 17.3?",
+        "respuesta": "El apartado 3 del artículo 17 queda exceptuado de la suspensión en el supuesto de declaración del estado de excepción",
+        "opciones": [
+            "El apartado 2 del artículo 17 queda exceptuado en el estado de sitio",
+            "El apartado 3 del artículo 17 queda exceptuado de la suspensión en el supuesto de declaración del estado de excepción",
+            "Todo el artículo 17 queda excluido de la suspensión",
+            "El apartado 3 del artículo 17 queda exceptuado tanto en el estado de excepción como en el de sitio"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0021",
+        "pregunta": "¿Qué derecho reconoce el artículo 17.3 cuya suspensión queda exceptuada en el supuesto de declaración del estado de excepción?",
+        "respuesta": "Los derechos de toda persona detenida a ser informada de sus derechos y de las razones de su detención, a no ser obligada a declarar y a la asistencia de abogado",
+        "opciones": [
+            "El derecho a la libertad y a la seguridad",
+            "Los derechos de toda persona detenida a ser informada de sus derechos y de las razones de su detención, a no ser obligada a declarar y a la asistencia de abogado",
+            "El derecho a la duración máxima de la prisión provisional",
+            "El derecho a la tutela judicial efectiva"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0022",
+        "pregunta": "¿Qué artículo de la Constitución contempla la suspensión individual de determinados derechos para personas concretas?",
+        "respuesta": "Artículo 55.2",
+        "opciones": [
+            "Artículo 55.1",
+            "Artículo 55.2",
+            "Artículo 53.2",
+            "Artículo 54"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0023",
+        "pregunta": "¿Mediante qué tipo de norma podrán determinarse la forma y los casos de suspensión individual de derechos?",
+        "respuesta": "Mediante ley orgánica",
+        "opciones": [
+            "Mediante ley ordinaria",
+            "Mediante ley orgánica",
+            "Mediante real decreto",
+            "Mediante decreto-ley"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0024",
+        "pregunta": "La suspensión individual de derechos prevista en el artículo 55.2 podrá realizarse",
+        "respuesta": "De forma individual y para personas determinadas",
+        "opciones": [
+            "De forma general para todos los ciudadanos",
+            "De forma individual y para personas determinadas",
+            "Únicamente para grupos políticos",
+            "De forma automática para todos los investigados"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0025",
+        "pregunta": "¿Qué intervención exige el artículo 55.2 para la suspensión individual de derechos?",
+        "respuesta": "La necesaria intervención judicial",
+        "opciones": [
+            "La intervención del Gobierno",
+            "La necesaria intervención judicial",
+            "La intervención del Tribunal Constitucional exclusivamente",
+            "La intervención del Ministerio Fiscal exclusivamente"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0026",
+        "pregunta": "Además de la intervención judicial, la suspensión individual del artículo 55.2 requiere",
+        "respuesta": "El adecuado control parlamentario",
+        "opciones": [
+            "La autorización del Gobierno",
+            "El adecuado control parlamentario",
+            "La aprobación del Consejo General del Poder Judicial",
+            "La autorización del Tribunal Constitucional"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0027",
+        "pregunta": "¿En relación con qué investigaciones puede aplicarse la suspensión individual del artículo 55.2?",
+        "respuesta": "Las correspondientes a la actuación de bandas armadas o elementos terroristas",
+        "opciones": [
+            "Cualquier investigación penal",
+            "Las correspondientes a delitos económicos",
+            "Las correspondientes a la actuación de bandas armadas o elementos terroristas",
+            "Las correspondientes a delitos contra la Administración pública"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0028",
+        "pregunta": "¿Qué derechos pueden ser suspendidos individualmente conforme al artículo 55.2?",
+        "respuesta": "Los reconocidos en el artículo 17.2 y en el artículo 18.2 y 18.3",
+        "opciones": [
+            "Los reconocidos en los artículos 17 y 18 en su totalidad",
+            "Los reconocidos en el artículo 17.2 y en el artículo 18.2 y 18.3",
+            "Los reconocidos en los artículos 19, 20 y 21",
+            "Los reconocidos en el artículo 17.3 y en el artículo 18.1"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0029",
+        "pregunta": "¿Qué apartado del artículo 17 puede ser suspendido individualmente conforme al artículo 55.2?",
+        "respuesta": "El apartado 2",
+        "opciones": [
+            "El apartado 1",
+            "El apartado 2",
+            "El apartado 3",
+            "Todo el artículo 17"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0030",
+        "pregunta": "¿Qué derecho del artículo 17.2 puede ser suspendido individualmente conforme al artículo 55.2?",
+        "respuesta": "El límite máximo de 72 horas para la detención preventiva, en los términos previstos en ese apartado",
+        "opciones": [
+            "El derecho a la libertad y a la seguridad",
+            "El límite máximo de 72 horas para la detención preventiva, en los términos previstos en ese apartado",
+            "El derecho a no ser obligado a declarar",
+            "El derecho a la asistencia de abogado"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0031",
+        "pregunta": "¿Qué apartados del artículo 18 pueden ser suspendidos individualmente conforme al artículo 55.2?",
+        "respuesta": "Los apartados 2 y 3",
+        "opciones": [
+            "Los apartados 1 y 2",
+            "Los apartados 2 y 3",
+            "Los apartados 1 y 3",
+            "Todos sus apartados"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0032",
+        "pregunta": "¿Qué consecuencia establece el artículo 55.2 para la utilización injustificada o abusiva de las facultades reconocidas en la ley orgánica?",
+        "respuesta": "Producirá responsabilidad penal",
+        "opciones": [
+            "Producirá responsabilidad administrativa exclusivamente",
+            "Producirá responsabilidad civil",
+            "Producirá responsabilidad penal",
+            "No producirá responsabilidad si existe autorización judicial"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0033",
+        "pregunta": "La utilización injustificada o abusiva de las facultades reconocidas en la ley orgánica será considerada",
+        "respuesta": "Una violación de los derechos y libertades reconocidos por las leyes",
+        "opciones": [
+            "Una infracción administrativa",
+            "Una violación de los derechos y libertades reconocidos por las leyes",
+            "Una irregularidad parlamentaria",
+            "Una vulneración exclusiva de la Constitución"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0034",
+        "pregunta": "¿Qué diferencia principal existe entre la suspensión del artículo 55.1 y la del artículo 55.2?",
+        "respuesta": "La del apartado 1 se produce en los estados de excepción o de sitio; la del apartado 2 es individual, para personas determinadas y en relación con investigaciones sobre bandas armadas o elementos terroristas",
+        "opciones": [
+            "La del apartado 1 es individual y la del apartado 2 general",
+            "La del apartado 1 se produce en los estados de excepción o de sitio; la del apartado 2 es individual, para personas determinadas y en relación con investigaciones sobre bandas armadas o elementos terroristas",
+            "Ambas requieren siempre la declaración del estado de sitio",
+            "La del apartado 2 puede aplicarse a cualquier investigación penal"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0035",
+        "pregunta": "¿Qué garantías se exigen expresamente para la suspensión individual de derechos del artículo 55.2?",
+        "respuesta": "Intervención judicial y adecuado control parlamentario",
+        "opciones": [
+            "Autorización del Gobierno y control del Senado",
+            "Intervención judicial y adecuado control parlamentario",
+            "Autorización del Tribunal Constitucional y control del Congreso",
+            "Intervención del Ministerio Fiscal y autorización del Gobierno"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0036",
+        "pregunta": "¿Qué derechos del artículo 18 pueden suspenderse tanto en los supuestos del artículo 55.1 como individualmente conforme al artículo 55.2?",
+        "respuesta": "Los derechos reconocidos en los apartados 2 y 3",
+        "opciones": [
+            "Los derechos reconocidos en el apartado 1",
+            "Los derechos reconocidos en los apartados 1 y 2",
+            "Los derechos reconocidos en los apartados 2 y 3",
+            "Todos los derechos del artículo 18"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0037",
+        "pregunta": "¿Qué apartado del artículo 55 contempla la suspensión de los derechos durante los estados de excepción o de sitio?",
+        "respuesta": "El apartado 1",
+        "opciones": [
+            "El apartado 1",
+            "El apartado 2",
+            "Ambos apartados",
+            "Ninguno de ellos"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0038",
+        "pregunta": "¿Qué apartado del artículo 55 contempla la suspensión de derechos para personas determinadas en investigaciones sobre bandas armadas o elementos terroristas?",
+        "respuesta": "El apartado 2",
+        "opciones": [
+            "El apartado 1",
+            "El apartado 2",
+            "Ambos apartados",
+            "Ninguno de ellos"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0039",
+        "pregunta": "¿Qué artículo recoge la excepción relativa al apartado 3 del artículo 17 durante el estado de excepción?",
+        "respuesta": "Artículo 55.1",
+        "opciones": [
+            "Artículo 53.2",
+            "Artículo 54",
+            "Artículo 55.1",
+            "Artículo 55.2"
+        ]
+    },
+    {
+        "id": "constitucion-titulo1-cap5-0040",
+        "pregunta": "¿Qué artículo establece que el uso injustificado o abusivo de las facultades de suspensión individual producirá responsabilidad penal?",
+        "respuesta": "Artículo 55.2",
+        "opciones": [
+            "Artículo 53.1",
+            "Artículo 54",
+            "Artículo 55.1",
+            "Artículo 55.2"
+        ]
+    }
+]

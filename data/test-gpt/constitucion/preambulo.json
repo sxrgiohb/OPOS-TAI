@@ -1,362 +1,387 @@
 [
-    {
-        "id": "constitucion-preambulo-0001",
-        "pregunta": "¿Qué Nación aparece como sujeto al inicio del Preámbulo de la Constitución Española?",
-        "respuesta": "La Nación española.",
-        "opciones": [
-            "La Nación española.",
-            "El pueblo europeo.",
-            "Las Cortes Generales."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0002",
-        "pregunta": "¿Qué tres conceptos desea establecer la Nación española al inicio del Preámbulo?",
-        "respuesta": "La justicia, la libertad y la seguridad.",
-        "opciones": [
-            "La justicia, la libertad y la seguridad.",
-            "La igualdad, la solidaridad y la democracia.",
-            "La paz, la justicia y la igualdad."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0003",
-        "pregunta": "Además de establecer la justicia, la libertad y la seguridad, ¿qué desea promover la Nación española?",
-        "respuesta": "El bien de cuantos la integran.",
-        "opciones": [
-            "El bien de cuantos la integran.",
-            "El bienestar exclusivamente económico.",
-            "La unidad de todos los Estados europeos."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0004",
-        "pregunta": "¿En uso de qué proclama la Nación española su voluntad en el Preámbulo?",
-        "respuesta": "En uso de su soberanía.",
-        "opciones": [
-            "En uso de su soberanía.",
-            "En uso de la potestad legislativa.",
-            "En uso de la autoridad del Rey."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0005",
-        "pregunta": "¿Qué proclama la Nación española en uso de su soberanía?",
-        "respuesta": "Su voluntad.",
-        "opciones": [
-            "Su voluntad.",
-            "Su independencia.",
-            "Su potestad reglamentaria."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0006",
-        "pregunta": "¿Cuál es la primera finalidad que aparece en la relación de objetivos del Preámbulo?",
-        "respuesta": "Garantizar la convivencia democrática.",
-        "opciones": [
-            "Garantizar la convivencia democrática.",
-            "Consolidar un Estado de Derecho.",
-            "Promover el progreso de la cultura."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0007",
-        "pregunta": "¿Dónde debe garantizarse la convivencia democrática según el Preámbulo?",
-        "respuesta": "Dentro de la Constitución y de las leyes.",
-        "opciones": [
-            "Dentro de la Constitución y de las leyes.",
-            "Dentro de las instituciones europeas.",
-            "Dentro de las Cortes Generales."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0008",
-        "pregunta": "¿Conforme a qué debe garantizarse la convivencia democrática?",
-        "respuesta": "A un orden económico y social justo.",
-        "opciones": [
-            "A un orden económico y social justo.",
-            "A un orden político y territorial uniforme.",
-            "A un orden económico basado exclusivamente en el mercado."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0009",
-        "pregunta": "¿Qué pretende consolidar la Nación española como segunda finalidad del Preámbulo?",
-        "respuesta": "Un Estado de Derecho.",
-        "opciones": [
-            "Un Estado de Derecho.",
-            "Un Estado federal.",
-            "Un Estado confesional."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0010",
-        "pregunta": "¿Qué debe asegurar el Estado de Derecho según el Preámbulo?",
-        "respuesta": "El imperio de la ley.",
-        "opciones": [
-            "El imperio de la ley.",
-            "La supremacía del Gobierno.",
-            "La independencia de las Cortes."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0011",
-        "pregunta": "¿Cómo se define el imperio de la ley en el Preámbulo?",
-        "respuesta": "Como expresión de la voluntad popular.",
-        "opciones": [
-            "Como expresión de la voluntad popular.",
-            "Como expresión de la voluntad del Gobierno.",
-            "Como expresión de la voluntad del Rey."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0012",
-        "pregunta": "¿A quién pretende proteger la Nación española según el Preámbulo?",
-        "respuesta": "A todos los españoles y pueblos de España.",
-        "opciones": [
-            "A todos los españoles y pueblos de España.",
-            "Únicamente a los ciudadanos españoles.",
-            "A todos los ciudadanos de la Unión Europea."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0013",
-        "pregunta": "¿Qué debe proteger la Nación española en el ejercicio de los derechos humanos?",
-        "respuesta": "Las culturas, tradiciones, lenguas e instituciones de los españoles y pueblos de España.",
-        "opciones": [
-            "Las culturas, tradiciones, lenguas e instituciones.",
-            "Únicamente las lenguas e instituciones.",
-            "Únicamente las culturas y tradiciones."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0014",
-        "pregunta": "¿En el ejercicio de qué deben ser protegidos los españoles y pueblos de España?",
-        "respuesta": "En el ejercicio de los derechos humanos.",
-        "opciones": [
-            "En el ejercicio de los derechos humanos.",
-            "En el ejercicio de los derechos políticos exclusivamente.",
-            "En el ejercicio de los derechos económicos exclusivamente."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0015",
-        "pregunta": "¿Qué pretende promover la Nación española respecto de la cultura y la economía?",
-        "respuesta": "El progreso de la cultura y de la economía.",
-        "opciones": [
-            "El progreso de la cultura y de la economía.",
-            "La expansión internacional de la economía.",
-            "La centralización de la cultura y de la economía."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0016",
-        "pregunta": "¿Para qué se pretende promover el progreso de la cultura y de la economía?",
-        "respuesta": "Para asegurar a todos una digna calidad de vida.",
-        "opciones": [
-            "Para asegurar a todos una digna calidad de vida.",
-            "Para aumentar la riqueza del Estado.",
-            "Para garantizar exclusivamente el crecimiento económico."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0017",
-        "pregunta": "¿Qué tipo de sociedad pretende establecer la Nación española?",
-        "respuesta": "Una sociedad democrática avanzada.",
-        "opciones": [
-            "Una sociedad democrática avanzada.",
-            "Una sociedad económicamente igualitaria.",
-            "Una sociedad políticamente descentralizada."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0018",
-        "pregunta": "¿Qué pretende fortalecer la Nación española en el ámbito internacional?",
-        "respuesta": "Unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
-        "opciones": [
-            "Unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
-            "La cooperación económica entre los Estados europeos.",
-            "Las relaciones comerciales entre los pueblos democráticos."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0019",
-        "pregunta": "¿Entre quiénes deben fortalecerse unas relaciones pacíficas y de eficaz cooperación?",
-        "respuesta": "Entre todos los pueblos de la Tierra.",
-        "opciones": [
-            "Entre todos los pueblos de la Tierra.",
-            "Entre todos los Estados europeos.",
-            "Entre los pueblos de España."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0020",
-        "pregunta": "¿Qué dos características tienen las relaciones que pretende fortalecer la Nación española?",
-        "respuesta": "Pacíficas y de eficaz cooperación.",
-        "opciones": [
-            "Pacíficas y de eficaz cooperación.",
-            "Democráticas y económicas.",
-            "Jurídicas y comerciales."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0021",
-        "pregunta": "¿Cuál de las siguientes NO aparece entre las finalidades expresamente mencionadas en el Preámbulo?",
-        "respuesta": "Garantizar la unidad territorial de España.",
-        "opciones": [
-            "Garantizar la unidad territorial de España.",
-            "Consolidar un Estado de Derecho.",
-            "Establecer una sociedad democrática avanzada."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0022",
-        "pregunta": "¿Cuál de las siguientes NO figura entre los objetivos del Preámbulo?",
-        "respuesta": "Establecer una sociedad económicamente igualitaria.",
-        "opciones": [
-            "Establecer una sociedad económicamente igualitaria.",
-            "Promover el progreso de la cultura y de la economía.",
-            "Proteger a todos los españoles y pueblos de España."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0023",
-        "pregunta": "¿Cuál de las siguientes finalidades aparece inmediatamente después de garantizar la convivencia democrática?",
-        "respuesta": "Consolidar un Estado de Derecho.",
-        "opciones": [
-            "Consolidar un Estado de Derecho.",
-            "Promover el progreso de la cultura.",
-            "Establecer una sociedad democrática avanzada."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0024",
-        "pregunta": "¿Cuál de las siguientes finalidades aparece después de consolidar un Estado de Derecho?",
-        "respuesta": "Proteger a todos los españoles y pueblos de España.",
-        "opciones": [
-            "Proteger a todos los españoles y pueblos de España.",
-            "Establecer una sociedad democrática avanzada.",
-            "Colaborar en el fortalecimiento de relaciones internacionales."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0025",
-        "pregunta": "¿Qué finalidad aparece inmediatamente después de proteger a todos los españoles y pueblos de España?",
-        "respuesta": "Promover el progreso de la cultura y de la economía.",
-        "opciones": [
-            "Promover el progreso de la cultura y de la economía.",
-            "Establecer una sociedad democrática avanzada.",
-            "Consolidar un Estado de Derecho."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0026",
-        "pregunta": "¿Qué finalidad aparece inmediatamente después de promover el progreso de la cultura y de la economía?",
-        "respuesta": "Establecer una sociedad democrática avanzada.",
-        "opciones": [
-            "Establecer una sociedad democrática avanzada.",
-            "Garantizar la convivencia democrática.",
-            "Fortalecer las relaciones pacíficas."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0027",
-        "pregunta": "¿Cuál es la última finalidad enumerada en el Preámbulo?",
-        "respuesta": "Colaborar en el fortalecimiento de unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
-        "opciones": [
-            "Colaborar en el fortalecimiento de unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
-            "Establecer una sociedad democrática avanzada.",
-            "Promover el progreso de la cultura y de la economía."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0028",
-        "pregunta": "¿Qué relación establece el Preámbulo entre el progreso de la cultura y de la economía y la calidad de vida?",
-        "respuesta": "El progreso de la cultura y de la economía debe servir para asegurar a todos una digna calidad de vida.",
-        "opciones": [
-            "El progreso de la cultura y de la economía debe servir para asegurar a todos una digna calidad de vida.",
-            "El progreso económico debe garantizar únicamente el bienestar de los españoles.",
-            "La cultura debe subordinarse al crecimiento económico."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0029",
-        "pregunta": "¿Qué relación establece el Preámbulo entre el Estado de Derecho y el imperio de la ley?",
-        "respuesta": "El Estado de Derecho debe asegurar el imperio de la ley.",
-        "opciones": [
-            "El Estado de Derecho debe asegurar el imperio de la ley.",
-            "El Estado de Derecho debe sustituir el imperio de la ley.",
-            "El imperio de la ley depende exclusivamente del Gobierno."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0030",
-        "pregunta": "¿Qué relación establece el Preámbulo entre el imperio de la ley y la voluntad popular?",
-        "respuesta": "El imperio de la ley es expresión de la voluntad popular.",
-        "opciones": [
-            "El imperio de la ley es expresión de la voluntad popular.",
-            "La voluntad popular es expresión del imperio de la ley.",
-            "El imperio de la ley es expresión de la voluntad del Rey."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0031",
-        "pregunta": "¿Qué elementos culturales y sociales se mencionan expresamente junto a los derechos humanos?",
-        "respuesta": "Culturas, tradiciones, lenguas e instituciones.",
-        "opciones": [
-            "Culturas, tradiciones, lenguas e instituciones.",
-            "Costumbres, religiones, lenguas y territorios.",
-            "Culturas, religiones, instituciones y territorios."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0032",
-        "pregunta": "¿Qué tipo de orden debe acompañar a la convivencia democrática según el Preámbulo?",
-        "respuesta": "Un orden económico y social justo.",
-        "opciones": [
-            "Un orden económico y social justo.",
-            "Un orden político y económico igualitario.",
-            "Un orden territorial y social descentralizado."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0033",
-        "pregunta": "¿Qué expresión utiliza el Preámbulo para referirse al conjunto de personas que forman parte de España?",
-        "respuesta": "Cuantos la integran.",
-        "opciones": [
-            "Cuantos la integran.",
-            "Todos sus ciudadanos.",
-            "Todos los españoles."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0034",
-        "pregunta": "¿Qué fórmula aparece antes del comienzo del Preámbulo?",
-        "respuesta": "Las Cortes han aprobado y el pueblo español ratificado la siguiente Constitución.",
-        "opciones": [
-            "Las Cortes han aprobado y el pueblo español ratificado la siguiente Constitución.",
-            "El Rey ha aprobado y las Cortes ratificado la siguiente Constitución.",
-            "El pueblo español ha aprobado y las Cortes promulgado la siguiente Constitución."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0035",
-        "pregunta": "¿Quiénes aparecen como sujetos que aprueban y ratifican la Constitución en la fórmula introductoria?",
-        "respuesta": "Las Cortes la aprueban y el pueblo español la ratifica.",
-        "opciones": [
-            "Las Cortes la aprueban y el pueblo español la ratifica.",
-            "El Rey la aprueba y las Cortes la ratifican.",
-            "El pueblo español la aprueba y el Rey la ratifica."
-        ]
-    },
-    {
-        "id": "constitucion-preambulo-0036",
-        "pregunta": "¿Qué fórmula cierra el Preámbulo antes del comienzo de la Constitución?",
-        "respuesta": "Las Cortes aprueban y el pueblo español ratifica la siguiente Constitución.",
-        "opciones": [
-            "Las Cortes aprueban y el pueblo español ratifica la siguiente Constitución.",
-            "El Rey sanciona y las Cortes promulgan la siguiente Constitución.",
-            "El pueblo español aprueba y el Rey ratifica la siguiente Constitución."
-        ]
-    }
+  {
+    "id": "constitucion-preambulo-0001",
+    "pregunta": "¿Qué sujeto inicia el Preámbulo de la Constitución Española?",
+    "respuesta": "La Nación española.",
+    "opciones": [
+      "La Nación española.",
+      "El pueblo español.",
+      "Las Cortes Generales.",
+      "El Gobierno de España."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0002",
+    "pregunta": "¿Qué desea establecer la Nación española al comienzo del Preámbulo?",
+    "respuesta": "La justicia, la libertad y la seguridad.",
+    "opciones": [
+      "La igualdad, la solidaridad y la unidad.",
+      "La justicia, la libertad y la seguridad.",
+      "La democracia, la autonomía y la cooperación.",
+      "La libertad, la igualdad y el pluralismo político."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0003",
+    "pregunta": "Además de establecer la justicia, la libertad y la seguridad, ¿qué desea promover la Nación española?",
+    "respuesta": "El bien de cuantos la integran.",
+    "opciones": [
+      "El desarrollo económico de las Comunidades Autónomas.",
+      "El bienestar exclusivo de los ciudadanos españoles.",
+      "El bien de cuantos la integran.",
+      "La cooperación entre los poderes del Estado."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0004",
+    "pregunta": "¿En uso de qué proclama la Nación española su voluntad?",
+    "respuesta": "En uso de su soberanía.",
+    "opciones": [
+      "En uso de su autonomía.",
+      "En uso de su soberanía.",
+      "En uso de su independencia.",
+      "En uso de su potestad legislativa."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0005",
+    "pregunta": "¿Qué proclama la Nación española en el Preámbulo?",
+    "respuesta": "Su voluntad de garantizar determinados principios y objetivos.",
+    "opciones": [
+      "Su voluntad de establecer una monarquía constitucional.",
+      "Su voluntad de garantizar determinados principios y objetivos.",
+      "Su voluntad de organizar territorialmente el Estado.",
+      "Su voluntad de aprobar las leyes fundamentales."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0006",
+    "pregunta": "¿Qué pretende garantizar la Nación española en relación con la convivencia?",
+    "respuesta": "La convivencia democrática.",
+    "opciones": [
+      "La convivencia económica.",
+      "La convivencia territorial.",
+      "La convivencia democrática.",
+      "La convivencia institucional."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0007",
+    "pregunta": "¿Dentro de qué pretende garantizarse la convivencia democrática?",
+    "respuesta": "Dentro de la Constitución y de las leyes.",
+    "opciones": [
+      "Dentro de la Constitución y de los reglamentos.",
+      "Dentro de la Constitución y de las leyes.",
+      "Dentro de las leyes y de los tratados internacionales.",
+      "Dentro de la Constitución y de las decisiones judiciales."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0008",
+    "pregunta": "¿Conforme a qué orden pretende garantizarse la convivencia democrática?",
+    "respuesta": "Conforme a un orden económico y social justo.",
+    "opciones": [
+      "Conforme a un orden político y económico equilibrado.",
+      "Conforme a un orden económico y social justo.",
+      "Conforme a un orden jurídico y democrático.",
+      "Conforme a un orden social, político y territorial."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0009",
+    "pregunta": "¿Qué pretende consolidar la Nación española?",
+    "respuesta": "Un Estado de Derecho.",
+    "opciones": [
+      "Un Estado democrático y autonómico.",
+      "Un Estado social.",
+      "Un Estado de Derecho.",
+      "Un Estado federal."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0010",
+    "pregunta": "¿Qué debe asegurar el Estado de Derecho según el Preámbulo?",
+    "respuesta": "El imperio de la ley.",
+    "opciones": [
+      "La supremacía del Gobierno.",
+      "El imperio de la ley.",
+      "La independencia del poder legislativo.",
+      "La primacía de la Constitución sobre los tratados."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0011",
+    "pregunta": "¿Cómo define el Preámbulo el imperio de la ley?",
+    "respuesta": "Como expresión de la voluntad popular.",
+    "opciones": [
+      "Como expresión de la voluntad del Estado.",
+      "Como expresión de la voluntad de las Cortes.",
+      "Como expresión de la voluntad popular.",
+      "Como expresión de la voluntad del Gobierno."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0012",
+    "pregunta": "¿Qué pretende proteger la Nación española en relación con las personas y los pueblos de España?",
+    "respuesta": "A todos los españoles y pueblos de España en el ejercicio de los derechos humanos, sus culturas y tradiciones, lenguas e instituciones.",
+    "opciones": [
+      "A todos los españoles en el ejercicio de sus derechos políticos, económicos y sociales.",
+      "A todos los españoles y pueblos de España en el ejercicio de los derechos humanos, sus culturas y tradiciones, lenguas e instituciones.",
+      "A todos los ciudadanos y territorios en el ejercicio de sus derechos constitucionales y administrativos.",
+      "A todos los pueblos de España en el ejercicio de sus derechos históricos, económicos y culturales."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0013",
+    "pregunta": "¿A quiénes se refiere expresamente el Preámbulo cuando habla de protección?",
+    "respuesta": "A todos los españoles y pueblos de España.",
+    "opciones": [
+      "A todos los ciudadanos y residentes en España.",
+      "A todos los españoles y pueblos de España.",
+      "A todos los españoles y nacionalidades históricas.",
+      "A todos los ciudadanos españoles y extranjeros."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0014",
+    "pregunta": "¿En el ejercicio de qué derechos se pretende proteger a todos los españoles y pueblos de España?",
+    "respuesta": "De los derechos humanos.",
+    "opciones": [
+      "De los derechos fundamentales.",
+      "De los derechos constitucionales.",
+      "De los derechos humanos.",
+      "De los derechos civiles y políticos."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0015",
+    "pregunta": "Además de los derechos humanos, ¿qué elementos se mencionan expresamente en la declaración de protección del Preámbulo?",
+    "respuesta": "Sus culturas y tradiciones, lenguas e instituciones.",
+    "opciones": [
+      "Sus culturas, costumbres, religiones y territorios.",
+      "Sus culturas y tradiciones, lenguas e instituciones.",
+      "Sus lenguas, derechos históricos, costumbres y gobiernos.",
+      "Sus tradiciones, instituciones, territorios y derechos políticos."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0016",
+    "pregunta": "¿Qué pretende promover la Nación española para asegurar una digna calidad de vida?",
+    "respuesta": "El progreso de la cultura y de la economía.",
+    "opciones": [
+      "El progreso de la ciencia y de la tecnología.",
+      "El progreso de la cultura y de la economía.",
+      "El desarrollo de la industria y del comercio.",
+      "El progreso de la educación y de los servicios públicos."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0017",
+    "pregunta": "¿Con qué finalidad se pretende promover el progreso de la cultura y de la economía?",
+    "respuesta": "Para asegurar a todos una digna calidad de vida.",
+    "opciones": [
+      "Para garantizar el bienestar económico de todos los españoles.",
+      "Para asegurar a todos una digna calidad de vida.",
+      "Para alcanzar una distribución equitativa de la riqueza.",
+      "Para garantizar el desarrollo social de todos los pueblos."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0018",
+    "pregunta": "¿Qué tipo de sociedad pretende establecer la Nación española?",
+    "respuesta": "Una sociedad democrática avanzada.",
+    "opciones": [
+      "Una sociedad social y económicamente avanzada.",
+      "Una sociedad democrática avanzada.",
+      "Una sociedad libre, igualitaria y solidaria.",
+      "Una sociedad plural y descentralizada."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0019",
+    "pregunta": "¿Qué pretende fortalecer la Nación española en el ámbito de las relaciones internacionales?",
+    "respuesta": "Unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
+    "opciones": [
+      "Unas relaciones económicas y políticas entre los Estados europeos.",
+      "Unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
+      "Unas relaciones diplomáticas y comerciales entre todos los Estados.",
+      "Unas relaciones de solidaridad y cooperación entre las naciones democráticas."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0020",
+    "pregunta": "¿Cómo califica el Preámbulo las relaciones que pretende fortalecer entre los pueblos de la Tierra?",
+    "respuesta": "Pacíficas y de eficaz cooperación.",
+    "opciones": [
+      "Democráticas y de cooperación económica.",
+      "Pacíficas y de eficaz cooperación.",
+      "Igualitarias y de solidaridad internacional.",
+      "Diplomáticas y de cooperación política."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0021",
+    "pregunta": "¿Entre quiénes pretende colaborar la Nación española en el fortalecimiento de relaciones pacíficas y de eficaz cooperación?",
+    "respuesta": "Entre todos los pueblos de la Tierra.",
+    "opciones": [
+      "Entre todos los Estados europeos.",
+      "Entre todos los países democráticos.",
+      "Entre todos los pueblos de la Tierra.",
+      "Entre todos los Estados miembros de las Naciones Unidas."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0022",
+    "pregunta": "¿Cuántas declaraciones de voluntad aparecen enumeradas en el Preámbulo después de la introducción?",
+    "respuesta": "Seis.",
+    "opciones": [
+      "Cinco.",
+      "Seis.",
+      "Siete.",
+      "Ocho."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0023",
+    "pregunta": "¿Cuál de las siguientes opciones recoge correctamente las seis declaraciones de voluntad del Preámbulo?",
+    "respuesta": "Garantizar la convivencia democrática; consolidar un Estado de Derecho; proteger a los españoles y pueblos de España; promover el progreso de la cultura y la economía; establecer una sociedad democrática avanzada; y colaborar en el fortalecimiento de relaciones pacíficas y de cooperación.",
+    "opciones": [
+      "Garantizar la convivencia democrática; consolidar un Estado de Derecho; proteger a los españoles y pueblos de España; promover el progreso de la cultura y la economía; establecer una sociedad democrática avanzada; y colaborar en el fortalecimiento de relaciones pacíficas y de cooperación.",
+      "Garantizar la unidad territorial; consolidar un Estado social; proteger los derechos políticos; promover el progreso científico; establecer una sociedad igualitaria; y colaborar en la defensa europea.",
+      "Garantizar la seguridad ciudadana; consolidar un Estado democrático; proteger las instituciones; promover el desarrollo industrial; establecer una sociedad plural; y colaborar en la cooperación económica.",
+      "Garantizar la convivencia social; consolidar un Estado autonómico; proteger las tradiciones; promover el progreso educativo; establecer una sociedad libre; y colaborar en las relaciones diplomáticas."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0024",
+    "pregunta": "¿Qué declaración de voluntad aparece en primer lugar en el Preámbulo?",
+    "respuesta": "Garantizar la convivencia democrática dentro de la Constitución y de las leyes conforme a un orden económico y social justo.",
+    "opciones": [
+      "Consolidar un Estado de Derecho que asegure el imperio de la ley.",
+      "Garantizar la convivencia democrática dentro de la Constitución y de las leyes conforme a un orden económico y social justo.",
+      "Proteger a todos los españoles y pueblos de España en el ejercicio de los derechos humanos.",
+      "Promover el progreso de la cultura y de la economía."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0025",
+    "pregunta": "¿Qué declaración de voluntad aparece inmediatamente después de garantizar la convivencia democrática?",
+    "respuesta": "Consolidar un Estado de Derecho que asegure el imperio de la ley como expresión de la voluntad popular.",
+    "opciones": [
+      "Proteger a todos los españoles y pueblos de España en el ejercicio de los derechos humanos.",
+      "Promover el progreso de la cultura y de la economía.",
+      "Consolidar un Estado de Derecho que asegure el imperio de la ley como expresión de la voluntad popular.",
+      "Establecer una sociedad democrática avanzada."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0026",
+    "pregunta": "¿Qué declaración de voluntad aparece inmediatamente después de consolidar un Estado de Derecho?",
+    "respuesta": "Proteger a todos los españoles y pueblos de España en el ejercicio de los derechos humanos, sus culturas y tradiciones, lenguas e instituciones.",
+    "opciones": [
+      "Promover el progreso de la cultura y de la economía.",
+      "Establecer una sociedad democrática avanzada.",
+      "Proteger a todos los españoles y pueblos de España en el ejercicio de los derechos humanos, sus culturas y tradiciones, lenguas e instituciones.",
+      "Colaborar en el fortalecimiento de unas relaciones pacíficas."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0027",
+    "pregunta": "¿Qué declaración de voluntad aparece inmediatamente después de la protección de los españoles y pueblos de España?",
+    "respuesta": "Promover el progreso de la cultura y de la economía para asegurar a todos una digna calidad de vida.",
+    "opciones": [
+      "Establecer una sociedad democrática avanzada.",
+      "Promover el progreso de la cultura y de la economía para asegurar a todos una digna calidad de vida.",
+      "Consolidar un Estado de Derecho.",
+      "Colaborar en el fortalecimiento de unas relaciones pacíficas."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0028",
+    "pregunta": "¿Qué declaración aparece inmediatamente después de promover el progreso de la cultura y de la economía?",
+    "respuesta": "Establecer una sociedad democrática avanzada.",
+    "opciones": [
+      "Colaborar en el fortalecimiento de unas relaciones pacíficas.",
+      "Establecer una sociedad democrática avanzada.",
+      "Consolidar un Estado de Derecho.",
+      "Garantizar la convivencia democrática."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0029",
+    "pregunta": "¿Cuál es la última declaración de voluntad que aparece en el Preámbulo?",
+    "respuesta": "Colaborar en el fortalecimiento de unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
+    "opciones": [
+      "Establecer una sociedad democrática avanzada.",
+      "Promover el progreso de la cultura y de la economía.",
+      "Colaborar en el fortalecimiento de unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
+      "Proteger a todos los españoles y pueblos de España."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0030",
+    "pregunta": "¿Qué expresión utiliza el Preámbulo para introducir la fórmula final de aprobación y ratificación de la Constitución?",
+    "respuesta": "En consecuencia.",
+    "opciones": [
+      "Por consiguiente.",
+      "En consecuencia.",
+      "Por todo ello.",
+      "En virtud de lo anterior."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0031",
+    "pregunta": "Según la fórmula final del Preámbulo, ¿quiénes aprueban la Constitución?",
+    "respuesta": "Las Cortes.",
+    "opciones": [
+      "El pueblo español.",
+      "El Gobierno.",
+      "Las Cortes.",
+      "El Congreso de los Diputados."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0032",
+    "pregunta": "Según la fórmula final del Preámbulo, ¿quién ratifica la Constitución?",
+    "respuesta": "El pueblo español.",
+    "opciones": [
+      "Las Cortes.",
+      "El pueblo español.",
+      "El Gobierno.",
+      "El Rey."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0033",
+    "pregunta": "¿Qué relación establece el Preámbulo entre las Cortes y el pueblo español respecto a la Constitución?",
+    "respuesta": "Las Cortes la aprueban y el pueblo español la ratifica.",
+    "opciones": [
+      "Las Cortes la ratifican y el pueblo español la aprueba.",
+      "Las Cortes la aprueban y el pueblo español la ratifica.",
+      "El Gobierno la aprueba y las Cortes la ratifican.",
+      "El pueblo español la aprueba y el Rey la ratifica."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0034",
+    "pregunta": "¿Qué expresión aparece inmediatamente antes de la palabra CONSTITUCIÓN al final del Preámbulo?",
+    "respuesta": "Las Cortes aprueban y el pueblo español ratifica la siguiente.",
+    "opciones": [
+      "Las Cortes ratifican y el pueblo español aprueba la siguiente.",
+      "Las Cortes aprueban y el pueblo español ratifica la siguiente.",
+      "El pueblo español aprueba y las Cortes sancionan la siguiente.",
+      "Las Cortes proclaman y el pueblo español aprueba la siguiente."
+    ]
+  },
+  {
+    "id": "constitucion-preambulo-0035",
+    "pregunta": "¿Cuál de las siguientes afirmaciones es correcta según el Preámbulo de la Constitución Española?",
+    "respuesta": "La Nación española proclama su voluntad en uso de su soberanía y las Cortes aprueban la Constitución, que es ratificada por el pueblo español.",
+    "opciones": [
+      "La Nación española proclama su voluntad en uso de su soberanía y las Cortes aprueban la Constitución, que es ratificada por el pueblo español.",
+      "El pueblo español proclama su voluntad en uso de su autonomía y el Gobierno aprueba la Constitución.",
+      "Las Cortes proclaman su voluntad en uso de su soberanía y el Rey ratifica la Constitución.",
+      "La Nación española proclama su voluntad en uso de su independencia y el Congreso ratifica la Constitución."
+    ]
+  }
 ]
