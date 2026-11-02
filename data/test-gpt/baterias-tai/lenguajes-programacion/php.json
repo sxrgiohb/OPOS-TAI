@@ -1,0 +1,662 @@
+[
+  {
+    "id": "tai-php-0001",
+    "pregunta": "¿Pregunta de examen sobre PHP #1 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #1 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #1 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0002",
+    "pregunta": "¿Pregunta de examen sobre PHP #2 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #2 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #2 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0003",
+    "pregunta": "¿Pregunta de examen sobre PHP #3 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #3 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #3 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0004",
+    "pregunta": "¿Pregunta de examen sobre PHP #4 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #4 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #4 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0005",
+    "pregunta": "¿Pregunta de examen sobre PHP #5 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #5 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #5 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0006",
+    "pregunta": "¿Pregunta de examen sobre PHP #6 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #6 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #6 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0007",
+    "pregunta": "¿Pregunta de examen sobre PHP #7 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #7 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #7 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0008",
+    "pregunta": "¿Pregunta de examen sobre PHP #8 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #8 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #8 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0009",
+    "pregunta": "¿Pregunta de examen sobre PHP #9 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #9 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #9 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0010",
+    "pregunta": "¿Pregunta de examen sobre PHP #10 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #10 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #10 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0011",
+    "pregunta": "¿Pregunta de examen sobre PHP #11 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #11 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #11 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0012",
+    "pregunta": "¿Pregunta de examen sobre PHP #12 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #12 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #12 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0013",
+    "pregunta": "¿Pregunta de examen sobre PHP #13 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #13 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #13 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0014",
+    "pregunta": "¿Pregunta de examen sobre PHP #14 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #14 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #14 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0015",
+    "pregunta": "¿Pregunta de examen sobre PHP #15 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #15 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #15 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0016",
+    "pregunta": "¿Pregunta de examen sobre PHP #16 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #16 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #16 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0017",
+    "pregunta": "¿Pregunta de examen sobre PHP #17 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #17 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #17 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0018",
+    "pregunta": "¿Pregunta de examen sobre PHP #18 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #18 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #18 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0019",
+    "pregunta": "¿Pregunta de examen sobre PHP #19 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #19 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #19 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0020",
+    "pregunta": "¿Pregunta de examen sobre PHP #20 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #20 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #20 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0021",
+    "pregunta": "¿Pregunta de examen sobre PHP #21 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #21 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #21 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0022",
+    "pregunta": "¿Pregunta de examen sobre PHP #22 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #22 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #22 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0023",
+    "pregunta": "¿Pregunta de examen sobre PHP #23 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #23 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #23 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0024",
+    "pregunta": "¿Pregunta de examen sobre PHP #24 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #24 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #24 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0025",
+    "pregunta": "¿Pregunta de examen sobre PHP #25 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #25 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #25 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0026",
+    "pregunta": "¿Pregunta de examen sobre PHP #26 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #26 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #26 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0027",
+    "pregunta": "¿Pregunta de examen sobre PHP #27 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #27 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #27 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0028",
+    "pregunta": "¿Pregunta de examen sobre PHP #28 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #28 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #28 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0029",
+    "pregunta": "¿Pregunta de examen sobre PHP #29 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #29 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #29 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0030",
+    "pregunta": "¿Pregunta de examen sobre PHP #30 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #30 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #30 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0031",
+    "pregunta": "¿Pregunta de examen sobre PHP #31 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #31 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #31 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0032",
+    "pregunta": "¿Pregunta de examen sobre PHP #32 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #32 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #32 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0033",
+    "pregunta": "¿Pregunta de examen sobre PHP #33 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #33 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #33 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0034",
+    "pregunta": "¿Pregunta de examen sobre PHP #34 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #34 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #34 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0035",
+    "pregunta": "¿Pregunta de examen sobre PHP #35 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #35 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #35 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0036",
+    "pregunta": "¿Pregunta de examen sobre PHP #36 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #36 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #36 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0037",
+    "pregunta": "¿Pregunta de examen sobre PHP #37 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #37 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #37 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0038",
+    "pregunta": "¿Pregunta de examen sobre PHP #38 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #38 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #38 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0039",
+    "pregunta": "¿Pregunta de examen sobre PHP #39 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #39 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #39 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0040",
+    "pregunta": "¿Pregunta de examen sobre PHP #40 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #40 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #40 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0041",
+    "pregunta": "¿Pregunta de examen sobre PHP #41 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #41 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #41 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0042",
+    "pregunta": "¿Pregunta de examen sobre PHP #42 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #42 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #42 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0043",
+    "pregunta": "¿Pregunta de examen sobre PHP #43 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #43 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #43 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0044",
+    "pregunta": "¿Pregunta de examen sobre PHP #44 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #44 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #44 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0045",
+    "pregunta": "¿Pregunta de examen sobre PHP #45 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #45 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #45 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0046",
+    "pregunta": "¿Pregunta de examen sobre PHP #46 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #46 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #46 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0047",
+    "pregunta": "¿Pregunta de examen sobre PHP #47 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #47 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #47 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0048",
+    "pregunta": "¿Pregunta de examen sobre PHP #48 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #48 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #48 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0049",
+    "pregunta": "¿Pregunta de examen sobre PHP #49 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #49 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #49 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0050",
+    "pregunta": "¿Pregunta de examen sobre PHP #50 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #50 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #50 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0051",
+    "pregunta": "¿Pregunta de examen sobre PHP #51 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #51 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #51 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0052",
+    "pregunta": "¿Pregunta de examen sobre PHP #52 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #52 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #52 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0053",
+    "pregunta": "¿Pregunta de examen sobre PHP #53 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #53 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #53 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0054",
+    "pregunta": "¿Pregunta de examen sobre PHP #54 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #54 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #54 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0055",
+    "pregunta": "¿Pregunta de examen sobre PHP #55 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #55 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #55 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0056",
+    "pregunta": "¿Pregunta de examen sobre PHP #56 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #56 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #56 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0057",
+    "pregunta": "¿Pregunta de examen sobre PHP #57 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #57 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #57 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0058",
+    "pregunta": "¿Pregunta de examen sobre PHP #58 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #58 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #58 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0059",
+    "pregunta": "¿Pregunta de examen sobre PHP #59 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #59 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #59 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  },
+  {
+    "id": "tai-php-0060",
+    "pregunta": "¿Pregunta de examen sobre PHP #60 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #60 de PHP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #60 de PHP.",
+      "Opción distractora A relativa a PHP.",
+      "Opción distractora B relativa a PHP.",
+      "Opción distractora C relativa a PHP."
+    ]
+  }
+]

@@ -1,0 +1,662 @@
+[
+  {
+    "id": "tai-java-0001",
+    "pregunta": "¿Pregunta de examen sobre JAVA #1 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #1 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #1 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0002",
+    "pregunta": "¿Pregunta de examen sobre JAVA #2 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #2 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #2 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0003",
+    "pregunta": "¿Pregunta de examen sobre JAVA #3 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #3 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #3 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0004",
+    "pregunta": "¿Pregunta de examen sobre JAVA #4 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #4 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #4 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0005",
+    "pregunta": "¿Pregunta de examen sobre JAVA #5 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #5 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #5 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0006",
+    "pregunta": "¿Pregunta de examen sobre JAVA #6 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #6 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #6 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0007",
+    "pregunta": "¿Pregunta de examen sobre JAVA #7 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #7 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #7 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0008",
+    "pregunta": "¿Pregunta de examen sobre JAVA #8 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #8 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #8 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0009",
+    "pregunta": "¿Pregunta de examen sobre JAVA #9 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #9 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #9 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0010",
+    "pregunta": "¿Pregunta de examen sobre JAVA #10 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #10 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #10 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0011",
+    "pregunta": "¿Pregunta de examen sobre JAVA #11 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #11 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #11 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0012",
+    "pregunta": "¿Pregunta de examen sobre JAVA #12 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #12 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #12 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0013",
+    "pregunta": "¿Pregunta de examen sobre JAVA #13 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #13 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #13 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0014",
+    "pregunta": "¿Pregunta de examen sobre JAVA #14 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #14 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #14 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0015",
+    "pregunta": "¿Pregunta de examen sobre JAVA #15 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #15 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #15 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0016",
+    "pregunta": "¿Pregunta de examen sobre JAVA #16 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #16 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #16 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0017",
+    "pregunta": "¿Pregunta de examen sobre JAVA #17 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #17 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #17 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0018",
+    "pregunta": "¿Pregunta de examen sobre JAVA #18 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #18 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #18 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0019",
+    "pregunta": "¿Pregunta de examen sobre JAVA #19 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #19 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #19 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0020",
+    "pregunta": "¿Pregunta de examen sobre JAVA #20 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #20 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #20 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0021",
+    "pregunta": "¿Pregunta de examen sobre JAVA #21 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #21 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #21 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0022",
+    "pregunta": "¿Pregunta de examen sobre JAVA #22 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #22 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #22 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0023",
+    "pregunta": "¿Pregunta de examen sobre JAVA #23 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #23 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #23 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0024",
+    "pregunta": "¿Pregunta de examen sobre JAVA #24 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #24 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #24 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0025",
+    "pregunta": "¿Pregunta de examen sobre JAVA #25 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #25 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #25 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0026",
+    "pregunta": "¿Pregunta de examen sobre JAVA #26 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #26 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #26 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0027",
+    "pregunta": "¿Pregunta de examen sobre JAVA #27 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #27 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #27 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0028",
+    "pregunta": "¿Pregunta de examen sobre JAVA #28 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #28 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #28 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0029",
+    "pregunta": "¿Pregunta de examen sobre JAVA #29 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #29 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #29 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0030",
+    "pregunta": "¿Pregunta de examen sobre JAVA #30 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #30 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #30 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0031",
+    "pregunta": "¿Pregunta de examen sobre JAVA #31 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #31 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #31 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0032",
+    "pregunta": "¿Pregunta de examen sobre JAVA #32 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #32 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #32 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0033",
+    "pregunta": "¿Pregunta de examen sobre JAVA #33 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #33 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #33 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0034",
+    "pregunta": "¿Pregunta de examen sobre JAVA #34 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #34 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #34 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0035",
+    "pregunta": "¿Pregunta de examen sobre JAVA #35 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #35 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #35 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0036",
+    "pregunta": "¿Pregunta de examen sobre JAVA #36 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #36 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #36 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0037",
+    "pregunta": "¿Pregunta de examen sobre JAVA #37 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #37 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #37 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0038",
+    "pregunta": "¿Pregunta de examen sobre JAVA #38 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #38 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #38 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0039",
+    "pregunta": "¿Pregunta de examen sobre JAVA #39 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #39 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #39 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0040",
+    "pregunta": "¿Pregunta de examen sobre JAVA #40 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #40 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #40 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0041",
+    "pregunta": "¿Pregunta de examen sobre JAVA #41 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #41 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #41 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0042",
+    "pregunta": "¿Pregunta de examen sobre JAVA #42 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #42 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #42 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0043",
+    "pregunta": "¿Pregunta de examen sobre JAVA #43 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #43 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #43 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0044",
+    "pregunta": "¿Pregunta de examen sobre JAVA #44 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #44 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #44 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0045",
+    "pregunta": "¿Pregunta de examen sobre JAVA #45 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #45 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #45 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0046",
+    "pregunta": "¿Pregunta de examen sobre JAVA #46 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #46 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #46 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0047",
+    "pregunta": "¿Pregunta de examen sobre JAVA #47 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #47 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #47 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0048",
+    "pregunta": "¿Pregunta de examen sobre JAVA #48 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #48 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #48 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0049",
+    "pregunta": "¿Pregunta de examen sobre JAVA #49 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #49 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #49 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0050",
+    "pregunta": "¿Pregunta de examen sobre JAVA #50 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #50 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #50 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0051",
+    "pregunta": "¿Pregunta de examen sobre JAVA #51 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #51 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #51 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0052",
+    "pregunta": "¿Pregunta de examen sobre JAVA #52 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #52 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #52 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0053",
+    "pregunta": "¿Pregunta de examen sobre JAVA #53 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #53 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #53 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0054",
+    "pregunta": "¿Pregunta de examen sobre JAVA #54 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #54 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #54 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0055",
+    "pregunta": "¿Pregunta de examen sobre JAVA #55 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #55 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #55 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0056",
+    "pregunta": "¿Pregunta de examen sobre JAVA #56 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #56 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #56 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0057",
+    "pregunta": "¿Pregunta de examen sobre JAVA #57 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #57 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #57 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0058",
+    "pregunta": "¿Pregunta de examen sobre JAVA #58 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #58 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #58 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0059",
+    "pregunta": "¿Pregunta de examen sobre JAVA #59 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #59 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #59 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  },
+  {
+    "id": "tai-java-0060",
+    "pregunta": "¿Pregunta de examen sobre JAVA #60 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #60 de JAVA.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #60 de JAVA.",
+      "Opción distractora A relativa a JAVA.",
+      "Opción distractora B relativa a JAVA.",
+      "Opción distractora C relativa a JAVA."
+    ]
+  }
+]
