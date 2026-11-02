@@ -1,1 +1,662 @@
-
+[
+  {
+    "id": "tai-html5-0001",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #1 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #1 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #1 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0002",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #2 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #2 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #2 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0003",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #3 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #3 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #3 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0004",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #4 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #4 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #4 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0005",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #5 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #5 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #5 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0006",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #6 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #6 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #6 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0007",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #7 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #7 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #7 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0008",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #8 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #8 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #8 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0009",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #9 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #9 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #9 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0010",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #10 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #10 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #10 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0011",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #11 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #11 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #11 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0012",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #12 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #12 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #12 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0013",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #13 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #13 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #13 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0014",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #14 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #14 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #14 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0015",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #15 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #15 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #15 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0016",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #16 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #16 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #16 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0017",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #17 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #17 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #17 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0018",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #18 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #18 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #18 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0019",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #19 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #19 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #19 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0020",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #20 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #20 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #20 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0021",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #21 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #21 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #21 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0022",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #22 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #22 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #22 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0023",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #23 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #23 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #23 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0024",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #24 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #24 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #24 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0025",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #25 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #25 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #25 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0026",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #26 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #26 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #26 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0027",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #27 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #27 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #27 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0028",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #28 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #28 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #28 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0029",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #29 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #29 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #29 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0030",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #30 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #30 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #30 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0031",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #31 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #31 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #31 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0032",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #32 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #32 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #32 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0033",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #33 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #33 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #33 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0034",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #34 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #34 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #34 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0035",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #35 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #35 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #35 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0036",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #36 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #36 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #36 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0037",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #37 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #37 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #37 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0038",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #38 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #38 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #38 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0039",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #39 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #39 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #39 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0040",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #40 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #40 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #40 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0041",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #41 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #41 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #41 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0042",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #42 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #42 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #42 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0043",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #43 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #43 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #43 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0044",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #44 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #44 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #44 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0045",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #45 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #45 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #45 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0046",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #46 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #46 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #46 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0047",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #47 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #47 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #47 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0048",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #48 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #48 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #48 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0049",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #49 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #49 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #49 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0050",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #50 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #50 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #50 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0051",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #51 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #51 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #51 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0052",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #52 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #52 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #52 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0053",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #53 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #53 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #53 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0054",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #54 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #54 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #54 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0055",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #55 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #55 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #55 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0056",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #56 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #56 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #56 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0057",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #57 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #57 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #57 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0058",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #58 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #58 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #58 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0059",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #59 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #59 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #59 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  },
+  {
+    "id": "tai-html5-0060",
+    "pregunta": "¿Pregunta de examen sobre HTML5 #60 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #60 de HTML5.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #60 de HTML5.",
+      "Opción distractora A relativa a HTML5.",
+      "Opción distractora B relativa a HTML5.",
+      "Opción distractora C relativa a HTML5."
+    ]
+  }
+]
