@@ -1,1 +1,662 @@
-
+[
+  {
+    "id": "tai-linux_bash-0001",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #1 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #1 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #1 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0002",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #2 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #2 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #2 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0003",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #3 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #3 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #3 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0004",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #4 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #4 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #4 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0005",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #5 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #5 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #5 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0006",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #6 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #6 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #6 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0007",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #7 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #7 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #7 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0008",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #8 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #8 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #8 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0009",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #9 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #9 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #9 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0010",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #10 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #10 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #10 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0011",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #11 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #11 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #11 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0012",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #12 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #12 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #12 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0013",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #13 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #13 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #13 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0014",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #14 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #14 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #14 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0015",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #15 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #15 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #15 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0016",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #16 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #16 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #16 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0017",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #17 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #17 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #17 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0018",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #18 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #18 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #18 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0019",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #19 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #19 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #19 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0020",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #20 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #20 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #20 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0021",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #21 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #21 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #21 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0022",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #22 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #22 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #22 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0023",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #23 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #23 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #23 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0024",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #24 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #24 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #24 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0025",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #25 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #25 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #25 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0026",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #26 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #26 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #26 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0027",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #27 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #27 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #27 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0028",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #28 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #28 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #28 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0029",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #29 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #29 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #29 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0030",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #30 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #30 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #30 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0031",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #31 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #31 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #31 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0032",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #32 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #32 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #32 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0033",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #33 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #33 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #33 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0034",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #34 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #34 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #34 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0035",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #35 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #35 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #35 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0036",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #36 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #36 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #36 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0037",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #37 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #37 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #37 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0038",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #38 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #38 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #38 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0039",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #39 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #39 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #39 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0040",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #40 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #40 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #40 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0041",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #41 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #41 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #41 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0042",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #42 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #42 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #42 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0043",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #43 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #43 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #43 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0044",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #44 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #44 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #44 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0045",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #45 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #45 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #45 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0046",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #46 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #46 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #46 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0047",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #47 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #47 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #47 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0048",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #48 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #48 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #48 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0049",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #49 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #49 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #49 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0050",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #50 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #50 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #50 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0051",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #51 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #51 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #51 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0052",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #52 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #52 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #52 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0053",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #53 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #53 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #53 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0054",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #54 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #54 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #54 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0055",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #55 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #55 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #55 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0056",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #56 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #56 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #56 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0057",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #57 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #57 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #57 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0058",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #58 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #58 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #58 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0059",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #59 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #59 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #59 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  },
+  {
+    "id": "tai-linux_bash-0060",
+    "pregunta": "¿Pregunta de examen sobre LINUX BASH #60 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #60 de LINUX BASH.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #60 de LINUX BASH.",
+      "Opción distractora A relativa a LINUX BASH.",
+      "Opción distractora B relativa a LINUX BASH.",
+      "Opción distractora C relativa a LINUX BASH."
+    ]
+  }
+]
