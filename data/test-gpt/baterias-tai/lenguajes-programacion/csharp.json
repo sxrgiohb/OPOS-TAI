@@ -1,607 +1,1844 @@
 [
   {
-    "id": "programacion-csharp-0001",
-    "pregunta": "¿Qué es C#?",
-    "respuesta": "Un lenguaje de programación de propósito general integrado en el ecosistema .NET.",
+    "id": "programacion-csharp-0056",
+    "pregunta": "¿Qué tipo de dato se utiliza para almacenar un número entero de 32 bits con signo?",
+    "respuesta": "int.",
+    "opciones": ["int.", "short.", "long.", "byte."]
+  },
+  {
+    "id": "programacion-csharp-0057",
+    "pregunta": "¿Qué tipo de dato almacena números enteros de 64 bits con signo?",
+    "respuesta": "long.",
+    "opciones": ["long.", "int.", "short.", "sbyte."]
+  },
+  {
+    "id": "programacion-csharp-0058",
+    "pregunta": "¿Qué tipo de dato representa un número entero de 16 bits sin signo?",
+    "respuesta": "ushort.",
+    "opciones": ["ushort.", "short.", "uint.", "ulong."]
+  },
+  {
+    "id": "programacion-csharp-0059",
+    "pregunta": "¿Qué tipo de dato representa un número entero de 8 bits sin signo?",
+    "respuesta": "byte.",
+    "opciones": ["byte.", "sbyte.", "short.", "char."]
+  },
+  {
+    "id": "programacion-csharp-0060",
+    "pregunta": "¿Qué tipo de dato permite almacenar un número entero de 8 bits con signo?",
+    "respuesta": "sbyte.",
+    "opciones": ["sbyte.", "byte.", "ushort.", "uint."]
+  },
+  {
+    "id": "programacion-csharp-0061",
+    "pregunta": "¿Qué tipo de dato se utiliza habitualmente para almacenar números reales de precisión simple?",
+    "respuesta": "float.",
+    "opciones": ["float.", "double.", "decimal.", "long."]
+  },
+  {
+    "id": "programacion-csharp-0062",
+    "pregunta": "¿Qué tipo de dato proporciona normalmente mayor precisión que float para números de coma flotante?",
+    "respuesta": "double.",
+    "opciones": ["double.", "float.", "int.", "byte."]
+  },
+  {
+    "id": "programacion-csharp-0063",
+    "pregunta": "¿Qué tipo de dato se recomienda para cálculos decimales que requieren elevada precisión, como operaciones monetarias?",
+    "respuesta": "decimal.",
+    "opciones": ["decimal.", "float.", "double.", "short."]
+  },
+  {
+    "id": "programacion-csharp-0064",
+    "pregunta": "¿Qué tipo de dato se utiliza para almacenar un único carácter Unicode?",
+    "respuesta": "char.",
+    "opciones": ["char.", "string.", "bool.", "byte."]
+  },
+  {
+    "id": "programacion-csharp-0065",
+    "pregunta": "¿Qué tipo de dato se utiliza para almacenar una secuencia de caracteres?",
+    "respuesta": "string.",
+    "opciones": ["string.", "char.", "object.", "bool."]
+  },
+  {
+    "id": "programacion-csharp-0066",
+    "pregunta": "¿Qué valores puede almacenar una variable de tipo bool?",
+    "respuesta": "true y false.",
+    "opciones": ["true y false.", "0 y 1 exclusivamente.", "null y undefined.", "Cualquier número entero."]
+  },
+  {
+    "id": "programacion-csharp-0067",
+    "pregunta": "¿Cuál es el tipo de dato predefinido de C# que constituye la base de todos los demás tipos?",
+    "respuesta": "object.",
+    "opciones": ["object.", "dynamic.", "var.", "string."]
+  },
+  {
+    "id": "programacion-csharp-0068",
+    "pregunta": "¿Qué tipo de dato puede almacenar valores de cualquier tipo sin realizar comprobaciones estáticas de sus operaciones?",
+    "respuesta": "dynamic.",
+    "opciones": ["dynamic.", "var.", "object exclusivamente.", "void."]
+  },
+  {
+    "id": "programacion-csharp-0069",
+    "pregunta": "¿Qué palabra permite declarar una variable cuyo tipo determina el compilador a partir de la expresión inicial?",
+    "respuesta": "var.",
+    "opciones": ["var.", "dynamic.", "auto.", "let."]
+  },
+  {
+    "id": "programacion-csharp-0070",
+    "pregunta": "¿Qué diferencia fundamental existe entre var y dynamic?",
+    "respuesta": "var se resuelve en compilación, mientras que dynamic aplaza la resolución de operaciones al tiempo de ejecución.",
     "opciones": [
-      "Un lenguaje de programación de propósito general integrado en el ecosistema .NET.",
-      "Un lenguaje de marcado de documentos.",
-      "Un sistema gestor de bases de datos.",
-      "Un protocolo de red."
+      "var se resuelve en compilación, mientras que dynamic aplaza la resolución de operaciones al tiempo de ejecución.",
+      "var permite cambiar el tipo en ejecución y dynamic no.",
+      "Ambos son tipos de referencia idénticos.",
+      "dynamic solo puede almacenar números."
     ]
   },
   {
-    "id": "programacion-csharp-0002",
-    "pregunta": "¿Qué es .NET?",
-    "respuesta": "Una plataforma de desarrollo y ejecución que incluye runtime, bibliotecas y herramientas.",
+    "id": "programacion-csharp-0071",
+    "pregunta": "¿Qué palabra se utiliza para declarar una constante cuyo valor debe conocerse en tiempo de compilación?",
+    "respuesta": "const.",
+    "opciones": ["const.", "readonly.", "static.", "fixed."]
+  },
+  {
+    "id": "programacion-csharp-0072",
+    "pregunta": "¿Cuál es el valor predeterminado de una variable bool cuando se inicializa mediante su valor por defecto?",
+    "respuesta": "false.",
+    "opciones": ["false.", "true.", "null.", "0."]
+  },
+  {
+    "id": "programacion-csharp-0073",
+    "pregunta": "¿Cuál es el valor predeterminado de un tipo entero como int cuando se obtiene mediante default(int)?",
+    "respuesta": "0.",
+    "opciones": ["0.", "1.", "null.", "-1."]
+  },
+  {
+    "id": "programacion-csharp-0074",
+    "pregunta": "¿Qué palabra permite obtener el valor predeterminado de un tipo genérico o concreto?",
+    "respuesta": "default.",
+    "opciones": ["default.", "empty.", "null.", "base."]
+  },
+  {
+    "id": "programacion-csharp-0075",
+    "pregunta": "¿Qué tipo de dato utiliza C# para representar fechas y horas sin zona horaria?",
+    "respuesta": "DateTime.",
+    "opciones": ["DateTime.", "TimeSpan.", "DateOnly.", "TimeZoneInfo."]
+  },
+  {
+    "id": "programacion-csharp-0076",
+    "pregunta": "¿Qué estructura representa un intervalo de tiempo?",
+    "respuesta": "TimeSpan.",
+    "opciones": ["TimeSpan.", "DateTime.", "DateOnly.", "Guid."]
+  },
+  {
+    "id": "programacion-csharp-0077",
+    "pregunta": "¿Qué tipo representa un identificador único global?",
+    "respuesta": "Guid.",
+    "opciones": ["Guid.", "UUIDString.", "Identifier.", "UniqueInt."]
+  },
+  {
+    "id": "programacion-csharp-0078",
+    "pregunta": "¿Qué tipo de dato se utiliza para representar una enumeración de valores con nombre?",
+    "respuesta": "enum.",
+    "opciones": ["enum.", "struct.", "delegate.", "namespace."]
+  },
+  {
+    "id": "programacion-csharp-0079",
+    "pregunta": "¿Qué tipo de dato es decimal en C#?",
+    "respuesta": "Un tipo de valor numérico de precisión decimal.",
     "opciones": [
-      "Una plataforma de desarrollo y ejecución que incluye runtime, bibliotecas y herramientas.",
-      "Un lenguaje de programación independiente.",
-      "Un sistema operativo exclusivamente.",
-      "Un formato de intercambio de datos."
+      "Un tipo de valor numérico de precisión decimal.",
+      "Un tipo de referencia para cadenas.",
+      "Un tipo entero sin signo.",
+      "Una clase abstracta."
     ]
   },
   {
-    "id": "programacion-csharp-0003",
-    "pregunta": "¿Qué componente ejecuta normalmente aplicaciones .NET modernas?",
-    "respuesta": "Common Language Runtime (CLR).",
+    "id": "programacion-csharp-0080",
+    "pregunta": "¿Qué ocurre si se intenta asignar directamente un valor long a una variable int sin conversión?",
+    "respuesta": "Se produce un error de compilación porque puede perderse información.",
     "opciones": [
-      "Common Language Runtime (CLR).",
-      "Java Virtual Machine.",
-      "WebAssembly Runtime exclusivamente.",
-      "SQL Server Engine."
+      "Se produce un error de compilación porque puede perderse información.",
+      "La conversión se realiza siempre automáticamente.",
+      "El valor se convierte en string.",
+      "La variable int pasa a ser long."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0081",
+    "pregunta": "¿Qué es una conversión implícita en C#?",
+    "respuesta": "Una conversión que el compilador permite automáticamente porque no requiere una conversión explícita del programador.",
+    "opciones": [
+      "Una conversión que el compilador permite automáticamente porque no requiere una conversión explícita del programador.",
+      "Una conversión que siempre requiere el operador as.",
+      "Una conversión que solo se realiza durante la ejecución.",
+      "Una conversión exclusiva entre cadenas."
     ]
   },
   {
-    "id": "programacion-csharp-0004",
-    "pregunta": "¿Qué es IL o CIL en .NET?",
-    "respuesta": "Un lenguaje intermedio al que se compilan normalmente los lenguajes .NET antes de su ejecución.",
+    "id": "programacion-csharp-0082",
+    "pregunta": "¿Qué operador permite realizar una conversión explícita de tipo?",
+    "respuesta": "El operador de conversión mediante paréntesis con el tipo de destino.",
     "opciones": [
-      "Un lenguaje intermedio al que se compilan normalmente los lenguajes .NET antes de su ejecución.",
-      "Un lenguaje de marcado web.",
-      "Un protocolo de autenticación.",
-      "Un formato de imagen."
+      "El operador de conversión mediante paréntesis con el tipo de destino.",
+      "El operador &&.",
+      "El operador ??.",
+      "El operador sizeof exclusivamente."
     ]
   },
   {
-    "id": "programacion-csharp-0005",
-    "pregunta": "¿Qué compilador se asocia habitualmente a C#?",
-    "respuesta": "Roslyn (compilador de C#).",
+    "id": "programacion-csharp-0083",
+    "pregunta": "¿Qué método permite convertir una cadena en un número entero y generar una excepción si el formato no es válido?",
+    "respuesta": "int.Parse().",
+    "opciones": ["int.Parse().", "int.ToString().", "int.GetType().", "int.Equals()."]
+  },
+  {
+    "id": "programacion-csharp-0084",
+    "pregunta": "¿Qué método permite intentar convertir una cadena en un entero sin generar una excepción por un formato no válido?",
+    "respuesta": "int.TryParse().",
+    "opciones": ["int.TryParse().", "int.Parse().", "int.Convert().", "int.ToInt()."]
+  },
+  {
+    "id": "programacion-csharp-0085",
+    "pregunta": "¿Qué devuelve normalmente TryParse cuando la conversión se realiza correctamente?",
+    "respuesta": "true, y coloca el resultado convertido en el parámetro de salida.",
     "opciones": [
-      "Roslyn (compilador de C#).",
-      "javac.",
-      "gcc exclusivamente.",
-      "TSC exclusivamente."
+      "true, y coloca el resultado convertido en el parámetro de salida.",
+      "El número convertido directamente como valor de retorno.",
+      "Una excepción.",
+      "Siempre false."
     ]
   },
   {
-    "id": "programacion-csharp-0006",
-    "pregunta": "¿Qué extensión identifica habitualmente un archivo fuente C#?",
-    "respuesta": ".cs.",
+    "id": "programacion-csharp-0086",
+    "pregunta": "¿Qué operador se utiliza para sumar dos valores numéricos?",
+    "respuesta": "+.",
+    "opciones": ["+.", "-.", "*.", "/."]
+  },
+  {
+    "id": "programacion-csharp-0087",
+    "pregunta": "¿Qué operador representa la división?",
+    "respuesta": "/.",
+    "opciones": ["/.", "*.", "%.", "\\"]
+  },
+  {
+    "id": "programacion-csharp-0088",
+    "pregunta": "¿Qué operador permite obtener el resto de una división?",
+    "respuesta": "%.",
+    "opciones": ["%.", "/.", "**.", "//."]
+  },
+  {
+    "id": "programacion-csharp-0089",
+    "pregunta": "¿Qué operador se utiliza para incrementar una variable en una unidad?",
+    "respuesta": "++.",
+    "opciones": ["++.", "+=.", "--.", "**."]
+  },
+  {
+    "id": "programacion-csharp-0090",
+    "pregunta": "¿Qué operador decrementa una variable en una unidad?",
+    "respuesta": "--.",
+    "opciones": ["--.", "++.", "-=.", "!="]
+  },
+  {
+    "id": "programacion-csharp-0091",
+    "pregunta": "¿Qué diferencia existe entre ++x y x++?",
+    "respuesta": "++x incrementa antes de producir el valor de la expresión; x++ produce primero el valor anterior y después incrementa.",
     "opciones": [
-      ".cs.",
-      ".java.",
-      ".cshtml exclusivamente.",
-      ".dll."
+      "++x incrementa antes de producir el valor de la expresión; x++ produce primero el valor anterior y después incrementa.",
+      "Ambos decrementan la variable.",
+      "++x solo funciona con cadenas.",
+      "No existe ninguna diferencia."
     ]
   },
   {
-    "id": "programacion-csharp-0007",
-    "pregunta": "¿Qué palabra declara una clase en C#?",
-    "respuesta": "class.",
+    "id": "programacion-csharp-0092",
+    "pregunta": "¿Qué operador realiza una comparación de igualdad?",
+    "respuesta": "==.",
+    "opciones": ["==.", "=.", "!=.", "=>."]
+  },
+  {
+    "id": "programacion-csharp-0093",
+    "pregunta": "¿Qué operador comprueba si dos valores son diferentes?",
+    "respuesta": "!=.",
+    "opciones": ["!=.", "==.", "<>.", "!==."]
+  },
+  {
+    "id": "programacion-csharp-0094",
+    "pregunta": "¿Qué operador representa la conjunción lógica AND?",
+    "respuesta": "&&.",
+    "opciones": ["&&.", "||.", "!!.", "&|."]
+  },
+  {
+    "id": "programacion-csharp-0095",
+    "pregunta": "¿Qué operador representa la disyunción lógica OR con evaluación en cortocircuito?",
+    "respuesta": "||.",
+    "opciones": ["||.", "&&.", "|.", "&."]
+  },
+  {
+    "id": "programacion-csharp-0096",
+    "pregunta": "¿Qué operador representa la negación lógica?",
+    "respuesta": "!.",
+    "opciones": ["!.", "~.", "!=.", "&&."]
+  },
+  {
+    "id": "programacion-csharp-0097",
+    "pregunta": "¿Qué diferencia existe entre && y & cuando se aplican a expresiones booleanas?",
+    "respuesta": "&& aplica evaluación en cortocircuito; & evalúa ambos operandos.",
     "opciones": [
-      "class.",
-      "structclass.",
-      "object.",
-      "define."
+      "&& aplica evaluación en cortocircuito; & evalúa ambos operandos.",
+      "& aplica cortocircuito y && no.",
+      "Ambos son operadores aritméticos.",
+      "&& solo se utiliza con números."
     ]
   },
   {
-    "id": "programacion-csharp-0008",
-    "pregunta": "¿Qué palabra se utiliza para crear una instancia?",
-    "respuesta": "new.",
+    "id": "programacion-csharp-0098",
+    "pregunta": "¿Qué operador permite asignar un valor a una variable?",
+    "respuesta": "=.",
+    "opciones": ["=.", "==.", "=>.", "!="]
+  },
+  {
+    "id": "programacion-csharp-0099",
+    "pregunta": "¿Qué significa el operador +=?",
+    "respuesta": "Suma el valor indicado a la variable y asigna el resultado a esa misma variable.",
     "opciones": [
-      "new.",
+      "Suma el valor indicado a la variable y asigna el resultado a esa misma variable.",
+      "Compara dos variables.",
+      "Resta y compara valores.",
+      "Declara una constante."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0100",
+    "pregunta": "¿Qué operador se utiliza para realizar una operación condicional abreviada?",
+    "respuesta": "El operador ternario ? :.",
+    "opciones": [
+      "El operador ternario ? :.",
+      "El operador ?? exclusivamente.",
+      "El operador =>.",
+      "El operador ::."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0101",
+    "pregunta": "¿Qué operador permite comprobar si un objeto es compatible con un tipo determinado?",
+    "respuesta": "is.",
+    "opciones": ["is.", "as.", "typeof.", "sizeof."]
+  },
+  {
+    "id": "programacion-csharp-0102",
+    "pregunta": "¿Qué operador permite realizar una conversión de referencia o conversión boxing compatible y devolver null si no es posible?",
+    "respuesta": "as.",
+    "opciones": ["as.", "is.", "new.", "typeof."]
+  },
+  {
+    "id": "programacion-csharp-0103",
+    "pregunta": "¿Qué operador permite acceder a un miembro estático o identificar un tipo dentro de un espacio de nombres?",
+    "respuesta": ":: no es el operador habitual de acceso a miembros; el acceso a miembros se realiza con punto (.).",
+    "opciones": [
+      ":: no es el operador habitual de acceso a miembros; el acceso a miembros se realiza con punto (.).",
+      "Se utiliza siempre ::.",
+      "Se utiliza =>.",
+      "Se utiliza ??."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0104",
+    "pregunta": "¿Qué operador realiza un desplazamiento de bits hacia la izquierda?",
+    "respuesta": "<<.",
+    "opciones": ["<<.", ">>.", "&&.", "||."]
+  },
+  {
+    "id": "programacion-csharp-0105",
+    "pregunta": "¿Qué operador realiza un desplazamiento de bits hacia la derecha?",
+    "respuesta": ">>.",
+    "opciones": [">>.", "<<.", "%.", "^."]
+  }
+,
+  {
+    "id": "programacion-csharp-0106",
+    "pregunta": "¿Son mutables las cadenas string en C#?",
+    "respuesta": "No, string es un tipo inmutable.",
+    "opciones": [
+      "No, string es un tipo inmutable.",
+      "Sí, siempre se modifica el mismo objeto.",
+      "Solo son mutables las cadenas largas.",
+      "Depende de si se declaran con var."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0107",
+    "pregunta": "¿Qué propiedad permite obtener el número de caracteres de una cadena?",
+    "respuesta": "Length.",
+    "opciones": ["Length.", "Count().", "Size.", "Capacity."]
+  },
+  {
+    "id": "programacion-csharp-0108",
+    "pregunta": "¿Qué método permite obtener una parte de una cadena?",
+    "respuesta": "Substring().",
+    "opciones": ["Substring().", "Split().", "Replace().", "Trim()."]
+  },
+  {
+    "id": "programacion-csharp-0109",
+    "pregunta": "¿Qué método permite dividir una cadena en varias partes utilizando un separador?",
+    "respuesta": "Split().",
+    "opciones": ["Split().", "Join().", "Substring().", "Trim()."]
+  },
+  {
+    "id": "programacion-csharp-0110",
+    "pregunta": "¿Qué método permite eliminar espacios en blanco al principio y al final de una cadena?",
+    "respuesta": "Trim().",
+    "opciones": ["Trim().", "Split().", "Replace().", "Insert()."]
+  },
+  {
+    "id": "programacion-csharp-0111",
+    "pregunta": "¿Qué método permite sustituir una parte del contenido de una cadena por otro texto?",
+    "respuesta": "Replace().",
+    "opciones": ["Replace().", "Remove().", "Split().", "Contains()."]
+  },
+  {
+    "id": "programacion-csharp-0112",
+    "pregunta": "¿Qué método permite comprobar si una cadena contiene una secuencia de caracteres determinada?",
+    "respuesta": "Contains().",
+    "opciones": ["Contains().", "Length().", "Trim().", "ToCharArray()."]
+  },
+  {
+    "id": "programacion-csharp-0113",
+    "pregunta": "¿Qué método permite convertir una cadena a letras mayúsculas?",
+    "respuesta": "ToUpper().",
+    "opciones": ["ToUpper().", "ToLower().", "UpperCase().", "Capitalize()."]
+  },
+  {
+    "id": "programacion-csharp-0114",
+    "pregunta": "¿Qué método permite convertir una cadena a letras minúsculas?",
+    "respuesta": "ToLower().",
+    "opciones": ["ToLower().", "ToUpper().", "LowerCase().", "Small()."]
+  },
+  {
+    "id": "programacion-csharp-0115",
+    "pregunta": "¿Qué método permite concatenar los elementos de una colección de cadenas utilizando un separador?",
+    "respuesta": "string.Join().",
+    "opciones": ["string.Join().", "string.Split().", "string.ConcatSplit().", "string.Merge()."]
+  },
+  {
+    "id": "programacion-csharp-0116",
+    "pregunta": "¿Qué clase permite construir cadenas de forma eficiente cuando se realizan muchas modificaciones sucesivas?",
+    "respuesta": "StringBuilder.",
+    "opciones": ["StringBuilder.", "StringReader.", "StringWriter exclusivamente.", "StringBuffer."]
+  },
+  {
+    "id": "programacion-csharp-0117",
+    "pregunta": "¿Qué espacio de nombres contiene habitualmente la clase StringBuilder?",
+    "respuesta": "System.Text.",
+    "opciones": ["System.Text.", "System.Collections.", "System.IO.", "System.Net."]
+  },
+  {
+    "id": "programacion-csharp-0118",
+    "pregunta": "¿Qué prefijo se utiliza para crear una cadena interpolada?",
+    "respuesta": "$.",
+    "opciones": ["$.", "@.", "#.", "%."]
+  },
+  {
+    "id": "programacion-csharp-0119",
+    "pregunta": "¿Qué prefijo permite escribir cadenas literales verbatim, en las que la barra invertida no funciona como carácter de escape habitual?",
+    "respuesta": "@.",
+    "opciones": ["@.", "$.", "#.", "&."]
+  },
+  {
+    "id": "programacion-csharp-0120",
+    "pregunta": "¿Qué método permite comparar dos cadenas teniendo en cuenta opciones como la cultura o la distinción entre mayúsculas y minúsculas?",
+    "respuesta": "string.Compare() o los métodos de comparación de cadenas con StringComparison.",
+    "opciones": [
+      "string.Compare() o los métodos de comparación de cadenas con StringComparison.",
+      "string.Length().",
+      "string.Split().",
+      "string.Trim()."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0121",
+    "pregunta": "¿Qué es un array en C#?",
+    "respuesta": "Una estructura que almacena un número fijo de elementos del mismo tipo y permite acceder a ellos mediante índices.",
+    "opciones": [
+      "Una estructura que almacena un número fijo de elementos del mismo tipo y permite acceder a ellos mediante índices.",
+      "Una colección que siempre aumenta automáticamente de tamaño.",
+      "Un tipo exclusivo para almacenar cadenas.",
+      "Una clase que solo admite objetos null."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0122",
+    "pregunta": "¿Cuál es el índice del primer elemento de un array en C#?",
+    "respuesta": "0.",
+    "opciones": ["0.", "1.", "-1.", "Depende del tamaño."]
+  },
+  {
+    "id": "programacion-csharp-0123",
+    "pregunta": "¿Qué propiedad permite conocer el número de elementos de un array?",
+    "respuesta": "Length.",
+    "opciones": ["Length.", "Count.", "Capacity.", "Size."]
+  },
+  {
+    "id": "programacion-csharp-0124",
+    "pregunta": "¿Qué ocurre si se intenta acceder a una posición inexistente de un array?",
+    "respuesta": "Se produce una excepción IndexOutOfRangeException.",
+    "opciones": [
+      "Se produce una excepción IndexOutOfRangeException.",
+      "Se devuelve automáticamente null.",
+      "El array aumenta de tamaño.",
+      "Se devuelve siempre cero."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0125",
+    "pregunta": "¿Qué es un array multidimensional rectangular?",
+    "respuesta": "Un array que organiza sus elementos en varias dimensiones con una estructura rectangular.",
+    "opciones": [
+      "Un array que organiza sus elementos en varias dimensiones con una estructura rectangular.",
+      "Un array que contiene exclusivamente cadenas.",
+      "Una lista enlazada de objetos.",
+      "Un array que solo tiene una dimensión."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0126",
+    "pregunta": "¿Qué diferencia existe entre int[,] e int[,]?",
+    "respuesta": "int[,] es un array multidimensional rectangular e int[,] es un array de arrays.",
+    "opciones": [
+      "int[,] es un array multidimensional rectangular e int[,] es un array de arrays.",
+      "Ambos son exactamente el mismo tipo.",
+      "int[,] solo almacena referencias e int[,] solo valores.",
+      "int[,] no puede contener números."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0127",
+    "pregunta": "¿Qué colección permite almacenar elementos en una lista cuyo tamaño puede variar dinámicamente?",
+    "respuesta": "List<T>.",
+    "opciones": ["List<T>.", "Array.", "Stack<T> exclusivamente.", "Tuple."]
+  },
+  {
+    "id": "programacion-csharp-0128",
+    "pregunta": "¿Qué propiedad permite conocer el número actual de elementos de una List<T>?",
+    "respuesta": "Count.",
+    "opciones": ["Count.", "Length.", "Capacity.", "Size."]
+  },
+  {
+    "id": "programacion-csharp-0129",
+    "pregunta": "¿Qué propiedad indica la cantidad de elementos que puede almacenar una List<T> sin redimensionarse?",
+    "respuesta": "Capacity.",
+    "opciones": ["Capacity.", "Count.", "Length.", "Maximum."]
+  },
+  {
+    "id": "programacion-csharp-0130",
+    "pregunta": "¿Qué método permite añadir un elemento al final de una List<T>?",
+    "respuesta": "Add().",
+    "opciones": ["Add().", "InsertAtEnd().", "PushBack().", "AppendItem()."]
+  },
+  {
+    "id": "programacion-csharp-0131",
+    "pregunta": "¿Qué método permite insertar un elemento en una posición determinada de una List<T>?",
+    "respuesta": "Insert().",
+    "opciones": ["Insert().", "AddFirst().", "Push().", "SetCapacity()."]
+  },
+  {
+    "id": "programacion-csharp-0132",
+    "pregunta": "¿Qué método elimina la primera aparición de un elemento concreto de una List<T>?",
+    "respuesta": "Remove().",
+    "opciones": ["Remove().", "Clear().", "DeleteAll().", "Pop()."]
+  },
+  {
+    "id": "programacion-csharp-0133",
+    "pregunta": "¿Qué método elimina todos los elementos de una colección List<T>?",
+    "respuesta": "Clear().",
+    "opciones": ["Clear().", "Remove().", "Delete().", "ResetCount()."]
+  },
+  {
+    "id": "programacion-csharp-0134",
+    "pregunta": "¿Qué colección almacena pares de claves y valores?",
+    "respuesta": "Dictionary<TKey,TValue>.",
+    "opciones": ["Dictionary<TKey,TValue>.", "List<T>.", "Queue<T>.", "Stack<T>."]
+  },
+  {
+    "id": "programacion-csharp-0135",
+    "pregunta": "¿Qué característica tienen las claves de un Dictionary<TKey,TValue>?",
+    "respuesta": "Deben ser únicas dentro del diccionario.",
+    "opciones": [
+      "Deben ser únicas dentro del diccionario.",
+      "Pueden repetirse sin límite.",
+      "Solo pueden ser números enteros.",
+      "Deben estar ordenadas alfabéticamente."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0136",
+    "pregunta": "¿Qué colección no permite almacenar elementos duplicados según su comparador de igualdad?",
+    "respuesta": "HashSet<T>.",
+    "opciones": ["HashSet<T>.", "List<T>.", "Array.", "LinkedList<T>."]
+  },
+  {
+    "id": "programacion-csharp-0137",
+    "pregunta": "¿Qué estructura de datos sigue el principio LIFO?",
+    "respuesta": "Stack<T>.",
+    "opciones": ["Stack<T>.", "Queue<T>.", "List<T>.", "Dictionary<TKey,TValue>."]
+  },
+  {
+    "id": "programacion-csharp-0138",
+    "pregunta": "¿Qué significa LIFO?",
+    "respuesta": "Last In, First Out: el último elemento en entrar es el primero en salir.",
+    "opciones": [
+      "Last In, First Out: el último elemento en entrar es el primero en salir.",
+      "Last In, First Open.",
+      "First In, First Out.",
+      "First Input, Last Output."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0139",
+    "pregunta": "¿Qué estructura de datos sigue el principio FIFO?",
+    "respuesta": "Queue<T>.",
+    "opciones": ["Queue<T>.", "Stack<T>.", "HashSet<T>.", "Dictionary<TKey,TValue>."]
+  },
+  {
+    "id": "programacion-csharp-0140",
+    "pregunta": "¿Qué significa FIFO?",
+    "respuesta": "First In, First Out: el primer elemento en entrar es el primero en salir.",
+    "opciones": [
+      "First In, First Out: el primer elemento en entrar es el primero en salir.",
+      "First In, Final Out.",
+      "Last In, First Out.",
+      "Fast Input, Fast Output."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0141",
+    "pregunta": "¿Qué métodos se utilizan habitualmente para introducir y extraer elementos de una pila Stack<T>?",
+    "respuesta": "Push() y Pop().",
+    "opciones": ["Push() y Pop().", "Enqueue() y Dequeue().", "Add() y RemoveAt().", "Insert() y Clear()."]
+  },
+  {
+    "id": "programacion-csharp-0142",
+    "pregunta": "¿Qué métodos se utilizan habitualmente para añadir y extraer elementos de una cola Queue<T>?",
+    "respuesta": "Enqueue() y Dequeue().",
+    "opciones": ["Enqueue() y Dequeue().", "Push() y Pop().", "Add() y RemoveAt().", "Insert() y Clear()."]
+  },
+  {
+    "id": "programacion-csharp-0143",
+    "pregunta": "¿Qué método permite consultar el elemento superior de una pila sin eliminarlo?",
+    "respuesta": "Peek().",
+    "opciones": ["Peek().", "Pop().", "Dequeue().", "First()."]
+  },
+  {
+    "id": "programacion-csharp-0144",
+    "pregunta": "¿Qué colección permite insertar y eliminar nodos en una lista doblemente enlazada?",
+    "respuesta": "LinkedList<T>.",
+    "opciones": ["LinkedList<T>.", "List<T> exclusivamente.", "HashSet<T>.", "Queue<T>."]
+  },
+  {
+    "id": "programacion-csharp-0145",
+    "pregunta": "¿En qué espacio de nombres se encuentran habitualmente List<T>, Dictionary<TKey,TValue>, Stack<T> y Queue<T>?",
+    "respuesta": "System.Collections.Generic.",
+    "opciones": [
+      "System.Collections.Generic.",
+      "System.IO.",
+      "System.Text.",
+      "System.Net."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0146",
+    "pregunta": "¿Qué es un método en C#?",
+    "respuesta": "Un bloque de código asociado a un tipo que realiza una operación y puede recibir parámetros y devolver un resultado.",
+    "opciones": [
+      "Un bloque de código asociado a un tipo que realiza una operación y puede recibir parámetros y devolver un resultado.",
+      "Una variable que almacena exclusivamente números.",
+      "Una estructura de datos ordenada.",
+      "Un archivo de configuración."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0147",
+    "pregunta": "¿Qué palabra indica que un método no devuelve ningún valor?",
+    "respuesta": "void.",
+    "opciones": ["void.", "null.", "empty.", "static."]
+  },
+  {
+    "id": "programacion-csharp-0148",
+    "pregunta": "¿Qué es un parámetro de un método?",
+    "respuesta": "Una variable declarada en la definición del método que recibe un valor cuando se invoca.",
+    "opciones": [
+      "Una variable declarada en la definición del método que recibe un valor cuando se invoca.",
+      "El resultado que devuelve siempre el método.",
+      "Una clase que hereda de otra.",
+      "Una instrucción para terminar el programa."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0149",
+    "pregunta": "¿Qué es un argumento en una llamada a un método?",
+    "respuesta": "El valor o expresión que se proporciona al método para uno de sus parámetros.",
+    "opciones": [
+      "El valor o expresión que se proporciona al método para uno de sus parámetros.",
+      "El nombre del espacio de nombres.",
+      "El tipo de retorno obligatorio.",
+      "Una excepción del método."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0150",
+    "pregunta": "¿Qué instrucción permite devolver un resultado desde un método?",
+    "respuesta": "return.",
+    "opciones": ["return.", "break.", "continue.", "yield break exclusivamente."]
+  },
+  {
+    "id": "programacion-csharp-0151",
+    "pregunta": "¿Qué modificador permite que un método modifique directamente el valor de una variable del llamador?",
+    "respuesta": "ref.",
+    "opciones": ["ref.", "readonly.", "static.", "const."]
+  },
+  {
+    "id": "programacion-csharp-0152",
+    "pregunta": "¿Qué característica tiene un parámetro declarado con out?",
+    "respuesta": "El método debe asignarle un valor antes de finalizar normalmente.",
+    "opciones": [
+      "El método debe asignarle un valor antes de finalizar normalmente.",
+      "El parámetro solo puede recibir cadenas.",
+      "El parámetro no puede modificarse.",
+      "El parámetro siempre tiene que estar inicializado antes de la llamada."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0153",
+    "pregunta": "¿Qué diferencia principal existe entre ref y out?",
+    "respuesta": "ref exige que la variable esté inicializada antes de la llamada; out no exige esa inicialización.",
+    "opciones": [
+      "ref exige que la variable esté inicializada antes de la llamada; out no exige esa inicialización.",
+      "out solo funciona con cadenas.",
+      "ref no permite modificar el valor.",
+      "Ambos son idénticos en todos los aspectos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0154",
+    "pregunta": "¿Qué modificador permite pasar un argumento por referencia sin que el método pueda modificarlo a través de ese parámetro?",
+    "respuesta": "in.",
+    "opciones": ["in.", "ref.", "out.", "params."]
+  },
+  {
+    "id": "programacion-csharp-0155",
+    "pregunta": "¿Qué palabra permite declarar un parámetro que acepta un número variable de argumentos?",
+    "respuesta": "params.",
+    "opciones": ["params.", "varargs.", "optional.", "dynamic."]
+  }
+,
+  {
+    "id": "programacion-csharp-0156",
+    "pregunta": "¿Qué es un constructor en C#?",
+    "respuesta": "Un miembro especial que se ejecuta al crear una instancia y permite inicializar el objeto.",
+    "opciones": [
+      "Un miembro especial que se ejecuta al crear una instancia y permite inicializar el objeto.",
+      "Un método que siempre devuelve un entero.",
+      "Una propiedad que únicamente permite leer datos.",
+      "Una instrucción que destruye un objeto."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0157",
+    "pregunta": "¿Qué característica distingue a un constructor de un método ordinario?",
+    "respuesta": "Tiene el mismo nombre que la clase y no declara tipo de retorno.",
+    "opciones": [
+      "Tiene el mismo nombre que la clase y no declara tipo de retorno.",
+      "Siempre se llama Main.",
+      "Debe devolver void.",
+      "Solo puede tener parámetros de tipo string."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0158",
+    "pregunta": "¿Qué es un constructor predeterminado proporcionado por el compilador?",
+    "respuesta": "Un constructor de instancia sin parámetros que se proporciona si la clase no declara ningún constructor de instancia.",
+    "opciones": [
+      "Un constructor de instancia sin parámetros que se proporciona si la clase no declara ningún constructor de instancia.",
+      "Un constructor que siempre recibe un entero.",
+      "Un constructor que se ejecuta al cerrar el programa.",
+      "Un método estático obligatorio."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0159",
+    "pregunta": "¿Qué sucede con el constructor sin parámetros generado automáticamente cuando se declara otro constructor de instancia?",
+    "respuesta": "Deja de generarse automáticamente.",
+    "opciones": [
+      "Deja de generarse automáticamente.",
+      "Se genera siempre junto al constructor declarado.",
+      "Se convierte en un constructor estático.",
+      "Se ejecuta antes que cualquier constructor."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0160",
+    "pregunta": "¿Qué permite la sobrecarga de constructores?",
+    "respuesta": "Definir varios constructores con distintas listas de parámetros.",
+    "opciones": [
+      "Definir varios constructores con distintas listas de parámetros.",
+      "Definir constructores con idéntica firma y distinto tipo de retorno.",
+      "Crear varias clases con el mismo nombre en el mismo espacio de nombres.",
+      "Evitar la inicialización de todos los campos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0161",
+    "pregunta": "¿Qué sintaxis permite llamar a otro constructor de la misma clase?",
+    "respuesta": "La sintaxis this(...) en el inicializador del constructor.",
+    "opciones": [
+      "La sintaxis this(...) en el inicializador del constructor.",
+      "La palabra base obligatoriamente.",
+      "La palabra override.",
+      "La instrucción return new(...)."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0162",
+    "pregunta": "¿Qué es un constructor estático?",
+    "respuesta": "Un constructor que inicializa los miembros estáticos de un tipo y se ejecuta automáticamente como parte de su inicialización.",
+    "opciones": [
+      "Un constructor que inicializa los miembros estáticos de un tipo y se ejecuta automáticamente como parte de su inicialización.",
+      "Un constructor que crea objetos en memoria estática.",
+      "Un constructor que debe invocarse mediante new.",
+      "Un constructor que recibe siempre un parámetro static."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0163",
+    "pregunta": "¿Qué característica tiene un constructor estático de C#?",
+    "respuesta": "No tiene modificador de acceso, no recibe parámetros y no puede invocarse directamente.",
+    "opciones": [
+      "No tiene modificador de acceso, no recibe parámetros y no puede invocarse directamente.",
+      "Siempre es public y recibe parámetros.",
+      "Debe devolver void.",
+      "Puede sobrecargarse con distintos parámetros."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0164",
+    "pregunta": "¿Qué significa que un miembro de una clase sea static?",
+    "respuesta": "Que pertenece al tipo y no a una instancia concreta.",
+    "opciones": [
+      "Que pertenece al tipo y no a una instancia concreta.",
+      "Que solo puede utilizarse desde otra clase.",
+      "Que se crea una copia para cada objeto.",
+      "Que no puede recibir parámetros."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0165",
+    "pregunta": "¿Cómo se accede normalmente a un miembro estático público?",
+    "respuesta": "Mediante el nombre del tipo seguido del operador punto.",
+    "opciones": [
+      "Mediante el nombre del tipo seguido del operador punto.",
+      "Mediante una instancia obligatoriamente.",
+      "Mediante el operador flecha.",
+      "Mediante la palabra base."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0166",
+    "pregunta": "¿Puede un método estático acceder directamente a un miembro de instancia sin disponer de una referencia al objeto?",
+    "respuesta": "No, necesita una referencia a una instancia para acceder a sus miembros de instancia.",
+    "opciones": [
+      "No, necesita una referencia a una instancia para acceder a sus miembros de instancia.",
+      "Sí, siempre puede acceder a cualquier miembro.",
+      "Sí, pero solo si el miembro es privado.",
+      "No, porque los métodos estáticos no pueden contener instrucciones."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0167",
+    "pregunta": "¿Qué es una clase estática?",
+    "respuesta": "Una clase que no puede instanciarse ni utilizarse como clase base y que solo puede contener miembros estáticos.",
+    "opciones": [
+      "Una clase que no puede instanciarse ni utilizarse como clase base y que solo puede contener miembros estáticos.",
+      "Una clase que permite crear una única instancia.",
+      "Una clase cuyos miembros son todos privados.",
+      "Una clase que no puede contener métodos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0168",
+    "pregunta": "¿Qué es un inicializador de objeto?",
+    "respuesta": "Una sintaxis que permite establecer valores de propiedades o campos al crear una instancia.",
+    "opciones": [
+      "Una sintaxis que permite establecer valores de propiedades o campos al crear una instancia.",
+      "Un método que destruye el objeto después de crearlo.",
+      "Una instrucción para declarar una interfaz.",
+      "Una forma de convertir un objeto en una cadena."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0169",
+    "pregunta": "¿Qué es una propiedad automática en C#?",
+    "respuesta": "Una propiedad cuyos accesores get y set son implementados automáticamente por el compilador mediante un campo de respaldo.",
+    "opciones": [
+      "Una propiedad cuyos accesores get y set son implementados automáticamente por el compilador mediante un campo de respaldo.",
+      "Una variable global que no pertenece a ninguna clase.",
+      "Un método que se ejecuta automáticamente cada segundo.",
+      "Una propiedad que solo puede utilizarse en interfaces."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0170",
+    "pregunta": "¿Qué diferencia existe entre un campo y una propiedad?",
+    "respuesta": "El campo almacena directamente un dato, mientras que la propiedad proporciona acceso mediante accesores.",
+    "opciones": [
+      "El campo almacena directamente un dato, mientras que la propiedad proporciona acceso mediante accesores.",
+      "Una propiedad siempre almacena más datos que un campo.",
+      "Los campos solo pueden ser públicos.",
+      "No existe ninguna diferencia."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0171",
+    "pregunta": "¿Qué hace el accesor get de una propiedad?",
+    "respuesta": "Permite obtener el valor de la propiedad.",
+    "opciones": [
+      "Permite obtener el valor de la propiedad.",
+      "Permite eliminar la propiedad.",
+      "Inicializa obligatoriamente el objeto.",
+      "Impide leer el valor."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0172",
+    "pregunta": "¿Qué hace el accesor set de una propiedad?",
+    "respuesta": "Permite asignar un valor a la propiedad.",
+    "opciones": [
+      "Permite asignar un valor a la propiedad.",
+      "Devuelve siempre el valor anterior.",
+      "Convierte la propiedad en estática.",
+      "Elimina el campo asociado."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0173",
+    "pregunta": "¿Qué permite el accesor init de una propiedad?",
+    "respuesta": "Permite asignar la propiedad durante la creación o inicialización del objeto, pero no modificarla mediante una asignación ordinaria posterior.",
+    "opciones": [
+      "Permite asignar la propiedad durante la creación o inicialización del objeto, pero no modificarla mediante una asignación ordinaria posterior.",
+      "Permite modificarla exclusivamente desde métodos estáticos.",
+      "Impide asignarle cualquier valor.",
+      "Hace que la propiedad sea siempre pública."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0174",
+    "pregunta": "¿Qué es un indexador en C#?",
+    "respuesta": "Un miembro que permite acceder a un objeto mediante una sintaxis similar a la indexación de arrays.",
+    "opciones": [
+      "Un miembro que permite acceder a un objeto mediante una sintaxis similar a la indexación de arrays.",
+      "Un método que ordena automáticamente una colección.",
+      "Un tipo de dato entero.",
+      "Un constructor que recibe índices."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0175",
+    "pregunta": "¿Qué palabra se utiliza habitualmente para declarar un indexador?",
+    "respuesta": "this.",
+    "opciones": [
       "this.",
+      "index.",
       "base.",
-      "using."
+      "array."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0176",
+    "pregunta": "¿Qué es la herencia en programación orientada a objetos?",
+    "respuesta": "Un mecanismo por el que una clase derivada adquiere y puede ampliar miembros de una clase base.",
+    "opciones": [
+      "Un mecanismo por el que una clase derivada adquiere y puede ampliar miembros de una clase base.",
+      "Un mecanismo que copia automáticamente todos los objetos en memoria.",
+      "Una técnica para convertir variables en constantes.",
+      "Un procedimiento para ordenar clases alfabéticamente."
     ]
   },
   {
-    "id": "programacion-csharp-0009",
-    "pregunta": "¿Qué representa this en una instancia?",
-    "respuesta": "Una referencia a la instancia actual.",
+    "id": "programacion-csharp-0177",
+    "pregunta": "¿Qué palabra identifica a la clase base dentro de una clase derivada?",
+    "respuesta": "base.",
     "opciones": [
-      "Una referencia a la instancia actual.",
-      "Una referencia a la clase base siempre.",
-      "El espacio de nombres actual.",
-      "El recolector de basura."
+      "base.",
+      "this.",
+      "super.",
+      "parent."
     ]
   },
   {
-    "id": "programacion-csharp-0010",
-    "pregunta": "¿Para qué se utiliza base?",
-    "respuesta": "Para acceder a miembros de la clase base o invocar su constructor.",
+    "id": "programacion-csharp-0178",
+    "pregunta": "¿Qué es el polimorfismo?",
+    "respuesta": "La capacidad de tratar objetos de distintos tipos derivados mediante una interfaz o tipo común y obtener comportamientos específicos.",
     "opciones": [
-      "Para acceder a miembros de la clase base o invocar su constructor.",
-      "Para declarar una variable local.",
-      "Para crear una interfaz.",
-      "Para liberar memoria."
+      "La capacidad de tratar objetos de distintos tipos derivados mediante una interfaz o tipo común y obtener comportamientos específicos.",
+      "La capacidad de declarar varias variables con el mismo nombre en un método.",
+      "La conversión automática de cualquier objeto a string.",
+      "La posibilidad de crear varias instancias de una clase estática."
     ]
   },
   {
-    "id": "programacion-csharp-0011",
-    "pregunta": "¿Qué palabra indica que una clase implementa una interfaz o deriva de una clase base?",
-    "respuesta": "Se utiliza la sintaxis con dos puntos (:).",
+    "id": "programacion-csharp-0179",
+    "pregunta": "¿Qué diferencia existe entre sobrescritura y sobrecarga de métodos?",
+    "respuesta": "La sobrescritura redefine un miembro heredado; la sobrecarga define métodos con el mismo nombre y distintas listas de parámetros.",
     "opciones": [
-      "Se utiliza la sintaxis con dos puntos (:).",
-      "implements.",
-      "extends.",
-      "inherits."
+      "La sobrescritura redefine un miembro heredado; la sobrecarga define métodos con el mismo nombre y distintas listas de parámetros.",
+      "La sobrescritura cambia parámetros y la sobrecarga cambia únicamente el tipo de retorno.",
+      "Ambas significan exactamente lo mismo.",
+      "La sobrecarga solo se aplica a constructores."
     ]
   },
   {
-    "id": "programacion-csharp-0012",
-    "pregunta": "¿Permite C# herencia múltiple de clases?",
-    "respuesta": "No; una clase solo puede tener una clase base directa, aunque puede implementar varias interfaces.",
+    "id": "programacion-csharp-0180",
+    "pregunta": "¿Qué modificador impide que un método virtual heredado pueda sobrescribirse de nuevo en una clase derivada?",
+    "respuesta": "sealed, aplicado al miembro sobrescrito.",
     "opciones": [
-      "No; una clase solo puede tener una clase base directa, aunque puede implementar varias interfaces.",
-      "Sí, sin límite.",
-      "Sí, pero solo con clases abstractas.",
-      "Solo en .NET Framework."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0013",
-    "pregunta": "¿Qué es una interfaz en C#?",
-    "respuesta": "Un contrato que define miembros que los tipos implementadores deben proporcionar según las reglas del lenguaje.",
-    "opciones": [
-      "Un contrato que define miembros que los tipos implementadores deben proporcionar según las reglas del lenguaje.",
-      "Una clase que no puede contener métodos.",
-      "Un objeto que siempre se instancia con new.",
-      "Un espacio de nombres."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0014",
-    "pregunta": "¿Qué es una clase abstracta?",
-    "respuesta": "Una clase que no puede instanciarse directamente y puede incluir miembros abstractos y concretos.",
-    "opciones": [
-      "Una clase que no puede instanciarse directamente y puede incluir miembros abstractos y concretos.",
-      "Una clase que no puede tener campos.",
-      "Una clase sellada.",
-      "Una clase cuyos métodos son todos estáticos."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0015",
-    "pregunta": "¿Qué modificador impide que una clase pueda heredarse?",
-    "respuesta": "sealed.",
-    "opciones": [
-      "sealed.",
+      "sealed, aplicado al miembro sobrescrito.",
       "abstract.",
-      "virtual.",
-      "partial."
+      "partial.",
+      "static."
     ]
   },
   {
-    "id": "programacion-csharp-0016",
-    "pregunta": "¿Qué modificador permite que un método pueda sobrescribirse en una clase derivada?",
-    "respuesta": "virtual.",
+    "id": "programacion-csharp-0181",
+    "pregunta": "¿Qué significa ocultar un miembro heredado mediante new?",
+    "respuesta": "Declarar un miembro en la clase derivada que oculta un miembro con el mismo nombre de la clase base.",
     "opciones": [
-      "virtual.",
-      "sealed.",
-      "const.",
-      "extern."
+      "Declarar un miembro en la clase derivada que oculta un miembro con el mismo nombre de la clase base.",
+      "Sobrescribir obligatoriamente un método virtual.",
+      "Eliminar el miembro de la clase base.",
+      "Crear una nueva instancia de la clase base."
     ]
   },
   {
-    "id": "programacion-csharp-0017",
-    "pregunta": "¿Qué palabra se utiliza para sobrescribir un miembro virtual o abstracto heredado?",
-    "respuesta": "override.",
+    "id": "programacion-csharp-0182",
+    "pregunta": "¿Qué modificador permite acceder a un miembro desde la propia clase y desde sus clases derivadas?",
+    "respuesta": "protected.",
     "opciones": [
-      "override.",
-      "overload.",
-      "virtualize.",
-      "extends."
+      "protected.",
+      "private.",
+      "internal exclusivamente.",
+      "public exclusivamente."
     ]
   },
   {
-    "id": "programacion-csharp-0018",
-    "pregunta": "¿Qué significa sobrecargar un método?",
-    "respuesta": "Definir métodos con el mismo nombre y diferentes listas de parámetros.",
+    "id": "programacion-csharp-0183",
+    "pregunta": "¿Qué significa el modificador internal?",
+    "respuesta": "Que el miembro o tipo es accesible dentro del mismo ensamblado.",
     "opciones": [
-      "Definir métodos con el mismo nombre y diferentes listas de parámetros.",
-      "Redefinir un método virtual en una subclase.",
-      "Cambiar el tipo de una clase en ejecución.",
-      "Declarar dos métodos con idéntica firma en el mismo tipo."
+      "Que el miembro o tipo es accesible dentro del mismo ensamblado.",
+      "Que solo es accesible desde la propia clase.",
+      "Que es accesible desde cualquier aplicación sin restricciones.",
+      "Que solo se puede utilizar desde clases derivadas."
     ]
   },
   {
-    "id": "programacion-csharp-0019",
-    "pregunta": "¿Qué son los modificadores de acceso?",
-    "respuesta": "Palabras que controlan desde dónde pueden utilizarse tipos y miembros.",
+    "id": "programacion-csharp-0184",
+    "pregunta": "¿Qué significa protected internal?",
+    "respuesta": "Permite el acceso desde el mismo ensamblado o desde tipos derivados.",
     "opciones": [
-      "Palabras que controlan desde dónde pueden utilizarse tipos y miembros.",
-      "Operadores aritméticos.",
-      "Atributos de una tabla SQL.",
-      "Instrucciones para crear objetos."
+      "Permite el acceso desde el mismo ensamblado o desde tipos derivados.",
+      "Solo permite el acceso desde la misma clase.",
+      "Permite el acceso exclusivamente desde clases del mismo espacio de nombres.",
+      "Es equivalente a private."
     ]
   },
   {
-    "id": "programacion-csharp-0020",
-    "pregunta": "¿Qué diferencia general hay entre const y readonly?",
-    "respuesta": "const es una constante evaluada en compilación; readonly puede asignarse en su declaración o en el constructor.",
+    "id": "programacion-csharp-0185",
+    "pregunta": "¿Qué significa private protected?",
+    "respuesta": "Permite el acceso desde tipos derivados que se encuentran en el mismo ensamblado.",
     "opciones": [
-      "const es una constante evaluada en compilación; readonly puede asignarse en su declaración o en el constructor.",
-      "readonly solo se aplica a métodos y const a clases.",
-      "const puede cambiar en cualquier método.",
-      "Son sinónimos exactos."
+      "Permite el acceso desde tipos derivados que se encuentran en el mismo ensamblado.",
+      "Permite el acceso desde cualquier ensamblado.",
+      "Es equivalente a public.",
+      "Solo permite el acceso desde métodos estáticos."
     ]
   },
   {
-    "id": "programacion-csharp-0021",
-    "pregunta": "¿Qué es una propiedad en C#?",
-    "respuesta": "Un miembro que proporciona acceso controlado a un valor mediante accesores get y/o set.",
+    "id": "programacion-csharp-0186",
+    "pregunta": "¿Qué es una clase parcial declarada mediante partial?",
+    "respuesta": "Una clase cuya definición puede repartirse entre varios archivos o declaraciones.",
     "opciones": [
-      "Un miembro que proporciona acceso controlado a un valor mediante accesores get y/o set.",
-      "Una variable global obligatoria.",
-      "Un método que siempre devuelve una colección.",
-      "Un espacio de nombres."
+      "Una clase cuya definición puede repartirse entre varios archivos o declaraciones.",
+      "Una clase que solo puede contener la mitad de sus métodos.",
+      "Una clase que no puede instanciarse.",
+      "Una clase que hereda de dos clases base."
     ]
   },
   {
-    "id": "programacion-csharp-0022",
-    "pregunta": "¿Qué es un campo?",
-    "respuesta": "Una variable declarada dentro de un tipo que almacena parte de su estado.",
+    "id": "programacion-csharp-0187",
+    "pregunta": "¿Puede una clase abstracta contener métodos implementados?",
+    "respuesta": "Sí, puede contener métodos abstractos y métodos con implementación.",
     "opciones": [
-      "Una variable declarada dentro de un tipo que almacena parte de su estado.",
-      "Una función anónima.",
-      "Una interfaz de usuario.",
-      "Una consulta LINQ."
+      "Sí, puede contener métodos abstractos y métodos con implementación.",
+      "No, todos sus métodos deben carecer de implementación.",
+      "No, únicamente puede contener campos.",
+      "Sí, pero solo métodos estáticos."
     ]
   },
   {
-    "id": "programacion-csharp-0023",
-    "pregunta": "¿Qué es una estructura (struct) en C#?",
-    "respuesta": "Un tipo de valor que puede agrupar datos y miembros.",
+    "id": "programacion-csharp-0188",
+    "pregunta": "¿Puede una clase derivada sobrescribir un método abstracto de su clase base?",
+    "respuesta": "Sí, debe implementarlo si la clase derivada no es también abstracta.",
     "opciones": [
-      "Un tipo de valor que puede agrupar datos y miembros.",
+      "Sí, debe implementarlo si la clase derivada no es también abstracta.",
+      "No, los métodos abstractos nunca pueden implementarse.",
+      "Solo puede hacerlo mediante new.",
+      "Solo si el método es private."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0189",
+    "pregunta": "¿Qué es una clase sellada (sealed)?",
+    "respuesta": "Una clase de la que no se puede derivar otra clase.",
+    "opciones": [
+      "Una clase de la que no se puede derivar otra clase.",
+      "Una clase que no puede tener métodos.",
+      "Una clase que siempre debe ser abstracta.",
+      "Una clase cuyos objetos no pueden modificarse."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0190",
+    "pregunta": "¿Qué relación existe entre object y las clases de C#?",
+    "respuesta": "object es el alias de System.Object y constituye la raíz de la jerarquía de tipos de .NET.",
+    "opciones": [
+      "object es el alias de System.Object y constituye la raíz de la jerarquía de tipos de .NET.",
+      "object es una interfaz que solo implementan los arrays.",
+      "object es una clase que solo admite cadenas.",
+      "object es un modificador de acceso."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0191",
+    "pregunta": "¿Puede una clase implementar varias interfaces?",
+    "respuesta": "Sí, una clase puede implementar varias interfaces.",
+    "opciones": [
+      "Sí, una clase puede implementar varias interfaces.",
+      "No, solo puede implementar una.",
+      "Solo puede implementar dos.",
+      "Únicamente si es abstracta."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0192",
+    "pregunta": "¿Puede una interfaz heredar de otra interfaz?",
+    "respuesta": "Sí, una interfaz puede heredar de una o varias interfaces.",
+    "opciones": [
+      "Sí, una interfaz puede heredar de una o varias interfaces.",
+      "No, las interfaces no pueden heredar.",
+      "Solo puede heredar de una clase abstracta.",
+      "Únicamente si contiene métodos estáticos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0193",
+    "pregunta": "¿Qué diferencia general existe entre una interfaz y una clase abstracta?",
+    "respuesta": "Una clase abstracta puede almacenar estado de instancia y proporcionar implementación; una interfaz define un contrato y también puede incluir implementaciones predeterminadas según las versiones del lenguaje.",
+    "opciones": [
+      "Una clase abstracta puede almacenar estado de instancia y proporcionar implementación; una interfaz define un contrato y también puede incluir implementaciones predeterminadas según las versiones del lenguaje.",
+      "Una interfaz siempre puede instanciarse y una clase abstracta no.",
+      "Una clase abstracta no puede tener métodos implementados.",
+      "No existe ninguna diferencia."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0194",
+    "pregunta": "¿Qué es una implementación explícita de una interfaz?",
+    "respuesta": "Una implementación de un miembro de interfaz que se accede a través de una referencia del tipo de interfaz.",
+    "opciones": [
+      "Una implementación de un miembro de interfaz que se accede a través de una referencia del tipo de interfaz.",
+      "Una implementación que convierte automáticamente la interfaz en una clase.",
+      "Una implementación que hace públicos todos los miembros privados.",
+      "Una implementación que impide utilizar la interfaz."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0195",
+    "pregunta": "¿Qué es una estructura struct en C#?",
+    "respuesta": "Un tipo de valor que puede contener campos, propiedades, métodos y constructores.",
+    "opciones": [
+      "Un tipo de valor que puede contener campos, propiedades, métodos y constructores.",
       "Un tipo de referencia idéntico a una clase.",
-      "Un tipo que solo admite cadenas.",
-      "Una clase que no puede tener métodos."
+      "Una colección que solo admite números.",
+      "Un tipo que no puede implementar interfaces."
     ]
   },
   {
-    "id": "programacion-csharp-0024",
-    "pregunta": "¿Qué diferencia básica hay entre tipos de valor y tipos de referencia?",
-    "respuesta": "Los tipos de valor contienen directamente su valor; las variables de tipo referencia contienen una referencia a un objeto.",
+    "id": "programacion-csharp-0196",
+    "pregunta": "¿Qué característica general diferencia a una estructura de una clase?",
+    "respuesta": "Las estructuras son tipos de valor y las clases son tipos de referencia.",
     "opciones": [
-      "Los tipos de valor contienen directamente su valor; las variables de tipo referencia contienen una referencia a un objeto.",
-      "Los tipos de valor siempre se almacenan en disco.",
-      "Los tipos de referencia no pueden ser nulos.",
-      "No hay diferencia semántica."
+      "Las estructuras son tipos de valor y las clases son tipos de referencia.",
+      "Las estructuras no pueden tener métodos.",
+      "Las clases no pueden tener constructores.",
+      "Las estructuras siempre se almacenan en disco."
     ]
   },
   {
-    "id": "programacion-csharp-0025",
-    "pregunta": "¿Qué es boxing?",
-    "respuesta": "Convertir un tipo de valor en object o en una interfaz implementada, envolviendo el valor.",
+    "id": "programacion-csharp-0197",
+    "pregunta": "¿Qué es un tipo record en C#?",
+    "respuesta": "Un tipo orientado a datos que proporciona, entre otras características, igualdad basada en valores.",
     "opciones": [
-      "Convertir un tipo de valor en object o en una interfaz implementada, envolviendo el valor.",
-      "Convertir una cadena en un entero.",
-      "Convertir una clase en una interfaz.",
-      "Liberar un objeto de memoria."
+      "Un tipo orientado a datos que proporciona, entre otras características, igualdad basada en valores.",
+      "Un tipo exclusivo para grabar archivos.",
+      "Una interfaz de acceso a bases de datos.",
+      "Un tipo de excepción."
     ]
   },
   {
-    "id": "programacion-csharp-0026",
-    "pregunta": "¿Qué es unboxing?",
-    "respuesta": "Extraer un valor de un objeto que contiene previamente un valor empaquetado, con conversión compatible.",
+    "id": "programacion-csharp-0198",
+    "pregunta": "¿Qué diferencia existe entre record class y record struct?",
+    "respuesta": "record class define un tipo de referencia y record struct define un tipo de valor.",
     "opciones": [
-      "Extraer un valor de un objeto que contiene previamente un valor empaquetado, con conversión compatible.",
-      "Convertir cualquier objeto a string.",
-      "Convertir un tipo de referencia en una clase abstracta.",
-      "Copiar un objeto a disco."
+      "record class define un tipo de referencia y record struct define un tipo de valor.",
+      "record class es abstracto y record struct es sellado.",
+      "record struct no puede contener propiedades.",
+      "Ambos son siempre tipos de referencia."
     ]
   },
   {
-    "id": "programacion-csharp-0027",
-    "pregunta": "¿Qué palabra representa ausencia de referencia o valor nulo en tipos compatibles?",
-    "respuesta": "null.",
+    "id": "programacion-csharp-0199",
+    "pregunta": "¿Qué es una tupla en C#?",
+    "respuesta": "Una estructura que permite agrupar varios valores, posiblemente de tipos diferentes, en una única unidad.",
     "opciones": [
-      "null.",
-      "void.",
-      "empty.",
-      "undefined."
+      "Una estructura que permite agrupar varios valores, posiblemente de tipos diferentes, en una única unidad.",
+      "Una colección que solo almacena elementos del mismo tipo.",
+      "Una clase que representa una excepción.",
+      "Un método que devuelve siempre dos valores enteros."
     ]
   },
   {
-    "id": "programacion-csharp-0028",
-    "pregunta": "¿Qué operador permite proporcionar un valor alternativo cuando una expresión es null?",
+    "id": "programacion-csharp-0200",
+    "pregunta": "¿Qué sintaxis permite crear una tupla con dos elementos?",
+    "respuesta": "(valor1, valor2).",
+    "opciones": [
+      "(valor1, valor2).",
+      "[valor1, valor2].",
+      "{valor1; valor2}.",
+      "new TupleArray(valor1, valor2)."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0201",
+    "pregunta": "¿Qué es una conversión boxing?",
+    "respuesta": "La conversión de un tipo de valor a object o a una interfaz que implementa, envolviendo el valor.",
+    "opciones": [
+      "La conversión de un tipo de valor a object o a una interfaz que implementa, envolviendo el valor.",
+      "La conversión de una cadena a un entero.",
+      "La conversión de una clase a una interfaz abstracta.",
+      "La liberación de memoria de un objeto."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0202",
+    "pregunta": "¿Qué es una conversión unboxing?",
+    "respuesta": "La extracción de un valor de tipo valor desde un objeto que contiene previamente ese valor empaquetado.",
+    "opciones": [
+      "La extracción de un valor de tipo valor desde un objeto que contiene previamente ese valor empaquetado.",
+      "La conversión de un entero a una cadena.",
+      "La conversión de un objeto en una interfaz.",
+      "La eliminación de un objeto del heap."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0203",
+    "pregunta": "¿Qué es la programación genérica en C#?",
+    "respuesta": "Una técnica que permite definir clases, interfaces y métodos parametrizados por tipos.",
+    "opciones": [
+      "Una técnica que permite definir clases, interfaces y métodos parametrizados por tipos.",
+      "Una técnica que obliga a utilizar únicamente object.",
+      "Un mecanismo exclusivo para crear arrays.",
+      "Una forma de ejecutar código sin compilar."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0204",
+    "pregunta": "¿Qué representa T en una declaración como List<T>?",
+    "respuesta": "Un parámetro de tipo que se sustituye por un tipo concreto al utilizar el tipo genérico.",
+    "opciones": [
+      "Un parámetro de tipo que se sustituye por un tipo concreto al utilizar el tipo genérico.",
+      "Una variable global de tipo entero.",
+      "Una palabra reservada para declarar métodos estáticos.",
+      "Un tipo de excepción."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0205",
+    "pregunta": "¿Qué ventaja principal ofrecen los tipos genéricos frente al uso indiscriminado de object?",
+    "respuesta": "Proporcionan seguridad de tipos y reducen la necesidad de conversiones explícitas.",
+    "opciones": [
+      "Proporcionan seguridad de tipos y reducen la necesidad de conversiones explícitas.",
+      "Permiten omitir todas las comprobaciones del compilador.",
+      "Eliminan la necesidad de utilizar clases.",
+      "Garantizan que el programa no tenga errores."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0206",
+    "pregunta": "¿Qué palabra introduce una restricción sobre los tipos que puede aceptar un parámetro genérico?",
+    "respuesta": "where.",
+    "opciones": [
+      "where.",
+      "when.",
+      "constraint.",
+      "restrict."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0207",
+    "pregunta": "¿Qué significa la restricción where T : class?",
+    "respuesta": "Que el parámetro genérico debe ser un tipo de referencia.",
+    "opciones": [
+      "Que el parámetro genérico debe ser un tipo de referencia.",
+      "Que debe ser exclusivamente una clase pública.",
+      "Que debe ser un tipo entero.",
+      "Que no puede implementar interfaces."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0208",
+    "pregunta": "¿Qué significa la restricción where T : struct?",
+    "respuesta": "Que el parámetro genérico debe ser un tipo de valor no nullable.",
+    "opciones": [
+      "Que el parámetro genérico debe ser un tipo de valor no nullable.",
+      "Que debe ser una clase abstracta.",
+      "Que debe ser una interfaz.",
+      "Que debe ser una cadena."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0209",
+    "pregunta": "¿Qué permite la restricción new() en un parámetro genérico?",
+    "respuesta": "Exige que el tipo tenga un constructor público sin parámetros.",
+    "opciones": [
+      "Exige que el tipo tenga un constructor público sin parámetros.",
+      "Exige que el tipo sea estático.",
+      "Exige que el tipo sea una interfaz.",
+      "Permite crear cualquier objeto sin constructor."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0210",
+    "pregunta": "¿Qué es la covarianza en parámetros genéricos?",
+    "respuesta": "Permite utilizar un tipo más específico cuando se espera un tipo más general en determinadas interfaces o delegados.",
+    "opciones": [
+      "Permite utilizar un tipo más específico cuando se espera un tipo más general en determinadas interfaces o delegados.",
+      "Permite convertir cualquier tipo de valor en cualquier otro.",
+      "Permite modificar un parámetro de entrada desde cualquier método.",
+      "Impide utilizar la herencia."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0211",
+    "pregunta": "¿Qué palabra identifica la covarianza en un parámetro genérico de interfaz o delegado?",
+    "respuesta": "out.",
+    "opciones": [
+      "out.",
+      "in.",
+      "ref.",
+      "params."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0212",
+    "pregunta": "¿Qué palabra identifica la contravarianza en un parámetro genérico de interfaz o delegado?",
+    "respuesta": "in.",
+    "opciones": [
+      "in.",
+      "out.",
+      "ref.",
+      "where."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0213",
+    "pregunta": "¿Qué es un delegado en C#?",
+    "respuesta": "Un tipo que representa referencias a métodos compatibles con una determinada firma.",
+    "opciones": [
+      "Un tipo que representa referencias a métodos compatibles con una determinada firma.",
+      "Una clase que almacena exclusivamente números.",
+      "Una interfaz para acceder a bases de datos.",
+      "Un método que solo puede ejecutarse una vez."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0214",
+    "pregunta": "¿Qué significa que un delegado sea de tipo seguro?",
+    "respuesta": "Que solo puede referenciar métodos compatibles con su tipo de retorno y sus parámetros.",
+    "opciones": [
+      "Que solo puede referenciar métodos compatibles con su tipo de retorno y sus parámetros.",
+      "Que no puede contener referencias a métodos.",
+      "Que solo puede ejecutarse desde una clase estática.",
+      "Que impide lanzar excepciones."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0215",
+    "pregunta": "¿Qué es un delegado multicast?",
+    "respuesta": "Un delegado que puede mantener una lista de invocación con varios métodos.",
+    "opciones": [
+      "Un delegado que puede mantener una lista de invocación con varios métodos.",
+      "Un delegado que solo admite varios parámetros.",
+      "Un delegado que se ejecuta en varios ordenadores.",
+      "Un delegado que no puede devolver valores."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0216",
+    "pregunta": "¿Qué operador permite añadir un método a la lista de invocación de un delegado?",
+    "respuesta": "+=.",
+    "opciones": [
+      "+=.",
+      "-=.",
+      "==.",
+      "=>."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0217",
+    "pregunta": "¿Qué operador permite quitar un método de la lista de invocación de un delegado?",
+    "respuesta": "-=.",
+    "opciones": [
+      "-=.",
+      "+=.",
+      "!=.",
+      "??."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0218",
+    "pregunta": "¿Qué es Action en C#?",
+    "respuesta": "Un delegado genérico predefinido que representa métodos que no devuelven un valor.",
+    "opciones": [
+      "Un delegado genérico predefinido que representa métodos que no devuelven un valor.",
+      "Una clase que ejecuta consultas SQL.",
+      "Un tipo de colección ordenada.",
+      "Un delegado que siempre devuelve bool."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0219",
+    "pregunta": "¿Qué es Func en C#?",
+    "respuesta": "Un delegado genérico predefinido que representa métodos que devuelven un resultado.",
+    "opciones": [
+      "Un delegado genérico predefinido que representa métodos que devuelven un resultado.",
+      "Una clase que almacena funciones en disco.",
+      "Un delegado que nunca recibe parámetros.",
+      "Una colección de métodos estáticos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0220",
+    "pregunta": "¿Qué tipo de resultado devuelve normalmente Predicate<T>?",
+    "respuesta": "Un valor booleano que indica si se cumple una condición sobre un elemento de tipo T.",
+    "opciones": [
+      "Un valor booleano que indica si se cumple una condición sobre un elemento de tipo T.",
+      "Un número entero.",
+      "Una cadena de caracteres.",
+      "Un objeto de tipo Task."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0221",
+    "pregunta": "¿Qué es una expresión lambda?",
+    "respuesta": "Una forma concisa de expresar una función anónima mediante el operador =>.",
+    "opciones": [
+      "Una forma concisa de expresar una función anónima mediante el operador =>.",
+      "Una clase que no puede instanciarse.",
+      "Una instrucción para importar espacios de nombres.",
+      "Una expresión que solo permite operaciones matemáticas."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0222",
+    "pregunta": "¿Qué significa la expresión x => x * 2?",
+    "respuesta": "Una función que recibe x y devuelve su valor multiplicado por dos.",
+    "opciones": [
+      "Una función que recibe x y devuelve su valor multiplicado por dos.",
+      "Una declaración de una clase llamada x.",
+      "Una comparación de igualdad.",
+      "Una instrucción que multiplica todos los elementos de un array."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0223",
+    "pregunta": "¿Qué diferencia general existe entre un evento y un delegado?",
+    "respuesta": "El delegado representa una referencia a métodos; el evento proporciona un mecanismo controlado de suscripción y notificación.",
+    "opciones": [
+      "El delegado representa una referencia a métodos; el evento proporciona un mecanismo controlado de suscripción y notificación.",
+      "Un evento es siempre una variable entera.",
+      "Un delegado solo sirve para crear objetos.",
+      "No existe ninguna diferencia."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0224",
+    "pregunta": "¿Qué representa IEnumerable<T>?",
+    "respuesta": "Una interfaz que permite enumerar una secuencia de elementos de tipo T.",
+    "opciones": [
+      "Una interfaz que permite enumerar una secuencia de elementos de tipo T.",
+      "Una clase que almacena pares clave-valor.",
+      "Una interfaz exclusiva para ordenar arrays.",
+      "Un tipo numérico."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0225",
+    "pregunta": "¿Qué método define IEnumerator<T> para avanzar al siguiente elemento de una secuencia?",
+    "respuesta": "MoveNext().",
+    "opciones": [
+      "MoveNext().",
+      "NextItem().",
+      "Advance().",
+      "GetNext()."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0226",
+    "pregunta": "¿Qué propiedad de IEnumerator<T> permite obtener el elemento actual?",
+    "respuesta": "Current.",
+    "opciones": [
+      "Current.",
+      "Value.",
+      "Item.",
+      "Position."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0227",
+    "pregunta": "¿Qué palabra permite implementar un iterador devolviendo elementos de uno en uno?",
+    "respuesta": "yield return.",
+    "opciones": [
+      "yield return.",
+      "return each.",
+      "foreach return.",
+      "async return."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0228",
+    "pregunta": "¿Qué hace yield break?",
+    "respuesta": "Finaliza la enumeración de un iterador.",
+    "opciones": [
+      "Finaliza la enumeración de un iterador.",
+      "Salta únicamente la iteración actual.",
+      "Finaliza siempre toda la aplicación.",
+      "Lanza una excepción de forma automática."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0229",
+    "pregunta": "¿Qué espacio de nombres contiene los operadores habituales de LINQ?",
+    "respuesta": "System.Linq.",
+    "opciones": [
+      "System.Linq.",
+      "System.Text.",
+      "System.IO.",
+      "System.Net."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0230",
+    "pregunta": "¿Qué hace el operador Where de LINQ?",
+    "respuesta": "Filtra los elementos de una secuencia según una condición.",
+    "opciones": [
+      "Filtra los elementos de una secuencia según una condición.",
+      "Ordena los elementos alfabéticamente.",
+      "Transforma todos los elementos en cadenas.",
+      "Elimina siempre los elementos duplicados."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0231",
+    "pregunta": "¿Qué hace el operador Select de LINQ?",
+    "respuesta": "Proyecta cada elemento de una secuencia en un nuevo valor o forma.",
+    "opciones": [
+      "Proyecta cada elemento de una secuencia en un nuevo valor o forma.",
+      "Filtra los elementos que cumplen una condición.",
+      "Ordena una secuencia de forma descendente.",
+      "Elimina todos los elementos nulos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0232",
+    "pregunta": "¿Qué hace OrderBy en LINQ?",
+    "respuesta": "Ordena una secuencia según una clave en orden ascendente.",
+    "opciones": [
+      "Ordena una secuencia según una clave en orden ascendente.",
+      "Ordena siempre en orden descendente.",
+      "Filtra los elementos repetidos.",
+      "Cuenta los elementos de una secuencia."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0233",
+    "pregunta": "¿Qué hace OrderByDescending en LINQ?",
+    "respuesta": "Ordena una secuencia según una clave en orden descendente.",
+    "opciones": [
+      "Ordena una secuencia según una clave en orden descendente.",
+      "Ordena en orden ascendente.",
+      "Invierte siempre el contenido de cada elemento.",
+      "Elimina los elementos inferiores a una clave."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0234",
+    "pregunta": "¿Qué diferencia existe entre First y FirstOrDefault en LINQ?",
+    "respuesta": "First produce una excepción si no hay elementos; FirstOrDefault devuelve el valor predeterminado cuando no encuentra ninguno.",
+    "opciones": [
+      "First produce una excepción si no hay elementos; FirstOrDefault devuelve el valor predeterminado cuando no encuentra ninguno.",
+      "First devuelve siempre null y FirstOrDefault siempre lanza una excepción.",
+      "First ordena y FirstOrDefault filtra.",
+      "No existe ninguna diferencia."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0235",
+    "pregunta": "¿Qué diferencia existe entre First y Single en LINQ?",
+    "respuesta": "First obtiene el primer elemento; Single exige que exista exactamente un elemento que cumpla la condición.",
+    "opciones": [
+      "First obtiene el primer elemento; Single exige que exista exactamente un elemento que cumpla la condición.",
+      "First exige exactamente un elemento y Single obtiene el primero.",
+      "Ambos devuelven siempre una colección.",
+      "Single devuelve siempre el último elemento."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0236",
+    "pregunta": "¿Qué hace el método Count() de LINQ?",
+    "respuesta": "Obtiene el número de elementos de una secuencia, opcionalmente aplicando un predicado.",
+    "opciones": [
+      "Obtiene el número de elementos de una secuencia, opcionalmente aplicando un predicado.",
+      "Devuelve el último elemento.",
+      "Ordena los elementos.",
+      "Elimina los elementos duplicados."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0237",
+    "pregunta": "¿Qué hace Distinct() en LINQ?",
+    "respuesta": "Devuelve los elementos distintos de una secuencia según el comparador de igualdad utilizado.",
+    "opciones": [
+      "Devuelve los elementos distintos de una secuencia según el comparador de igualdad utilizado.",
+      "Ordena los elementos de menor a mayor.",
+      "Devuelve únicamente el primer elemento.",
+      "Duplica todos los elementos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0238",
+    "pregunta": "¿Qué caracteriza a la ejecución diferida de muchas consultas LINQ?",
+    "respuesta": "La consulta se ejecuta al enumerar sus resultados, no necesariamente cuando se define.",
+    "opciones": [
+      "La consulta se ejecuta al enumerar sus resultados, no necesariamente cuando se define.",
+      "La consulta se ejecuta siempre al compilar el programa.",
+      "La consulta se ejecuta una única vez al declararla.",
+      "La consulta se almacena permanentemente en disco."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0239",
+    "pregunta": "¿Qué método suele provocar la materialización inmediata de una consulta LINQ en una lista?",
+    "respuesta": "ToList().",
+    "opciones": [
+      "ToList().",
+      "Where().",
+      "Select().",
+      "OrderBy()."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0240",
+    "pregunta": "¿Qué significa int? en C#?",
+    "respuesta": "Un tipo entero nullable que puede contener un valor int o null.",
+    "opciones": [
+      "Un tipo entero nullable que puede contener un valor int o null.",
+      "Un entero que solo admite números negativos.",
+      "Una referencia a una cadena.",
+      "Un entero que siempre vale cero."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0241",
+    "pregunta": "¿Qué propiedad permite comprobar si un Nullable<T> contiene un valor?",
+    "respuesta": "HasValue.",
+    "opciones": [
+      "HasValue.",
+      "IsNull.",
+      "IsEmpty.",
+      "Contains."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0242",
+    "pregunta": "¿Qué propiedad permite obtener el valor contenido en un Nullable<T> cuando tiene valor?",
+    "respuesta": "Value.",
+    "opciones": [
+      "Value.",
+      "Current.",
+      "Result.",
+      "Content."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0243",
+    "pregunta": "¿Qué operador permite proporcionar un valor alternativo cuando una expresión nullable es null?",
     "respuesta": "??.",
     "opciones": [
       "??.",
       "?.",
       "=>.",
-      "??= exclusivamente."
+      "!!."
     ]
   },
   {
-    "id": "programacion-csharp-0029",
-    "pregunta": "¿Qué hace el operador ?.?",
-    "respuesta": "Realiza acceso condicional a un miembro y evita la desreferencia si el operando es null.",
+    "id": "programacion-csharp-0244",
+    "pregunta": "¿Qué es el patrón de coincidencia (pattern matching) en C#?",
+    "respuesta": "Una característica que permite comprobar si un valor cumple determinadas condiciones de tipo, valor o estructura.",
     "opciones": [
-      "Realiza acceso condicional a un miembro y evita la desreferencia si el operando es null.",
-      "Compara dos referencias por identidad.",
-      "Declara un método asíncrono.",
-      "Convierte un valor a nullable."
+      "Una característica que permite comprobar si un valor cumple determinadas condiciones de tipo, valor o estructura.",
+      "Un mecanismo exclusivo para comparar cadenas.",
+      "Una forma de declarar variables globales.",
+      "Un método para ordenar colecciones."
     ]
   },
   {
-    "id": "programacion-csharp-0030",
-    "pregunta": "¿Qué es un tipo nullable de valor, como int? (Nullable<int>)?",
-    "respuesta": "Un tipo de valor que puede representar un valor del tipo subyacente o null, expresado normalmente como int?.",
+    "id": "programacion-csharp-0245",
+    "pregunta": "¿Qué permite el patrón is al comprobar un tipo y asignar una variable?",
+    "respuesta": "Comprobar el tipo de un valor y, si coincide, disponer de una variable con ese tipo dentro del ámbito correspondiente.",
     "opciones": [
-      "Un tipo de valor que puede representar un valor del tipo subyacente o null, expresado normalmente como int?.",
-      "Un tipo de referencia obligatorio.",
-      "Una colección de enteros.",
-      "Un tipo que nunca admite null."
+      "Comprobar el tipo de un valor y, si coincide, disponer de una variable con ese tipo dentro del ámbito correspondiente.",
+      "Convertir siempre el objeto sin comprobar su tipo.",
+      "Crear una nueva clase automáticamente.",
+      "Comparar dos cadenas ignorando mayúsculas."
     ]
   },
   {
-    "id": "programacion-csharp-0031",
-    "pregunta": "¿Qué estructura permite ejecutar una rama según una condición?",
-    "respuesta": "if / else.",
+    "id": "programacion-csharp-0246",
+    "pregunta": "¿Qué permite una expresión switch en C#?",
+    "respuesta": "Evaluar una expresión y devolver un resultado según el patrón o condición que coincida.",
     "opciones": [
-      "if / else.",
-      "namespace / using.",
-      "try / catch.",
-      "class / new."
+      "Evaluar una expresión y devolver un resultado según el patrón o condición que coincida.",
+      "Ejecutar un bucle indefinidamente.",
+      "Declarar una clase abstracta.",
+      "Capturar excepciones."
+    ]
+  }
+,
+  {
+    "id": "programacion-csharp-0247",
+    "pregunta": "¿Qué palabra permite lanzar explícitamente una excepción?",
+    "respuesta": "throw.",
+    "opciones": [
+      "throw.",
+      "catch.",
+      "finally.",
+      "raise."
     ]
   },
   {
-    "id": "programacion-csharp-0032",
-    "pregunta": "¿Qué estructura permite seleccionar entre múltiples alternativas?",
-    "respuesta": "switch.",
+    "id": "programacion-csharp-0248",
+    "pregunta": "¿Qué ocurre cuando se produce una excepción y no existe un bloque catch compatible en el método actual?",
+    "respuesta": "La búsqueda de un controlador continúa por la cadena de llamadas.",
     "opciones": [
-      "switch.",
-      "foreach.",
-      "lock.",
-      "yield."
+      "La búsqueda de un controlador continúa por la cadena de llamadas.",
+      "La excepción desaparece automáticamente.",
+      "El método devuelve siempre null.",
+      "El compilador vuelve a ejecutar el método."
     ]
   },
   {
-    "id": "programacion-csharp-0033",
-    "pregunta": "¿Qué diferencia hay entre for y foreach?",
-    "respuesta": "for permite controlar explícitamente inicialización, condición e iteración; foreach recorre elementos de una secuencia.",
+    "id": "programacion-csharp-0249",
+    "pregunta": "¿Por qué deben colocarse los bloques catch de excepciones derivadas antes que los de excepciones base?",
+    "respuesta": "Porque un bloque catch para una excepción base capturaría también las excepciones derivadas compatibles.",
     "opciones": [
-      "for permite controlar explícitamente inicialización, condición e iteración; foreach recorre elementos de una secuencia.",
-      "foreach solo recorre números y for solo cadenas.",
-      "for no puede repetir instrucciones.",
-      "Son equivalentes en todos los casos."
+      "Porque un bloque catch para una excepción base capturaría también las excepciones derivadas compatibles.",
+      "Porque las excepciones derivadas no pueden capturarse.",
+      "Porque C# exige que las excepciones base sean siempre las primeras.",
+      "Porque los bloques catch solo admiten una excepción."
     ]
   },
   {
-    "id": "programacion-csharp-0034",
-    "pregunta": "¿Qué hace break?",
-    "respuesta": "Termina el bucle o la estructura switch más cercana que lo admita.",
+    "id": "programacion-csharp-0250",
+    "pregunta": "¿Qué es una excepción NullReferenceException?",
+    "respuesta": "Una excepción que se produce al intentar acceder a un miembro mediante una referencia que es null.",
     "opciones": [
-      "Termina el bucle o la estructura switch más cercana que lo admita.",
-      "Salta a la siguiente iteración.",
-      "Finaliza siempre el proceso.",
-      "Devuelve un valor del método."
+      "Una excepción que se produce al intentar acceder a un miembro mediante una referencia que es null.",
+      "Una excepción causada exclusivamente por dividir entre cero.",
+      "Una excepción que indica que un array está lleno.",
+      "Una excepción que se produce al convertir cualquier entero."
     ]
   },
   {
-    "id": "programacion-csharp-0035",
-    "pregunta": "¿Qué hace continue?",
-    "respuesta": "Pasa a la siguiente iteración del bucle.",
+    "id": "programacion-csharp-0251",
+    "pregunta": "¿Qué excepción se produce habitualmente al acceder a un índice inexistente de un array?",
+    "respuesta": "IndexOutOfRangeException.",
     "opciones": [
-      "Pasa a la siguiente iteración del bucle.",
-      "Finaliza el bucle completo.",
-      "Lanza una excepción.",
-      "Termina el método."
+      "IndexOutOfRangeException.",
+      "NullReferenceException.",
+      "InvalidCastException.",
+      "FormatException."
     ]
   },
   {
-    "id": "programacion-csharp-0036",
-    "pregunta": "¿Qué es una excepción en C#?",
-    "respuesta": "Un objeto que representa un error o condición excepcional durante la ejecución.",
+    "id": "programacion-csharp-0252",
+    "pregunta": "¿Qué hace una instrucción using aplicada a un objeto que implementa IDisposable?",
+    "respuesta": "Garantiza que se invoque Dispose() al abandonar el ámbito, incluso si se produce una excepción.",
     "opciones": [
-      "Un objeto que representa un error o condición excepcional durante la ejecución.",
-      "Un comentario del compilador.",
-      "Un tipo de colección.",
-      "Una variable de entorno."
+      "Garantiza que se invoque Dispose() al abandonar el ámbito, incluso si se produce una excepción.",
+      "Convierte automáticamente el objeto en estático.",
+      "Impide que el objeto lance excepciones.",
+      "Libera exclusivamente memoria administrada mediante el recolector de basura."
     ]
   },
   {
-    "id": "programacion-csharp-0037",
-    "pregunta": "¿Qué bloques se utilizan para el tratamiento de excepciones?",
-    "respuesta": "try, catch y opcionalmente finally.",
+    "id": "programacion-csharp-0253",
+    "pregunta": "¿Qué interfaz permite implementar la liberación asíncrona de recursos?",
+    "respuesta": "IAsyncDisposable.",
     "opciones": [
-      "try, catch y opcionalmente finally.",
-      "if, else y switch.",
-      "using, namespace y class.",
-      "for, foreach y while."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0038",
-    "pregunta": "¿Para qué sirve finally?",
-    "respuesta": "Para ejecutar código de limpieza tanto si se produce una excepción como si no, salvo situaciones excepcionales de terminación.",
-    "opciones": [
-      "Para ejecutar código de limpieza tanto si se produce una excepción como si no, salvo situaciones excepcionales de terminación.",
-      "Para capturar únicamente excepciones de red.",
-      "Para lanzar una excepción nueva obligatoriamente.",
-      "Para impedir que se ejecute catch."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0039",
-    "pregunta": "¿Qué es un delegado (delegate)?",
-    "respuesta": "Un tipo que representa referencias a métodos con una firma determinada.",
-    "opciones": [
-      "Un tipo que representa referencias a métodos con una firma determinada.",
-      "Una clase que solo almacena enteros.",
-      "Una palabra reservada para herencia.",
-      "Un mecanismo de acceso a bases de datos."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0040",
-    "pregunta": "¿Qué es un evento en C#?",
-    "respuesta": "Un mecanismo basado en delegados para notificar que ha ocurrido algo a los suscriptores.",
-    "opciones": [
-      "Un mecanismo basado en delegados para notificar que ha ocurrido algo a los suscriptores.",
-      "Una excepción que se lanza automáticamente.",
-      "Una propiedad estática obligatoria.",
-      "Una consulta de base de datos."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0041",
-    "pregunta": "¿Qué es una expresión lambda?",
-    "respuesta": "Una función anónima que puede expresarse mediante el operador =>.",
-    "opciones": [
-      "Una función anónima que puede expresarse mediante el operador =>.",
-      "Una clase abstracta.",
-      "Una instrucción de preprocesador.",
-      "Un tipo de excepción."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0042",
-    "pregunta": "¿Qué es LINQ?",
-    "respuesta": "Un conjunto de características y operadores para consultar datos de distintas fuentes desde C#.",
-    "opciones": [
-      "Un conjunto de características y operadores para consultar datos de distintas fuentes desde C#.",
-      "Un lenguaje de marcado.",
-      "Un sistema operativo.",
-      "Un protocolo de transporte."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0043",
-    "pregunta": "¿Qué es async en C#?",
-    "respuesta": "Un modificador que permite declarar métodos, funciones locales o expresiones lambda asíncronas.",
-    "opciones": [
-      "Un modificador que permite declarar métodos, funciones locales o expresiones lambda asíncronas.",
-      "Una instrucción que crea siempre un hilo nuevo.",
-      "Un operador de comparación.",
-      "Una palabra para bloquear un método."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0044",
-    "pregunta": "¿Qué hace await?",
-    "respuesta": "Suspende de forma asíncrona la continuación del método hasta que la operación esperada finaliza.",
-    "opciones": [
-      "Suspende de forma asíncrona la continuación del método hasta que la operación esperada finaliza.",
-      "Bloquea siempre el hilo hasta que termina el proceso.",
-      "Crea automáticamente una nueva tarea en todos los casos.",
-      "Finaliza la aplicación."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0045",
-    "pregunta": "¿Qué representa Task en .NET?",
-    "respuesta": "Una operación que puede completarse en el futuro y, en su versión genérica, producir un resultado.",
-    "opciones": [
-      "Una operación que puede completarse en el futuro y, en su versión genérica, producir un resultado.",
-      "Un hilo del sistema operativo necesariamente.",
-      "Una tabla temporal.",
-      "Un objeto de interfaz gráfica."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0046",
-    "pregunta": "¿Qué es el recolector de basura de .NET?",
-    "respuesta": "El mecanismo administrado que recupera memoria de objetos que ya no son alcanzables.",
-    "opciones": [
-      "El mecanismo administrado que recupera memoria de objetos que ya no son alcanzables.",
-      "Una herramienta para borrar archivos del disco.",
-      "Un compilador de C#.",
-      "Un servicio que elimina registros SQL."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0047",
-    "pregunta": "¿Qué es un espacio de nombres (namespace)?",
-    "respuesta": "Un mecanismo para organizar tipos y evitar conflictos de nombres.",
-    "opciones": [
-      "Un mecanismo para organizar tipos y evitar conflictos de nombres.",
-      "Un contenedor físico de memoria.",
-      "Un tipo de dato numérico.",
-      "Un método estático."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0048",
-    "pregunta": "¿Para qué sirve using al importar un espacio de nombres?",
-    "respuesta": "Permite utilizar tipos del espacio de nombres sin escribir su nombre completo en cada referencia.",
-    "opciones": [
-      "Permite utilizar tipos del espacio de nombres sin escribir su nombre completo en cada referencia.",
-      "Libera siempre todos los objetos de memoria.",
-      "Declara una clase derivada.",
-      "Inicia una transacción."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0049",
-    "pregunta": "¿Qué es un ensamblado .NET?",
-    "respuesta": "Una unidad desplegable que contiene código compilado y metadatos, como un archivo DLL o EXE.",
-    "opciones": [
-      "Una unidad desplegable que contiene código compilado y metadatos, como un archivo DLL o EXE.",
-      "Un archivo fuente exclusivamente.",
-      "Una tabla de base de datos.",
-      "Un documento HTML."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0050",
-    "pregunta": "¿Qué es ASP.NET Core?",
-    "respuesta": "Un framework multiplataforma para desarrollar aplicaciones web y servicios con .NET.",
-    "opciones": [
-      "Un framework multiplataforma para desarrollar aplicaciones web y servicios con .NET.",
-      "Un lenguaje de consultas.",
-      "Un sistema gestor de bases de datos.",
-      "Una máquina virtual Java."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0051",
-    "pregunta": "¿Qué es Entity Framework Core?",
-    "respuesta": "Un ORM para trabajar con bases de datos mediante modelos y objetos .NET.",
-    "opciones": [
-      "Un ORM para trabajar con bases de datos mediante modelos y objetos .NET.",
-      "Un compilador de C#.",
-      "Un servidor web independiente de .NET.",
-      "Un lenguaje de marcado."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0052",
-    "pregunta": "¿Qué es NuGet?",
-    "respuesta": "El gestor de paquetes utilizado habitualmente en el ecosistema .NET.",
-    "opciones": [
-      "El gestor de paquetes utilizado habitualmente en el ecosistema .NET.",
-      "Un motor de bases de datos.",
-      "Un servidor DNS.",
-      "Un depurador exclusivo de Java."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0053",
-    "pregunta": "¿Qué es una prueba unitaria?",
-    "respuesta": "Una prueba que verifica una unidad pequeña de código de forma aislada.",
-    "opciones": [
-      "Una prueba que verifica una unidad pequeña de código de forma aislada.",
-      "Una prueba de rendimiento de toda la red.",
-      "Una copia de seguridad de la aplicación.",
-      "Una prueba manual de aceptación del usuario."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0054",
-    "pregunta": "¿Qué es un tipo 'record' introducido en C# 9?",
-    "respuesta": "Un tipo de referencia o valor inmutable orientado a datos con soporte integrado para igualdad basada en valor.",
-    "opciones": [
-      "Un tipo de referencia o valor inmutable orientado a datos con soporte integrado para igualdad basada en valor.",
-      "Una interfaz especial para bases de datos.",
-      "Un método obsoleto de C# 3.0.",
-      "Un archivo de log del CLR."
-    ]
-  },
-  {
-    "id": "programacion-csharp-0055",
-    "pregunta": "¿Qué interfaz permite la liberación explícita de recursos no administrados mediante using statement o declaración?",
-    "respuesta": "IDisposable.",
-    "opciones": [
-      "IDisposable.",
-      "ICloneable.",
+      "IAsyncDisposable.",
+      "IEnumerable.",
       "IComparable.",
-      "IEnumerable."
+      "IFormattable."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0254",
+    "pregunta": "¿Qué diferencia existe entre Dispose() y el recolector de basura?",
+    "respuesta": "Dispose() permite liberar recursos de forma determinista; el recolector de basura gestiona la recuperación de memoria de objetos no alcanzables.",
+    "opciones": [
+      "Dispose() permite liberar recursos de forma determinista; el recolector de basura gestiona la recuperación de memoria de objetos no alcanzables.",
+      "Ambos son exactamente el mismo mecanismo.",
+      "Dispose() ejecuta siempre el recolector de basura.",
+      "El recolector de basura libera inmediatamente todos los recursos externos."
+    ]
+  },
+  {
+    "id": "programacion-csharp-0255",
+    "pregunta": "¿Qué es una operación asíncrona en C#?",
+    "respuesta": "Una operación cuyo resultado puede estar disponible posteriormente sin exigir que el hilo que la inicia permanezca bloqueado esperando.",
+    "opciones": [
+      "Una operación cuyo resultado puede estar disponible posteriormente sin exigir que el hilo que la inicia permanezca bloqueado esperando.",
+      "Una operación que siempre crea un nuevo hilo del sistema operativo.",
+      "Una operación que se ejecuta obligatoriamente en paralelo.",
+      "Una operación que no puede devolver resultados."
     ]
   }
 ]
