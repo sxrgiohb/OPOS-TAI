@@ -1,0 +1,662 @@
+[
+  {
+    "id": "tai-sql_tsql_mssql-0001",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #1 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #1 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #1 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0002",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #2 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #2 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #2 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0003",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #3 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #3 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #3 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0004",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #4 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #4 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #4 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0005",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #5 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #5 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #5 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0006",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #6 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #6 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #6 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0007",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #7 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #7 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #7 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0008",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #8 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #8 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #8 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0009",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #9 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #9 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #9 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0010",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #10 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #10 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #10 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0011",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #11 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #11 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #11 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0012",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #12 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #12 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #12 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0013",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #13 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #13 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #13 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0014",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #14 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #14 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #14 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0015",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #15 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #15 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #15 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0016",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #16 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #16 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #16 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0017",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #17 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #17 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #17 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0018",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #18 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #18 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #18 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0019",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #19 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #19 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #19 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0020",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #20 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #20 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #20 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0021",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #21 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #21 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #21 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0022",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #22 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #22 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #22 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0023",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #23 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #23 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #23 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0024",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #24 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #24 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #24 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0025",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #25 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #25 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #25 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0026",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #26 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #26 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #26 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0027",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #27 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #27 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #27 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0028",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #28 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #28 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #28 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0029",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #29 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #29 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #29 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0030",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #30 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #30 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #30 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0031",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #31 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #31 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #31 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0032",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #32 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #32 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #32 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0033",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #33 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #33 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #33 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0034",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #34 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #34 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #34 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0035",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #35 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #35 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #35 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0036",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #36 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #36 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #36 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0037",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #37 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #37 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #37 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0038",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #38 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #38 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #38 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0039",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #39 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #39 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #39 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0040",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #40 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #40 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #40 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0041",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #41 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #41 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #41 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0042",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #42 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #42 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #42 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0043",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #43 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #43 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #43 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0044",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #44 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #44 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #44 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0045",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #45 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #45 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #45 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0046",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #46 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #46 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #46 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0047",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #47 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #47 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #47 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0048",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #48 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #48 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #48 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0049",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #49 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #49 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #49 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0050",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #50 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #50 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #50 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0051",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #51 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #51 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #51 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0052",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #52 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #52 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #52 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0053",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #53 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #53 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #53 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0054",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #54 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #54 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #54 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0055",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #55 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #55 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #55 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0056",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #56 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #56 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #56 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0057",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #57 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #57 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #57 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0058",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #58 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #58 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #58 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0059",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #59 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #59 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #59 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  },
+  {
+    "id": "tai-sql_tsql_mssql-0060",
+    "pregunta": "¿Pregunta de examen sobre SQL TSQL MSSQL #60 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #60 de SQL TSQL MSSQL.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #60 de SQL TSQL MSSQL.",
+      "Opción distractora A relativa a SQL TSQL MSSQL.",
+      "Opción distractora B relativa a SQL TSQL MSSQL.",
+      "Opción distractora C relativa a SQL TSQL MSSQL."
+    ]
+  }
+]

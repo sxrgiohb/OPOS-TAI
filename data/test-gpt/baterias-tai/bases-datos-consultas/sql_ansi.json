@@ -1,1 +1,662 @@
-
+[
+  {
+    "id": "tai-sql_ansi-0001",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #1 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #1 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #1 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0002",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #2 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #2 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #2 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0003",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #3 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #3 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #3 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0004",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #4 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #4 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #4 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0005",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #5 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #5 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #5 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0006",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #6 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #6 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #6 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0007",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #7 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #7 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #7 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0008",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #8 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #8 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #8 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0009",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #9 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #9 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #9 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0010",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #10 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #10 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #10 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0011",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #11 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #11 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #11 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0012",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #12 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #12 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #12 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0013",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #13 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #13 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #13 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0014",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #14 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #14 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #14 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0015",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #15 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #15 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #15 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0016",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #16 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #16 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #16 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0017",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #17 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #17 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #17 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0018",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #18 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #18 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #18 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0019",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #19 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #19 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #19 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0020",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #20 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #20 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #20 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0021",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #21 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #21 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #21 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0022",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #22 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #22 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #22 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0023",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #23 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #23 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #23 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0024",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #24 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #24 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #24 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0025",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #25 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #25 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #25 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0026",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #26 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #26 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #26 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0027",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #27 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #27 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #27 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0028",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #28 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #28 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #28 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0029",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #29 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #29 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #29 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0030",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #30 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #30 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #30 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0031",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #31 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #31 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #31 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0032",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #32 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #32 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #32 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0033",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #33 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #33 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #33 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0034",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #34 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #34 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #34 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0035",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #35 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #35 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #35 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0036",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #36 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #36 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #36 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0037",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #37 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #37 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #37 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0038",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #38 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #38 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #38 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0039",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #39 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #39 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #39 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0040",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #40 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #40 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #40 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0041",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #41 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #41 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #41 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0042",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #42 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #42 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #42 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0043",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #43 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #43 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #43 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0044",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #44 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #44 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #44 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0045",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #45 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #45 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #45 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0046",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #46 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #46 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #46 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0047",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #47 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #47 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #47 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0048",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #48 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #48 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #48 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0049",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #49 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #49 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #49 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0050",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #50 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #50 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #50 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0051",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #51 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #51 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #51 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0052",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #52 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #52 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #52 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0053",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #53 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #53 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #53 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0054",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #54 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #54 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #54 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0055",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #55 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #55 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #55 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0056",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #56 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #56 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #56 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0057",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #57 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #57 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #57 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0058",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #58 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #58 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #58 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0059",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #59 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #59 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #59 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  },
+  {
+    "id": "tai-sql_ansi-0060",
+    "pregunta": "¿Pregunta de examen sobre SQL ANSI #60 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #60 de SQL ANSI.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #60 de SQL ANSI.",
+      "Opción distractora A relativa a SQL ANSI.",
+      "Opción distractora B relativa a SQL ANSI.",
+      "Opción distractora C relativa a SQL ANSI."
+    ]
+  }
+]
