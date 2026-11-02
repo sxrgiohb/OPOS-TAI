@@ -504,12 +504,12 @@
   },
   {
     "id": "programacion-csharp-0126",
-    "pregunta": "¿Qué diferencia existe entre int[,] e int[,]?",
-    "respuesta": "int[,] es un array multidimensional rectangular e int[,] es un array de arrays.",
+    "pregunta": "¿Qué diferencia existe entre int[,] e int[[]]?",
+    "respuesta": "int[,] es un array multidimensional rectangular e int[[]] es un array de arrays.",
     "opciones": [
-      "int[,] es un array multidimensional rectangular e int[,] es un array de arrays.",
+      "int[,] es un array multidimensional rectangular e int[[]] es un array de arrays.",
       "Ambos son exactamente el mismo tipo.",
-      "int[,] solo almacena referencias e int[,] solo valores.",
+      "int[,] solo almacena referencias e int[] solo valores.",
       "int[,] no puede contener números."
     ]
   },
