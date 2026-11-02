@@ -1,662 +1,1867 @@
 [
   {
-    "id": "tai-java-0001",
-    "pregunta": "¿Pregunta de examen sobre JAVA #1 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #1 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #1 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0002",
-    "pregunta": "¿Pregunta de examen sobre JAVA #2 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #2 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #2 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0003",
-    "pregunta": "¿Pregunta de examen sobre JAVA #3 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #3 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #3 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0004",
-    "pregunta": "¿Pregunta de examen sobre JAVA #4 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #4 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #4 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0005",
-    "pregunta": "¿Pregunta de examen sobre JAVA #5 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #5 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #5 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0006",
-    "pregunta": "¿Pregunta de examen sobre JAVA #6 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #6 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #6 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0007",
-    "pregunta": "¿Pregunta de examen sobre JAVA #7 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #7 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #7 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0008",
-    "pregunta": "¿Pregunta de examen sobre JAVA #8 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #8 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #8 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0009",
-    "pregunta": "¿Pregunta de examen sobre JAVA #9 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #9 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #9 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
-    "id": "tai-java-0010",
-    "pregunta": "¿Pregunta de examen sobre JAVA #10 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #10 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #10 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
-  },
-  {
     "id": "tai-java-0011",
-    "pregunta": "¿Pregunta de examen sobre JAVA #11 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #11 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #11 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué componente transforma normalmente el código fuente Java en bytecode?",
+    "respuesta": "El compilador javac.",
+    "opciones": ["El compilador javac.", "La JVM.", "El recolector de basura.", "El cargador de clases."]
   },
   {
     "id": "tai-java-0012",
-    "pregunta": "¿Pregunta de examen sobre JAVA #12 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #12 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #12 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué extensión tienen normalmente los archivos de código fuente Java?",
+    "respuesta": ".java.",
+    "opciones": [".class.", ".java.", ".jar.", ".jvm."]
   },
   {
     "id": "tai-java-0013",
-    "pregunta": "¿Pregunta de examen sobre JAVA #13 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #13 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #13 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué extensión identifica normalmente un archivo compilado de bytecode Java?",
+    "respuesta": ".class.",
+    "opciones": [".java.", ".exe.", ".class.", ".src."]
   },
   {
     "id": "tai-java-0014",
-    "pregunta": "¿Pregunta de examen sobre JAVA #14 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #14 de JAVA.",
+    "pregunta": "¿Qué significa que Java utilice una máquina virtual?",
+    "respuesta": "Que el bytecode se ejecuta en un entorno de ejecución que abstrae las características del sistema operativo y del hardware.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #14 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Que Java no necesita memoria RAM.",
+      "Que el bytecode se ejecuta en un entorno de ejecución que abstrae las características del sistema operativo y del hardware.",
+      "Que cada programa Java necesita un sistema operativo propio.",
+      "Que el código Java se ejecuta directamente en el procesador sin intermediarios."
     ]
   },
   {
     "id": "tai-java-0015",
-    "pregunta": "¿Pregunta de examen sobre JAVA #15 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #15 de JAVA.",
+    "pregunta": "¿Qué es el garbage collector de Java?",
+    "respuesta": "El mecanismo de gestión automática de memoria que recupera memoria ocupada por objetos que ya no son alcanzables.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #15 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Un compilador de código Java.",
+      "Un mecanismo que elimina archivos temporales del sistema operativo.",
+      "El mecanismo de gestión automática de memoria que recupera memoria ocupada por objetos que ya no son alcanzables.",
+      "Una herramienta que libera exclusivamente variables primitivas."
     ]
   },
   {
     "id": "tai-java-0016",
-    "pregunta": "¿Pregunta de examen sobre JAVA #16 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #16 de JAVA.",
+    "pregunta": "¿Cuáles son los ocho tipos de datos primitivos de Java?",
+    "respuesta": "byte, short, int, long, float, double, char y boolean.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #16 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "byte, short, int, long, float, double, char y boolean.",
+      "byte, short, integer, long, decimal, double, char y boolean.",
+      "int, long, float, double, String, char, boolean y Object.",
+      "byte, short, int, long, decimal, String, character y boolean."
     ]
   },
   {
     "id": "tai-java-0017",
-    "pregunta": "¿Pregunta de examen sobre JAVA #17 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #17 de JAVA.",
+    "pregunta": "¿Qué rango de valores puede almacenar un byte en Java?",
+    "respuesta": "Desde -128 hasta 127.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #17 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Desde 0 hasta 255.",
+      "Desde -255 hasta 255.",
+      "Desde -128 hasta 127.",
+      "Desde -32768 hasta 32767."
     ]
   },
   {
     "id": "tai-java-0018",
-    "pregunta": "¿Pregunta de examen sobre JAVA #18 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #18 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #18 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué tamaño tiene el tipo int en Java?",
+    "respuesta": "32 bits.",
+    "opciones": ["8 bits.", "16 bits.", "32 bits.", "64 bits."]
   },
   {
     "id": "tai-java-0019",
-    "pregunta": "¿Pregunta de examen sobre JAVA #19 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #19 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #19 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Cuál es el valor predeterminado de un atributo de tipo boolean?",
+    "respuesta": "false.",
+    "opciones": ["true.", "false.", "null.", "0."]
   },
   {
     "id": "tai-java-0020",
-    "pregunta": "¿Pregunta de examen sobre JAVA #20 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #20 de JAVA.",
+    "pregunta": "¿Qué ocurre si se intenta asignar null a una variable de tipo int?",
+    "respuesta": "Se produce un error de compilación.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #20 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "La variable toma el valor 0.",
+      "La variable toma el valor false.",
+      "Se produce un error de compilación.",
+      "La variable se convierte automáticamente en Integer."
     ]
   },
   {
     "id": "tai-java-0021",
-    "pregunta": "¿Pregunta de examen sobre JAVA #21 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #21 de JAVA.",
+    "pregunta": "¿Qué diferencia existe entre declarar una variable local y un atributo de instancia respecto a su inicialización?",
+    "respuesta": "Los atributos reciben valores predeterminados, mientras que las variables locales deben inicializarse antes de utilizarse.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #21 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Ambos reciben siempre el valor cero.",
+      "Los atributos reciben valores predeterminados, mientras que las variables locales deben inicializarse antes de utilizarse.",
+      "Las variables locales siempre reciben null.",
+      "Los atributos deben inicializarse obligatoriamente en su declaración."
     ]
   },
   {
     "id": "tai-java-0022",
-    "pregunta": "¿Pregunta de examen sobre JAVA #22 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #22 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #22 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué palabra reservada permite declarar una constante en Java?",
+    "respuesta": "final.",
+    "opciones": ["const.", "static.", "final.", "constant."]
   },
   {
     "id": "tai-java-0023",
-    "pregunta": "¿Pregunta de examen sobre JAVA #23 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #23 de JAVA.",
+    "pregunta": "¿Qué tipo de conversión se produce al asignar un int a una variable long?",
+    "respuesta": "Una conversión implícita de ampliación.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #23 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Una conversión explícita de reducción.",
+      "Una conversión implícita de ampliación.",
+      "Una conversión entre referencias.",
+      "Una conversión que siempre produce un error."
     ]
   },
   {
     "id": "tai-java-0024",
-    "pregunta": "¿Pregunta de examen sobre JAVA #24 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #24 de JAVA.",
+    "pregunta": "¿Qué ocurre al convertir explícitamente un valor double a int?",
+    "respuesta": "Se descarta la parte decimal y se obtiene un valor entero.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #24 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Se redondea siempre al entero más próximo.",
+      "Se descarta la parte decimal y se obtiene un valor entero.",
+      "Se convierte en una cadena.",
+      "Se produce siempre una excepción."
     ]
   },
   {
     "id": "tai-java-0025",
-    "pregunta": "¿Pregunta de examen sobre JAVA #25 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #25 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #25 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué resultado produce la expresión (int) 8.9 en Java?",
+    "respuesta": "8.",
+    "opciones": ["9.", "8.", "8.9.", "Se produce un error de compilación."]
   },
   {
     "id": "tai-java-0026",
-    "pregunta": "¿Pregunta de examen sobre JAVA #26 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #26 de JAVA.",
+    "pregunta": "¿Qué es el autoboxing en Java?",
+    "respuesta": "La conversión automática de un tipo primitivo a su correspondiente clase envoltorio.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #26 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "La conversión automática de un objeto a una cadena.",
+      "La conversión automática de un tipo primitivo a su correspondiente clase envoltorio.",
+      "La conversión de una referencia en una variable local.",
+      "La conversión de un objeto en un tipo primitivo mediante casting explícito."
     ]
   },
   {
     "id": "tai-java-0027",
-    "pregunta": "¿Pregunta de examen sobre JAVA #27 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #27 de JAVA.",
+    "pregunta": "¿Qué es el unboxing?",
+    "respuesta": "La conversión de un objeto envoltorio a su correspondiente tipo primitivo.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #27 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "La conversión de un tipo primitivo en una clase envoltorio.",
+      "La conversión de una cadena en un array.",
+      "La conversión de un objeto envoltorio a su correspondiente tipo primitivo.",
+      "La conversión de un objeto en una interfaz."
     ]
   },
   {
     "id": "tai-java-0028",
-    "pregunta": "¿Pregunta de examen sobre JAVA #28 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #28 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #28 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué clase envoltorio corresponde al tipo primitivo int?",
+    "respuesta": "Integer.",
+    "opciones": ["Int.", "Integer.", "Long.", "NumberInt."]
   },
   {
     "id": "tai-java-0029",
-    "pregunta": "¿Pregunta de examen sobre JAVA #29 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #29 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #29 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué clase envoltorio corresponde al tipo primitivo char?",
+    "respuesta": "Character.",
+    "opciones": ["Char.", "String.", "Character.", "Byte."]
   },
   {
     "id": "tai-java-0030",
-    "pregunta": "¿Pregunta de examen sobre JAVA #30 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #30 de JAVA.",
+    "pregunta": "¿Qué ocurre al realizar un unboxing de una referencia null de tipo Integer?",
+    "respuesta": "Se produce una NullPointerException.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #30 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Se obtiene automáticamente el valor cero.",
+      "Se produce una NumberFormatException.",
+      "Se produce una NullPointerException.",
+      "Se obtiene el valor false."
     ]
   },
   {
     "id": "tai-java-0031",
-    "pregunta": "¿Pregunta de examen sobre JAVA #31 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #31 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #31 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué operador se utiliza para obtener el resto de una división?",
+    "respuesta": "%.",
+    "opciones": ["/.", "%.", "//.", "mod."]
   },
   {
     "id": "tai-java-0032",
-    "pregunta": "¿Pregunta de examen sobre JAVA #32 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #32 de JAVA.",
+    "pregunta": "¿Qué diferencia existe entre los operadores == y equals() cuando se utilizan con objetos?",
+    "respuesta": "== compara referencias, mientras que equals() puede comparar la igualdad lógica definida por la clase.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #32 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Ambos comparan siempre el contenido de los objetos.",
+      "== compara referencias, mientras que equals() puede comparar la igualdad lógica definida por la clase.",
+      "equals() compara referencias y == compara el contenido.",
+      "== solo puede utilizarse con cadenas."
     ]
   },
   {
     "id": "tai-java-0033",
-    "pregunta": "¿Pregunta de examen sobre JAVA #33 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #33 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #33 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué resultado produce la expresión 5 / 2 cuando ambos operandos son int?",
+    "respuesta": "2.",
+    "opciones": ["2.5.", "3.", "2.", "2.0."]
   },
   {
     "id": "tai-java-0034",
-    "pregunta": "¿Pregunta de examen sobre JAVA #34 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #34 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #34 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué operador representa el AND lógico con evaluación en cortocircuito?",
+    "respuesta": "&&.",
+    "opciones": ["&.", "&&.", "|.", "||."]
   },
   {
     "id": "tai-java-0035",
-    "pregunta": "¿Pregunta de examen sobre JAVA #35 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #35 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #35 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué operador representa el OR lógico con evaluación en cortocircuito?",
+    "respuesta": "||.",
+    "opciones": ["|.", "&&.", "||.", "^."]
   },
   {
     "id": "tai-java-0036",
-    "pregunta": "¿Pregunta de examen sobre JAVA #36 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #36 de JAVA.",
+    "pregunta": "¿Qué caracteriza al operador & cuando se aplica a expresiones booleanas?",
+    "respuesta": "Evalúa ambos operandos, sin utilizar cortocircuito.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #36 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Evalúa únicamente el primer operando.",
+      "Evalúa ambos operandos, sin utilizar cortocircuito.",
+      "Solo funciona con números enteros.",
+      "Equivale siempre al operador &&."
     ]
   },
   {
     "id": "tai-java-0037",
-    "pregunta": "¿Pregunta de examen sobre JAVA #37 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #37 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #37 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué resultado produce la expresión 10 % 3?",
+    "respuesta": "1.",
+    "opciones": ["0.", "1.", "2.", "3."]
   },
   {
     "id": "tai-java-0038",
-    "pregunta": "¿Pregunta de examen sobre JAVA #38 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #38 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #38 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué operador permite incrementar una variable en una unidad?",
+    "respuesta": "++.",
+    "opciones": ["**.", "++.", "+=+.", "--."]
   },
   {
     "id": "tai-java-0039",
-    "pregunta": "¿Pregunta de examen sobre JAVA #39 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #39 de JAVA.",
+    "pregunta": "¿Qué diferencia existe entre i++ y ++i cuando forman parte de una expresión?",
+    "respuesta": "i++ devuelve el valor anterior al incremento y ++i devuelve el valor posterior.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #39 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Ambos devuelven siempre el valor posterior.",
+      "i++ devuelve el valor anterior al incremento y ++i devuelve el valor posterior.",
+      "i++ decrementa y ++i incrementa.",
+      "++i solo funciona con variables de tipo long."
     ]
   },
   {
     "id": "tai-java-0040",
-    "pregunta": "¿Pregunta de examen sobre JAVA #40 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #40 de JAVA.",
+    "pregunta": "¿Qué operador permite realizar una selección entre dos expresiones según una condición?",
+    "respuesta": "El operador ternario ?:.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #40 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "El operador instanceof.",
+      "El operador ternario ?:. ",
+      "El operador ::.",
+      "El operador new."
     ]
   },
   {
     "id": "tai-java-0041",
-    "pregunta": "¿Pregunta de examen sobre JAVA #41 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #41 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #41 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué estructura permite ejecutar un bloque de código mientras una condición sea verdadera?",
+    "respuesta": "while.",
+    "opciones": ["if.", "switch.", "while.", "break."]
   },
   {
     "id": "tai-java-0042",
-    "pregunta": "¿Pregunta de examen sobre JAVA #42 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #42 de JAVA.",
+    "pregunta": "¿Qué diferencia principal existe entre while y do-while?",
+    "respuesta": "do-while evalúa la condición después de ejecutar el bloque, por lo que se ejecuta al menos una vez.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #42 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "while siempre se ejecuta al menos una vez.",
+      "do-while evalúa la condición después de ejecutar el bloque, por lo que se ejecuta al menos una vez.",
+      "do-while solo permite condiciones numéricas.",
+      "No existe ninguna diferencia."
     ]
   },
   {
     "id": "tai-java-0043",
-    "pregunta": "¿Pregunta de examen sobre JAVA #43 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #43 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #43 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué instrucción permite finalizar inmediatamente un bucle?",
+    "respuesta": "break.",
+    "opciones": ["continue.", "return.", "break.", "next."]
   },
   {
     "id": "tai-java-0044",
-    "pregunta": "¿Pregunta de examen sobre JAVA #44 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #44 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #44 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué instrucción permite saltar el resto de la iteración actual y continuar con la siguiente?",
+    "respuesta": "continue.",
+    "opciones": ["break.", "continue.", "exit.", "stop."]
   },
   {
     "id": "tai-java-0045",
-    "pregunta": "¿Pregunta de examen sobre JAVA #45 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #45 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #45 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué estructura se utiliza habitualmente para seleccionar una alternativa entre varios casos?",
+    "respuesta": "switch.",
+    "opciones": ["while.", "try.", "switch.", "import."]
   },
   {
     "id": "tai-java-0046",
-    "pregunta": "¿Pregunta de examen sobre JAVA #46 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #46 de JAVA.",
+    "pregunta": "¿Qué ocurre si una instrucción switch tradicional ejecuta un case sin break y no existe otra instrucción de salida?",
+    "respuesta": "La ejecución continúa con los siguientes case, produciéndose el comportamiento denominado fall-through.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #46 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "El programa termina automáticamente.",
+      "La ejecución continúa con los siguientes case, produciéndose el comportamiento denominado fall-through.",
+      "Se genera siempre una excepción.",
+      "Se vuelve al primer case."
     ]
   },
   {
     "id": "tai-java-0047",
-    "pregunta": "¿Pregunta de examen sobre JAVA #47 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #47 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #47 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué tipo de bucle es especialmente adecuado cuando se conoce previamente el número de iteraciones?",
+    "respuesta": "for.",
+    "opciones": ["try.", "for.", "if.", "switch."]
   },
   {
     "id": "tai-java-0048",
-    "pregunta": "¿Pregunta de examen sobre JAVA #48 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #48 de JAVA.",
+    "pregunta": "¿Qué permite hacer una etiqueta asociada a break en Java?",
+    "respuesta": "Salir de un bloque o bucle externo identificado mediante esa etiqueta.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #48 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Reiniciar el programa.",
+      "Salir de un bloque o bucle externo identificado mediante esa etiqueta.",
+      "Saltar a cualquier método del programa.",
+      "Detener todos los hilos de ejecución."
     ]
   },
   {
     "id": "tai-java-0049",
-    "pregunta": "¿Pregunta de examen sobre JAVA #49 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #49 de JAVA.",
+    "pregunta": "¿Qué sucede si una condición de una estructura if es false y no existe un bloque else?",
+    "respuesta": "Se omite el bloque asociado al if y continúa la ejecución.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #49 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Se produce una excepción.",
+      "Se repite la condición indefinidamente.",
+      "Se omite el bloque asociado al if y continúa la ejecución.",
+      "El programa finaliza."
     ]
   },
   {
     "id": "tai-java-0050",
-    "pregunta": "¿Pregunta de examen sobre JAVA #50 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #50 de JAVA.",
+    "pregunta": "¿Desde qué versión de Java se incorporaron las expresiones switch?",
+    "respuesta": "Java 14, como característica definitiva.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #50 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Java 5.",
+      "Java 8.",
+      "Java 11.",
+      "Java 14, como característica definitiva."
     ]
   },
   {
     "id": "tai-java-0051",
-    "pregunta": "¿Pregunta de examen sobre JAVA #51 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #51 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #51 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Cuál es el índice del primer elemento de un array en Java?",
+    "respuesta": "0.",
+    "opciones": ["0.", "1.", "-1.", "Depende del tamaño del array."]
   },
   {
     "id": "tai-java-0052",
-    "pregunta": "¿Pregunta de examen sobre JAVA #52 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #52 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #52 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué propiedad permite conocer el número de elementos de un array?",
+    "respuesta": "length.",
+    "opciones": ["size().", "length().", "length.", "count()."]
   },
   {
     "id": "tai-java-0053",
-    "pregunta": "¿Pregunta de examen sobre JAVA #53 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #53 de JAVA.",
+    "pregunta": "¿Qué ocurre si se intenta acceder a una posición inexistente de un array?",
+    "respuesta": "Se produce una ArrayIndexOutOfBoundsException.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #53 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Se devuelve null automáticamente.",
+      "Se produce una ArrayIndexOutOfBoundsException.",
+      "Se amplía automáticamente el array.",
+      "Se devuelve el último elemento."
     ]
   },
   {
     "id": "tai-java-0054",
-    "pregunta": "¿Pregunta de examen sobre JAVA #54 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #54 de JAVA.",
+    "pregunta": "¿Cómo se declara un array de diez elementos de tipo int?",
+    "respuesta": "int[] numeros = new int[10];.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #54 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "int numeros = new int(10);",
+      "int[10] numeros;",
+      "int[] numeros = new int[10];",
+      "array<int> numeros = 10;"
     ]
   },
   {
     "id": "tai-java-0055",
-    "pregunta": "¿Pregunta de examen sobre JAVA #55 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #55 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #55 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Cuál es el valor inicial de los elementos de un array de int recién creado?",
+    "respuesta": "0.",
+    "opciones": ["null.", "false.", "0.", "Un valor aleatorio."]
   },
   {
     "id": "tai-java-0056",
-    "pregunta": "¿Pregunta de examen sobre JAVA #56 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #56 de JAVA.",
+    "pregunta": "¿Son mutables los objetos String en Java?",
+    "respuesta": "No, String es inmutable.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #56 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "Sí, sus caracteres pueden modificarse directamente.",
+      "No, String es inmutable.",
+      "Solo son mutables si se declaran como final.",
+      "Depende de la JVM."
     ]
   },
   {
     "id": "tai-java-0057",
-    "pregunta": "¿Pregunta de examen sobre JAVA #57 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #57 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #57 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué método permite obtener la longitud de una cadena String?",
+    "respuesta": "length().",
+    "opciones": ["size().", "length.", "length().", "count()."]
   },
   {
     "id": "tai-java-0058",
-    "pregunta": "¿Pregunta de examen sobre JAVA #58 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #58 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #58 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué método permite comparar el contenido de dos cadenas String?",
+    "respuesta": "equals().",
+    "opciones": ["==.", "compareReference().", "equals().", "same()."]
   },
   {
     "id": "tai-java-0059",
-    "pregunta": "¿Pregunta de examen sobre JAVA #59 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #59 de JAVA.",
-    "opciones": [
-      "Respuesta correcta sobre el concepto clave #59 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
-    ]
+    "pregunta": "¿Qué clase está especialmente diseñada para construir cadenas modificables de forma eficiente en operaciones repetidas?",
+    "respuesta": "StringBuilder.",
+    "opciones": ["String.", "Character.", "StringBuilder.", "Integer."]
   },
   {
     "id": "tai-java-0060",
-    "pregunta": "¿Pregunta de examen sobre JAVA #60 para oposiciones TAI?",
-    "respuesta": "Respuesta correcta sobre el concepto clave #60 de JAVA.",
+    "pregunta": "¿Qué diferencia existe entre StringBuilder y StringBuffer?",
+    "respuesta": "StringBuffer sincroniza sus métodos principales, mientras que StringBuilder no ofrece esa sincronización.",
     "opciones": [
-      "Respuesta correcta sobre el concepto clave #60 de JAVA.",
-      "Opción distractora A relativa a JAVA.",
-      "Opción distractora B relativa a JAVA.",
-      "Opción distractora C relativa a JAVA."
+      "StringBuilder es inmutable y StringBuffer mutable.",
+      "StringBuffer sincroniza sus métodos principales, mientras que StringBuilder no ofrece esa sincronización.",
+      "StringBuffer solo almacena números.",
+      "No existe ninguna diferencia."
     ]
+  },
+  {
+    "id": "tai-java-0061",
+    "pregunta": "¿Qué es una clase en Java?",
+    "respuesta": "Una plantilla que define atributos y comportamientos de los objetos que se crean a partir de ella.",
+    "opciones": [
+      "Una instancia concreta de un objeto.",
+      "Una plantilla que define atributos y comportamientos de los objetos que se crean a partir de ella.",
+      "Un tipo exclusivo para almacenar números.",
+      "Un método que se ejecuta automáticamente."
+    ]
+  },
+  {
+    "id": "tai-java-0062",
+    "pregunta": "¿Qué es un objeto?",
+    "respuesta": "Una instancia de una clase.",
+    "opciones": [
+      "Una instancia de una clase.",
+      "Un archivo de código fuente.",
+      "Un tipo de dato primitivo.",
+      "Un paquete de Java."
+    ]
+  },
+  {
+    "id": "tai-java-0063",
+    "pregunta": "¿Qué operador se utiliza habitualmente para crear un objeto?",
+    "respuesta": "new.",
+    "opciones": ["this.", "new.", "create.", "instance."]
+  },
+  {
+    "id": "tai-java-0064",
+    "pregunta": "¿Qué palabra reservada representa la referencia al objeto actual?",
+    "respuesta": "this.",
+    "opciones": ["self.", "current.", "this.", "super."]
+  },
+  {
+    "id": "tai-java-0065",
+    "pregunta": "¿Qué representa el valor de retorno void en un método?",
+    "respuesta": "Que el método no devuelve ningún valor.",
+    "opciones": [
+      "Que el método devuelve null.",
+      "Que el método no devuelve ningún valor.",
+      "Que el método devuelve un entero.",
+      "Que el método no puede recibir parámetros."
+    ]
+  },
+  {
+    "id": "tai-java-0066",
+    "pregunta": "¿Qué es la sobrecarga de métodos (overloading)?",
+    "respuesta": "Definir varios métodos con el mismo nombre y distintas listas de parámetros.",
+    "opciones": [
+      "Redefinir un método heredado con la misma firma.",
+      "Definir varios métodos con el mismo nombre y distintas listas de parámetros.",
+      "Declarar métodos exclusivamente privados.",
+      "Crear métodos sin cuerpo."
+    ]
+  },
+  {
+    "id": "tai-java-0067",
+    "pregunta": "¿Puede distinguirse una sobrecarga de métodos únicamente por el tipo de retorno?",
+    "respuesta": "No, la lista de parámetros debe diferenciar las declaraciones.",
+    "opciones": [
+      "Sí, siempre.",
+      "No, la lista de parámetros debe diferenciar las declaraciones.",
+      "Solo si los métodos son static.",
+      "Solo si los métodos son private."
+    ]
+  },
+  {
+    "id": "tai-java-0068",
+    "pregunta": "¿Qué significa que un método sea static?",
+    "respuesta": "Que pertenece a la clase y no a una instancia concreta.",
+    "opciones": [
+      "Que solo puede ejecutarse una vez.",
+      "Que pertenece a la clase y no a una instancia concreta.",
+      "Que no puede recibir parámetros.",
+      "Que es necesariamente privado."
+    ]
+  },
+  {
+    "id": "tai-java-0069",
+    "pregunta": "¿Qué restricción tiene un método static respecto al uso directo de miembros de instancia?",
+    "respuesta": "No puede acceder directamente a miembros de instancia sin disponer de una referencia a un objeto.",
+    "opciones": [
+      "No puede llamar a otros métodos static.",
+      "No puede acceder directamente a miembros de instancia sin disponer de una referencia a un objeto.",
+      "No puede devolver valores.",
+      "No puede recibir argumentos."
+    ]
+  },
+  {
+    "id": "tai-java-0070",
+    "pregunta": "¿Qué es la recursividad?",
+    "respuesta": "La técnica por la que un método se invoca a sí mismo directa o indirectamente.",
+    "opciones": [
+      "La ejecución simultánea de varios métodos.",
+      "La técnica por la que un método se invoca a sí mismo directa o indirectamente.",
+      "La repetición automática de todos los métodos de una clase.",
+      "La conversión de un método en una variable."
+    ]
+  },
+  {
+    "id": "tai-java-0071",
+    "pregunta": "¿Cuál es la finalidad principal de un constructor?",
+    "respuesta": "Inicializar los objetos cuando se crean.",
+    "opciones": [
+      "Destruir los objetos.",
+      "Inicializar los objetos cuando se crean.",
+      "Compilar una clase.",
+      "Importar paquetes automáticamente."
+    ]
+  },
+  {
+    "id": "tai-java-0072",
+    "pregunta": "¿Qué característica identifica a un constructor de una clase?",
+    "respuesta": "Tiene el mismo nombre que la clase y no declara tipo de retorno.",
+    "opciones": [
+      "Tiene siempre el nombre init.",
+      "Tiene el mismo nombre que la clase y no declara tipo de retorno.",
+      "Siempre devuelve un objeto.",
+      "Debe ser necesariamente static."
+    ]
+  },
+  {
+    "id": "tai-java-0073",
+    "pregunta": "¿Qué sucede si una clase no declara ningún constructor?",
+    "respuesta": "El compilador proporciona un constructor predeterminado sin parámetros.",
+    "opciones": [
+      "La clase no puede instanciarse.",
+      "El compilador proporciona un constructor predeterminado sin parámetros.",
+      "Se crea automáticamente un constructor con todos los atributos.",
+      "Se produce siempre un error de compilación."
+    ]
+  },
+  {
+    "id": "tai-java-0074",
+    "pregunta": "¿Qué ocurre si una clase declara expresamente un constructor con parámetros y no declara uno sin parámetros?",
+    "respuesta": "No se proporciona automáticamente un constructor sin parámetros.",
+    "opciones": [
+      "Se proporciona siempre otro constructor sin parámetros.",
+      "No se proporciona automáticamente un constructor sin parámetros.",
+      "La clase se convierte en abstracta.",
+      "El constructor con parámetros se ignora."
+    ]
+  },
+  {
+    "id": "tai-java-0075",
+    "pregunta": "¿Qué palabra reservada permite invocar otro constructor de la misma clase?",
+    "respuesta": "this.",
+    "opciones": ["super.", "this.", "new.", "static."]
+  },
+  {
+    "id": "tai-java-0076",
+    "pregunta": "¿Qué palabra reservada permite invocar un constructor de la clase padre?",
+    "respuesta": "super.",
+    "opciones": ["this.", "parent.", "super.", "extends."]
+  },
+  {
+    "id": "tai-java-0077",
+    "pregunta": "¿Qué es la encapsulación en programación orientada a objetos?",
+    "respuesta": "La ocultación de la representación interna y el control del acceso a los datos mediante una interfaz definida.",
+    "opciones": [
+      "La creación automática de subclases.",
+      "La ocultación de la representación interna y el control del acceso a los datos mediante una interfaz definida.",
+      "La ejecución de varios métodos simultáneamente.",
+      "La conversión de objetos en tipos primitivos."
+    ]
+  },
+  {
+    "id": "tai-java-0078",
+    "pregunta": "¿Qué modificador de acceso restringe un miembro a su propia clase?",
+    "respuesta": "private.",
+    "opciones": ["public.", "protected.", "private.", "default."]
+  },
+  {
+    "id": "tai-java-0079",
+    "pregunta": "¿Qué modificador permite el acceso desde cualquier clase, sujeto a la accesibilidad de la propia clase?",
+    "respuesta": "public.",
+    "opciones": ["private.", "protected.", "public.", "final."]
+  },
+  {
+    "id": "tai-java-0080",
+    "pregunta": "¿Qué sucede cuando se declara un atributo static?",
+    "respuesta": "El atributo pertenece a la clase y existe una única variable de clase compartida por sus instancias.",
+    "opciones": [
+      "Cada objeto obtiene necesariamente una copia independiente.",
+      "El atributo solo puede utilizarse dentro de un constructor.",
+      "El atributo pertenece a la clase y existe una única variable de clase compartida por sus instancias.",
+      "El atributo no puede modificarse."
+    ]
+  },
+  {
+    "id": "tai-java-0081",
+    "pregunta": "¿Qué palabra reservada se utiliza para indicar que una clase hereda de otra?",
+    "respuesta": "extends.",
+    "opciones": ["implements.", "inherits.", "extends.", "super."]
+  },
+  {
+    "id": "tai-java-0082",
+    "pregunta": "¿Permite Java que una clase herede directamente de varias clases?",
+    "respuesta": "No, una clase solo puede extender directamente una clase.",
+    "opciones": [
+      "Sí, sin ninguna limitación.",
+      "Sí, pero solo si son abstractas.",
+      "No, una clase solo puede extender directamente una clase.",
+      "Solo se permite en interfaces."
+    ]
+  },
+  {
+    "id": "tai-java-0083",
+    "pregunta": "¿Qué significa sobrescribir un método (overriding)?",
+    "respuesta": "Redefinir en una subclase un método heredado, respetando las reglas de sobrescritura.",
+    "opciones": [
+      "Crear otro método con el mismo nombre y parámetros diferentes.",
+      "Redefinir en una subclase un método heredado, respetando las reglas de sobrescritura.",
+      "Eliminar un método de la clase padre.",
+      "Convertir un método de instancia en un constructor."
+    ]
+  },
+  {
+    "id": "tai-java-0084",
+    "pregunta": "¿Qué anotación se utiliza habitualmente para indicar que un método sobrescribe otro?",
+    "respuesta": "@Override.",
+    "opciones": ["@Overload.", "@Override.", "@Inherited.", "@Super."]
+  },
+  {
+    "id": "tai-java-0085",
+    "pregunta": "¿Qué es el polimorfismo?",
+    "respuesta": "La capacidad de utilizar una referencia de un tipo común para trabajar con objetos de diferentes clases compatibles.",
+    "opciones": [
+      "La posibilidad de que una clase tenga varios constructores.",
+      "La capacidad de utilizar una referencia de un tipo común para trabajar con objetos de diferentes clases compatibles.",
+      "La capacidad de ejecutar únicamente métodos static.",
+      "La creación de variables con distintos nombres."
+    ]
+  },
+  {
+    "id": "tai-java-0086",
+    "pregunta": "¿Qué ocurre al asignar un objeto de una subclase a una variable de referencia de su superclase?",
+    "respuesta": "Se produce una conversión implícita de referencia hacia el tipo de la superclase (upcasting).",
+    "opciones": [
+      "Se produce siempre un error.",
+      "Se produce una conversión implícita de referencia hacia el tipo de la superclase (upcasting).",
+      "El objeto se transforma físicamente en una instancia de la superclase.",
+      "Se elimina la parte específica de la subclase."
+    ]
+  },
+  {
+    "id": "tai-java-0087",
+    "pregunta": "¿Qué operador permite comprobar si un objeto es compatible con un tipo determinado?",
+    "respuesta": "instanceof.",
+    "opciones": ["typeof.", "is.", "instanceof.", "implements."]
+  },
+  {
+    "id": "tai-java-0088",
+    "pregunta": "¿Qué ocurre si se intenta convertir mediante casting una referencia a un tipo incompatible en tiempo de ejecución?",
+    "respuesta": "Se produce una ClassCastException.",
+    "opciones": [
+      "Se produce una IOException.",
+      "Se produce una ClassCastException.",
+      "Se devuelve null.",
+      "Se convierte automáticamente en Object."
+    ]
+  },
+  {
+    "id": "tai-java-0089",
+    "pregunta": "¿Qué miembros de una clase padre no son accesibles directamente desde una subclase por herencia?",
+    "respuesta": "Los miembros private de la clase padre.",
+    "opciones": [
+      "Los miembros public.",
+      "Los miembros protected.",
+      "Los miembros private de la clase padre.",
+      "Todos los miembros static."
+    ]
+  },
+  {
+    "id": "tai-java-0090",
+    "pregunta": "¿Qué ocurre cuando una subclase sobrescribe un método de instancia y se invoca mediante una referencia de la superclase?",
+    "respuesta": "Se ejecuta la implementación correspondiente al tipo real del objeto.",
+    "opciones": [
+      "Se ejecuta siempre la implementación de la superclase.",
+      "Se ejecuta la implementación correspondiente al tipo real del objeto.",
+      "Se produce una excepción.",
+      "Se ejecutan siempre ambas implementaciones."
+    ]
+  },
+  {
+    "id": "tai-java-0101",
+    "pregunta": "¿Qué clase es la raíz de la jerarquía de errores y excepciones de Java?",
+    "respuesta": "Throwable.",
+    "opciones": ["Exception.", "Error.", "Throwable.", "RuntimeException."]
+  },
+  {
+    "id": "tai-java-0102",
+    "pregunta": "¿Qué diferencia existe entre Error y Exception?",
+    "respuesta": "Error representa problemas graves normalmente ajenos al control habitual de la aplicación, mientras que Exception representa situaciones que una aplicación puede gestionar.",
+    "opciones": [
+      "Error siempre se puede recuperar y Exception nunca.",
+      "Error representa problemas graves normalmente ajenos al control habitual de la aplicación, mientras que Exception representa situaciones que una aplicación puede gestionar.",
+      "Son exactamente la misma clase.",
+      "Exception solo representa errores de sintaxis."
+    ]
+  },
+  {
+    "id": "tai-java-0103",
+    "pregunta": "¿Qué bloque se utiliza para capturar una excepción?",
+    "respuesta": "catch.",
+    "opciones": ["try.", "throw.", "catch.", "finally."]
+  },
+  {
+    "id": "tai-java-0104",
+    "pregunta": "¿Cuál es la función principal del bloque finally?",
+    "respuesta": "Ejecutar código de limpieza, normalmente tanto si se produce una excepción como si no.",
+    "opciones": [
+      "Capturar exclusivamente excepciones comprobadas.",
+      "Ejecutar código de limpieza, normalmente tanto si se produce una excepción como si no.",
+      "Finalizar obligatoriamente la JVM.",
+      "Crear nuevas excepciones."
+    ]
+  },
+  {
+    "id": "tai-java-0105",
+    "pregunta": "¿Qué palabra reservada permite lanzar explícitamente una excepción?",
+    "respuesta": "throw.",
+    "opciones": ["throws.", "throw.", "catch.", "raise."]
+  },
+  {
+    "id": "tai-java-0106",
+    "pregunta": "¿Qué palabra reservada permite declarar las excepciones que un método puede propagar?",
+    "respuesta": "throws.",
+    "opciones": ["throw.", "try.", "throws.", "catch."]
+  },
+  {
+    "id": "tai-java-0107",
+    "pregunta": "¿Qué caracteriza a una excepción comprobada (checked exception)?",
+    "respuesta": "Debe capturarse o declararse en la cláusula throws, salvo las excepciones a esta regla establecidas por el lenguaje.",
+    "opciones": [
+      "Nunca puede capturarse.",
+      "Debe capturarse o declararse en la cláusula throws, salvo las excepciones a esta regla establecidas por el lenguaje.",
+      "Solo se produce durante la compilación.",
+      "Siempre es una subclase de Error."
+    ]
+  },
+  {
+    "id": "tai-java-0108",
+    "pregunta": "¿Cuál de las siguientes es una excepción no comprobada?",
+    "respuesta": "NullPointerException.",
+    "opciones": [
+      "IOException.",
+      "SQLException.",
+      "ClassNotFoundException.",
+      "NullPointerException."
+    ]
+  },
+  {
+    "id": "tai-java-0109",
+    "pregunta": "¿Qué excepción se produce habitualmente al intentar dividir un entero entre cero?",
+    "respuesta": "ArithmeticException.",
+    "opciones": [
+      "IOException.",
+      "ArithmeticException.",
+      "NullPointerException.",
+      "NumberFormatException."
+    ]
+  },
+  {
+    "id": "tai-java-0110",
+    "pregunta": "¿Qué permite el mecanismo try-with-resources?",
+    "respuesta": "Cerrar automáticamente los recursos que implementan AutoCloseable al finalizar el bloque.",
+    "opciones": [
+      "Evitar todas las excepciones.",
+      "Cerrar automáticamente los recursos que implementan AutoCloseable al finalizar el bloque.",
+      "Ejecutar varios hilos simultáneamente.",
+      "Convertir excepciones comprobadas en errores."
+    ]
+  },
+  {
+    "id": "tai-java-0111",
+    "pregunta": "¿Qué interfaz representa una colección que mantiene una secuencia de elementos y permite acceder a ellos mediante índices?",
+    "respuesta": "List.",
+    "opciones": ["Set.", "Map.", "List.", "Queue."]
+  },
+  {
+    "id": "tai-java-0112",
+    "pregunta": "¿Qué característica distingue a Set?",
+    "respuesta": "No permite elementos duplicados según el criterio de igualdad de la implementación.",
+    "opciones": [
+      "Permite siempre elementos duplicados.",
+      "No permite elementos duplicados según el criterio de igualdad de la implementación.",
+      "Solo almacena pares clave-valor.",
+      "Siempre mantiene los elementos ordenados."
+    ]
+  },
+  {
+    "id": "tai-java-0113",
+    "pregunta": "¿Qué estructura almacena elementos asociados a claves?",
+    "respuesta": "Map.",
+    "opciones": ["List.", "Set.", "Map.", "Iterator."]
+  },
+  {
+    "id": "tai-java-0114",
+    "pregunta": "¿Qué implementación de List utiliza internamente un array dinámico?",
+    "respuesta": "ArrayList.",
+    "opciones": ["HashSet.", "HashMap.", "ArrayList.", "TreeMap."]
+  },
+  {
+    "id": "tai-java-0115",
+    "pregunta": "¿Qué implementación de Set utiliza una tabla hash para almacenar sus elementos?",
+    "respuesta": "HashSet.",
+    "opciones": ["ArrayList.", "HashSet.", "LinkedList.", "TreeMap."]
+  },
+  {
+    "id": "tai-java-0116",
+    "pregunta": "¿Qué implementación de Map utiliza una tabla hash?",
+    "respuesta": "HashMap.",
+    "opciones": ["ArrayList.", "TreeSet.", "HashMap.", "LinkedList."]
+  },
+  {
+    "id": "tai-java-0117",
+    "pregunta": "¿Qué característica ofrece TreeSet?",
+    "respuesta": "Mantiene sus elementos ordenados según su orden natural o un Comparator.",
+    "opciones": [
+      "Permite duplicados.",
+      "Mantiene sus elementos ordenados según su orden natural o un Comparator.",
+      "Almacena exclusivamente claves y valores.",
+      "Garantiza que los elementos se mantengan en orden de inserción."
+    ]
+  },
+  {
+    "id": "tai-java-0118",
+    "pregunta": "¿Qué diferencia general existe entre ArrayList y LinkedList?",
+    "respuesta": "ArrayList utiliza un array dinámico y LinkedList una lista doblemente enlazada.",
+    "opciones": [
+      "ArrayList utiliza una tabla hash y LinkedList un árbol.",
+      "ArrayList utiliza un array dinámico y LinkedList una lista doblemente enlazada.",
+      "Ambas utilizan internamente exactamente la misma estructura.",
+      "LinkedList no permite insertar elementos."
+    ]
+  },
+  {
+    "id": "tai-java-0119",
+    "pregunta": "¿Qué es un Iterator?",
+    "respuesta": "Un objeto que permite recorrer los elementos de una colección.",
+    "opciones": [
+      "Una clase que ordena automáticamente cualquier colección.",
+      "Un objeto que permite recorrer los elementos de una colección.",
+      "Una interfaz exclusiva de los arrays.",
+      "Un tipo de dato primitivo."
+    ]
+  },
+  {
+    "id": "tai-java-0120",
+    "pregunta": "¿Qué método de Iterator permite avanzar al siguiente elemento?",
+    "respuesta": "next().",
+    "opciones": ["moveNext().", "next().", "advance().", "getNext()."]
+  },
+  {
+    "id": "tai-java-0121",
+    "pregunta": "¿Qué método de Iterator permite comprobar si quedan elementos por recorrer?",
+    "respuesta": "hasNext().",
+    "opciones": ["hasNext().", "next().", "isEmpty().", "containsNext()."]
+  },
+  {
+    "id": "tai-java-0122",
+    "pregunta": "¿Qué finalidad tienen los genéricos en Java?",
+    "respuesta": "Permitir definir clases, interfaces y métodos parametrizados por tipos, proporcionando comprobación de tipos en compilación.",
+    "opciones": [
+      "Permitir almacenar únicamente números.",
+      "Permitir definir clases, interfaces y métodos parametrizados por tipos, proporcionando comprobación de tipos en compilación.",
+      "Evitar la necesidad de compilar.",
+      "Convertir todos los objetos en tipos primitivos."
+    ]
+  },
+  {
+    "id": "tai-java-0123",
+    "pregunta": "¿Qué significa List<String>?",
+    "respuesta": "Una lista cuyos elementos están declarados para ser de tipo String.",
+    "opciones": [
+      "Una lista que solo puede contener números.",
+      "Una lista cuyos elementos están declarados para ser de tipo String.",
+      "Una lista de arrays de caracteres obligatoriamente.",
+      "Una clase que hereda de String."
+    ]
+  },
+  {
+    "id": "tai-java-0124",
+    "pregunta": "¿Qué representa el comodín <? extends Number> en genéricos?",
+    "respuesta": "Un tipo desconocido que es Number o una de sus subclases.",
+    "opciones": [
+      "Cualquier tipo, sin restricciones.",
+      "Un tipo desconocido que es Number o una de sus subclases.",
+      "Exclusivamente el tipo Number.",
+      "Un tipo que hereda de String."
+    ]
+  },
+  {
+    "id": "tai-java-0125",
+    "pregunta": "¿Qué caracteriza a la interfaz Comparable<T>?",
+    "respuesta": "Permite definir el orden natural de los objetos mediante el método compareTo().",
+    "opciones": [
+      "Permite ordenar exclusivamente números primitivos.",
+      "Permite definir el orden natural de los objetos mediante el método compareTo().",
+      "Permite comparar objetos únicamente por su dirección de memoria.",
+      "Sustituye a la interfaz Iterator."
+    ]
+  },
+  {
+    "id": "tai-java-0126",
+    "pregunta": "¿Qué palabra reservada se utiliza para declarar el paquete al que pertenece una clase?",
+    "respuesta": "package.",
+    "opciones": ["import.", "namespace.", "package.", "module."]
+  },
+  {
+    "id": "tai-java-0127",
+    "pregunta": "¿Qué palabra reservada permite importar clases o interfaces de otros paquetes?",
+    "respuesta": "import.",
+    "opciones": ["include.", "using.", "import.", "package."]
+  },
+  {
+    "id": "tai-java-0128",
+    "pregunta": "¿Qué clase se utiliza habitualmente para leer texto introducido por teclado de forma sencilla?",
+    "respuesta": "Scanner.",
+    "opciones": ["Printer.", "Scanner.", "Writer.", "ConsoleReader."]
+  },
+  {
+    "id": "tai-java-0129",
+    "pregunta": "¿Qué clase representa una enumeración en Java?",
+    "respuesta": "Una clase declarada mediante la palabra reservada enum que define un conjunto fijo de constantes.",
+    "opciones": [
+      "Una clase abstracta que solo contiene números.",
+      "Una clase declarada mediante la palabra reservada enum que define un conjunto fijo de constantes.",
+      "Una interfaz que permite crear arrays dinámicos.",
+      "Una clase que sustituye a String."
+    ]
+  },
+  {
+    "id": "tai-java-0130",
+    "pregunta": "¿Qué característica introdujo la palabra reservada var en Java 10?",
+    "respuesta": "Permite inferir el tipo de una variable local a partir de su inicializador.",
+    "opciones": [
+      "Permite declarar variables globales sin tipo.",
+      "Permite inferir el tipo de una variable local a partir de su inicializador.",
+      "Convierte las variables en dinámicas durante toda su vida.",
+      "Permite declarar atributos de instancia sin tipo."
+    ]
+  },
+  {
+    "id": "tai-java-0131",
+    "pregunta": "¿Qué componente de la JVM se encarga de cargar las clases en memoria?",
+    "respuesta": "El ClassLoader.",
+    "opciones": ["El ClassLoader.", "El Garbage Collector.", "El compilador javac.", "El recolector de referencias."]
+  },
+  {
+    "id": "tai-java-0132",
+    "pregunta": "¿Qué es el proceso de verificación del bytecode?",
+    "respuesta": "La comprobación de que el código cumple las reglas de seguridad y formato de la JVM.",
+    "opciones": ["La comprobación de que el código cumple las reglas de seguridad y formato de la JVM.", "La conversión del bytecode a código fuente Java.", "La eliminación de objetos sin referencias.", "La instalación del JDK."]
+  },
+  {
+    "id": "tai-java-0133",
+    "pregunta": "¿Qué función realiza el compilador JIT de la JVM?",
+    "respuesta": "Compila partes del bytecode a código máquina nativo durante la ejecución.",
+    "opciones": ["Compila partes del bytecode a código máquina nativo durante la ejecución.", "Convierte código máquina en bytecode.", "Genera automáticamente los archivos .java.", "Gestiona exclusivamente la entrada y salida."]
+  },
+  {
+    "id": "tai-java-0134",
+    "pregunta": "¿Qué almacena principalmente la memoria Stack de un hilo?",
+    "respuesta": "Los marcos de las llamadas a métodos, sus variables locales y datos asociados.",
+    "opciones": ["Los marcos de las llamadas a métodos, sus variables locales y datos asociados.", "Todos los objetos creados con new.", "Las clases cargadas exclusivamente.", "Los archivos del sistema de ficheros."]
+  },
+  {
+    "id": "tai-java-0135",
+    "pregunta": "¿Dónde se almacenan normalmente los objetos creados mediante new?",
+    "respuesta": "En el Heap.",
+    "opciones": ["En el Heap.", "En el Stack del método main exclusivamente.", "En el área de código fuente.", "En el registro de instrucciones del procesador."]
+  },
+  {
+    "id": "tai-java-0136",
+    "pregunta": "¿Qué sucede cuando un método invoca a otro método?",
+    "respuesta": "Se crea un nuevo marco de pila para la llamada.",
+    "opciones": ["Se crea un nuevo marco de pila para la llamada.", "Se crea necesariamente un nuevo proceso del sistema operativo.", "Se reinicia la JVM.", "Se elimina el marco del método invocador."]
+  },
+  {
+    "id": "tai-java-0137",
+    "pregunta": "¿Qué ocurre cuando se produce un desbordamiento de la pila de llamadas?",
+    "respuesta": "Se lanza StackOverflowError.",
+    "opciones": ["Se lanza StackOverflowError.", "Se lanza IOException.", "Se devuelve null automáticamente.", "Se produce una conversión automática a Heap."]
+  },
+  {
+    "id": "tai-java-0138",
+    "pregunta": "¿Qué error puede producirse cuando la JVM no puede reservar más memoria para nuevos objetos?",
+    "respuesta": "OutOfMemoryError.",
+    "opciones": ["OutOfMemoryError.", "StackOverflowError necesariamente.", "ClassNotFoundException.", "IllegalArgumentException."]
+  },
+  {
+    "id": "tai-java-0139",
+    "pregunta": "¿Qué significa que un objeto sea elegible para la recolección de basura?",
+    "respuesta": "Que ya no puede alcanzarse mediante referencias activas desde el programa.",
+    "opciones": ["Que ya no puede alcanzarse mediante referencias activas desde el programa.", "Que ha sido declarado como final.", "Que está almacenado en una variable local.", "Que implementa la interfaz Serializable."]
+  },
+  {
+    "id": "tai-java-0140",
+    "pregunta": "¿Qué afirmación sobre System.gc() es correcta?",
+    "respuesta": "Solicita una posible ejecución del recolector de basura, pero no la garantiza.",
+    "opciones": ["Solicita una posible ejecución del recolector de basura, pero no la garantiza.", "Obliga a liberar inmediatamente toda la memoria.", "Cierra todos los objetos abiertos.", "Reinicia el recolector de basura."]
+  },
+  {
+    "id": "tai-java-0141",
+    "pregunta": "¿Qué representa el área de métodos en la arquitectura de memoria de la JVM?",
+    "respuesta": "Información relacionada con las clases, como estructuras de clase, métodos y datos asociados.",
+    "opciones": ["Información relacionada con las clases, como estructuras de clase, métodos y datos asociados.", "Exclusivamente las variables locales de cada método.", "Únicamente los objetos creados con new.", "Los datos temporales de entrada del teclado."]
+  },
+  {
+    "id": "tai-java-0142",
+    "pregunta": "¿Qué diferencia existe entre cargar una clase y crear una instancia?",
+    "respuesta": "Cargar una clase incorpora su definición a la JVM; crear una instancia genera un objeto de esa clase.",
+    "opciones": ["Cargar una clase incorpora su definición a la JVM; crear una instancia genera un objeto de esa clase.", "Son operaciones idénticas.", "Crear una instancia compila el archivo .java.", "Cargar una clase siempre crea un objeto."]
+  },
+  {
+    "id": "tai-java-0143",
+    "pregunta": "¿Qué es el classpath?",
+    "respuesta": "La ruta o conjunto de ubicaciones donde Java busca clases y recursos.",
+    "opciones": ["La ruta o conjunto de ubicaciones donde Java busca clases y recursos.", "El directorio exclusivo del recolector de basura.", "El nombre del compilador de Java.", "La ruta donde se almacenan obligatoriamente todos los archivos .java."]
+  },
+  {
+    "id": "tai-java-0144",
+    "pregunta": "¿Qué excepción puede producirse al intentar cargar una clase que no se encuentra durante la carga dinámica?",
+    "respuesta": "ClassNotFoundException.",
+    "opciones": ["ClassNotFoundException.", "ArithmeticException.", "NumberFormatException.", "InterruptedException."]
+  },
+  {
+    "id": "tai-java-0145",
+    "pregunta": "¿Cuál es la finalidad principal del bytecode de Java?",
+    "respuesta": "Proporcionar una representación intermedia ejecutable por una JVM compatible.",
+    "opciones": ["Proporcionar una representación intermedia ejecutable por una JVM compatible.", "Representar directamente instrucciones específicas de una única CPU.", "Sustituir al código fuente y eliminar la JVM.", "Almacenar exclusivamente datos de bases de datos."]
+  },
+  {
+    "id": "tai-java-0146",
+    "pregunta": "¿Qué ocurre al incrementar una variable byte cuyo valor es 127?",
+    "respuesta": "El valor pasa a -128 debido al desbordamiento del tipo byte.",
+    "opciones": ["El valor pasa a -128 debido al desbordamiento del tipo byte.", "El valor pasa a 128.", "Se lanza automáticamente ArithmeticException.", "La variable se convierte automáticamente en int."]
+  },
+  {
+    "id": "tai-java-0147",
+    "pregunta": "¿Cuál es el rango de valores del tipo short en Java?",
+    "respuesta": "-32.768 a 32.767.",
+    "opciones": ["-32.768 a 32.767.", "0 a 65.535.", "-128 a 127.", "-2.147.483.648 a 2.147.483.647."]
+  },
+  {
+    "id": "tai-java-0148",
+    "pregunta": "¿Qué sucede al asignar directamente un literal decimal como 3.5 a una variable float?",
+    "respuesta": "Se necesita indicar el sufijo f o realizar una conversión explícita.",
+    "opciones": ["Se necesita indicar el sufijo f o realizar una conversión explícita.", "La asignación siempre es válida.", "Java convierte automáticamente cualquier double en float.", "Se produce una excepción durante la ejecución."]
+  },
+  {
+    "id": "tai-java-0149",
+    "pregunta": "¿Qué sufijo identifica normalmente un literal de tipo long?",
+    "respuesta": "L o l.",
+    "opciones": ["L o l.", "F o f.", "D o d exclusivamente.", "S o s."]
+  },
+  {
+    "id": "tai-java-0150",
+    "pregunta": "¿Qué problema puede aparecer al utilizar float o double para representar cantidades decimales exactas?",
+    "respuesta": "Errores de precisión derivados de la representación binaria en coma flotante.",
+    "opciones": ["Errores de precisión derivados de la representación binaria en coma flotante.", "Que solo admiten números enteros.", "Que no permiten operaciones de multiplicación.", "Que siempre producen desbordamiento."]
+  },
+  {
+    "id": "tai-java-0151",
+    "pregunta": "¿Qué clase se utiliza habitualmente para representar números decimales con precisión decimal controlada?",
+    "respuesta": "BigDecimal.",
+    "opciones": ["BigDecimal.", "BigInteger.", "StringBuilder.", "AtomicInteger."]
+  },
+  {
+    "id": "tai-java-0152",
+    "pregunta": "¿Qué clase permite trabajar con enteros de precisión arbitraria?",
+    "respuesta": "BigInteger.",
+    "opciones": ["BigInteger.", "BigDecimal.", "IntegerBuilder.", "LongArray."]
+  },
+  {
+    "id": "tai-java-0153",
+    "pregunta": "¿Qué ocurre en una expresión aritmética con valores byte, short o char?",
+    "respuesta": "Normalmente se promocionan a int antes de realizar la operación.",
+    "opciones": ["Normalmente se promocionan a int antes de realizar la operación.", "Siempre permanecen en su tipo original.", "Se convierten automáticamente en String.", "Se convierten siempre en double."]
+  },
+  {
+    "id": "tai-java-0154",
+    "pregunta": "¿Qué resultado produce la expresión 5 / 2 si ambos operandos son int?",
+    "respuesta": "2.",
+    "opciones": ["2.", "2.5.", "3.", "Se produce ArithmeticException."]
+  },
+  {
+    "id": "tai-java-0155",
+    "pregunta": "¿Qué diferencia existe entre NaN y un valor numérico ordinario de tipo double?",
+    "respuesta": "NaN representa un resultado que no es un número.",
+    "opciones": ["NaN representa un resultado que no es un número.", "NaN representa siempre el valor cero.", "NaN es una excepción comprobada.", "NaN representa el mayor valor positivo de double."]
+  },
+  {
+    "id": "tai-java-0156",
+    "pregunta": "¿Qué operador realiza una operación AND a nivel de bits?",
+    "respuesta": "&.",
+    "opciones": ["&.", "|.", "^.", "~."]
+  },
+  {
+    "id": "tai-java-0157",
+    "pregunta": "¿Qué operador realiza una operación XOR a nivel de bits?",
+    "respuesta": "^.",
+    "opciones": ["^.", "&.", "&&.", "||."]
+  },
+  {
+    "id": "tai-java-0158",
+    "pregunta": "¿Qué realiza el operador de desplazamiento a la izquierda <<?",
+    "respuesta": "Desplaza los bits hacia la izquierda.",
+    "opciones": ["Desplaza los bits hacia la izquierda.", "Desplaza los bits hacia la derecha conservando siempre el signo.", "Compara dos valores.", "Invierte todos los bits."]
+  },
+  {
+    "id": "tai-java-0159",
+    "pregunta": "¿Qué diferencia existe entre >> y >>>?",
+    "respuesta": ">> conserva el bit de signo, mientras que >>> rellena con ceros.",
+    "opciones": [">> conserva el bit de signo, mientras que >>> rellena con ceros.", ">>> conserva el signo y >> rellena con ceros.", "Ambos realizan exclusivamente desplazamientos a la izquierda.", "No existe ninguna diferencia."]
+  },
+  {
+    "id": "tai-java-0160",
+    "pregunta": "¿Qué operador permite comprobar si un objeto pertenece a un tipo determinado?",
+    "respuesta": "instanceof.",
+    "opciones": ["instanceof.", "typeof.", "is.", "classof."]
+  },
+  {
+    "id": "tai-java-0161",
+    "pregunta": "¿Qué permite hacer una estructura switch con varias etiquetas de caso?",
+    "respuesta": "Ejecutar un mismo bloque para varios valores posibles.",
+    "opciones": ["Ejecutar un mismo bloque para varios valores posibles.", "Declarar varias clases simultáneamente.", "Repetir un bucle indefinidamente.", "Crear excepciones comprobadas."]
+  },
+  {
+    "id": "tai-java-0162",
+    "pregunta": "¿Qué característica tiene el operador yield dentro de una expresión switch?",
+    "respuesta": "Permite devolver un valor desde un bloque de una expresión switch.",
+    "opciones": ["Permite devolver un valor desde un bloque de una expresión switch.", "Finaliza siempre la JVM.", "Interrumpe todos los bucles del programa.", "Declara una variable constante."]
+  },
+  {
+    "id": "tai-java-0163",
+    "pregunta": "¿Qué ocurre si una condición de un bucle while es inicialmente false?",
+    "respuesta": "El cuerpo del bucle no se ejecuta ninguna vez.",
+    "opciones": ["El cuerpo del bucle no se ejecuta ninguna vez.", "El cuerpo se ejecuta exactamente una vez.", "Se produce una excepción.", "El programa termina obligatoriamente."]
+  },
+  {
+    "id": "tai-java-0164",
+    "pregunta": "¿Qué permite hacer una sentencia return?",
+    "respuesta": "Finalizar la ejecución del método y, si corresponde, devolver un valor.",
+    "opciones": ["Finalizar la ejecución del método y, si corresponde, devolver un valor.", "Finalizar exclusivamente el bucle más cercano.", "Saltar a la siguiente iteración.", "Capturar una excepción."]
+  },
+  {
+    "id": "tai-java-0165",
+    "pregunta": "¿Qué estructura resulta especialmente apropiada para recorrer una colección o array cuando no se necesita controlar manualmente el índice?",
+    "respuesta": "El bucle for-each.",
+    "opciones": ["El bucle for-each.", "El bucle do-while exclusivamente.", "La sentencia switch.", "La sentencia synchronized."]
+  },
+  {
+    "id": "tai-java-0166",
+    "pregunta": "¿Cómo se declara una matriz de enteros de dos dimensiones?",
+    "respuesta": "int[][] matriz;",
+    "opciones": ["int[][] matriz;", "int[2] matriz;", "matrix<int> matriz;", "int matriz[][]();"]
+  },
+  {
+    "id": "tai-java-0167",
+    "pregunta": "¿Qué propiedad permite conocer el número de filas de una matriz bidimensional llamada matriz?",
+    "respuesta": "matriz.length.",
+    "opciones": ["matriz.length.", "matriz.size().", "matriz.rows().", "matriz.count."]
+  },
+  {
+    "id": "tai-java-0168",
+    "pregunta": "¿Cómo se obtiene el número de elementos de la primera fila de una matriz bidimensional?",
+    "respuesta": "matriz[0].length.",
+    "opciones": ["matriz[0].length.", "matriz.length[0].", "matriz.size(0).", "matriz.count(0)."]
+  },
+  {
+    "id": "tai-java-0169",
+    "pregunta": "¿Qué clase proporciona métodos estáticos para ordenar, buscar y comparar arrays?",
+    "respuesta": "Arrays.",
+    "opciones": ["Arrays.", "Collections.", "ArrayList.", "Objects."]
+  },
+  {
+    "id": "tai-java-0170",
+    "pregunta": "¿Qué método de Arrays permite ordenar un array?",
+    "respuesta": "Arrays.sort().",
+    "opciones": ["Arrays.sort().", "Arrays.order().", "Arrays.organize().", "Arrays.sequence()."]
+  },
+  {
+    "id": "tai-java-0171",
+    "pregunta": "¿Qué método de Arrays permite buscar un elemento en un array previamente ordenado?",
+    "respuesta": "Arrays.binarySearch().",
+    "opciones": ["Arrays.binarySearch().", "Arrays.find().", "Arrays.searchLinear().", "Arrays.locate()."]
+  },
+  {
+    "id": "tai-java-0172",
+    "pregunta": "¿Qué es el String Pool?",
+    "respuesta": "Un conjunto de cadenas internadas que permite reutilizar determinadas instancias de String.",
+    "opciones": ["Un conjunto de cadenas internadas que permite reutilizar determinadas instancias de String.", "Un espacio exclusivo para almacenar variables primitivas.", "Una colección que ordena cadenas alfabéticamente.", "Un mecanismo que convierte String en char automáticamente."]
+  },
+  {
+    "id": "tai-java-0173",
+    "pregunta": "¿Qué hace el método intern() de String?",
+    "respuesta": "Devuelve la representación canónica de la cadena en el pool de cadenas.",
+    "opciones": ["Devuelve la representación canónica de la cadena en el pool de cadenas.", "Convierte la cadena en un array de bytes.", "Elimina todos los espacios de la cadena.", "Modifica la cadena original."]
+  },
+  {
+    "id": "tai-java-0174",
+    "pregunta": "¿Qué método de String permite comprobar si una cadena contiene una secuencia de caracteres?",
+    "respuesta": "contains().",
+    "opciones": ["contains().", "includesText().", "has().", "searchText()."]
+  },
+  {
+    "id": "tai-java-0175",
+    "pregunta": "¿Qué método de String permite dividir una cadena utilizando una expresión regular como separador?",
+    "respuesta": "split().",
+    "opciones": ["split().", "divide().", "separate().", "partition()."]
+  },
+  {
+    "id": "tai-java-0176",
+    "pregunta": "¿Qué método de Object devuelve una representación textual de un objeto?",
+    "respuesta": "toString().",
+    "opciones": ["toString().", "getText().", "printObject().", "stringValue()."]
+  },
+  {
+    "id": "tai-java-0177",
+    "pregunta": "¿Qué método de Object se utiliza para comprobar la igualdad lógica entre objetos?",
+    "respuesta": "equals().",
+    "opciones": ["equals().", "compare().", "same().", "identical()."]
+  },
+  {
+    "id": "tai-java-0178",
+    "pregunta": "¿Qué método de Object devuelve un valor hash del objeto?",
+    "respuesta": "hashCode().",
+    "opciones": ["hashCode().", "getHash().", "hashValue().", "codeHash()."]
+  },
+  {
+    "id": "tai-java-0179",
+    "pregunta": "¿Qué contrato deben respetar equals() y hashCode()?",
+    "respuesta": "Si dos objetos son iguales según equals(), deben devolver el mismo hashCode().",
+    "opciones": ["Si dos objetos son iguales según equals(), deben devolver el mismo hashCode().", "Si dos objetos tienen el mismo hashCode(), siempre deben ser iguales.", "equals() debe devolver siempre true.", "hashCode() debe devolver siempre un número distinto."]
+  },
+  {
+    "id": "tai-java-0180",
+    "pregunta": "¿Qué es la composición en programación orientada a objetos?",
+    "respuesta": "Una relación en la que un objeto está formado por otros objetos que utiliza como partes.",
+    "opciones": ["Una relación en la que un objeto está formado por otros objetos que utiliza como partes.", "Una técnica que impide crear objetos.", "Una forma de herencia múltiple de clases.", "Una conversión entre tipos primitivos."]
+  },
+  {
+    "id": "tai-java-0181",
+    "pregunta": "¿Qué diferencia general existe entre herencia y composición?",
+    "respuesta": "La herencia expresa una relación de tipo es-un; la composición expresa una relación tiene-un.",
+    "opciones": ["La herencia expresa una relación de tipo es-un; la composición expresa una relación tiene-un.", "La herencia representa tiene-un y la composición es-un.", "Ambas son exactamente lo mismo.", "La composición solo se aplica a interfaces."]
+  },
+  {
+    "id": "tai-java-0182",
+    "pregunta": "¿Qué es una clase interna o inner class?",
+    "respuesta": "Una clase declarada dentro de otra clase y asociada a una instancia de la clase externa, salvo que sea static.",
+    "opciones": ["Una clase declarada dentro de otra clase y asociada a una instancia de la clase externa, salvo que sea static.", "Una clase que solo puede utilizarse en otro paquete.", "Una clase que no puede tener métodos.", "Una clase que siempre hereda de Thread."]
+  },
+  {
+    "id": "tai-java-0183",
+    "pregunta": "¿Qué caracteriza a una clase anidada estática?",
+    "respuesta": "Está declarada dentro de otra clase con static y no necesita una instancia de la clase externa.",
+    "opciones": ["Está declarada dentro de otra clase con static y no necesita una instancia de la clase externa.", "No puede contener atributos.", "Debe declararse siempre como abstract.", "Solo puede utilizarse desde métodos estáticos."]
+  },
+  {
+    "id": "tai-java-0184",
+    "pregunta": "¿Qué es un método varargs?",
+    "respuesta": "Un método que puede recibir un número variable de argumentos de un mismo tipo.",
+    "opciones": ["Un método que puede recibir un número variable de argumentos de un mismo tipo.", "Un método que no admite parámetros.", "Un método que solo admite parámetros primitivos.", "Un método que devuelve obligatoriamente un array."]
+  },
+  {
+    "id": "tai-java-0185",
+    "pregunta": "¿Qué palabra clave permite definir un método que puede recibir un número variable de argumentos?",
+    "respuesta": "...",
+    "opciones": ["...", "var.", "params.", "dynamic."]
+  },
+  {
+    "id": "tai-java-0186",
+    "pregunta": "¿En qué orden se ejecutan, de forma general, los inicializadores de una clase y sus constructores al crear una instancia?",
+    "respuesta": "Primero se inicializa la parte de la superclase y después la de la subclase, antes de completar el cuerpo del constructor correspondiente.",
+    "opciones": ["Primero se inicializa la parte de la superclase y después la de la subclase, antes de completar el cuerpo del constructor correspondiente.", "Siempre se ejecuta primero el constructor de la subclase.", "Los inicializadores nunca se ejecutan.", "El orden depende del nombre de los atributos."]
+  },
+  {
+    "id": "tai-java-0187",
+    "pregunta": "¿Qué es un bloque de inicialización estático?",
+    "respuesta": "Un bloque static que se ejecuta cuando la clase se inicializa.",
+    "opciones": ["Un bloque static que se ejecuta cuando la clase se inicializa.", "Un bloque que se ejecuta en cada llamada a cualquier método.", "Un bloque que solo se ejecuta al destruir un objeto.", "Un bloque exclusivo de las interfaces."]
+  },
+  {
+    "id": "tai-java-0188",
+    "pregunta": "¿Qué ocurre si un atributo se declara final?",
+    "respuesta": "Debe asignarse una única vez y no puede reasignarse después de su inicialización.",
+    "opciones": ["Debe asignarse una única vez y no puede reasignarse después de su inicialización.", "Se convierte automáticamente en public.", "Se convierte en una constante global compartida.", "No puede contener referencias a objetos."]
+  },
+  {
+    "id": "tai-java-0189",
+    "pregunta": "¿Qué significa que una referencia sea final?",
+    "respuesta": "Que no puede apuntar posteriormente a otro objeto, aunque el objeto referenciado pueda ser mutable.",
+    "opciones": ["Que no puede apuntar posteriormente a otro objeto, aunque el objeto referenciado pueda ser mutable.", "Que el objeto se vuelve necesariamente inmutable.", "Que el objeto se elimina al salir del método.", "Que la referencia puede cambiar, pero no el tipo."]
+  },
+  {
+    "id": "tai-java-0190",
+    "pregunta": "¿Qué modificador permite el acceso desde la propia clase, el paquete y las subclases, con las condiciones de acceso de protected?",
+    "respuesta": "protected.",
+    "opciones": ["protected.", "private.", "public exclusivamente.", "static."]
+  },
+  {
+    "id": "tai-java-0191",
+    "pregunta": "¿Qué palabra clave impide que una clase pueda ser heredada?",
+    "respuesta": "final.",
+    "opciones": ["final.", "static.", "private.", "sealed exclusivamente."]
+  },
+  {
+    "id": "tai-java-0192",
+    "pregunta": "¿Qué ocurre si una subclase redefine un método heredado con la misma firma compatible?",
+    "respuesta": "Se produce una sobrescritura u overriding.",
+    "opciones": ["Se produce una sobrescritura u overriding.", "Se produce una sobrecarga obligatoriamente.", "Se elimina la clase padre.", "Se convierte el método en abstract automáticamente."]
+  },
+  {
+    "id": "tai-java-0193",
+    "pregunta": "¿Puede sobrescribirse un método declarado final?",
+    "respuesta": "No.",
+    "opciones": ["No.", "Sí, siempre que se utilice @Override.", "Sí, si la subclase está en otro paquete.", "Solo si el método devuelve void."]
+  },
+  {
+    "id": "tai-java-0194",
+    "pregunta": "¿Qué es un método covariante en Java?",
+    "respuesta": "Un método sobrescrito que puede devolver un subtipo del tipo de retorno declarado en la superclase.",
+    "opciones": ["Un método sobrescrito que puede devolver un subtipo del tipo de retorno declarado en la superclase.", "Un método que devuelve obligatoriamente void.", "Un método que cambia el nombre de la clase.", "Un método que no puede sobrescribirse."]
+  },
+  {
+    "id": "tai-java-0195",
+    "pregunta": "¿Qué ocurre con los métodos static cuando una subclase declara otro método static con la misma firma?",
+    "respuesta": "Se produce ocultación de métodos, no sobrescritura polimórfica.",
+    "opciones": ["Se produce ocultación de métodos, no sobrescritura polimórfica.", "Se produce overriding dinámico.", "La JVM genera siempre una excepción.", "El método de la superclase desaparece."]
+  },
+  {
+    "id": "tai-java-0196",
+    "pregunta": "¿Qué es una relación de asociación entre clases?",
+    "respuesta": "Una relación estructural en la que objetos de una clase se relacionan con objetos de otra.",
+    "opciones": ["Una relación estructural en la que objetos de una clase se relacionan con objetos de otra.", "Una relación que obliga a que una clase herede de otra.", "Una operación exclusiva de las interfaces funcionales.", "Una forma de conversión de tipos."]
+  },
+  {
+    "id": "tai-java-0197",
+    "pregunta": "¿Qué diferencia general existe entre agregación y composición?",
+    "respuesta": "La composición implica una relación de pertenencia más fuerte y dependencia del ciclo de vida de las partes.",
+    "opciones": ["La composición implica una relación de pertenencia más fuerte y dependencia del ciclo de vida de las partes.", "La agregación siempre impide compartir objetos.", "La composición es equivalente a la herencia.", "No existe ninguna diferencia conceptual."]
+  },
+  {
+    "id": "tai-java-0198",
+    "pregunta": "¿Qué método se ejecuta al invocar un método de instancia sobrescrito a través de una referencia de la superclase?",
+    "respuesta": "La implementación correspondiente al tipo real del objeto.",
+    "opciones": ["La implementación correspondiente al tipo real del objeto.", "Siempre la implementación de la clase declarada en la referencia.", "Siempre el método de Object.", "Ninguna implementación."]
+  },
+  {
+    "id": "tai-java-0199",
+    "pregunta": "¿Qué es una clase sellada o sealed class?",
+    "respuesta": "Una clase que restringe qué clases pueden heredar de ella.",
+    "opciones": ["Una clase que restringe qué clases pueden heredar de ella.", "Una clase cuyos atributos son todos private.", "Una clase que no puede tener constructores.", "Una clase que no puede implementar interfaces."]
+  },
+  {
+    "id": "tai-java-0200",
+    "pregunta": "¿Qué palabra clave indica una subclase permitida en la jerarquía de una clase sellada?",
+    "respuesta": "permits.",
+    "opciones": ["permits.", "allows.", "extends.", "sealedby."]
+  },
+  {
+    "id": "tai-java-0201",
+    "pregunta": "¿Puede una interfaz declarar métodos privados?",
+    "respuesta": "Sí, desde Java 9.",
+    "opciones": ["Sí, desde Java 9.", "No, las interfaces solo admiten métodos public.", "Sí, desde Java 1.0.", "Solo si la interfaz es abstract."]
+  },
+  {
+    "id": "tai-java-0202",
+    "pregunta": "¿Qué es una interfaz funcional?",
+    "respuesta": "Una interfaz que tiene exactamente un método abstracto.",
+    "opciones": ["Una interfaz que tiene exactamente un método abstracto.", "Una interfaz que solo contiene métodos static.", "Una interfaz que no puede utilizar expresiones lambda.", "Una interfaz que debe tener un método main."]
+  },
+  {
+    "id": "tai-java-0203",
+    "pregunta": "¿Qué anotación permite indicar que una interfaz debe cumplir el contrato de interfaz funcional?",
+    "respuesta": "@FunctionalInterface.",
+    "opciones": ["@FunctionalInterface.", "@Functional.", "@Lambda.", "@SingleMethod."]
+  },
+  {
+    "id": "tai-java-0204",
+    "pregunta": "¿Qué diferencia existe entre un método default y uno static de una interfaz?",
+    "respuesta": "El método default se hereda como método de instancia; el static pertenece a la propia interfaz.",
+    "opciones": ["El método default se hereda como método de instancia; el static pertenece a la propia interfaz.", "Ambos son métodos abstractos.", "El método static se invoca siempre mediante una instancia.", "El método default solo puede utilizarse desde constructores."]
+  },
+  {
+    "id": "tai-java-0205",
+    "pregunta": "¿Qué es una interfaz marcadora o marker interface?",
+    "respuesta": "Una interfaz sin métodos que identifica o caracteriza una clase.",
+    "opciones": ["Una interfaz sin métodos que identifica o caracteriza una clase.", "Una interfaz que contiene exclusivamente métodos privados.", "Una interfaz que impide crear objetos.", "Una interfaz que solo se utiliza para ordenar colecciones."]
+  },
+  {
+    "id": "tai-java-0206",
+    "pregunta": "¿Qué diferencia existe entre una excepción comprobada y una no comprobada?",
+    "respuesta": "Las comprobadas deben capturarse o declararse; las no comprobadas no tienen esa obligación.",
+    "opciones": ["Las comprobadas deben capturarse o declararse; las no comprobadas no tienen esa obligación.", "Las no comprobadas deben declararse siempre con throws.", "Las comprobadas solo aparecen durante la compilación.", "No existe ninguna diferencia."]
+  },
+  {
+    "id": "tai-java-0207",
+    "pregunta": "¿Qué clase es la superclase de RuntimeException?",
+    "respuesta": "Exception.",
+    "opciones": ["Exception.", "Error.", "Throwable directamente.", "Object exclusivamente."]
+  },
+  {
+    "id": "tai-java-0208",
+    "pregunta": "¿Qué excepción puede producirse al convertir una cadena no numérica mediante Integer.parseInt()?",
+    "respuesta": "NumberFormatException.",
+    "opciones": ["NumberFormatException.", "ClassCastException.", "IOException.", "IllegalMonitorStateException."]
+  },
+  {
+    "id": "tai-java-0209",
+    "pregunta": "¿Qué sucede si un bloque catch captura una excepción de un tipo más general antes que otra de tipo más específico?",
+    "respuesta": "Los catch posteriores más específicos pueden resultar inalcanzables y provocar un error de compilación.",
+    "opciones": ["Los catch posteriores más específicos pueden resultar inalcanzables y provocar un error de compilación.", "Java reordena automáticamente los bloques.", "La excepción se ignora.", "Se ejecutan todos los bloques catch."]
+  },
+  {
+    "id": "tai-java-0210",
+    "pregunta": "¿Qué permite hacer el multi-catch introducido en Java 7?",
+    "respuesta": "Capturar varios tipos de excepciones en un mismo bloque catch.",
+    "opciones": ["Capturar varios tipos de excepciones en un mismo bloque catch.", "Lanzar varias excepciones simultáneamente.", "Evitar la necesidad de utilizar try.", "Capturar errores del sistema operativo sin restricciones."]
+  },
+  {
+    "id": "tai-java-0211",
+    "pregunta": "¿Qué es una excepción personalizada?",
+    "respuesta": "Una clase definida por el programador que representa una situación excepcional propia de la aplicación.",
+    "opciones": ["Una clase definida por el programador que representa una situación excepcional propia de la aplicación.", "Una excepción que genera automáticamente el compilador.", "Un método que devuelve un valor boolean.", "Una clase que solo puede heredar de Error."]
+  },
+  {
+    "id": "tai-java-0212",
+    "pregunta": "¿Qué método de Throwable permite consultar la causa de una excepción?",
+    "respuesta": "getCause().",
+    "opciones": ["getCause().", "getReason().", "getOrigin().", "getException()."]
+  },
+  {
+    "id": "tai-java-0213",
+    "pregunta": "¿Qué son las excepciones suprimidas en Java?",
+    "respuesta": "Excepciones adicionales asociadas a otra excepción, por ejemplo durante el cierre de recursos en try-with-resources.",
+    "opciones": ["Excepciones adicionales asociadas a otra excepción, por ejemplo durante el cierre de recursos en try-with-resources.", "Excepciones que el compilador elimina antes de ejecutar el programa.", "Excepciones que nunca pueden consultarse.", "Errores que solo afectan a variables primitivas."]
+  },
+  {
+    "id": "tai-java-0214",
+    "pregunta": "¿Qué método permite consultar las excepciones suprimidas de un Throwable?",
+    "respuesta": "getSuppressed().",
+    "opciones": ["getSuppressed().", "getHidden().", "getIgnored().", "getSecondary()."]
+  },
+  {
+    "id": "tai-java-0215",
+    "pregunta": "¿Qué puede ocurrir si una excepción se lanza desde un bloque finally mientras ya se está propagando otra excepción?",
+    "respuesta": "La excepción lanzada en finally puede ocultar la excepción que se estaba propagando.",
+    "opciones": ["La excepción lanzada en finally puede ocultar la excepción que se estaba propagando.", "Ambas se convierten automáticamente en una sola excepción comprobada.", "La JVM ignora siempre la excepción de finally.", "El bloque finally no puede lanzar excepciones."]
+  },
+  {
+    "id": "tai-java-0216",
+    "pregunta": "¿Qué diferencia existe entre Collection y Collections?",
+    "respuesta": "Collection es una interfaz; Collections es una clase de utilidades con métodos estáticos.",
+    "opciones": ["Collection es una interfaz; Collections es una clase de utilidades con métodos estáticos.", "Collection es una clase y Collections una interfaz.", "Ambas son interfaces.", "Ambas representan exclusivamente mapas."]
+  },
+  {
+    "id": "tai-java-0217",
+    "pregunta": "¿Qué interfaz representa una colección que mantiene elementos en una secuencia y permite duplicados?",
+    "respuesta": "List.",
+    "opciones": ["List.", "Set.", "Map.", "Queue exclusivamente."]
+  },
+  {
+    "id": "tai-java-0218",
+    "pregunta": "¿Qué interfaz representa una colección que no admite elementos duplicados según sus reglas de igualdad?",
+    "respuesta": "Set.",
+    "opciones": ["Set.", "List.", "Map.", "Iterator."]
+  },
+  {
+    "id": "tai-java-0219",
+    "pregunta": "¿Qué interfaz representa una estructura de pares clave-valor?",
+    "respuesta": "Map.",
+    "opciones": ["Map.", "List.", "Set.", "Collection."]
+  },
+  {
+    "id": "tai-java-0220",
+    "pregunta": "¿Qué implementación de Set mantiene el orden de inserción?",
+    "respuesta": "LinkedHashSet.",
+    "opciones": ["LinkedHashSet.", "HashSet.", "TreeSet.", "PriorityQueue."]
+  },
+  {
+    "id": "tai-java-0221",
+    "pregunta": "¿Qué implementación de Map mantiene las claves ordenadas según su orden natural o un Comparator?",
+    "respuesta": "TreeMap.",
+    "opciones": ["TreeMap.", "HashMap.", "LinkedHashMap.", "IdentityHashMap."]
+  },
+  {
+    "id": "tai-java-0222",
+    "pregunta": "¿Qué implementación de Map mantiene normalmente el orden de inserción de las entradas?",
+    "respuesta": "LinkedHashMap.",
+    "opciones": ["LinkedHashMap.", "HashMap.", "TreeMap.", "Hashtable exclusivamente."]
+  },
+  {
+    "id": "tai-java-0223",
+    "pregunta": "¿Qué estructura utiliza habitualmente HashMap para organizar sus entradas?",
+    "respuesta": "Una tabla hash.",
+    "opciones": ["Una tabla hash.", "Un árbol binario de búsqueda siempre.", "Una pila LIFO.", "Una cola circular exclusivamente."]
+  },
+  {
+    "id": "tai-java-0224",
+    "pregunta": "¿Qué ocurre cuando dos claves distintas de HashMap producen el mismo valor hash?",
+    "respuesta": "Se produce una colisión que la implementación debe gestionar.",
+    "opciones": ["Se produce una colisión que la implementación debe gestionar.", "Una de las claves se elimina siempre.", "HashMap rechaza automáticamente la segunda clave.", "La JVM genera una excepción obligatoria."]
+  },
+  {
+    "id": "tai-java-0225",
+    "pregunta": "¿Qué condiciones deben cumplirse para que una clase se utilice correctamente como clave de HashMap?",
+    "respuesta": "Debe respetar el contrato de equals() y hashCode(), manteniendo estable su estado relevante mientras sea clave.",
+    "opciones": ["Debe respetar el contrato de equals() y hashCode(), manteniendo estable su estado relevante mientras sea clave.", "Debe implementar obligatoriamente Comparable.", "Debe heredar directamente de HashMap.", "Debe contener exclusivamente atributos primitivos."]
+  },
+  {
+    "id": "tai-java-0226",
+    "pregunta": "¿Qué interfaz representa una colección diseñada para procesar elementos siguiendo políticas de cola?",
+    "respuesta": "Queue.",
+    "opciones": ["Queue.", "Map.", "Set.", "Comparable."]
+  },
+  {
+    "id": "tai-java-0227",
+    "pregunta": "¿Qué estructura permite insertar y extraer elementos por ambos extremos?",
+    "respuesta": "Deque.",
+    "opciones": ["Deque.", "TreeMap.", "HashSet.", "ArrayList."]
+  },
+  {
+    "id": "tai-java-0228",
+    "pregunta": "¿Qué implementación de Deque suele utilizarse como pila o cola de doble extremo basada en array?",
+    "respuesta": "ArrayDeque.",
+    "opciones": ["ArrayDeque.", "TreeSet.", "HashMap.", "LinkedHashMap."]
+  },
+  {
+    "id": "tai-java-0229",
+    "pregunta": "¿Qué estructura proporciona una cola de prioridad?",
+    "respuesta": "PriorityQueue.",
+    "opciones": ["PriorityQueue.", "ArrayList.", "HashSet.", "LinkedHashMap."]
+  },
+  {
+    "id": "tai-java-0230",
+    "pregunta": "¿Qué diferencia existe entre Iterator y ListIterator?",
+    "respuesta": "ListIterator permite recorrer una lista en ambos sentidos y realizar operaciones adicionales.",
+    "opciones": ["ListIterator permite recorrer una lista en ambos sentidos y realizar operaciones adicionales.", "Iterator solo funciona con mapas.", "ListIterator no permite recorrer elementos.", "Iterator siempre recorre en ambos sentidos."]
+  },
+  {
+    "id": "tai-java-0231",
+    "pregunta": "¿Qué excepción puede producirse al modificar estructuralmente una colección durante un recorrido con un iterador fail-fast sin utilizar el propio iterador?",
+    "respuesta": "ConcurrentModificationException.",
+    "opciones": ["ConcurrentModificationException.", "ClassNotFoundException.", "ArrayStoreException.", "NoSuchMethodException."]
+  },
+  {
+    "id": "tai-java-0232",
+    "pregunta": "¿Qué método de Collections permite ordenar una lista según su orden natural?",
+    "respuesta": "Collections.sort().",
+    "opciones": ["Collections.sort().", "Collections.order().", "Collections.sequence().", "Collections.arrange()."]
+  },
+  {
+    "id": "tai-java-0233",
+    "pregunta": "¿Qué interfaz permite definir un criterio de ordenación externo al tipo de los objetos?",
+    "respuesta": "Comparator.",
+    "opciones": ["Comparator.", "Runnable.", "Serializable.", "Cloneable."]
+  },
+  {
+    "id": "tai-java-0234",
+    "pregunta": "¿Qué diferencia existe entre Comparable y Comparator?",
+    "respuesta": "Comparable define el orden natural en la propia clase; Comparator permite definir criterios de comparación externos.",
+    "opciones": ["Comparable define el orden natural en la propia clase; Comparator permite definir criterios de comparación externos.", "Comparator define el orden natural y Comparable el externo.", "Ambas son clases abstractas.", "Comparable solo puede utilizarse con tipos primitivos."]
+  },
+  {
+    "id": "tai-java-0235",
+    "pregunta": "¿Qué significa que los genéricos de Java utilicen borrado de tipos o type erasure?",
+    "respuesta": "Que la información de los parámetros genéricos se elimina o transforma en gran medida durante la compilación.",
+    "opciones": ["Que la información de los parámetros genéricos se elimina o transforma en gran medida durante la compilación.", "Que los objetos genéricos se borran al terminar cada método.", "Que Java comprueba todos los tipos genéricos exclusivamente en ejecución.", "Que no se pueden utilizar genéricos con colecciones."]
+  },
+  {
+    "id": "tai-java-0236",
+    "pregunta": "¿Qué diferencia existe entre InputStream y Reader?",
+    "respuesta": "InputStream trabaja con bytes; Reader trabaja con caracteres.",
+    "opciones": ["InputStream trabaja con bytes; Reader trabaja con caracteres.", "InputStream trabaja con caracteres y Reader con bytes.", "Ambos trabajan exclusivamente con objetos.", "Reader solo permite escribir."]
+  },
+  {
+    "id": "tai-java-0237",
+    "pregunta": "¿Qué diferencia existe entre OutputStream y Writer?",
+    "respuesta": "OutputStream escribe bytes; Writer escribe caracteres.",
+    "opciones": ["OutputStream escribe bytes; Writer escribe caracteres.", "OutputStream escribe caracteres y Writer bytes.", "Ambos son interfaces de colecciones.", "Writer solo permite leer."]
+  },
+  {
+    "id": "tai-java-0238",
+    "pregunta": "¿Qué clase permite leer bytes desde un archivo?",
+    "respuesta": "FileInputStream.",
+    "opciones": ["FileInputStream.", "FileReader exclusivamente.", "FileWriter.", "BufferedWriter."]
+  },
+  {
+    "id": "tai-java-0239",
+    "pregunta": "¿Qué clase permite escribir bytes en un archivo?",
+    "respuesta": "FileOutputStream.",
+    "opciones": ["FileOutputStream.", "FileInputStream.", "BufferedReader.", "Scanner."]
+  },
+  {
+    "id": "tai-java-0240",
+    "pregunta": "¿Qué clase permite leer caracteres de un archivo?",
+    "respuesta": "FileReader.",
+    "opciones": ["FileReader.", "FileOutputStream.", "PrintWriter exclusivamente.", "DataOutputStream."]
+  },
+  {
+    "id": "tai-java-0241",
+    "pregunta": "¿Cuál es la finalidad de BufferedReader?",
+    "respuesta": "Mejorar la eficiencia de lectura mediante un búfer y proporcionar lectura de líneas.",
+    "opciones": ["Mejorar la eficiencia de lectura mediante un búfer y proporcionar lectura de líneas.", "Cifrar automáticamente los archivos.", "Comprimir cualquier archivo leído.", "Convertir todos los datos en objetos Serializable."]
+  },
+  {
+    "id": "tai-java-0242",
+    "pregunta": "¿Qué método de BufferedReader permite leer una línea de texto?",
+    "respuesta": "readLine().",
+    "opciones": ["readLine().", "getLine().", "nextLine().", "readText()."]
+  },
+  {
+    "id": "tai-java-0243",
+    "pregunta": "¿Qué clase facilita la escritura de texto con métodos como print() y println()?",
+    "respuesta": "PrintWriter.",
+    "opciones": ["PrintWriter.", "FileInputStream.", "BufferedReader.", "InputStreamReader."]
+  },
+  {
+    "id": "tai-java-0244",
+    "pregunta": "¿Qué clase de Java permite representar rutas de archivos de forma moderna?",
+    "respuesta": "Path.",
+    "opciones": ["Path.", "FileInput.", "DirectoryReader.", "FileRoute."]
+  },
+  {
+    "id": "tai-java-0245",
+    "pregunta": "¿En qué paquete se encuentran las clases Path y Files?",
+    "respuesta": "java.nio.file.",
+    "opciones": ["java.nio.file.", "java.io.file.", "java.util.path.", "java.net.file."]
+  },
+  {
+    "id": "tai-java-0246",
+    "pregunta": "¿Qué clase proporciona métodos estáticos para copiar, mover, leer y escribir archivos mediante NIO.2?",
+    "respuesta": "Files.",
+    "opciones": ["Files.", "FileManager.", "PathUtils.", "IOStream."]
+  },
+  {
+    "id": "tai-java-0247",
+    "pregunta": "¿Qué interfaz debe implementar una clase para participar en el mecanismo estándar de serialización de objetos de Java?",
+    "respuesta": "Serializable.",
+    "opciones": ["Serializable.", "Cloneable.", "Runnable.", "Comparable."]
+  },
+  {
+    "id": "tai-java-0248",
+    "pregunta": "¿Qué modificador evita que un atributo participe en la serialización estándar de Java?",
+    "respuesta": "transient.",
+    "opciones": ["transient.", "volatile.", "synchronized.", "native."]
+  },
+  {
+    "id": "tai-java-0249",
+    "pregunta": "¿Qué clase permite convertir un flujo de bytes en un flujo de caracteres utilizando una codificación determinada?",
+    "respuesta": "InputStreamReader.",
+    "opciones": ["InputStreamReader.", "FileOutputStream.", "ObjectOutputStream.", "PrintStream exclusivamente."]
+  },
+  {
+    "id": "tai-java-0250",
+    "pregunta": "¿Qué ventaja ofrece try-with-resources?",
+    "respuesta": "Cierra automáticamente los recursos que implementan AutoCloseable al finalizar el bloque.",
+    "opciones": ["Cierra automáticamente los recursos que implementan AutoCloseable al finalizar el bloque.", "Evita que se produzcan excepciones.", "Impide que se creen archivos.", "Convierte todos los recursos en variables static."]
+  },
+  {
+    "id": "tai-java-0251",
+    "pregunta": "¿Qué es una expresión lambda en Java?",
+    "respuesta": "Una forma concisa de proporcionar la implementación de una interfaz funcional.",
+    "opciones": ["Una forma concisa de proporcionar la implementación de una interfaz funcional.", "Una clase abstracta que sustituye a todas las interfaces.", "Un tipo primitivo de dato.", "Una instrucción para crear hilos obligatoriamente."]
+  },
+  {
+    "id": "tai-java-0252",
+    "pregunta": "¿Qué interfaz funcional representa una operación que recibe un valor y devuelve un boolean?",
+    "respuesta": "Predicate<T>.",
+    "opciones": ["Predicate<T>.", "Consumer<T>.", "Supplier<T>.", "Runnable."]
+  },
+  {
+    "id": "tai-java-0253",
+    "pregunta": "¿Qué interfaz funcional representa una operación que recibe un valor y devuelve otro valor?",
+    "respuesta": "Function<T, R>.",
+    "opciones": ["Function<T, R>.", "Consumer<T>.", "Supplier<T>.", "Runnable."]
+  },
+  {
+    "id": "tai-java-0254",
+    "pregunta": "¿Qué interfaz funcional representa una operación que recibe un valor y no devuelve resultado?",
+    "respuesta": "Consumer<T>.",
+    "opciones": ["Consumer<T>.", "Function<T, R>.", "Supplier<T>.", "Predicate<T>."]
+  },
+  {
+    "id": "tai-java-0255",
+    "pregunta": "¿Qué interfaz funcional representa una operación que no recibe argumentos y proporciona un resultado?",
+    "respuesta": "Supplier<T>.",
+    "opciones": ["Supplier<T>.", "Consumer<T>.", "Predicate<T>.", "Comparator<T>."]
+  },
+  {
+    "id": "tai-java-0256",
+    "pregunta": "¿Qué es una referencia a método en Java?",
+    "respuesta": "Una sintaxis abreviada para referenciar un método o constructor compatible con una interfaz funcional.",
+    "opciones": ["Una sintaxis abreviada para referenciar un método o constructor compatible con una interfaz funcional.", "Una referencia a una variable local exclusivamente.", "Un mecanismo para crear paquetes.", "Una forma de declarar excepciones comprobadas."]
+  },
+  {
+    "id": "tai-java-0257",
+    "pregunta": "¿Qué método de Stream permite seleccionar elementos que cumplen una condición?",
+    "respuesta": "filter().",
+    "opciones": ["filter().", "map().", "reduce().", "collect()."]
+  },
+  {
+    "id": "tai-java-0258",
+    "pregunta": "¿Qué método de Stream permite transformar cada elemento en otro valor?",
+    "respuesta": "map().",
+    "opciones": ["map().", "filter().", "count().", "sorted()."]
+  },
+  {
+    "id": "tai-java-0259",
+    "pregunta": "¿Qué método de Stream permite transformar cada elemento en cero o más elementos y aplanar los resultados?",
+    "respuesta": "flatMap().",
+    "opciones": ["flatMap().", "map().", "peek().", "limit()."]
+  },
+  {
+    "id": "tai-java-0260",
+    "pregunta": "¿Qué tipo de operación es filter() dentro de Stream API?",
+    "respuesta": "Una operación intermedia.",
+    "opciones": ["Una operación intermedia.", "Una operación terminal.", "Una operación de entrada/salida.", "Una operación de sincronización."]
+  },
+  {
+    "id": "tai-java-0261",
+    "pregunta": "¿Qué tipo de operación es collect() dentro de Stream API?",
+    "respuesta": "Una operación terminal.",
+    "opciones": ["Una operación terminal.", "Una operación intermedia.", "Una operación exclusiva de arrays.", "Una operación de compilación."]
+  },
+  {
+    "id": "tai-java-0262",
+    "pregunta": "¿Qué característica tienen las operaciones intermedias de Stream API?",
+    "respuesta": "Son perezosas y normalmente no se ejecutan hasta que se invoca una operación terminal.",
+    "opciones": ["Son perezosas y normalmente no se ejecutan hasta que se invoca una operación terminal.", "Se ejecutan siempre inmediatamente.", "Modifican necesariamente la colección original.", "Solo funcionan con flujos paralelos."]
+  },
+  {
+    "id": "tai-java-0263",
+    "pregunta": "¿Qué clase se utiliza para representar un valor que puede estar presente o ausente?",
+    "respuesta": "Optional.",
+    "opciones": ["Optional.", "Nullable.", "MaybeValue.", "Present."]
+  },
+  {
+    "id": "tai-java-0264",
+    "pregunta": "¿Qué es un record en Java?",
+    "respuesta": "Una clase diseñada para representar principalmente datos, con componentes y métodos generados automáticamente.",
+    "opciones": ["Una clase diseñada para representar principalmente datos, con componentes y métodos generados automáticamente.", "Una interfaz funcional para procesar archivos.", "Una clase que solo puede utilizarse como excepción.", "Un tipo primitivo de dato."]
+  },
+  {
+    "id": "tai-java-0265",
+    "pregunta": "¿En qué versión de Java se incorporaron los records como característica definitiva?",
+    "respuesta": "Java 16.",
+    "opciones": ["Java 16.", "Java 8.", "Java 11.", "Java 21."]
+  },
+  {
+    "id": "tai-java-0266",
+    "pregunta": "¿Qué característica introducen los text blocks?",
+    "respuesta": "Permiten escribir cadenas multilínea utilizando tres comillas dobles.",
+    "opciones": ["Permiten escribir cadenas multilínea utilizando tres comillas dobles.", "Permiten declarar clases sin nombre.", "Sustituyen todos los tipos String por char[].", "Permiten ejecutar código SQL directamente."]
+  },
+  {
+    "id": "tai-java-0267",
+    "pregunta": "¿Qué es un hilo o thread?",
+    "respuesta": "Una unidad de ejecución dentro de un proceso.",
+    "opciones": ["Una unidad de ejecución dentro de un proceso.", "Un proceso independiente del sistema operativo en todos los casos.", "Un objeto que representa una excepción.", "Un tipo de colección ordenada."]
+  },
+  {
+    "id": "tai-java-0268",
+    "pregunta": "¿Qué diferencia existe entre llamar a start() y a run() en un objeto Thread?",
+    "respuesta": "start() inicia un nuevo hilo de ejecución; run() invocado directamente se ejecuta como una llamada normal.",
+    "opciones": ["start() inicia un nuevo hilo de ejecución; run() invocado directamente se ejecuta como una llamada normal.", "Ambos crean siempre un hilo nuevo.", "run() crea un hilo y start() ejecuta el método en el hilo actual.", "start() finaliza el hilo."]
+  },
+  {
+    "id": "tai-java-0269",
+    "pregunta": "¿Qué palabra clave permite sincronizar un método o bloque para controlar el acceso concurrente a una sección crítica?",
+    "respuesta": "synchronized.",
+    "opciones": ["synchronized.", "volatile.", "transient.", "native."]
+  },
+  {
+    "id": "tai-java-0270",
+    "pregunta": "¿Qué es una condición de carrera o race condition?",
+    "respuesta": "Una situación en la que el resultado depende del orden o sincronización de accesos concurrentes.",
+    "opciones": ["Una situación en la que el resultado depende del orden o sincronización de accesos concurrentes.", "Un error exclusivo de compilación.", "Una excepción que aparece al ordenar arrays.", "Una técnica para acelerar el recolector de basura."]
+  },
+  {
+    "id": "tai-java-0271",
+    "pregunta": "¿Qué significa JDBC?",
+    "respuesta": "Java Database Connectivity.",
+    "opciones": ["Java Database Connectivity.", "Java Data Binary Compiler.", "Java Distributed Base Control.", "Java Development Basic Classes."]
+  },
+  {
+    "id": "tai-java-0272",
+    "pregunta": "¿Qué interfaz representa una conexión con una base de datos mediante JDBC?",
+    "respuesta": "Connection.",
+    "opciones": ["Connection.", "Statement.", "ResultSet.", "Driver."]
+  },
+  {
+    "id": "tai-java-0273",
+    "pregunta": "¿Qué interfaz permite ejecutar sentencias SQL estáticas?",
+    "respuesta": "Statement.",
+    "opciones": ["Statement.", "Connection.", "ResultSet.", "DataSource."]
+  },
+  {
+    "id": "tai-java-0274",
+    "pregunta": "¿Qué ventaja ofrece PreparedStatement frente a Statement?",
+    "respuesta": "Permite utilizar parámetros y sentencias preparadas, facilitando la reutilización y evitando concatenar directamente datos en el SQL.",
+    "opciones": ["Permite utilizar parámetros y sentencias preparadas, facilitando la reutilización y evitando concatenar directamente datos en el SQL.", "Permite ejecutar exclusivamente consultas SELECT.", "No necesita una conexión con la base de datos.", "Sustituye al sistema de transacciones."]
+  },
+  {
+    "id": "tai-java-0275",
+    "pregunta": "¿Qué interfaz representa el conjunto de resultados obtenido mediante una consulta JDBC?",
+    "respuesta": "ResultSet.",
+    "opciones": ["ResultSet.", "PreparedStatement.", "Connection.", "DriverManager."]
+  },
+  {
+    "id": "tai-java-0276",
+    "pregunta": "¿Qué método de Connection confirma una transacción?",
+    "respuesta": "commit().",
+    "opciones": ["commit().", "confirm().", "save().", "execute()."]
+  },
+  {
+    "id": "tai-java-0277",
+    "pregunta": "¿Qué método de Connection permite deshacer los cambios de una transacción no confirmada?",
+    "respuesta": "rollback().",
+    "opciones": ["rollback().", "undo().", "cancel().", "restore()."]
+  },
+  {
+    "id": "tai-java-0278",
+    "pregunta": "¿Qué componente de Java EE/Jakarta EE permite gestionar solicitudes y respuestas HTTP en el servidor?",
+    "respuesta": "Los servlets.",
+    "opciones": ["Los servlets.", "Los records.", "Los enumerados.", "Los iteradores."]
+  },
+  {
+    "id": "tai-java-0279",
+    "pregunta": "¿Qué tecnología se utiliza tradicionalmente para generar páginas web dinámicas en el entorno Java del servidor?",
+    "respuesta": "JSP (JavaServer Pages).",
+    "opciones": ["JSP (JavaServer Pages).", "JDBC.", "JVM.", "JAR."]
+  },
+  {
+    "id": "tai-java-0280",
+    "pregunta": "¿Qué arquitectura organiza habitualmente una aplicación empresarial en capas de presentación, lógica de negocio y acceso a datos?",
+    "respuesta": "Arquitectura multicapa.",
+    "opciones": ["Arquitectura multicapa.", "Arquitectura monolítica obligatoriamente.", "Arquitectura de pila LIFO.", "Arquitectura de tabla hash."]
   }
 ]
