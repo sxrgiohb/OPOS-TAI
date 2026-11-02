@@ -44,6 +44,137 @@
           ]
         }
       ]
+    },
+    {
+      "id": "baterias-tai",
+      "nombre": "Baterias TAI",
+      "contenido": [
+        {
+          "id": "lenguajes-programacion",
+          "nombre": "Lenguajes Programacion",
+          "contenido": [
+            {
+              "id": "csharp",
+              "nombre": "C#",
+              "archivo": "csharp.json"
+            },
+            {
+              "id": "java",
+              "nombre": "Java",
+              "archivo": "java.json"
+            },
+            {
+              "id": "python",
+              "nombre": "Python",
+              "archivo": "python.json"
+            },
+            {
+              "id": "php",
+              "nombre": "PHP",
+              "archivo": "php.json"
+            }
+          ]
+        },
+        {
+          "id": "desarrollo-web-frontend",
+          "nombre": "Desarrollo Web y Frontend",
+          "contenido": [
+            {
+              "id": "html5",
+              "nombre": "HTML5",
+              "archivo": "html5.json"
+            },
+            {
+              "id": "css3",
+              "nombre": "CSS3",
+              "archivo": "css3.json"
+            },
+            {
+              "id": "javascript",
+              "nombre": "JavaScript",
+              "archivo": "javascript.json"
+            },
+            {
+              "id": "typescript",
+              "nombre": "TypeScript",
+              "archivo": "typescript.json"
+            },
+            {
+              "id": "xml",
+              "nombre": "XML",
+              "archivo": "xml.json"
+            }
+          ]
+        },
+        {
+          "id": "bases-datos-consultas",
+          "nombre": "Bases de Datos y Consultas",
+          "contenido": [
+            {
+              "id": "sql-ansi",
+              "nombre": "SQL ANSI",
+              "archivo": "sql_ansi.json"
+            },
+            {
+              "id": "sql-plsql-oracle",
+              "nombre": "SQL PL/SQL Oracle",
+              "archivo": "sql_plsql_oracle.json"
+            },
+            {
+              "id": "sql-tsql-mssql",
+              "nombre": "SQL T-SQL MSSQL",
+              "archivo": "sql_tsql_mssql.json"
+            }
+          ]
+        },
+        {
+          "id": "terminal-sistemas-operativos",
+          "nombre": "Terminal y Sistemas Operativos",
+          "contenido": [
+            {
+              "id": "linux-bash",
+              "nombre": "Linux Bash",
+              "archivo": "linux_bash.json"
+            },
+            {
+              "id": "windows-powershell-cmd",
+              "nombre": "Windows PowerShell y CMD",
+              "archivo": "windows_powershell_cmd.json"
+            }
+          ]
+        },
+        {
+          "id": "ingenieria-software-herramientas",
+          "nombre": "Ingenieria Software y Herramientas",
+          "contenido": [
+            {
+              "id": "metrica-v3-agiles",
+              "nombre": "Métrica v3 y Ágiles",
+              "archivo": "metrica_v3_y_agiles.json"
+            },
+            {
+              "id": "patrones-diseno-solid",
+              "nombre": "Patrones de Diseño y SOLID",
+              "archivo": "patrones_diseno_y_solid.json"
+            },
+            {
+              "id": "http-rest-web-services",
+              "nombre": "HTTP REST y Web Services",
+              "archivo": "http_rest_y_web_services.json"
+            },
+            {
+              "id": "seguridad-owasp",
+              "nombre": "Seguridad OWASP",
+              "archivo": "seguridad_owasp.json"
+            },
+            {
+              "id": "git-control-versiones",
+              "nombre": "Git Control de Versiones",
+              "archivo": "git_control_versiones.json"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
