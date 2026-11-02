@@ -1,0 +1,662 @@
+[
+  {
+    "id": "tai-seguridad_owasp-0001",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #1 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #1 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #1 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0002",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #2 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #2 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #2 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0003",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #3 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #3 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #3 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0004",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #4 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #4 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #4 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0005",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #5 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #5 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #5 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0006",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #6 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #6 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #6 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0007",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #7 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #7 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #7 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0008",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #8 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #8 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #8 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0009",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #9 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #9 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #9 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0010",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #10 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #10 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #10 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0011",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #11 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #11 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #11 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0012",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #12 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #12 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #12 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0013",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #13 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #13 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #13 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0014",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #14 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #14 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #14 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0015",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #15 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #15 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #15 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0016",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #16 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #16 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #16 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0017",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #17 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #17 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #17 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0018",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #18 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #18 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #18 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0019",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #19 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #19 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #19 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0020",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #20 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #20 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #20 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0021",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #21 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #21 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #21 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0022",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #22 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #22 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #22 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0023",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #23 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #23 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #23 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0024",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #24 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #24 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #24 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0025",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #25 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #25 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #25 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0026",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #26 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #26 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #26 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0027",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #27 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #27 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #27 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0028",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #28 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #28 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #28 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0029",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #29 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #29 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #29 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0030",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #30 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #30 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #30 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0031",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #31 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #31 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #31 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0032",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #32 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #32 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #32 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0033",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #33 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #33 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #33 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0034",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #34 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #34 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #34 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0035",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #35 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #35 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #35 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0036",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #36 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #36 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #36 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0037",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #37 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #37 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #37 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0038",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #38 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #38 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #38 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0039",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #39 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #39 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #39 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0040",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #40 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #40 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #40 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0041",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #41 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #41 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #41 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0042",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #42 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #42 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #42 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0043",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #43 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #43 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #43 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0044",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #44 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #44 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #44 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0045",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #45 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #45 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #45 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0046",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #46 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #46 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #46 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0047",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #47 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #47 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #47 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0048",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #48 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #48 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #48 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0049",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #49 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #49 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #49 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0050",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #50 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #50 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #50 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0051",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #51 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #51 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #51 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0052",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #52 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #52 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #52 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0053",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #53 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #53 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #53 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0054",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #54 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #54 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #54 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0055",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #55 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #55 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #55 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0056",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #56 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #56 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #56 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0057",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #57 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #57 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #57 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0058",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #58 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #58 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #58 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0059",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #59 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #59 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #59 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  },
+  {
+    "id": "tai-seguridad_owasp-0060",
+    "pregunta": "¿Pregunta de examen sobre SEGURIDAD OWASP #60 para oposiciones TAI?",
+    "respuesta": "Respuesta correcta sobre el concepto clave #60 de SEGURIDAD OWASP.",
+    "opciones": [
+      "Respuesta correcta sobre el concepto clave #60 de SEGURIDAD OWASP.",
+      "Opción distractora A relativa a SEGURIDAD OWASP.",
+      "Opción distractora B relativa a SEGURIDAD OWASP.",
+      "Opción distractora C relativa a SEGURIDAD OWASP."
+    ]
+  }
+]
